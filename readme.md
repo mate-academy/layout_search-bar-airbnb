@@ -30,7 +30,7 @@ Cursors` in figma. [Learn how](https://mate-academy.github.io/layout_task-guidel
 * add attribute `data-qa="big"` for big search bar, and `data-qa="small"` for 
 small
 * add attribute `data-qa="keypress"` to input in big search bar
-* use tag `form` for search bar 
+* use tag `form` for search bar
 
 
 Screenshot of the search bar: 

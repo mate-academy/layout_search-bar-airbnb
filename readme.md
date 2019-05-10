@@ -1,6 +1,40 @@
-# Boilerplate for layout tasks
+# Search bar for Airbnb
 
-Here is the description.
+## Main goal:
+Create HTML page with two search bar. This search bar will be part of big
+ project.
+
+Use this [mockup](https://www.figma.com/file/kf3AWulK9elrNk34wtpjPw/Airbnb-Search-bar?node-id=0%3A1) 
+for development.
+
+If you don't want to see other users cursors you can disable `Multiplayer 
+Cursors` in figma. [Learn how](https://mate-academy.github.io/layout_task-guideline/figma.html#multiplayer-cursors)
+
+## Common mistakes
+* Do not use tabs. Use 2 spaces for indentation.
+* Don't use repeated styles.
+* Text `Try "Los Angeles"` in mockup is a placeholder.
+* Check font styles. Use [fonts](https://github.com/potyt/fonts/tree/master/macfonts/Avenir)
+
+## Requirements:
+* use images from [src/images](src/images)
+* it must be two search bar
+* try to use BEM technology
+* use `em` for typography rules (`font-size`, `line-height` and other)
+* follow styles from the mock
+* a search bar has 2 state default and `focus`
+* don't use JavaScript
+* use `@font-face` for fonts
+* reset browser's default margins
+* use `flexbox`
+* add attribute `data-qa="big"` to big search bar, and `data-qa="small"` to 
+small
+* add attribute `data-qa="keypress"` to input in big search bar
+* use tag `form` for search bar
+
+
+Screenshot of the search bar: 
+![screenshot](./references/search-bar-example.png)
 
 ---
 **Read the guideline before start**

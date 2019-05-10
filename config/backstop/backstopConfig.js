@@ -2,9 +2,10 @@
 
 // https://github.com/garris/BackstopJS#advanced-scenarios
 const basicScenario = {
-  label: 'test', // name of the test
+  label: 'search-bar-Airbnb', // name of the test
   url: 'http://localhost:8080',
-  referenceUrl: '', // put here reference to github-pages with ready project
+  // eslint-disable-next-line max-len
+  referenceUrl: 'https://mate-academy.github.io/layout_solutions/search-bar-airbnb/',
   readyEvent: '',
   readySelector: '',
   delay: 1000,
@@ -26,14 +27,33 @@ module.exports = {
   onReadyScript: 'puppet/onReady.js',
   viewports: [
     {
-      name: 'tablet_h',
+      name: 'desktop_s',
       width: 1024,
-      height: 768,
+      height: 40,
     },
   ],
   scenarios: [
-    { ...basicScenario },
-    // define here scenarios for testing
+    {
+      ...basicScenario,
+      label: 'big-search-bar',
+      selectors: ['[data-qa="big"]'],
+    },
+    {
+      ...basicScenario,
+      label: 'small-search-bar',
+      selectors: ['[data-qa="small"]'],
+    },
+    {
+      ...basicScenario,
+      label: 'key-press',
+      selectors: ['[data-qa="big"]'],
+      keyPressSelectors: [
+        {
+          selector: '[data-qa="keypress"]',
+          keyPress: 'Los An',
+        },
+      ],
+    },
   ],
   paths: {
     bitmaps_reference: 'backstop_data/bitmaps_reference',

@@ -19,19 +19,17 @@ Cursors` in figma. [Learn how](https://mate-academy.github.io/layout_task-guidel
 ## Requirements:
 * use images from [src/images](src/images)
 * there must be two search bars
-* try to use BEM technology
-* use `em` for typography rules (`font-size`, `line-height` and other)
+* big search bar must have max-width 900px and height 70px
+* small search bar has fixed size
 * default `font-weight` must be 300
 * follow styles from the mock
 * a search bar has 3 state default, `hover` and `focus`
 * don't use JavaScript
 * use `@font-face` for fonts
 * reset browser's default margins
-* use `flexbox`
 * add attribute `data-qa="big"` for big search bar, and `data-qa="small"` for 
 small
 * add attribute `data-qa="keypress"` to input in big search bar
-* use tag `form` for search bar
 
 
 Screenshot of the search bar: 

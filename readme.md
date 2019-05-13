@@ -21,8 +21,9 @@ Cursors` in figma. [Learn how](https://mate-academy.github.io/layout_task-guidel
 * there must be two search bars
 * try to use BEM technology
 * use `em` for typography rules (`font-size`, `line-height` and other)
+* default `font-weight` must be 300
 * follow styles from the mock
-* a search bar has 2 state default and `focus`
+* a search bar has 3 state default, `hover` and `focus`
 * don't use JavaScript
 * use `@font-face` for fonts
 * reset browser's default margins

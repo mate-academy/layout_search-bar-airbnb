@@ -31,6 +31,11 @@ module.exports = {
       width: 1024,
       height: 40,
     },
+    {
+      name: 'desktop_xs',
+      width: 720,
+      height: 40,
+    },
   ],
   scenarios: [
     {

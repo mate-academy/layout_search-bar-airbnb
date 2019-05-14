@@ -13,7 +13,20 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
+  <form action="#" class="search-form" data-qa="big">
+    <label>
+      <div class="search-form__img"></div>
+      <input  type="search" name="big-search" class="search-form__input"
+      placeholder="Try “Los Angeles”" data-qa="keypress">
+    </label>
+  </form>
+  <form action="#" class="search-form search-form_small" data-qa="small">
+    <label>
+      <div class="search-form__img-small"></div>
+      <input  type="search" name="small-search" class="search-form__input search-form__input_small"
+      placeholder="Try “Los Angeles”" data-qa="keypress">
+    </label>
+  </form>
 <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>

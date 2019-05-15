@@ -26,12 +26,12 @@ Cursors` in figma. [Learn how](https://mate-academy.github.io/layout_task-guidel
 * a search bar has 3 state default, `hover` and `focus`
 * don't use JavaScript
 * use `@font-face` for fonts
-* add attribute `data-qa="big"` for big search bar, and `data-qa="small"` for 
+* add attribute `data-qa="big"` for big search bar, and `data-qa="small"` for
 small
 * add attribute `data-qa="keypress"` to input in big search bar
 
 
-Screenshot of the search bar: 
+Screenshot of the search bar:
 ![screenshot](./references/search-bar-example.png)
 
 ---
@@ -41,5 +41,5 @@ Screenshot of the search bar:
 
 **Result**
 
-- [UPDATE DEMO LINK](https://<your_account>.github.io/<repo_name>/)
-- [UPDATE TEST REPORT LINK](https://<your_account>.github.io/<repo_name>/report/html_report/)
+- [UPDATE DEMO LINK](https://gulldan1996.github.io/layout_search-bar-airbnb/)
+- [UPDATE TEST REPORT LINK](https://gulldan1996.github.io/layout_search-bar-airbnb/report/html_report/)

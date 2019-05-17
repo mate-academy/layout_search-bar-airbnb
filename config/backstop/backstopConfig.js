@@ -3,7 +3,7 @@
 // https://github.com/garris/BackstopJS#advanced-scenarios
 const basicScenario = {
   label: 'search-bar-Airbnb', // name of the test
-  url: 'http://localhost:8080',
+  url: 'http://localhost:8080/index.html',
   // eslint-disable-next-line max-len
   referenceUrl: 'https://mate-academy.github.io/layout_solutions/search-bar-airbnb/',
   readyEvent: '',

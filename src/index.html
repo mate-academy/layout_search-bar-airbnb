@@ -13,16 +13,16 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <form class="search_big">
+  <form class="search_big" data-qa="big">
     <label>
-      <div class="search search_img_big"><img src="images/search.svg" alt=""></div>
-      <input class="search_input search_input_big" type="search" placeholder='Try "Los Angeles"'>
+      <img src="images/search.svg" alt="">
+      <input class="search_input search_input_big" type="search" data-qa="keypress" placeholder="Try &quot;Los Angeles&quot;">
     </label>
   </form>
-  <form class="search_small">
+  <form class="search_small" data-qa="small">
     <label>
         <div class="search search_img_small"><img src="images/search.svg" alt=""></div>
-        <input class="search_input search_input_small" type="search" placeholder='Try "Los Angeles"'>
+        <input class="search_input search_input_small" type="search" placeholder="Try &quot;Los Angeles&quot;">
       </label>
   </form>
 <script type="text/javascript" src="./main.js"></script>

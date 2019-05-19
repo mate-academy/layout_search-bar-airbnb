@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Avenir";
-  font-weight: 300px;
+  font-weight: 300;
   src: url(fonts/Avenir-Medium.woff);
 }
 
@@ -13,7 +13,6 @@ form {
 
 .search_input {
   font-family: Avenir;
-  letter-spacing: -0.01em;
   box-sizing: border-box;
   border-radius: 4px;
   border: 1px solid #e1e7ed;
@@ -40,15 +39,12 @@ form {
 }
 
 .search_input:focus {
+  font-weight: bold;
   outline: none;
   color: #3d4e61;
   box-shadow: none;
   border-radius: 3px;
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-}
-
-.search_input:focus::-webkit-input-placeholder {
-  color: transparent;
+  background: linear-gradient(#fff, #f6f6f7);
 }
 
 form img {

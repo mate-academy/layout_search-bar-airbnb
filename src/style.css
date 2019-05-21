@@ -3,16 +3,16 @@
 }
 
 @font-face {
-  font-family: "Avenir-Heavy";
-  src: url(fonts/Avenir-Heavy.ttf) format("truetype");
-  font-weight: 600;
+  font-family: "Avenir-Book";
+  src: url(fonts/Avenir-Book.ttf) format("truetype");
+  font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Avenir-Book";
-  src: url(fonts/Avenir-Book.ttf) format("truetype");
-  font-weight: 300;
+  font-family: "Avenir-Heavy";
+  src: url(fonts/Avenir-Heavy.ttf) format("truetype");
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -33,15 +33,16 @@
   font-family: "Avenir-Book", sans-serif;
 }
 
-.search-big > input {
+.input-big {
   height: 70px;
   padding-left: 62px;
   line-height: 22px;
-  background: url(images/Search.svg) no-repeat 26px 25px;
+  background: url(images/Search.svg) no-repeat 25px 24px;
   font-size: 16px;
+  margin-bottom: 20px;
 }
 
-.search-small > input {
+.input-small {
   height: 42px;
   padding-left: 33px;
   background: url(images/Search.svg) no-repeat 12px 14px/11px 11px;
@@ -56,12 +57,13 @@
 .search:focus {
   outline: none;
   border-radius: 3px;
+  box-shadow: none;
 }
 
-.search-big > input:focus {
+.input-big:focus {
   background: url(images/Search.svg) no-repeat 26px 25px, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
-.search-small > input:focus {
+.input-small:focus {
   background: url(images/Search.svg) no-repeat 12px 14px/11px 11px, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }

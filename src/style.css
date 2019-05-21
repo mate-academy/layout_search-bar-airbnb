@@ -53,8 +53,14 @@
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.search:focus {
+.search-big > input:focus {
   outline: none;
   border-radius: 3px;
-  background: url(images/Search.svg) no-repeat linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background: url(images/Search.svg) no-repeat 26px 25px, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.search-small > input:focus {
+  outline: none;
+  border-radius: 3px;
+  background: url(images/Search.svg) no-repeat 12px 14px/11px 11px, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }

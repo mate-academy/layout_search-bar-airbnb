@@ -1,19 +1,41 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width,
+  <meta name="viewport" content="width=device-width,
           user-scalable=no,
           initial-scale=1.0,
           maximum-scale=1.0,
           minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Search</title>
   <link rel="stylesheet" href="./style.css">
 </head>
-<body>
 
-<script type="text/javascript" src="./main.js"></script>
+<body>
+  <div class="search-container">
+      <form action="" method="post" class="search-big search-bar" data-qa="big">
+          <input
+            type="search"
+            name="search-field"
+            placeholder="Try “Los Angeles”"
+            class="search-big__input-field search-bar__input"
+            data-qa="keypress"
+            >
+        </form>
+
+        <form action="" method="post" class="search-small search-bar" data-qa="small">
+            <input
+              type="search"
+              name="search-field"
+              placeholder="Try “Los Angeles”"
+              class="search-small__input-field search-bar__input"
+              >
+          </form>
+
+  </div>
+
 </body>
+
 </html>

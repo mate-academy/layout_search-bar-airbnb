@@ -8,10 +8,8 @@
   font-weight: 300;
  }
 
-
 form {
   position: relative;
-  font-size: 16px;
 }
 
 .search-input {
@@ -21,8 +19,8 @@ form {
   padding: 0 24px 0 62px;
   margin-bottom: 30px;
 
+  font-size: 16px;
   font-family: "Avenir", sans-serif;
-  line-height: 22px;
   font-weight: 700;
   color: #3d4e61;
 
@@ -44,8 +42,6 @@ form {
     background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
     box-shadow: none;
     outline: none;
-
-    line-height: 22px;
   }
 
   &--small {
@@ -57,7 +53,11 @@ form {
     line-height: 19px;
   }
 
-
+  &--small::placeholder {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 19px;
+  }
 }
 
 .search-button {
@@ -80,5 +80,4 @@ form {
     top: 14px;
     left: 13px;
   }
-
 }

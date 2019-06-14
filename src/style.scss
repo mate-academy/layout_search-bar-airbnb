@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Avenir";
   src:
-    local("./fonts/Avenir-Roman.ttf"),
-    local("./fonts/Avenir-Heavy.ttf"),
-    url("./fonts/Avenir-Roman.ttf") format("ttf"),
-    url("./fonts/Avenir-Heavy.ttf") format("ttf");
+    // local("./fonts/Avenir-Book.ttf"),
+    // local("./fonts/Avenir-Heavy.ttf"),
+    url("https://github.com/potyt/fonts/blob/master/macfonts/Avenir/Avenir-Book.ttf") format("ttf"),
+    url("https://github.com/potyt/fonts/blob/master/macfonts/Avenir/Avenir-Heavy.ttf") format("ttf");
   font-weight: 300;
  }
 
@@ -38,7 +38,7 @@ form {
 
   background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
-  background-position: center left 26px;
+  background-position: top 24px left 25px;
 
   &::placeholder {
     color: #3d4e61;
@@ -52,7 +52,7 @@ form {
 
   &:focus {
     background:
-      url(./images/Search.svg) no-repeat center left 26px,
+      url(./images/Search.svg) no-repeat top 24px left 25px,
       linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
     box-shadow: none;
     outline: none;
@@ -67,7 +67,7 @@ form {
     line-height: 19px;
 
     background-size: 11px 11px;
-    background-position: center left 13px;
+    background-position: top 14px left 12px;
   }
 
   &--small::placeholder {
@@ -78,7 +78,7 @@ form {
 
   &--small:focus {
     background:
-      url(./images/Search.svg) no-repeat center left 13px/11px 11px,
+      url(./images/Search.svg) no-repeat top 14px left 12px/11px 11px,
       linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   }
 }

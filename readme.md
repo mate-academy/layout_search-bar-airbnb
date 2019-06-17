@@ -41,5 +41,6 @@ Screenshot of the search bar:
 
 **Result**
 
-- [UPDATE DEMO LINK](https://<your_account>.github.io/<repo_name>/)
-- [UPDATE TEST REPORT LINK](https://<your_account>.github.io/<repo_name>/report/html_report/)
+- [DEMO LINK](https://danheim.github.io/layout_search-bar-airbnb/)
+- [TEST REPORT LINK](https://danheim.github.io/layout_search-bar-airbnb/report/html_report/)
+- [FILES](https://github.com/danheim/layout_search-bar-airbnb/tree/fs_may19_dmitry_y/src)

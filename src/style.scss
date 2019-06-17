@@ -19,6 +19,8 @@
     border-radius: 4px;
 
     outline: none;
+    background-image: url(./images/Search.svg);
+    background-repeat: no-repeat;
   }
 
   &__input-lr {
@@ -27,6 +29,7 @@
 
     font-size: 16px;
     line-height: 22px;
+    background-position: top 24px left 25px;
   }
 
   &__input-sm {
@@ -35,6 +38,8 @@
 
     font-size: 14px;
     line-height: 16px;
+    background-size: 11px 11px;
+    background-position: top 14px left 12px;
   }
 
   &__input:hover {
@@ -43,34 +48,19 @@
   }
 
   &__input:focus {
-    background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
     border-radius: 3px;
     font-weight: 700;
   }
 
+  &__input-lr:focus {
+    background: url(./images/Search.svg) no-repeat top 24px left 25px, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  }
+
+  &__input-sm:focus {
+    background: url(./images/Search.svg) no-repeat top 14px left 12px/11px 11px, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  }
+
   &__input::placeholder {
     font-weight: 300;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    background: url("./images/Search.svg") center no-repeat;
-    display: block;
-    background-size: contain;  
-  }
-
-  &__lr::before {
-    width: 19px;
-    height: 19px;
-    top: 25px;
-    left: 26px;
-  }
-
-  &__sm::before {
-    width: 11px;
-    height: 11px;
-    top: 15px;
-    left: 13px;
   }
 }

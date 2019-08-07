@@ -1,19 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width,
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,
           user-scalable=no,
           initial-scale=1.0,
           maximum-scale=1.0,
-          minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-
-<script type="text/javascript" src="./main.js"></script>
-</body>
+          minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Search bar</title>
+    <link rel="stylesheet" href="./fonts.css" />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <form
+      action="#"
+      class="search-bar__form search-bar__form--big"
+      data-qa="big"
+    >
+      <input
+        class="search-bar__input search-bar__input--big"
+        data-qa="keypress"
+        placeholder="Try “Los Angeles”"
+        type="text"
+      />
+    </form>
+    <form
+      action="#"
+      class="search-bar__form search-bar__form--small"
+      data-qa="small"
+    >
+      <input
+        class="search-bar__input search-bar__input--small"
+        placeholder="Try “Los Angeles”"
+        type="text"
+      />
+    </form>
+  </body>
 </html>

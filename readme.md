@@ -44,4 +44,4 @@ Screenshot of the search bar:
 **Result**
 
 - [UPDATE DEMO LINK](https://KosBelozyorov.github.io/layout_search-bar-airbnb/)
-- [UPDATE TEST REPORT LINK](https://KosBelozyorov.github.io/layout_search-bar-airbnb/report/html_report/)
+- [UPDATE TEST REPORT LINK](https://KosBelozyorov.github.io/layout_search-bar-airbnb/report/html_report)

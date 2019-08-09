@@ -13,7 +13,21 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="container__input"  data-qa="big">
+      <label class="label__search-input-bg" for="search_bg">
+        <img class="icon__bg" src="./images/Search.svg" alt="location">
+      </label>
+      <input id="search_bg" class="input-search input-search__bg"
+      data-qa="keypress" placeholder="Try “Los Angeles”" type="text">
 
+    <div class="container__input" data-qa="small">
+      <label class="label__search-input-sm" for="search_sm">
+        <img class="icon__sm"  src="./images/Search.svg" alt="location">
+      </label>
+      <input id="search_sm" class="input-search input-search__sm"
+       placeholder="Try “Los Angeles”" type="text">
+      </div>
+  </div>
 <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>

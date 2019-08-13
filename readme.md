@@ -1,2 +1,2 @@
-- [UPDATE DEMO LINK](https://KseniiaMazan.github.io/layout_search-bar-airbnb/)
-- [UPDATE TEST REPORT LINK](https://KseniiaMazan.github.io/layout_search-bar-airbnb/report/html_report/)
+- [DEMO LINK](https://KseniiaMazan.github.io/layout_search-bar-airbnb/)
+- [TEST REPORT LINK](https://KseniiaMazan.github.io/layout_search-bar-airbnb/report/html_report/)

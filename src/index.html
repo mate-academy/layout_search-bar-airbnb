@@ -15,11 +15,34 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <form action="#" class="search-bar__form search-bar__form--big" data-qa="big">
-      <input class="search-bar__input search-bar__input--big" data-qa="keypress" placeholder="Try “Los Angeles”" type="text" />
-    </form>
-    <form action="#" class="search-bar__form search-bar__form--small" data-qa="small">
-      <input class="search-bar__input search-bar__input--small" placeholder="Try “Los Angeles”" type="text" />
-    </form>
+    <div class="form-container">
+      <form
+        action="#"
+        class="search-bar__form search-bar__form--big"
+        data-qa="big"
+        method="POST"
+      >
+        <input
+          class="search-bar__input search-bar__input--big"
+          data-qa="keypress"
+          placeholder="Try “Los Angeles”"
+          type="text"
+          name="search-bar-big"
+        />
+      </form>
+      <form
+        action="#"
+        class="search-bar__form search-bar__form--small"
+        data-qa="small"
+        method="POST"
+      >
+        <input
+          class="search-bar__input search-bar__input--small"
+          placeholder="Try “Los Angeles”"
+          type="text"
+          name="search-bar-small"
+        />
+      </form>
+    </div>
   </body>
 </html>

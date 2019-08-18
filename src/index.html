@@ -15,13 +15,13 @@
 </head>
 <body>
 <header>
-  <form action="#" class="search-bar-big-size">
-    <label for="big-bar" class="search-icon-big"></label>
-    <input class="big-bar" type="text" name="search-bar" placeholder='Try "Los Angeles"'>
+  <form action="#" class="search-bar-big-size"  data-qa="big">
+    <label  class="search-icon-big" for="big-bar-label"></label>
+    <input id="big-bar-label" data-qa="keypress" class="big-bar" type="text" name="search-bar" placeholder="Try &rdquo;Los Angeles&rdquo;">
   </form>
-  <form action="#" class="search-bar-small-size">
-    <label for="small-bar" class="search-icon-small"></label>
-    <input class="small-bar" type="text" name="search-bar" placeholder='Try "Los Angeles"'>
+  <form action="#" class="search-bar-small-size" data-qa="small">
+    <label for="small-bar-label" class="search-icon-small"></label>
+    <input id="small-bar-label" class="small-bar" type="text" name="search-bar" placeholder="Los Angeles">
   </form>
 </header>
 </body>

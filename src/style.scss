@@ -1,3 +1,16 @@
+@font-face {
+  font-family: "Avenir";
+  src: url("./Avenir.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  font-weight: 300px;
+  font-family: "Avenir", sans-serif;
+  color: #3d4e61;
+}
+
 %border__search__input {
   border: 1px solid #e1e7ed;
   box-sizing: border-box;
@@ -21,6 +34,29 @@
 .search-form {
   position: relative;
 
+  &_big::before {
+    display: block;
+    content: "";
+    width: 19px;
+    height: 19px;
+    background: url("./images/Search.svg") no-repeat center;
+    position: absolute;
+    top: 25px;
+    left: 26px;
+  }
+
+  &_small::before {
+    display: block;
+    content: "";
+    width: 11px;
+    height: 11px;
+    background: url("./images/Search.svg") no-repeat center;
+    background-size: cover;
+    position: absolute;
+    bottom: 16px;
+    left: 13px;
+  }
+
   &__input {
     @extend %border__search__input;
 
@@ -33,21 +69,17 @@
     }
 
     &_big {
-      font-family: "Avenir", sans-serif;
       height: 70px;
       padding-left: 62px;
       font-size: 16px;
       line-height: 22px;
-      font-weight: 300;
     }
 
     &_small {
-      font-family: "Avenir", sans-serif;
       height: 42px;
       padding-left: 33px;
       font-size: 14px;
       line-height: 16px;
-      font-weight: 200;
     }
   }
 

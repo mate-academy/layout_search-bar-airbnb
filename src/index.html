@@ -9,11 +9,19 @@
           maximum-scale=1.0,
           minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Search bar for Airbnb</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
-<script type="text/javascript" src="./main.js"></script>
+  <div class="large-box" data-qa="big">
+    <label>
+      <input type="search" placeholder="Try &quot;Los Angeles&quot;" class="search" data-qa="keypress">
+    </label>
+  </div>
+  <div class="small-box" data-qa="small">
+    <label>
+      <input type="search" placeholder="Try &quot;Los Angeles&quot;" class="search">
+    </label>
+  </div>
 </body>
 </html>

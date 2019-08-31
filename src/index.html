@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -9,11 +9,18 @@
           maximum-scale=1.0,
           minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Search-bar</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
+  <label data-qa="small" class="small-search-bar">
+    <input type="search" name="small" class="search search-small" placeholder="Try &#34Los Angeles&#34">
+    <img src="images/Search.svg" class="search-img" with="11px" height="11px" alt="S">
+  </label>
+  <label data-qa="big" class="big-search-bar">
+    <input type="search" name="large" class="search search-large" placeholder="Try &#34Los Angeles&#34" data-qa="keypress">
+    <img src="images/Search.svg" class="search-img" with="19px" height="19px" alt="S">
+</label>
 <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>

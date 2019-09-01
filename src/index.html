@@ -1,19 +1,33 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width,
+  <meta name="viewport" content="width=device-width,
           user-scalable=no,
           initial-scale=1.0,
           maximum-scale=1.0,
           minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Search Bar AirBnb</title>
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
 
-<script type="text/javascript" src="./main.js"></script>
+  <label class="big-block" data-qa="big">
+    <input class="big search" type="search" placeholder="&quot;Try Los Angeles&quot;" data-qa="keypress">
+    <img class="icon-big" src="images/search.svg" alt="">
+  </label>
+
+  <br><br>
+
+  <label class="small-block" data-qa="small">
+    <input class="small search" type="search" placeholder="&quot;Try Los Angeles&quot;" >
+    <img class="icon-small" src="images/search.svg" alt="">
+  </label>
+  <script type="text/javascript" src="./main.js"></script>
+
 </body>
+
 </html>

@@ -10,10 +10,19 @@
           minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
-<script type="text/javascript" src="./main.js"></script>
+<header>
+  <form action="#" class="search-bar-big-size"  data-qa="big">
+    <label  class="search-icon-big" for="big-bar-label"></label>
+    <input id="big-bar-label" data-qa="keypress" class="big-bar" type="text" name="search-bar" placeholder="Try &rdquo;Los Angeles&rdquo;">
+  </form>
+  <form action="#" class="search-bar-small-size" data-qa="small">
+    <label for="small-bar-label" class="search-icon-small"></label>
+    <input id="small-bar-label" class="small-bar" type="text" name="search-bar" placeholder="Los Angeles">
+  </form>
+</header>
 </body>
 </html>

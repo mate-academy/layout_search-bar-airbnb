@@ -43,3 +43,4 @@ Screenshot of the search bar:
 
 - [DEMO LINK](https://igaryok.github.io/layout_search-bar-airbnb/)
 - [TEST REPORT LINK](https://igaryok.github.io/layout_search-bar-airbnb/report/html_report/)
+- [PR](https://github.com/mate-academy/layout_search-bar-airbnb/pull/46)

@@ -1,21 +1,14 @@
 @font-face {
   font-family: Avenir, sans-serif;
   src: local(avenir-book), url(./fonts/Avenir-Book.ttf);
-  font-weight: 300;
   font-style: normal;
+  font-weight: 300;
 }
 
 body {
   display: flex;
   flex-direction: column;
   margin-top: 0;
-}
-
-::placeholder {
-  font-family: Avenir, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  color: #3d4e61;
 }
 
 .big-search-bar {
@@ -76,4 +69,11 @@ body {
 .small-search-bar > .search {
   padding-left: 33px;
   font-size: 14px;
+}
+
+.search::placeholder {
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #3d4e61;
 }

@@ -37,13 +37,17 @@
   font-size: 16px;
 }
 
-.big-block::after {
+.big-block::after,
+.small-block::after {
   content: "";
   display: block;
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
+}
+
+.big-block::after {
   top: 25px;
   left: 26px;
   width: 19px;
@@ -57,12 +61,6 @@
 }
 
 .small-block::after {
-  content: "";
-  display: block;
-  background-image: url(images/Search.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
   top: 15px;
   left: 13px;
   width: 11px;

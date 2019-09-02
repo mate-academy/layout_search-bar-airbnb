@@ -1,6 +1,6 @@
 @font-face {
   font-family: Avenir;
-  src: url(/fonts/Avenir-Book.ttf);
+  src: url("fonts/Avenir-Book.ttf");
   font-weight: 300;
   font-style: normal;
 }
@@ -22,8 +22,9 @@
 .big-box::before {
   content: "";
   display: block;
-  background: url(/images/Search.svg) no-repeat center;
+  background: url("images/Search.svg") no-repeat center;
   position: absolute;
+  background-size: cover;
   left: 26px;
   top: 25px;
   height: 19px;
@@ -44,7 +45,7 @@
 .small-box::before {
   content: "";
   display: block;
-  background: url(/images/Search.svg) no-repeat center;
+  background: url("images/Search.svg") no-repeat center;
   background-size: cover;
   position: absolute;
   left: 13px;

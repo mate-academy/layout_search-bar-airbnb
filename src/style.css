@@ -1,8 +1,12 @@
 @font-face {
-  font-family: "Avenir", sans-serif;
-  src: url(../fonts/Avenir.ttc);
+  font-family: "Avenir";
+  src: local("Avenir Book"),
+    local("Avenir-Book"),
+    url("Avenir-Book.woff2") format("woff2"),
+    url("Avenir-Book.woff") format("woff"),
+    url("Avenir-Book.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
-  font-weight: 300;
 }
 
 body {
@@ -34,7 +38,7 @@ body {
 }
 
 .search {
-  font-family: "Avenir", sans-serif;
+  font-family: "Avenir";
   font-weight: 800;
   font-style: bold;
   color: #3d4e61;
@@ -74,7 +78,7 @@ body {
 }
 
 .search::placeholder {
-  font-family: "Avenir", sans-serif;
+  font-family: "Avenir";
   font-weight: 300;
   font-style: normal;
   color: #3d4e61;

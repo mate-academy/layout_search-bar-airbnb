@@ -44,4 +44,4 @@ Screenshot of the search bar:
 - [DEMO LINK](https://anisimovv.github.io/layout_search-bar-airbnb/)
 - [TEST REPORT LINK](https://anisimovv.github.io/layout_search-bar-airbnb/report/html_report/)
 
-P.S. Не проходит тесты (не совпадают шрифты)
+P.S. Не проходит один тест 🤷‍♀️

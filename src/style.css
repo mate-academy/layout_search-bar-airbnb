@@ -9,7 +9,8 @@
   font-weight: bold;
 }
 
-input {
+.big_input,
+.small_input {
   box-sizing: border-box;
   font-family: "Avenir", sans-serif;
   font-weight: 300;
@@ -63,7 +64,7 @@ input {
 .small_elem::before {
   content: "";
   background: url(./images/Search.svg) no-repeat center;
-  background-size: cover;
+  background-size: contain;
   position: absolute;
   left: 13px;
   top: 15px;
@@ -80,6 +81,6 @@ input {
 
 .big_input:focus,
 .small_input:focus {
-  font-family: Avenir, sans-serif;
+  font-family: inherit;
   font-weight: bold;
 }

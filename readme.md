@@ -42,4 +42,4 @@ Screenshot of the search bar:
 **Result**
 
 - [UPDATE DEMO LINK](https://Sijey.github.io/layout_search-bar-airbnb/)
-- [UPDATE TEST REPORT LINK](https://Sijey.github.io/layout_search-bar-airbnb/report/html_report/)
+- [UPDATE TEST REPORT LINK](https://Sijey.github.io/layout_search-bar-airbnb/report/html_report/) не понимаю, почему не дописывается плейсхолдер при тестировании

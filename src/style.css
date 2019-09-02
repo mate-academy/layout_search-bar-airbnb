@@ -10,6 +10,10 @@
   font-weight: 700;
 }
 
+.form {
+  margin-bottom: 20px;
+}
+
 .search {
   width: 100%;
   font-family: Avenir;
@@ -23,8 +27,8 @@
 .big-block,
 .small-block {
   display: block;
-  position: relative;
   width: 100%;
+  position: relative;
 }
 
 .big {
@@ -33,7 +37,12 @@
   font-size: 16px;
 }
 
-.icon-big {
+.big-block::after {
+  content: "";
+  display: block;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
   position: absolute;
   top: 25px;
   left: 26px;
@@ -47,7 +56,12 @@
   font-size: 14px;
 }
 
-.icon-small {
+.small-block::after {
+  content: "";
+  display: block;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
   position: absolute;
   top: 15px;
   left: 13px;
@@ -57,7 +71,7 @@
 
 .big::placeholder,
 .small::placeholder {
-  font-family: Avenir;
+  font-family: inherit;
   font-weight: 300;
   color: #3d4e61;
 }

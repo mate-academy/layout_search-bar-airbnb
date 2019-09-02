@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -9,11 +9,17 @@
           maximum-scale=1.0,
           minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Search-bar-airbnb</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
-<script type="text/javascript" src="./main.js"></script>
+  <label data-qa="big" class="big-search-bar">
+    <input data-qa="keypress" type="text" name="large" class="search" placeholder="Try &#34Los Angeles&#34">
+    <img src="./images/Search.svg" class="search-img" with="19px" height="19px" alt="S">
+  </label>
+  <label data-qa="small" class="small-search-bar">
+    <input type="text" name="small" class="search" placeholder="Try &#34Los Angeles&#34" readonly="readonly">
+    <img src="./images/Search.svg" class="search-img" with="11px" height="11px" alt="S">
+  </label>
 </body>
 </html>

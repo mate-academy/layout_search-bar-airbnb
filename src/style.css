@@ -5,6 +5,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Avenir";
+  src: url("fonts/Avenir.ttc");
+  font-weight: 600;
+  font-style: normal;
+}
+
 .big-lab,
 .small-lab {
   display: block;
@@ -21,6 +28,7 @@
   top: 25px;
   height: 19px;
   width: 19px;
+  background-size: cover;
 }
 
 .small-lab::before {
@@ -32,6 +40,7 @@
   top: 15px;
   height: 11px;
   width: 11px;
+  background-size: cover;
 }
 
 .search-bar {
@@ -59,6 +68,7 @@
   padding-left: 33px;
   font-size: 14px;
   line-height: 16px;
+
 }
 
 .search-bar:hover {
@@ -69,9 +79,10 @@
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
   border: 1px solid #e1e7ed;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 ::placeholder {
   color: #3d4e61;
+  font-weight: 300;
 }

@@ -10,27 +10,7 @@ body {
 }
 
 .search-form {
-  &::before {
-    content: "";
-    position: absolute;
-    width: 19px;
-    height: 19px;
-    top: 33px;
-    left: 26px;
-    background-image: url(./images/Search.svg);
-  }
 
-  &_small {
-    position: relative;
-
-    &::before {
-      width: 11px;
-      height: 11px;
-      top: 15px;
-      left: 13px;
-      background-size: cover;
-    }
-  }
 
   &__input {
     position: relative;
@@ -45,6 +25,16 @@ body {
     box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
     border-radius: 4px;
 
+    &::before {
+      content: "";
+      position: absolute;
+      width: 19px;
+      height: 19px;
+      top: 33px;
+      left: 26px;
+      background-image: url(./images/Search.svg);
+    }
+
     &:hover {
       box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
     }
@@ -54,6 +44,15 @@ body {
       font-size: 14px;
       line-height: 16px;
       padding-left: 33px;
+      position: relative;
+
+      &::before {
+        width: 11px;
+        height: 11px;
+        top: 15px;
+        left: 13px;
+        background-size: cover;
+      }
     }
 
     &:focus {

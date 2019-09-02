@@ -9,13 +9,15 @@
     <title>Layout Search Bar</title>
   </head>
   <body>
-    <form class="wrapper-search-input" data-qa="big">
-      <label for="search-label-big" class="search-label-big"></label>
-      <input type="text" class="search-input search-input-big" id="search-label-big" placeholder="Try &quot;Los Angeles&quot;" data-qa="keypress"/>
+    <form>
+      <label data-qa="big" class="big-container">
+        <input class="sb big-sb" placeholder="Try &quot;Los Angeles&quot;" data-qa="keypress">
+      </label>
     </form>
-    <form class="wrapper-search-input" data-qa="small">
-      <label for="search-label-small" class="search-label-small"></label>
-      <input type="text" class="search-input search-input-small" id="search-label-small" placeholder="Try &quot;Los Angeles&quot;"/>
+    <form>
+      <label data-qa="small" class="small-container" >
+        <input class="sb small-sb" placeholder="Try &quot;Los Angeles&quot;">
+      </label>
     </form>
   <script type="text/javascript" src="./main.js"></script>
   </body>

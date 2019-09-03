@@ -13,12 +13,20 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <label class="bigger" data-qa="big">
-    <input type="search" name="search" class="search bigsearch" placeholder="Try &quot;Los Angeles&quot;" data-qa="keypress">
-  </label>
-  <label class="smaller" data-qa="small">
-    <input type="search" name="search" class="search smallsearch" placeholder="Try &quot;Los Angeles&quot;">
-  </label>
+  <form action="#" method="POST" data-qa="big" class="search-form">
+    <label class="search-form-label search-form-label_big">
+      <input type="text" placeholder="Try &#34;Los Angeles&#34;"
+      class="search-form-input search-form-input_big"
+      data-qa="keypress">
+    </label>
+  </form>
+  <form action="#" method="POST" data-qa="small">
+      <label class="search-form-label search-form-label_small">
+          <input type="text" placeholder="Try &#34;Los Angeles&#34;"
+          class="search-form-input search-form-input_small"
+          data-qa="keypress">
+        </label>
+  </form>
 <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>

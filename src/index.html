@@ -9,11 +9,20 @@
           maximum-scale=1.0,
           minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Search Bars</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
+  <form action="#" method="GET">
+    <label class="huge-wrapper" data-qa="big">
+      <input type="search" name="huge" class="search" placeholder="Try &quot;Los Angeles&quot;" data-qa="keypress">
+    </label>
+  </form>
+  <form action="#" method="GET">
+    <label class="small-wrapper" data-qa="small">
+      <input type="search" name="small" class="search" placeholder="Try &quot;Los Angeles&quot;">
+    </label>
+  </form>
 <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>

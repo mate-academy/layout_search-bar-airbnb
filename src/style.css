@@ -1,41 +1,36 @@
 @font-face {
   font-family: "Avenir";
-  src: url(fonts/macfonts/Avenir/Avenir-Heavy.ttf);
+  src: url(fonts/Avenir-Heavy.ttf);
   font-weight: 600;
 }
 
 @font-face {
   font-family: "Avenir";
-  src: url(fonts/macfonts/Avenir/Avenir-Book.ttf);
+  src: url(fonts/Avenir-Book.ttf);
   font-weight: 300;
 }
 
 body {
   margin: 0;
   font-family: "Avenir";
-  
-}
-
-form {
-  font-family: "Avenir";
   font-weight: 300;
 }
 
-.b-search {
+.search-form__label_big {
   height: 70px;
   font-size: 16px;
   line-height: 22px;
 }
 
-.s-search {
+.search-form__label_small {
   border-radius: 4px;
   font-size: 14px;
   line-height: 16px;
   height: 42px;
 }
 
-.b-search,
-.s-search {
+.search-form__label {
+  font-family: inherit;
   box-sizing: border-box;
   display: block;
   position: relative;
@@ -43,8 +38,7 @@ form {
   margin-bottom: 38px;
 }
 
-.b-image::before,
-.s-image::before {
+.search-form__label::before {
   content: "";
   display: block;
   background: url("images/Search.svg") no-repeat;
@@ -52,21 +46,23 @@ form {
   position: absolute;
 }
 
-.b-image::before {
+.search-form__label_big::before {
   width: 19px;
   height: 19px;
   left: 26px;
   top: 25px;
 }
 
-.s-image::before {
+.search-form__label_small::before {
   left: 13px;
   top: 15px;
   height: 11px;
   width: 11px;
 }
 
-.input-b-s {
+.search-form__input {
+  font-family: inherit;
+  font-weight: 300;
   background: #fff;
   border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
@@ -77,22 +73,22 @@ form {
   outline: none;
 }
 
-.input-b {
+.search-form__input_big {
   font-size: 16px;
   padding-left: 62px;
 }
 
-.input-s {
+.search-form__input_small {
   font-size: 14px;
   padding-left: 33px;
 }
 
-.input-b-s:hover {
+.search-form__input:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.input-b-s:focus {
-  font-family: "Avenir";
+.search-form__input:focus {
+  font-family: inherit;
   font-weight: 600;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
@@ -100,7 +96,5 @@ form {
 }
 
 ::placeholder {
-  font-family: "Avenir";
-  font-weight: 300;
   color: #3d4e61;
 }

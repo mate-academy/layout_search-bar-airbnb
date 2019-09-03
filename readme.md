@@ -41,5 +41,5 @@ Screenshot of the search bar:
 
 **Result**
 
-- [UPDATE DEMO LINK](https://<your_account>.github.io/<repo_name>/)
-- [UPDATE TEST REPORT LINK](https://<your_account>.github.io/<repo_name>/report/html_report/)
+- [UPDATE DEMO LINK](https://Sijey.github.io/layout_search-bar-airbnb/)
+- [UPDATE TEST REPORT LINK](https://Sijey.github.io/layout_search-bar-airbnb/report/html_report/) тесты иногда не все проходять, могут пройти все, может один или два зафелится.

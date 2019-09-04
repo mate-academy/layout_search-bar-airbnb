@@ -41,5 +41,5 @@ Screenshot of the search bar:
 
 **Result**
 
-- [LINK](https://nikakarelets.github.io/layout-search-bar-airbnb/)
-- [TEST REPORT LINK](https://nikakarelets.github.io/layout-search-bar-airbnb/report/html_report/)
+- [LINK](https://nikakarelets.github.io/layout_search-bar-airbnb/)
+- [TEST REPORT LINK](https://nikakarelets.github.io/layout_search-bar-airbnb/report/html_report/)

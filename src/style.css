@@ -11,34 +11,33 @@
 }
 
 .search-bar__label,
-.small-lab {
+.search-bar__label__small {
   display: block;
   position: relative;
   margin-bottom: 20px;
 }
 
-.search-bar__label::before {
+.search-bar__label::before,
+.search-bar__label__small::before {
   content: "";
+  position: absolute;
   display: block;
   background: url(images/Search.svg) no-repeat;
-  position: absolute;
+  background-size: contain;
+}
+
+.search-bar__label::before {
   left: 26px;
   top: 25px;
   height: 19px;
   width: 19px;
-  background-size: contain;
 }
 
-.small-lab::before {
-  content: "";
-  position: absolute;
-  display: block;
-  background: url(images/Search.svg) no-repeat;
+.search-bar__label__small::before {
   left: 13px;
   top: 15px;
   height: 11px;
   width: 11px;
-  background-size: contain;
 }
 
 .search-bar__input {

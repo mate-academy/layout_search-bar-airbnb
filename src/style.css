@@ -17,18 +17,6 @@ body {
   position: relative;
 }
 
-.form-big::before {
-  content: "";
-  width: 19px;
-  height: 19px;
-  position: absolute;
-  top: 25px;
-  left: 26px;
-  background-image: url(./images/Search.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .form-big__search {
   box-sizing: border-box;
   width: 100%;
@@ -50,18 +38,6 @@ body {
   position: relative;
 }
 
-.form-small::before {
-  content: "";
-  width: 11px;
-  height: 11px;
-  position: absolute;
-  top: 15px;
-  left: 13px;
-  background-image: url(./images/Search.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .form-small__search {
   box-sizing: border-box;
   width: 100%;
@@ -76,6 +52,36 @@ body {
   padding-left: 33px;
   font-weight: 300;
   color: inherit;
+}
+
+.img-input-big,
+.img-input-small {
+  width: 100%;
+  height: 100%;
+}
+
+.img-input-big::before {
+  content: "";
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  top: 25px;
+  left: 26px;
+  background-image: url(./images/Search.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-input-small::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  top: 15px;
+  left: 13px;
+  background-image: url(./images/Search.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .form-small__search::placeholder,

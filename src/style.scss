@@ -1,16 +1,6 @@
 @import "_fonts.scss";
 
 .search-form {
-  &::after {
-    position: absolute;
-    top: 33px;
-    left: 26px;
-    content: "";
-    width: 19px;
-    height: 19px;
-    background-image: url(./images/Search.svg);
-  }
-
   &_small {
     position: relative;
 
@@ -58,5 +48,17 @@
       height: 42px;
       padding-left: 33px;
     }
+  }
+}
+
+.input__wrapper {
+  &::after {
+    position: absolute;
+    top: 33px;
+    left: 26px;
+    content: "";
+    width: 19px;
+    height: 19px;
+    background-image: url(./images/Search.svg);
   }
 }

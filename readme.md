@@ -41,5 +41,10 @@ Screenshot of the search bar:
 
 **Result**
 
+<<<<<<< HEAD
 - [DEMO LINK](https://yevhen-sahach.github.io/layout_search-bar-airbnb/)
 - [TEST REPORT LINK](https://yevhen-sahach.github.io/layout_search-bar-airbnb/report/html_report/)
+=======
+- [UPDATE DEMO LINK](https://youvovk.github.io/layout_search-bar-airbnb/)
+- [UPDATE TEST REPORT LINK](https://youvovk.github.io/layout_search-bar-airbnb/report/html_report/)
+>>>>>>> a093c826bbae865b6245a02119dbd082fb7ea690

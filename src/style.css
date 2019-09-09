@@ -20,7 +20,6 @@ body {
   position: relative;
   background: #fff;
   box-sizing: border-box;
-
 }
 
 .search-form_label_big {
@@ -31,9 +30,8 @@ body {
   height: 42px;
 }
 
-input[type="search"] {
+.search-input {
   width: 100%;
-  box-sizing: border-box;
   font-family: inherit;
   outline: none;
   border: 1px solid #e1e7ed;
@@ -49,7 +47,7 @@ input[type="search"] {
 
 .big-search::placeholder,
 .small-search::placeholder {
-  font-size: 16px;
+  font-size: inherit;
   font-family: inherit;
   font-weight: 300;
   line-height: 22px;
@@ -63,7 +61,7 @@ input[type="search"] {
 
 .big-search {
   padding-left: 62px;
-  font-size: 16px;
+  font-size: inherit;
   line-height: 22px;
 }
 
@@ -71,16 +69,19 @@ input[type="search"] {
   padding-left: 33px;
   font-size: 14px;
   line-height: 16px;
-
 }
 
-.search-form_label_big::after {
+.search-form_label_big::after,
+.search-form_label_small::after {
   content: "";
   display: block;
   background: url("./images/Search.svg");
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
+}
+
+.search-form_label_big::after {
   left: 26px;
   top: 25px;
   height: 19px;
@@ -88,14 +89,8 @@ input[type="search"] {
 }
 
 .search-form_label_small::after {
-  content: "";
-  display: block;
-  background-image: url("./images/Search.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
   left: 13px;
   top: 15px;
-  position: absolute;
   height: 11px;
   width: 11px;
 }

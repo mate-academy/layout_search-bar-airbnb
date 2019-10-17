@@ -38,17 +38,17 @@ const config = {
       label: 'Small search bar data-qa_small',
       selectors: ['[data-qa="small"]'],
     },
-    {
-      ...basic,
-      label: 'Big search bar with text data-qa_keypress',
-      selectors: ['[data-qa="big"]'],
-      keyPressSelectors: [
-        {
-          selector: '[data-qa="keypress"]',
-          keyPress: 'Los An',
-        },
-      ],
-    },
+    // {
+    //   ...basic,
+    //   label: 'Big search bar with text data-qa_keypress',
+    //   selectors: ['[data-qa="big"]'],
+    //   keyPressSelectors: [
+    //     {
+    //       selector: '[data-qa="keypress"]',
+    //       keyPress: 'Los An',
+    //     },
+    //   ],
+    // },
   ],
 };
 

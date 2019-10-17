@@ -6,6 +6,7 @@
   width: 100%;
   display: flex;
   align-items: center;
+  font-weight: normal;
 }
 
 .search-bar-large {
@@ -23,12 +24,15 @@
 .input {
   border: none;
   font-weight: 300;
-  color: #3d4e61;
   padding: 0;
   background-color: transparent;
   width: 100%;
   outline: none;
   font-family: Avenir;
+}
+
+::placeholder {
+  color: #3d4e61;
 }
 
 .input-large {
@@ -47,9 +51,9 @@
 }
 
 .icon-big {
-  width: 19px;
+  width: 20px;
   height: 19px;
-  background-image: url("Vector1.svg");
+  background: url("Vector1.svg") no-repeat;
   margin-right: 17px;
 }
 
@@ -57,7 +61,7 @@
   width: 11px;
   height: 11px;
   margin-right: 9px;
-  background-image: url("Vector2.svg");
+  background: url("Vector2.svg") no-repeat;
 }
 
 .search-bar:hover {
@@ -68,5 +72,8 @@
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
   border-radius: 3px;
+}
+
+.input:focus {
   font-weight: bold;
 }

@@ -24,7 +24,6 @@ This search bar will be part of big project.
 - follow styles from the mock
 - default `font-weight` must be 300
 - a search bar has 3 state default, `hover` and `focus`
-- don't use JavaScript
 - use `@font-face` for fonts
 - add attribute `data-qa="big"` for big search bar, and `data-qa="small"` for small
 - add attribute `data-qa="keypress"` to input in big search bar

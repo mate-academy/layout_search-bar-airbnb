@@ -10,32 +10,29 @@
   </head>
   <body>
     <form>
-      <label for="search-large">
-      <div class="search-bar search-bar-large"
+      <label for="search-bar">
+      <div class="search-bar"
            data-qa="big">
-        <div class="icon-big"></div>
+        <div class="search-input__icon"></div>
         <input type="search"
-               id="search-large"
+               id="search-bar"
+               name="search-bar"
                placeholder="Try &#34;Los Angeles&#34;"
-               class="input input-large"
-               data-qa="keypress"
-               onfocus="this.placeholder=''"
-               onblur="this.placeholder='Try &#34;Los Angeles&#34;'">
+               class="input"
+               data-qa="keypress">
       </div>
       </label>
     </form>
 
     <form>
-      <label for="search-small">
-      <div class="search-bar search-bar-small"
+      <label for="search-bar--small">
+      <div class="search-bar search-bar--small"
            data-qa="small">
-        <div class="icon-small"></div>
+        <div class="search-input__icon--small"></div>
         <input type="search"
-               id="search-small"
+               id="search-bar--small"
                placeholder="Try &#34;Los Angeles&#34;"
-               class="input input-small"
-               onfocus="this.placeholder=''"
-               onblur="this.placeholder='Try &#34;Los Angeles&#34;'">
+               class="input input--small">
       </div>
       </label>
     </form>

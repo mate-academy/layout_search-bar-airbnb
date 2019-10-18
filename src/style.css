@@ -6,16 +6,13 @@
   width: 100%;
   display: flex;
   align-items: center;
-}
-
-.search-bar-large {
   height: 70px;
   margin-bottom: 20px;
   margin-top: 20px;
   padding: 25px 26px;
 }
 
-.search-bar-small {
+.search-bar--small {
   height: 42px;
   padding: 12px 13px;
 }
@@ -28,18 +25,15 @@
   width: 100%;
   outline: none;
   font-family: Avenir;
-}
-
-::placeholder {
-  color: #3d4e61;
-}
-
-.input-large {
   font-size: 16px;
   line-height: 22px;
 }
 
-.input-small {
+.input::placeholder {
+  color: #3d4e61;
+}
+
+.input--small {
   font-size: 14px;
   line-height: 16px;
 }
@@ -47,20 +41,29 @@
 @font-face {
   font-family: Avenir;
   src: url("Avenir-Book.ttf");
+  font-weight: 300;
 }
 
-.icon-big {
+@font-face {
+  font-family: Avenir;
+  src: url("Avenir-Heavy.ttf");
+  font-weight: bold;
+}
+
+.search-input__icon {
   width: 20px;
-  height: 19px;
-  background: url("Vector1.svg") no-repeat;
+  height: 20px;
+  background: url("search-icon.svg") no-repeat;
   margin-right: 17px;
+  background-size: contain;
 }
 
-.icon-small {
+.search-input__icon--small {
   width: 11px;
-  height: 11px;
+  height: 12px;
   margin-right: 9px;
-  background: url("Vector2.svg") no-repeat;
+  background: url("search-icon.svg") no-repeat;
+  background-size: contain;
 }
 
 .search-bar:hover {

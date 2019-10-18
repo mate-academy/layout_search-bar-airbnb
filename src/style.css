@@ -1,17 +1,19 @@
 @font-face {
-  font-family: Avenir-Book;
+  font-family: Avenir;
   src: url(fonts/Avenir-Book.ttf);
+  font-weight: 300;
 }
 
 @font-face {
-  font-family: Avenir-Heavy;
+  font-family: Avenir;
   src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: 900;
 }
 
 .search--input {
   background: url(images/Search.svg)no-repeat;
-  background-size: 19px;
   background-position: 25px 24px;
+  background-size: 19px;
   height: 70px;
   width: 100%;
   border: 1px solid #e1e7ed;
@@ -19,7 +21,7 @@
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
   padding: 25px 0 25px 62px;
-  font-family: Avenir-Book;
+  font-family: Avenir;
   font-size: 16px;
   color: #3d4e61;
   font-weight: 300;
@@ -40,14 +42,15 @@
 .search--input:focus {
   background: url(images/Search.svg) no-repeat, linear-gradient(180deg, #fff , #f6f6f7 100%);
   background-size: 19px;
-  background-position: 25px 24px;
+  background-position: 25px 24px, 0 0;
   outline: none;
   border-radius: 3px;
-  font-family: Avenir-Heavy;
+  font-family: Avenir;
+  font-weight: 900;
 }
 
 .search--small:focus {
   background: url(images/Search.svg) no-repeat, linear-gradient(180deg, #fff, #f6f6f7 100%);
   background-size: 11px;
-  background-position: 12px 14px;
+  background-position: 12px 14px, 0 0;
 }

@@ -14,7 +14,7 @@ body {
   src: url("https://github.com/potyt/fonts/blob/master/macfonts/Avenir/Avenir-Book.ttf");
 }
 
-label {
+.label {
   position: relative;
 }
 
@@ -37,16 +37,15 @@ label {
   height: 42px;
   -webkit-appearance: none;
   font-size: 14px;
-  line-height: 16px;
   padding-left: 33px;
 }
 
-label:before {
+.label-big:before {
   content: "";
   position: absolute;
   left: 26px;
   top: 50%;
-  margin-top: -8px;
+  transform: translate(0, -50%);
   bottom: 0;
   width: 19px;
   height: 19px;
@@ -59,7 +58,7 @@ label:before {
   position: absolute;
   left: 13px;
   top: 50%;
-  margin-top: -5px;
+  transform: translate(0, -50%);
   bottom: 0;
   width: 11px;
   height: 11px;
@@ -68,7 +67,7 @@ label:before {
   background-size: 11px;
 }
 
-input::placeholder {
+.input::placeholder {
   color: #3d4e61;
 }
 

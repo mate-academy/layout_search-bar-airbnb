@@ -35,6 +35,11 @@ const config = {
     },
     {
       ...basic,
+      label: 'Entire document',
+      selectors: ['document'],
+    },
+    {
+      ...basic,
       label: 'Big search bar data-qa_big',
       selectors: ['[data-qa="big"]'],
     },

@@ -1,0 +1,146 @@
+@import url(//db.onlinewebfonts.com/c/331ec49c0d78e469c42c1d814dd45838?family=Avenir+Book);
+
+@import url(//db.onlinewebfonts.com/c/901497541657a2f24e42848bcf7fad52?family=Avenir+Heavy);
+
+@font-face {
+  font-family: "Avenir Book";
+  src: url("//db.onlinewebfonts.com/t/331ec49c0d78e469c42c1d814dd45838.eot");
+  src: url("//db.onlinewebfonts.com/t/331ec49c0d78e469c42c1d814dd45838.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/331ec49c0d78e469c42c1d814dd45838.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/331ec49c0d78e469c42c1d814dd45838.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/331ec49c0d78e469c42c1d814dd45838.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/331ec49c0d78e469c42c1d814dd45838.svg#Avenir Book") format("svg");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir Heavy";
+  src: url("//db.onlinewebfonts.com/t/901497541657a2f24e42848bcf7fad52.eot");
+  src: url("//db.onlinewebfonts.com/t/901497541657a2f24e42848bcf7fad52.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/901497541657a2f24e42848bcf7fad52.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/901497541657a2f24e42848bcf7fad52.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/901497541657a2f24e42848bcf7fad52.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/901497541657a2f24e42848bcf7fad52.svg#Avenir Heavy") format("svg");
+  font-weight: 300;
+}
+
+.body {
+  margin-top: 20px;
+}
+
+.select__form {
+  font-family: "Avenir Book", sans-serif;
+}
+
+.select__input:focus {
+  outline: 0 transparent;
+}
+
+.select__label {
+  position: relative;
+  display: block;
+}
+
+.select__form--big {
+  margin-bottom: 20px;
+}
+
+.select__input {
+  box-sizing: border-box;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+  width: 100%;
+  display: block;
+  font-family: "Avenir Heavy", sans-serif;
+  color: #3d4e61;
+  transition: 0.2s ease-in-out;
+}
+
+.select__form--big .select__input {
+  height: 70px;
+  padding-left: 62px;
+  font-size: 16px;
+}
+
+.select__form--small .select__input {
+  height: 42px;
+  padding-left: 33px;
+  font-size: 14px;
+}
+
+.select__label:hover .select__input {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.select__label::before {
+  content: "";
+  position: absolute;
+  background-image: url(./images/Search.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+
+.select__form--big .select__label::before {
+  width: 19px;
+  height: 19px;
+  top: 25px;
+  left: 26px;
+}
+
+.select__form--small .select__label::before {
+  width: 11px;
+  height: 11px;
+  left: 13px;
+  top: 15px;
+}
+
+::-webkit-input-placeholder {
+  font-family: "Avenir Book", sans-serif;
+}
+
+::-moz-placeholder {
+  font-family: "Avenir Book", sans-serif;
+}
+
+:-moz-placeholder {
+  font-family: "Avenir Book", sans-serif;
+}
+
+:-ms-input-placeholder {
+  font-family: "Avenir Book", sans-serif;
+}
+
+.select__form--big ::-webkit-input-placeholder {
+  font-size: 16px;
+}
+
+.select__form--big ::-moz-placeholder {
+  font-size: 16px;
+}
+
+.select__form--big :-moz-placeholder {
+  font-size: 16px;
+}
+
+.select__form--big :-ms-input-placeholder {
+  font-size: 16px;
+}
+
+.select__form--small ::-webkit-input-placeholder {
+  font-size: 14px;
+}
+
+.select__form--small ::-moz-placeholder {
+  font-size: 14px;
+}
+
+.select__form--small :-moz-placeholder {
+  font-size: 14px;
+}
+
+.select__form--small :-ms-input-placeholder {
+  font-size: 14px;
+}

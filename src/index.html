@@ -9,13 +9,14 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <form>
+  <form data-qa="big">
     <label class="label label-big">
-      <input type="search" name="search" placeholder="Try &quot;Los Angeles&quot;" class="input" data-qa="big">
+      <input type="search" name="search" placeholder="Try &quot;Los Angeles&quot;" class="input" data-qa="keypress">
     </label>
-    <br>
+  </form>
+  <form data-qa="small">
     <label class="label label-small">
-      <input type="search" name="search" placeholder="Try &quot;Los Angeles&quot;" class="input input-small" data-qa="small">
+      <input type="search" name="search" placeholder="Try &quot;Los Angeles&quot;" class="input input-small">
     </label>
   </form>
 </body>

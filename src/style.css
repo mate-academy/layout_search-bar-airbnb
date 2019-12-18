@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Avenir";
-  src: url(font/Avenir-Book.ttf) format("truetype");
+  src: url(font/Avenir-Book.ttf) format("truetype"), url(font/Avenir-Heavy.ttf) format("truetype");
 }
 
 body {
@@ -63,17 +63,19 @@ body {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   box-shadow: none;
   border-radius: 3px;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 .search-form__input_big {
   padding-left: 62px;
-  padding-top: 2px;
+  padding-top: 1px;
+  font-size: 16px;
 }
 
 .search-form__input_small {
   padding-left: 33px;
   padding-bottom: 2px;
+  font-size: 14px;
 }
 
 .search-form__input::placeholder {

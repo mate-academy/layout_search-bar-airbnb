@@ -11,11 +11,12 @@
 
 .form {
   margin-top: 20px;
-}
-
-.label {
   position: relative;
 }
+
+/* .label {
+  position: relative;
+} */
 
 .input-big {
   font-family: Avenir;
@@ -67,28 +68,41 @@
   background: url("images/Search-small.svg");
 }
 
-.input-big:hover {
+/* .input-big:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+} */
+
+/* .input-big:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+} */
+
+/* .input-small:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+} */
+
+.input:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.input-big:focus {
+/* .input-small:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+} */
+
+.input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
 }
 
-.input-small:hover {
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-}
-
-.input-small:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border-radius: 3px;
-}
-
-.input-big::placeholder {
+/* .input-big::placeholder {
   color: #3d4e61;
 }
 
 .input-small::placeholder {
+  color: #3d4e61;
+} */
+
+input::placeholder {
   color: #3d4e61;
 }

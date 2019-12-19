@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: Avenir;
-  font-style: bold;
+  font-style: normal;
   font-weight: 700;
   src: url("fonts/Avenir-Heavy.ttf");
 }
@@ -49,11 +49,11 @@
   position: absolute;
   width: 19px;
   height: 19px;
-  /* top: 28px; */
   top: 50%;
   transform: translate(0, -50%);
   left: 20px;
   background: url("images/Search.svg");
+  background-repeat: no-repeat;
 }
 
 .label-small::before {
@@ -61,9 +61,12 @@
   position: absolute;
   width: 11px;
   height: 11px;
-  top: 15px;
-  left: 20px;
-  background: url("images/Search-small.svg");
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 13px;
+  background: url("images/Search.svg");
+  background-repeat: no-repeat;
+  background-size: contain ;
 }
 
 .input:hover {

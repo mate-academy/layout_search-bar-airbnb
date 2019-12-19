@@ -9,6 +9,16 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <h1>Search bar airbnb</h1>
+  <form action="" data-qa="big">
+    <label for="big-input" class="search-label">
+      <input type="search" class="input" name="big-input" data-qa="keypress" id="big-input" placeholder="Try &#34;Los Angeles&#34;" autocomplete="off">
+    </label>
+  </form>
+
+  <form action="" data-qa="small">
+    <label for="small-input" class="search-label search-small">
+      <input type="search" class="input small-input" name="small-input" id="small-input" placeholder="Try &#34;Los Angeles&#34;" autocomplete="off">
+    </label>
+  </form>
 </body>
 </html>

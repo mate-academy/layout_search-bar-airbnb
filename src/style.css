@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Avenir";
-  src: url("https://github.com/potyt/fonts/blob/master/macfonts/Avenir/Avenir-Light.ttf");
+  src: url("fonts/Avenir-Book.ttf");
 }
 
 body {
   margin-top: 20px;
-  font-family: "Avenir-Light";
+  font-family: "Avenir-Book", sans-serif;
   font-weight: 300;
 }
 
@@ -14,7 +14,6 @@ label {
 }
 
 .search-input {
-  font-family: "Avenir-Light", sans-serif;
   box-sizing: border-box;
   font-weight: bold;
   color: #3d4e61;
@@ -43,13 +42,13 @@ label {
   box-shadow: none;
 }
 
-.big {
+.bigger {
   height: 70px;
   font-size: 16px;
   padding-left: 62px;
 }
 
-.small {
+.smaller {
   height: 42px;
   font-size: 14px;
   padding-left: 33px;
@@ -59,20 +58,20 @@ label::before {
   position: absolute;
   content: "";
   background: url(images/Search.svg) no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .big-label::before {
-  width: 19px;
-  height: 19px;
+  width: 20px;
+  height: 20px;
   top: 50%;
   transform: translateY(-50%);
   left: 26px;
 }
 
 .small-label::before {
-  width: 11px;
-  height: 11px;
+  width: 12px;
+  height: 12px;
   top: 50%;
   transform: translateY(-50%);
   left: 13px;

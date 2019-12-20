@@ -26,9 +26,6 @@
 
 .body {
   padding-top: 12px;
-}
-
-.select__form {
   font-family: "Avenir Book", sans-serif;
 }
 
@@ -57,13 +54,13 @@
   transition: 0.2s ease-in-out;
 }
 
-.select__form--big .select__input {
+.select__input--big {
   height: 70px;
   padding-left: 62px;
   font-size: 16px;
 }
 
-.select__form--small .select__input {
+.select__input--small {
   height: 42px;
   padding-left: 33px;
   font-size: 14px;
@@ -83,28 +80,28 @@
   background-size: contain;
 }
 
-.select__form--big .select__label::before {
+.select__label--big::before {
   width: 19px;
   height: 19px;
   top: 25px;
   left: 26px;
 }
 
-.select__form--small .select__label::before {
+.select__label--small::before {
   width: 11px;
   height: 11px;
   left: 13px;
   top: 15px;
 }
 
-:placeholder-shown {
+.select__input:placeholder-shown {
   font-family: "Avenir Book", sans-serif;
 }
 
-.select__form--big :placeholder-shown {
+.select__input--big:placeholder-shown {
   font-size: 16px;
 }
 
-.select__form--small :placeholder-shown {
+.select__input--small:placeholder-shown {
   font-size: 14px;
 }

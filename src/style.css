@@ -8,12 +8,10 @@
 @font-face {
   font-family: Avenir;
   src: url("fonts/Avenir-Heavy.ttf");
-  font-style: normal;
   font-weight: 700;
 }
 
 .box-search {
-  display: block;
   position: relative;
   margin: 20px 0;
 }
@@ -26,12 +24,9 @@
   height: 42px;
 }
 
-.box-search::before {
+.box-search-big::before {
   content: "";
   position: absolute;
-}
-
-.box-search-big::before {
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -39,10 +34,11 @@
   width: 19px;
   top: 25px;
   left: 26px;
-
 }
 
 .box-search-small::before {
+  content: "";
+  position: absolute;
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
   background-size: contain;

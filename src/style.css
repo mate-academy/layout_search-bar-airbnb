@@ -6,12 +6,13 @@
 
 @font-face {
   font-family: "Avenir-Book";
-  src: url("fonts/Avenir-Book.ttf");
-  font-weight: 700;
+  src: url("fonts/Avenir-Book.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
 }
 
 body {
-  font-family: "Avenir-Book", sans-serif;
+  font-family: "Avenir-Book";
 }
 
 .box-search {
@@ -73,7 +74,8 @@ body {
 
 .search-input::placeholder {
   color: #697685;
-  font-family: "Avenir-Heavy", sans-serif;
+  font-family: "Avenir-Book";
+  font-weight: 300;
 }
 
 .search-input-big {

@@ -6,7 +6,6 @@
 
 * {
   box-sizing: border-box;
-  font-family: Avenir, sans-serif;
 }
 
 .form__label {
@@ -25,6 +24,7 @@
 }
 
 .form__input {
+  font-family: Avenir, sans-serif;
   width: 100%;
   height: 100%;
   color: #3d4e61;
@@ -54,13 +54,16 @@
   position: absolute;
   left: 26px;
   top: 25px;
+  background-size: cover;
+  background-position: center;
 }
 
 .form__label-small::before {
   content: "";
   display: block;
   background-image: url(images/Search.svg);
-  background-repeat: round;
+  background-size: cover;
+  background-position: center;
   height: 11px;
   width: 11px;
   position: absolute;

@@ -10,18 +10,14 @@
 </head>
 
 <body>
-  <main class="search">
-    <div class="search__big-wrapper search__wrapper">
-      <form action="" data-qa="big">
-        <input type="text" class="search__blocks search__big" name="search-big" placeholder="Try &quot;Los Angeles&quot;" data-qa="keypress">
-      </form>
-    </div>
+  <section>
+    <form class="search search__form" action="" data-qa="big">
+      <input type="text" class="search__input" name="search-big" placeholder="Try &quot;Los Angeles&quot;" data-qa="keypress">
+    </form>
 
-    <div class="search__small-wrapper search__wrapper">
-      <form action="" data-qa="small">
-        <input type="text" class="search__blocks search__small" name="search-small" placeholder="Try &quot;Los Angeles&quot;">
-      </form>
-    </div>
-  </main>
+    <form class="search search__form search__form-small" action="" data-qa="small">
+      <input type="text" class="search__input search__input--small" name="search-small" placeholder="Try &quot;Los Angeles&quot;">
+    </form>
+  </section>
 </body>
 </html>

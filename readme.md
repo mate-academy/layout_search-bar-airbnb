@@ -1,7 +1,8 @@
 # Search bar for Airbnb
 1. Replace `<your_account>` with your Github username in the links
-    - [DEMO LINK](https://<your_account>.github.io/layout_search-bar-airbnb/)
-    - [TEST REPORT LINK](https://<your_account>.github.io/layout_search-bar-airbnb/report/html_report/)
+    - [DEMO LINK](https://Andreas-Just.github.io/layout_search-bar-airbnb/)
+    - [TEST REPORT LINK](https://Andreas-Just.github.io/layout_search-bar-airbnb/report/html_report/)
+    - [PULL REQUEST](https://github.com/mate-academy/layout_search-bar-airbnb/pull/130)
 2. Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/)
 ___
 

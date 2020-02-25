@@ -13,7 +13,7 @@
   outline: none;
 
   color: #3d4e61;
-  font-family: Avenir;
+  font-family: Avenir, sans-serif;
 }
 
 .search__blocks:hover {
@@ -40,10 +40,13 @@
   margin: 20px 0;
 }
 
-.search__big-wrapper::before {
+.search__wrapper::before {
   content: "";
   position: absolute;
   background-image: url(images/Search.svg);
+}
+
+.search__big-wrapper::before {
   width: 19px;
   height: 19px;
   margin-top: 25px;
@@ -53,6 +56,7 @@
 .search__small {
   height: 42px;
   padding-left: 33px;
+
   font-size: 14px;
   line-height: 16px;
 }
@@ -62,9 +66,6 @@
 }
 
 .search__small-wrapper::before {
-  content: "";
-  position: absolute;
-  background-image: url(images/Search.svg);
   background-size: contain;
   width: 11px;
   height: 11px;

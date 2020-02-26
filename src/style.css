@@ -15,9 +15,6 @@
   box-shadow: rgba(61, 78, 97, 0.1);
   border-radius: 4px;
   margin-bottom: 20px;
-}
-
-.searchbar-large {
   height: 70px;
   padding-left: 62px;
 }
@@ -59,16 +56,13 @@
 .searchbar::placeholder {
   font-family: Avenir;
   color: #3d4e61;
+  font-size: 16px;
+  padding-top: 25px;
 }
 
 /* I can't understand why, but whatever number I set for padding-top
    for this elements - nothing changes. Because of this test is never
    passed for small searchbox's placeholder. */
-
-.searchbar-large::placeholder {
-  font-size: 16px;
-  padding-top: 25px;
-}
 
 .searchbar-small::placeholder {
   font-size: 14px;
@@ -91,9 +85,6 @@
   border-radius: 3px;
   box-shadow: unset;
   font-family: Avenir;
-}
-
-.searchbar-large:focus {
   font-weight: 700;
   font-size: 16px;
   padding-left: 62px;

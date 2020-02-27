@@ -1,14 +1,28 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Search bar airbnb</title>
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-  <h1>Search bar airbnb</h1>
+  <form action="#" method="POST" class="big__form" data-qa="big">
+    <label for="Big_one">
+      <input type="search" data-qa="keypress" placeholder="Try &#34Los Angeles&#34" id="Big_one"
+        class="search_area big_input">
+    </label>
+  </form>
+
+  <form action="#" method="POST" class="small__form" data-qa="small">
+    <label for="Small_one">
+      <input type="search" placeholder="Try &#34Los Angeles&#34" id="Small_one" class="search_area small_input">
+    </label>
+  </form>
 </body>
+
 </html>

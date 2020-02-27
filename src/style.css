@@ -32,16 +32,22 @@
   font-style: normal;
   font-size: 14px;
   line-height: 19px;
-  background: url(/images/Search.svg) no-repeat 13px 12px;
+  background-position: 13px 12px;
   background-size: 11px;
 }
 
-.search:focus,
+.search:focus {
+  background: url(/images/Search.svg) linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
 .small:focus {
   background: url(/images/Search.svg) linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
-.search:hover,
+.search:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
 .small:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }

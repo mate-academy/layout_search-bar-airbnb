@@ -12,9 +12,6 @@ body * {
 .search-box {
   position: relative;
   width: 100%;
-}
-
-.search-box-big {
   margin: 20px 0;
 }
 
@@ -38,16 +35,6 @@ body * {
   background-size: 19px 19px;
 }
 
-.search-box-small input[type="search"] {
-  padding-top: 10px;
-  padding-bottom: 11px;
-  padding-left: 33px;
-  line-height: 19px;
-  font-size: 14px;
-  background-position: top 14px left 12px;
-  background-size: 11px 11px;
-}
-
 .search-box input[type="search"]:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
@@ -60,7 +47,21 @@ body * {
   border-radius: 3px;
 }
 
-.search-box-small input[type="search"]:focus {
+.search-box--small {
+  margin: 0;
+}
+
+.search-box--small input[type="search"] {
+  padding-top: 10px;
+  padding-bottom: 11px;
+  padding-left: 33px;
+  line-height: 19px;
+  font-size: 14px;
+  background-position: top 14px left 12px;
+  background-size: 11px 11px;
+}
+
+.search-box--small input[type="search"]:focus {
   background-position: top 14px left 12px;
   background-size: 11px 11px;
 }

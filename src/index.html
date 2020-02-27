@@ -9,17 +9,13 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div class="big-block">
-    <form data-qa="big">
-      <img class="search-pic-big" src="images/Search.svg" alt="searh-picture">
-      <input class="big-search-bar" type="search" placeholder="Try &quot;Los Angeles&quot;" data-qa="keypress">
-    </form>
-  </div>
-  <div class="small-block">
-    <form data-qa="small">
-      <img class="search-pic-small" src="images/Search.svg" alt="searh-picture">
-      <input class="small-search-bar" type="search" placeholder="Try &quot;Los Angeles&quot;">
-    </form>
-  </div>
+  <form class="search" data-qa="big">
+    <img class="search-pic-big" src="images/Search.svg" alt="searh-picture">
+    <input class="search-bar" type="search" placeholder="Try &quot;Los Angeles&quot;" data-qa="keypress">
+  </form>
+  <form class="search" data-qa="small">
+    <img class="search-pic-small" src="images/Search.svg" alt="searh-picture">
+    <input type="search" class="search-bar search-bar--small" placeholder="Try &quot;Los Angeles&quot;">
+  </form>
 </body>
 </html>

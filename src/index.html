@@ -9,6 +9,15 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <h1>Search bar airbnb</h1>
+  <form data-qa="big">
+    <label>
+        <input class="search-input" type="search" id="big-input" data-qa="keypress" placeholder="Try &quot;Los Angeles&quot;">
+    </label>
+  </form>
+  <form data-qa="small">
+    <label>
+        <input class="search-input search-input__small" type="search" id="small-input" placeholder="Try &quot;Los Angeles&quot;">
+    </label>
+  </form>
 </body>
 </html>

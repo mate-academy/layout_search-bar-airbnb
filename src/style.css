@@ -4,7 +4,7 @@
   font-weight: 300;
 }
 
-.big_search_form_input {
+.search_form {
   height: 70px;
   width: 100%;
   padding-left: 62px;
@@ -21,11 +21,12 @@
   background-position: 25px 26px;
 }
 
-.big_search_form_input:hover {
+.search_form:hover,
+.small:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.big_search_form_input:focus {
+.search_form:focus {
   border-radius: 3px;
   font-weight: bold;
   background: url("./images/Search.svg") no-repeat;
@@ -33,34 +34,16 @@
   background-color: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
-.small_search_form_input {
+.small {
   height: 42px;
-  width: 100%;
   padding-left: 33px;
-  display: block;
-  border: 1px solid rgb(255, 231,237);
-  box-sizing: border-box;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  border-radius: 4px;
   font-size: 14px;
   line-height: 19px;
-  font-weight: 300;
-  color: rgb(61, 78,91);
-  margin: 20px 0;
-  background: url("./images/Search.svg") no-repeat;
   background-position: 13px 15px;
   background-size: 11px;
 }
 
-.small_search_form_input:hover {
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-}
-
-.small_search_form_input:focus {
-  border-radius: 3px;
-  font-weight: bold;
-  background: url("./images/Search.svg") no-repeat;
+.small:focus {
   background-position: 13px 15px;
   background-size: 11px;
-  background-color: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }

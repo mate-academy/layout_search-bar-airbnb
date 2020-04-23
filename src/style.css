@@ -1,15 +1,42 @@
 @font-face {
   font-family: Avenir;
   src: url(./fonts/Avenir-Book.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Black.ttf);
+  font-weight: 700;
 }
 
 * {
   box-sizing: border-box;
 }
 
-.search_big,
-.search_small {
+.search-position {
   margin-top: 20px;
+  position: relative;
+}
+
+.search_big::before {
+  content: "";
+  position: absolute;
+  background-image: url(./images/Search.svg);
+  width: 19px;
+  height: 19px;
+  top: 25px;
+  left: 26px;
+}
+
+.search_small::before {
+  content: "";
+  position: absolute;
+  background-image: url(./images/Search.svg);
+  background-size: contain;
+  width: 11px;
+  height: 11px;
+  top: 15px;
+  left: 13px;
 }
 
 .search {
@@ -19,8 +46,6 @@
   border-radius: 4px;
   font-family: Avenir;
   width: 100%;
-  background-image: url(./images/Search.svg);
-  background-repeat: no-repeat;
 }
 
 .search_big-input {
@@ -28,7 +53,6 @@
   padding-left: 62px;
   font-size: 16px;
   line-height: 22px;
-  background-position: 25px 26px;
 }
 
 .search_small-input {
@@ -36,8 +60,6 @@
   height: 42px;
   font-size: 14px;
   line-height: 19px;
-  background-position: 12px 14px;
-  background-size: 11px;
 }
 
 .search_big-input:hover,
@@ -49,12 +71,5 @@
   border-radius: 3px;
   font-weight: 700;
   outline: none;
-}
-
-.search_big-input:focus {
-  background: url(./images/Search.svg) no-repeat 25px 26px, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-}
-
-.search_small-input:focus {
-  background: url(./images/Search.svg) no-repeat 12px 14px /11px, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }

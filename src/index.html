@@ -11,25 +11,29 @@
 </head>
 <body>
   <div>
-    <form>
-      <div class="box">
-        <label for="big-search" data-qa="big">
-          <input type="search"
-          class="search_bar"
-          id="big-search"
-          name="big-seacrh"
-          data-qa="keypress"
-          placeholder="Try &quot;Los Angeles&quot;">
+    <form data-qa="big">
+      <div class="box_big">
+        <label for="big-search">
+          <input type="text"
+            class="search_bar big_search"
+            id="big-search"
+            name="big-seacrh"
+            data-qa="keypress"
+            placeholder="Try &quot;Los Angeles&quot;"
+          >
         </label>
       </div>
-      <div class="box">
-        <label for="small-search" data-qa="small">
+    </form>
+    <form data-qa="small">
+      <div class="box_small">
+        <label for="small-search">
           <input
-          type="search"
-          class="search_bar small_search"
-          id="small-search"
-          name="small-search"
-          placeholder="Try &#34;Los Angeles&#34;">
+            type="text"
+            class="search_bar small_search"
+            id="small-search"
+            name="small-search"
+            placeholder="Try &#34;Los Angeles&#34;"
+          >
         </label>
       </div>
     </form>

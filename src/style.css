@@ -8,27 +8,26 @@
   margin: 20px auto;
 }
 
-.search-bar-big::before {
+.search-bar::before {
   position: absolute;
+  content: "";
+  z-index: 1;
+  background-image: url(./images/Search.svg);
+  background-size: contain;
+}
+
+.search-bar-big::before {
   left: 26px;
   top: 25px;
-  z-index: 1;
-  content: "";
   width: 19px;
   height: 19px;
-  background-image: url(./images/Search.svg);
 }
 
 .search-bar-small::before {
-  position: absolute;
   left: 13px;
   top: 15px;
-  z-index: 1;
-  content: "";
   width: 11px;
   height: 11px;
-  background-image: url(./images/Search.svg);
-  background-size: contain;
 }
 
 .search-bar__input {

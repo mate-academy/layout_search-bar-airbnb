@@ -1,6 +1,6 @@
 # Search bar for Airbnb
 1. Replace `<your_account>` with your Github username in the links
-    - [DEMO LINK](https://hryshko-denys.github.io/layout_search-bar-airbnb/)
+    - [DEMO LINK](https://hryshko-denys.github.io/layout_search-bar-airbnb/) 
     - [TEST REPORT LINK](https://hryshko-denys.github.io/layout_search-bar-airbnb/report/html_report/)
 2. Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/)
 ___

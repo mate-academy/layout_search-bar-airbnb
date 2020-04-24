@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Avenir";
   src: url(./fonts/Avenir.ttc) format("truetype collection");
+  font-weight: 300;
 }
 
 body {
@@ -30,19 +31,9 @@ body {
   position: relative;
   height: 70px;
   padding-left: 62px;
-  padding-top: 1px;
-  margin-bottom: -3;
-  font-family: "Avenir";
-  font-weight: 900;
+  margin-bottom: -3px;
+  font-family: "Avenir Heavy";
   font-size: 16px;
-  color: #3d4e61;
-}
-
-.bigBox::placeholder {
-  font-family: "Avenir";
-  font-size: 16px;
-  /* font-style: "Book"; */
-  font-weight: 300;
   color: #3d4e61;
 }
 
@@ -50,32 +41,35 @@ body {
   position: relative;
   height: 42px;
   padding-left: 33px;
-  padding-top: 1px;
-  font-family: "Avenir";
-  font-weight: 900;
+  font-family: "Avenir Heavy";
+  font-size: 14px;
+  color: #3d4e61;
+}
+
+.bigBox::placeholder {
+  font-family: "Avenir Book";
+  font-size: 16px;
+  font-weight: 300;
   color: #3d4e61;
 }
 
 .smallBox::placeholder {
-  font-family: "Avenir";
+  font-family: "Avenir Book";
   font-size: 14px;
-  /* font-style: "Book"; */
   font-weight: 300;
   color: #3d4e61;
 }
 
 #searchIconL {
   position: relative;
-  display: inline-block;
-  top: -45px;
+  top: -42px;
   left: 26px;
 }
 
 #searchIconS {
+  position: relative;
   height: 11px;
   width: 11px;
-  position: relative;
-  display: inline-block;
   top: -30px;
   left: 13px;
 }

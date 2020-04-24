@@ -22,21 +22,30 @@
   >
 </head>
 <body>
-  <form action="#" data-qa="big">
+  <form
+    action="https://google.com/search"
+    method="GET"
+    data-qa="big"
+  >
     <div class="searchbar-lg-wrapper searchbar-wrapper">
       <input
         class="searchbar-lg searchbar"
         data-qa="keypress"
         type="text"
+        name="q"
         placeholder="Try &quot;Los Angeles&quot;"
       >
     </div>
   </form>
-  <form action="#" data-qa="small">
+  <form
+    action="https://google.com/search"
+    method="GET"
+    data-qa="small">
     <div class="searchbar-sm-wrapper searchbar-wrapper">
       <input
         class="searchbar-sm searchbar"
         type="text"
+        name="q"
         placeholder="Try &quot;Los Angeles&quot;"
       >
     </div>

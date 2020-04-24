@@ -5,9 +5,15 @@
     url("./fonts/Avenir-Book.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Avenir-Heavy";
+  src: url("./fonts/Avenir-Heavy.woff2") format("woff2"),
+    url("./fonts/Avenir-Heavy.woff") format("woff"),
+    url("./fonts/Avenir-Heavy.ttf") format("truetype");
+}
+
 .searchbar {
-  font-family: "Avenir-Book";
-  font-weight: 900;
+  font-family: "Avenir-Heavy";
   color: #3d4e61;
   caret-color: #3d4e61;
   box-sizing: border-box;
@@ -62,6 +68,7 @@
 }
 
 .searchbar::placeholder {
+  font-family: "Avenir-Book";
   font-weight: 100;
   color: #3d4e61;
   transition: ease 0.3s;

@@ -1,10 +1,15 @@
 @font-face {
   font-family: "Avenir";
-  src: url(fonts/Avenir-Book.ttf);
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir-book";
+  src: url("fonts/Avenir-Book.ttf");
 }
 
 .search-bar {
-  font-weight: bold;
   font-family: Avenir;
   line-height: 22px;
 
@@ -72,10 +77,10 @@
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
   box-shadow: none;
-  font-weight: bold;
   outline: none;
 }
 
 .search-bar::placeholder {
   font-weight: 300;
+  font-family: Avenir-book;
 }

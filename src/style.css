@@ -5,16 +5,19 @@
 
 .search-bar {
   font-weight: bold;
+  font-family: Avenir;
+  line-height: 22px;
+
   height: 100%;
   width: 100%;
-  font-family: Avenir;
+
   color: #3d4e61;
   background: #fff;
-  border: 1px solid #e1e7ed;
-  box-sizing: border-box;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border: 1px solid #e1e7ed;
   border-radius: 4px;
-  line-height: 22px;
+
+  box-sizing: border-box;
 }
 
 .search-bar-big {
@@ -29,37 +32,36 @@
 
 .search-bar-wrapper {
   margin: 20px auto;
+  position: relative;
 }
 
 .big-wrapper {
   height: 70px;
-  position: relative;
 }
 
 .small-wrapper {
   height: 42px;
-  position: relative;
+}
+
+.search-bar-wrapper::before {
+  content: "";
+  position: absolute;
+  background-image: url(./images/Search.svg);
+  background-size: contain;
 }
 
 .big-wrapper::before {
-  position: absolute;
-  left: 26px;
-  top: 25px;
-  content: "";
-  background-image: url(./images/Search.svg);
   width: 19px;
   height: 19px;
+  left: 26px;
+  top: 25px;
 }
 
 .small-wrapper::before {
-  content: "";
-  background-image: url(./images/Search.svg);
   height: 11px;
   width: 11px;
   left: 13px;
   top: 15px;
-  position: absolute;
-  background-size: contain;
 }
 
 .search-bar:hover {
@@ -71,6 +73,7 @@
   border-radius: 3px;
   box-shadow: none;
   font-weight: bold;
+  outline: none;
 }
 
 .search-bar::placeholder {

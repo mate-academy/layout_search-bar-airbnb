@@ -43,9 +43,30 @@
   margin: 20px 0;
 }
 
+.big-container::before {
+  content: "";
+  background-image: url(./images/Search.svg);
+  position: absolute;
+  top: 25px;
+  left: 26px;
+  height: 18px;
+  width: 18px;
+}
+
 .small-container {
   position: relative;
   height: 42px;
+}
+
+.small-container::before {
+  content: "";
+  background-image: url(./images/Search.svg);
+  background-size: 11px 11px;
+  position: absolute;
+  height: 11px;
+  width: 11px;
+  top: 16px;
+  left: 13px;
 }
 
 .big-input {
@@ -56,18 +77,4 @@
 .small-input {
   padding-left: 33px;
   font-size: 14px;
-}
-
-.big-logo {
-  position: absolute;
-  top: 25px;
-  left: 26px;
-}
-
-.small-logo {
-  position: absolute;
-  height: 11px;
-  width: 11px;
-  top: 16px;
-  left: 13px;
 }

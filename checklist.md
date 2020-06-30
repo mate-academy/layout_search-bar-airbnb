@@ -1,0 +1,7 @@
+- check your work using basic recommendations [here](https://github.com/mate-academy/layout_colored-blocks/blob/master/checklist.md)
+- about design: if you see a cursor in the input, that means styles are for entered text by the user (not only on focus action)
+- if you have 3 or more attributes, place each one on the new line (including the first one)
+- fonts are usually written for `body` tag and inherited by others
+- we preferably use classes for styling, not tags, ids, attributes or something else
+- don't increase specificity of selectors [about selectors specificity](https://www.w3schools.com/css/css_specificity.asp)
+- 

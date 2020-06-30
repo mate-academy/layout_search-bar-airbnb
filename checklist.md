@@ -4,4 +4,3 @@
 - fonts are usually written for `body` tag and inherited by others
 - we preferably use classes for styling, not tags, ids, attributes or something else
 - don't increase specificity of selectors [about selectors specificity](https://www.w3schools.com/css/css_specificity.asp)
-- 

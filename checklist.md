@@ -3,5 +3,5 @@
 - if you have 3 or more attributes, place each one on the new line (including the first one)
 - fonts are usually written for `body` tag and inherited by others
 - we preferably use classes for styling, not tags, ids, attributes or something else
-- don't increase specificity of selectors [about selectors specificity](https://www.w3schools.com/css/css_specificity.asp)
+- don't increase specificity of selectors ([about selectors specificity](https://www.w3schools.com/css/css_specificity.asp))
 - if you want `box-sizing: border-box` property, use it with `*`-selector because all elements need it so that you don't have to calculate `width - border`

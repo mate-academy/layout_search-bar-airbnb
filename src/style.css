@@ -54,6 +54,10 @@ input:focus {
   font-size: 16px;
 }
 
+.big_input:focus::placeholder {
+  font-weight: normal;
+}
+
 .small_container::before {
   content: "";
   display: block;
@@ -75,4 +79,8 @@ input:focus {
 
 .small_input::placeholder {
   color: #3d4e61;
+}
+
+.small_input:focus::placeholder {
+  font-weight: normal;
 }

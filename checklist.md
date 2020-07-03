@@ -6,3 +6,4 @@
 - we preferably use classes for styling, not tags, ids, attributes or something else
 - don't increase specificity of selectors ([about selectors specificity](https://www.w3schools.com/css/css_specificity.asp))
 - if you want `box-sizing: border-box` property, use it with `*`-selector because all elements need it so that you don't have to calculate `width - border`
+- don't use word `image` in alt ([check here why](https://moz.com/learn/seo/alt-text))

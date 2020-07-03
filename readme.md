@@ -6,15 +6,15 @@
 ___
 
 ## The task
-Create HTML page with two search bars as designed in [the mockup](https://www.figma.com/file/kf3AWulK9elrNk34wtpjPw/Airbnb-Search-bar?node-id=0%3A1).
-This search bar will be part of big project.
+Create an HTML page with two search bars as designed in [the mockup](https://www.figma.com/file/JqxzbiyVbIV30CeNi0t006/Airbnb-Search-bar-v2?node-id=0%3A1).
+This search bar will be the part of a big project.
 
 ### Common mistakes
 - Add **ALL** `data-qa` attributes required in the task
 - Do not use tabs. Use 2 spaces for indentation.
 - Don't use repeated styles.
-- Text `Try "Los Angeles"` in mockup is a placeholder.
-- Check font styles. Use [fonts](https://github.com/potyt/fonts/tree/master/macfonts/Avenir)
+- Text `Try "Los Angeles"` in the mockup is a placeholder.
+- Check font styles. Use [fonts](https://fonts.google.com/specimen/Poppins?query=popp) Poppins
 
 ### Requirements:
 - use images from [src/images](src/images)

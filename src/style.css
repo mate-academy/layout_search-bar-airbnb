@@ -19,6 +19,10 @@ div {
   margin: 20px 0;
 }
 
+::placeholder {
+  font-weight: normal;
+}
+
 .container {
   width: 100%;
   background: #fff;
@@ -27,6 +31,8 @@ div {
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
   font-family: inherit;
+  font-size: inherit;
+  font-weight: bold;
 }
 
 .large-size {
@@ -47,12 +53,17 @@ div {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
+:focus::placeholder {
+  font-weight: bold;
+}
+
 .container:focus {
   box-shadow: rgba(61, 78, 97, 0.1);
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
   outline: none;
   font-weight: bold;
+  font-family: inherit;
 }
 
 .search {

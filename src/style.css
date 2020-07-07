@@ -23,36 +23,23 @@ body {
 
 .search-bar {
   margin-top: 20px;
-}
-
-.big-form {
   width: 100%;
 }
 
-.small-form {
-  width: 100%;
-}
-
-.search-label {
+.label {
+  height: 70px;
   position: relative;
   display: block;
 }
 
-.big-label {
-  height: 70px;
-}
-
-.small-label {
+.label--small {
   height: 42px;
 }
 
-.search-label::after {
+.label::after {
   content: "";
   display: block;
   position: absolute;
-}
-
-.big-label::after {
   background-image: url("./images/Search.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -62,10 +49,7 @@ body {
   left: 26px;
 }
 
-.small-label::after {
-  background-image: url("./images/Search.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
+.label--small::after {
   width: 11px;
   height: 11px;
   top: 15px;
@@ -81,39 +65,33 @@ body {
   font-weight: 600;
   font-family: inherit;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-}
-
-.big-input {
   padding: 0 0 0 62px;
   font-size: 16px;
   line-height: 22px;
 }
 
-.small-input {
+.search-input--small {
   padding: 0 0 0 33px;
   font-size: 14px;
   line-height: 19px;
 }
 
-.big-input:hover,
-.small-input:hover {
+.search-input:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.big-input:focus,
-.small-input:focus {
+.search-input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   outline: none;
 }
 
-.big-input::placeholder {
+.search-input::placeholder {
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
 }
 
-.small-input::placeholder {
+.search-input--small::placeholder {
   font-size: 14px;
-  line-height: 22px;
-  font-weight: normal;
+  line-height: 19px;
 }

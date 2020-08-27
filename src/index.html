@@ -12,28 +12,45 @@
   </head>
   <body>
 
-    <form
-      action="api/feedback"
-      class="form"
-      data-qa="big">
-      <input
-        type="text"
-        name="search"
-        placeholder="Try &#34;Los Angeles&#34;"
-        class="big-item"
-        data-qa="keypress">
-    </form>
+    <div
+      class="form" data-qa="big">
+      <label for="search">
+        <img
+          src="images/Search.svg"
+          alt="search"
+          class="big-search-img search-img"
+        >
 
-    <form
-      action="api/feedback"
-      class="form"
-      data-qa="small">
-      <input
-        type="text"
-        name="search"
-        placeholder="Try &#34;Los Angeles&#34;"
-        class="big-item small">
-    </form>
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Try &#34;Los Angeles&#34;"
+          class="big-item item"
+          data-qa="keypress"
+        >
+      </label>
+
+    </div>
+
+    <div
+      class="form" data-qa="small">
+      <label for="search-small">
+        <img
+          src="images/Search.svg"
+          alt="search"
+          class="small-search-img search-img"
+        >
+
+        <input
+          type="text"
+          name="search"
+          placeholder="Try &#34;Los Angeles&#34;"
+          class="small-item item"
+          id="search-small"
+        >
+      </label>
+    </div>
 
   </body>
 </html>

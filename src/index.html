@@ -12,21 +12,30 @@
   </head>
   <body>
     <div class="wrapper">
-      <label for="big-search"></label>
-      <input
-        type="text"
-        id="big-search"
-        autocomplete="off"
-        placeholder="Try &quot;Los Angeles&quot;"
-      >
+      <form action="#" data-qa="big">
+        <div class="big-search-container">
+          <input
+          type="text"
+          class="big-search"
+          autocomplete="off"
+          placeholder="Try &quot;Los Angeles&quot;"
+          data-qa="keypress"
+          >
+          <!--<img class="big-icon" src="images/Search.svg" alt="">-->
+        </div>
+      </form>
 
-      <label for="small-search"></label>
-      <input
-        type="text"
-        id="small-search"
-        autocomplete="off"
-        placeholder="Try &quot;Los Angeles&quot;"
-      >
+      <form action="#" data-qa="small">
+        <div class="small-search-container">
+          <input
+            type="text"
+            class="small-search"
+            autocomplete="off"
+            placeholder="Try &quot;Los Angeles&quot;"
+          >
+          <!--<img class="small-icon" src="images/Search.svg" alt="">-->
+        </div>
+      </form>
     </div>
   </body>
 </html>

@@ -20,6 +20,11 @@ body {
   margin-top: 20px;
 }
 
+@font-face {
+  font-family: "Avenir";
+  src: url(fonts/Avenir-Book.ttf);
+}
+
 .search__bar {
   width: 100%;
   border: 1px solid #e1e7ed;
@@ -27,6 +32,7 @@ body {
   border-radius: 4px;
   transition: 0.3s;
   font-family: inherit;
+  color: #3d4e61;
 }
 
 .search__bar:hover {
@@ -36,18 +42,21 @@ body {
 .search__bar:focus {
   border-radius: 3px;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  font-weight: 900;
 }
 
 .search__bar.big__bar {
   padding: 24px 62px;
   height: 70px;
-  font-size: 1rem;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .search__bar.small__bar {
-  height: 42px;
   padding: 12px 33px;
-  font-size: 0.8rem;
+  height: 42px;
+  font-size: 14px;
+  line-height: 19px;
 }
 
 .search-icon {

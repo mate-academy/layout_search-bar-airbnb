@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Avenir";
-  src: url("../src/fonts/Avenir-Book.ttf") format("truetype");
+  font-family: Avenir;
+  src: url("fonts/Avenir-Book.ttf");
 }
 
 * ,
@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: "Avenir", sans-serif;
+  font-family: Avenir, sans-serif;
   font-weight: 300;
 }
 
@@ -35,6 +35,7 @@ body {
   font-size: 16px;
   color: #3d4e61;
   line-height: 22px;
+  outline: none;
 }
 
 .big-icon {
@@ -49,9 +50,7 @@ body {
 }
 
 .big-input:focus {
-  outline: none;
   background: linear-gradient(180deg, #ffff 0%, #f6f6f7 100%);
-  font-weight: bold;
 }
 
 /* small box */
@@ -86,5 +85,4 @@ body {
 .small-input:focus {
   outline: none;
   background: linear-gradient(180deg, #ffff 0%, #f6f6f7 100%);
-  font-weight: bold;
 }

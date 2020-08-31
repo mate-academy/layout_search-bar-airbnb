@@ -8,34 +8,39 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: Avenir, sans-serif;
+}
+
 .box {
   margin-top: 20px;
   position: relative;
 }
 
-.box-big::before {
+.box::before {
   content: "";
-  background-image: url(images/Search.svg);
+  background-image: url(./images/Search.svg);
   position: absolute;
-  width: 19px;
+}
+
+.box-big::before {
+  background-size: 19px 19px;
   height: 19px;
+  width: 19px;
   left: 26px;
   top: 25px;
 }
 
 .box-small::before {
-  content: "";
-  background-image: url(images/Search.svg);
   background-size: 11px 11px;
   width: 11px;
   height: 11px;
-  position: absolute;
   left: 13px;
   top: 15px;
 }
 
 .search {
-  font-family: Avenir, sans-serif;
+  font-family: inherit;
   width: 100%;
   color: #3d4e61;
   border: 1px solid #e1e7ed;

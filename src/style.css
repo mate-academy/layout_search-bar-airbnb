@@ -6,14 +6,19 @@
 @font-face {
   /* втикаємо файл шрифта локально */
   font-family: Avenir;
-  src: url(/src/fonts/Avenir-Book.ttf);
+  src: url(fonts/Avenir-Book.ttf);
+  /* font-weight: bold; */
 }
 
-body {
-  /* спробуєм наслідувати шрифт з боді а не з хтмл-у */
+html {
   font-family: Avenir, sans-serif;
   font-weight: 300px;
 }
+
+/* body {
+  font-family: Avenir, sans-serif;
+  font-weight: 300px;
+} */
 
 .both-blocks {
   /*  div-и для обидвох серчбарів*/
@@ -54,8 +59,8 @@ body {
   height: 70px;
   font-size: 16px;
   line-height: 22px;
-  padding-left: 60px;
-  
+  padding-left: 62px;
+  font-family: inherit sans-serif;
 }
 
 .bar-big {
@@ -72,8 +77,8 @@ body {
   height: 42px;
   font-size: 14px;
   line-height: 19px;
-  padding-left: 35px;
-  
+  padding-left: 33px;
+  font-family: inherit sans-serif;
 }
 
 .bar-small {
@@ -81,9 +86,12 @@ body {
   width: 11px;
   height: 11px;
   position: absolute;
-  left: 3.04%;
-  right: 93.38%;
-  top: 35.71%;
-  bottom: 38.1%;
-  
+  left: 13px;
+  top: 15px;
+  bottom: 16px;
+}
+
+::placeholder {
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
 }

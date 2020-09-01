@@ -8,9 +8,56 @@
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar airbnb</title>
+    <link rel="icon" href="https://i.imgur.com/9IvZHDK.png">
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+
+    <form
+      action=""
+      name="big-search"
+      class="form"
+      method="POST"
+      data-qa="big"
+    >
+      <label for="big-s-input" class="container">
+        <img
+          src="./images/Search.svg"
+          class="search-img-big"
+          alt=""
+        >
+        <input
+          type="text"
+          class="main-search big-s-input"
+          name="big-s-input"
+          id="big-s-input"
+          placeholder="Try &quot;Los Angeles&quot;"
+          data-qa="keypress"
+        >
+      </label>
+    </form>
+
+    <form
+      action=""
+      name="small-search"
+      class="form"
+      method="POST"
+      data-qa="small"
+    >
+      <label for="small-s-input" class="container">
+        <img
+          src="./images/Search.svg"
+          class="search-img-small"
+          alt=""
+        >
+        <input
+          type="text"
+          class="main-search small-s-input"
+          name="small-s-input"
+          id="small-s-input"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
+    </form>
   </body>
 </html>

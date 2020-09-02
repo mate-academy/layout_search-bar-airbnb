@@ -3,11 +3,10 @@
   src: url(../fonts/macfonts/Avenir/Avenir-Book.ttf);
 }
 
-body {
-  font-family: sans-serif, Avenir;
+html {
+  font-family: Avenir, sans-serif;
   font-weight: 300;
   color: #e5e5e5;
-  outline: none;
 }
 
 * {
@@ -16,16 +15,10 @@ body {
 
 .item {
   position: relative;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .search {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-
   width: 100%;
   border: 1px solid #e1e7ed;
   border-radius: 4px;
@@ -52,14 +45,12 @@ body {
 }
 
 .big-search {
-  top: 10px;
   height: 70px;
   font-size: 16px;
   line-height: 22px;
 }
 
 .small-search {
-  top: 100px;
   height: 42px;
   padding-left: 33px;
   font-size: 14px;
@@ -67,19 +58,19 @@ body {
 
 .big-image {
   position: absolute;
-  top: 35px;
+  top: 30px;
   left: 26px;
   z-index: 1;
 }
 
 .small-image {
   position: absolute;
-  top: 115px;
+  top: 15px;
   left: 13px;
   width: 11px;
   z-index: 1;
 }
 
-::placeholder {
+.small-search::placeholder {
   color: #3d4e61;
 }

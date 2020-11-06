@@ -14,7 +14,7 @@ This search bar will be part of big project.
 - Do not use tabs. Use 2 spaces for indentation.
 - Don't use repeated styles.
 - Text `Try "Los Angeles"` in mockup is a placeholder.
-- Check font styles. Use [fonts](https://github.com/potyt/fonts/tree/master/macfonts/Avenir)
+- Check font styles. Use fonts from `fonts` folder.
 
 ### Requirements:
 - use images from [src/images](src/images)

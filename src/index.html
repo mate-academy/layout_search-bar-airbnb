@@ -9,28 +9,30 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form class="form" data-qa="big">
-      <img
-        class="icon--large"
-        src="images/Search.svg"
-        alt="search icon">
-      <input
-        data-qa="keypress"
-        class="search search--large"
-        type="search"
-        placeholder="Try &quot;Los Angeles&quot;"
-        onfocus="this.placeholder=''">
-    </form>
-    <form class="form" data-qa="small">
-      <img
-        class="icon--small"
-        src="images/Search.svg"
-        alt="search icon">
-      <input
-        class="search search--small"
-        type="search"
-        placeholder="Try &quot;Los Angeles&quot;"
-        onfocus="this.placeholder=''">
-    </form>
+    <div class="form">
+      <form class="form__search form--large" data-qa="big">
+        <img
+          class="icon--large"
+          src="images/Search.svg"
+          alt="search icon">
+        <input
+          data-qa="keypress"
+          class="search search--large"
+          type="search"
+          placeholder="Try &quot;Los Angeles&quot;"
+          onfocus="this.placeholder=''">
+      </form>
+      <form class="form__search form--small" data-qa="small">
+        <img
+          class="icon--small"
+          src="images/Search.svg"
+          alt="search icon">
+        <input
+          class="search search--small"
+          type="search"
+          placeholder="Try &quot;Los Angeles&quot;"
+          onfocus="this.placeholder=''">
+      </form>
+    </div>
   </body>
 </html>

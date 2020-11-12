@@ -10,37 +10,50 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div class="container" data-qa="big">
-      <img
-        class="big-magnifier image"
-        src="images/Search.svg"
-        alt="magnifier"
+    <div class="container" >
+      <form
+        action="#"
+        method="GET"
+        data-qa="big"
+        class="search-form"
       >
+        <img
+          class="big-magnifier image"
+          src="images/Search.svg"
+          alt="magnifier"
+        >
 
-      <input
-        type="text"
-        class="large input"
-        name="large"
-        id="large"
-        placeholder="Try &quot;Los Angeles&quot;"
-        data-qa="keypress"
-      >
+        <input
+          type="text"
+          class="large input"
+          name="large"
+          id="large"
+          placeholder="Try &quot;Los Angeles&quot;"
+          data-qa="keypress"
+        >
+      </form>
     </div>
 
-    <div class="container" data-qa="small">
-      <img
-        class="small-magnifier image"
-        src="images/Search.svg"
-        alt="magnifier"
+    <div class="container">
+      <form
+        action="#"
+        class="search-form"
+        data-qa="small"
       >
+        <img
+          class="small-magnifier image"
+          src="images/Search.svg"
+          alt="magnifier"
+        >
 
-      <input
-        type="text"
-        class="small input"
-        name="small"
-        id="small"
-        placeholder="Try &quot;Los Angeles&quot;"
-      >
+        <input
+          type="text"
+          class="small input"
+          name="small"
+          id="small"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </form>
     </div>
   </body>
 </html>

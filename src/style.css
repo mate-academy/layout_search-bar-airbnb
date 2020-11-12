@@ -42,30 +42,6 @@ body {
   display: block;
 }
 
-.big-searchbar::after {
-  position: absolute;
-  background-image: url("/images/Search.svg");
-  background-repeat: no-repeat;
-  top: 25px;
-  left: 26px;
-  background-size: contain;
-  width: 19px;
-  height: 19px;
-  content: "";
-}
-
-.small-searchbar::after {
-  position: absolute;
-  background-image: url("/images/Search.svg");
-  background-repeat: no-repeat;
-  top: 15px;
-  left: 13px;
-  background-size: contain;
-  width: 11px;
-  height: 11px;
-  content: "";
-}
-
 .smaller-bar {
   height: 42px;
   padding-left: 33px;
@@ -74,6 +50,22 @@ body {
 
 .smaller-bar:focus {
   padding-left: 33px;
+}
+
+.big-searchbar-icon {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 19px;
+  height: 19px;
+}
+
+.small-searchbar-icon {
+  position: absolute;
+  top: 15px;
+  left: 13px;
+  width: 11px;
+  height: 11px;
 }
 
 @font-face {

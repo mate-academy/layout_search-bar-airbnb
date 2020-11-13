@@ -37,7 +37,8 @@ input {
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
   margin-top: 20px;
-  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .big-bar {
@@ -47,17 +48,13 @@ input {
 .big-button {
   width: 19px;
   height: 19px;
-  position: absolute;
-  top: 24px;
-  left: 25px;
+  margin-left: 26px;
+  margin-right: 17px;
 }
 
 .big-input {
   line-height: 22px;
   font-size: 16px;
-  position: absolute;
-  left: 62px;
-  top: 23px;
 }
 
 .small-bar {
@@ -67,17 +64,13 @@ input {
 .small-button {
   width: 11px;
   height: 11px;
-  position: absolute;
-  top: 13px;
-  left: 12px;
+  margin-left: 13px;
+  margin-right: 9px;
 }
 
 .small-input {
   line-height: 20px;
   font-size: 14px;
-  position: absolute;
-  top: 10px;
-  left: 33px;
 }
 
 .search-bar:hover {
@@ -95,5 +88,6 @@ input {
 
 .general-for-input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  font-weight: 900;
   /* change style of the search input, so that it looks even with the form*/
 }

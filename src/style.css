@@ -36,7 +36,7 @@ body {
   padding: 24px 0;
   padding-left: 62px;
 
-  font-family: inherit;
+  font-family: "Avenir-Heavy", sans-serif;
   font-weight: inherit;
   font-size: 16px;
 
@@ -56,25 +56,36 @@ body {
 }
 
 .large-search-button {
-  position: absolute;
   margin-top: 25px;
   margin-left: 26px;
-  padding: 0;
-
-  background-color: #fff;
-  cursor: pointer;
+  height: 19px;
+  width: 19px;
 }
 
 .large-search-button,
-.large-image {
-  height: 19px;
-  width: 19px;
+.small-search-button {
+  position: absolute;
+  padding: 0;
+  background-color: #fff;
+  cursor: pointer;
 }
 
 .small-form {
   position: relative;
   height: 42px;
   margin: 20px 0;
+}
+
+.small-search-button {
+  margin-top: 15px;
+  margin-left: 13px;
+}
+
+.small-search-button,
+.small-image {
+  display: block;
+  width: 11px;
+  height: 11px;
 }
 
 .small-search-button,
@@ -89,7 +100,7 @@ body {
   padding: 11px 0;
   padding-left: 33px;
 
-  font-family: inherit;
+  font-family: "Avenir-Heavy", sans-serif;
   font-weight: inherit;
   font-size: 14px;
 
@@ -108,18 +119,7 @@ body {
   border-radius: 3px;
 }
 
-.small-search-button {
-  position: absolute;
-  padding: 0;
-  margin-top: 14px;
-  margin-left: 13px;
-
-  background-color: #fff;
-  cursor: pointer;
-}
-
-.small-image,
-.small-search-button {
-  width: 11px;
-  height: 11px;
+.large-input-line::placeholder,
+.small-input-line::placeholder {
+  font-family: "Avenir-Book", sans-serif;
 }

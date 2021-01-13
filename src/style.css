@@ -1,13 +1,15 @@
 @font-face {
   font-family: "Avenir";
   font-weight: 300;
-  src: url("./fonts/Avenir-Book.ttf");
+  font-style: normal;
+  src: url("./fonts/Avenir-Book.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Avenir";
   font-weight: 600;
-  src: url("./fonts/Avenir-Heavy.ttf");
+  font-style: normal;
+  src: url("./fonts/Avenir-Heavy.ttf") format("truetype");
 }
 
 * {
@@ -70,4 +72,10 @@ body {
   box-sizing: border-box;
   border-radius: 3px;
   outline: none;
+}
+
+.input__search::placeholder {
+  font-family: "Avenir", Helvetica, sans-serif;
+  font-weight: inherit;
+  color: #3d4e61;
 }

@@ -1,17 +1,21 @@
 @font-face {
-  font-family: Avenir;
+  font-family: Avenir-Book;
   src: url(./fonts/Avenir-Book.ttf);
 }
 
+@font-face {
+  font-family: Avenir-Heavy;
+  src: url(./fonts/Avenir-Heavy.ttf);
+}
+
 * {
-  box-sizing: border-box;
-  font-family: Avenir, "Roboto", sans-serif;
+  font-family: Avenir-Heavy, "Roboto", sans-serif;
   font-weight: 300;
+  box-sizing: border-box;
 }
 
 .big_search,
 .small_search {
-  display: block;
   width: 100%;
   color: #3d4e61;
   background-color: #fff;
@@ -21,15 +25,14 @@
 
 .big_search {
   height: 70px;
-  margin: 20px 0;
-  padding: 24px 0 24px 62px;
+  padding-left: 62px;
   font-size: 16px;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
 }
 
 .small_search {
   height: 42px;
-  padding: 11px 0 11px 33px;
+  padding-left: 33px;
   font-size: 14px;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
 }
@@ -52,10 +55,12 @@
 .small_search::placeholder,
 .big_search::placeholder {
   color: #3d4e61;
+  font-family: Avenir-Book, "Roboto", sans-serif;
 }
 
 .search {
   position: relative;
+  margin: 20px 0;
 }
 
 .small_search_icon,

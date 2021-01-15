@@ -1,0 +1,66 @@
+
+@font-face {
+  font-family: "Avenir Book";
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: "Avenir Heavy";
+  src: url("fonts/Avenir-Heavy.ttf");
+}
+
+/* body {
+  font-size: 16px;
+  padding: 0;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+.input {
+  font-family: "Avenir Heavy", sans-serif;
+  width: 100%;
+}
+
+.big-bar {
+  height: 70px;
+  /* position: relative; */
+  padding-left: 62px;
+  margin-bottom: 20px;
+
+  line-height: 70px;
+  font-size: 16px;
+}
+
+.small-bar {
+  height: 30px;
+  padding-left: 30px;
+}
+
+.input::placeholder {
+  font-family: "Avenir Book", sans-serif;
+  font-weight: inherit;
+}
+
+.container {
+  position: relative;
+}
+
+.big-icon {
+  display: block;
+  /* background-image: url("images/Search.svg") no-repeat; */
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  /* vertical-align: middle; */
+
+}
+
+.small-icon {
+  display: inline-block;
+  background-image: url("images/Search.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}

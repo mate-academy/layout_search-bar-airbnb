@@ -9,13 +9,14 @@
   src: url("fonts/Avenir-Heavy.ttf");
 }
 
-/* body {
-  font-size: 16px;
-  padding: 0;
-} */
-
 * {
   box-sizing: border-box;
+}
+
+.container {
+  /* padding-top: 12px; */
+  position: relative;
+  /* margin-top: 20px; */
 }
 
 .input {
@@ -25,42 +26,64 @@
 
 .big-bar {
   height: 70px;
-  /* position: relative; */
+  /* position: absolute; */
   padding-left: 62px;
-  margin-bottom: 20px;
-
+  margin-bottom: 23px;
   line-height: 70px;
   font-size: 16px;
+  
+  background-color: #fff;
+  border: 1px solid #e1e7ed;
+  box-sizing: border-box;
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
 }
 
 .small-bar {
-  height: 30px;
-  padding-left: 30px;
+  height: 42px;
+  padding-left: 33px;
+  font-size: 14px;
+  line-height: 19px;
+  /* position: absolute; */
+  background-color: #fff;
+  border: 1px solid #e1e7ed;
+  box-sizing: border-box;
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
 }
 
 .input::placeholder {
   font-family: "Avenir Book", sans-serif;
   font-weight: inherit;
-}
-
-.container {
-  position: relative;
+  position: absolute;
 }
 
 .big-icon {
   display: block;
-  /* background-image: url("images/Search.svg") no-repeat; */
-  width: 30px;
-  height: 30px;
+  width: 19px;
+  height: 19px;
   position: absolute;
-  /* vertical-align: middle; */
-
+  left: 26px;
+  top: 25px;
+  /* border: 1px solid #687c94; */
+  box-sizing: border-box;
 }
 
 .small-icon {
-  display: inline-block;
-  background-image: url("images/Search.svg") no-repeat;
-  width: 20px;
-  height: 20px;
+  display: block;
+  width: 11px;
+  height: 11px;
   position: absolute;
+  top: 15px;
+  left: 13px;
+}
+
+.big-bar:hover,
+.small-bar:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.big-bar:focus,
+.small-bar:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }

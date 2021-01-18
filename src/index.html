@@ -21,16 +21,22 @@
      action="#"
      method="GET"
      name="search-big"
+     data-qa="big"
     >
-      <div class="search">
-        <span class="icon-search-big"></span>
+      <label for="big">
+        <img
+          class="icon-search-big"
+          src="./images/Search.svg"
+          alt="lens"
+        >
         <input
           class="input-search-big"
-      	  type="search"
-      	  data-qa="keypress"
+          id="big"
+          type="search"
+          data-qa="keypress"
           placeholder="Try &quot;Los Angeles&quot;"
-      	>
-      </div>
+        >
+      </label>
     </form>
     <form
       action="#"
@@ -38,14 +44,20 @@
       method="GET"
       name="search-small"
     >
-      <div class="search">
-        <span class="icon-search-small"></span>
+      <label for="small">
+        <img
+        class="icon-search-small"
+        src="./images/Search.svg"
+        alt="lens"
+    >
         <input
           class="input-search-small"
+          id="small"
           type="search"
           data-qa="small"
           placeholder="Try &quot;Los Angeles&quot;"
         >
+      </label>
       </div>
     </form>
   </body>

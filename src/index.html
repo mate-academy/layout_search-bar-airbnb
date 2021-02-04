@@ -11,29 +11,23 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form class="big" data-qa="big">
-      <img
-        src="images/Search.svg"
-        alt="search"
-        class="big__search-image"
-      >
-      <input
-        type="text"
+    <form action="">
+      <div class="big" data-qa="big">
+        <input
+        type="search"
         placeholder="Try “Los Angeles”"
-        class="big__search-input"
-      >
-    </form>
-    <form class="small" data-qa="small">
-      <img
-        src="images/Search.svg"
-        alt="search"
-        class="small__search-image"
-      >
-      <input
-        type="text"
+        class="big-input input"
+        data-qa="keypress"
+        >
+      </div>
+      <div class="small" data-qa="small">
+        <input
+        type="search"
         placeholder="Try “Los Angeles”"
-        class="small__search-input"
-      >
+        class="small-input input"
+        data-qa="keypress"
+        >
+      </div>
     </form>
   </body>
 </html>

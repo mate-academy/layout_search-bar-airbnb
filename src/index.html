@@ -11,42 +11,45 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="#"
+    <form
+      action="#"
       method="GET"
       data-qa="big"
-      class="bigForm"
+      class="form form--big"
     >
       <img
         src="images/Search.svg"
         alt="search-img"
         width="19"
         height="19"
+        class="form__img form__img--big"
       >
       <input
         type="search"
         name="big-search"
         data-qa="keypress"
         placeholder="Try &#34;Los Angeles&#34;"
-        class="search bigSearch"
+        class="form__input form__input--big"
       >
     </form>
     <form
       action="#"
       method="GET"
       data-qa="small"
-      class="smallForm"
+      class="form form--small"
     >
       <img
         src="images/Search.svg"
         alt="search-img"
         width="11"
         height="11"
+        class="form__img form__img--small"
       >
       <input
         type="search"
         name="small-search"
         placeholder="Try &#34;Los Angeles&#34;"
-        class="search smallSearch"
+        class="form__input form__input--small"
       >
     </form>
   </body>

@@ -3,6 +3,10 @@
   src: url("./fonts/Avenir-Book.ttf");
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Avenir, Arial, sans-serif;
 }
@@ -27,7 +31,6 @@ body {
 }
 
 .big__input {
-  box-sizing: border-box;
   width: 100%;
   height: 70px;
   border-radius: 4px;
@@ -48,7 +51,6 @@ body {
 }
 
 .second__input {
-  box-sizing: border-box;
   width: 100%;
   height: 42px;
   border-radius: 4px;
@@ -63,7 +65,7 @@ body {
 .big__input::placeholder,
 .second__input::placeholder {
   font-weight: 300;
-  font-family: Avenir, Arial, sans-serif;
+  font-family: inherit;
 }
 
 .second__input::placeholder {

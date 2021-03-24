@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div class="big_search_bar">
+    <div class="big_search_bar" data-qa="big">
       <img
         class="icon_big_search_bar"
         src="images/Search.svg"
@@ -18,20 +18,20 @@
       >
       <input
         class="input_big_bar"
-        data-qa="big"
+        data-qa="keypress"
         type="search"
         placeholder="Try &quot;Los Angeles&quot;"
       >
       </label>
     </div>
 
-    <div class="small_search_bar">
-      <img src="images/Search.svg"
+    <div class="small_search_bar" data-qa="small">
+      <img
         class="icon_small_search_bar"
+        src="images/Search.svg"
         alt="small_search"
       >
       <input
-        data-qa="small"
         type="search"
         class="input_small_bar"
         placeholder="Try &quot;Los Angeles&quot;"

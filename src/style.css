@@ -29,7 +29,7 @@ body * {
   box-sizing: border-box;
 }
 
-/* Make onfucus and default class input invisible */
+/* Visibility hidden snippet */
 .form .input.focus,
 .form .input.default:focus,
 .form:focus-within .input.default {
@@ -40,6 +40,13 @@ body * {
   position: absolute;
   border: 0;
   overflow: hidden;
+}
+
+/* Special styles for focus class inputs when their active */
+.form .input.default:focus + .focus,
+.form .input.focus:focus {
+  border-radius: 3px;
+  box-shadow: none;
 }
 
 /* General styles for inputs */
@@ -54,18 +61,6 @@ body * {
   background-image: url("images/Search.svg");
   background-repeat: no-repeat;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-}
-
-/* Special styles for focus class inputs when their active */
-.form .input.default:focus + .focus,
-.form .input.focus:focus {
-  border-radius: 3px;
-  box-shadow: none;
-}
-
-/* Change input style when hover element */
-.form .input:hover {
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
 /* Styles for big form input */
@@ -88,4 +83,9 @@ body * {
   font-size: 14px;
   background-position: left 13px top calc(21px - 5.5px);
   background-size: 11px;
+}
+
+/* Change input style when hover element */
+.form .input:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }

@@ -10,12 +10,7 @@ ___
 Create HTML page with two search bars as designed in [the mockup](https://www.figma.com/file/kf3AWulK9elrNk34wtpjPw/Airbnb-Search-bar?node-id=0%3A1).
 This search bar will be part of big project.
 
-### Common mistakes
-- Add **ALL** `data-qa` attributes required in the task
-- Do not use tabs. Use 2 spaces for indentation.
-- Don't use repeated styles.
-- Text `Try "Los Angeles"` in mockup is a placeholder.
-- Check font styles. Use fonts from `fonts` folder.
+![screenshot](./references/search-bar-example.png)
 
 ### Requirements:
 - use images from [src/images](src/images)
@@ -32,4 +27,9 @@ This search bar will be part of big project.
 ---
 --> [CHECKLIST](https://github.com/mate-academy/layout_search-bar-airbnb/blob/master/checklist.md)
 
-![screenshot](./references/search-bar-example.png)
+### Common mistakes
+- Add **ALL** `data-qa` attributes required in the task
+- Do not use tabs. Use 2 spaces for indentation.
+- Don't use repeated styles.
+- Text `Try "Los Angeles"` in mockup is a placeholder.
+- Check font styles. Use fonts from `fonts` folder.

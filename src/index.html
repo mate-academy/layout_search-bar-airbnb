@@ -13,37 +13,40 @@
   <body>
 
     <form
-    action="http://localhost:8080/"
-    method="post"
+      action="http://localhost:8080/"
+      method="post"
+      class="section"
+      data-qa="big"
     >
-      <section class="section" data-qa="big">
-        <img src="images/Search.svg"
+      <img src="images/Search.svg"
         alt="search-icon"
         class="big-icon-image"
-        >
-        <input
+      >
+      <input
         type="text"
         id="input-text"
         name="first-bar"
-        class="inside-big"
+        class="inside-big inside-content"
         data-qa="keypress"
-        placeholder="Try &#34Los Angeles&#34">
-      </section>
+        placeholder="Try &#34Los Angeles&#34"
+      >
     </form>
 
-    <form action="http://localhost:8080/" method="post">
-      <section class="section" data-qa="small">
-        <img src="images/Search.svg"
+    <form action="http://localhost:8080/"
+      method="post"
+      class="section section-2"
+      data-qa="small"
+    >
+      <img src="images/Search.svg"
         alt="search-icon"
         class="small-icon-image"
-        >
-        <input
+      >
+      <input
         type="text"
         name="first-bar"
-        class="inside-small"
+        class="inside-small inside-content"
         placeholder="Try &#34Los Angeles&#34"
-        >
-      </section>
+      >
     </form>
   </body>
 </html>

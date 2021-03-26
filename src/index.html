@@ -2,15 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <div class="find__area" data-qa="big">
+      <input type="text" class="fild"
+        placeholder="Try &#34;Los Angeles&#34;" data-qa="keypress">
+    </div>
+    <div class="smallfind__area" data-qa="small">
+      <input type="text" class="small_fild"
+        placeholder="Try &#34;Los Angeles&#34;">
+    </div>
   </body>
 </html>

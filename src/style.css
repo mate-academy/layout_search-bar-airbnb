@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "Avenir";
+  src: url("/fonts/Avenir-Book.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir";
+  font-weight: 900;
+  src: url("/fonts/Avenir-Heavy.ttf") format("truetype");
+}
+
+body {
+  font-weight: 300;
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.position__absolute {
+  position: absolute;
+}
+
+.position__relative {
+  position: relative;
+}
+
+.form {
+  margin-top: 20px;
+}
+
+.form__big {
+  height: 70px;
+}
+
+.form__input__big {
+  top: 22px;
+  margin: 0 62px;
+  font-size: 16px;
+  font-weight: inherit;
+  padding-left: 62px;
+}
+
+.form__icon__big {
+  bottom: 26px;
+  left: 26px;
+  height: 19px;
+  width: 19px;
+}
+
+.form__small {
+  height: 42px;
+}
+
+.form__icon__small {
+  top: 15px;
+  left: 13px;
+  width: 11px;
+}
+
+.form__input__small {
+  padding-left: 33px;
+  font-size: 14px;
+}
+
+.form__input__big,
+.form__input__small,
+::placeholder {
+  color: #3d4e61;
+  font-family: inherit;
+}
+
+.form__input__big,
+.form__input__small {
+  top: 0;
+  margin: 0;
+  padding-top: 1px;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+}
+
+.form__input__big:hover,
+.form__input__small:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.form__input__big:focus,
+.form__input__small:focus {
+  background: linear-gradient(180deg, #fff, #f6f6f7 100%);
+  outline: none;
+  box-shadow: none;
+  font-weight: 900;
+}
+
+.form__icon__big,
+.form__icon__small {
+  z-index: 1;
+}

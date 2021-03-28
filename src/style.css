@@ -9,12 +9,7 @@
   src: url(./fonts/Avenir-Heavy.ttf);
 }
 
-html {
-  box-sizing: border-box;
-}
-
 body {
-  font-family: Avenir, sans-serif;
   --big-padding-left: 26px;
   --big-padding-top: 25px;
   --big-img-size: 19px;
@@ -28,29 +23,22 @@ body {
 }
 
 .input {
+  width: 100%;
+  font-family: Avenir, sans-serif;
   position: relative;
   border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
+}
+
+.input,
+::placeholder {
   color: #3d4e61;
-  width: 100%;
 }
 
 .search-img {
-  z-index: 1;
   position: absolute;
-}
-
-.big_input {
-  height: 70px;
-  font-size: 16px;
-  padding-left: calc(var(--big-padding-left) + var(--big-img-size) + 17px);
-}
-
-.small_input {
-  height: 42px;
-  font-size: 14px;
-  padding-left: calc(var(--small-padding-left) + var(--small-img-size) + 9px);
+  z-index: 1;
 }
 
 .big_img {
@@ -65,6 +53,18 @@ body {
   width: var(--small-img-size);
   padding-left: var(--small-padding-left);
   padding-top: var(--small-padding-top);
+}
+
+.big_input {
+  height: 70px;
+  font-size: 16px;
+  padding-left: calc(var(--big-padding-left) + var(--big-img-size) + 17px);
+}
+
+.small_input {
+  height: 42px;
+  font-size: 14px;
+  padding-left: calc(var(--small-padding-left) + var(--small-img-size) + 9px);
 }
 
 .big_input:hover,

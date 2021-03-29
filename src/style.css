@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("fonts/Avenir-Heavy.ttf");
+  font-weight: bold;
+}
+
+body {
+  margin: 20px 10px 0;
+  box-sizing: border-box;
+  --bigleft-margin: 26px;
+  --bigimg-size: 19px;
+  --smallleft-margin: 13px;
+  --smallimg-size: 11px;
+}
+
+.find__area {
+  height: 70px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border: 1px solid #e1e7ed;
+}
+
+.big_magnifier {
+  margin-top: 25px;
+  margin-left: var(--bigleft-margin);
+  width: var(--bigimg-size);
+  height: var(--bigimg-size);
+}
+
+.fild {
+  position: absolute;
+  margin-top: 25px;
+  margin-left: calc(62px - (var(--bigleft-margin) + var(--bigimg-size)));
+  text-align: left;
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+  color: #3d4e61;
+  font-weight: 300;
+  border: none;
+}
+
+.find__area:hover {
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.find__area:focus-within {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+}
+
+.fild:focus-within {
+  font-weight: bold;
+  outline: none;
+}
+
+.smallfind__area {
+  height: 42px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-top: 20px;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border: 1px solid #e1e7ed;
+}
+
+.small_magnifier {
+  margin-top: 15px;
+  margin-left: var(--smallleft-margin);
+  width: var(--smallimg-size);
+  height: var(--smallimg-size);
+}
+
+.small_fild {
+  position: absolute;
+  margin-top: 12px;
+  margin-left: calc(33px - (var(--smallleft-margin) + var(--smallimg-size)));
+  font-family: Avenir, sans-serif;
+  font-size: 14px;
+  color: #3d4e61;
+  border: none;
+}
+
+.smallfind__area:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  border: 1px solid #e1e7ed;
+}
+
+.smallfind__area:focus-within {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+}
+
+.small_fild:focus-within {
+  font-weight: bold;
+  outline: none;
+}

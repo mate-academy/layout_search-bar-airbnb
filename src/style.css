@@ -1,14 +1,20 @@
 @font-face {
-  font-family: Avenir;
-  src: url("fonts/Avenir.ttc");
+  font-family: avenir;
+  src: url(fonts/Avenir-Book.ttf);
 }
 
-body {
-  margin: 0;
+@font-face {
+  font-family: avenir;
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: bold;
 }
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
 }
 
 form {
@@ -33,14 +39,7 @@ form {
 
 .input--small {
   height: 42px;
-  position: absolute;
-  left: 0%;
-  right: -5.88%;
-  top: 32%;
-  bottom: -5.26%;
   padding: 12px 0 10px 33px;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 19px;
 }
@@ -74,5 +73,7 @@ form {
 .input:focus {
   border-radius: 3px;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  font-family: Avenir-Heavy, sans-serif;
+  font-weight: bold;
   color: #3d4e61;
 }

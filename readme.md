@@ -16,7 +16,7 @@ This search bar will be part of big project.
 - use images from [src/images](src/images)
 - there must be two search bars
 - search bar must have width 100%
-- distance between two search bar not important
+- distance between two search bars is not important
 - follow styles from the mock
 - default `font-weight` must be 300
 - a search bar has 3 state default, `hover` and `focus`

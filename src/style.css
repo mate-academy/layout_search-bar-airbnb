@@ -16,7 +16,8 @@
   box-sizing: border-box;
 }
 
-.form__section {
+.form__section,
+.form__section-small {
   position: relative;
   display: block;
   margin: 20px auto;
@@ -62,30 +63,34 @@
   color: #3d4e61;
 }
 
-.form__btn {
+.form__section::before {
+  content: "";
   position: absolute;
+  display: block;
   background-image: url(./images/Search.svg);
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: cover;
-  cursor: pointer;
-  border: none;
-}
-
-.form__btn:focus {
-  outline: none;
-}
-
-.big__btn {
   top: 25px;
   left: 26px;
   width: 19px;
   height: 19px;
+  cursor: pointer;
+  border: none;
 }
 
-.small__btn {
+.form__section-small::before {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  background-image: url(./images/Search.svg);
   top: 15px;
   left: 13px;
   width: 11px;
   height: 11px;
+  cursor: pointer;
+  border: none;
 }

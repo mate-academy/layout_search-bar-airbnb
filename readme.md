@@ -23,8 +23,6 @@ This search bar will be part of big project.
 
 - a search bar has 3 state default, `hover` and `focus`
 
-
-
 - don't use JavaScript
 - use `@font-face` for fonts
 - add attribute `data-qa="big"` for big search form, and `data-qa="small"` for small

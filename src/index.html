@@ -11,42 +11,27 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-
-
-    <form data-qa="big" method="post">
-      <div class="search-field">
-        <img
-          src="./images/Search.svg"
-          class="big-img"
-          alt="search"
-        >
-        <input
-          type="search"
-          name="big-field-search"
-          placeholder="Try &#34;Los Angeles&#34;"
-          class="input-field big-input-field"
-          data-qa="keypress"
-          id="big-input-search"
-        >
-      </div>
+    <form data-qa="keypress" method="post">
+      <input
+        type="search"
+        name="search-field"
+        placeholder="Try &#34;Los Angeles&#34;"
+        class="search-field focus-search-field"
+        data-qa="big"
+        id="search-field"
+      >
     </form>
 
 
-    <form data-qa="small" method="post">
-      <div class="search-field">
-        <img
-          src="./images/Search.svg"
-          class="small-img"
-          alt="search"
-        >
-        <input
-          type="search"
-          name="small-form-search"
-          placeholder="Try &#34;Los Angeles&#34;"
-          class="input-field small-input-field"
-          id="small-input-search"
-        >
-      </div>
+    <form  method="post">
+      <input
+        data-qa="small"
+        type="search"
+        name="small-search"
+        placeholder="Try &#34;Los Angeles&#34;"
+        class=" search-field small-search-field focus-search-field focus-small-search-field"
+        id="small-search"
+      >
     </form>
   </body>
 </html>

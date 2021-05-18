@@ -17,17 +17,14 @@
 .search-form {
   margin-top: 20px;
   position: relative;
-}
-
-.big-search-form {
   height: 70px;
 }
 
-.small-search-form {
+.search-form--small {
   height: 42px;
 }
 
-.big-search-form label img {
+.search-icon {
   display: inline-block;
   width: 19px;
   height: 19px;
@@ -36,16 +33,14 @@
   top: 25px;
 }
 
-.small-search-form label img {
-  display: inline-block;
+.search-icon--small {
   width: 11px;
   height: 11px;
-  position: absolute;
   left: 13px;
   top: 15px;
 }
 
-input[type="text"] {
+.search-input {
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -57,25 +52,22 @@ input[type="text"] {
   color: #3d4e61;
   font-family: Avenir-Book, sans-serif;
   font-weight: 300;
-}
-
-.big-search-form input[type="text"] {
   line-height: 22px;
   font-size: 16px;
   padding-left: 62px;
 }
 
-.small-search-form input[type="text"] {
+.search-input--small {
   line-height: 19px;
   font-size: 14px;
   padding-left: 33px;
 }
 
-input[type="text"]:hover {
+.search-input:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-input[type="text"]:focus {
+.search-input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   font-family: Avenir-Heavy, sans-serif;
   font-weight: 700;

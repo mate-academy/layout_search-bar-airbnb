@@ -12,17 +12,21 @@
   </head>
   <body>
     <form
-      action="http://localhost:3000/api"
-      method="POST"
       data-qa="big"
-      class="forms"
+      class="forms Searchbar"
     >
       <label for="site-search">
+        <img
+          src="https://raw.githubusercontent.com/dima-cherednyk/layout_search-bar-airbnb/8481eba6a55b3990053d267279a5e81e38805e67/src/images/Search.svg"
+          alt="search"
+          class="image"
+        >
+
         <input
           type="search"
           id="site-search"
           name="Search"
-          class="Searchbar fonts-big"
+          class="Searchbar-big fonts-big"
           placeholder="Try &#34Los Angeles&#34"
           data-qa="keypress"
         >
@@ -30,11 +34,17 @@
     </form>
 
     <form
-      action="http://localhost:3100/api"
-      method="POST"
       data-qa="small"
+      class="Searchbar_s"
     >
       <label for="site-search-small">
+
+        <img
+          src="https://raw.githubusercontent.com/dima-cherednyk/layout_search-bar-airbnb/8481eba6a55b3990053d267279a5e81e38805e67/src/images/Search.svg"
+          alt="search"
+          class="image-small"
+        >
+
         <input
           type="search"
           id="site-search-small"

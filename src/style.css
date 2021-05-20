@@ -1,32 +1,17 @@
-.image {
-  left: 26px;
-  top: 25px;
-  height: 19px;
-  position: absolute;
-}
-
-.image-small {
-  left: 13px;
-  top: 15px;
-  height: 11px;
-  position: absolute;
-}
-
-.forms {
-  margin-bottom: 20px;
-  margin-top: 20px;
+body {
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
 }
 
 .Searchbar {
   height: 70px;
   border: none;
+  margin-top: 20px;
   position: relative;
 }
 
 .Searchbar_s {
   height: 42px;
-  border: none;
-  position: relative;
 }
 
 @font-face {
@@ -41,57 +26,47 @@
   src: url(fonts/Avenir-Heavy.ttf);
 }
 
-.fonts-big {
-  font-family: Avenir, sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.fonts-small {
-  font-family: Avenir, sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-}
-
-.Searchbar-big {
+.Searchbar-i {
   height: 100%;
   width: 100%;
   padding-left: 62px;
   background: #fff;
   border: 1px solid #e1e7ed;
   box-sizing: border-box;
+  color: #3d4e61;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
-  font-weight: 300;
+  font-size: 16px;
+  font-family: inherit;
+  background-image: url(https://raw.githubusercontent.com/dima-cherednyk/layout_search-bar-airbnb/8481eba6a55b3990053d267279a5e81e38805e67/src/images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: 19px;
+  background-position-x: 25px;
+  background-position-y: 24px;
 }
 
-.Searchbar-big:hover {
+.Searchbar-i:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.Searchbar-big:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+.Searchbar-i:focus {
+  background-image: url(https://raw.githubusercontent.com/dima-cherednyk/layout_search-bar-airbnb/8481eba6a55b3990053d267279a5e81e38805e67/src/images/Search.svg),
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background-position: 25px, 0;
+  background-size: 19px, cover;
   border-radius: 3px;
   font-weight: bold;
 }
 
-.Searchbar-small {
-  height: 100%;
-  width: 100%;
-  background: #fff;
-  border: 1px solid #e1e7ed;
-  box-sizing: border-box;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  border-radius: 4px;
+.Searchbar-i-s {
   padding-left: 33px;
+  font-size: 14px;
+  background-position-x: 12px;
+  background-position-y: 14px;
+  background-size: 11px;
 }
 
-.Searchbar-small:hover {
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-}
-
-.Searchbar-small:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border-radius: 3px;
-  font-weight: bold;
+.Searchbar-i-s:focus {
+  background-position: 13px, 0;
+  background-size: 11px, cover;
 }

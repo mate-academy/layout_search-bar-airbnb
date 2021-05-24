@@ -1,22 +1,25 @@
 @font-face {
   font-family: "Avenir";
-  src: url("./fonts/Avenir.ttc");
-  src: url("./fonts/Avenir-Book.ttf");
-  src: url("./fonts/Avenir-Heavy.ttf");
+  src: url("./fonts/Avenir-Book.ttf") format("opentype"),
+    url("./fonts/Avenir-Heavy.ttf") format("opentype");
 }
 
-body {
+html {
   font-weight: 300;
   font-family: "Avenir", sans-serif;
   box-sizing: border-box;
 }
 
 .input {
-  margin-top: 15px;
-  height: 70px;
+  position: relative;
   width: 100%;
+  margin: 20px 0;
   border: 1px solid #e1e7ed;
   border-radius: 4px;
+}
+
+.big {
+  height: 70px;
 }
 
 .input:hover {
@@ -32,17 +35,23 @@ body {
 }
 
 .much {
-  margin-top: 25px;
+  padding-left: 62px;
   font-size: 16px;
+  line-height: 22px;
+  height: 68px;
 }
 
 .request:focus {
   outline: 0;
+  font-weight: 600;
 }
 
 .larger {
-  margin-left: 26px;
-  margin-top: 25px;
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: 26px;
+  top: 25px;
 }
 
 .small {
@@ -51,14 +60,16 @@ body {
 }
 
 .smaller {
+  position: absolute;
   width: 11px;
   height: 11px;
-  margin: 13px auto 10px 15px;
+  left: 13px;
+  top: 15px;
 }
 
 .little {
-  position: absolute;
-  top: 11px;
-  left: 35px;
+  padding-left: 33px;
+  height: 40px;
   font-size: 14px;
+  line-height: 19px;
 }

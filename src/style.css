@@ -1,13 +1,15 @@
 @font-face {
   font-family: Avenir;
+  src: url(fonts/Avenir.ttc);
+  src: url(fonts/Avenir-Heavy.ttf);
   src: url(fonts/Avenir-Book.ttf);
-  font-weight: 300;
+
 }
-@font-face {
+/* @font-face {
   font-family: Avenir;
   src: url(fonts/Avenir-Heavy.ttf);
-  font-weight: 800;
-}
+  font-weight: 700;
+} */
 
 * {
   box-sizing: border-box;
@@ -22,31 +24,39 @@ html {
   position: relative;
   width: 100%;
   margin: 20px 0;
+  font-family: inherit;
 }
 
 .big-img {
   position: absolute;
-  left: 20px;
-  top: 22px;
-  height: 24px;
-  width: 24px;
+  left: 26px;
+  top: 25px;
+  height: 19px;
+  width: 19px;
 }
 
 .inp {
   width: 100%;
   border: 1px solid #e1e7ed;
   border-radius: 4px;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+  font-weight: 300;
+  font-family: inherit;
 }
 
 .big-input {
   height: 70px;
   padding-left: 62px;
+  line-height: 22px;
+  font-size: 16px;
 }
 
 .small-input {
-  height: 40px;
-  padding-left: 30px;
+  height: 42px;
+  padding-left: 33px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
 }
 
 .small-img {

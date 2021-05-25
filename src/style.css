@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(fonts/Avenir-Book.ttf) format("ttf")
+    url(fonts/Avenir-Heavy.ttf) format("ttf")
+    url(fonts/Avenir.ttc) format("ttc");
+}
+
+html {
+  font-weight: 300;
+  font-family: Avenir, sans-serif;
+  --vector-width: 19px;
+  --vector-small-width: 11px;
+}
+
+.search-bar {
+  display: block;
+  position: relative;
+  height: 70px;
+  width: 100%;
+  border-radius: 4px;
+  cursor: text;
+  border: 1px solid #e1e7ed;
+  box-sizing: border-box;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+  margin: 20px 0;
+}
+
+.search-bar:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+}
+
+.search-bar:focus-within {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border: 1px solid #e1e7ed;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.search {
+  position: absolute;
+  width: 100% - var(--vector-width);
+  left: 62px;
+  top: 35.71%;
+  bottom: 37.14%;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0;
+  text-align: left;
+  border: 0;
+  color: #3d4e61;
+  font-family: inherit;
+}
+
+.search:focus-within {
+  outline: 0;
+  border: 0;
+  background: transparent;
+}
+
+.vector {
+  position: absolute;
+  height: 19px;
+  width: 19px;
+  left: 26px;
+  top: 25px;
+  border-radius: 0;
+}
+
+.search-bar-small {
+  display: block;
+  position: relative;
+  height: 42px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 4px;
+  cursor: text;
+  background: #fff;
+  border: 1px solid #e1e7ed;
+  box-sizing: border-box;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.search-bar-small:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+}
+
+.search-bar-small:focus-within {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border: 1px solid #e1e7ed;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.vector-small {
+  position: absolute;
+  height: 11px;
+  width: 11px;
+  left: 13px;
+  top: 15px;
+}
+
+.search-small {
+  position: absolute;
+  width: 100% - var(--vector-small-width);
+  height: 19px;
+  left: 33px;
+  top: 12px;
+
+  color: #3d4e61;
+  font-size: 14px;
+  line-height: 19px;
+  border-radius: 0;
+  font-weight: inherit;
+  font-family: Avenir, sans-serif;
+  letter-spacing: 0;
+  text-align: left;
+  border: 0;
+}
+
+.search-small:focus-within {
+  outline: 0;
+  border: 0;
+  background: transparent;
+}

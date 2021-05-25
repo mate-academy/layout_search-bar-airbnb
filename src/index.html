@@ -1,16 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search bar airbnb</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   </head>
+
   <body>
-    <h1>Search bar airbnb</h1>
+
+    <div class="container">
+      <form action="#" method="POST">
+        <div class="search-bar__big">
+          <label for="big-one">
+            <img 
+              class="search-icon search-icon__big" 
+              src="./images/Search.svg" 
+              alt="search icon"
+            >
+            <input 
+              class="input-field input-field__big" 
+              id="big-one" 
+              type="text" 
+              placeholder="Try &quot;Los Angeles&quot;"
+              data-qa="big"
+            >
+          </label>
+        </div>
+
+        <div class="search-bar__small">
+          <label for="small-one">
+            <img 
+              class="search-icon search-icon__small" 
+              src="./images/Search.svg" 
+              alt="search icon"
+            >
+            <input 
+              class="input-field input-field__small" 
+              id="small-one" 
+              type="text" 
+              placeholder="Try &quot;Los Angeles&quot;"
+              data-qa="small"
+            >
+          </label>
+        </div>
+      </form>
+    </div>
   </body>
+
 </html>

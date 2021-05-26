@@ -11,8 +11,14 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body class="body">
-    <form class="form-big" data-qa="big">
-      <label class="lable-big lable-big-before" for="input-big">
+    <form
+      class="form-big"
+      data-qa="big"
+      method="POST"
+      action="#"
+      enctype="multipart/form-data"
+    >
+      <label class="lable-big lable-big-before" for="input-big-id">
         <img
           src="images/Search.svg"
           alt="Search"
@@ -20,14 +26,21 @@
         >
         <input
           type="text"
-          id="input-big"
+          id="input-big-id"
+          class="input-big"
           placeholder="Try &quot;Los Angeles&quot;"
           data-qa="keypress"
         >
       </label>
     </form >
-    <form class="form-small" data-qa="small">
-      <label class="lable-small lable-small-before" for="input-small">
+    <form
+      class="form-small"
+      data-qa="small"
+      method="POST"
+      action="#"
+      enctype="multipart/form-data"
+    >
+      <label class="lable-small lable-small-before" for="input-small-id">
         <img
           src="images/Search.svg"
           alt="Search"
@@ -35,7 +48,8 @@
         >
         <input
           type="text"
-          id="input-small"
+          id="input-small-id"
+          class="input-small"
           placeholder="Try &quot;Los Angeles&quot;"
           data-qa="hover"
         >

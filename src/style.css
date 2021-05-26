@@ -1,3 +1,9 @@
+html {
+  font-weight: 300;
+  font-family: "Avenir", serif;
+  font-size: 16px;
+}
+
 @font-face {
   font-family: "Avenir";
   font-weight: 300;
@@ -12,19 +18,13 @@
   src: url("./fonts/Avenir-Heavy.ttf") format("truetype");
 }
 
-body {
-  font-weight: 300;
-  font-family: "Avenir", serif;
-  font-size: 16px;
-}
-
 .box {
   position: relative;
   width: 100%;
   margin: 20px 0;
 }
 
-.img1 {
+.top_image_loupe {
   position: absolute;
   height: 19px;
   width: 19px;
@@ -32,7 +32,7 @@ body {
   top: 25px;
 }
 
-.img2 {
+.down_image_loupe {
   position: absolute;
   width: 11px;
   height: 11px;
@@ -40,7 +40,7 @@ body {
   left: 13px;
 }
 
-.field {
+.search_field {
   color: #3d4e61;
   background: #fff;
   border: 1px solid #e1e7ed;
@@ -50,7 +50,7 @@ body {
   width: 100%;
 }
 
-.first {
+.top_search_field {
   padding-left: 62px;
   height: 70px;
   font-family: "Avenir", serif;
@@ -59,7 +59,7 @@ body {
   font-size: 16px;
 }
 
-.second {
+.down_search_field {
   padding-left: 33px;
   font-weight: 300;
   font-family: "Avenir", serif;
@@ -68,12 +68,12 @@ body {
   line-height: 19px;
 }
 
-.field:hover {
+.search_field:hover {
   box-shadow: 0 3px 8px 0 #3d4e6133;
   font-weight: 400;
 }
 
-.field:focus {
+.search_field:focus {
   border-radius: 3px;
   font-weight: 900;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);

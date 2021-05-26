@@ -11,29 +11,30 @@
   src: url(fonts/Avenir-Heavy.ttf);
 }
 
+* {
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Avenir, sans-serif;
   font-style: normal;
   font-size: 16px;
 }
 
-.big_search_bar input {
-  --height-big-search-bar: 70px;
+.big_search_bar .search__input {
   width: 100%;
-  height: var(--height-big-search-bar);
+  height: 70px;
   padding-left: 62px;
-  background: #fff;
   border: 1px solid #e1e7ed;
-  box-sizing: border-box;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
-  font-family: Avenir, sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-size: 16px;
-  
 }
 
-.big_search_bar input::placeholder {
+.big_search_bar .search__input::placeholder {
   color: #3d4e61;
 }
 
@@ -41,7 +42,7 @@ body {
   position: relative;
 }
 
-.big_search_bar img {
+.big_search_bar .search_img {
   position: absolute;
   left: 28px;
   top: 25px;
@@ -53,23 +54,18 @@ body {
 }
 
 .big_search_bar:hover {
-  background: #fff;
   border: 1px solid #e1e7ed;
-  box-sizing: border-box;
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.small_search_bar input {
-  --height-small-search-bar: 42px;
+.small_search_bar .search__input {
   width: 100%;
-  height: var(--height-small-search-bar);
+  height: 42px;
   padding-left: 33px;
-  background: #fff;
   border: 1px solid #e1e7ed;
-  box-sizing: border-box;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
-  font-family: Avenir, sans-serif;
+  font-family: inherit;
   font-size: 14px;
 }
 
@@ -77,12 +73,11 @@ body {
   color: #3d4e61;
 }
 
-.big_search_bar input:focus-within {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+.big_search_bar .search__input:focus-within {
+  background-color: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
-  box-sizing: border-box;
   border-radius: 3px;
-  outline: 0;
+  outline: none;
   font-weight: 900;
 }
 
@@ -90,7 +85,7 @@ body {
   position: relative;
 }
 
-.small_search_bar img {
+.small_search_bar .search_img {
   position: absolute;
   left: 13px;
   top: 15px;
@@ -100,18 +95,15 @@ body {
 }
 
 .small_search_bar:hover {
-  background: #fff;
   border: 1px solid #e1e7ed;
-  box-sizing: border-box;
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
   border-radius: 4px;
 }
 
-.small_search_bar input:focus-within {
+.small_search_bar .search__input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
-  box-sizing: border-box;
   border-radius: 3px;
-  outline: 0;
+  outline: none;
   font-weight: 900;
 }

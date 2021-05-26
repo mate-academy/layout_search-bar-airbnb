@@ -21,12 +21,22 @@ html {
   src: url(fonts/Avenir-Book.ttf);
 }
 
-body {
-  margin: 20px 8px;
+.search_form {
+  margin: 20px auto 0;
 }
 
-.sf {
-  margin-bottom: 20px;
+img.img_logo {
+  position: absolute;
+  left: 43px;
+  top: 45px;
+  width: 19px;
+}
+
+img.img_logo_small {
+  position: absolute;
+  left: 30px;
+  top: 125px;
+  width: 11px;
 }
 
 .s-input {
@@ -44,14 +54,14 @@ body {
   height: 70px;
   padding-left: 62px;
   font-size: 16px;
-  background: url(images/Search.svg) no-repeat 25px 24px / 19px #fff;
+  background: #fff;
 }
 
 .s-input--small {
   height: 42px;
   padding-left: 33px;
   font-size: 14px;
-  background: url(images/Search.svg) no-repeat 12px 14px / 11px #fff;
+  background: #fff;
 }
 
 .s-input::placeholder {
@@ -65,11 +75,11 @@ body {
 }
 
 .s-input:focus {
-  background: url("./images/Search.svg") no-repeat 25px 24px / 19px, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   box-shadow: none;
 }
 
 .s-input--small:focus {
-  background: url("./images/Search.svg") no-repeat 13px 14px / 11px, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   box-shadow: none;
 }

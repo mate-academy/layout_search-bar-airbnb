@@ -10,7 +10,7 @@ html {
   box-sizing: border-box;
 }
 
-.input {
+.form {
   position: relative;
   width: 100%;
   margin: 20px 0;
@@ -22,17 +22,22 @@ html {
   height: 70px;
 }
 
-.input:hover {
+.form:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.input:focus-within {
+.form:focus-within {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
-.request {
+.input {
   font-family: "Avenir", sans-serif;
   border: 0;
+}
+
+.input::placeholder {
+  font-family: "Avenir", sans-serif;
+  font-weight: 300;
 }
 
 .large-input {
@@ -43,7 +48,7 @@ html {
   height: 68px;
 }
 
-.request:focus {
+.input:focus {
   outline: 0;
 }
 

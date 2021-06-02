@@ -7,7 +7,7 @@ Replace `<your_account>` with your Github username and copy the links to Pull Re
 ___
 
 ## The task
-Create HTML page with two search bars as designed in [the mockup](https://www.figma.com/file/kf3AWulK9elrNk34wtpjPw/Airbnb-Search-bar?node-id=0%3A1).
+Create HTML page with two search bars as designed n [the mockup](https://www.figma.com/file/kf3AWulK9elrNk34wtpjPw/Airbnb-Search-bar?node-id=0%3A1).
 This search bar will be part of big project.
 
 ![screenshot](./references/search-bar-example.png)

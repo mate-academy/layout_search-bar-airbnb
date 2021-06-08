@@ -5,35 +5,55 @@
 
 @font-face {
   font-family: Avenir;
-  font-style: italic;
   src: url(./fonts/Avenir-Book.ttf);
+  font-weight: 300;
 }
 
 @font-face {
-  font-family: Avenir-Heavy;
-  font-style: italic;
-  font-weight: bold;
+  font-family: Avenir;
   src: url(./fonts/Avenir-Heavy.ttf);
+  font-weight: 900;
 }
 
 body {
   font-family: Avenir, Helvetica, sans-serif;
-  font-style: italic;
+  margin: 0;
+  padding: 0;
 }
 
-/* .field1 {
-  font: Avenir-Book;
+.container {
+  font-weight: 300;
+  padding: 0 9px;
+}
+
+.field1 {
+  height: 70px;
+  font-size: 15px;
+  background: url(./images/Search.svg) no-repeat scroll left center;
+  background-position-x: 23px;
+  padding-left: 60px;
+  width: 100%;
 }
 
 .field2 {
-  font: Avenir-Heavy;
-} */
+  height: 40px;
+  font-size: 13px;
+  background: url(./images/Search.svg) no-repeat scroll left center;
+  background-size: 12px;
+  background-position-x: 11px;
+  padding-left: 30px;
+  width: 100%;
+}
 
 .search {
   display: block;
-  background: url(./images/Search.svg) no-repeat center left;
-  padding-left: 30px;
-  width: 100%;
+  box-sizing: border-box;
+  margin-top: 20px;
+  
+
+  border: 1px outset #5555;
+  
+
 }
 
 .search:default {
@@ -47,9 +67,6 @@ body {
 
 .search:focus {
   font-weight: bold;
-  background: linear-gradient(to top, rgba(241, 240, 240, 0.96), #fff);
+  background: url(./images/Search.svg) no-repeat scroll left center, linear-gradient(to top, rgba(241, 240, 240, 0.96), #fff);
+  background-position-x: 22px;
 }
-
-/* .search::placeholder {
-  text-shadow: 0 2px 2px rgba(0,0,0,0.4);
-} */

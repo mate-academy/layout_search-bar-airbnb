@@ -10,11 +10,9 @@ body {
 }
 
 input {
-  padding: 20px 50px;
   margin-top: 20px;
   width: 100%;
   border: 1px solid #e1e4ed;
-  background: url("images/Search.svg") 10px 50%;
   background-repeat: no-repeat;
   border-radius: 4px;
   color: #3d4e61;
@@ -22,6 +20,14 @@ input {
   font-family: inherit;
   box-shadow: 0 2px 10px rgba(65 75 97 / 10%);
   outline: none;
+}
+
+input:hover {
+  box-shadow: 0 2px 10px gray;
+}
+
+input:focus {
+  background-color: #f2f0f0;
 }
 
 .search_big {
@@ -35,14 +41,19 @@ input {
 }
 
 .search_input_big {
-  padding-left: 62px;
+  padding: 20px 20px 15px 50px;
+  background: url("images/Search.svg") 10px 50%;
+  background-repeat: no-repeat;
   font-size: 16px;
   line-height: 22px;
   height: 40px;
 }
 
-.search__input_small {
-  padding-left: 33px;
+.search_input_small {
+  padding: 20px 20px 15px 40px;
+  background: url("images/Search.svg") 10px 50%;
+  background-size: 2vw;
+  background-repeat: no-repeat;
   font-size: 10px;
   line-height: 15px;
   height: 15px;

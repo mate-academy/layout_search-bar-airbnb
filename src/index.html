@@ -12,27 +12,33 @@
   </head>
   <body>
     <h1>Search bar airbnb</h1>
-    <form method="GET"
-    class="search-container search_big"
-    data-qa="big">
-      <label for = "search" class="search_container_label search_big_label"></label>
-      <input class="search_input_big"
+    <form>
+      <label for = "search"
+      class="search_label"
+      data-qa="big">
+      </label>
+      <input
+      class="search_input_big input_all"
           data-qa="keypress"
           type="text"
           placeholder="Try &quot;Los Angeles&quot;"
           name="search"
-          id="search">
+          id="search"
+      >
     </label>
     </form>
-    <form method="GET"
-    class="search-container search_small"
-    data-qa="small">
-      <label for="search_small" class="search_container_label search_small_label"></label>
-      <input class="search_input_small"
+    <form >
+      <label for="search_small"
+      class="search_label"
+      data-qa="small">
+      </label>
+      <input
+      class="search_input_small input_all"
           type="text"
           placeholder="Try &quot;Los Angeles&quot;"
           name="search"
-          id="search_small">
+          id="search_small"
+      >
     </label>
     </form>
   </body>

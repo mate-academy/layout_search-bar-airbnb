@@ -13,6 +13,11 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+}
   
 .form-search {
   position: relative;
@@ -27,53 +32,55 @@
   box-shadow: 0 3px 8px 0 #3d4e6133;
   
 }
-    
+
 .form-search:focus-within {
   border-radius: 3px;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
-   
+
 .form-search-large {
   height: 70px;
 }
-  
-.iconLarge {
+
+.icon-large {
   height: 19px;
   width: 19px;
   position: absolute;
   left: 25px;
   top: 24px;
-}
-    
-.searchLarge {
-  position: absolute;
-  left: 61px;
-  top: 23px;
-  height: 22px;
-  border: 0;
-}
-    
-.searchLarge::placeholder {
-  color: #3d4e61;
-  font-family: Avenir, sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 22px;
   
 }
+
+.search {
+  position: absolute;
+  border: 0;
+}
+
+.search::placeholder {
+  color: #3d4e61;
+
+}
     
-.searchLarge:focus {
-  font-family: Avenir, sans-serif;
+.search:focus {
   font-weight: 900;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   
 }
-    
+
+.search-large {
+  left: 61px;
+  top: 23px;
+  height: 22px;
+  font-size: 16px;
+  line-height: 22px;
+
+}
+
 .form-search-small {
   height: 42px;
 }
     
-.iconSmall {
+.icon-small {
   height: 11px;
   width: 11px;
   position: absolute;
@@ -81,26 +88,11 @@
   top: 14px;
 }
     
-.searchSmall {
-  position: absolute;
+.search-small {
   left: 32px;
   top: 9px;
   height: 20px;
-  border: 0;
-}
-    
-.searchSmall::placeholder {
-  color: #3d4e61;
-  font-family: Avenir, sans-serif;
-  font-weight: 300;
   font-size: 14px;
   line-height: 19px;
-  
-}
-    
-.searchSmall:focus {
-  font-family: Avenir, sans-serif;
-  font-weight: 900;
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  
+ 
 }

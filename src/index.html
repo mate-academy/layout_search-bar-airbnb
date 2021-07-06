@@ -11,7 +11,33 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
-    <p>just checking if npm run deploy function correctly</p>
+    <form
+      action=""
+      method="POST"
+      data-qa="big"
+      class="sb__form"
+    >
+      <input
+        type="search"
+        name="big search bar"
+        data-qa="keypress"
+        placeholder="Try &#34;Los Angeles&#34;"
+        class="search__bar search__bar-big"
+      >
+    </form>
+    <form
+      action=""
+      method="POST"
+      data-qa="small"
+      class="sb__form"
+    >
+      <input
+        type="search"
+        name="small search bar"
+        placeholder="Los Angeles"
+        class="search__bar search__bar-small"
+      >
+    </form>
+    <!-- <script type="text/javascript" src="./main.js"></script> -->
   </body>
 </html>

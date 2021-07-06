@@ -1,13 +1,18 @@
 @font-face {
   font-family: Avenir;
-  font-weight: 300;
+  font-weight: normal;
   src: url(fonts/Avenir-Book.ttf);
+  font-style: normal;
 }
 
 @font-face {
   font-family: Avenir;
-  font-weight: 800;
+  font-weight: bold;
+  font-style: normal;
   src: url(fonts/Avenir-Heavy.ttf);
+}
+body {
+  margin: 0 8px;
 }
 
 html {
@@ -17,6 +22,10 @@ html {
 
 .form-container {
   margin-top: 20px;
+}
+
+.input-text::placeholder {
+  color: #3d4e61;
 }
 
 .input-text {
@@ -37,7 +46,7 @@ html {
   line-height: 22px;
   height: 70px;
   padding: 25px 62px;
-  background-position: 25px;
+  background-position: 25px 49%;
   background-size: 19px;
 }
 
@@ -45,7 +54,7 @@ html {
   font-size: 14px;
   line-height: 19px;
   height: 42px;
-  background-position: 13px;
+  background-position: 13px 49%;
   background-size: 11px;
   padding: 12px 33px;
 }
@@ -57,7 +66,7 @@ html {
 .big-input:focus {
   background: url(images/Search.svg) no-repeat,
     linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  background-position: 25px;
+  background-position: 25px 49%;
   color: #3d4e61;
   font-weight: bold;
   box-shadow: none;

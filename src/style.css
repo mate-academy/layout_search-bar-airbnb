@@ -25,6 +25,7 @@ body {
   background-repeat: no-repeat;
   font-family: "Anevir", Arial, sans-serif;
   color: #3d4e61;
+
   box-sizing: border-box;
   width: 100%;
   border-radius: 4px;
@@ -36,8 +37,10 @@ body {
 .big-bar {
   font-size: 16px;
   line-height: 22px;
+
   height: 70px;
   padding: 25px 62px;
+
   background-position: 25px 49%;
   background-size: 19px;
 }
@@ -45,28 +48,32 @@ body {
 .small-bar {
   font-size: 14px;
   line-height: 19px;
+
   height: 42px;
+  padding: 11px 33px;
+
   background-position: 13px 49%;
   background-size: 11px;
-  padding: 11px 33px;
 }
 
 .big-bar:focus {
+  font-weight: bold;
+  color: #3d4e61;
+
   background: url(./images/Search.svg) no-repeat,
     linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   background-position: 25px 49%;
-  color: #3d4e61;
-  font-weight: bold;
   box-shadow: none;
 }
 
 .small-bar:focus {
+  color: #3d4e61;
+  font-weight: bold;
+
   background: url(./images/Search.svg) no-repeat,
     linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   background-position: 13px 49%;
   background-size: 11px;
-  color: #3d4e61;
-  font-weight: bold;
   box-shadow: none;
 }
 
@@ -74,6 +81,6 @@ body {
   box-shadow: 0 3px 8px 0 #3d4e6133;
 }
 
-::placeholder {
+.input-bar::placeholder {
   color: #3d4e61;
 }

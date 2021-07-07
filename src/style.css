@@ -1,9 +1,5 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
-  /* font-family: 'Avenir-Book', "Avenir-Heavy"; */
+  font-family: "Avenir-Book", "Avenir-HeavY", sans-serif;
   font-weight: 300;
 }
 
@@ -26,6 +22,8 @@ body {
   align-items: center;
   background: url(./images/Search.svg) 15px center no-repeat;
   padding-left: 50px;
+  font-family: "Avinir-Book", sans-serif;
+  font-weight: 300;
 
 }
 
@@ -41,7 +39,12 @@ body {
   border: 1px solid red;
 }
 
-.search_bar::placeholder {
-  padding-left: 30px;
-  /* font-family: 'Avenir-Book'; */
+@font-face {
+  font-family: "Avenir-Book";
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: "Avenir-Heavy";
+  src: url(fonts/Avenir-Heavy.ttf);
 }

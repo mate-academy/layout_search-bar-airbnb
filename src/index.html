@@ -11,18 +11,29 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form class="form" method="GET">
-          <input
-            class="search__bar"
-            type="text"
-            placeholder="Try &#34;Los Angeles&#34;"
-          >
+    <form
+      class="form"
+      method="GET"
+      data-qa="big"
+    >
+      <input
+        class="search__bar"
+        type="text"
+        data-qa="keypress"
+        placeholder="Try &#34;Los Angeles&#34;"
+      >
+    </form>
 
-          <input
-            class="search__bar__mini"
-            type="text"
-            placeholder="Los Angeles"
-          >
+    <form
+      class="form"
+      method="GET"
+      data-qa="small"
+    >
+      <input
+        class="search__bar__mini"
+        type="text"
+        placeholder="Try &#34;Los Angeles&#34;"
+      >
     </form>
   </body>
 </html>

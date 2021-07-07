@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 5;
 }
 
 .form {
@@ -53,10 +53,13 @@ body {
 }
 
 .big-search-input:focus {
+  background-position: 25px 25px;
+}
+
+.search:focus {
   color: #3d4e61;
   background: url(images/Search.svg) no-repeat,
     linear-gradient(180deg, rgba(251,251,251,1) 0%,rgba(255,255,255,1) 100%);
-  background-position: 25px 25px;
   box-shadow: 0 3px 6px 1px rgba(34, 60, 80, 0.45);
 }
 
@@ -70,10 +73,6 @@ body {
 }
 
 .small-search-input:focus {
-  color: #3d4e61;
-  background: url(images/Search.svg) no-repeat,
-    linear-gradient(180deg, rgba(251,251,251,1) 0%, rgba(255,255,255,1) 100%);
   background-position: 13px;
   background-size: 11px;
-  box-shadow: 0 3px 6px 1px rgba(34, 60, 80, 0.45);
 }

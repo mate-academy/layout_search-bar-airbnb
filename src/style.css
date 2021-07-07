@@ -1,13 +1,13 @@
 @font-face {
   font-family: Avenir;
-  font-weight: 300;
-  src: url(D:\projects\hw\layout_search-bar-airbnb\src\fonts\Avenir-Book.ttf);
+  font-weight: 400;
+  src: url(fonts/Avenir-Book.ttf);
 }
 
 @font-face {
-  font-family: Avenir;
-  font-weight: 600;
-  src: url(D:\projects\hw\layout_search-bar-airbnb\src\fonts\Avenir-Heavy.ttf);
+  font-family: Avenir-Heavy;
+  font-weight: 700;
+  src: url(fonts/Avenir-Heavy.ttf);
 }
 
 html {
@@ -16,6 +16,8 @@ html {
 
 .search-form {
   margin-top: 20px;
+  box-shadow: 0 1px 8px rgba(61,78,97,0.1);
+  font-weight: bold;
 }
 
 .search-bar {
@@ -25,23 +27,26 @@ html {
   width: 100%;
   padding-left: 62px;
   border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px rgba(61,78,97,0.1);
   border-radius: 4px;
-  background: url(../src/images/Search.svg) no-repeat scroll 28px;
+  background: url(./images/Search.svg) no-repeat scroll 28px;
+}
+
+.search-bar:focus {
+  font-weight: bold;
 }
 
 .big-search-bar {
   height: 70px;
 }
 
-.search-bar:hover {
-  box-shadow: 0 3px 8px rgba(61,78,97,0.2);
-}
-
-.search-bar:focus {
-  border: 1px solid #e1e7ed;
+.search-form:focus-within {
   background: linear-gradient(180deg,#fff,#f6f6f7);
   outline: none;
+}
+
+.search-form:hover {
+  box-shadow: 0 3px 8px rgba(61,78,97,0.2);
+  font-weight: bold;
 }
 
 .search-bar::placeholder {
@@ -52,6 +57,6 @@ html {
   padding-left: 33px;
   height: 42px;
   font-size: 14px;
-  background: url(../src/images/Search.svg) no-repeat scroll 12px 14px;
+  background: url(./images/Search.svg) no-repeat scroll 12px 14px;
   background-size: 11px;
 }

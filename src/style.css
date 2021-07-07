@@ -9,6 +9,11 @@
 
 /*Big form*/
 
+html {
+  font-family: Avenir-Book, sans-serif;
+  font-size: 16px;
+}
+
 .big__box {
   position: relative;
   height: 70px;
@@ -22,22 +27,12 @@
 }
 
 .big__box:hover {
-  position: relative;
-  height: 70px;
-  margin: 30px 0;
-  background: #fff;
-  border: 1px solid #e1e7ed;
-  box-sizing: border-box;
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-  border-radius: 4px;
   transition: 0.2s all;
 }
 
 .big__box:focus-within {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border: 1px solid #e1e7ed;
-  box-sizing: border-box;
-  border-radius: 3px;
   transition: 0.2s all;
 }
 
@@ -59,9 +54,6 @@
   top: 50%;
   left: 60px;
   transform: translate(0, -50%);
-  font-family: Avenir-Book, sans-serif;
-  font-size: 16px;
-  line-height: 22px;
   color: #3d4e61;
   border: none;
   background: none;
@@ -69,17 +61,8 @@
 }
 
 .big__txt:focus {
-  position: absolute;
-  top: 50%;
-  left: 60px;
-  transform: translate(0, -50%);
   font-family: Avenir-Heavy, sans-serif;
   font-size: 16px;
-  line-height: 22px;
-  color: #3d4e61;
-  border: none;
-  background: none;
-  outline: none;
 }
 
 /*Small form*/
@@ -97,22 +80,12 @@
 }
 
 .small__box:hover {
-  position: relative;
-  height: 42px;
-  margin: 30px 0;
-  background: #fff;
-  border: 1px solid #e1e7ed;
-  box-sizing: border-box;
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-  border-radius: 4px;
   transition: 0.2s all;
 }
   
 .small__box:focus-within {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border: 1px solid #e1e7ed;
-  box-sizing: border-box;
-  border-radius: 3px;
   transition: 0.2s all;
 }
 
@@ -124,9 +97,7 @@
 }
 
 .small__box:hover > ::placeholder {
-  font-family: Avenir-Book, sans-serif;
-  font-size: 16px;
-  text-shadow: 0 5px 5px rgba(61, 78, 97, 0);
+  text-shadow: 0 0 0 rgba(61, 78, 97, 0);
   transition: 0.4s all;
 }
 
@@ -154,15 +125,5 @@
 }
 
 .small__txt:focus {
-  position: absolute;
-  top: 50%;
-  left: 50px;
-  transform: translate(0, -50%);
   font-family: Avenir-Heavy, sans-serif;
-  font-size: 14px;
-  line-height: 22px;
-  color: #3d4e61;
-  border: none;
-  background: none;
-  outline: none;
 }

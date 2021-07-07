@@ -1,6 +1,6 @@
 # Search bar for Airbnb
-- [DEMO LINK](https://Andrii_Kalaida.github.io/layout_search-bar-airbnb/)
-- [TEST REPORT LINK](https://Andrii_Kalaida.github.io/layout_search-bar-airbnb/report/html_report/)
+- [DEMO LINK](https://Andrii-Kalaida.github.io/layout_search-bar-airbnb/)
+- [TEST REPORT LINK](https://Andrii-Kalaida.github.io/layout_search-bar-airbnb/report/html_report/)
 
 > Follow [this instructions](https://github.com/mate-academy/layout_task-guideline#how-to-solve-the-layout-tasks-on-github)
 ___

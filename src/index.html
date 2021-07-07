@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form class="big_field">
+    <form class="big_field" data-qa="big">
 
       <button class="search search_big" type="submit">
         <img
@@ -22,6 +22,7 @@
       </button>
 
       <input
+       data-qa="keypress"
         class="big"
         name="big_bar"
         type="text"
@@ -29,7 +30,7 @@
       >
     </form>
 
-    <form class="small_field">
+    <form class="small_field" data-qa="small">
 
       <button class="search search_small" type="submit">
         <img

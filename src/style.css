@@ -10,14 +10,14 @@ body {
 }
 
 form {
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
-* {
+html {
   font-family: "Avenir", sans-serif;
 }
 
-.big {
+.input-big {
   width: 100%;
   min-height: 70px;
   padding-left: 62px;
@@ -38,7 +38,7 @@ form {
   height: 11px;
 }
 
-.small {
+.input-small {
   width: 100%;
   min-height: 42px;
   padding-left: 36px;
@@ -50,21 +50,21 @@ form {
   border-radius: 4px;
 }
 
-.small::placeholder {
+.input-small::placeholder {
   filter: drop-shadow(0.1px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.small:hover::placeholder {
+.input-small:hover::placeholder {
   filter: none;
 }
 
-.big:hover,
-.small:hover {
+.input-big:hover,
+.input-small:hover {
   box-shadow: 0.1px 3px 8px 0.1px rgba(61, 78, 97, 0.2);
 }
 
-.big:focus,
-.small:focus {
+.input-big:focus,
+.input-small:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid rgba(225, 231, 237, 1);
   box-sizing: border-box;

@@ -11,40 +11,47 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="#"
-          method="GET"
-          autocomplete="off"
-          data-qa="big">
-
-      <div class="form-search form-search-large">
-        <img src="./images/Search.svg"
-             alt="search"
-             class="icon-large">
-        <input type="search"
-               name="searchLarge"
-               class="search search-large"
-               placeholder="Try &quot;Los Angeles&quot;"
-               data-qa="keypress">
-      </div>
-
+    <form
+      class="form-search form-search-large"
+      action="#"
+      method="GET"
+      autocomplete="off"
+      data-qa="big"
+    >
+      <label
+        class="form-search__label form-search__label-large"
+        for="search-large"
+      >
+        <input
+          class="form-search__input form-search__input-large"
+          id="search-large"
+          type="search"
+          name="search-large"
+          placeholder="Try &quot;Los Angeles&quot;"
+          data-qa="keypress"
+        >
+      </label>
     </form>
 
-    <form action="#"
-          method="GET"
-          autocomplete="off"
-          data-qa="small">
-
-      <div class="form-search form-search-small">
-        <img src="./images/Search.svg"
-             alt="search"
-             class="icon-small">
-        <input type="search"
-               name="searchSmall"
-               class="search search-small"
-               placeholder="Try &quot;Los Angeles&quot;">
-      </div>
-
+    <form
+      class="form-search form-search-small"
+      action="#"
+      method="GET"
+      autocomplete="off"
+      data-qa="small"
+    >
+      <label
+        class="form-search__label form-search__label-small"
+        for="search-small"
+      >
+        <input
+          class="form-search__input form-search__input-small"
+          id="search-small"
+          type="search"
+          name="search-small"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
     </form>
   </body>
 </html>
-

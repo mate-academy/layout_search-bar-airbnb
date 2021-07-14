@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Avenir";
-  src: url("fonts/Avenir-Heavy.ttf");
+  src: url("./fonts/Avenir-Heavy.ttf");
   font-style: bold;
 }
 
 @font-face {
   font-family: "Avenir";
-  src: url("fonts/Avenir-Book.ttf");
+  src: url("./fonts/Avenir-Book.ttf");
   font-style: normal;
 }
 
@@ -26,25 +26,27 @@ body {
 
 .search__bar {
   padding-left: 62px;
-  box-sizing: border-box;
 
+  font-weight: bold;
   font-size: 22px;
 
   width: 100%;
   height: 67px;
-
-  border: 1px solid #e1e7ed;
-  border-radius: 4px;
 }
 
 .search__bar__mini {
   padding-left: 33px;
-  box-sizing: border-box;
 
   font-size: 20px;
+  font-weight: bold;
 
   width: 100%;
   height: 40px;
+}
+
+.search__bar__mini--mini,
+.search__bar--big {
+  box-sizing: border-box;
 
   border: 1px solid #e1e7ed;
   border-radius: 4px;
@@ -67,12 +69,14 @@ body {
   font-size: 16px;
   font-family: "Avenir", sans-serif;
   font-style: normal;
+  font-weight: normal;
 }
 
 .search__bar__mini::placeholder {
   font-size: 14px;
   font-family: "Avenir", sans-serif;
   font-style: normal;
+  font-weight: normal;
 }
 
 .icon {

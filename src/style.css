@@ -1,13 +1,19 @@
-body {
-  margin: 0;
-  box-sizing: border-box;
-  padding: 0;
+@font-face {
+  font-family: "Avenir";
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: 900;
 }
 
 @font-face {
   font-family: "Avenir";
-  src: url(./fonts/Avenir.ttc);
+  src: url(fonts/Avenir-Book.ttf);
   font-weight: 300;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
 }
 
 .field {
@@ -49,6 +55,5 @@ body {
 .input-field:focus {
   box-shadow: none;
   text-shadow: none;
-  font-weight: 900;
   background-color: #f6f6f7;
 }

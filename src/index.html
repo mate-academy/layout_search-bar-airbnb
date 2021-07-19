@@ -11,11 +11,10 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
     <form action=""
     class="searchForm"
     data-qa="big">
-      <label for="bigSearch" class="searchFormLabel bigSearchLabel">
+      <label for="bigSearch" class="searchFormLabel searchFormLabel--size_big">
         <svg
           width="19"
           height="19"
@@ -33,7 +32,7 @@
           type="text"
           id="bigSearch"
           data-qa="keypress"
-          class="bigSearchInput"
+          class="searchInput searchInput--size_big"
           placeholder="Try &#8220;Los Angeles&#8221;"
         >
       </label>
@@ -41,7 +40,7 @@
     <form action=""
     class="searchForm"
     data-qa="small">
-      <label for="smallSearch" class="searchFormLabel smallSearchLabel">
+      <label for="smallSearch" class="searchFormLabel searchFormLabel--size_small">
         <svg
           width="11"
           height="11"
@@ -58,7 +57,7 @@
         <input
           type="text"
           id="smallSearch"
-          class="smallSearchInput"
+          class="searchInput searchInput--size_small"
           placeholder="Los Angeles"
         >
       </label>

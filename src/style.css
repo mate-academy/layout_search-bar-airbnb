@@ -15,7 +15,7 @@
   src: url(fonts/Avenir-Heavy.ttf);
 }
 
-.la {
+.city {
   width: 100%;
   border: 1px solid rgb(229, 230, 228);
   color: #9e9c9c;
@@ -26,12 +26,12 @@
   font-family: Avenir, Times, serif;
 }
 
-.la:hover {
+.city:hover {
   box-shadow: 0 0 3px rgb(135, 182, 92);
 }
 
-.la:focus {
-  background: #fafaf9;
+.city:focus {
+  background: linear-gradient(#fafaf9);
   font-weight: bold;
   outline: none;
   font-family: Avenir, Times, serif;
@@ -43,13 +43,17 @@
   margin: 20px 0 0;
 }
 
-.la_top {
+.city_top {
   height: 70px;
   padding-left: 62px;
   font-size: 16px;
 }
 
-.closer_top {
+.bar_top::before {
+  content: "";
+  background-image: url("Search.svg");
+  background-size: 19px 19px;
+  width: 19px;
   height: 19px;
   position: absolute;
   margin-top: 25px;
@@ -62,14 +66,18 @@
   margin: 20px 0 0;
 }
 
-.la_bottom {
+.city_bottom {
   height: 42px;
   padding-left: 33px;
   font-size: 14px;
 }
 
-.closer_bottom {
+.bar_bottom::before {
+  content: "";
+  background-image: url("Search.svg");
+  background-size: 11px 11px;
   height: 11px;
+  width: 11px;
   position: absolute;
   margin-top: 15px;
   margin-left: 13px;

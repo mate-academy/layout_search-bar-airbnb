@@ -15,66 +15,59 @@
   src: url(fonts/Avenir-Heavy.ttf);
 }
 
-.city {
+.request {
+  font-family: Avenir, Times, serif;
   width: 100%;
   border: 1px solid rgb(229, 230, 228);
   color: #9e9c9c;
   border-radius: 3px;
-  font-weight: 300px;
-  font-style: normal;
-  box-shadow: 0 0 1px rgb(135, 182, 92);
-  font-family: Avenir, Times, serif;
+  font-weight: italic;
+  box-shadow: 0 0 0.5px rgb(135, 182, 92);
 }
 
-.city:hover {
+.request:hover {
   box-shadow: 0 0 3px rgb(135, 182, 92);
 }
 
-.city:focus {
+.request:focus {
   background: linear-gradient(#fafaf9);
   font-weight: bold;
   outline: none;
-  font-family: Avenir, Times, serif;
 }
 
-.bar_top {
+.bar {
   position: relative;
   width: 100%;
   margin: 20px 0 0;
 }
 
-.city_top {
+.bar::before {
+  position: absolute;
+  content: "";
+  background-image: url("Search.svg");
+}
+
+.request_big {
   height: 70px;
   padding-left: 62px;
   font-size: 16px;
 }
 
-.bar_top::before {
-  content: "";
-  background-image: url("Search.svg");
+.bar_big::before {
   background-size: 19px 19px;
   width: 19px;
   height: 19px;
-  position: absolute;
   margin-top: 25px;
   margin-left: 26px;
 }
 
-.bar_bottom {
-  position: relative;
-  width: 100%;
-  margin: 20px 0 0;
-}
-
-.city_bottom {
+.request_small {
   height: 42px;
   padding-left: 33px;
   font-size: 14px;
 }
 
-.bar_bottom::before {
-  content: "";
-  background-image: url("Search.svg");
+.bar_small::before {
   background-size: 11px 11px;
   height: 11px;
   width: 11px;

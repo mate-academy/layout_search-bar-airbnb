@@ -4,13 +4,57 @@
     <meta charset="UTF-8">
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width, user-scalable=no, initial-scale=1.0,
+      maximum-scale=1.0, minimum-scale=1.0"
     >
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="ie=edge"
+    >
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
   </head>
+
   <body>
     <h1>Search bar airbnb</h1>
+    <div
+      class="big-bar"
+      data-qa="big"
+      >
+
+      <!-- Big search bar -->
+      <input
+        type="search"
+        data-qa="keypress"
+        class="big-bar"
+        placeholder="Try 'Los Angeles'"
+      >
+      <!-- SVG image -->
+      <img
+        src="./images/Search.svg"
+        alt="magnifying glass"
+        class="find_img_big"
+      >
+    </div>
+    <br>
+
+    <div
+      class="small-bar"
+      data-qa="small"
+    >
+      <!-- Small search bar -->
+      <input
+        type="search"
+        class="small-bar"
+        placeholder="Try 'Los Angeles'"
+      >
+      <!-- Another SVG image -->
+      <img
+        src="./images/Search.svg"
+        alt="magnifying glass"
+        class="find_img_small"
+      >
+    </div>
   </body>
 </html>
+<br>

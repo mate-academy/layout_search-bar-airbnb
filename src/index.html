@@ -15,24 +15,36 @@
       class="search-form"
       data-qa="big"
     >
-      <div class="search-image"></div>
-      <input
-        class="search-input"
-        type="text"
-        data-qa="keypres"
-        placeholder="Try &quot;Los Angeles&quot"
+      <label
+        class="search-label"
+        for="search-input"
       >
+        <input
+          class="search-input"
+          name="search-input"
+          id="search-input"
+          type="text"
+          data-qa="keypres"
+          placeholder="Try &quot;Los Angeles&quot"
+      >
+      </label>
     </form>
     <form
       class="search-form"
       data-qa="big"
     >
-      <div class="search-image search-image--small"></div>
-      <input
+      <label
+      class="search-label search-label--small"
+      for="search-input--small"
+      >
+        <input
         class="search-input search-input--small"
+        name="search-input--small"
+        id="search-input--small"
         type="text"
         placeholder="Try &quot;Los Angeles&quot"
-      >
+        >
+      </label>
     </form>
   </body>
 </html>

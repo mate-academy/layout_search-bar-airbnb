@@ -9,54 +9,23 @@
   font-weight: bold;
   src: url(fonts/Avenir-Heavy.ttf);
 }
- 
-body {
-  position: relative;
-  font-weight: 300;
-  right: 0%;
-}
 
 .big {
   margin-top: 20px;
   height: 70px;
-  margin-bottom: 10px;
-}
-
-.small {
-  margin-top: 20px;
-  height: 42px;
 }
 
 .big:hover {
   box-shadow: 0 3px 8px 0 #3d4e6133;
 }
 
-.small:hover {
-  box-shadow: 0 3px 8px 0 #3d4e6133;
-}
-
-.big-picture {
-  box-sizing: border-box;
-  position: absolute;
-  height: 70px;
-  margin-left: 26px;
-  width: 19px;
-  z-index: 1;
-}
-
-.small-picture {
-  box-sizing: border-box;
-  position: absolute;
-  margin-left: 13px;
-  height: 42px;
-  width: 11px;
-  z-index: 1;
-}
-
 .keypress {
   box-sizing: border-box;
-  position: relative;
-  line-height: 66px;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 26px center;
+  background-size: 19px;
+  line-height: 70px;
   font-family: "Avenir", sans-serif;
   font-size: 16px;
   padding-left: 62px;
@@ -67,15 +36,28 @@ body {
 }
 
 .keypress:focus {
-  height: 66px;
   border-radius: 3px;
   background-color: rgba(225, 231, 237, 1);
+  font-family: "Avenir", sans-serif;
+  font-weight: bold;
+}
+
+.small {
+  margin-top: 20px;
+  height: 42px;
+}
+
+.small:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
 }
 
 .keypress-small {
   box-sizing: border-box;
-  position: relative;
-  line-height: 38px;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 13px center;
+  background-size: 11px;
+  line-height: 42px;
   font-family: "Avenir", sans-serif;
   font-size: 14px;
   padding-left: 33px;
@@ -86,7 +68,8 @@ body {
 }
 
 .keypress-small:focus {
-  height: 38px;
   border-radius: 3px;
   background-color: rgba(225, 231, 237, 1);
+  font-family: "Avenir", sans-serif;
+  font-weight: bold;
 }

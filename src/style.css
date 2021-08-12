@@ -48,7 +48,7 @@ body {
   padding-left: 33px;
   font-size: 14px;
   line-height: 19px;
-  color: black;
+  color: #3D4E61;
   background-size: 11px;
   background-position: 13px;
 }
@@ -63,14 +63,14 @@ body {
   border-radius: 3px;
   font-family: Avenir, sans-serif;
   font-weight: 900;
-  background: linear-gradient(180deg, #fff, #f6f6f7);
-  background-image: url("./images/Search.svg");
-  background-repeat: no-repeat;
-  background-position: 26px;
+  background: url("./images/Search.svg") no-repeat left 26px top 25px, linear-gradient(
+180deg,#fff,#f6f6f7);
+  background-size: 19px,cover;
+  outline: none;
 }
 
 .search-bar--small:focus {
-  background-repeat: no-repeat;
-  background-size: 11px;
-  background-position: 13px;
+  background: url("./images/Search.svg") no-repeat left 12px top 14px,linear-gradient(
+180deg,#fff,#f6f6f7);
+    background-size: 11px,cover;
 }

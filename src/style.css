@@ -19,7 +19,7 @@
   box-shadow: 0 3px 8px 0 #3d4e6133;
 }
 
-.keypress {
+.search-input {
   box-sizing: border-box;
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
@@ -35,7 +35,8 @@
   width: 100%;
 }
 
-.keypress:focus {
+.search-input:focus {
+  color: rgba(61, 78, 97, 1);
   border-radius: 3px;
   background-image: url(images/Search.svg), linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   background-size: 19px, cover;
@@ -53,27 +54,16 @@
   box-shadow: 0 3px 8px 0 #3d4e6133;
 }
 
-.keypress-small {
-  box-sizing: border-box;
-  background-image: url(images/Search.svg);
-  background-repeat: no-repeat;
+.search-input__small {
   background-position: 13px center;
   background-size: 11px;
   line-height: 38px;
   font-family: "Avenir", sans-serif;
   font-size: 14px;
   padding-left: 33px;
-  border: 1px solid #e1e7ed;
-  border-radius: 4px;
-  box-shadow: 0 1px 8px 0 #3d4e611a;
-  width: 100%;
 }
 
-.keypress-small:focus {
-  border-radius: 3px;
-  background-image: url(images/Search.svg), linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+.search-input__small:focus {
   background-size: 11px, cover;
   background-position: 13px center, 0 0;
-  font-family: "Avenir", sans-serif;
-  font-weight: bold;
 }

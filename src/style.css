@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "Avenir";
+  font-weight: normal;
+  src: url(./fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: "Avenir";
+  font-weight: bold;
+  src: url(./fonts/Avenir-Heavy.ttf);
+}
+
+body {
+  font-weight: 300;
+}
+
+form {
+  position: relative;
+  display: block;
+  margin: 20px 0;
+}
+
+.input-searchbar {
+  font-family: Avenir, sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid rgba(211, 211, 211, 0.5);
+  box-shadow: 0 3px 10px rgba(105, 105, 105, 0.1);
+  border-radius: 5px;
+  outline: none;
+}
+
+.input-big-searchbar {
+  padding-left: 62px;
+  height: 70px;
+  font-size: 16px;
+}
+
+.input-small-searchbar {
+  padding-left: 33px;
+  height: 42px;
+  font-size: 14px;
+}
+
+.big-searchbar-img {
+  position: absolute;
+  top: 25px;
+  left: 26px;
+  height: 19px;
+  width: 19px;
+}
+
+.small-searchbar-img {
+  position: absolute;
+  top: 15px;
+  left: 13px;
+  height: 11px;
+  width: 11px;
+}
+
+.input-searchbar:hover {
+  box-shadow: 0 3px 10px rgba(105, 105, 105, 0.25);
+}
+
+.input-searchbar:focus {
+  font-weight: bold;
+  color: rgb(100, 100, 100);
+  background-color: rgba(209, 215, 218, 0.1);
+}

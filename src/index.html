@@ -11,8 +11,21 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div data-qa="big">
-      <input type="text" placeholder="Try &quot;Los Angeles&quot;">
-    </div>
+    <form action="http://localhost:8080/api" method="POST">
+
+      <div data-qa="big">
+        <input data-qa="keypress"
+          type="text"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </div>
+
+      <div data-qa="small">
+        <input class="form_small"
+          type="text"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </div>
+    </form>
   </body>
 </html>

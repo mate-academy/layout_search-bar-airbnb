@@ -9,7 +9,13 @@
   font-weight: 700;
   src: url(./fonts/Avenir-Heavy.ttf);
 }
-  
+
+.body {
+  margin: 0;
+
+  --grey-color: #3d4e61;
+}
+
 .form__section-big,
 .form__section-small {
   position: relative;
@@ -39,7 +45,7 @@
   font-family: Avenir, sans-serif;
   font-weight: 300;
   width: 100%;
-  color: #3d4e61;
+  color: var(--grey-color);
   border: 1px solid #e1e7ed;
   border-radius: 4px;
   outline: none;
@@ -51,7 +57,7 @@
   padding-left: 62px;
   font-size: 16px;
   line-height: 22px;
-  color: #3d4e61;
+  color: var(--grey-color);
 }
   
 .small__search {
@@ -59,7 +65,7 @@
   padding-left: 33px;
   font-size: 14px;
   line-height: 19px;
-  color: #3d4e61;
+  color: var(--grey-color);
 }
   
 .form__search:focus {

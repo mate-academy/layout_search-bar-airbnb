@@ -10,7 +10,47 @@
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
   </head>
+
   <body>
     <h1>Search bar airbnb</h1>
+
+    <div class="search-bar">
+
+      <div
+      class="search big-search"
+      data-qa="big"
+      for="big-search-text"
+      >
+        <img
+        class="icon icon-big"
+        src="./images/Search.svg"
+        alt="Search symbol"
+        >
+        <input
+        type="text"
+        name="big-search-text"
+        class="text big-search-text"
+        data-qa="keypress"
+        >
+      </div>
+
+      <div
+      class="search small-search"
+      data-qa="small"
+      >
+        <img
+        class="icon icon-small"
+        src="./images/Search.svg"
+        alt="Search symbol"
+        >
+        <input
+        type="text"
+        name="small-search-text"
+        class="text small-search-text"
+        data-qa="keypress"
+        >
+      </div>
+    </div>
+
   </body>
 </html>

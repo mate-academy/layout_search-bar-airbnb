@@ -12,7 +12,11 @@
 
 html {
   font-family: Avenir, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
+}
+
+body {
+  margin-top: 20px;
 }
 
 .search {
@@ -24,7 +28,6 @@ html {
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
   z-index: -1;
-  margin-bottom: 20px;
 }
 
 .search:hover {
@@ -36,6 +39,10 @@ html {
   padding-left: 62px;
   font-size: 16px;
   line-height: 22px;
+}
+
+.label__big {
+  position: relative;
 }
 
 .label__big::before {
@@ -52,9 +59,14 @@ html {
 
 .small__input {
   height: 42px;
-  padding-left: 42px;
+  padding-left: 33px;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 19px;
+}
+
+.label__small {
+  position: relative;
+  top: 20px;
 }
 
 .label__small::before {
@@ -65,5 +77,5 @@ html {
   height: 11px;
   width: 11px;
   margin-top: 15px;
-  margin-left: 16px;
+  margin-left: 13px;
 }

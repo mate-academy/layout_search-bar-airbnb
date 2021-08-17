@@ -1,12 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: "Avenir";
   src: url("fonts/Avenir-Book.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: 600;
 }
 
 .search {
   font-family: "Avenir", Fallback, sans-serif;
+  font-style: normal;
   font-weight: 300;
-  box-sizing: border-box;
   width: 100%;
   color: #3d4e61;
   background-image: url(images/Search.svg), linear-gradient(#fff, #fff);
@@ -40,4 +51,5 @@
   border-radius: 3px;
   outline-width: 0;
   box-shadow: none;
+  font-weight: 600;
 }

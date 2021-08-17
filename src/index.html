@@ -1,69 +1,42 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
   </head>
+
   <body>
-    <div
-      class="wrapper"
+    <form
+      class="search-form search-form--big"
+      action=""
       data-qa="big"
     >
-      <div
-        class="container1_big"
+      <input
+        class="search-form__input search-form__input--big"
+        type="text"
+        name="search_query"
+        placeholder="Try &quot;Los Angeles&quot;"
+        data-qa="keypress"
       >
-        <label
-          class="search_box"
-          for="search_field"
-        >
-          <img
-            src="images/Search.svg"
-            alt="search_icon"
-          >
-        </label>
-        <input
-          class="input_search"
-          type="text"
-          placeholder="Try &quot;Los Angeles&quot;"
-          data-qa="keypress"
-          name="search_field"
-          id="search_field"
-        >
-      </div>
-    </div>
-    <div
-      class="wrapper_small"
+    </form>
+    <form
+      class="search-form search-form--small"
+      action=""
       data-qa="small"
     >
-      <div
-        class="container1_small"
+      <input
+        class="search-form__input search-form__input--small"
+        type="text"
+        name="search_query"
+        placeholder="Try &quot;Los Angeles&quot;"
+        data-qa="keypress"
       >
-        <span
-          class="search_box_small"
-        >
-          <img
-            src="images/Search.svg"
-            alt="search_icon"
-            class="search_icon_small"
-          >
-        </span>
-      </div>
-      <div
-        class="container2_small"
-      >
-        <input
-          class="input_search_small"
-          type="text"
-          placeholder="Try &quot;Los Angeles&quot;"
-          data-qa="keypress"
-        >
-      </div>
-    </div>
+    </form>
   </body>
+
 </html>

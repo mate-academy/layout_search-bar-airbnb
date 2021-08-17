@@ -11,19 +11,22 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form method="get" data-qa="big">
-      <div class="search-bar-big">
-        <label class="big-search-bar-label" for="big-search-bar"></label>
-        <input type="text"
-        id="big-search-bar" data-qa="keypress"
-        placeholder="Try Los Angeles">
-      </div>
+    <form data-qa="big">
+      <label for="big-search"></label>
+      <input
+        data-qa="keypress"
+        placeholder="Try &quot;Los Angeles&quot;"
+        id="big-search"
+        type="text"
+      >
     </form>
-    <form method="get" data-qa="small">
-      <div class="search-bar-small" data-qa="small">
-        <input type="text"
-        id="small-search-bar" placeholder="Try Los Angeles">
-      </div>
+    <form data-qa="small">
+      <label for="small-search"></label>
+      <input
+        placeholder="Try &quot;Los Angeles&quot;"
+        id="small-search"
+        type="text"
+      >
     </form>
   </body>
 </html>

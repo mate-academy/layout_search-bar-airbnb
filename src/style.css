@@ -1,6 +1,5 @@
 * {
   box-sizing: inherit;
-  padding: 0;
 }
 
 @font-face {
@@ -24,7 +23,16 @@ body {
 }
 
 .search {
+  position: relative;
   margin: 20px 0;
+}
+
+.search::before {
+  content: "";
+  position: absolute;
+  background-image: url("./images/Search.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .search--big {
@@ -35,28 +43,14 @@ body {
   height: 42px;
 }
 
-.search__label {
-  position: relative;
-  display: block;
-  height: 100%;
-}
-
-.search__label::before {
-  position: absolute;
-  content: "";
-  background-image: url("./images/Search.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.search__label--big::before {
+.search--big::before {
   width: 19px;
   height: 19px;
   top: 25px;
   left: 26px;
 }
 
-.search__label--small::before {
+.search--small::before {
   width: 11px;
   height: 11px;
   top: 15px;

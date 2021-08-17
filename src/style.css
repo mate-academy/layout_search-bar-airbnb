@@ -52,22 +52,33 @@ body {
   line-height: 22px;
 }
 
+.search-form--label::before {
+  content: "";
+  position: absolute;
+  background-image: url("./images/Search.svg");
+}
+
 .search-form__big--label {
   position: relative;
 }
 
 .search-form__big--label::before {
-  content: "";
-  position: absolute;
-  background-image: url("./images/Search.svg");
   width: 19px;
   height: 19px;
   left: 26px;
   top: 0;
 }
 
-.search-bar__small {
+.search-form__small--label {
   position: relative;
+}
+
+.search-form__small--label::before {
+  background-size: cover;
+  width: 11px;
+  height: 11px;
+  left: 13px;
+  top: 6px;
 }
 
 .search-form__small-input {
@@ -75,8 +86,4 @@ body {
   padding-left: 33px;
   font-size: 14px;
   line-height: 19px;
-  background-image: url("./images/Search.svg");
-  background-repeat: no-repeat;
-  background-size: 11px;
-  background-position: 12px 14px;
 }

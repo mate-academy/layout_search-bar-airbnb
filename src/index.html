@@ -11,19 +11,22 @@
   </head>
 
   <body>
-    <form action="post">
-      <div class="div-search big-div-search">
-        <input type="text"
-        name="search"
-        class="search_input search_big"
-        placeholder="Try &quot;Los Angeles&quot;">
-      </div>
-      <div class="div-search small-div-search">
-        <input type="text"
-        name="search"
-        class="search_input search_small"
-        placeholder="Try &quot;Los Angeles&quot;">
-      </div>
+    <form action="post"
+    class="div-search big-div-search"
+    data-qa="big">
+      <input type="text"
+       name="search"
+       class="search_input search_big"
+       data-qa="keypress"
+       placeholder="Try &quot;Los Angeles&quot;">
+    </form>
+    <form action="post"
+    class="div-search small-div-search"
+    data-qa="small">
+      <input type="text"
+       name="search"
+       class="search_input search_small"
+       placeholder="Try &quot;Los Angeles&quot;">
     </form>
   </body>
 

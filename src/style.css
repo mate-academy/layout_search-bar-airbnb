@@ -25,14 +25,10 @@
 }
   
 .big::before {
-  content: "";
-  display: block;
-  position: absolute;
   width: 19px;
   height: 19px;
   margin-top: 25px;
   margin-left: 26px;
-  background-image: url(./images/Search.svg);
 }
   
 .small_search {
@@ -44,13 +40,16 @@
 }
   
 .small::before {
-  content: "";
-  display: block;
-  position: absolute;
   width: 11px;
   height: 11px;
   margin-top: 15px;
   margin-left: 13px;
+}
+
+.search_form::before {
+  content: "";
+  display: block;
+  position: absolute;
   background-image: url(./images/Search.svg);
   background-size: cover;
 }

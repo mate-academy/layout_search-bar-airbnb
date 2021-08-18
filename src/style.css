@@ -27,13 +27,18 @@
   background-position: 26px 25px;
 }
 
-.bigForm::before {
+.unitedForm::before {
   content: "";
   position: absolute;
   display: inline-block;
-  background-size: 19px 19px;
-  background-position: 26px 25px;
   background-image: url("./images/Search.svg");
+}
+
+.bigForm::before {
+  height: 19px;
+  width: 19px;
+  margin-top: 25px;
+  margin-left: 26px;
 }
 
 .smallSearch {
@@ -47,14 +52,10 @@
 }
 
 .smallForm::before {
-  content: "";
-  position: absolute;
-  display: inline-block;
   width: 11px;
   height: 11px;
   margin-top: 15px;
   margin-left: 13px;
-  background-image: url("./images/Search.svg");
   background-size: cover;
 }
 

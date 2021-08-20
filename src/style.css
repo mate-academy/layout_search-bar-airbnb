@@ -1,10 +1,13 @@
 @font-face {
   font-family: "Avenir";
-  src: url(/src/fonts/Avenir-Book.ttf);
+  src: url(fonts/Avenir.ttc);
 }
 
 body {
   font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 0;
+ 
 }
 
 .search {
@@ -42,7 +45,7 @@ body {
   content: "";
   position: absolute;
   display: block;
-  background-image: url(/src/images/Search.svg);
+  background-image: url(images/Search.svg);
   background-repeat: no-repeat;
   background-size: contain;
   pointer-events: none;
@@ -101,12 +104,11 @@ body {
   border-radius: 4px;
   height: 42px;
   padding: 12px 26px 10px 33px;
-  font-family: Avenir, sans-serif;
+  font-family: "Avenir", sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 19px;
   color: #3d4e61;
-  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.25);
 }
 
 .smallSearch:hover {

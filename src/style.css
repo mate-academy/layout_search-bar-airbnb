@@ -1,0 +1,61 @@
+@font-face {
+  font-family: Avenir, sans-serif;
+  src: url("./fonts/Avenir-Heavy.ttf"),
+    url    ("./fonts/Avenir-Book.ttf"),
+    url    ("./fonts/Avenir.ttc");
+}
+
+.big {
+  display: flex;
+  font-weight: 300;
+  box-shadow: 0 0 3px rgb(224, 224, 224);
+  border-radius: 2px ;
+  border: 0.5px solid rgba(0,0,0,0.1);
+  padding-left: 30px;
+  font-size: 8px;
+  height: 30px;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background: url("Search.svg") no-repeat 12px center;
+  background-size: 9px;
+  /* background-image: url("Search.svg");
+  background-repeat: no-repeat; */
+  /* background-position: left;
+  background-position-x: 12px; */
+}
+
+.small {
+  display: flex;
+  font-weight: 300;
+  box-shadow: 3px rgb(224, 224, 224);
+  border-radius: 1px ;
+  border: 0.5px solid rgba(0,0,0,0.1);
+  padding-left: 15px;
+  font-size: 4px;
+  height: 15px;
+  width: 100%;
+  margin-bottom: 20px;
+  background: url("Search.svg") no-repeat 6px center;
+  background-size: 4.5px;
+}
+
+.big:hover,
+.small:hover {
+  box-shadow: 2px 3px rgb(224, 224, 224);
+}
+
+.big:focus {
+  background: url("Search.svg") no-repeat 12px center;
+  background-size: 9px;
+  outline: none;
+  background-color: #f6f6f7;
+  font-weight: 300;
+}
+
+.small:focus {
+  background: url("Search.svg") no-repeat 6px center;
+  background-size: 4.5px;
+  outline: none;
+  background-color: #f6f6f7;
+}

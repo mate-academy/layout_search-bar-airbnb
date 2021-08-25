@@ -1,133 +1,120 @@
-@font-face {
-  font-family: Avenir;
+/* @font-face {
+  font-family: "Avenir";
   src: url(fonts/Avenir.ttc);
 }
 @font-face {
-  font-family: Avenir;
+  font-family: "Avenir";
   font-weight: 300px;
   src: url(fonts/Avenir-Book.ttf);
 }
 @font-face {
-  font-family: Avenir;
+  font-family: "Avenir";
   font-weight: 900px;
+  src: url(fonts/Avenir-Heavy.ttf);
+} */
+
+@font-face {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: bold;
   src: url(fonts/Avenir-Heavy.ttf);
 }
 
 html {
-  font-family: Avenir, Arial, sans-serif;
+  font-family: "Avenir", sans-serif;
   font-weight: 300px;
 }
 
-body {
+* {
   box-sizing: border-box;
 }
 
-.big_container {
+.big_form {
   margin-top: 20px;
+  padding-left: 62px;
   border: 1px solid #e1e7ed;
   box-shadow: 1px 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
-  background: #fff;
   width: 100%;
   line-height: 68px;
+  background-image: url(./images/Search.svg);
+  background-size: 19px;
+  background-repeat: no-repeat;
+  background-position: 25px 24px;
 }
 
-.big_container:hover {
+.big_form:hover {
   border-radius: 3px;
 }
 
-.big_container:focus {
+.big_form:focus {
   border-color: #e1e7ed;
   border-radius: 3px;
-}
-
-.big_img {
-  display: block;
-  width: 19px;
-  height: 19px;
-}
-
-.button_big {
-  background: #fff;
-  border: none;
-  vertical-align: middle;
-  height: 19px;
-  width: 19px;
-  margin-right: 17px;
-  margin-left: 25px;
-  padding: 0;
 }
 
 .big_input {
-  background: #fff;
+  font-family: inherit;
   outline: none;
   border: none;
-  height: 20px;
-  font-size: 15px;
-  padding: 0;
+  font-size: 16px;
 }
 
 .big_input:hover {
-  background: #fff;
+  outline: none;
 }
 
 .big_input:focus {
-  background: #fff;
+  font-weight: bold;
 }
+
 /* small search bar */
 
-.small_container {
+.small_form {
   margin-top: 20px;
+  padding-left: 33px;
   border: 1px solid #e1e7ed;
   box-shadow: 1px 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
-  background: #fff;
   width: 100%;
   line-height: 40px;
+  background: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: 11px;
+  background-position: 12px 14px;
 }
 
-.small_container:hover {
+.small_form:hover {
   border-radius: 3px;
 }
 
-.small_container:focus {
+.small_form:focus {
   border-color: #e1e7ed;
   border-radius: 3px;
 }
 
-.small_img {
-  display: block;
-  width: 10px;
-  height: 10px;
-}
-
-.button_small {
-  background: #fff;
-  border: none;
-  vertical-align: middle;
-  height: 11px;
-  width: 11px;
-  margin-right: 7px;
-  margin-left: 12px;
-  padding: 0;
-}
-
 .small_input {
-  background: #fff;
+  display: block;
+  font-family: inherit;
   border: none;
-  height: 16px;
   font-size: 14px;
   font-weight: 400;
   padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .small_input:hover {
-  background: #fff;
   border: none;
 }
 
 .small_input:focus {
   border: none;
   outline: none;
-  background: #fff;
 }

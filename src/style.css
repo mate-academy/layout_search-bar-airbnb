@@ -1,61 +1,61 @@
 @font-face {
-  font-family: Avenir, sans-serif;
-  src: url("./fonts/Avenir-Heavy.ttf"),
-    url    ("./fonts/Avenir-Book.ttf"),
-    url    ("./fonts/Avenir.ttc");
-}
-
-.big {
-  display: flex;
+  font-family: Avenir;
+  src: url(/fonts/Avenir-Book.ttf);
   font-weight: 300;
-  box-shadow: 0 0 3px rgb(224, 224, 224);
-  border-radius: 2px ;
-  border: 0.5px solid rgba(0,0,0,0.1);
-  padding-left: 30px;
-  font-size: 8px;
-  height: 30px;
-  width: 100%;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  background: url("Search.svg") no-repeat 12px center;
-  background-size: 9px;
-  /* background-image: url("Search.svg");
-  background-repeat: no-repeat; */
-  /* background-position: left;
-  background-position-x: 12px; */
 }
 
+@font-face {
+  font-family: Avenir;
+  src: url(/fonts/Avenir-Heavy.ttf);
+  font-weight: 900;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.big,
 .small {
   display: flex;
   font-weight: 300;
-  box-shadow: 3px rgb(224, 224, 224);
-  border-radius: 1px ;
-  border: 0.5px solid rgba(0,0,0,0.1);
-  padding-left: 15px;
-  font-size: 4px;
-  height: 15px;
+  justify-content: center;
+  color: #3d4e61;
+  font-size: 16px;
+  border-radius: 4px ;
+  border: 1px solid #e1e7ed;
+  padding-left: 62px;
+  height: 70px;
   width: 100%;
-  margin-bottom: 20px;
-  background: url("Search.svg") no-repeat 6px center;
-  background-size: 4.5px;
+  margin-top: 20px;
+  background: url("Search.svg") no-repeat 22px center;
+  background-size: 20px;
+  box-shadow: 0.1px 0.1px 8px rgba(219, 219, 219, 0.2);
+}
+
+.small {
+  padding-left: 33px;
+  font-size: 14px;
+  height: 42px;
+  background: url("Search.svg") no-repeat 11px center;
+  background-size: 10px;
 }
 
 .big:hover,
 .small:hover {
-  box-shadow: 2px 3px rgb(224, 224, 224);
+  box-shadow: 0.1px 3px 8px rgba(133, 132, 132, 0.5);
 }
 
 .big:focus {
-  background: url("Search.svg") no-repeat 12px center;
-  background-size: 9px;
+  background: url("Search.svg") no-repeat 22px center;
+  background-size: 20px;
   outline: none;
   background-color: #f6f6f7;
   font-weight: 300;
 }
 
 .small:focus {
-  background: url("Search.svg") no-repeat 6px center;
-  background-size: 4.5px;
+  background: url("Search.svg") no-repeat 11px center;
+  background-size: 10px;
   outline: none;
   background-color: #f6f6f7;
 }

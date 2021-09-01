@@ -14,8 +14,11 @@
   box-sizing: border-box;
 }
 
-.big,
-.small {
+input::placeholder {
+  color: #586464;
+}
+
+.input {
   display: flex;
   font-weight: 300;
   justify-content: center;
@@ -27,35 +30,51 @@
   height: 70px;
   width: 100%;
   margin-top: 20px;
-  background: url("Search.svg") no-repeat 22px center;
-  background-size: 20px;
   box-shadow: 0.1px 0.1px 8px rgba(219, 219, 219, 0.2);
 }
 
-.small {
-  padding-left: 33px;
-  font-size: 14px;
+.input-small {
+  padding-left: 34px;
+  font-size: 13px;
   height: 42px;
-  background: url("Search.svg") no-repeat 11px center;
-  background-size: 10px;
 }
 
-.big:hover,
-.small:hover {
+input:hover {
   box-shadow: 0.1px 3px 8px rgba(133, 132, 132, 0.5);
 }
 
 .big:focus {
-  background: url("Search.svg") no-repeat 22px center;
-  background-size: 20px;
   outline: none;
-  background-color: #f6f6f7;
-  font-weight: 300;
+  background: linear-gradient(180deg , #f6eded 10%, #e9e9fb 100%);
 }
 
-.small:focus {
-  background: url("Search.svg") no-repeat 11px center;
-  background-size: 10px;
+.input-small:focus {
   outline: none;
-  background-color: #f6f6f7;
+  background: linear-gradient(180deg, #f6eded 10%, #e9e9fb 100%);
+}
+
+.search-Label::after {
+  position: absolute;
+  content: "";
+  display: block;
+}
+
+.big-search::after {
+  background-image: url("Search.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 19px;
+  height: 19px;
+  top: 47px;
+  left: 33px;
+}
+
+.small-search::after {
+  background-image: url("Search.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  top: 124px;
+  left: 22px;
 }

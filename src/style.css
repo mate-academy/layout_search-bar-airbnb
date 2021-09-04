@@ -1,7 +1,13 @@
 @font-face {
   font-family: Avenir;
-  src: url(./fonts/Avenir-Book.ttf);
-  src: url(./fonts/Avenir-Heavy.ttf);
+  src: url(/fonts/Avenir-Book.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(/fonts/Avenir-Heavy.ttf);
+  font-weight: 900;
 }
 
 body {
@@ -29,8 +35,7 @@ body {
 
 .search:focus {
   border-radius: 3px;
-  background-position: 0;
-  background-image: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background-position: 10px;
 }
 
 .general_form {
@@ -43,22 +48,20 @@ body {
 }
 
 .general_form:focus {
-  background-image: url(./images/Search.svg);
+  background: url(./images/Search.svg) no-repeat 26px 25px, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   background-repeat: no-repeat;
-  background-position: 26px 25px;
 }
 
 .secondary_form {
+  background: url(./images/Search.svg) no-repeat 13px 15px;
+  background-size: 11px;
   line-height: 19px;
   font-size: 14px;
   padding-left: 32px;
   height: 42px;
-  background-position: 13px 15px;
-  background-size: 11px;
 }
 
 .secondary_form:focus {
-  background-image: url(./images/Search.svg);
-  background-repeat: no-repeat;
-  background-position: 13px 15px;
+  background: url(./images/Search.svg) no-repeat 13px 15px, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background-size: 11px;
 }

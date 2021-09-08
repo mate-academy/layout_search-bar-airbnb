@@ -1,7 +1,7 @@
 # Search bar for Airbnb
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://<your_account>.github.io/layout_search-bar-airbnb/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_search-bar-airbnb/report/html_report/)
+- [DEMO LINK](https://podlesnyi-pavel.github.io/layout_search-bar-airbnb/)
+- [TEST REPORT LINK](https://podlesnyi-pavel.github.io/layout_search-bar-airbnb/report/html_report/)
 
 > Follow [this instructions](https://github.com/mate-academy/layout_task-guideline#how-to-solve-the-layout-tasks-on-github)
 ___
@@ -34,3 +34,4 @@ This search bar will be part of big project.
 - Don't use repeated styles.
 - Text `Try "Los Angeles"` in mockup is a placeholder.
 - Check font styles. Use fonts from `fonts` folder.
+

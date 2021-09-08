@@ -38,22 +38,22 @@ html {
   cursor: pointer;
 }
 
-.form__img_big {
+.form__img--big {
   top: 25px;
   left: 25px;
 }
 
-.form__img_small {
+.form__img--small {
   top: 11px;
   left: 12px;
 }
 
-.form__img_big > img {
+.form__img-big-inner {
   height: 19px;
   width: 19px;
 }
 
-.form__img_small > img {
+.form__img-small-inner {
   height: 11px;
   width: 11px;
 }
@@ -63,26 +63,25 @@ html {
   border: none;
   color: #3d4e61;
   font-family: Avenir, sans-serif;
+  /* font-family: inherit; - так тесты не проходит */
   font-weight: 400;
-
+  outline: none;
+  border-radius: 3px;
 }
 
-.form__seach_big {
+.form__seach--big {
   font-size: 16px;
   padding: 23px 62px;
   line-height: 22px;
 }
 
-.form__seach_small {
+.form__seach--small {
   font-size: 14px;
   padding: 10px 33px 11px;
   line-height: 19px;
 }
 
 .form__seach:focus {
-  font-family: Avenir, serif;
   font-weight: 900;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  outline: none;
-  border-radius: 3px;
 }

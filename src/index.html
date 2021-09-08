@@ -12,14 +12,17 @@
   </head>
   <body>
     <form
+       action="/action_page.php"
+       method="get"
        role="search"
        class="search__form"
        data-qa="big"
     >
       <div class="searchBar__container" >
-        <input type="search"
-           class="big__field"
-           name="q"
+        <input
+           type="search"
+           class="field big__field"
+           name="question"
            id="search_big"
            data-qa="keypress"
            placeholder="Try &quot;Los Angeles&quot;"
@@ -38,9 +41,9 @@
     >
       <div class="searchBar__container">
         <input
-           class="small__field"
+           class="field small__field"
            type="search"
-           name="q"
+           name="question"
            id="search_small"
            placeholder="Try &quot;Los Angeles&quot;"
            aria-label="Search through site content"

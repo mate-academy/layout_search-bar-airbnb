@@ -11,7 +11,11 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="POST"
+      data-qa="big"
+    >
       <label for="big">
         <div class="search">
           <img
@@ -24,10 +28,16 @@
             id="big"
             class="input big"
             placeholder="Try “Los Angeles”"
-            data-qa="big"
+            data-qa="keypress"
           >
         </div>
       </label>
+    </form>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="POST"
+      data-qa="small"
+    >
       <label for="small">
         <div class="search">
           <img

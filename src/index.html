@@ -18,12 +18,19 @@
       class="form"
       data-qa="big"
     >
-      <input
-        class="search_input"
-        type="text"
-        placeholder="Try &quot;Los Angeles&quot;"
-        data-qa="keypress"
-      >
+      <label for="search_input">
+        <input
+          class="search_input"
+          type="text"
+          placeholder="Try &quot;Los Angeles&quot;"
+          data-qa="keypress"
+          id="search_input"
+        >
+        <img
+          class="form__img--size_big"
+          src="images/Search.svg"
+          alt="search">
+      </label>
     </form>
 
     <form
@@ -33,11 +40,18 @@
       class="form"
       data-qa="small"
     >
-      <input
-        class="search_input search_input_small"
-        type="text"
-        placeholder="Try &quot;Los Angeles&quot;"
-      >
+      <label for="search_input_small">
+        <input
+          class="search_input search_input_small"
+          type="text"
+          placeholder="Try &quot;Los Angeles&quot;"
+          id="search_input_small"
+        >
+        <img
+          class="form__img--size_small"
+          src="images/Search.svg"
+          alt="search">
+      </label>
     </form>
   </body>
 </html>

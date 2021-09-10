@@ -14,22 +14,23 @@
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="GET"
-      class="styles__form__big several__form"
+      class=" styles__form__big several__form"
       data-qa="big"
     >
-      <div class="styles__div__big">
+      <label for="big" class="styles__label__big label_several">
         <img
           src="images/Search.svg"
           alt=""
           class="icon__big"
         >
-        <input
+      </label>
+      <input
           type="text"
           placeholder="Try &quot;Los Angeles&quot;"
-          class="input__big"
+          class="input__big input_several"
           data-qa="keypress"
+          id="big"
         >
-      </div>
     </form>
     <form
       action=""
@@ -37,18 +38,19 @@
       class="styles__form__small several__form"
       data-qa="small"
     >
-      <div class="styles__div__small">
+      <label for="small" class="styles__label__small label_several">
         <img
           src="images/Search.svg"
           alt=""
           class="icon__small"
         >
-        <input
-          type="text"
-          placeholder="Try &quot;Los Angeles&quot;"
-          class="input__small"
-        >
-      </div>
+      </label>
+      <input
+      type="text"
+      placeholder="Try &quot;Los Angeles&quot;"
+      class="input__small input_several"
+      id="small"
+    >
     </form>
   </body>
 </html>

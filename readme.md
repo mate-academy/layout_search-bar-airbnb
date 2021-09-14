@@ -35,7 +35,8 @@ This search bar will be part of big project.
 - If you see a cursor in the input on the mockup, that means styles are for entered text by the user (not only on
 focus action)
 - You have to put `input` inside the `form` for correct data processing. Form should have `action` and `method`
-attributes. Each search bar should have its own form.
+attributes.
+- Each search bar be inside its own `form` element.
 - Task has styling for `:focus` state. Forms, labels, divs are not focusable by default. Consider it when selecting your
 layout.
 - Remember that inputs and other interactive elements don’t inherit font styles by default.

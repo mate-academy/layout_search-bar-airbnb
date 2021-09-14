@@ -185,4 +185,6 @@ BAD example:
 input could be activated by clicking on the corresponding label.
 8. [TESTS] - Remember to style input placeholders correctly
 9. [TESTS] - Remember that the search-bar should have width: 100% on any screen.
+10. [TESTS] - Remember, each search bar should be located in separate
+form element.
 

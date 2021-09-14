@@ -28,9 +28,17 @@ This search bar will be part of big project.
 ---
 --> [CHECKLIST](https://github.com/mate-academy/layout_search-bar-airbnb/blob/master/checklist.md)
 
-### Common mistakes
+### Tips & Hints
 - Add **ALL** `data-qa` attributes required in the task
-- Do not use tabs. Use 2 spaces for indentation.
-- Don't use repeated styles.
 - Text `Try "Los Angeles"` in mockup is a placeholder.
-- Check font styles. Use fonts from `fonts` folder.
+- Pay close attention to font styles. Use fonts from `fonts` folder.
+- If you see a cursor in the input on the mockup, that means styles are for entered text by the user (not only on
+focus action)
+- You have to put `input` inside the `form` for correct data processing. Form should have `action` and `method`
+attributes. Each search bar should have its own form.
+- Task has styling for `:focus` state. Forms, labels, divs are not focusable by default. Consider it when selecting your
+layout.
+- Remember that inputs and other interactive elements don’t inherit font styles by default.
+- Remember that placeholder has its own set of styles available using `::placeholder` pseudo-element.
+
+

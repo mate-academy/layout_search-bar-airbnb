@@ -1,7 +1,7 @@
 # Search bar for Airbnb
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://dencoderok.github.io/layout_search-bar-airbnb/src/index.html?_ijt=r7u8aote33gnc66klsqbe1fgob)
-- [TEST REPORT LINK](https://dencoderok.github.io/layout_search-bar-airbnb/report/html_report/src/index.html?_ijt=r7u8aote33gnc66klsqbe1fgob)
+- [DEMO LINK](https://dencoderok.github.io/search_bar/layout_search-bar-airbnb/src/index.html?_ijt=r7u8aote33gnc66klsqbe1fgob)
+- [TEST REPORT LINK](https://dencoderok.github.io/search_bar/layout_search-bar-airbnb/src/index.html?_ijt=r7u8aote33gnc66klsqbe1fgob)
 
 > Follow [this instructions](https://github.com/mate-academy/layout_task-guideline#how-to-solve-the-layout-tasks-on-github)
 ___

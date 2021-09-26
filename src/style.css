@@ -1,8 +1,9 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 @font-face {
   font-family: Avenir;
   src: url("./fonts/Avenir.ttc");
@@ -10,23 +11,21 @@
 
 @font-face {
   font-family: Avenir-Book;
-  src: url("./fonts/Avenir-Book.ttc");
+  src: url("./fonts/Avenir-Book.ttf");
 }
 
 @font-face {
   font-family: Avenir-Heavy;
-  src: url("./fonts/Avenir-Heavy.ttc");
+  src: url("./fonts/Avenir-Heavy.ttf");
 }
 
-.searchBar_wrapper{
-  width: 90%;
-  margin: auto;
+.searchBar_wrapper {
+  padding: 0 8px;
 }
 
-.bigFormLabel,
-.smallFormLabel {
-  background: #FFFFFF;
-  border: 1px solid #E1E7ED;
+.label {
+  background: #fff;
+  border: 1px solid #e1e7ed;
   box-sizing: border-box;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
@@ -36,52 +35,51 @@
   margin: 20px 0 0;
 }
 
-
-.bigFormInput,
-.smallFormInput {
+.input {
   font-family: Avenir-Heavy, sans-serif;
   font-weight: 300;
-  color: #3D4E61;
+  color: #3d4e61;
   border: none;
   outline: none;
 }
 
 .bigFormInput {
   font-size: 16px;
-  line-height: 22px;
-  padding: 20px 0 20px 60px;
-  width: calc(100% - 60px);
+  line-height: 70px;
+  padding: 20px 0 21px 58px;
+  width: 100%;
+  height: 68px;
 }
 
 .smallFormInput {
   font-size: 14px;
   line-height: 19px;
-  padding: 10px 0 10px 30px;
-  width: calc(100% - 30px);
+  padding: 11px 0 10px 29px;
+  width: 100%;
 }
 
-.bigFormInput_img,
-.smallFormInput_img{
+.imgForInput {
   position: absolute;
 }
 
-.bigFormInput_img{
-  left: 30px;
-  top: 22px;
+.bigFormInput_img {
+  left: 25px;
+  top: 24px;
 }
 
-.smallFormInput_img{
+.smallFormInput_img {
   top: 11px;
-  left: 10px;
-}
-.smallFormInput_img img{
-  width: 12px;
+  left: 14px;
 }
 
+.smallFormInput_img img {
+  width: 11px;
+}
 
 .bigFormInput::placeholder,
 .smallFormInput::placeholder {
-  font-family: Avenir-Book, sans-serif;
+  font-family: Avenir, sans-serif;
+  color: #3d4e61;
 }
 
 .bigFormLabel:hover,
@@ -91,8 +89,6 @@
 
 .bigFormInput:focus,
 .smallFormInput:focus {
-  background: linear-gradient(180deg, #FFFFFF 0%, #F6F6F7 100%);
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 
 }
-
-

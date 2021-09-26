@@ -12,52 +12,44 @@
   </head>
   <body>
     <div class="searchBar_wrapper">
-
       <form
         action="/"
         method="get"
-        class="bigSearchForm"
         data-qa="big"
+        class="bigSearchForm"
       >
+        <label for="bigFormInput" class="label bigFormLabel">
 
-        <label for="bigFormInput" class="bigFormLabel">
-
-          <div class="bigFormInput_img">
-            <img src="./images/Search.svg" alt="search"/>
+          <div class="imgForInput bigFormInput_img">
+            <img src="./images/Search.svg" alt="search">
           </div>
 
           <input
+            data-qa="keypress"
             type="text"
             id="bigFormInput"
-            class="bigFormInput"
-            placeholder='Try "Los Angeles"'
-            data-qa="keypress"
+            class="input bigFormInput"
+            placeholder=" Try &quot;Los Angeles&quot;"
           >
         </label>
-
       </form>
-
-
       <form
         action="/"
         method="get"
-        class="smallSearchForm"
         data-qa="small"
+        class="smallSearchForm"
       >
-        <label for="smallFormInput" class="smallFormLabel">
-
-          <div class="smallFormInput_img">
-            <img src="./images/Search.svg" alt="search"/>
+        <label for="smallFormInput" class="label smallFormLabel">
+          <div class="imgForInput smallFormInput_img">
+            <img src="./images/Search.svg" alt="search">
           </div>
-
           <input
             type="text"
             id="smallFormInput"
-            class="smallFormInput"
-            placeholder='Try "Los Angeles"'
+            class="input smallFormInput"
+            placeholder=" Try &quot;Los Angeles&quot;"
           >
         </label>
-
       </form>
     </div>
 

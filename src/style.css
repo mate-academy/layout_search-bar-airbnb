@@ -1,0 +1,67 @@
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir.ttc);
+  font-weight: 300px;
+}
+
+.big {
+  display: flex;
+  width: 100%;
+  border: 1px solid whitesmoke;
+  border-radius: 4px;
+  height: 70px;
+  box-shadow: 1px 1px 8px 1px #3d4f611a;
+  margin-bottom: 10px;
+}
+
+.small {
+  display: flex;
+  width: 100%;
+  border: 1px solid whitesmoke;
+  border-radius: 4px;
+  height: 42px;
+  box-shadow: 1px 1px 8px 1px #3d4f611a;
+  margin-bottom: 10px;
+}
+
+.big:hover {
+  box-shadow: 1px 3px 8px 1px #3d4e6133;
+  border: none;
+}
+
+.small:hover {
+  box-shadow: 1px 3px 8px 1px #3d4e6133;
+  border: none;
+}
+
+.big:focus {
+  background-color: #cfdae6;
+}
+
+.small:focus {
+  background-color: rgb(94, 77, 77);
+  border: none;
+}
+
+.keypress-small {
+  display: flex;
+  width: 100%;
+  border: none;
+}
+
+.keypress-big {
+  width: 100%;
+  border: none;
+}
+
+.keypress-small:focus {
+  border: none;
+}
+
+.keypress-big::before {
+  content: url("http://www.w3.org/2000/svg") ;
+}
+
+.keypress-small::before {
+  content: url("http://www.w3.org/2000/svg") ;
+}

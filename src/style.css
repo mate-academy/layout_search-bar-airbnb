@@ -14,9 +14,12 @@
   box-sizing: border-box;
   border-radius: 4px;
   margin: 20px 0;
-  height: 70px;
   border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+}
+
+.large {
+  height: 70px;
 }
 
 .small {
@@ -38,17 +41,21 @@
 .search {
   font-family: Avenir, sans-serif;
   margin: 0;
-  width: calc(100% - 62px);
   height: 100%;
   background: none;
   border: none;
   outline: none;
   color: #3d4e61;
-  font-size: 16px;
+
   font-weight: 300;
 }
 
-.thin {
+.slarge {
+  width: calc(100% - 62px);
+  font-size: 16px;
+}
+
+.ssmall {
   width: calc(100% - 33px);
   font-size: 14px;
 }
@@ -62,13 +69,16 @@
 }
 
 .icon {
-  margin: 24px 17px 26px 25px;
   display: block;
-  width: 19px;
   float: left;
 }
 
-.little {
+.ilarge {
+  margin: 24px 17px 26px 25px;
+  width: 19px;
+}
+
+.ismall {
   margin: 14px 9px 16px 12px;
   width: 11px;
 }

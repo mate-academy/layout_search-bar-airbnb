@@ -1,0 +1,55 @@
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf);
+  font-weight: 300;
+}
+/* #687584 */
+body {
+  --border-color: rgb(227,232,238);
+  --text-color: #000;
+  --font: avenir, helvetica, sans-serif;
+}
+
+.big__form {
+  margin: 20px auto;
+}
+
+.search__bar {
+  background: url(images/Search.svg) no-repeat;
+  font-family: var(--font);
+  font-weight: 300;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  outline: none;
+  color: var(--text-color);
+  /* box-shadow: 2px 2px 3px 3px rgb(227,232,238); */
+}
+
+.big__search {
+  padding: 23px 62px;
+  background-position: 25px center;
+  font-size: 16px;
+}
+
+.small__search {
+  padding: 10px 33px;
+  background-position: 12px 14px;
+  background-size: 11px;
+  font-size: 14px;
+}
+
+.search__bar::placeholder {
+  font-family: var(--font);
+  font-weight: 300;
+}
+
+.search__bar:hover {
+  box-shadow: 3px 3px 5px 5px var(--border-color);
+  transition: 0.5s;
+}
+
+.search__bar:focus {
+  box-shadow: 3px 3px 5px 5px var(--border-color);
+}

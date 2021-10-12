@@ -3,16 +3,8 @@
   src: url(fonts/Avenir.ttc);
 }
 
-html {
-  color: #3d4e61;
-  font-weight: 300;
-  font-family: Avenir, Helvetica, sans-serif;
-  font-size: 16px;
-}
-
 body {
-  margin-top: 0;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .searchline {
@@ -35,13 +27,9 @@ body {
 }
 
 .searchline::placeholder {
-  font-family: Avenir, sans-serif;
   font-weight: 400;
   color: #3d4e61;
   font-size: 16px;
-  margin-left: 62px;
-  margin-top: 25px;
-  margin-bottom: 23px;
 }
 
 .searchline:hover {
@@ -53,13 +41,17 @@ body {
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
   background-size: 19px;
+  outline: none;
   background-position-x: 26px;
   background-position-y: center;
 }
 
 .searchline--small {
   font-size: 14px;
+  line-height: 19;
   padding-left: 33px;
+  padding-top: 12px;
+  padding-bottom: 10px;
   background-size: 11px;
   background-position-x: 13px;
   height: 42px;
@@ -68,8 +60,6 @@ body {
 
 .searchline--small::placeholder {
   font-size: 14px;
-  margin-top: 12px;
-  margin-bottom: 10px;
 }
 
 .searchline--small:focus {

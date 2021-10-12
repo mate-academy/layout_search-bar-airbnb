@@ -11,7 +11,11 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="#" class="form-search">
+    <form
+      action="#"
+      method="post"
+      class="form form-search-big"
+    >
       <input
         type="text"
         name="search-big"
@@ -19,6 +23,19 @@
         placeholder="Try &quot;Los Angeles&quot;"
         data-qa="big"
       >
+      <button type="submit" class="btn btn-big">
+        <img
+          src="./images/Search.svg"
+          alt="search"
+          class="btn-img-big"
+        >
+      </button>
+    </form>
+    <form
+      action="#"
+      method="post"
+      class=" form form-search-small"
+    >
       <input
         type="text"
         name="search-small"
@@ -26,6 +43,13 @@
         placeholder="Try &quot;Los Angeles&quot;"
         data-qa="small"
       >
+      <button type="submit" class="btn btn-small">
+        <img
+          src="./images/Search.svg"
+          alt="search"
+          class="btn-img-small"
+        >
+      </button>
     </form>
   </body>
 </html>

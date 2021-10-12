@@ -11,29 +11,44 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form class="searchForm" data-qa="big">
-      <label for="bigForm" class="bigForm">
-        <input
-          type="search"
-          class="searchInputBig"
-          data-qa="keypress"
-          name="bigForm"
-          id="bigForm"
-          placeholder="Try &quot;Los Angeles&quot;"
-        >
+    <form
+      class="search searchBig"
+      data-qa="big"
+      action=""
+      method="get"
+    >
+      <label
+        for="inputBig"
+        class="search__label searchBig__label"
+      >
       </label>
+      <input
+        class="search__input searchBig__input"
+        type="text"
+        id="inputBig"
+        name="inputBig"
+        data-qa="keypress"
+        placeholder="Try &quot;Los Angeles&quot;"
+      >
     </form>
-
-    <form class="searchForm" data-qa="small">
-      <label for="smallForm" class="smallForm">
-        <input
-          type="search"
-          class="searchInputSmall"
-          name="smallForm"
-          id="smallForm"
-          placeholder="Try &quot;Los Angeles&quot;"
-        >
+    <form
+      class="search searchSmall"
+      data-qa="small"
+      action=""
+      method="get"
+    >
+      <label
+        for="inputSmall"
+        class="search__label searchSmall__label"
+      >
       </label>
+      <input
+        class="search__input searchSmall__input"
+        type="text"
+        id="inputSmall"
+        name="inputSmall"
+        placeholder="Try &quot;Los Angeles&quot;"
+      >
     </form>
   </body>
 </html>

@@ -3,6 +3,10 @@
   src: url(fonts/Avenir.ttc);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin-top: 20px;
 }
@@ -11,6 +15,7 @@ body {
   font-family: Avenir, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 900;
+  color: #3d4e61;
   width: 100%;
   height: 70px;
   padding-left: 62px;
@@ -22,14 +27,11 @@ body {
   background-position-y: center;
   border: 1px solid #e1e7ed;
   border-radius: 3px;
-  box-sizing: border-box;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
 }
 
 .searchline::placeholder {
-  font-weight: 400;
-  color: #3d4e61;
-  font-size: 16px;
+  font-weight: 300;
 }
 
 .searchline:hover {
@@ -49,9 +51,7 @@ body {
 .searchline--small {
   font-size: 14px;
   line-height: 19;
-  padding-left: 33px;
-  padding-top: 12px;
-  padding-bottom: 10px;
+  padding: 12px 0 10px 33px;
   background-size: 11px;
   background-position-x: 13px;
   height: 42px;

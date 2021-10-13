@@ -22,12 +22,12 @@ body {
   margin: 20px 0;
 }
 
-.search-form {
+.form {
   border-radius: 4px;
   background: linear-gradient(180deg, #fff 0%, #f6f6f6 100%);
 }
 
-.search-input {
+.form__input {
   width: 100%;
   background-color: #fff;
   border: 1px solid #e1e7ed;
@@ -36,29 +36,27 @@ body {
   outline: none;
   background-image: url("./images/Search.svg");
   background-repeat: no-repeat;
-}
 
-.search-input::placeholder {
-  font-family: "Avenir Book", sans-serif;
-  color: #3d4e61;
-}
-
-.search-input:hover {
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-}
-
-.search-input:focus {
-  background-color: transparent;
-}
-
-.search-input__lg {
   padding: 22px 25px 24px 62px;
   font-size: 16px;
   line-height: 22px;
   background-position: 25px 24px;
 }
 
-.search-input__sm {
+.form__input::placeholder {
+  font-family: "Avenir Book", sans-serif;
+  color: #3d4e61;
+}
+
+.form__input:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.form__input:focus {
+  background-color: transparent;
+}
+
+.input_sm {
   padding: 10px 12px 10px 33px;
   font-size: 14px;
   line-height: 20px;

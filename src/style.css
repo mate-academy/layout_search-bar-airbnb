@@ -1,6 +1,10 @@
 @font-face {
-  font-family: "avenir";
+  font-family: Avenir;
   src: url(fonts/Avenir-Book.ttf);
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .big_searchbar {
@@ -10,10 +14,9 @@
 .search {
   width: 100%;
   padding: 23px 62px;
-  box-sizing: border-box;
   background: url("images/Search.svg") no-repeat 25px center;
-  font-family: "avenir", helvetica, sans-serif;
-  font-weight: 700px;
+  font-family: Avenir, helvetica, sans-serif;
+  font-weight: 900px;
   font-size: 16px;
   color: #3d4e61;
   border: 1px solid #e1e7ed;
@@ -29,9 +32,7 @@
 }
 
 .search::placeholder {
-  font-family: "avenir", helvetica, sans-serif;
   font-weight: 300;
-  color: #3d4e61;
 }
 
 .search:hover {
@@ -40,8 +41,12 @@
 
 .search:focus {
   background: url("images/Search.svg") no-repeat 25px center, linear-gradient(180deg, #fff 0%, #f6f6f7, 100%);
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
 }
 
 .search_small:focus {
   background: url("images/Search.svg") no-repeat 12px 14px/11px center, linear-gradient(180deg, #fff 0%, #f6f6f7, 100%);
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
 }

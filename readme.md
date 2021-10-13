@@ -1,9 +1,5 @@
 # Search bar for Airbnb
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-<<<<<<< HEAD
-- [DEMO LINK](https://VitalyPasechnik.github.com/layout_search-bar-airbnb)
-- [TEST REPORT LINK](https://VitalyPasechnik.github.com/layout_search-bar-airbnb/report/html_report/)
-=======
 - [DEMO LINK](https://VitalyPasechnik.github.io/layout_search-bar-airbnb)
 - [TEST REPORT LINK](https://VitalyPasechnik.github.io/layout_search-bar-airbnb/report/html_report/)
 >>>>>>> develop

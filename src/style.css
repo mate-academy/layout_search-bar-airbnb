@@ -30,6 +30,10 @@
   color: var(--text-color);
 }
 
+.search::placeholder {
+  font-weight: 300;
+}
+
 .bigSearch {
   padding: 23px 20px 23px 62px;
   line-height: 22px;
@@ -52,14 +56,9 @@
 
 .search:focus {
   background: url(images/Search.svg) 25px center no-repeat, var(--gradient);
+  font-weight: 900;
 }
 
 .smallSearch:focus {
   background: url(images/Search.svg) 12px 14px/11px no-repeat, var(--gradient);
-  font-weight: 900;
-}
-
-.bigSearch:focus {
-  /* background: url(images/Search.svg) 12px 14px/19px no-repeat, var(--gradient); */
-  font-weight: 900;
 }

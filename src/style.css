@@ -45,7 +45,8 @@
 
 .searchInput:focus {
   outline: none;
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background: url(./images/Search.svg) no-repeat 24px 24px/19px,
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #3d3f41;
   box-sizing: border-box;
   border-radius: 3px;
@@ -60,4 +61,9 @@
 
 .smallInput::placeholder {
   font-weight: 300;
+}
+
+.smallInput:focus {
+  background: url(./images/Search.svg) no-repeat 12px 14px/11px,
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }

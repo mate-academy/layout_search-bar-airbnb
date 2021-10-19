@@ -1,6 +1,6 @@
 @font-face {
   font-family: Avenir;
-  src: url(fonts/Avenir.ttc);
+  src: url(fonts/Avenir-Heavy.ttf);
   font-weight: 300px;
 }
 
@@ -33,23 +33,27 @@
   box-shadow: 1px 3px 8px 1px #3d4e6133;
 }
 
-.big:focus {
-  background-color: #cfdae6;
-  box-shadow: 1px 3px 8px 1px #3d4e6133;
+.keypress-big {
+  display: flex;
+  width: 100%;
+  border: none;
 }
 
-.small:focus {
-  background-color: #cfdae6;
+.keypress-big:focus {
+  background-color: #eaeff3;
+  box-shadow: 1px 3px 8px 1px #3d4e6133;
+  border: none;
 }
 
 .keypress-small {
   display: flex;
   width: 100%;
+  border: none;
 }
 
-.keypress-big {
-  display: flex;
-  width: 100%;
+.keypress-small:focus {
+  background-color: #f0f5fa;
+  border: none;
 }
 
 .big::before {
@@ -63,7 +67,6 @@
 
 .small::before {
   content: " ";
-
   background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
   margin: 5px;

@@ -7,29 +7,31 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Search bars v1.3</title>
+    <title>Search bars v1.4</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form data-qa="big">
-      <input
+    <div class="wrapper">
+      <form data-qa="big">
+        <input
         type="search"
         name="bigBar"
         id="searchBarBig"
-        class="bigBar"
+        class="bar bigBar"
         placeholder="Try &#34Los Angeles&#34"
         data-qa="keypress"
       >
-    </form>
+      </form>
 
-    <form data-qa="small">
-      <input
+      <form data-qa="small">
+        <input
         type="search"
         name="smallBar"
         id="searchBarSmall"
-        class="smallBar"
+        class="bar smallBar"
         placeholder="Try &#34Los Angeles&#34"
       >
-    </form>
+      </form>
+    </div>
   </body>
 </html>

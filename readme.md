@@ -1,18 +1,22 @@
 # Search bar for Airbnb
+
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://<your_account>.github.io/layout_search-bar-airbnb/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_search-bar-airbnb/report/html_report/)
+
+- [DEMO LINK](https://yuran007.github.io/layout_search-bar-airbnb/)
+- [TEST REPORT LINK](https://yuran007.github.io/layout_search-bar-airbnb/report/html_report/)
 
 > Follow [this instructions](https://github.com/mate-academy/layout_task-guideline#how-to-solve-the-layout-tasks-on-github)
 ___
 
 ## The task
+
 Create HTML page with two search bars as designed in [the mockup](https://www.figma.com/file/kf3AWulK9elrNk34wtpjPw/Airbnb-Search-bar?node-id=0%3A1).
 This search bar will be part of big project.
 
 ![screenshot](./references/search-bar-example.png)
 
-### Requirements:
+### Requirements
+
 - use images from [src/images](src/images)
 - there must be two search bars
 - search bar must have width 100%
@@ -25,10 +29,12 @@ This search bar will be part of big project.
 - use `@font-face` for fonts
 - add attribute `data-qa="big"` for big search form, and `data-qa="small"` for small
 - add attribute `data-qa="keypress"` to input in big search form
----
+
+___
 --> [CHECKLIST](https://github.com/mate-academy/layout_search-bar-airbnb/blob/master/checklist.md)
 
 ### Tips & Hints
+
 - Add **ALL** `data-qa` attributes required in the task
 - Text `Try "Los Angeles"` in mockup is a placeholder.
 - Pay close attention to font styles. Use fonts from `fonts` folder.
@@ -41,5 +47,3 @@ attributes.
 layout.
 - Remember that inputs and other interactive elements don’t inherit font styles by default.
 - Remember that placeholder has its own set of styles available using `::placeholder` pseudo-element.
-
-

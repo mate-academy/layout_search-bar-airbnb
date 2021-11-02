@@ -8,9 +8,53 @@
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar airbnb</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <form
+      class="form bigForm"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="GET"
+      data-qa="big"
+    >
+      <label class="bigImgBox" for="bigSearch">
+        <img
+          class="bigSearchIcon"
+          src="images\Search.svg"
+          alt="search icon"
+        >
+      </label>
+      <input
+        class="searchInput bigSearchInput"
+        type="text"
+        placeholder="Try &quot;Los Angeles&quot;"
+        name="bigSearch"
+        id="bigSearch"
+        data-qa="keypress"
+      >
+    </form>
+
+    <form
+      class="form smallForm"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="GET"
+      data-qa="small"
+    >
+      <label class="smallImgBox" for="smallSearch">
+        <img
+        class="smallSearchIcon"
+        src="images\Search.svg"
+        alt="search icon"
+        >
+      </label>
+      <input
+        class="searchInput smallSearchInput"
+        type="text"
+        placeholder="Try &quot;Los Angeles&quot;"
+        name="smallSearch"
+        id="smallSearch"
+        data-qa="keypress"
+      >
+    </form>
   </body>
 </html>

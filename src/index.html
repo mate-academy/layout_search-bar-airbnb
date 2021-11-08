@@ -13,45 +13,37 @@
   <body>
     <form
       method="post"
-      class="bigSearch"
+      class="formSearch"
       data-qa="big"
-      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      action="/"
     >
-      <button type="submit" class="bigSearch">
-        <img
-          class="bigSearch"
-          alt="search"
-          src="/images/Search.svg"
+      <label for="bigSearch">
+        <input
+          type="search"
+          name="search"
+          placeholder="Try &quot;Los Angeles&quot;"
+          class="search bigSearch"
+          data-qa="keypress"
+          id="bigSearch"
         >
-      </button>
-      <input
-        type="search"
-        name="search"
-        placeholder="Try &quot;Los Angeles&quot;"
-        class="bigSearch"
-        data-qa="keypress"
-      >
+      </label>
     </form>
 
     <form
       method="post"
-      class="search"
+      class="formSearch"
       data-qa="small"
-      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      action="/"
     >
-      <button type="submit" class="search">
-        <img
-          class="search"
-          alt="search"
-          src="/images/Search.svg"
+      <label for="smallSearch">
+        <input
+          type="search"
+          name="search"
+          placeholder="Try &quot;Los Angeles&quot;"
+          class="search smallSearch"
+          id="smallSearch"
         >
-      </button>
-      <input
-        type="search"
-        name="search"
-        placeholder="Try &quot;Los Angeles&quot;"
-        class="search"
-      >
+      </label>
     </form>
   </body>
 </html>

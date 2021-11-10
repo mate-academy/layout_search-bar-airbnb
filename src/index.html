@@ -12,43 +12,43 @@
   </head>
   <body>
     <form
-      action=""
+      action="#"
       method="post"
       data-qa="big"
     >
-      <div class="big-bar">
+      <input
+        class="big-bar"
+        type="text"
+        placeholder="Try &#34;Los Angeles&#34;"
+        data-qa="keypress"
+        id="big"
+      >
+      <label for="big">
         <img
-          class="icon"
+          class="big-icon"
           src="../src/images/Search.svg"
-          alt="Search-icon"
-        >
-        <input
-          class="big"
-          type="search"
-          placeholder="Try to ''Los Angeles''"
-          data-qa="keypress"
-        >
-      </div>
+          alt="search-bar">
+      </label>
     </form>
 
     <form
-      action=""
+      action="#"
       method="post"
       data-qa="small"
     >
-      <div class="small-bar">
+      <input
+        class="small-bar"
+        type="text"
+        placeholder="Try &#34;Los Angeles&#34;"
+        id="small"
+      >
+      <label for="small">
         <img
-          class="icon2"
+          class="small-icon"
           src="../src/images/Search.svg"
-          alt="Search-icon"
+          alt="search-bar"
         >
-        <input
-          class="small"
-          type="search"
-          placeholder="Try to ''Los Angeles''"
-          data-qa="keypress"
-        >
-      </div>
+      </label>
     </form>
   </body>
 </html>

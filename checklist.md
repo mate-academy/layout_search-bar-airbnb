@@ -77,16 +77,12 @@ horizontal scroll.
            ![html-name-attribute-good-example-1](https://mate-academy.github.io/fe-program/css/checklists/html-name-attribute/example-good-1.png)
        </details>
 
-7. [FUNCTIONALITY] - You need to use a label tag for each input, so that every
-input could be activated by clicking on the corresponding label.
+7. [TESTS] - Remember to style input placeholders correctly
 
 
-8. [TESTS] - Remember to style input placeholders correctly
+8. [TESTS] - Remember that the search-bar should have width: 100% on any screen.
 
 
-9. [TESTS] - Remember that the search-bar should have width: 100% on any screen.
-
-
-10. [TESTS] - Remember, each search bar should be located in separate
+9. [TESTS] - Remember, each search bar should be located in separate
 form element.
 

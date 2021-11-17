@@ -12,21 +12,22 @@
   </head>
   <body>
     <form
-      action="https://www.google.com.ua/search/"
-      method="post"
+      class="form"
+      method="get"
+      action="/"
       data-qa="big"
-      class="bigBar"
     >
       <div class="barContainer">
         <img
           src="\images\Search.svg"
-          alt="icon"
-          class="bigItem"
+          alt="search"
+          class="icon"
         >
         <input
           type="text"
-          name="Search"
-          id="inputLarge"
+          name="search"
+          class="input"
+          id="largeInput"
           placeholder="Try &quot;Los Angeles&quot;"
           data-qa="keypress"
         >
@@ -34,21 +35,22 @@
     </form>
 
     <form
-      action="https://www.google.com.ua/search/"
-      method="post"
+      class="form"
+      action="/"
+      method="get"
       data-qa="small"
-      class="smallBar"
     >
       <div class="barContainer">
         <img
           src="\images\Search.svg"
           alt="icon"
-          class="smallItem"
+          class="icon smallIcon"
         >
         <input
           type="text"
           name="Search"
-          id="inputSmall"
+          class="input smallInput"
+          id="smallInput"
           placeholder="Try &quot;Los Angeles&quot;"
         >
       </div>

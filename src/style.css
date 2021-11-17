@@ -24,7 +24,6 @@ body {
   border: 1px solid #ddd;
   border-radius: 4px;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  display: inline-block;
   width: 100%;
   position: relative;
 }
@@ -32,24 +31,21 @@ body {
 .bar__input {
   font-family: Avenir, Times, sans-serif;
   font-weight: 300;
+  font-size: 16px;
+  padding-left: 66px;
+  border: 0;
+  height: 68px;
+  width: calc(100% - 68px);
 }
 
-.bar__img__big {
+.bar__img {
   position: absolute;
   top: 24px;
   left: 24px;
   height: 19px;
 }
 
-.bar__input__big {
-  font-size: 16px;
-  padding-left: 66px;
-  border: 0;
-  height: 68px;
-}
-
 .bar__img__small {
-  position: absolute;
   top: 15px;
   left: 15px;
   height: 11px;
@@ -58,20 +54,17 @@ body {
 .bar__input__small {
   font-size: 14px;
   padding-left: 36px;
-  border: 0;
   height: 38px;
+  width: calc(100% - 38px);
 }
 
 .bar:hover {
   box-shadow: 0 2px 8px rgba(61, 78, 97, 0.2);
 }
 
-.bar:active {
-  border-radius: 3px;
+.bar__input:active {
   background: linear-gradient(#fff, #f6f6f7);
   box-shadow: 0;
-}
-
-.bar__input:active {
   font-weight: bold;
+  border-radius: 3px;
 }

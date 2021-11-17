@@ -11,10 +11,12 @@
   box-sizing: border-box;
   width: 100%;
   margin-bottom: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 300;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  font-family: Avenir, Helvetica, sans-serif;
+  font-weight: 900;
+  color: rgba(61, 78, 97, 1);
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
   background-image: url(Images/Search.svg);
   background-repeat: no-repeat;
 }
@@ -22,15 +24,16 @@
 .FirstInput {
   margin-top: 12px;
   height: 70px;
+  font-size: 16px;
   padding-left: 62px;
   background-position: 25px 24px;
   background-size: 19px;
 }
 
 .SecondInput {
-  font-size: 12px;
+  font-size: 14px;
   height: 42px;
-  padding-left: 32px;
+  padding-left: 33px;
   background-position: 12px 14px;
   background-size: 11px;
 }
@@ -38,21 +41,22 @@
 .FirstInput::placeholder {
   font-family: Avenir, Helvetica, sans-serif;
   font-weight: 300;
-  color: #666;
+  color: rgba(61, 78, 97, 1);
   font-size: 16px;
 }
 
 .SecondInput::placeholder {
   font-family: Avenir, Helvetica, sans-serif;
-  font-weight: 300;
-  color: #666;
+  font-weight: 400;
+  color: rgba(61, 78, 97, 1);
   font-size: 14px;
 }
 
 .form:focus {
-  background-color: yellowgreen;
+  outline: none !important;
+  border: 1px solid #00acdc;
 }
 
 .form:hover {
-  background-color: skyblue;
+  border: 1px solid slateblue;
 }

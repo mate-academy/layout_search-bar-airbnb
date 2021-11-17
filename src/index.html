@@ -16,23 +16,21 @@
       method="post"
       data-qa="big"
     >
-      <div class="searchBar searchBarBig" tabindex="0">
+      <label for="searchBarBig" class="searchBar searchBarBig">
         <img
           src="images/Search.svg"
           alt="Search icon"
           class="iconBig"
           data-qa="keypress"
         >
-        <label for="searchBarBig">
-          <input
-            type="text"
-            name="searchBarBig"
-            id="searchBarBig"
-            class="searchBar__input searchBarBig__input"
-            placeholder="Try &quot;Los Angeles&quot;"
-          >
-        </label>
-      </div>
+        <input
+          type="text"
+          name="searchBarBig"
+          id="searchBarBig"
+          class="searchBar__input searchBarBig__input"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
     </form>
 
     <form
@@ -40,22 +38,23 @@
       method="post"
       data-qa="small"
     >
-      <div class="searchBar searchBarSmall" tabindex="0">
+      <label
+        for="searchBarSmall"
+        class="searchBar searchBarSmall"
+      >
         <img
           src="images/Search.svg"
           alt="Search icon"
           class="iconSmall"
         >
-        <label for="searchBarSmall">
-          <input
-            type="text"
-            name="searchBarSmall"
-            id="searchBarSmall"
-            class="searchBar__input searchBarSmall__input"
-            placeholder="Try &quot;Los Angeles&quot;"
-          >
-        </label>
-      </div>
+        <input
+          type="text"
+          name="searchBarSmall"
+          id="searchBarSmall"
+          class="searchBar__input searchBarSmall__input"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
     </form>
   </body>
 </html>

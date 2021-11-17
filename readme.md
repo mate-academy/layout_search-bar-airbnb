@@ -1,7 +1,7 @@
 # Search bar for Airbnb
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://<your_account>.github.io/layout_search-bar-airbnb/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_search-bar-airbnb/report/html_report/)
+- [DEMO LINK](https://marina-tilniak.github.io/layout_search-bar-airbnb/)
+- [TEST REPORT LINK](https://marina-tilniak.github.io/layout_search-bar-airbnb/report/html_report/)
 
 > Follow [this instructions](https://github.com/mate-academy/layout_task-guideline#how-to-solve-the-layout-tasks-on-github)
 ___
@@ -13,9 +13,9 @@ This search bar will be part of big project.
 ![screenshot](./references/search-bar-example.png)
 
 ### Requirements:
-- use images from [src/images](src/images)
-- there must be two search bars
-- search bar must have width 100%
+<!-- - use images from [src/images](src/images) -->
+<!-- - there must be two search bars -->
+<!-- - search bar must have width 100% ?????????????? -->
 - distance between two search bars must be 20px
 - the big search bar must have top indent 20px
 - follow styles from the mock

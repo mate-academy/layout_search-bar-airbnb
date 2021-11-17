@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width,
+              user-scalable=no,
+              initial-scale=1.0,
+              maximum-scale=1.0,
+              minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar airbnb</title>
@@ -12,5 +16,50 @@
   </head>
   <body>
     <h1>Search bar airbnb</h1>
+    <form
+      action=""
+      method="post"
+      data-qa="big"
+    >
+      <ul>
+        <li class="sb big">
+          <img
+            class="img__bg"
+            src="images/Search.svg"
+            alt=""
+          >
+          <input
+            class="inpt sbb"
+            type="text"
+            name="searchBarBig"
+            id="sbb"
+            placeholder="Try &#34Los Angeles&#34"
+            data-qa="keypress"
+          >
+        </li>
+      </ul>
+    </form>
+    <form
+      action=""
+      method="post"
+      data-qa="small"
+    >
+      <ul>
+        <li class="sb small">
+          <img
+            class="img__sm"
+            src="images/Search.svg"
+            alt=""
+          >
+          <input
+            class="inpt sbs"
+            type="text"
+            name="searchBarSmall"
+            id="sbs"
+            placeholder="Try &#34Los Angeles&#34"
+          >
+        </li>
+      </ul>
+    </form>
   </body>
 </html>

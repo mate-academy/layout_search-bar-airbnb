@@ -32,8 +32,8 @@ This search bar will be part of big project.
 - Add **ALL** `data-qa` attributes required in the task
 - Text `Try "Los Angeles"` in mockup is a placeholder.
 - Pay close attention to font styles. Use fonts from `fonts` folder.
-- f you see a cursor in the input on the mockup, that means styles are for entered text by the user (not only on
-focus action)I
+- If you see a cursor in the input on the mockup, that means styles are for entered text by the user (not only on
+focus action)
 - You have to put `input` inside the `form` for correct data processing. Form should have `action` and `method`
 attributes.
 - Each search bar be inside its own `form` element.

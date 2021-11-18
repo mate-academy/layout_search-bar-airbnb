@@ -18,6 +18,8 @@ necessary
 
 2. [STYLES] - if you have two or more similar elements with portions of similar styles with different values - use one
 of the elements as the basic case, and override necessary styles for other cases.
+Explanation: The point is not in the names of the classes, the point is: when there are several similar elements, ex., 2 inputs, for one we can give a class `input`, for example, and for the second - `input input--small`. We write all the styles for `.input`, but for `.input-small` we write only those styles that differ in design, and we need this second input to look a little different.
+Element with class `.input` without extra classes should also look like a full-fledged styled element.
        <details>
          <summary>BAD example</summary>
            ![css-variations-bad-example-html-1](https://mate-academy.github.io/fe-program/css/checklists/css-variations/example-bad-html-1.png)

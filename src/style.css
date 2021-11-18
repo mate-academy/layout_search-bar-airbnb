@@ -10,65 +10,54 @@
 
 body {
   font-weight: 300px;
+}
 
+.search_form {
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+.input {
+  font-family: "Avenir-Book", sans-serif;
+  color: #3d4e61;
+  outline: none;
+  border: 1px solid #e1e7ed;
+  display: block;
+  border-radius: 4px;
+  width: 100%;
 }
 
 .search_bar {
-  font-family: "Avenir-Heavy", sans-serif;
   height: 70px;
-  width: 100%;
-  border-radius: 4px;
-  margin-bottom: 20px;
-  display: block;
-  text-indent: 10%;
-  border: 1px solid #e1e7ed;
-  color: #3d4e61;
+  text-indent: 5%;
   font-size: 16px;
-  font-weight: bold;
-  outline: none;
 }
 
 .search_bar_small {
-  font-family: "Avenir-Heavy", sans-serif;
   height: 42px;
-  width: 100%;
-  border-radius: 4px;
-  margin-bottom: 20px;
-  display: block;
-  text-indent: 10%;
-  border: 1px solid #e1e7ed;
-  color: #3d4e61;
+  text-indent: 3.5%;
   font-size: 14px;
-  font-weight: bold;
-  outline: none;
 }
 
 .img_search {
+  position: absolute;
   height: 19px;
   width: 19px;
   left: 26px;
   top: 45px;
-  position: absolute;
 }
 
 .img_search_small {
   position: absolute;
-  left: 26px;
-  top: 127px;
+  left: 22px;
+  top: 125px;
   width: 11px;
   height: 11px;
 }
 
-::placeholder {
-  font-family: Avenir-Book, sans-serif;
-  font-size: 16px;
+.input::placeholder {
   line-height: 22px;
-  text-indent: 10%;
-  position: relative;
-}
-
-.search_big {
-  margin-top: 20px;
+  color: #3d4e61;
 }
 
 .input:hover {
@@ -77,7 +66,8 @@ body {
 
 .input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border: 1px solid #e1e7ed;
   box-sizing: border-box;
   border-radius: 3px;
+  font-family: "Avenir-Heavy", sans-serif;
+  font-weight: bold;
 }

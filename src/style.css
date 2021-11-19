@@ -13,8 +13,14 @@ body {
   font-weight: 300;
 }
 
-input {
+.input {
   outline: none;
+  font-family: Avenir;
+  font-style: bold;
+  width: 100%;
+  border: 1px solid #E1E7ED;
+  border-radius: 4px;
+  color: #3D4E61;
 }
 
 .big {
@@ -23,19 +29,13 @@ input {
   box-shadow: 0px 1px 8px 0px #3D4E611A;
 }
 
-.bigInput {
-  font-family: Avenir;
+.input__big {
   font-size: 16px;
-  font-style: bold;
-  width: 100%;
-  color: #3D4E61;
-  border: 1px solid #E1E7ED;
-  border-radius: 4px;
   padding-left: 62px;
   line-height: 70px;
 }
 
-.bigInput::placeholder {
+.input__big::placeholder {
   font-family: Avenir;
   font-weight: 300;
   font-size: 16px;
@@ -54,32 +54,26 @@ input {
   box-shadow: 0px 3px 8px 0px #3D4E6133;
 }
 
-.bigInput:focus {
+.input__big:focus {
   border-radius: 3px;
   background: linear-gradient(180deg, #FFFFFF 0%, #F6F6F7 100%);
 }
 
 .small {
   position: relative;
+  box-shadow: 0px 1px 8px 0px #3D4E611A;
 }
 
-.smallInput::placeholder {
+.input__small {
+  font-size: 14px;
+  line-height: 42px;
+  padding-left: 33px;
+}
+.input__small::placeholder {
   font-family: Avenir;
   font-weight: 300;
   font-size: 14px;
   color: #3D4E61;
-}
-
-.smallInput {
-  font-family: Avenir;
-  font-size: 14px;
-  font-style: bold;
-  box-shadow: 0px 1px 8px 0px #3D4E611A;
-  line-height: 42px;
-  width: 100%;
-  padding-left: 33px;
-  border: 1px solid #E1E7ED;
-  border-radius: 4px;
 }
 
 .smallImage {
@@ -94,6 +88,6 @@ input {
   box-shadow: 0px 3px 8px 0px #3D4E6133;
 }
 
-.smallInput:focus {
+.input__small:focus {
   background: linear-gradient(180deg, #FFFFFF 0%, #F6F6F7 100%);
 }

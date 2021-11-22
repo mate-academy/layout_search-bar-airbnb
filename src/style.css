@@ -22,40 +22,38 @@ body {
   margin-top: 0;
 }
 
-.first_form label {
+.label {
   display: block;
   position: relative;
   width: 100%;
+}
+
+.big_label {
   margin-top: 20px;
   margin-bottom: 68px;
 }
 
-.first_form input {
+.inp {
+  font-family: Avenir, Helvetica, sans-serif;
   position: absolute;
   background-color: #fff;
   width: 100%;
-  height: 70px;
   border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  height: 70px;
   border-radius: 4px;
   padding-left: 62px;
   font-size: 16px;
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
 }
 
-.second_form input {
-  font-family: Avenir, Helvetica, sans-serif;
+.low_inp {
   font-size: 14px;
-  position: absolute;
-  background-color: #fff;
-  width: 100%;
   height: 42px;
-  border: 1px solid #e1e7ed;
   border-radius: 4px;
   padding-left: 33px;
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
 }
 
-.first_form input:hover {
+.inp:hover {
   background: #fff;
   border: 1px solid #e1e7ed;
   box-sizing: border-box;
@@ -63,7 +61,7 @@ body {
   border-radius: 4px;
 }
 
-.first_form input:focus {
+.inp:focus {
   font-weight: bold;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
@@ -73,70 +71,41 @@ body {
   box-shadow: none;
 }
 
-.first_form input::placeholder {
-  font-family: Avenir, Helvetica, sans-serif;
-  font-size: 16px;
+.inp::placeholder {
   color: #3d4e61;
-  line-height: 22px;
+  font-weight: 300;
+  font-size: 16px;
 }
 
-.second_form input::placeholder {
+.low_inp::placeholder {
   font-size: 14px;
-  color: #3d4e61;
-  line-height: 22px;
 }
 
-.first_form input:focus::placeholder {
-  font-family: Avenir, Helvetica, sans-serif;
-  font-size: 16px;
+.inp:focus::placeholder {
+  font-weight: 300;
   color: #3d4e61;
+  font-size: 16px;
+}
+
+.low_inp:focus::placeholder {
+  font-size: 14px;
+}
+
+.img {
+  position: absolute;
+  cursor: pointer;
 }
 
 .first_img {
-  position: absolute;
   width: 19px;
   height: 19px;
   left: 26px;
   top: 25px;
-  cursor: pointer;
-}
-
-.second_form label {
-  display: block;
-  position: relative;
-  width: 100%;
-}
-
-.second_form input:hover {
-  background: #fff;
-  border: 1px solid #e1e7ed;
-  box-sizing: border-box;
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-  border-radius: 4px;
-}
-
-.second_form input:focus {
-  font-weight: bold;
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border: 1px solid #e1e7ed;
-  border-radius: 3px;
-  color: #3d4e61;
-  outline: none;
-  box-shadow: none;
-}
-
-.second_form input:focus::placeholder {
-  font-weight: 300;
-  font-size: 14px;
-  color: #3d4e61;
-  line-height: 22px;
 }
 
 .second_img {
-  position: absolute;
   width: 11px;
   height: 11px;
   left: 13px;
   top: 15px;
-  cursor: pointer;
 }

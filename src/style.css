@@ -1,22 +1,19 @@
 @font-face {
   font-family: Avenir;
-  font-style: bold;
+  font-weight: 900px;
   src: url(fonts/Avenir-Heavy.ttf);
 }
 
 @font-face {
   font-family: Avenir;
-  src: url(fonts/Avenir.ttc);
-}
-
-body {
   font-weight: 300;
+  src: url(fonts/Avenir.ttc);
 }
 
 .input {
   outline: none;
   font-family: Avenir;
-  font-style: bold;
+  font-weight: 900px;
   width: 100%;
   border: 1px solid #E1E7ED;
   border-radius: 4px;
@@ -33,6 +30,9 @@ body {
   font-size: 16px;
   padding-left: 62px;
   line-height: 70px;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 26px 25px;
 }
 
 .input__big::placeholder {
@@ -40,14 +40,6 @@ body {
   font-weight: 300;
   font-size: 16px;
   color: #3D4E61;
-}
-
-.bigImage {
-  position: absolute;
-  left: 26px;
-  top: 25px;
-  height: 19px;
-  width: 19px;
 }
 
 .big:hover {
@@ -68,20 +60,17 @@ body {
   font-size: 14px;
   line-height: 42px;
   padding-left: 33px;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 13px 15px;
+  background-size: 11px;
 }
+
 .input__small::placeholder {
   font-family: Avenir;
   font-weight: 300;
   font-size: 14px;
   color: #3D4E61;
-}
-
-.smallImage {
-  position: absolute;
-  left: 13px;
-  top: 15px;
-  height: 11px;
-  width: 11px;
 }
 
 .small:hover {

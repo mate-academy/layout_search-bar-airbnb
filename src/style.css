@@ -18,10 +18,11 @@
   border: 1px solid #E1E7ED;
   border-radius: 4px;
   color: #3D4E61;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
 }
 
 .big {
-  position: relative;
   margin: 20px 0;
   box-shadow: 0px 1px 8px 0px #3D4E611A;
 }
@@ -30,8 +31,6 @@
   font-size: 16px;
   padding-left: 62px;
   line-height: 70px;
-  background-image: url(images/Search.svg);
-  background-repeat: no-repeat;
   background-position: 26px 25px;
 }
 
@@ -48,11 +47,10 @@
 
 .input__big:focus {
   border-radius: 3px;
-  background: linear-gradient(180deg, #FFFFFF 0%, #F6F6F7 100%);
+  background: url(images/Search.svg) linear-gradient(180deg, #FFFFFF 0%, #F6F6F7 100%);
 }
 
 .small {
-  position: relative;
   box-shadow: 0px 1px 8px 0px #3D4E611A;
 }
 
@@ -60,9 +58,7 @@
   font-size: 14px;
   line-height: 42px;
   padding-left: 33px;
-  background-image: url(images/Search.svg);
-  background-repeat: no-repeat;
-  background-position: 13px 15px;
+  background-position: left 13px top 15px;
   background-size: 11px;
 }
 
@@ -78,5 +74,5 @@
 }
 
 .input__small:focus {
-  background: linear-gradient(180deg, #FFFFFF 0%, #F6F6F7 100%);
+  background: url(images/Search.svg) linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }

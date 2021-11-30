@@ -72,6 +72,22 @@ body {
   box-shadow: none;
 }
 
+.search-input-small::after {
+  content: "";
+  background: url(./images/Search.svg);
+  display: block;
+  height: 11px;
+  width: 11px;
+  top: 6px;
+  background-size: contain;
+  left: 13px;
+  position: absolute;
+}
+
+input::placeholder {
+  color: #3d4e61;
+}
+
 .search-input-small input:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
   border-radius: 4px;

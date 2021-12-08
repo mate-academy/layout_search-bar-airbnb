@@ -6,5 +6,7 @@ module.exports = {
   plugins: [
     "stylelint-scss"
   ],
-  rules: {}
+  rules: {
+    "no-missing-end-of-source-newline": null
+  }
 };

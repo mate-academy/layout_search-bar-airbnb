@@ -17,7 +17,34 @@ body {
 
 .search-field {
   position: relative;
+}
+
+.search-field-big {
   margin: 20px 0;
+}
+
+.search-field-big::before {
+  content: "";
+  position: absolute;
+  background: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 19px;
+  height: 19px;
+  top: 25px;
+  left: 26px;
+}
+
+.search-field-small::before {
+  content: "";
+  position: absolute;
+  background: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 11px;
+  height: 11px;
+  top: 15px;
+  left: 13px;
 }
 
 .search-bar {

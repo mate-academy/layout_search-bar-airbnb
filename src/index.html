@@ -13,42 +13,35 @@
   <body>
     <h1>Search bar airbnb</h1>
 
-    <div class="serchBar bignav">
-      <form
-        action=""
-        method="post"
-        data-qa="big"
+    <form
+      action=""
+      method="post"
+      data-qa="big"
+      class="serchBar bignav"
+    >
+      <input
+        data-qa="keypress"
+        id="big"
+        type="text"
+        name="serch"
+        class="field bigSerchBar"
+        placeholder="Try “Los Angeles”"
       >
-        <input
-          data-qa="keypress"
-          id="big"
-          type="text"
-          name="serch"
-          class="field bigSerchBar"
-          placeholder="Try “Los Angeles”"
-        >
-      </form>
-    </div>
+    </form>
 
-    <div class="serchBar smallnav">
-      <!-- <img
-        src="images/search.svg"
-        alt="smallSearch"
-        class="smallImg"
-      > -->
-      <form
-        action=""
-        method="post"
-        data-qa="small"
+    <form
+      action=""
+      method="post"
+      data-qa="small"
+      class="serchBar smallnav"
+    >
+      <input
+        id="small"
+        type="text"
+        name="serch"
+        class="field smallSerchBar"
+        placeholder="Try “Los Angeles”"
       >
-        <input
-          id="small"
-          type="text"
-          name="serch"
-          class="field smallSerchBar"
-          placeholder="Try “Los Angeles”"
-        >
-      </form>
-    </div>
+    </form>
   </body>
 </html>

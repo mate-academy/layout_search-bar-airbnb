@@ -15,7 +15,6 @@ body {
 }
 
 .search_bar {
-  background: rgba(255, 255, 255, 1);
   background-image: url(images/Search.svg);
   background-size: 19px 19px;
   background-repeat: no-repeat;
@@ -38,6 +37,10 @@ body {
   text-align: left;
 }
 
+.search_bar:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
 .search_bar:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
@@ -45,10 +48,6 @@ body {
   border-radius: 3px;
   outline: #e1e7ed;
   font-weight: 600;
-}
-
-.search_bar:hover {
-  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
 }
 
 .small_search_bar {

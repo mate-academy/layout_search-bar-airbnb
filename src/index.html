@@ -8,36 +8,29 @@
     <title>Document</title>
   </head>
   <body>
-    <form
-      action=""
-      method="post"
+    <form class="search-form search-form_big"
+      data-qa="big"
     >
-      <img class="pic"
-        src="./images/Search.svg"
-        alt="vector"
-      >
-      </img>
-      <input class="input"
-        data-qa="big"
-        type="text"
-        placeholder="Try &quot;Los Angeles&quot;"
-      >
+      <label class="search-form__label search-form__label_big" for="biginpu">
+        <input data-qa="keypress"
+          class="search-form__input search-form__input_big"
+          type="text"
+          id="biginpu"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
     </form>
-
-    <form
-      action=""
-      method="post"
+    <form class="search-form search-form_small"
+      data-qa="small"
     >
-      <img
-        class="pic--small"
-        src="./images//Search.svg"
-        alt="vector"
-      ></img>
-      <input class="input--small"
-        type="text"
-        data-qa="small"
-        placeholder="Try &quot;Los Angeles&quot;"
-      >
+      <label class="search-form__label search-form__label_small" for="smallinpu">
+        <input data-qa="hover"
+          class="search-form__input search-form__input_small"
+          type="text"
+          id="smallinpu"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
     </form>
 
   </body>

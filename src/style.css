@@ -1,9 +1,9 @@
 body {
-  --big-height: 68px;
-  --small-height: 40px;
-  --bar-width: 100%;
-  --bl-width: 64px;
-  --sl-width: 35px;
+  --height: 68px;
+  --height-small: 40px;
+  --bar-w: 100%;
+  --loop-w: 64px;
+  --loop-w-small: 35px;
 }
 
 @font-face {
@@ -14,83 +14,73 @@ body {
 }
 
 .search-bar {
+  width: var(--bar-w);
+  height: var(--height);
+  margin-top: 20px;
   border: 1px solid gainsboro;
-  width: var(--bar-width);
-  box-shadow: 0 0 4px gainsboro;
-  margin-bottom: 20px;
   border-radius: 5px;
+  box-shadow: 0 0 4px gainsboro;
 }
 
 .search-bar:hover {
   box-shadow: 0 2px 5px gainsboro;
 }
 
-.big-bar {
-  height: var(--big-height);
-  margin-top: 20px;
-}
-
-.small-bar {
-  height: var(--small-height);
+.search-bar-sm {
+  height: var(--height-small);
 }
 
 .search-field {
-  border: 0;
-  padding: 0;
-  border-radius: 5px;
   float: right;
-  font-weight: 300;
+  padding: 0;
+  border: 0;
+  border-radius: 5px;
   font-family: "Avenir", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  height: var(--height);
+  width: calc(var(--bar-w) - var(--loop-w));
 }
 
 .search-field:focus {
   outline: none;
 }
 
-.big-field {
-  height: var(--big-height);
-  width: calc(var(--bar-width) - var(--bl-width));
-  font-size: 16px;
-  font-weight: 800;
-}
-
-.big-field::placeholder {
+.search-field::placeholder {
   color: black;
   font-weight: 300;
 }
 
-.small-field {
-  height: var(--small-height);
-  width: calc(var(--bar-width) - var(--sl-width));
+.search-field-sm {
+  height: var(--height-small);
+  width: calc(var(--bar-w) - var(--loop-w-small));
   font-size: 14px;
   font-weight: 800;
 }
 
-.small-field::placeholder {
+.search-field-sm::placeholder {
   text-shadow: 0 4px 3px darkgray;
-  color: black;
-  font-weight: 300;
 }
 
-.bl-container {
+.loop-container {
   display: inline-block;
-  width: var(--bl-width);
-  height: var(--big-height);
+  width: var(--loop-w);
+  height: var(--height);
 
 }
 
-.sl-container {
+.loop-container-sm {
   display: inline-block;
-  width: var(--sl-width);
-  height: var(--small-height);
+  width: var(--loop-w-small);
+  height: var(--height-small);
 }
 
-.loop-big {
-  margin: 24px 0 0 24px;
+.loop {
   width: 19px;
+  margin: 24px 0 0 24px;
 }
 
-.loop-small {
-  margin: 14px 0 0 14px;
+.loop-sm {
   width: 10px;
+  margin: 14px 0 0 14px;
 }

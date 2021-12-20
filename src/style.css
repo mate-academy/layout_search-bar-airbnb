@@ -1,0 +1,96 @@
+body {
+  --big-height: 68px;
+  --small-height: 40px;
+  --bar-width: 100%;
+  --bl-width: 64px;
+  --sl-width: 35px;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("/fonts/Avenir.ttc"),
+    url("fonts/Avenir-Book.ttf"),
+    url("fonts/Avenir-Heavy.ttf");
+}
+
+.search-bar {
+  border: 1px solid gainsboro;
+  width: var(--bar-width);
+  box-shadow: 0 0 4px gainsboro;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.search-bar:hover {
+  box-shadow: 0 2px 5px gainsboro;
+}
+
+.big-bar {
+  height: var(--big-height);
+  margin-top: 20px;
+}
+
+.small-bar {
+  height: var(--small-height);
+}
+
+.search-field {
+  border: 0;
+  padding: 0;
+  border-radius: 5px;
+  float: right;
+  font-weight: 300;
+  font-family: "Avenir", sans-serif;
+}
+
+.search-field:focus {
+  outline: none;
+}
+
+.big-field {
+  height: var(--big-height);
+  width: calc(var(--bar-width) - var(--bl-width));
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.big-field::placeholder {
+  color: black;
+  font-weight: 300;
+}
+
+.small-field {
+  height: var(--small-height);
+  width: calc(var(--bar-width) - var(--sl-width));
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.small-field::placeholder {
+  text-shadow: 0 4px 3px darkgray;
+  color: black;
+  font-weight: 300;
+}
+
+.bl-container {
+  display: inline-block;
+  width: var(--bl-width);
+  height: var(--big-height);
+
+}
+
+.sl-container {
+  display: inline-block;
+  width: var(--sl-width);
+  height: var(--small-height);
+}
+
+.loop-big {
+  margin: 24px 0 0 24px;
+  width: 19px;
+}
+
+.loop-small {
+  margin: 14px 0 0 14px;
+  width: 10px;
+}

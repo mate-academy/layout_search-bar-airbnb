@@ -11,8 +11,11 @@
   src: url(fonts/Avenir-Heavy.ttf);
 }
 
-body {
+html {
   font-family: "Avenir", sans-serif;
+}
+
+body {
   margin: 8px;
 }
 
@@ -57,4 +60,9 @@ body {
 .form_input:focus {
   outline: none;
   box-shadow: inset 0 0 10px #eceaea;
+  font-weight: bold;
+}
+
+.form_input::placeholder {
+  font-weight: normal;
 }

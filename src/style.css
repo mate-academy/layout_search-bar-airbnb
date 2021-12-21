@@ -1,13 +1,21 @@
 @font-face {
-  font-family: Avenir;
-  src: url(/fonts/Avenir.ttc),
-    url(fonts/Avenir-Book.ttf),
-    url(fonts/Avenir-Heavy.ttf);
-  font-weight: 300;
+  font-family: "Avenir";
+  src: url("fonts/Avenir-Book.ttf");
+  font-style: normal;
 }
 
+@font-face {
+  font-family: "Avenir";
+  src: url("fonts/Avenir-Heavy.ttf");
+  font-weight: bold;
+}
+
+/* Если подключать с html
+Стиль фонтов не подключается,
+в отличии от*. Почему так? */
+
 html {
-  font-family: Avenir , sans-serif;
+  font-family: Avenir, sans-serif;
   box-sizing: border-box;
   color: #3e4e61;
 }

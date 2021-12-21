@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="http://localhost:8080/api">
+    <form action="#" method="GET">
 
       <div class="search-bar">
-        <div class="loop-container">
+        <div class="magn-glass-container">
           <img
             src="images/Search.svg"
-            alt="loop"
-            class="loop"
+            alt="magnifying glass"
+            class="magn-glass"
           >
         </div>
 
@@ -26,6 +26,7 @@
         <input
           type="text"
           id="big"
+          name="query"
           class="search-field"
           data-qa="big"
           placeholder="Try &quot;Los Angeles&quot;"
@@ -33,14 +34,14 @@
       </div>
     </form>
 
-    <form action="http://localhost:8080/api">
+    <form action="#" method="GET">
       <div class="search-bar search-bar-sm">
 
-        <div class="loop-container-sm">
+        <div class="magn-glass-container-sm">
           <img
             src="images/Search.svg"
-            alt="loop"
-            class="loop-sm"
+            alt="magnifying glass"
+            class="magn-glass-sm"
           >
         </div>
 
@@ -48,6 +49,7 @@
         <input
           type="text"
           id="small"
+          name="querysm"
           class="search-field search-field-sm"
           data-qa="small"
           placeholder="Try &quot;Los Angeles&quot;"

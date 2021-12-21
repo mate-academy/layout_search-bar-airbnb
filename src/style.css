@@ -1,16 +1,20 @@
 body {
   --height: 68px;
-  --height-small: 40px;
-  --bar-w: 100%;
-  --loop-w: 64px;
-  --loop-w-small: 35px;
+  --height-sm: 40px;
+  --magn-glass-w: 64px;
+  --magn-glass-w-sm: 35px;
 }
 
 @font-face {
   font-family: "Avenir";
-  src: url("/fonts/Avenir.ttc"),
-    url("fonts/Avenir-Book.ttf"),
-    url("fonts/Avenir-Heavy.ttf");
+  src: url("fonts/Avenir-Book.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("fonts/Avenir-Heavy.ttf");
+  font-weight: bold;
 }
 
 .search-bar {
@@ -27,7 +31,7 @@ body {
 }
 
 .search-bar-sm {
-  height: var(--height-small);
+  height: var(--height-sm);
 }
 
 .search-field {
@@ -39,7 +43,7 @@ body {
   font-weight: 800;
   font-size: 16px;
   height: var(--height);
-  width: calc(var(--bar-w) - var(--loop-w));
+  width: calc(100% - var(--magn-glass-w));
 }
 
 .search-field:focus {
@@ -52,8 +56,8 @@ body {
 }
 
 .search-field-sm {
-  height: var(--height-small);
-  width: calc(var(--bar-w) - var(--loop-w-small));
+  height: var(--height-sm);
+  width: calc(100% - var(--magn-glass-w-sm));
   font-size: 14px;
   font-weight: 800;
 }
@@ -62,25 +66,25 @@ body {
   text-shadow: 0 4px 3px darkgray;
 }
 
-.loop-container {
+.magn-glass-container {
   display: inline-block;
-  width: var(--loop-w);
+  width: var(--magn-glass-w);
   height: var(--height);
 
 }
 
-.loop-container-sm {
+.magn-glass-container-sm {
   display: inline-block;
-  width: var(--loop-w-small);
-  height: var(--height-small);
+  width: var(--magn-glass-w-sm);
+  height: var(--height-sm);
 }
 
-.loop {
+.magn-glass {
   width: 19px;
   margin: 24px 0 0 24px;
 }
 
-.loop-sm {
+.magn-glass-sm {
   width: 10px;
   margin: 14px 0 0 14px;
 }

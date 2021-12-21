@@ -16,6 +16,10 @@ html {
   color: #3d4e61;
 }
 
+body {
+  margin: 0 8px;
+}
+
 .field {
   margin-top: 20px;
   width: 100%;
@@ -31,14 +35,15 @@ html {
 }
 
 .field--big {
-  line-height: 70px;
+  line-height: 68px;
   font-size: 16px;
   background-position: 26px;
   padding-left: 62px;
 }
 
 .field--small {
-  line-height: 42px;
+  line-height: 40px;
+  font-size: 14px;
   background-position: 13px;
   background-size: 11px;
   padding-left: 33px;
@@ -67,4 +72,8 @@ html {
 .field::placeholder {
   font-family: inherit;
   color: inherit;
+}
+
+.field--small::placeholder {
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }

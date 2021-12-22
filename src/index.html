@@ -12,16 +12,16 @@
   </head>
   <body>
     <!-- <h1>Search bar airbnb</h1> -->
-    <form 
+    <form
+      class="search-form"
       action="#"
       method="post"
       data-qa="big"
-      class="formBig"
     >
-      <label for="big_search">
-        <input 
-          class="search_input big_search_input"
+      <label for="big_search" class="search-label--big">
+        <input
           type="search"
+          class="search-input"
           name="big_search"
           id="big_search"
           data-qa="keypress"
@@ -30,20 +30,20 @@
       </label>
     </form>
     <form
+      class="search-form "
       action="#"
       method="post"
       data-qa="small"
-      class="formSmall"
     >
-      <label for="small_search">
-        <input 
-          class="search_input small_search_input"
+      <label for="small_search" class="search-label--small">
+        <input
+          class="search-input search-input--small"
           type="search"
           name="small_search"
           id="small_search"
           placeholder="Try &quot;Los Angeles&quot;"
         >
       </label>
-    </form> 
+    </form>
   </body>
 </html>

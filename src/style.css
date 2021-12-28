@@ -23,18 +23,25 @@ body {
 }
 
 .search-bar {
+  height: 70px;
   margin-top: 20px;
   position: relative;
 }
 
+.search-bar--small {
+  height: 42px;
+}
+
 .label {
+  height: 100%;
   display: block;
 }
 
 .input {
   width: 100%;
-  height: 70px;
-  padding: 25px 10px 25px 62px;
+  height: 100%;
+  padding: 0 0 0 62px;
+  display: block;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
@@ -55,8 +62,7 @@ body {
 }
 
 .input--small {
-  height: 42px;
-  padding: 12px 10px 10px 33px;
+  padding: 0 0 0 33px;
   font-size: 14px;
   line-height: 19px;
 }
@@ -64,7 +70,7 @@ body {
 .input--small::placeholder {
   font-size: 14px;
   line-height: 22px;
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  /* filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25)); */
 }
 
 .input--small:hover::placeholder {
@@ -103,5 +109,5 @@ body {
 .btn--small {
   width: 33px;
   background-size: 11px;
-  background-position: 13px 50%;
+  background-position: 13px 15px;
 }

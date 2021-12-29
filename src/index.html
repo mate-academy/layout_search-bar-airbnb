@@ -11,6 +11,65 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <section data-qa="top">
+      <div class="first_section-div">
+        <a href="https://www.figma.com/">
+          <img 
+          src="https://inceptum-stor.icons8.com/ysXGvggAxLIu/Figma-1-logo.png" 
+          alt="figma_icon"
+          class="figma_img"
+       ></a>
+      </div>
+      <div class="first_section-div">
+        <label class="welcome"><strong>Welcome to Figma!</strong> Create an account to edit and collaborate on this file.</label>
+
+      </div>
+      <div class="first_section-div">
+        <a href="https://accounts.google.com/" class="google_button">
+          <img 
+          src="https://img.icons8.com/color/48/000000/google-logo.png" 
+          alt="google_icon"
+          class="google_img"
+          >  
+          <p class="google-text">Continue with Google</p> 
+        </a>
+      </div>
+      <div class="first_section-div">
+        <a 
+          href="aditionalPage.html" 
+          class="email_button"
+        >
+          <p class="email-text">Sign up with email</p>
+        </a>
+      </div>
+    </section>
+
+    <form 
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+      data-qa="big"
+    >
+      <label for="big"></label>
+      <input 
+        id="big"
+        class="big_search_bar"
+        type="text" 
+        placeholder="Try &quot;Los Angeles&quot;"
+        data-qa="keypress"
+      >
+    </form>
+    <form 
+      data-qa="small"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+    >
+      <label for="small"></label>
+      <input
+        id="small"
+        class="small_search_bar"
+        type="text" 
+        placeholder="Los Angeles"
+      >
+    </form>
   </body>
 </html>

@@ -1,134 +1,70 @@
 
-@font-face {
+ @font-face {
     font-family: Roboto;
     src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-}
-body {
+ }
+ body {
     margin: 20px;
-}
+ }
 
-.search_bar_1 {
-   position: relative;
-   margin-top: 20px;
+ .input {
+   background-image: url(https://raw.githubusercontent.com/mate-academy/layout_search-bar-airbnb/master/src/images/Search.svg);
+   height: 70px;
+   background-size: 19px 19px;
+   background-repeat: no-repeat;
+   background-position: top 25px left 26px;
+   border: 1px solid #E1E7ED;
    width: 100%;
    font-weight: 300;
-   background: #FFFFFF;
+   position: relative; 
    border: 1px solid #E1E7ED;
    box-sizing: border-box;
    box-shadow: 0px 1px 8px rgba(61, 78, 97, 0.1);
-   border-radius: 4px;
-   height: 70px;
-   
-}
-
-.search_bar_1:focus {
-    position: relative;
-    margin-top: 20px;
-    width: 100%;
-    font-weight: 300;
-    background: linear-gradient(180deg, #FFFFFF 0%, #F6F6F7 100%);
-    border: 1px solid #E1E7ED;
-    box-sizing: border-box;
-    border-radius: 3px;
-    height: 70px;
-}
-
-.search_bar_1:hover {
-    position: relative;
-    margin-top: 20px;
-    width: 100%;
-    font-weight: 300;
-    background: #FFFFFF;
-    border: 1px solid #E1E7ED;
-    box-sizing: border-box;
-    box-shadow: 0px 3px 8px rgba(61, 78, 97, 0.2);
-    border-radius: 4px;
-    height: 70px;
-    
+   border-radius: 4px; 
+   background-clip: content-box;
+   background-origin: content-box;
  }
 
+ .input:hover {
 
- .box {
-    position: relative;
-    margin-top: 20px;
-    width: 100%;
-    font-weight: 300;
-    background: #FFFFFF;
-    border: 1px solid #E1E7ED;
-    box-sizing: border-box;
-    box-shadow: 0px 1px 8px rgba(61, 78, 97, 0.1);
-    border-radius: 4px;
-    height: 50px;
-    
- }
- 
- .box:focus {
-     position: relative;
-     margin-top: 20px;
-     width: 100%;
-     font-weight: 300;
-     background: linear-gradient(180deg, #FFFFFF 0%, #F6F6F7 100%);
-     border: 1px solid #E1E7ED;
-     box-sizing: border-box;
-     border-radius: 3px;
-     height: 50px;
- }
- 
- .box:hover {
-     position: relative;
-     margin-top: 20px;
-     width: 100%;
-     font-weight: 300;
-     background: #FFFFFF;
-     border: 1px solid #E1E7ED;
-     box-sizing: border-box;
-     box-shadow: 0px 3px 8px rgba(61, 78, 97, 0.2);
-     border-radius: 4px;
-     height: 50px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 3px 8px rgba(61, 78, 97, 0.2); 
      
-  }
-
-.photo {
-    position: relative;
-    width: 19px;
-    height: 19px;
-    left: 26px;
-    top: 25px;
 }
 
-.text {
+ .input:focus {
+    border-radius: 3px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F6F6F7 100%);
+   
+ }
 
-position: relative;
-top: 20px;
-left: 50px;
+ .inputSmall {
+    margin-top: 20px;
+    height: 42px;
+    background-position: top 15px left 13px;
+    background-size: 11px 11px;
+    
+ }
+ 
+ .placeholder {
 
+   position: relative;
+   top: 25px;
+   left: 60px;
+   font-size: 16px;
+   line-height: 22px;
+   border: none;
+ }
+ .placeholder_1 {
+   position: relative;
+   top: 12px;
+   left: 33px;
+   font-size: 11px;
+   line-height: 15px;
+   border: none;
+ }
 
-font-size: 16px;
-line-height: 22px;
-border: none;
-}
-
-.photo1 {
-    position: relative;
-    width: 15px;
-    height: 15px;
-    left: 26px;
-    top: 15px;
-}
-
-.text1 {
-
-position: relative;
-top: 13px;
-left: 50px;
-
-
-font-size: 11px;
-line-height: 15px;
-border: none;
-}
-
-input::placeholder {
+ input::placeholder {
   border: none;
 
-}
+ }

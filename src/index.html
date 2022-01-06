@@ -11,16 +11,23 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="#" method="post">
+    <form
+      action="#"
+      method="post"
+      class="form-big">
       <input
         type="text"
         class="input input-big"
-        data-qa="big"
+        data-qa="big keypress"
         placeholder="Try &quot;Los Angeles&quot;"
       >
+      <div class="search search-big"></div>
     </form>
 
-    <form action="#" method="post">
+    <form
+    action="#"
+    method="post"
+    class="form-small">
       <input
         type="text"
         id="input-small"
@@ -28,6 +35,7 @@
         data-qa="small"
         placeholder="Try &quot;Los Angeles&quot;"
       >
+      <div class="search search-small"></div>
     </form>
     <script src="./main.js"></script>
   </body>

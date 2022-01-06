@@ -17,13 +17,12 @@
 body {
   margin: 0;
   font-family: Avenir, sans-serif;
-  color: #3d4e61;
   padding: 0 8px;
 }
 
 .input {
   display: block;
-  font-family: Avenir, sans-serif;
+  font-style: inherit;
   width: 100%;
   color: #3d4e61;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
@@ -32,49 +31,91 @@ body {
   border-radius: 4px;
 }
 
+/* big form --------------------------------------------------- */
+
+.form-big {
+  position: relative;
+}
+
 .input-big {
-  font-size: 16px;
   height: 70px;
-}
-
-.input-big:hover {
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-}
-
-.input-big:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border-radius: 3px;
-  color: #3d4e61;
-  font-weight: 800;
   padding-left: 62px;
 }
 
+/* small form  -------------------------------------------------*/
+.form-small {
+  position: relative;
+}
+
 .input-small {
-  font-size: 14px;
-  font-weight: 500;
+  padding-left: 33px;
   height: 42px;
+  display: inline-block;
+}
+
+/* search picture ---------------------------------------------- */
+
+.search {
+  background: url(./images/Vector.png)no-repeat center center;
+  margin-left: 3px;
+
+  /* background-size: 100%; */
+  position: absolute;
+}
+
+.search-small {
+  width: 33px;
+  height: 42px;
+  top: 20px;
+  left: 0;
+  background-size: 11px;
+}
+
+.search-big {
+  background-size: 19px;
+  width: 62px;
+  height: 70px;
+  top: 0;
+}
+
+/* :hover ------------------------------------------ */
+
+.input-big:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
 .input-small:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.input-small:focus {
+/* :focus -------------------------------------------*/
+
+.input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
   color: #3d4e61;
+  font-weight: 800px;
+}
+
+.input-big:focus {
   font-weight: 800;
-  padding-left: 33px;
+}
+
+.input-small:focus {
+  font-weight: 800;
+}
+
+/* ::placeholder  -----------------------------------*/
+
+.input::placeholder {
+  font-weight: 300px;
+  font-family: Avenir, sans-serif;
 }
 
 .input-big::placeholder {
-  background: url(./images/Vector.png)no-repeat 23px;
-  background-size: 19px ;
-  padding-left: 60px;
+  font-size: 16px;
 }
 
 .input-small::placeholder {
-  background: url(./images/Vector.png)no-repeat 11px;
-  background-size: 11px;
-  padding-left: 31px;
+  font-size: 14px;
 }

@@ -1,42 +1,46 @@
 
- @font-face {
-    font-family: Roboto;
-    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
- }
- body {
-    margin: 20px;
- }
-
- .input {
-   background-image: url("./images/Search.svg");
-   height: 70px;
-   background-size: 19px 19px;
-   background-repeat: no-repeat;
-   background-position: top 25px left 26px;
-   border: 1px solid #E1E7ED;
-   width: 100%;
-   font-weight: 300;
-   position: relative; 
-   box-sizing: border-box;
-   box-shadow: 0px 1px 8px rgba(61, 78, 97, 0.1);
-   border-radius: 4px; 
-   background-clip: border-box;
- }
-
-
- .input:hover {
-   background-color: #FFFFFF;
-   box-shadow: 0px 3px 8px rgba(61, 78, 97, 0.2);    
+@font-face {
+  font-family: Roboto;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 }
 
+body {
+  margin: 20px;
+}
+
+.input {
+  background-image: url("./images/Search.svg");
+  height: 70px;
+  background-size: 19px 19px;
+  background-repeat: no-repeat;
+  background-position: top 25px left 26px;
+  border: 1px solid #e1e7ed;
+  width: 100%;
+  font-weight: 300;
+  position: relative;
+
+  box-sizing: border-box;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+
+  background-clip: border-box;
+
+}
+
+.input:hover {
+  background-color: #fff;
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+
+}
 
 .inputSmall {
   margin-top: 20px;
   height: 42px;
+  background-size: 11px 11px;
   background-position: top 15px left 13px;
-  background-size: 11px 11px;  
- }
- 
+
+}
+
 .placeholder {
   position: relative;
   width: 100%;
@@ -50,34 +54,26 @@
 }
 
 .placeholder:focus {
-   background: url("./images/Search.svg"), linear-gradient(180deg, #FFFFFF 0%, #F6F6F7 100%);
-   background-position: 26px, 100%;
-   background-repeat: no-repeat;
-   border-radius: 3px;  
+  background: url("./images/Search.svg"), linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background-position: 26px, 100%;
+  background-repeat: no-repeat;
+  border-radius: 3px;
+
 }
- 
-.placeholder_1 {
-   position: relative;
-   width: 100%;
-   padding: 12px 33px;
-   font-size: 14px;
-   line-height: 10px;
-   background-clip: content-box;
-   background-origin: content-box;
-   border: none;
-   box-sizing: border-box;
- }
 
-.placeholder_1:focus {
-   background: url("./images/Search.svg"), linear-gradient(180deg, #FFFFFF 0%, #F6F6F7 100%);
-   background-position: 13px, 100%;
-   background-size: 11px 11px, 100%; 
-   background-repeat: no-repeat;
-   border-radius: 3px;  
- }
+.placeholderSmall {
+  padding: 12px 33px;
+  font-size: 14px;
+  line-height: 10px;
+}
 
- input {
-   color:#3D4E61;
-   outline:none;
- }
- 
+.placeholderSmall:focus {
+  background-position: 13px, 100%;
+  background-size: 11px 11px, 100%;
+
+}
+
+input {
+  color: #3d4e61;
+  outline: none;
+}

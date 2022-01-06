@@ -34,15 +34,6 @@ body {
   font-size: 16px;
 }
 
-.bigImage {
-  display: block;
-  position: absolute;
-  width: 19px;
-  height: 19px;
-  top: 45px;
-  left: 34px;
-}
-
 .text::placeholder {
   font-family: Avenir, sans-serif;
   color: #3d4e61;
@@ -71,11 +62,20 @@ body {
   font-size: 14px;
 }
 
-.smallImage {
-  display: block;
+.searchLabel::before {
+  content: "";
   position: absolute;
+  left: 34px;
+  top: 45px;
+  width: 19px;
+  height: 19px;
+  background-image: url(/images/Search.svg);
+}
+
+.searchLabel.small::before {
   width: 11px;
   height: 11px;
   top: 125px;
   left: 21px;
+  background-size: contain;
 }

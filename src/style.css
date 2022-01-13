@@ -34,8 +34,9 @@
   content: "";
   position: absolute;
   left: 26px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 25px;
+  align-items: center;
+  bottom: 26px;
   width: 19px;
   height: 19px;
   background: url("images/Search.svg") no-repeat center / contain;
@@ -45,20 +46,20 @@
   content: "";
   position: absolute;
   left: 13px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 15px;
+  bottom: 16px;
   width: 11px;
   height: 11px;
   background: url("images/Search.svg") no-repeat center / contain;
 }
 
 .big-search-bar-input {
-  line-height: 70px;
+  height: 70px;
   padding: 0 0 0 62px;
 }
 
 .little-search-bar-input {
-  line-height: 42px;
+  height: 42px;
   padding: 0 0 0 33px;
 }
 
@@ -71,6 +72,8 @@
 
 .search-input.little-search-bar-input::placeholder {
   font-size: 14px;
+  position: relative;
+  bottom: 1px;
 }
 
 .search-input:hover {

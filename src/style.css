@@ -10,16 +10,42 @@
   src: url("./fonts/Avenir-Heavy.ttf");
 }
 
+body {
+  --large-icon-size: 19px;
+  --large-icon-margin-left: 26px;
+  --small-icon-size: 11px;
+  --small-icon-margin-left: 13px;
+}
+
+.search-form {
+  position: relative;
+}
+
 .search-form:first-child {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.search-icon {
+  position: absolute;
+}
+
+.search-icon-large {
+  top: 25px;
+  left: var(--large-icon-margin-left);
+}
+
+.search-icon-small {
+  height: 11px;
+  width: 11px;
+  top: 15px;
+  left: var(--small-icon-margin-left);
 }
 
 .search-bar {
   width: 100%;
   font-family: Avenir, serif ;
   font-weight: 300;
-  background: url(./images/Search.svg) no-repeat;
   border: 1px solid #e1e7ed;
   border-radius: 4px;
   box-sizing: border-box;
@@ -30,17 +56,15 @@
 .search-bar-large {
   height: 70px;
   font-size: 16px;
-  padding-left: 62px;
-  background-size: 19px;
-  background-position: 26px;
+  padding-left: calc(var(--large-icon-margin-left)
+  + var(--large-icon-size) + 17px);
 }
 
 .search-bar-small {
   height: 42px;
   font-size: 14px;
-  padding-left: 33px;
-  background-size: 11px;
-  background-position: 12px 14px;
+  padding-left: calc(var(--small-icon-margin-left)
+  + var(--small-icon-size) + 9px);
 }
 
 .search-bar:hover {
@@ -50,16 +74,7 @@
 .search-bar:focus {
   border-radius: 3px;
   font-weight: bold;
-}
-
-.search-bar-large:focus {
-  background: url(./images/Search.svg) no-repeat 26px, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  background-size: 19px;
-}
-
-.search-bar-small:focus {
-  background: url(./images/Search.svg) no-repeat 12px 14px, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  background-size: 11px;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
 .search-bar::placeholder {

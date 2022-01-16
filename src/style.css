@@ -1,12 +1,12 @@
 @font-face {
   font-family: Avenir;
-  font-weight: normal;
+  font-weight: 300;
   src: url("./fonts/Avenir-Book.ttf");
 }
 
 @font-face {
   font-family: Avenir;
-  font-weight: bold;
+  font-weight: 900;
   src: url("./fonts/Avenir-Heavy.ttf");
 }
 
@@ -36,8 +36,8 @@ body {
 }
 
 .search-icon-small {
-  height: 11px;
-  width: 11px;
+  height: var(--small-icon-size);
+  width: var(--small-icon-size);
   top: 15px;
   left: var(--small-icon-margin-left);
 }
@@ -73,7 +73,7 @@ body {
 
 .search-bar:focus {
   border-radius: 3px;
-  font-weight: bold;
+  font-weight: 900;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 

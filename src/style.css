@@ -10,14 +10,14 @@
   font-weight: 900;
 }
 
-body {
+html {
   font-weight: 300;
   font-family: Avenir, Helvetica, sans-serif;
 }
 
 .bar {
   font-weight: 900;
-  font-family: Avenir, sans-serif;
+  font-family: inherit;
   display: block;
   width: 100%;
   box-shadow: 0 1px 8px #3d4e611a;
@@ -25,7 +25,7 @@ body {
   border-radius: 4px;
 }
 
-.big__bar {
+.bar__big {
   font-size: 16px;
   height: 70px;
   margin: 20px 0;
@@ -33,41 +33,41 @@ body {
   background-position: 26px;
   background-size: 19px;
   padding-left: 62px;
+  outline: none;
 }
 
-.small__bar {
+.bar__small {
   font-size: 14px;
   height: 42px;
   background: url(./images/Search.svg) no-repeat;
   background-position: 13px;
   background-size: 11px;
   padding-left: 33px;
+  outline: none;
 }
 
-.big__bar::placeholder {
+.bar__big::placeholder {
   color: rgba(61, 78, 97, 1);
   font-size: 16px;
   font-weight: 400;
 }
 
-.small__bar::placeholder {
+.bar__small::placeholder {
   color: rgba(61, 78, 97, 1);
   font-size: 14px;
   font-weight: 400;
 }
 
-.big__bar:focus {
+.bar__big:focus {
   background: url(./images/Search.svg) no-repeat, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   background-position: 26px;
   background-size: 19px;
-  outline: none;
 }
 
-.small__bar:focus {
+.bar__small:focus {
   background: url(./images/Search.svg) no-repeat, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   background-position: 13px;
   background-size: 11px;
-  outline: none;
 }
 
 .bar:hover {

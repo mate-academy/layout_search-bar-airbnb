@@ -34,11 +34,11 @@ html {
 }
 
 .searchBar::placeholder {
-  font-family: "Avenir", sans-serif;
+  font-family: inherit;
   color: #404e5f;
 }
 
-.big {
+.searchBarBig {
   height: 70px;
   font-size: 16px;
   line-height: 22px;
@@ -46,7 +46,7 @@ html {
   background-position: 26px 25px;
 }
 
-.small {
+.searchBarSmall {
   height: 42px;
   font-size: 14px;
   line-height: 19px;
@@ -60,7 +60,10 @@ html {
 }
 
 .searchBar:focus {
-  border-radius: 3px;
   font-weight: 900;
   outline: none;
+  border: 1px solid #e1e7ed;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  box-sizing: border-box;
+  border-radius: 3px;
 }

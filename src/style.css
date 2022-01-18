@@ -1,5 +1,6 @@
 html {
-  font-weight: 300;
+  font-weight: 300
+  font-family: Avenir, sans-serif;
 }
 @font-face {
   font-family: Avenir, sans-serif;
@@ -20,22 +21,16 @@ html {
   box-shadow: 0px 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.form:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border-radius: 3px;
-}
-
 .input::placeholder {
-  font-family: Avenir, sans-serif;
   font-weight: 300;
   color: #3d4e61;
 }
 
-.input1::placeholder {
+.inputBig::placeholder {
   font-size: 16px;
 }
 
-.input2::placeholder {
+.inputSmall::placeholder {
   font-size: 14px;
 }
 
@@ -45,17 +40,23 @@ html {
   font-family: Avenir, sans-serif;
   border: none;
   color: #3d4e61;
-  display: inline-block;
+  display: border-box;
 }
 
-.input1 {
+.input:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px
+  font-weight: 400;  
+}
+
+.inputBig {
   height: 68px;
   font-size: 16px;
   padding-left: 62px;
 
 }
 
-.input2 {
+.inputSmall {
   height: 40px;
   font-size: 14px;
   padding-left: 33px;
@@ -67,7 +68,7 @@ html {
 
 }
 
-.image1 {
+.imageBig {
   width: 19px;
   height: 19px;
   position: absolute;
@@ -75,7 +76,7 @@ html {
   top: 25px;
 }
 
-.image2 {
+.imageSmall {
   width: 11px;
   height: 11px;
   position: absolute;

@@ -11,6 +11,36 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <form
+      class="search-form"
+      action="https://loalhost:8080/api"
+      method="post"
+      data-qa="big"
+    >
+      <label class="label">
+        <input
+          class="search-bar"
+          type="text"
+          name="searchBar"
+          placeholder="Try &quot;Los Angeles&quot;"
+          data-qa="keypress"
+        >
+      </label>
+    </form>
+    <form
+      class="search-form"
+      action="https://loalhost:8080/api"
+      method="post"
+      data-qa="small"
+    >
+      <label class="label label-small">
+        <input
+          class="search-bar search-bar-small"
+          type="text"
+          name="searchBar"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
+    </form>
   </body>
 </html>

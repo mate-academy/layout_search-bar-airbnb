@@ -49,6 +49,23 @@
   outline: none;
 }
 
+.search-form__input:hover {
+  box-shadow: 0 3px 8px rgb(61 78 97 / 20%);
+}
+
+.search-form__input:focus {
+  background: linear-gradient(
+    180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.search-form__label:after {
+  position: absolute;
+  content: "";
+  display: block;
+}
+
 .search-form__label_big:after {
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
@@ -57,12 +74,6 @@
   height: 19px;
   top: 25px;
   left: 26px;
-}
-
-.search-form__label:after {
-  position: absolute;
-  content: "";
-  display: block;
 }
 
 .small-search-form {

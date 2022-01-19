@@ -20,18 +20,33 @@ html {
   font-family: Avenir, sans-serif;
 }
 
+.input:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.input:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 4px;
+  font-weight: 900;
+}
+
 ::placeholder {
   color: #3d4e61;
 }
 
 .search--form--large {
-  position: relative;
   margin: 20px 0;
+}
+
+.label {
+  position: relative;
 }
 
 .img--search--large {
   position: absolute;
-  padding: 25px 17px 28px 26px;
+  top: 0;
+  left: 26px;
 }
 
 .input--large {
@@ -43,26 +58,12 @@ html {
   line-height: 22px;
 }
 
-.input--large:hover {
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-}
-
-.input--large:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border-radius: 4px;
-  font-weight: 900;
-}
-
-.search--form--small {
-  position: relative;
-}
-
 .img--search--small {
+  top: 0;
+  left: 13px;
   position: absolute;
   width: 11px;
   height: 11px;
-  padding: 15px 9px 18px 13px;
 }
 
 .input--small {
@@ -72,14 +73,4 @@ html {
   width: 100%;
   font-size: 14px;
   line-height: 19px;
-}
-
-.input--small:hover {
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-}
-
-.input--small:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  font-weight: bold;
 }

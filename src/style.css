@@ -32,6 +32,7 @@ html {
   border-radius: 4px;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   color: #3d4e61;
+  
 }
 
 .searchBar-big {
@@ -61,14 +62,28 @@ html {
   font-weight: bold;
 }
 
+.searchBar-big:focus {
+  background: url(./images/Search.svg) no-repeat, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background-position: 25px;
+  background-size: 19px;
+}
+
+.searchBar-small:focus {
+  background: url(./images/Search.svg) no-repeat, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background-position: 13px;
+  background-size: 11px;
+}
+
 .searchBar-big::placeholder {
   font-size: 16px;
   font-family: inherit;
+  font-weight: 300;
   color: #3d4e61;
 }
 
 .searchBar-small::placeholder {
   font-size: 14px;
   font-family: inherit;
+  font-weight: 300;
   color: #3d4e61;
 }

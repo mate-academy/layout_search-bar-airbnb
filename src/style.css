@@ -31,32 +31,26 @@ body {
 
 .smallInput {
   height: 42px;
-  background-position: left 13px bottom 15px;
   font-size: 14px;
   font-style: normal;
   font-weight: normal;
   padding: 10px 33px;
   background-image: url("./images/smallSearch.svg");
+  background-position: center left 13px;
+  
 }
 
 .largeInput {
   height: 70px;
-  background-position: left 26px bottom 26px;
   font-size: 16px;
   margin-bottom: 50px;
   padding: 25px 62px;
   background-image: url("./images/Search.svg");
+  background-position: center left 26px;
 }
 
-.largeInput::placeholder {
+.input::placeholder {
   font-family: "Avenir", sans-serif;
-  font-size: 16px;
-  color: "#3D4E61";
-}
-
-.smallInput::placeholder {
-  font-family: "Avenir", sans-serif;
-  font-size: 14px;
   color: #3d4e61;
 }
 
@@ -66,6 +60,7 @@ body {
 }
 
 .input:focus {
-  background-color: linear-gradient(180deg, "#FFFFFF" 0%, "#F6F6F7" 100%);
+  background-color: linear-gradient(180deg, #fff, #f6f6f7 100%);
   border-radius: 3px;
+  font-weight: bold;
 }

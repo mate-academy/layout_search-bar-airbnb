@@ -1,7 +1,7 @@
 # Search bar for Airbnb
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://<your_account>.github.io/layout_search-bar-airbnb/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_search-bar-airbnb/report/html_report/)
+- [DEMO LINK](https://oleksandr-haidysh.github.io/layout_search-bar-airbnb/)
+- [TEST REPORT LINK](https://oleksandr-haidysh.github.io/layout_search-bar-airbnb/report/html_report/)
 
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
 
@@ -39,8 +39,7 @@ focus action)
 - You have to put `input` inside the `form` for correct data processing. Form should have `action` and `method`
 attributes.
 - Each search bar be inside its own `form` element.
-- Task has styling for `:focus` state. Forms, labels, divs are not focusable by default. Consider it when selecting your
-layout.
+- Task has styling for `:focus` state. Forms, labels, divs are not focusable by default. Consider it when selecting your layout.
 - Remember that inputs and other interactive elements don’t inherit font styles by default.
 - Remember that placeholder has its own set of styles available using `::placeholder` pseudo-element.
 

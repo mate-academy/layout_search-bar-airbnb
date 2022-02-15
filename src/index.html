@@ -12,33 +12,36 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
+    <form
+      action="/"
+      method="post"
+      data-qa="big"
+    >
 
-    <form action="http://localhost:8080/" method="get" data-qa="big">
-
-      <label class="search-bar">
-
+      <label class="search-bar-position">
         <input
           type="search"
-          class="bigSearchBarDesign"
+          class="big-search-form search-form"
           name="BigSearchBar"
           placeholder="Try &quot;Los Angeles&quot;"
           data-qa="keypress"
         >
 
       </label>
-
     </form>
-    <form action="http://localhost:8080/" method="get" data-qa="small">
 
-      <label class="search-bar">
-
+    <form
+      action="/"
+      method="post"
+      data-qa="small"
+    >
+      <label class="search-bar-position">
         <input
-          type="search"
-          class="smallSearchBarDesign"
+          type="text"
+          class="small-search-form search-form"
           name="SmallSearchBar"
           placeholder="Try &quot;Los Angeles&quot;"
         >
-
       </label>
     </form>
   </body>

@@ -1,0 +1,118 @@
+@font-face {
+  font-family: Avenir;
+  font-weight: 300;
+  font-style: normal;
+  src: url("./fonts/Avenir-Book.ttf");
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 600;
+  font-style: normal;
+  src: url("./fonts/Avenir-Heavy.ttf");
+}
+
+body > * {
+  box-sizing: border-box;
+  padding: 0;
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+}
+
+.searchSvg {
+  position: absolute;
+  cursor: default;
+  left: 30px;
+}
+
+.lensBig {
+  transform: translate(-50%, -50%);
+  top: 35px;
+  width: 30px;
+}
+
+/* .lensBig:hover {
+  fill: rgb(24, 108, 235);
+} */
+
+.lensSmall {
+  transform: translate(-100%, 50%);
+  width: 18px;
+}
+
+/* .lensSmall:hover {
+  fill: 3px solid rgb(24, 108, 235);
+} */
+
+.formBig {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 65px;
+  margin-top: 20px;
+}
+
+.formSmall {
+  margin-top: 10px;
+  display: flex;
+  width: 45%;
+  height: 40px;
+}
+
+.field {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.line {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #af8f9f;
+  border-radius: 5px;
+  color: #52402f;
+  font-weight: bold;
+  font-family: Avenir, sans-serif;
+  outline: none;
+}
+
+.line:hover {
+  border: 3px solid rgb(157, 122, 190);
+  box-shadow: 0 5px 5px rgb(143, 133, 145);
+}
+
+.line:focus {
+  background: linear-gradient(#fff, #eaccf8);
+  border: 3px solid rgb(24, 108, 235);
+  box-shadow: none;
+}
+
+.line::placeholder {
+  font-weight: 300;
+}
+
+.lineBig {
+  font-size: 16px;
+  padding-left: 62px;
+  line-height: 22px;
+}
+
+/* .lineBig:hover {
+
+}
+
+.lineBig::placeholder {
+
+} */
+
+.lineSmall {
+  font-style: 14px;
+  padding-left: 33px;
+  line-height: 19px;
+}
+
+.lineSmall::placeholder {
+  font-size: 13px;
+  line-height: 22px;
+  text-shadow: 2px 2px #52402f3b;
+}

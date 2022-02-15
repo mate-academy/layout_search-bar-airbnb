@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Heavy.ttf);
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+body {
+  font-weight: 300;
+}
+
+.form {
+  width: 100%;
+  position: relative;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgb(61 78 97 / 10%);
+  border-radius: 4px;
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+.label {
+  display: block;
+  width: 100%;
+}
+
+.label_big {
+  height: 68px;
+}
+
+.label_small {
+  height: 40px;
+}
+
+.text {
+  font-family: Avenir, sans-serif;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid #e1e7ed;
+  border-radius: 4px; */
+  border: none;
+  color: #3d4e61;
+}
+
+.text_big {
+  /* display: inline-block; */
+  height: 68px;
+  padding-left: 62px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.text_small {
+  padding-left: 33px;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.bigButton {
+  width: 62px;
+  background-size: 19px;
+  height: 69px;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position-x: 61%;
+  background-position-y: center;
+  cursor: pointer;
+}
+
+.smallButton {
+  width: 34px;
+  background-size: 11px;
+  height: 97%;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: center;
+  cursor: pointer;
+}
+
+.form:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.text:focus {
+  border: 1px solid rgba(225, 231, 237, 1);
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-weight: 900;
+}

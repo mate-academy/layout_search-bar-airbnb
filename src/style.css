@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Heavy.ttf);
+}
+
+@font-face {
+  font-family: Avenir;
+  /* font-weight: bold; */
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+body {
+  font-weight: 300;
+}
+
+.form {
+  width: 100%;
+  position: relative;
+  box-shadow: 0 1px 8px rgb(61 78 97 / 10%);
+  border-radius: 4;
+  background-color: #fff;
+  margin-top: 20px;
+  border: 1px solid rgba(225, 231, 237, 1);
+}
+
+.label {
+  display: block;
+  width: 100%;
+}
+
+.labelBig {
+  height: 68px;
+}
+
+.labelSmall {
+  height: 40px;
+}
+
+.text {
+  font-family: Avenir, sans-serif;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.bigInput {
+  height: 68px;
+  padding-left: 62px;
+  font-size: 16px;
+  /* line-height: 22px; */
+}
+
+.smallInput {
+  padding-left: 33px;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.bigSubmitButton {
+  width: 62px;
+  background-size: 19px;
+  height: 69px;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position-x: 61%;
+  background-position-y: center;
+  cursor: pointer;
+}
+
+.smallSubmitButton {
+  width: 33px;
+  background-size: 11px;
+  height: 100%;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: center;
+  cursor: pointer;
+}

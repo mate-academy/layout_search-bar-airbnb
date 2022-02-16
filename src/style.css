@@ -1,0 +1,118 @@
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: Avenir-Heavy;
+  src: url(fonts/Avenir-Heavy.ttf);
+}
+
+body {
+  margin: 0;
+}
+
+/* ------------
+  form search bar big
+   ------------ */
+
+form[data-qa="big"] {
+  position: relative;
+  margin: 20px 8px;
+}
+
+.icon_1 {
+  position: absolute;
+  top: 25px;
+  left: 26px;
+  height: 19px;
+  width: 19px;
+  z-index: 1;
+  font-size: 16px;
+}
+
+input[id="search_bar_1"]::placeholder {
+  position: absolute;
+  top: 25px;
+  left: 62px;
+  bottom: -15.79%;
+  font-size: 16px;
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+  line-height: 22px;
+  color: #3d4e61;
+}
+
+input[id="search_bar_1"] {
+  width: 100%;
+  height: 70px;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: #fff;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  padding-left: 61px;
+}
+
+input[id="search_bar_1"]:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+input[id="search_bar_1"]:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  font-family: Avenir-Heavy, sans-serif;
+  border-radius: 3px;
+}
+
+/* ------------
+  form search bar small
+   ------------ */
+
+form[data-qa="small"] {
+  position: relative;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+input[id="search_bar_2"] {
+  width: 100%;
+  height: 42px;
+  padding-left: 32px;
+  border: 1px solid #e1e7ed;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  font-size: 14px;
+}
+
+input[id="search_bar_2"]::placeholder {
+  position: absolute;
+  top: 12px;
+  left: 33px;
+  font-family: Avenir, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 19px;
+  color: #3d4e61;
+}
+
+.icon_2 {
+  position: absolute;
+  top: 15px;
+  left: 13px;
+  height: 11px;
+  width: 11px;
+  z-index: 1;
+}
+
+input[id="search_bar_2"]:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+input[id="search_bar_2"]:focus {
+  font-weight: 900;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+}

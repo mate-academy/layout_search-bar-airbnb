@@ -1,6 +1,7 @@
 @font-face {
   font-family: Avenir;
   src: url(fonts/Avenir-Book.ttf);
+  font-weight: 300;
 }
 @font-face {
   font-family: Avenir;
@@ -8,12 +9,8 @@
   font-weight: bold;
 }
 
-body {
-  margin-top: 20px;
-}
-
 /* search bar */
-input {
+.searchInput {
   font-family: Avenir, sans-serif;
   font-size: 16px;
   height: 70px;
@@ -35,6 +32,7 @@ input {
 }
 
 .searchBox {
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -49,6 +47,14 @@ input {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
   border-radius: 3px;
+}
+
+.searchInput:focus {
+  font-weight: 900;
+}
+
+.searchInput::placeholder {
+  font-weight: 400;
 }
 
 /* small search bar */

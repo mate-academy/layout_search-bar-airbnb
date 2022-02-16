@@ -12,42 +12,45 @@
   </head>
   <body>
     <form
-    action="testPort:3000"
-    method="post"
-    class="container"
-    data-qa="big"
+      action="testPort:3000"
+      method="post"
+      class="form"
+      data-qa="big"
     >
-      <label for="big-input">
+      <label for="bigInput">
         <img
-        src="images/Search.svg"
-        alt="search"
-        class="search-icon icon1"
+          src="images/Search.svg"
+          alt="search"
+          class="form__icon"
         >
         <input
-        type="text"
-        data-qa="keypress"
-        placeholder="Try “Los Angeles”"
-        id="big-input">
+          type="text"
+          id="bigInput"
+          class="form__input"
+          data-qa="keypress"
+          placeholder="Try “Los Angeles”"
+        >
       </label>
     </form>
-
     <form
-    action="testPort:3000"
-    method="post"
-    class="container"
-    data-qa="small"
+      action="testPort:3000"
+      method="post"
+      class="form"
+      data-qa="small"
     >
-      <label for="small-input">
+      <label for="smallInput">
         <img
-        src="images/Search.svg"
-        alt="search"
-        class="search-icon icon2">
+          src="images/Search.svg"
+          alt="search small"
+          class="form__icon form__icon--small"
+        >
         <input
-        type="text"
-        placeholder="Try “Los Angeles”"
-        id="small-input">
+          type="text"
+          id="smallInput"
+          class="form__input form__input--small"
+          placeholder="Try “Los Angeles”"
+        >
       </label>
     </form>
-
   </body>
 </html>

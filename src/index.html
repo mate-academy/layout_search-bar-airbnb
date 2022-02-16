@@ -12,35 +12,35 @@
   </head>
   <body>
     <form
-    class="search-form"
-    method="get"
-    action="/"
-    data-qa="big"
+      class="search-form search-form-big"
+      method="post"
+      action="http://localhost:59972/api"
+      data-qa="big"
     >
-      <label for="search-input">
+      <label for="label label-big">
         <input
-        class="input"
-        type="text"
-        name="search"
-        placeholder="try &#34Los Angeles&#34"
-        data-qa="keypress"
-        required
+          class="input"
+          type="text"
+          name="input input-big"
+          placeholder="Try &#34Los Angeles&#34"
+          data-qa="keypress"
+          required
         >
       </label>
     </form>
     <form
-    class="search-form search-small-form"
-    method="get"
-    action="/"
-    data-qa="small"
+      class="search-form search-form-small"
+      method="post"
+      action="http://localhost:59972/api"
+      data-qa="small"
     >
-      <label for="search-input search-input-small">
+      <label for="label label-small">
         <input
-        class="input input-small"
-        type="text"
-        name="search"
-        placeholder="try &#34Los Angeles&#34"
-        required
+          class="input input-small"
+          type="text"
+          name="search"
+          placeholder="Try &#34Los Angeles&#34"
+          required
         >
       </label>
     </form>

@@ -1,16 +1,16 @@
 * {
-  padding: 0;
   box-sizing: border-box;
 }
 
 @font-face {
   font-family: Avenir;
-  src: url(fonts/Avenir-Heavy.ttf);
+  src: url(fonts/Avenir-Book.ttf);
 }
 
 @font-face {
   font-family: Avenir;
-  src: url(fonts/Avenir-Book.ttf);
+  font-weight: bold;
+  src: url(fonts/Avenir-Heavy.ttf);
 }
 
 body {
@@ -28,16 +28,9 @@ body {
 }
 
 .label {
+  height: 100%;
   width: 100%;
   display: block;
-}
-
-.big-label {
-  height: 68px;
-}
-
-.small-label {
-  height: 40px;
 }
 
 .field {
@@ -56,47 +49,42 @@ body {
 }
 
 .small-field {
+  height: 40px;
   line-height: 19px;
   font-size: 14px;
   padding-left: 33px;
 }
 
-.big-button {
-  width: 62px;
-  height: 69px;
+.button {
   position: absolute;
-  background-size: 19px;
   background-color: transparent;
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
-  background-position-x: 61%;
   background-position-y: center;
   border: none;
   outline: none;
-  cursor: pointer;
+}
+
+.big-button {
+  width: 62px;
+  height: 69px;
+  background-size: 19px;
+  background-position-x: 61%;
 }
 
 .small-button {
   width: 34px;
   height: 97%;
-  position: absolute;
   background-size: 11px;
-  background-color: transparent;
-  background-image: url(images/Search.svg);
-  background-repeat: no-repeat;
   background-position-x: 50%;
-  background-position-y: center;
-  border: none;
-  outline: none;
-  cursor: pointer;
 }
 
 .field:focus {
   font-weight: 900;
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
-  box-sizing: border-box;
   border-radius: 3px;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  outline: none;
 }
 
 .field:hover {

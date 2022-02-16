@@ -11,6 +11,49 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="get"
+      class="form"
+      data-qa="big"
+    >
+      <label class="form-field form-field-big">
+        <input
+          type="search"
+          name = "search"
+          class="field field-big"
+          placeholder="Try &quot;Los Angeles&quot;"
+          autocomplete="off"
+          data-qa="keypress"
+        >
+      </label>
+
+      <button
+        type="submit"
+        class="search-button search-button-big">
+      </button>
+    </form>
+
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="get"
+      class="form"
+      data-qa="small"
+    >
+      <label class="form-field form-field-small">
+        <input
+          type="search"
+          name = "search"
+          class="field field-small"
+          placeholder="Try &quot;Los Angeles&quot;"
+          autocomplete="off"
+        >
+      </label>
+      
+      <button
+        type="submit"
+        class="search-button search-button-small">
+      </button>
+    </form>
   </body>
 </html>

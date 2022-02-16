@@ -9,8 +9,43 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
+
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <form action="https://www.google.com.ua/webhp?tab=rw&authuser=0"
+      class="form-field"
+      data-qa="big"
+      method="get"
+    >
+      <label for="gsearch"></label>
+      <input type="search"
+        id="gsearch"
+        name="gsearch"
+        data-qa="keypress"
+        placeholder="          Try Los Angeles"
+      >
+      <img src="./images/Search.svg" class="image1"
+        width="19"
+        height="19"
+        alt="glass"
+      >
+    </form>
+    <form action="https://www.google.com.ua/webhp?tab=rw&authuser=0"
+      class="form-field"
+      data-qa="small"
+      method="get"
+    >
+      <label for="gsearch1"></label>
+      <input type="search"
+        id="gsearch1"
+        name="gsearch"
+        placeholder="      Try Los Angeles"
+      >
+      <img src="./images/Search.svg" class="image2"
+        width="15"
+        height="15"
+        alt="glass"
+      >
+    </form>
   </body>
 </html>

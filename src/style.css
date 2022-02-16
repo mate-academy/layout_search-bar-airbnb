@@ -1,5 +1,3 @@
-/* standart */
-
 @font-face {
   font-weight: 300;
   font-family: Avenir;
@@ -36,8 +34,6 @@
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-/* big */
-
 .label__big {
   height: 68px;
   display: block;
@@ -49,10 +45,6 @@
   font-family: Avenir, sans-serif;
   font-size: 16px;
   width: 100%;
-  height: 100%;
-  border: none;
-  outline: none;
-  font-weight: 900;
 }
 
 .input__big::placeholder {
@@ -62,6 +54,7 @@
 }
 
 .input__big:focus {
+  font-weight: 900;
   border-radius: 3px;
   color: #3d4e61;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
@@ -72,14 +65,7 @@
   height: 100%;
   position: absolute;
   left: 0;
-  border: none;
-  outline: none;
-  background: url(./images/Search.svg) no-repeat 50%;
-  background-color: transparent;
-  cursor: pointer;
 }
-
-/* small */
 
 .label__small {
   height: 40px;
@@ -92,10 +78,13 @@
   font-family: Avenir, sans-serif;
   font-size: 14px;
   width: 100%;
-  height: 100%;
+}
+
+.input__our {
   border: none;
   outline: none;
-  font-weight: 400;
+  font-weight: 300;
+  height: 100%;
 }
 
 .input__small::placeholder {
@@ -105,21 +94,25 @@
 }
 
 .input__small:focus {
+  font-weight: 900;
   border-radius: 3px;
   color: #3d4e61;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
+.button__our {
+  background: url(./images/Search.svg) no-repeat 50%;
+  position: absolute;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .button__small {
   width: 33px;
   height: 100%;
-  position: absolute;
   left: 1px;
   top: -1px;
-  border: none;
-  outline: none;
-  background: url(./images/Search.svg) no-repeat 50%;
-  background-color: transparent;
   background-size: 11px;
-  cursor: pointer;
 }

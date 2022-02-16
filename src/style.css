@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Avenir-Book;
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+body {
+  padding-top: 12px;
+}
+
+.field {
+  font-family: Avenir-Book, sans-serif;
+  font-weight: 900;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.fieldBig {
+  font-size: 16px;
+  padding-left: 62px;
+}
+
+.fieldSmall {
+  font-weight: 400;
+  font-size: 14px;
+  padding-left: 33px;
+}
+
+.field::placeholder {
+  font-family: Avenir-Book, sans-serif;
+  font-weight: 400;
+}
+
+.fieldBig::placeholder {
+  font-size: 16px;
+}
+
+.fieldSmall::placeholder {
+  font-size: 14px;
+}
+
+.field:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+}
+
+.form {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.smallFormSettings {
+  margin-top: 20px;
+}
+
+.bigForm {
+  display: block;
+  height: 68px;
+}
+
+.smallForm {
+  display: block;
+  height: 40px;
+}
+
+.form:hover {
+  box-shadow: 1px 3px 8px #40516433;
+}
+
+.buttonSettings {
+  background-image: url(images/Search.svg);
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+}
+
+.bigButton {
+  width: 62px;
+  top: 1px;
+  background-size: 19px;
+}
+
+.smallButton {
+  width: 32px;
+  top: -2px;
+  background-size: 11px;
+}

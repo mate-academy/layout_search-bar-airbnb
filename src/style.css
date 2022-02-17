@@ -15,7 +15,7 @@ body {
   margin: 0;
 }
 
-.big-search-input-div {
+.big-search-input {
   margin: 20px 9px 0;
   height: 70px;
 }
@@ -24,7 +24,6 @@ body {
   font-family: Avenir, sans-serif;
   font-size: 16px;
   line-height: 22px;
-  letter-spacing: 0;
   text-align: left;
   width: 100%;
   height: 100%;
@@ -35,21 +34,10 @@ body {
   padding-left: 62px;
 }
 
-* :hover {
-  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
-}
-
-.big-field:focus {
-  background: url("images/Search.svg") no-repeat 26px, linear-gradient(180deg, rgba(255, 255, 255, 1),rgba(246, 246, 247, 1), );
-  background-size: 19px 19px;
-}
-
 .small-field {
   font-family: Avenir, sans-serif;
-  font-size: 13.5px;
-  font-style: normal;
+  font-size: 14px;
   line-height: 16px;
-  letter-spacing: 0;
   text-align: left;
 
   padding-left: 33px;
@@ -62,17 +50,28 @@ body {
   background-size: 11px 11px;
 }
 
+.small-search-input {
+  margin: 20px 9px 0;
+  height: 42px;
+}
+
+.big-field:hover,
+.small-field:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
 .small-field:focus {
   background: url("images/Search.svg") no-repeat 13px, linear-gradient(#fff 100%, #f6f6f7 100%);
   background-size: 11px 11px;
 }
 
-.small-search-input-div {
-  margin: 20px 9px 0;
-  height: 42px;
+.big-field:focus {
+  background: url("images/Search.svg") no-repeat 26px, linear-gradient(180deg, rgba(255, 255, 255, 1),rgba(246, 246, 247, 1), );
+  background-size: 19px 19px;
 }
 
-* :focus {
+.big-field:focus,
+.small-field:focus {
   border: 1px solid rgba(225, 231, 237, 1);
   box-sizing: border-box;
   border-radius: 3px;

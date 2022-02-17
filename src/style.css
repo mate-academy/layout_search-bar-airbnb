@@ -25,18 +25,27 @@ body {
   border-radius: 4px;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   color: #3d4e61;
+
+  background: url(images/Search.svg);
+  background-repeat: no-repeat;
 }
 
 .big-search-bar {
   font-size: 16px;
   height: 70px;
   padding-left: 62px;
+
+  background-position: 26px 50%;
+  background-size: 19px 19px;
 }
 
 .small-search-bar {
   font-size: 14px;
   height: 42px;
   padding-left: 33px;
+
+  background-position: 13px 50%;
+  background-size: 11px 11px;
 }
 
 .image-1 {
@@ -53,7 +62,7 @@ body {
 }
 
 .search-bar:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%) url("images/Search.svg");
   border-radius: 3px;
   font-weight: bold;
 }

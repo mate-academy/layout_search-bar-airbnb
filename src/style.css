@@ -1,4 +1,3 @@
-/* stylelint-disable color-hex-length */
 @font-face {
   font-family: Avenir;
   font-weight: 300;
@@ -13,7 +12,7 @@
   src: url("./fonts/Avenir-Heavy.ttf");
 }
 
-body > * {
+* {
   box-sizing: border-box;
 }
 
@@ -23,32 +22,24 @@ body {
   font-size: 16px;
 }
 
-.searchSvg {
+.search--svg {
   position: absolute;
   cursor: default;
   left: 30px;
 }
 
-.lensBig {
+.loupe--big {
   transform: translate(-50%, -50%);
   top: 35px;
   width: 30px;
 }
 
-/* .lensBig:hover {
-  fill: rgb(24, 108, 235);
-} */
-
-.lensSmall {
+.loupe--small {
   transform: translate(-100%, 50%);
   width: 18px;
 }
 
-/* .lensSmall:hover {
-  fill: 3px solid rgb(24, 108, 235);
-} */
-
-.formBig {
+.form--big {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -56,7 +47,7 @@ body {
   margin-top: 20px;
 }
 
-.formSmall {
+.form--small {
   margin-top: 10px;
   display: flex;
   width: 100%;
@@ -72,8 +63,7 @@ body {
 .line {
   width: 100%;
   height: 100%;
-  /* stylelint-disable-next-line color-hex-case */
-  border: 1px solid #E1E7ED;
+  border: 1px solid #e1e7ed;
   border-radius: 4px;
   color: #52402f;
   font-weight: bold;
@@ -82,38 +72,36 @@ body {
 }
 
 .line:hover {
-  /* stylelint-disable-next-line color-hex-case */
-  border: 3px solid #E1E7ED;
+  border: 3px solid #e1e7ed;
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
 .line:focus {
-  /* stylelint-disable-next-line color-hex-case */
-  background: linear-gradient(180deg, #FFFFFF 0%, #F6F6F7 100%);
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   box-shadow: none;
 }
 
-.lineBig {
+.line--big {
   font-size: 16px;
   padding-left: 62px;
   line-height: 22px;
 }
 
-.lineBig::placeholder {
+.line--big::placeholder {
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
   text-shadow: 2px 2px #52402f3a;
 }
 
-.lineSmall {
+.line--small {
   font-size: 14px;
   font-weight: 900;
   padding-left: 33px;
   line-height: 19px;
 }
 
-.lineSmall::placeholder {
+.line--small::placeholder {
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;

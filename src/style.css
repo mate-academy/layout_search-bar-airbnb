@@ -1,11 +1,11 @@
 @font-face {
-  font-family: Avenir-Book;
+  font-family: Avenir;
   font-weight: 300;
   src: url(fonts/Avenir-Book.ttf);
 }
 
 @font-face {
-  font-family: Avenir-Heavy;
+  font-family: Avenir;
   font-weight: 300;
   src: url(fonts/Avenir-Heavy.ttf);
 }
@@ -33,7 +33,6 @@ form {
 
 .searchformsmall {
   height: 42px;
-  /* width: 427px; */
 }
 
 .field {
@@ -43,6 +42,7 @@ form {
   outline: none;
   color: #3d4e61;
   font-family: Avenir-Heavy, sans-serif;
+  font-weight: 900;
 }
 
 .bigsearch {
@@ -63,12 +63,14 @@ form {
 .bigsearch::placeholder {
   font-size: 16px;
   font-family: Avenir-Book, sans-serif;
+  font-weight: 400;
   color: #3d4e61;
 }
 
 .smallsearch::placeholder {
   font-size: 14px;
   font-family: Avenir-Book, sans-serif;
+  font-weight: 400;
   color: #3d4e61;
 }
 
@@ -78,7 +80,6 @@ form {
   background-color: transparent;
   background-repeat: no-repeat;
   background-image: url(images/Search.svg);
-  cursor: pointer;
 }
 
 .buttonbig {

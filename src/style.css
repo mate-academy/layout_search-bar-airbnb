@@ -1,0 +1,76 @@
+@font-face {
+  font-family: Avenir-Book;
+  src: url(fonts/Avenir-Book.ttf);
+}
+@font-face {
+  font-family: Avenir-Heavy;
+  font-weight: bold;
+  src: url(fonts/Avenir-Heavy.ttf);
+}
+
+.labelSearch {
+  box-sizing: border-box;
+  /* position: relative; */
+  display: block;
+  margin: 20px 0;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+  border-radius: 4px;
+}
+
+.labelSearch:focus-within {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+}
+
+.labelSearch:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+  border-radius: 4px;
+}
+
+.labelSearch-big {
+  height: 70px;
+  width: 100%;
+}
+
+.labelSearch-small {
+  height: 42px;
+  width: 100%;
+}
+
+.inputSearch {
+  background: url(./images/search.svg);
+  background-repeat: no-repeat;
+  border: 0;
+  font-family: Avenir-Book, sans-serif;
+}
+
+.inputSearch::placeholder {
+  font-family: Avenir-Book, sans-serif;
+  text-align: left;
+  color: #3d4e61;
+}
+
+.inputSearch:focus {
+  outline: none;
+  font-family: Avenir-Heavy, sans-serif;
+  /* font-weight: bold; */
+}
+
+.inputSearch-big {
+  background-size: 19px 19px;
+  background-position: 25px 24px;
+  width: 100%;
+  font-size: 16px;
+  padding-left: 62px;
+  padding-top: 23px;
+}
+
+.inputSearch-small {
+  background-size: 11px 11px;
+  background-position: 12px 14px;
+  width: 100%;
+  font-size: 14px;
+  padding-left: 33px;
+  padding-top: 10px;
+}

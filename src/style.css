@@ -22,30 +22,35 @@
 .search-form {
   position: relative;
   margin-top: 20px;
-  border-radius: 4px;
-  width: 100%;
   border: 1px solid #e1e7ed;
+  border-radius: 4px;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
 }
 
-.search-form:hover {
+.input {
+  font-family: Avenir, Helvetica, sans-serif;
+  font-weight: 300;
+  border: 0;
+  width: 100%;
+  font-size: 16px;
+  line-height: 22px;
+  padding-top: 25px;
+  padding-bottom: 23px;
+  padding-left: 62px;
+  color: #3d4e61;
+}
+
+.input:hover {
+  font-family: Avenir, Helvetica, sans-serif;
+  font-weight: 400;
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.search-form:focus {
+.input:focus {
+  font-family: Avenir, Helvetica, sans-serif;
+  font-weight: 900;
   background: linear-gradient(180deg, #fff, #f6f6f7 100%);
   border-radius: 3px;
-}
-
-.input {
-  position: relative;
-  border: 0;
-  font-size: 16px;
-  line-height: 22px;
-  margin-top: 25px;
-  margin-bottom: 23px;
-  margin-left: 62px;
-  color: #3d4e61;
 }
 
 .icon {
@@ -56,33 +61,33 @@
   height: 19px;
 }
 
-.search-form1 {
-  position: relative;
-  margin-top: 20px;
-  border-radius: 4px;
-  width: 100%;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-}
-
-.search-form1:hover {
+.icon:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.search-form1:focus {
-  background: linear-gradient(180deg, #fff, #f6f6f7 100%);
-  border-radius: 3px;
-}
-
 .input--small {
-  position: relative;
   border: 0;
+  font-family: Avenir, Helvetica, sans-serif;
+  font-weight: 300;
   font-size: 14px;
   line-height: 21px;
-  margin-top: 12px;
-  margin-bottom: 11px;
-  margin-left: 33px;
+  padding: 12px 20px 11px 33px;
   color: #3d4e61;
+  width: 100%;
+}
+
+.input--small:hover {
+  outline: 0;
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  font-family: Avenir, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.input--small:focus {
+  font-family: Avenir, Helvetica, sans-serif;
+  font-weight: 900;
+  background: linear-gradient(180deg, #fff, #f6f6f7 100%);
+  border-radius: 3px;
 }
 
 .icon1 {
@@ -92,4 +97,8 @@
   left: 13px;
   width: 11px;
   height: 11px;
+}
+
+.icon1:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }

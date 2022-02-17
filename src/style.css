@@ -80,3 +80,29 @@ input:focus {
   font-size: 14px;
   line-height: 19px;
 }
+
+label:after {
+  position: absolute;
+  content: "";
+  display: block;
+}
+
+.label_big:after {
+  background-image: url("./images/Search.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 19px;
+  height: 19px;
+  top: 25px;
+  left: 26px;
+}
+
+.label_small:after {
+  background-image: url("./images/Search.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 11px;
+  height: 11px;
+  top: 15px;
+  left: 13px;
+}

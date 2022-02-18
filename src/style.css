@@ -56,16 +56,12 @@
 .input-big {
   font-size: 16px;
   height: 70px;
+  padding-left: 62px;
 
   background-position: 26px;
 }
 
-.input-big[type="search"] {
-  padding-left: 62px;
-}
-
-.input-big[type="placeholder"] {
-  font-size: 16px;
+.input-big::placeholder {
   font-weight: 400;
 }
 
@@ -82,6 +78,7 @@
 .input-small {
   height: 42px;
   font-size: 14px;
+  padding-left: 31px;
 
   background-size: 11px;
   background-position: 14px;
@@ -91,17 +88,8 @@
   margin-top: 20px;
 }
 
-.input-small[type="search"] {
-  padding-left: 31px;
-}
-
-.input-small[type="placeholder"] {
-  font-size: 14px;
+.input-small::placeholder {
   font-weight: 400;
-}
-
-.input-small:hover {
-  font-size: 14px;
 }
 
 .input-small:focus {
@@ -110,6 +98,5 @@
   background-position: 14px;
   background-size: 11px;
 
-  font-size: 14px;
   font-weight: 900;
 }

@@ -4,20 +4,30 @@
     <meta charset="UTF-8">
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no,
-      initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width,
+      user-scalable=no,
+      initial-scale=1.0,
+      maximum-scale=1.0,
+      minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar Airbnb</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div class="search-bar__wrapper">
+    <div
+      class="search-bar__wrapper"
+    >
       <form
         action="https://mate-academy-form-lesson.herokuapp.com/create-application"
         class="search-bar__form"
+        data-qa="keypress"
       >
-        <label for="searchBarBig" class="search-bar__label big" data-qa="big">
+        <label
+          for="searchBarBig"
+          class="search-bar__label big"
+          data-qa="big"
+        >
           <img
             class="search-bar__img"
             src="./images/Search.svg"
@@ -26,12 +36,9 @@
         </label>
         <input
           type="search"
-          placeholder="Try “Los Angeles”"
-          autofocus="on"
-          autocomplete="off"
+          placeholder="Try &#34Los Angeles&#34"
           name="searchBarBigPanel"
           class="search-bar__input big"
-          data-qa="big keypress"
           id="searchBarBig"
         >
       </form>
@@ -42,9 +49,11 @@
         action="https://mate-academy-form-lesson.herokuapp.com/create-application"
         class="search-bar__form"
       >
-        <label for="searchBarSmall" class="search-bar__label small"
-        data-qa="small"
-      >
+        <label
+          for="searchBarSmall"
+          class="search-bar__label small"
+          data-qa="small"
+        >
           <img
             class="search-bar__img"
             src="./images/Search.svg"
@@ -53,12 +62,9 @@
         </label>
         <input
           type="search"
-          placeholder="Try “Los Angeles”"
-          autofocus="on"
-          autocomplete="off"
+          placeholder="Try &#34Los Angeles&#34"
           name="searchBarSmallPanel"
           class="search-bar__input small"
-          data-qa="small keypress"
           id="searchBarSmall"
         >
       </form>

@@ -1,6 +1,10 @@
 # Search bar for Airbnb
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](itsandriy.github.io/layout_search-bar-airbnb/)
+<<<<<<< HEAD
+- [DEMO LINK](https://itsandriy.github.io/layout_search-bar-airbnb/)
+=======
+- [DEMO LINK](https://itsandriy.github.io/layout_search-bar-airbnb/)
+>>>>>>> 80373b3b5cd1130a9c184479378d38319e568910
 - [TEST REPORT LINK](https://itsandriy.github.io/layout_search-bar-airbnb/report/html_report/)
 
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)

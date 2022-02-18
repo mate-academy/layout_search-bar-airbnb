@@ -1,28 +1,33 @@
 @font-face {
   font-family: Avenir;
+  font-weight: 300;
+  src: url("fonts/Avenir.ttc");
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 400;
   src: url("fonts/Avenir-Book.ttf");
 }
 
 @font-face {
   font-family: Avenir;
+  font-weight: 900;
   src: url("fonts/Avenir-Heavy.ttf");
-}
-
-@font-face {
-  font-family: Avenir;
-  src: url("fonts/Avenir.ttc");
 }
 
 * {
   box-sizing: border-box;
 }
 
+body {
+  margin-top: 0;
+}
+
 .form {
   display: block;
   position: relative;
   margin: 0 auto;
-  /* margin-left: 48px;
-  margin-right: 81px; */
 }
 
 .formBig {
@@ -38,7 +43,6 @@
 
 .labelSmall {
   display: flex;
-  /* width: 427px; */
   height: 42px;
 }
 
@@ -50,21 +54,21 @@
   box-shadow: 0 1px rgba(61, 78, 97, 0.1);
   font-family: Avenir, sans-serif;
   color: #3d4e61;
+  outline: none;
 }
 
 .smallInputCl {
   height: 42px;
-  padding: 12px 227px 10px 33px;
+  padding: 11px 227px 11px 33px;
   font-size: 14px;
   font-weight: 400;
-  line-height: 19px;
 }
 
 .bigInputCl {
   height: 70px;
-  padding: 25px 709px 23px 62px;
+  padding: 24px 62px;
   font-size: 16px;
-  line-height: 22px;
+  font-weight: 400;
 }
 
 .smallInputCl:hover {
@@ -88,10 +92,10 @@
 }
 
 .bigInputCl:focus {
-  font-family: Anenir, sans-serif;
   content: "Los An|";
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
+  font-weight: 900;
 }
 
 .btn {

@@ -12,25 +12,53 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form method="get" data-qa="big">
-      <label for="big-field"></label>
-      <input type="search"
-        name="big"
-        id="big-field"
-        class="field big_field"
-        data-qa="keypress"
-        placeholder="Try &#34Los Angeles&#34"
+
+    <form
+    class="searchbar"
+    method="get"
+    action="/"
+    data-qa="big"
+  >
+      <label class="form form-big" >
+        <input
+          class="field field-big"
+          type="search"
+          name="search"
+          placeholder="Try &quot;Los Angeles&quot;"
+          autocomplete="off"
+          data-qa="keypress"
+        >
+
+      </label>
+      <button
+        class="search-button search-button-big"
+        type="submit"
       >
+      </button>
     </form>
-    <form method="get" data-qa="small">
-      <label for="small-field"></label>
-      <input type="search"
-        name="small"
-        id="small-field"
-        class="field small_field"
-        data-qa="keypress"
-        placeholder="Try &#34Los Angeles&#34"
-      >
+
+    <form
+      class="searchbar"
+      method="get"
+      action="/"
+      data-qa="small"
+    >
+      <label class="form form-small">
+        <input
+          class="field field-small"
+          type="search"
+          name="search"
+          placeholder="Try &quot;Los Angeles&quot;"
+          autocomplete="off"
+        >
+      </label>
+
+      <button
+        class="search-button search-button-small"
+        type="submit"
+       >
+      </button>
+
     </form>
   </body>
 </html>

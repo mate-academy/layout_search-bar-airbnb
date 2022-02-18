@@ -1,69 +1,113 @@
-@font-face {
+* {
+  box-sizing: border-box;
+}
+
+ @font-face {
   font-family: Avenir;
-  src: url("fonts/Avenir-Book.ttf");
+  src: url("fonts/Avenir.ttc");
   font-weight: 300;
 }
 
 @font-face {
   font-family: Avenir;
-  src: url("fonts/Avenir-Heavy.ttf");
-  font-weight: bold;
+  src: url(fonts/Avenir-Book.ttf);
+  font-weight: 400;
 }
 
-html {
-  font-family: Avenir, Arial, Helvetica, sans-serif;
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: 900;
 }
 
-.field {
-  margin-top: 13px;
-  margin-bottom: 7px;
-  border: transparent;
+.searchbar {
+  width: 100%;
+  position: relative;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+.searchbar:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.form {
+  display: block;
   width: 100%;
 }
 
-.big_field::placeholder {
-  color: #3d4e61;
+.form-big {
+  height: 68px;
+}
+
+.form-small {
+  height: 40px;
+}
+
+.field {
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+
+.field-big {
+  font-size: 16px;
+  padding-left: 62px;
+}
+
+.field-small {
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 33px;
+}
+
+.field::placeholder {
+  font-family: Avenir, sans-serif;
+  font-weight: 400;
+}
+
+.field-big::placeholder {
   font-size: 16px;
 }
 
-.small_field::placeholder {
+.field-small::placeholder {
   font-size: 14px;
 }
 
 .field:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border: 1px solid #e1e7ed;
-  box-sizing: border-box;
   border-radius: 3px;
+  color: #3d4e61;
 }
 
-.field:hover {
-  background: #fff;
-  border: 1px solid #e1e7ed;
-  box-sizing: border-box;
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-  border-radius: 4px;
+.search-button {
+  height: 100%;
+  position: absolute;
+  top: -1px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }
 
-.big_field {
-  background: #fff url(images/Search.svg) no-repeat 23px;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  border-radius: 4px;
-  width: 100%;
-  height: 70px;
+.search-button-big {
+  width: 63px;
+  left: 2px;
   background-size: 19px;
-  padding-left: 60px;
 }
 
-.small_field {
-  width: 100%;
-  height: 42px;
-  background: #fff url(images/Search.svg) no-repeat 13px;
-  border: 1px solid #e1e7ed;
-  box-sizing: border-box;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  border-radius: 4px;
+.search-button-small {
+  width: 33px;
   background-size: 11px;
-  padding-left: 35px;
+  left: 1px;
 }

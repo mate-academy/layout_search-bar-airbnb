@@ -1,6 +1,4 @@
-* {
-  outline: 0 !important;
-}
+
 @font-face {
   font-family: Avenir;
   font-weight: 300;
@@ -35,19 +33,20 @@
   font-size: 16px;
   line-height: 22px;
   padding-top: 25px;
-  padding-bottom: 23px;
+  padding-bottom: 21px;
   padding-left: 62px;
   color: #3d4e61;
 }
 
-.input:hover {
-  font-family: Avenir, Helvetica, sans-serif;
+.input::placeholder {
   font-weight: 400;
+}
+
+.input:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
 .input:focus {
-  font-family: Avenir, Helvetica, sans-serif;
   font-weight: 900;
   background: linear-gradient(180deg, #fff, #f6f6f7 100%);
   border-radius: 3px;
@@ -66,25 +65,27 @@
 }
 
 .input--small {
-  border: 0;
   font-family: Avenir, Helvetica, sans-serif;
+  border: 0;
   font-weight: 300;
   font-size: 14px;
   line-height: 21px;
-  padding: 12px 20px 11px 33px;
+  padding: 12px 20px 7px 33px;
   color: #3d4e61;
   width: 100%;
+}
+
+.input--small::placeholder {
+  font-weight: 400;
 }
 
 .input--small:hover {
   outline: 0;
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-  font-family: Avenir, Helvetica, sans-serif;
   font-weight: 400;
 }
 
 .input--small:focus {
-  font-family: Avenir, Helvetica, sans-serif;
   font-weight: 900;
   background: linear-gradient(180deg, #fff, #f6f6f7 100%);
   border-radius: 3px;

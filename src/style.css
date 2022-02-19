@@ -1,0 +1,109 @@
+html {
+  font-weight: 300;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 900;
+  src: url(fonts/Avenir-Heavy.ttf);
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 300;
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+body {
+  padding: 0;
+}
+
+.form {
+  width: 100%;
+  position: relative;
+  box-shadow: 0 1px 8px rgb(61 78 97 / 10%);
+  border-radius: 4;
+  background-color: #fff;
+  margin-top: 20px;
+  border: 1px solid rgba(225, 231, 237, 1);
+}
+
+.label {
+  display: block;
+  width: 100%;
+}
+
+.label_big {
+  height: 68px;
+}
+
+.label_small {
+  height: 40px;
+}
+
+.text {
+  font-family: Avenir, sans-serif;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.big_input {
+  height: 68px;
+  padding-left: 62px;
+  font-size: 16px;
+}
+
+.small_input {
+  padding-left: 33px;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+}
+
+.button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+}
+
+.big_submit_button {
+  width: 62px;
+  background-size: 19px;
+  height: 69px;
+  background-position-x: 61%;
+  background-position-y: center;
+  cursor: pointer;
+}
+
+.small_submit_button {
+  width: 34px;
+  background-size: 11px;
+  height: 97%;
+  background-position-x: 50%;
+  background-position-y: center;
+  cursor: pointer;
+}
+
+.text::placeholder {
+  color: rgba(61, 78, 97, 1);
+}
+
+.form:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.text:focus {
+  font-weight: 900;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  box-sizing: border-box;
+  border-radius: 3px;
+  outline: none;
+}

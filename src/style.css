@@ -1,21 +1,25 @@
+html {
+  font-weight: 300;
+}
+
 * {
-  padding: 0;
   box-sizing: border-box;
 }
 
 @font-face {
   font-family: Avenir;
+  font-weight: 900;
   src: url(fonts/Avenir-Heavy.ttf);
 }
 
 @font-face {
   font-family: Avenir;
-  /* font-weight: bold; */
+  font-weight: 300;
   src: url(fonts/Avenir-Book.ttf);
 }
 
 body {
-  font-weight: 300;
+  padding: 0;
 }
 
 .form {
@@ -33,63 +37,63 @@ body {
   width: 100%;
 }
 
-.labelBig {
+.label_big {
   height: 68px;
 }
 
-.labelSmall {
+.label_small {
   height: 40px;
 }
 
 .text {
   font-family: Avenir, sans-serif;
-  color: #3d4e61;
   width: 100%;
   height: 100%;
   border: none;
 }
 
-.bigInput {
+.big_input {
   height: 68px;
   padding-left: 62px;
   font-size: 16px;
-  /* line-height: 22px; */
 }
 
-.smallInput {
+.small_input {
   padding-left: 33px;
   font-size: 14px;
   line-height: 19px;
+  font-weight: 400;
 }
 
-.bigSubmitButton {
-  width: 62px;
-  background-size: 19px;
-  height: 69px;
+.button {
   position: absolute;
   background-color: transparent;
   border: none;
   outline: none;
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
+}
+
+.big_submit_button {
+  width: 62px;
+  background-size: 19px;
+  height: 69px;
   background-position-x: 61%;
   background-position-y: center;
   cursor: pointer;
 }
 
-.smallSubmitButton {
+.small_submit_button {
   width: 34px;
   background-size: 11px;
   height: 97%;
-  position: absolute;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  background-image: url(images/Search.svg);
-  background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: center;
   cursor: pointer;
+}
+
+.text::placeholder {
+  color: rgba(61, 78, 97, 1);
 }
 
 .form:hover {
@@ -99,7 +103,7 @@ body {
 .text:focus {
   font-weight: 900;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border: 1px solid #e1e7ed;
   box-sizing: border-box;
   border-radius: 3px;
+  outline: none;
 }

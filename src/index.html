@@ -11,18 +11,19 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
+
     <form
       class="box"
-      action="http://localhost:3000/api"
+      action="#"
       method="post"
       data-qa="big"
     >
-      <label class="labelInput">
+      <label for="searchPlace" class="labelInput">
         <input
           class="search"
-          id="bigB"
           type="text"
-          name="searching"
+          name="searchPlace"
+          id="searchPlace"
           data-qa="keypress"
           placeholder="Try &quot;Los Angeles&quot;"
         >
@@ -32,15 +33,16 @@
 
     <form
       class="box"
-      action="http://localhost:3000/api"
+      action="#"
       method="post"
       data-qa="small"
     >
-      <label class="labelInput smallText">
+      <label for="searchPlaceSmall" class="labelInput smallText">
         <input
           class="search searchSmall"
           type="text"
-          name="searching"
+          name="searchPlaceSmall"
+          id="searchPlaceSmall"
           placeholder="Try &quot;Los Angeles&quot;"
         >
         </input>

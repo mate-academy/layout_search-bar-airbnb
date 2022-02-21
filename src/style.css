@@ -10,16 +10,21 @@
   src: url("./fonts/Avenir-Heavy.ttf");
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .labelInput {
   position: relative;
   display: block;
-  width: 100%;
+  margin: 20px 0;
 }
 
 .labelInput::after {
   position: absolute;
 
   top: 25px;
+  right: 17px;
   left: 26px;
   bottom: 26px;
   height: 19px;
@@ -34,19 +39,17 @@
 .smallText::after {
   height: 11px;
   width: 11px;
+
   top: 15px;
   left: 13px;
+  right: 9px;
   bottom: 16px;
 }
 
-.box {
-  margin: 20px 0;
-}
-
 .search {
-  padding: 0 0 0 61px;
+  padding: 0 0 0 62px;
   width: 100%;
-  height: 68px;
+  height: 70px;
 
   font-family: Avenir, serif;
   font-weight: 300;
@@ -61,10 +64,11 @@
 }
 
 .searchSmall {
-  height: 40px;
+  height: 42px;
+  padding: 0 0 0 33px;
+
   font-family: Avenir, serif;
   font-size: 14px;
-  padding: 0 0 0 32px;
 }
 
 .search:hover {

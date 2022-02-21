@@ -2,9 +2,19 @@
   box-sizing: border-box;
 }
 
+html {
+  font-weight: 300;
+}
+
 @font-face {
   font-family: Avenir;
   font-weight: 300;
+  src: url(fonts/Avenir.ttc);
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 400;
   src: url(fonts/Avenir-Book.ttf);
 }
 
@@ -12,10 +22,6 @@
   font-family: Avenir;
   font-weight: 900;
   src: url(fonts/Avenir-Heavy.ttf);
-}
-
-html {
-  font-weight: 300;
 }
 
 .form {
@@ -75,7 +81,7 @@ html {
 
 .small-button {
   width: 34px;
-  height: 97%;
+  height: 100%;
   background-size: 11px;
   background-position-x: 50%;
 }
@@ -94,4 +100,13 @@ html {
 
 .field::placeholder {
   color: rgba(61, 78, 97, 1);
+  font-weight: 400;
+}
+
+.big-field::placeholder {
+  font-size: 16px;
+}
+
+.small-field::placeholder {
+  font-size: 14px;
 }

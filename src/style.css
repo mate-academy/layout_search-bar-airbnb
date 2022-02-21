@@ -72,30 +72,37 @@ body {
 }
 
 .smallInputCl:hover {
-  content: "Los Angeles";
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
   border-radius: 4px;
 }
 
 .smallInputCl:focus {
-  font-family: Anenir, sans-serif;
   font-weight: 900;
-  content: "Los Ang|";
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
 }
 
 .bigInputCl:hover {
-  content: "Try “Los Angeles”";
   background: #fff;
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
 .bigInputCl:focus {
-  content: "Los An|";
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
   font-weight: 900;
+}
+
+.input::placeholder {
+  font-weight: 400;
+}
+
+.bigInputCl::placeholder {
+  font-size: 16px;
+}
+
+.smallInputCl::placeholder {
+  font-size: 14px;
 }
 
 .btn {

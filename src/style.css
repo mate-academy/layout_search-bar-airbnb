@@ -1,10 +1,23 @@
-* {
-  box-sizing: border-box;
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir.ttc);
+  font-weight: 300;
 }
 
 @font-face {
-  font-family: Avenir-Book;
+  font-family: Avenir;
   src: url(fonts/Avenir-Book.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: 900;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -12,35 +25,35 @@ body {
 }
 
 .field {
-  font-family: Avenir-Book, sans-serif;
-  font-weight: 900;
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
   height: 100%;
   width: 100%;
   border: none;
   outline: none;
+  color: #3d4e61;
 }
 
-.fieldBig {
+.field-big {
   font-size: 16px;
   padding-left: 62px;
 }
 
-.fieldSmall {
+.field-small {
   font-weight: 400;
   font-size: 14px;
   padding-left: 33px;
 }
 
 .field::placeholder {
-  font-family: Avenir-Book, sans-serif;
-  font-weight: 400;
+  font-weight: 300;
 }
 
-.fieldBig::placeholder {
+.field-big::placeholder {
   font-size: 16px;
 }
 
-.fieldSmall::placeholder {
+.field-small::placeholder {
   font-size: 14px;
 }
 
@@ -59,16 +72,16 @@ body {
   box-sizing: border-box;
 }
 
-.smallFormSettings {
+.small-form-settings {
   margin-top: 20px;
 }
 
-.bigForm {
+.big-form {
   display: block;
   height: 68px;
 }
 
-.smallForm {
+.small-form {
   display: block;
   height: 40px;
 }
@@ -77,7 +90,7 @@ body {
   box-shadow: 1px 3px 8px #40516433;
 }
 
-.buttonSettings {
+.button-settings {
   background-image: url(images/Search.svg);
   height: 100%;
   position: absolute;
@@ -89,13 +102,13 @@ body {
   outline: none;
 }
 
-.bigButton {
+.big-button {
   width: 62px;
   top: 1px;
   background-size: 19px;
 }
 
-.smallButton {
+.small-button {
   width: 32px;
   top: -2px;
   background-size: 11px;

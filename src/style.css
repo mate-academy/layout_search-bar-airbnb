@@ -1,12 +1,13 @@
 @font-face {
-  font-family: Avenir-Book, sans-serif;
-  src: url(./fonts/Avenir-Book.ttf);
+  font-family: Avenir;
+  font-weight: 300;
+  src: url("./fonts/Avenir-Book.ttf");
 }
 
 @font-face {
-  font-family: Avenir-Heavy, sans-serif;
-  font-weight: 300;
-  src: url(./fonts/Avenir-Heavy.ttf);
+  font-family: Avenir;
+  font-weight: 900;
+  src: url("./fonts/Avenir-Heavy.ttf");
 }
 
 .body {
@@ -16,18 +17,19 @@
 .container {
   margin: 20px auto;
   box-sizing: border-box;
-  border-radius: 4px;
   width: 100%;
-  border: 1px solid #e1e7ed;
   position: relative;
-  box-shadow: 0 1px 8px 0 #3d4e611a;
-  font-family: Avenir-Heavy, sans-serif;
 }
 
 .inputSearch {
-  border: none;
+  font-family: "Avenir", sans-serif;
+  font-weight: 900;
   width: 100%;
   box-sizing: border-box;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  
 }
 
 .inputSearchBig {
@@ -54,13 +56,17 @@
 .inputSearchBig::placeholder {
   padding-top: 25px;
   font-size: 16px;
-  font-family: Avenir-Book, sans-serif;
+  font-family: "Avenir", sans-serif;
+  font-weight: 300;
+  color: #3d4e61;
 }
 
 .inputSearchSmall::placeholder {
   padding-top: 12px;
   font-size: 14px;
-  font-family: Avenir-Book, sans-serif;
+  font-family: "Avenir", sans-serif;
+  font-weight: 300;
+  color: #3d4e61;
 }
 
 .searchFieldLogoBig {

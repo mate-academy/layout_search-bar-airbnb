@@ -2,15 +2,56 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <form
+      action="http://localhost:3000/api"
+      data-qa="big"
+      method="post"
+      autocomplete="off"
+    >
+      <label>
+        <button type="submit" class="searchButtonBig">
+          <img src="..\src\images\Search.svg" alt="Search">
+        </button>
+        <input
+          data-qa="keypress"
+          class="bigSearchBar"
+          type="text"
+          name="Search"
+          placeholder="Try &ldquo;Los Angeles&rdquo;"
+          autocomplete="off"
+        >
+      </label>
+    </form>
+
+    <form
+      action="http://localhost:3000/api"
+      data-qa="small"
+      method="post"
+      autocomplete="off"
+    >
+      <label>
+        <button type="submit" class="searchButtonSmall">
+          <img
+            src="..\src\images\Search.svg"
+            alt="Search"
+            class="smallImgButton"
+          >
+        </button>
+        <input
+          class="smallSearchBar"
+          type="text"
+          name="SearchLittle"
+          placeholder="Try &ldquo;Los Angeles&rdquo;"
+          autocomplete="off"
+        >
+      </label>
+    </form>
   </body>
 </html>

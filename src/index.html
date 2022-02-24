@@ -1,86 +1,42 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
   </head>
+
   <body>
-    <!-- <h1 class="description">Search bar airbnb</h1> -->
-    <form
-      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="post"
-      name="search_bar"
-      class="form_field"
-      data-qa="big"
-    >
-      <div class="search">
-        <label>
-          <input
-          class="searching design"
-          type="search"
-          placeholder="Try &#34;Los Angeles&#34;"
-          data-qa="keypress"
-          >
-          <img class="icon" src="Images/Search.svg" alt="loop">
-        </label>
-      </div>
-    </form>
+    <div class="container">
+      <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post" name="search_bar"
+        class="form_field" data-qa="big">
+        <label for="blood"></label>
+        <input
+        class="input" type="search"
+        placeholder="Try &#34;Los Angeles&#34;"
+        data-qa="keypress"
+        id="blood"
+        >
+        <img class="icon" src="Images/Search.svg" alt="loop">
+      </form>
+    </div>
 
-    <!-- <form
-        action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-        method="post"
-        name="search_bar"
-        class="form_field"
-        data-qa="big"
-    >
-      <div class="search2">
-        <label>
-          <input type="search"
-          class="searching2 design"
-          placeholder="Try &#34;Los Angeles&#34;"
-          data-qa="keypress">
-          <img class="icon2" src="Images/Search.svg" alt="loop">
-        </label>
-      </div>
+    <div class="container">
+      <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post" name="search_bar"
+        class="form_small" data-qa="small">
+        <label for="pain"></label>
+        <input type="search"
+        class="input-small"
+        placeholder="Try &#34;Los Angeles&#34;"
+        id="pain">
+        <img class="small_icon" src="Images/Search.svg" alt="loop">
+      </form>
+    </div>
 
-    </form> -->
-
-    <form
-      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="post"
-      name="search_bar"
-      class="form_small"
-      data-qa="small"
-    >
-      <div class="small_search">
-        <label>
-          <input type="search"
-          class="small design2"
-          placeholder="Try &#34;Los Angeles&#34;">
-          <img class="small_icon" src="Images/Search.svg" alt="loop">
-        </label>
-      </div>
-    </form>
-
-    <!-- <form
-      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="post"
-      name="search_bar"
-      class="form_small"
-      data-qa="small"
-    >
-      <div class="small_search">
-        <label>
-          <input type="search" class="small2 design2" placeholder="Try &#34;Los Angeles&#34;">
-          <img class="small_icon2" src="Images/Search.svg" alt="loop">
-        </label>
-      </div>
-    </form> -->
   </body>
+
 </html>

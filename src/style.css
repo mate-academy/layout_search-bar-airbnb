@@ -25,16 +25,9 @@ html {
 
 .input {
   width: 100%;
-  height: 70px;
-}
-
-.input-small {
-  width: 100%;
-  height: 42px;
-}
-
-input {
-  background: #ffffff;
+  background-image: url("./images/Search.svg");
+  background-repeat: no-repeat;
+  /* background: #ffffff; */
   border: 1px solid #e1e7ed;
   box-sizing: border-box;
   box-shadow: 0px 1px 8px rgba(61, 78, 97, 0.1);
@@ -43,21 +36,30 @@ input {
   font-weight: 300;
 }
 
-.input::placeholder {
+.input-large {
+  height: 70px;
+  font-size: 16px;
   padding-left: 62px;
+  /* background: url("./images/Search.svg") no-repeat; */
+  background-position: left 26px center;
+  background-size: 19px;
 }
 
-.input-small::placeholder {
+.input-small {
+  height: 42px;
+  font-size: 14px;
   padding-left: 33px;
+  background-position: left 13px center;
+  background-size: 11px;
 }
 
-.icon {
+/* .icon {
   position: absolute;
   top: 25px;
   left: 26px;
   width: 19px;
   height: 19px;
-}
+} */
 
 .small_icon {
   position: absolute;
@@ -67,15 +69,15 @@ input {
   height: 11px;
 }
 
-input:hover {
-  background: #ffffff;
+.input:hover {
+  /* background: #ffffff; */
   border: 1px solid #e1e7ed;
   box-sizing: border-box;
   box-shadow: 0px 3px 8px rgba(61, 78, 97, 0.2);
   border-radius: 4px;
 }
 
-input:focus {
+.input:focus {
   background: linear-gradient(180deg, #ffffff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
   box-sizing: border-box;

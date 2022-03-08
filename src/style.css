@@ -1,0 +1,108 @@
+@font-face {
+  font-family: Avenir;
+  font-weight: 300;
+  src: url(fonts/Avenir.ttc);
+}
+@font-face {
+  font-family: Avenir;
+  font-weight: 400;
+  src: url(fonts/Avenir-Book.ttf);
+}
+@font-face {
+  font-family: Avenir;
+  font-weight: 900;
+  src: url(fonts/Avenir-Heavy.ttf);
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Avenir", sans-serif;
+  font-size: 16px;
+}
+
+.searchForm {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto 0;
+}
+
+.searchFormBig {
+  width: 100%;
+  height: 70px;
+}
+
+.searchFormLable {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.searchFormInput {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  color: #3d4e61;
+  font-weight: 300;
+  font-family: "Avenir", sans-serif;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  outline: none;
+}
+
+.searchFormInputBig {
+  padding-left: 62px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.searchFormLableBig:after {
+  background-image: url(../src/images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 19px;
+  height: 19px;
+  top: 25px;
+  left: 26px;
+}
+
+.searchFormLable:after {
+  position: absolute;
+  content: "";
+  display: block;
+}
+
+.searchFormInput:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.searchFormInput:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.searchFormSmall {
+  width: 100%;
+  height: 42px;
+}
+
+.searchFormLableSmall:after {
+  background-image: url(../src/images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 11px;
+  height: 11px;
+  top: 15px;
+  left: 13px;
+}
+
+.searchFormInputSmall {
+  padding-left: 33px;
+  font-size: 14px;
+  line-height: 19px;
+}

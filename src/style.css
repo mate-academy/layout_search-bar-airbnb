@@ -10,28 +10,18 @@
 
 .page {
   --big-bar-height: 70px;
-  --big-bar-pleft: 62px;
-  --big-bar-border: 1px;
-  --big-search-icon-top: calc(var(--big-bar-height) / 2);
-
   --small-bar-height: 42px;
-  --small-bar-pleft: 33px;
-  --small-bar-border: 1px;
+
+  --big-search-icon-top: calc(var(--big-bar-height) / 2);
   --small-search-icon-top: calc(var(--small-bar-height) / 2);
 
   font-family: "Avenir-Book", sans-serif;
   font-weight: 300;
 }
-/*
-.page-body {
-  margin: 0;
-  padding: 0;
-} */
 
 .container {
   margin-top: 20px;
   position: relative;
-  display: block;
   height: var(--big-bar-height);
 }
 
@@ -62,23 +52,24 @@
   right: 0;
   bottom: 0;
   background: #fff;
-  border: var(--big-bar-border) solid #e1e7ed;
+  border: 1px solid #e1e7ed;
   box-sizing: border-box;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
   font-size: 16px;
+  line-height: 22px;
   width: 100%;
   font-family: "Avenir-Book", sans-serif;
   font-weight: 300;
 
   display: block;
-  padding-left: var(--big-bar-pleft);
+  padding: 0 0 0 62px;
   height: var(--big-bar-height);
 }
 
 .bar--small {
   font-size: 14px;
-  padding-left: var(--small-bar-pleft);
+  padding: 0 0 0 33px;
   height: var(--small-bar-height);
 }
 
@@ -89,7 +80,7 @@
 
 .bar:focus {
   box-shadow: 0 0 0 rgba(61, 78, 97, 0.2);
-  font-family: "Avenir-Heavy", sans-serif;
+  font-weight: bold;
   border-radius: 3px;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }

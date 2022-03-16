@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  margin-top: 0;
+  margin-top: 20px;
 }
 
 ::placeholder {
@@ -44,7 +44,6 @@ body {
 }
 
 .big-searchbar {
-  margin-top: 20px;
   margin-bottom: 20px;
   height: 70px;
   padding-left: 62px;
@@ -54,7 +53,12 @@ body {
 
 .small-searchbar {
   height: 42px;
-  padding-left: 33px;
-  background-position: 13px center;
+  padding: 10px 0 11px 33px;
   background-size: 11px 11px;
+  background-position-y: 14px;
+  background-position-x: 12px;
+}
+
+.small-searchbar::placeholder {
+  font-size: 14px;
 }

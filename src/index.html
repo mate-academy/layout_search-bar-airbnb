@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="page">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta
@@ -18,9 +18,15 @@
         method="get"
         data-qa="big"
       >
+        <img
+          src="./images/Search.svg"
+          alt="search icon"
+          class="search-icon"
+        >
         <label for="big-search">
           <input
             type="text"
+            id="big-search"
             class="input"
             placeholder="Try &quot;Los Angeles&quot;"
             data-qa="keypress"
@@ -35,11 +41,16 @@
         method="get"
         data-qa="small"
       >
+        <img
+          src="./images/Search.svg"
+          alt="search icon"
+          class="search-icon search-icon-small"
+        >
         <label for="small-search">
           <input
             type="text"
-            class="input input-small"
             id="small-search"
+            class="input input-small"
             placeholder="Try &quot;Los Angeles&quot;"
           >
         </label>

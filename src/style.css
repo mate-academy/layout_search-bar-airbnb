@@ -9,7 +9,6 @@
 
 .container {
   margin-top: 20px;
-  position: relative;
 }
 
 .box {
@@ -54,10 +53,18 @@
   font-weight: bold;
 }
 
-.box-sm:focus,
 .box-sm:hover {
   background-size: 11px 11px;
   background-position: 12px center;
+}
+
+.box-sm:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: 11px 11px;
+  background-position: 12px center;
+
 }
 
 .box::placeholder {

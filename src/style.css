@@ -1,0 +1,80 @@
+body {
+  margin: 0 8px;
+}
+
+.common_input {
+  font-family: "Avenir-book", sans-serif;
+  font-weight: 300;
+  border: 1px solid #e1e7ed;
+  box-sizing: border-box;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+}
+
+.common_input:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.common_form {
+  width: 100%;
+}
+
+.big_form {
+  margin-top: 20px;
+}
+
+.small_form {
+  margin-top: 20px;
+}
+
+.common_input::placeholder {
+  color: #3d4e61;
+  font-family: "Avenir-book", sans-serif;
+}
+
+.big_input {
+  width: 100%;
+  height: 70px;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 62px;
+}
+
+.small_input {
+  width: 100%;
+  height: 42px;
+  font-size: 14px;
+  line-height: 19px;
+  padding-left: 33px;
+}
+
+.big_input:focus {
+  font-family: "Avenir-heavy", sans-serif;
+  background: url(./images/Search.svg) border-box no-repeat 26px 25px, linear-gradient(180deg, #ffff 0%, #f6f6f7 100%);
+  outline: none;
+}
+
+.small_input:focus {
+  font-family: "Avenir-heavy", sans-serif;
+  background: border-box url(./images/Search.svg) no-repeat 13px 15px /11px, linear-gradient(180deg, #ffff 0%, #f6f6f7 100%);
+  outline: none;
+}
+
+.icon_small {
+  background: url(./images/Search.svg) border-box no-repeat 13px 15px;
+  background-size: 11px;
+}
+
+.icon_big {
+  background: url(./images/Search.svg) border-box no-repeat 26px 25px;
+  background-size: 19px;
+}
+
+@font-face {
+  font-family: "Avenir-book";
+  src: url(./fonts/Avenir-Book.ttf);
+}
+@font-face {
+  font-family: "Avenir-heavy";
+  src: url(./fonts/Avenir-Heavy.ttf);
+}

@@ -11,6 +11,7 @@
 .wraper-big {
   display: flex;
   position: absolute;
+  width: 100%;
   left: 0;
   right: 0;
   top: 0;
@@ -28,17 +29,26 @@
   position: absolute;
   width: 19px;
   height: 19px;
-  left: 5px;
+  left: 25px;
   top: 25px;
 }
 
 .search-bar1 {
   position: absolute;
-  left: 35px;
+  left: 55px;
   right: 0;
   top: 0;
   bottom: 0;
   border: none;
+  font-family: Roboto, myFont1, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000;
+}
+
+::placeholder {
   font-family: myFont1, sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -65,6 +75,7 @@
 .search-bar1:focus {
   outline: none;
   font-weight: bold;
+  font-family: Avenir, myFont2, sans-serif;
 }
 
 .wraper-big:focus {
@@ -77,6 +88,7 @@
 .wraper-small {
   display: flex;
   position: absolute;
+  width: 100%;
   left: 0;
   right: 0;
   top: 0;
@@ -94,13 +106,13 @@
   position: absolute;
   width: 11px;
   height: 11px;
-  left: 13px;
+  left: 20px;
   top: 15px;
 }
 
 .search-bar2 {
   position: absolute;
-  left: 35px;
+  left: 45px;
   right: 0;
   top: 0;
   bottom: 0;
@@ -131,6 +143,7 @@
 .search-bar2:focus {
   outline: none;
   font-weight: bold;
+  font-family: myFont2, sans-serif;
 }
 
 .wraper-small:focus {

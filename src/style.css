@@ -1,19 +1,23 @@
 @font-face {
-  font-family: myFont1;
+  font-family: Avenir-Book;
   src: url(fonts/Avenir-Book.ttf);
 }
 
 @font-face {
-  font-family: myFont2;
+  font-family: Avenir-Heavy;
   src: url(fonts/Avenir-Heavy.ttf);
 }
 
+.search-bar {
+  width: 100%;
+  height: 70px;
+}
+
 .wraper {
-  display: flex;
   position: absolute;
-  width: 100vw;
-  left: 2;
-  right: 2;
+  width: 100%;
+  left: 0%;
+  right: 0%;
   top: 0;
   bottom: 0;
   height: 70px;
@@ -33,28 +37,28 @@
   top: 25px;
 }
 
-.search-bar {
+.input {
   position: absolute;
   left: 60px;
   right: 0;
   top: 0;
   bottom: 0;
   border: none;
-  font-family: Roboto, myFont1, sans-serif;
+  font-family: Roboto, Avenir-Book, sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 14px;
-  line-height: 16px;
-  color: #000;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3d4e61;
 }
 
 ::placeholder {
-  font-family: Avenir, myFont1, sans-serif;
+  font-family: Avenir, Avenir-Book, sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 14px;
-  line-height: 16px;
-  color: #000;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3d4e61;
 }
 
 .wraper:hover {
@@ -64,18 +68,18 @@
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
   border-radius: 4px;
 
-  font-family: myFont1, sans-serif;
+  font-family: Avenir-Book, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: #000;
+  color: #3d4e61;
 }
 
-.search-bar:focus {
+.input:focus {
   outline: none;
-  font-family: myFont2, sans-serif;
-  font-weight: bold;
+  font-family: Avenir-Heavy, sans-serif;
+  font-weight: 900;
 }
 
 .wraper:focus {
@@ -85,6 +89,11 @@
   border-radius: 3px;
 }
 /*Small Form Styles*/
+
+.search-bar__small {
+  height: 42px;
+}
+
 .wraper--small {
   height: 42px;
   margin-top: 110px;
@@ -97,6 +106,13 @@
   top: 15px;
 }
 
-.search-bar--small {
+.input--small {
   left: 40px;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.input--small::placeholder {
+  font-size: 14px;
+  line-height: 22px;
 }

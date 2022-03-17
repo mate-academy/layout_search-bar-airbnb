@@ -1,94 +1,78 @@
 @font-face {
-  font-family: "Avenir-Heavy", sans-serif;
+  font-family: "Avenir-Book";
+  src: url("./fonts/Avenir-Book.ttf");
+}
+
+@font-face {
+  font-family: "Avenir-Heavy";
   src: url("./fonts/Avenir-Heavy.ttf");
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
-  font-weight: 300px;
   font-size: 16px;
+  font-weight: 300px;
 }
 
 .bar {
-  width: 100%;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.bigBar {
   margin-top: 20px;
-  border-radius: 3px;
-  height: 70px;
-  font-size: 1rem;
-}
-
-.smallBar {
-  margin-top: 20px;
-  border-radius: 3px;
-  height: 42px;
-  font-size: 0.88rem;
 }
 
 .input {
-  all: unset;
-  color: black;
-  height: 100%;
   width: 100%;
-  padding: 6px 10px;
-}
-
-.button {
-  all: unset;
-  cursor: pointer;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
-.bigBar__button {
-  width: 44px;
-  height: 30%;
-  /* flex-direction: row; */
-  margin: 5px;
-}
-
-.smallBar__button {
-  width: 40px;
-  height: 30%;
-  margin: 5px;
-}
-
-.bar:hover {
-  background: #fff;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
   border: 1px solid #e1e7ed;
+  font-family: "Avenir", sans-serif;
+  background-image: url("./images/Search.svg");
+  background-repeat: no-repeat;
+  color: #3d4e61;
+}
+
+.big__bar {
+  height: 70px;
+  background-size: 19px;
+  background-position: 26px 50%;
+  padding: 25px 0 23px 62px;
+  font-size: 16px;
+  align-content: center;
+}
+
+.small__bar {
+  height: 42px;
+  background-position: 13px 50%;
+  padding: 12px 0 10px 33px ;
+  background-size: 11px;
+  font-style: normal;
+  font-size: 14px;
+  align-content: center;
+}
+
+.input:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  border-radius: 4px;
 }
 
 .input:focus {
-  margin: 0;
-  width: 100%;
-  padding: 0 10px;
+  background: #faf9f9 url("./images/Search.svg") no-repeat;
+  border-radius: 3px;
   font-weight: bold;
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
-.bar__input1:focus {
-  height: 70px;
+.big__bar:focus {
+  background-position: 26px 50%;
+  background-size: 19px;
 }
 
-.bar__input2:focus {
-  height: 42px;
+.small__bar:focus {
+  background-position: 13px 50%;
+  background-size: 11px;
 }
 
-.input::placeholder {
-  font-family: "Avenir-Book", sans-serif;
-  font-weight: 300;
-}
-
-.bar__img {
-  width: 100%;
-  height: 100%;
-  padding: 10px;
+::placeholder {
+  color: #3d4e61;
+  font-weight: 300px;
 }

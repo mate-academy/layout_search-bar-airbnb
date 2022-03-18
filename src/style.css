@@ -21,18 +21,15 @@ html {
   font-size: 16px;
 }
 
-body {
+/* body {
   margin: 20px 10px 0;
-}
+} */
 
 .form {
-  display: inline-block;
+  /* display: inline-block; */
   width: 100%;
-  margin-bottom: 20px;
+  margin-top: 20px;
   background: #fff;
-  /* border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  border-radius: 4px; */
 }
 
 .bigInput {
@@ -41,9 +38,15 @@ body {
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
   width: 100%;
-  /* height: 70px; */
-  padding: 24px 0;
-  line-height: 20px;
+  height: 70px;
+  padding-left: 62px;
+  /* padding: 24px 0;
+  line-height: 20px; */
+}
+
+.bigInput::placeholder {
+  font-family: Avenir-Book, sans-serif;
+  font-size: 16px;
 }
 
 .bigImage {
@@ -51,7 +54,7 @@ body {
   background-repeat: no-repeat;
   background-position-y: center;
   background-position-x: 26px;
-  text-indent: 62px;
+  /* text-indent: 62px; */
   background-size: 19px;
 }
 
@@ -61,9 +64,15 @@ body {
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
   width: 100%;
-  /* height: 42px; */
-  padding: 11px 0;
-  line-height: 18px;
+  height: 42px;
+  padding-left: 33px;
+  /* padding: 11px 0;
+  line-height: 18px; */
+  font-size: 14px;
+}
+
+.smallInput::placeholder {
+  font-family: Avenir-Book, sans-serif;
   font-size: 14px;
 }
 
@@ -72,7 +81,7 @@ body {
   background-repeat: no-repeat;
   background-position-y: center;
   background-position-x: 13px;
-  text-indent: 33px;
+  /* text-indent: 33px; */
   background-size: 11px;
 }
 

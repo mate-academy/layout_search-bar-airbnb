@@ -1,5 +1,15 @@
-html {
+* {
   box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Avenir-Book";
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: "Avenir-Heavy";
+  src: url(fonts/Avenir-Heavy.ttf);
 }
 
 body {
@@ -42,7 +52,8 @@ body {
 }
 
 .search:focus {
-  background-color: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background: no-repeat url(images/Search.svg)
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
   border-radius: 3px;
   font-family: "Avenir-Heavy", sans-serif;

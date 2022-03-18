@@ -12,6 +12,7 @@ html {
   font-family: "Avenir-Book", sans-serif;
   font-size: 16px;
   font-weight: 300;
+  color: #3d4e61;
 }
 
 body {
@@ -22,6 +23,7 @@ body {
   font-family: "Avenir-Book", sans-serif;
   font-size: 16px;
   font-weight: 300;
+  color: #3d4e61;
 }
 
 .searchbar {
@@ -51,9 +53,24 @@ body {
   background-position: 26px center;
 }
 
+.big-searchbar:focus {
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: 19px 19px;
+  background-position: 26px center;
+}
+
 .small-searchbar {
   height: 42px;
   padding: 10px 0 11px 33px;
+  background-size: 11px 11px;
+  background-position-y: 14px;
+  background-position-x: 12px;
+}
+
+.small-searchbar:focus {
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
   background-size: 11px 11px;
   background-position-y: 14px;
   background-position-x: 12px;

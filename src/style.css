@@ -1,10 +1,10 @@
 @font-face {
-  font-family: Avenir;
+  font-family: Avenir-Book;
   src: url(fonts/Avenir-Book.ttf);
 }
 
 @font-face {
-  font-family: Avenir;
+  font-family: Avenir-Heavy;
   src: url(fonts/Avenir-Heavy.ttf);
 }
 
@@ -42,10 +42,12 @@ html {
 }
 
 .searchBar.big::placeholder {
+  font-family: Avenir-Book, sans-serif;
   text-indent: 62px;
 }
 
 .searchBar.small::placeholder {
+  font-family: Avenir-Book, sans-serif;
   text-indent: 33px;
 }
 
@@ -71,6 +73,7 @@ html {
 }
 
 .big:focus {
+  font-family: Avenir-Heavy, sans-serif;
   background-image: url(images/Search.svg),
     linear-gradient(180deg, #ffff 0%, #f6f6f7 100%);
   background-repeat: no-repeat, repeat;
@@ -81,6 +84,7 @@ html {
 }
 
 .small:focus {
+  font-family: Avenir-Heavy, sans-serif;
   background-image: url(images/Search.svg),
     linear-gradient(180deg, #ffff 0%, #f6f6f7 100%);
   background-repeat: no-repeat, repeat;

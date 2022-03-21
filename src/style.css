@@ -14,7 +14,7 @@
   src: url(./fonts/Avenir.ttc) format("ttc");
 }
 
-html {
+* {
   font-family: "Avenir-Book", sans-serif;
 }
 
@@ -59,18 +59,7 @@ html {
   font-size: 14px;
 }
 
-.big__input:hover,
-.small__input:hover {
-  outline: solid 2px rgb(17, 201, 183);
-}
-
-.big__input:focus,
-.small__input:focus {
-  outline: solid 2px purple;
-  font-weight: bold;
-}
-
-.small__input::placeholder,
+.small__input,
 .big__input::placeholder {
   color: rgba(61, 78, 97, 1);
   font-family: "Avenir", sans-serif;
@@ -84,4 +73,15 @@ html {
   top: 35px;
   bottom: 0;
   right: 0;
+}
+
+.big__input:hover,
+.small__input:hover {
+  outline: solid 2px rgb(17, 201, 183);
+}
+
+.big__input:focus,
+.small__input:focus {
+  outline: solid 2px purple;
+  font-weight: bold;
 }

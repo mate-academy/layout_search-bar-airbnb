@@ -25,7 +25,7 @@ html {
   border-radius: 4px;
 }
 
-.searchBar.big {
+.big {
   background-size: 19px;
   background-position-x: 26px;
   font-size: 16px;
@@ -33,7 +33,7 @@ html {
   height: 70px;
 }
 
-.searchBar.small {
+.small {
   background-size: 11px;
   background-position-x: 13px;
   font-size: 14px;
@@ -41,13 +41,15 @@ html {
   height: 42px;
 }
 
-.searchBar.big::placeholder {
+.searchBar::placeholder {
   font-family: Avenir-Book, sans-serif;
+}
+
+.big::placeholder {
   text-indent: 62px;
 }
 
-.searchBar.small::placeholder {
-  font-family: Avenir-Book, sans-serif;
+.small::placeholder {
   text-indent: 33px;
 }
 
@@ -58,7 +60,6 @@ html {
 
 .big:hover {
   background-color: #ffff;
-  border: 1px solid #e1e7ed;
   box-sizing: border-box;
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
   border-radius: 4px;
@@ -77,7 +78,6 @@ html {
   background-image: url(images/Search.svg),
     linear-gradient(180deg, #ffff 0%, #f6f6f7 100%);
   background-repeat: no-repeat, repeat;
-  border: 1px solid #e1e7ed;
   box-sizing: border-box;
   border-radius: 3px;
   font-weight: 600;
@@ -88,7 +88,6 @@ html {
   background-image: url(images/Search.svg),
     linear-gradient(180deg, #ffff 0%, #f6f6f7 100%);
   background-repeat: no-repeat, repeat;
-  border: 1px solid #e1e7ed;
   box-sizing: border-box;
   border-radius: 3px;
   font-weight: 600;

@@ -9,49 +9,46 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form 
-      class="form first" 
-      action="#" 
-      method="get" 
-      data-qa="big"
-    >
+    <div class="container">
+      <form 
+        class="form first" 
+        action="#" 
+        method="get" 
+        data-qa="big"
+      >
 
-      <label for="bigSearch" class="label" >
+        <label for="bigSearch" class="bigLabel" >
+
+          <input 
+            type="text" 
+            class="search" 
+            data-qa="keypress"  
+            placeholder="Try &quot;Los Angeles&quot;"
+          >
+
+        </label>
+
+      </form>
+
+    </div>
+    <div class="container">
+      <form 
+        class="form second" 
+        action="#" 
+        method="get" 
+        data-qa="small"
+      >
+
+        <label for="smallSearch" class="smallLabel" tabindex="0">
+
+          <input type="text" 
+            class="search small_search"  
+            data-qa="keypress" 
+            placeholder="Try &quot;Los Angeles&quot;"
+          >
+        </label>
         
-        <img src= "images/Search.svg" alt="search" class="images_large">
-
-        <input 
-          type="text" 
-          class="input_large" 
-          id="bigSearch" 
-          data-qa="keypress"  
-          placeholder="Try &quot;Los Angeles&quot;"
-        >
-
-      </label>
-
-    </form>
-
-    <form 
-      class="form second" 
-      action="#" 
-      method="get" 
-      data-qa="small"
-    >
-
-      <label for="smallSearch" class="label2" tabindex="0">
-
-        <img src= "images/Search.svg" alt="search" class="images_small">
-
-        <input type="text" 
-          class="input_small" 
-          id="smallSearch" 
-          data-qa="keypress" 
-          placeholder="Try &quot;Los Angeles&quot;"
-        >
-
-      </label>
-      
-    </form>
+      </form>
+    </div>
   </body>
 </html>

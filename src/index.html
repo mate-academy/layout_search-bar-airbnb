@@ -11,20 +11,30 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"  method="get">
-      <label class="search-field">
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="get"
+      data-qa="big"
+      class="form__big"
+    >
+      <label>
         <input
-          data-qa="big"
+          class="search-field__big"
+          data-qa="keypress"
           type="text"
           name="bigSearch"
           placeholder="Try &quot;Los Angeles&quot;"
         >
       </label>
     </form>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"  method="get">
-      <label class="search-field">
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="get"
+      data-qa="small"
+    >
+      <label>
         <input
-          data-qa="small"
+          class="search-field__small"
           type="text"
           name="smallSearch"
           placeholder="Try &quot;Los Angeles&quot;"
@@ -33,5 +43,3 @@
     </form>
   </body>
 </html>
-
-<!-- add attribute data-qa="keypress" to input in big search form -->

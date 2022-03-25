@@ -26,20 +26,23 @@ body {
   margin-bottom: 20px;
 }
 
-.big {
+.search {
   background: #fff;
   box-sizing: border-box;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  color: #3d4e61;
+  border-radius: 4px;
   width: 100%;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+}
+
+.big {
   height: 70px;
   padding-left: 62px;
   line-height: 22px;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  border: 1px solid #e1e7ed;
-  border-radius: 4px;
-  background-image: url(images/Search.svg);
-  background-repeat: no-repeat;
   background-position: 25px 26px;
-  color: #3d4e61;
 }
 
 .big::placeholder {
@@ -50,45 +53,29 @@ body {
 }
 
 .big:hover {
-  background: #fff;
-  border: 1px solid #e1e7ed;
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-  border-radius: 4px;
-  background-image: url(images/Search.svg);
-  background-repeat: no-repeat;
-  background-position: 25px 26px;
-  color: #3d4e61;
 }
 
 .big:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border: 1px solid #e1e7ed;
   border-radius: 3px;
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
   background-position: 25px 26px;
-  color: #3d4e61;
+  font-family: Avenir, sans-serif;
+  font-weight: bolder;
 }
 
 .small {
-  background: #fff;
-  border: 1px solid #e1e7ed;
   height: 42px;
-  box-sizing: border-box;
-  width: 100%;
   padding-left: 33px;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  border-radius: 4px;
-  background-image: url(images/Search.svg);
   background-size: 11px 11px;
-  background-repeat: no-repeat;
   background-position: 13px 15px;
   font-family: Avenir, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
-  color: #3d4e61;
 }
 
 .small::placeholder {
@@ -101,35 +88,17 @@ body {
 }
 
 .small:hover {
-  background: #fff;
-  border: 1px solid #e1e7ed;
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-  border-radius: 4px;
-  background-image: url(images/Search.svg);
   background-size: 11px 11px;
-  background-repeat: no-repeat;
   background-position: 13px 15px;
-  font-family: Avenir, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-  color: #3d4e61;
 }
 
 .small:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border: 1px solid #e1e7ed;
-  box-sizing: border-box;
   border-radius: 3px;
   background-image: url(images/Search.svg);
   background-size: 11px 11px;
   background-repeat: no-repeat;
   background-position: 13px 15px;
-  font-family: Avenir, sans-serif;
-  font-style: normal;
   font-weight: 900, black;
-  font-size: 14px;
-  line-height: 19px;
-  color: #3d4e61;
 }

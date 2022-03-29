@@ -13,7 +13,6 @@
 html {
   font-family: "Avenir", sans-serif;
   box-sizing: border-box;
-  margin: 0;
 }
 
 /* Big Search Bar */
@@ -36,7 +35,7 @@ html {
   color: #3d4e61;
 
   font-size: 16px;
-  font-family: "Avenir", sans-serif;
+  font-family: inherit;
 
   flex: 1;
   border: none;
@@ -53,6 +52,9 @@ html {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
+/* When I use selectors by classes, :focus hover doesn't work.
+I don't know why. */
+
 form:focus-within {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   filter: drop-shadow(px 4px 4px rgba(0, 0, 0, 0.25));
@@ -66,7 +68,8 @@ input:focus {
   font-weight: 700;
 }
 
-::placeholder {
+.search__input,
+.search__input-small::placeholder {
   color: #3d4e61;
 }
 
@@ -88,7 +91,10 @@ input:focus {
 .search__input-small {
   background-color: white;
   color: #3d4e61;
+
   font-size: 14px;
+  font-family: inherit;
+
   flex: 1;
   border: none;
   outline: none;

@@ -13,37 +13,45 @@
   <body>
     <h1>Search bar airbnb</h1>
     <form 
-      class="searchBar" 
+      class="search__bar" 
       data-qa="big"
       method="post"
       action="#">
 
       <label class="container">
-        <img src="images/Search.svg" alt="icon" class="big">
+        <img 
+          src="images/Search.svg" 
+          alt="icon" 
+          class="big"
+        >
         <input
-        class="input" 
-        type="text"
-        name="search" 
-        placeholder="Try &#34Los Angeles&#34"
-        data-qa="keypress"
+          class="input input__big" 
+          type="text"
+          name="search" 
+          placeholder="Try &#34Los Angeles&#34"
+          data-qa="keypress"
         >
       </label> 
 
     </form>
     <form 
-      class="searchBar"
+      class="search__bar"
       data-qa="small"
       action="#"
       method="post"
-      >
+    >
 
       <label class="container">
-        <img src="images/Search.svg" alt="icon" class="small"> 
+        <img 
+          src="images/Search.svg" 
+          alt="icon" 
+          class="small"
+        > 
         <input
-        class="input input__small" 
-        type="text"
-        name="search" 
-        placeholder="Los Angeles"
+          class="input input__small" 
+          type="text"
+          name="search" 
+          placeholder="Los Angeles"
         >
       </label>
     </form>

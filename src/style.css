@@ -19,6 +19,7 @@ html {
 }
 
 .field {
+  font-family: inherit;
   display: block;
   color: #3d4e61;
   font-weight: 300;
@@ -33,9 +34,10 @@ html {
   border-radius: 4px;
 }
 
-.big > .field {
+.big-input {
   height: 70px;
   font-size: 16px;
+  padding-left: 62px;
 }
 
 .big:before {
@@ -51,9 +53,10 @@ html {
   background-position: 26px 25px;
 }
 
-.small > .field {
+.small-input {
   height: 42px;
   font-size: 14px;
+  padding-left: 33px;
 }
 
 .small:before {
@@ -79,12 +82,4 @@ html {
   background: linear-
     gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
-}
-
-.small-input {
-  padding-left: 33px;
-}
-
-.big-input {
-  padding-left: 62px;
 }

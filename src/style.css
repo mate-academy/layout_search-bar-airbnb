@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "Avenir";
+  src: url("./fonts/Avenir-Book.ttf") format(ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("./fonts/Avenir-Heavy.ttf") format(ttf);
+  font-weight: 700;
+}
+
+html {
+  font-family: "Avenir", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Big Search Bar */
+
+.search__bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+
+  border: 1px solid #e7e4ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+
+  transition: box-shadow 0.3s ease;
+}
+
+.search__input {
+  background-color: white;
+  color: #3d4e61;
+
+  font-size: 16px;
+  font-family: inherit;
+
+  flex: 1;
+  border: none;
+  outline: none;
+
+  padding: 25px 0;
+}
+
+.search__icon {
+  padding: 25px 17px 25px 25px;
+}
+
+.search__bar:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.search__bar:focus-within {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  filter: drop-shadow(px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.search__input,
+.search__input-small::placeholder {
+  color: #3d4e61;
+}
+
+.search__input:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  filter: drop-shadow(px 4px 4px rgba(0, 0, 0, 0.25));
+
+  color: #3d4e61;
+  font-weight: 700;
+}
+
+/* Small Search Bar */
+
+.search__bar-small {
+  width: 100%;
+  max-width: 427px;
+  display: flex;
+  align-items: center;
+
+  border: 1px solid #e7e4ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+
+  transition: box-shadow 0.3s ease;
+}
+
+.search__input-small {
+  background-color: white;
+  color: #3d4e61;
+
+  font-size: 14px;
+  font-family: inherit;
+
+  flex: 1;
+  border: none;
+  outline: none;
+
+  padding: 12px 0;
+}
+
+.search__icon-small {
+  width: 14px;
+  padding: 15px 9px 15px 15px;
+}
+
+.search__bar-small:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.search__input-small:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  filter: drop-shadow(px 4px 4px rgba(0, 0, 0, 0.25));
+
+  color: #3d4e61;
+  font-weight: 700;
+}
+
+.search__bar-small:focus-within {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  filter: drop-shadow(px 4px 4px rgba(0, 0, 0, 0.25));
+}

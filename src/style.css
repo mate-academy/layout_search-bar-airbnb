@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "Avenir";
+  font-family: "Avenir-Book";
   src: url(fonts/Avenir-Book.ttf);
 }
 
 @font-face {
-  font-family: "Avenir";
+  font-family: "Avenir-Heavy";
   font-weight: bold;
   src: url(fonts/Avenir-Heavy.ttf);
 }
@@ -14,6 +14,7 @@
 }
 
 html {
+  font-family: "Avenir-Book", "Avenir-Heavy", sans-serif;
   font-size: 16px;
   font-weight: 300;
 
@@ -47,6 +48,7 @@ html {
   margin: 20px 48px;
   padding: 25px 0 23px 62px;
 
+  font-family: "Avenir-Book", sans-serif;
   font-size: 16px;
 
   background-color: #fff;
@@ -74,7 +76,7 @@ html {
 }
 
 .search-bar:focus {
-  font-weight: 600;
+  font-family: "Avenir-Heavy", sans-serif;
 
   background: linear-gradient(180deg,#fff 0%, #f6f6f7 100%);
   border-color: #e1e7ed;

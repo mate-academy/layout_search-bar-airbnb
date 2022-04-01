@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: Avenir, Helvetica, sans-serif;
+}
+
 @font-face {
   font-family: Avenir;
   src: url(/fonts/Avenir-Book.ttf);
@@ -24,7 +28,7 @@
 
 .search-field {
   padding-left: 62px;
-  font-family: Avenir, Helvetica, sans-serif;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 300;
   line-height: 70px;
@@ -47,6 +51,7 @@
   left: 26px;
   width: 19px;
   height: 19px;
+  background-repeat: no-repeat;
 }
 
 .search-field:hover {
@@ -74,7 +79,7 @@
 
 .small-search-field {
   padding-left: 33px;
-  font-family: Avenir, Helvetica, sans-serif;
+  font-family: inherit;
   font-size: 14px;
   font-weight: 300;
   line-height: 42px;
@@ -95,8 +100,9 @@
   z-index: 1;
   top: 15px;
   left: 13px;
-  width: 11px;
-  height: 11px;
+  width: 19px;
+  height: 19px;
+  background-repeat: no-repeat;
 }
 
 .small-search-field:hover {

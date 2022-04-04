@@ -17,6 +17,15 @@
   background-repeat: no-repeat;
 }
 
+.small-Bar {
+  height: 42px;
+  background-size: 11px;
+  background-position: 13px;
+  font-size: 14px;
+  line-height: 19px;
+  padding-left: 33px;
+}
+
 @font-face {
   font-family: Avenir;
   src: url(fonts/Avenir-Book.ttf);
@@ -51,24 +60,12 @@ html {
   font-weight: bold;
 }
 
-.input {
+.small-Bar:focus {
   background: url(./images/Search.svg) no-repeat 25px 24px;
-}
-
-.input:focus {
-  background: url(./images/Search.svg) no-repeat 25px 24px / 19px 19px, linear-gradient(180deg, #fff 0%,#f6f6f7 100%) ;
-}
-
-.small-Bar {
-  height: 42px;
+  font-weight: bold;
   background-size: 11px;
   background-position: 13px;
   font-size: 14px;
   line-height: 19px;
   padding-left: 33px;
-}
-
-.small-Bar:focus {
-  background: url(./images/Search.svg) no-repeat 19px 19px, linear-gradient(180deg, #fff 0%,#f6f6f7 100%) ;
-  font-weight: bold;
 }

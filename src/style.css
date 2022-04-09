@@ -1,0 +1,47 @@
+body {
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: avenirBook;
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: avenirHeavy;
+  src: url(fonts/Avenir-Heavy.ttf);
+}
+
+.search__icon {
+  height: 1rem;
+}
+
+.search__input {
+  border: none;
+  outline: none;
+  width: calc(100% - 2rem);
+}
+
+.form__container {
+  margin-bottom: 20px;
+  box-shadow: 0 0 0.1rem;
+  border-radius: 0.25rem;
+}
+
+.form__container:hover {
+  box-shadow: 0 0 0.2rem;
+}
+
+.form__container--big {
+  padding: 20px;
+  margin-top: 20px;
+  /* margin: 20px; */
+}
+
+.search__input::placeholder {
+  font-family: avenirBook, avenir, sans-serif;
+}
+
+.search__input::placeholder:focus {
+  font-family: avenirHeavy, avenir, sans-serif;
+}

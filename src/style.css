@@ -29,14 +29,10 @@
   height: 70px;
   width: 100%;
   padding: 0 0 0 62px;
-}
-
-.icon {
-  display: inline-block;
-  position: absolute;
-  top: 25px;
-  left: 26px;
-  height: 19px;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 25px 26px;
+  background-size: 19px;
 }
 
 .input::placeholder {
@@ -49,7 +45,7 @@
 }
 
 .input:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background: url(images/Search.svg) no-repeat 25px 26px, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   font-family: Avenir, sans-serif;
   font-weight: bold;
   font-size: 16px;
@@ -72,12 +68,8 @@
 .input--small {
   height: 42px;
   padding-left: 33px;
-}
-
-.icon--small {
-  top: 15px;
-  left: 13px;
-  height: 11px;
+  background-position: 15px 13px;
+  background-size: 11px;
 }
 
 .input--small::placeholder {
@@ -91,6 +83,8 @@
 
 .input--small:focus {
   font-size: 14px;
+  background: url(images/Search.svg) no-repeat 15px 13px, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background-size: 11px;
 }
 
 .input--small:hover::placeholder {

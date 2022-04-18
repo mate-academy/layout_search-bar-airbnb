@@ -11,6 +11,44 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <form 
+      id="form"
+      action="https://en.wikipedia.org/wiki/Los_Angeles"
+      method="get"
+      data-qa="keypress"
+    >
+      <label>
+        <img
+          src="images/Search.svg"
+          alt="Search icon"
+          class="big--search--icon"
+        >
+
+        <input
+          type="search"
+          class="big--search"
+          placeholder="Try &quot;Los Angeles&quot;"
+          data-qa="big"
+        >
+      </label>
+    </form>
+
+    <form 
+      action="https://en.wikipedia.org/wiki/Los_Angeles" 
+      method="get">
+      <label>
+        <img
+          src="images/Search.svg"
+          alt="Search icon"
+          class="small--search--icon"
+        >
+        <input
+        type="search"
+        class="small--search"
+        placeholder="Try &quot;Los Angeles&quot;"
+        data-qa="small"
+      >
+      </label>
+    </form>
   </body>
 </html>

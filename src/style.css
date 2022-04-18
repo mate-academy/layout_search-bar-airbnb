@@ -1,0 +1,116 @@
+* {
+  margin-left: 10;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url(./fonts/Avenir-Book.ttf) format("Avenir"), 
+  url(./fonts/Avenir-Heavy.ttf) format("Avenir"), url(./fonts/Avenir.ttc);
+}
+
+.bigContents, .smallContents {
+  font-weight: 300;
+  font-family: 'Avenir';
+}
+
+.bigSearch, .smallSearch {
+  position: relative;
+  width: 100%;
+  margin-right: 20px;
+  margin-top: 20px;
+  background: #FFFFFF;
+  border: 1px solid #E1E7ED;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+}
+
+.bigSearch:hover {
+  background: #FFFFFF;
+  border: 1px solid #E1E7ED;
+  box-sizing: border-box;
+  box-shadow: 0px 3px 8px rgba(61, 78, 97, 0.2);
+  border-radius: 4px;
+}
+
+.bigSearch:focus {
+  border: 1px solid #E1E7ED;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.bigContents {  
+  width: 100%;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3D4E61;
+  padding-top: 20px ;
+  padding-bottom: 20px;
+  padding-left: 60px;
+}
+
+.bigContents:hover {
+  font-family: 'Avenir';
+  font-size: 16px;
+  line-height: 22px;
+  color: #3D4E61;
+}
+
+.bigContents:focus {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F6F6F7 100%);
+  font-size: 16px;
+  line-height: 22px;
+  color: #3D4E61;
+  font-weight: 900;
+}
+
+.smallContents {
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #3D4E61; 
+  padding-left: 40px; 
+  padding-top: 5px;  
+  padding-bottom: 5px;
+}
+
+.smallContents:hover {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #3D4E61;
+}
+
+.smallContents:focus {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F6F6F7 100%);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 19px;
+  color: #3D4E61;
+  
+}
+
+#bigIcon {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: 26px;
+  top: 22px;
+}
+
+#smallIcon {
+  position: absolute;
+  width: 12px;
+  height: 19px;
+  left: 17px;
+  top: 5px;
+}
+
+input, input:hover, input:focus {
+  border: transparent;
+  outline: transparent;
+}

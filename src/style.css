@@ -6,9 +6,9 @@
 }
 
 @font-face {
-  font-family: Avenir1;
+  font-family: AvenirBold;
   src: url(fonts/Avenir-Heavy.ttf);
-  font-weight: bold;
+  font-weight: 300;
 }
 
 body {
@@ -16,20 +16,17 @@ body {
 }
 
 .formBig {
-  height: 70px;
-  position: relative;
   margin-top: 20px;
   margin-bottom: 20px;
-  box-sizing: border-box;
+  position: relative;
 }
 
 .searchBig {
+  box-sizing: border-box;
+  height: 70px;
   width: 100%;
-  font-family: Avenir, sans-serif;
-  padding-top: 23px;
-  padding-bottom: 23px;
+  font-family: AvenirBold, sans-serif;
   padding-left: 62px;
-  font-weight: 300;
   line-height: 22px;
   font-size: 16px;
   color: #3d4e61;
@@ -39,7 +36,7 @@ body {
   border-radius: 4px;
 }
 
-.photoBig {
+.photo {
   position: absolute;
   width: 19px;
   bottom: 26px;
@@ -47,39 +44,31 @@ body {
 }
 
 .searchBig:hover {
-  font-family: Avenir, sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  color: #3d4e61;
-  background: #fff;
-  border: 1px solid #e1e7ed;
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-  border-radius: 4px;
 }
 
 .searchBig:focus {
-  font-family: Avenir1, sans-serif ;
-  font-size: 16;
   outline: none;
-  border: 1px solid #e1e7ed;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
 }
 
+.searchBig::placeholder {
+  font-family: Avenir, sans-serif;
+}
+
 .formSmall {
-  height: 42px;
+
   position: relative;
-  box-sizing: border-box;
 }
 
 .searchSmall {
+  height: 42px;
+  box-sizing: border-box;
   width: 100%;
-  font-family: Avenir, sans-serif;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  font-family: AvenirBold, sans-serif;
   padding-left: 33px;
-  font-weight: 300;
-  line-height: 20px;
+  line-height: 19px;
   font-size: 14px;
   color: #3d4e61;
   background: #fff;
@@ -89,24 +78,21 @@ body {
 }
 
 .photoSmall {
-  position: absolute ;
   width: 11px;
   bottom: 16px;
   left: 13px;
 }
 
 .searchSmall:hover {
-  background: #fff;
-  border: 1px solid #e1e7ed;
-  box-sizing: border-box;
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-  border-radius: 4px;
 }
 
 .searchSmall:focus {
-  font-family: Avenir1, sans-serif ;
   outline: none;
-  border: 1px solid #e1e7ed;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
+}
+
+.searchSmall::placeholder {
+  font-family: Avenir, sans-serif;
 }

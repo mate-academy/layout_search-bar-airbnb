@@ -1,0 +1,68 @@
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Book.ttf);
+}
+
+/*******    GENERAL BAR VALUES     ********/
+
+.formGeneral {
+  margin: 20px 0;
+}
+
+.barGeneral {
+  width: 100%;
+  background: #fff;
+  box-sizing: border-box;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+}
+
+.barGeneral::placeholder {
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #3d4e61;
+}
+
+.barGeneral:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.barGeneral:focus {
+  font-weight: 700;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+}
+
+/*******    BIG BAR VALUES     ********/
+.barBig {
+  height: 70px;
+  font-size: 16px;
+  line-height: 10px;
+  padding-left: 62px;
+}
+
+.iconBig {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: 34px;
+  top: 45px;
+}
+
+/*******    SMALL BAR VALUES     ********/
+
+.barSmall {
+  height: 42px;
+  padding-left: 33px;
+  font-size: 14px;
+}
+
+.iconSmall {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  left: 21px;
+  top: 125px;
+}

@@ -1,15 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: Avenir;
   src: url(./fonts/Avenir-Book.ttf);
 }
 
-.form--large {
-  margin-top: 20px;
-  margin-bottom: 20px;
+.form {
+  margin: 20px 0;
+  position: relative;
 }
 
-.large--search {
-  box-sizing: border-box;
+.form::after {
+  content: "";
+  background-image: url("./images/Search.svg");
+  background-size: 19px;
+  width: 19px;
+  height: 19px;
+  line-height: 19px;
+  text-align: center;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+}
+
+.form--small::after {
+  background-size: 11px;
+  width: 11px;
+  height: 11px;
+  line-height: 11px;
+  left: 13px;
+  top: 15px;
+}
+
+.search {
   width: 100%;
   height: 70px;
   background: #fff;
@@ -24,67 +49,29 @@
   font-weight: 300;
 }
 
-.large--icon {
-  position: absolute;
-  left: 26px;
-  top: 45px;
-  width: 19px;
-  height: 19px;
-}
-
-.large--search:hover {
+.search:hover {
   background: #fff;
   border: 1px solid #e1e7ed;
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
   border-radius: 4px;
 }
 
-.large--search:focus {
+.search:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
   border-radius: 3px;
   font-weight: 700;
 }
 
-.small--search {
-  box-sizing: border-box;
-  width: 100%;
+.search--small {
   height: 42px;
-  background: #fff;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  border-radius: 4px;
   padding-left: 33px;
-  color: #3d4e61;
-  font-family: Avenir, Arial, Helvetica, sans-serif;
-  font-weight: 400;
   font-size: 14px;
   line-height: 19px;
+  font-weight: 400;
 }
 
-.small--icon {
-  width: 11px;
-  height: 11px;
-  position: relative;
-  top: -30px;
-  left: 17px;
-}
-
-.small--search:hover {
-  background: #fff;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-  border-radius: 4px;
-}
-
-.small--search:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border: 1px solid #e1e7ed;
-  border-radius: 3px;
-  font-weight: 700;
-}
-
-.large--search::placeholder {
+.search::placeholder {
   font-family: Avenir, Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -92,9 +79,8 @@
   font-weight: 400;
 }
 
-.small--search::placeholder {
+.search--small::placeholder {
   font-size: 14px;
   line-height: 19px;
-  font-family: Avenir, Arial, Helvetica, sans-serif;
   font-weight: 300;
 }

@@ -11,6 +11,35 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <form 
+      action="www.mateacademy.com" 
+      metod="post" 
+      class="form"
+      data-qa="big"
+    >
+      <label for="largeForm">
+        <input id="largeForm" 
+          class="search" 
+          data-qa="keypress" 
+          type="text" 
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
+    </form>
+
+    <form 
+      action="www.mateacademy.com" 
+      data-qa="small"
+      class="form form--small"
+    >
+      <label for="smallForm">
+        <input 
+          id="smallForm" 
+          class="search search--small" 
+          type="text" 
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
+    </form>
   </body>
 </html>

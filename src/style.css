@@ -10,7 +10,9 @@ html {
 }
 
 .form-field {
-  margin: 20px auto 0;
+  margin-top: 20px;
+  max-width: 100%;
+
 }
 
 .search-bar {
@@ -29,12 +31,14 @@ html {
 
 .input:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  outline: none;
 }
 
 .input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  font-weight: bold;
+  font-weight: normal;
   box-shadow: none;
+  outline: none;
 }
 
 .input-big {
@@ -71,6 +75,7 @@ html {
   padding-top: 12px;
   padding-bottom: 10px;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  color: #3d4e61;
 }
 
 .small-search-icon {

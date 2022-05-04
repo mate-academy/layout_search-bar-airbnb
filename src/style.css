@@ -1,0 +1,97 @@
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+* {
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+.searchbar--small {
+  width: 100%;
+  height: 42px;
+}
+
+.input {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  margin-top: 20px;
+  background: #fff;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+  padding: 0 0 0 62px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3d4e61;
+}
+
+.input--small {
+  height: 42px;
+  background-size: 11px;
+  background-position: 13px 14px;
+  padding: 0 0 0 33px;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.form {
+  margin: 20px 0;
+  position: relative;
+}
+
+.form::before {
+  content: "";
+  background-image: url(/images/Search.svg);
+  background-size: 19px;
+  width: 19px;
+  height: 19px;
+  line-height: 19px;
+  text-align: center;
+  position: absolute;
+  top: 25px;
+  left: 26px;
+}
+
+.form--small::before {
+  content: "";
+  background-image: url(/images/Search.svg);
+  background-size: 11px;
+  width: 11px;
+  height: 11px;
+  line-height: 11px;
+  text-align: center;
+  position: absolute;
+  top: 15px;
+  left: 13px;
+}
+
+.input--small::placeholder {
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+input:hover::placeholder {
+  filter: none;
+}
+
+input:focus::placeholder {
+  filter: none;
+}
+
+.input:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  border-radius: 4px;
+}
+
+.input:focus {
+  background: linear-gradient(180deg, #ffff 0%, #f6f6f7 100%);
+  background-repeat: no-repeat;
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+  box-shadow: none;
+}

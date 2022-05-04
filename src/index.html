@@ -8,47 +8,47 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div class="container">
-      <div class="wrapper">
-        <form
-          action="https://google.com"
-          data-qa="keypress"
-          method="get"
+    <form
+      class="search_form"
+      action="https://google.com"
+      data-qa="keypress"
+      method="get"
+    >
+      <label for="big">
+        <input
+          type="search"
+          placeholder="Try &#34Los Angeles&#34 "
+          data-qa="big"
+          id="big"
+          class="searchbar searchbar--big focused hovered def"
         >
-          <label for="big">
-            <input
-              type="search"
-              placeholder="Try &#34Los Angeles&#34 "
-              data-qa="big"
-              id="big"
-              class="searchbar searchbar--big focused hovered def">
-            <img
-               src="./images/Search.svg"
-               alt="google"
-               class="searchbar_img_big"
-            >
-          </label>
-        </form>
-      </div>
-      <div class="wrapper">
-        <form action="https://google.com" method="get">
-          <label for="small">
-            <input
-              type="search"
-              placeholder="Try &#34Los Angeles&#34 "
-              data-qa="small"
-              id="small"
-              class="searchbar  searchbar--small focused hovered def"
-            >
-            <img
-              src="./images/Search.svg"
-              alt="google"
-              class="searchbar_img_small"
-            >
-          </label>
-        </form>
-      </div>
-    </div>
+        <img
+          src="./images/Search.svg"
+          alt="google"
+          class="searchbar_img_big"
+        >
+      </label>
+    </form>
+    <form
+      class="search_form"
+      action="https://google.com"
+      method="get"
+    >
+      <label for="small">
+        <input
+          type="search"
+          placeholder="Try &#34Los Angeles&#34 "
+          data-qa="small"
+          id="small"
+          class="searchbar  searchbar--small focused hovered def"
+        >
+        <img
+          src="./images/Search.svg"
+          alt="google"
+          class="searchbar_img_small"
+        >
+      </label>
+    </form>
   </body>
 </html>
 

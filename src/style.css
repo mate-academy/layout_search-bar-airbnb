@@ -1,12 +1,6 @@
 @font-face {
-  font-family: AvenirBook;
-  src: url(fonts/Avenir-Book.ttf) ;
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: AvenirBold;
-  src: url(fonts/Avenir-Heavy.ttf);
+  font-family: Avenir, sans-serif;
+  src: url(fonts/Avenir.ttf) ;
   font-weight: 300;
 }
 
@@ -48,7 +42,6 @@ input[type="search"]::-webkit-search-cancel-button {
   box-sizing: border-box;
   height: 70px;
   width: 100%;
-  font-family: AvenirBold, AvenirBook, sans-serif;
   padding-left: 62px;
   line-height: 22px;
   font-size: 16px;
@@ -63,7 +56,7 @@ input[type="search"]::-webkit-search-cancel-button {
   height: 42px;
   box-sizing: border-box;
   width: 100%;
-  font-family: AvenirBold, sans-serif;
+  font-family: Avenir, sans-serif;
   padding-left: 33px;
   line-height: 19px;
   font-size: 14px;
@@ -74,13 +67,15 @@ input[type="search"]::-webkit-search-cancel-button {
   border-radius: 4px;
 }
 
-.big:focus-within {
+.big:focus {
+  font-weight: 600;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
   outline: none;
 }
 
-.small:focus-within {
+.small:focus {
+  font-weight: 600;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
   outline: none;
@@ -95,15 +90,11 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .big::placeholder {
-  font-family: AvenirBook, sans-serif;
-  font-weight: 400;
   font-size: 16px;
   line-height: 22px;
 }
 
 .small::placeholder {
-  font-family: AvenirBook, sans-serif;
-  font-weight: 400;
   font-size: 14px;
   line-height: 19px;
 }

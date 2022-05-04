@@ -14,7 +14,7 @@
     <!--for big search-->
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="get"
+      method="post"
       data-qa="big"
       class="form-big1">
       <label for="big-search">
@@ -33,7 +33,7 @@
     <!--for small search-->
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="get"
+      method="post"
       data-qa="small"
       class="small1">
       <label for="small3">
@@ -45,7 +45,8 @@
           type="search"
           class="small"
           placeholder="Try “Los Angeles”"
-          id="small3">
+          id="small3"
+          data-qa="keypress">
       </label>
     </form>
   </body>

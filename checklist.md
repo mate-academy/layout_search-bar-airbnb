@@ -79,12 +79,22 @@ horizontal scroll. But do not break the line if it cannot be broken (ex., long l
            ![html-name-attribute-good-example-1](https://mate-academy.github.io/fe-program/css/checklists/html-name-attribute/example-good-1.png)
        </details>
 
-7. [TESTS] - Remember to style input placeholders correctly
+7. [CODE STYLE] - You can use same font-family for both @font-faces but 
+different font-weight. Then changing only the font-weight on your elements will do the job.
+        <details>
+          <summary>BAD example</summary>
+             <img width="310" alt="image" src="https://user-images.githubusercontent.com/90685701/166898320-9a7dc250-ec4f-4b86-aa4a-5ca8eec5ede2.png">
+        </details>
+        <details>
+          <summary>GOOD example</summary>
+            <img width="375" alt="image" src="https://user-images.githubusercontent.com/90685701/166899860-0738debe-3a64-42ff-bb3b-b0dd64b1a45b.png">
+        </details>
+
+8. [TESTS] - Remember to style input placeholders correctly
 
 
-8. [TESTS] - Remember that the search-bar should have width: 100% on any screen.
+9. [TESTS] - Remember that the search-bar should have width: 100% on any screen.
 
 
-9. [TESTS] - Remember, each search bar should be located in separate
+10. [TESTS] - Remember, each search bar should be located in separate
 form element.
-

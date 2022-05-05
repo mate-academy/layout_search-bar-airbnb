@@ -32,7 +32,8 @@ ___
 
 ### Tips & Hints
 - Add **ALL** `data-qa` attributes required in the task
-- Text `Try "Los Angeles"` in mockup is a placeholder.
+- Text `Try "Los Angeles"` is a placeholder.
+- Use `&quot;` instead of `"` in the placeholder.
 - Pay close attention to font styles. Use fonts from `fonts` folder.
 - If you see a cursor in the input on the mockup, that means styles are for entered text by the user (not only on
 focus action)

@@ -14,7 +14,6 @@
   margin-top: 20px;
 }
 
-/* #region BIG FIELD */
 .field {
   box-sizing: border-box;
   font-family: Avenir, sans-serif;
@@ -33,22 +32,17 @@
 }
 
 .field:hover {
-  font-family: Avenir, sans-serif;
-  background: #fff;
-  border: 1px solid #e1e7ed;
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-  border-radius: 4px;
 }
 
 .field:focus {
   font-family: AvenirBold, sans-serif;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border: 1px solid #e1e7ed;
   border-radius: 3px;
 }
 
 .field::placeholder {
-  font-family: Avenir, sans-serif;
+  font-family: Avenir, sans-serif ;
   color: rgba(61, 78, 97, 1);
   width: 129px;
   height: 22px;
@@ -60,10 +54,7 @@
   left: 33px;
 }
 
-/* #endregion BIG GROUP */
-
-/* #region SMALL FIELD */
-.smallField {
+.field--small {
   box-sizing: border-box;
   width: 100%;
   height: 42px;
@@ -81,34 +72,27 @@
   border-radius: 4px;
 }
 
-.smallField:hover {
-  font-family: Avenir, sans-serif;
-  background: #fff;
-  border: 1px solid #e1e7ed;
+.field--small:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-  border-radius: 4px;
 }
 
-.smallField:focus {
+.field--small:focus {
   font-family: AvenirBold, sans-serif;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border: 1px solid #e1e7ed;
   border-radius: 3px;
 }
 
-.smallField::placeholder {
-  font-family: Avenir, sans-serif ;
+.field--small::placeholder {
+  font-family: Avenir, sans-serif;
   color: rgba(61, 78, 97, 1);
   width: 167.9px;
   height: 20px;
 }
 
-.smallIcon {
+.icon--small {
   width: 11px;
   height: 11px;
   position: absolute;
   top: 125px;
   left: 21px;
 }
-
-/* #endregion SMALL GROUP */

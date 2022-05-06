@@ -27,9 +27,6 @@ body {
 .icon {
   color: #687c94;
   position: absolute;
-}
-
-.icon-big {
   width: 19px;
   bottom: 26px;
   left: 26px;
@@ -42,6 +39,10 @@ body {
 }
 
 .input {
+  height: 70px;
+  padding-left: 62px;
+  line-height: 22px;
+  font-size: 16px;
   box-sizing: border-box;
   width: 100%;
   font-family: Avenir, sans-serif;
@@ -52,18 +53,15 @@ body {
   border-radius: 4px;
 }
 
-.big {
-  height: 70px;
-  padding-left: 62px;
-  line-height: 22px;
-  font-size: 16px;
-}
-
 .small {
   height: 42px;
   padding-left: 33px;
   line-height: 19px;
   font-size: 14px;
+}
+
+.input:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
 .input:focus {
@@ -74,16 +72,9 @@ body {
   outline: none;
 }
 
-.input:hover {
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-}
-
 .input::placeholder {
   font-family: Avenir, sans-serif;
   font-weight: 400;
-}
-
-.big::placeholder {
   font-size: 16px;
   line-height: 22px;
 }

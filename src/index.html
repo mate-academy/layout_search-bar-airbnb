@@ -11,22 +11,35 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body >
-    <form action="#"
-    class="form1" data-qa="big">
-      <input
-        type="text"
-        class="big"
-        placeholder="Try &#34Los Angeles&#34"
-        data-qa="keypress"
+    <form 
+      action="#"
+      class="search_form"
+      data-qa="big"
+      method="post"
       >
+      <label>
+        <input
+          type="search"
+          name="big"
+          class="Bar big"
+          placeholder="Try &#34Los Angeles&#34"
+          data-qa="keypress"
+        >
+      </label>
     </form>
-    <form action="#" class="form2">
-      <input
-        type="text"
-        class="small"
-        placeholder="Try &#34Los Angeles&#34"
-        data-qa="small"
+    <form
+      action="#"
+      class="search_form"
       >
+      <label>
+        <input
+          type="search"
+          name="small"
+          class="Bar small"
+          placeholder="Try &#34Los Angeles&#34"
+          data-qa="small"
+        >
+      </label>
     </form>
   </body>
 </html>

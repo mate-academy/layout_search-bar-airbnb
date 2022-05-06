@@ -8,6 +8,10 @@
   src: url(fonts/Avenir-Heavy.ttf);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Avenir, sans-serif;
 }
@@ -19,16 +23,14 @@ body {
   top: 25px;
 }
 
-.bigForm {
+.form {
   position: relative;
   margin: 20px 0;
 }
 
 .search {
-  box-sizing: border-box;
   height: 70px;
   width: 100%;
-  font-family: inherit;
   font-weight: 400;
   padding-left: 62px;
   font-size: 16px;
@@ -55,18 +57,18 @@ input::placeholder {
   border-radius: 3px;
 }
 
-.loopSmall {
+.loop--small {
   position: absolute;
   width: 11px;
   left: 13px;
   top: 15px;
 }
 
-.smallForm {
+.small--form {
   position: relative;
 }
 
-.searchSmall {
+.search--small {
   height: 42px;
   font-weight: 300;
   padding-left: 33px;

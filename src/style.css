@@ -35,28 +35,10 @@ body {
 }
 
 .bigSearchField {
-  box-sizing: border-box;
-  font-weight: 300;
   font-size: 16px;
-  color: #3d4e61;
-  background: #fff;
   line-height: 22px;
   height: 70px;
-  width: 100%;
   padding-left: 62px;
-  border: 1px solid #e1e7ed;
-  border-radius: 4px;
-  box-shadow: var(--box__shadow);
-}
-
-.bigSearchField::placeholder {
-  font-family: var(--font__header);
-}
-
-.bigSearchField :focus {
-  outline: none;
-  background: var(--back__grad);
-  border-radius: 3px;
 }
 
 .little-bar {
@@ -70,26 +52,29 @@ body {
 }
 
 .smallSearchField {
-  box-sizing: border-box;
   height: 42px;
-  width: 100%;
   font-size: 14px;
-  color: #3d4e61;
-  font-weight: 300;
   line-height: 19px;
   padding-left: 33px;
-  background: #fff;
-  border: 1px solid #e1e7ed;
-  border-radius: 4px;
-  box-shadow: var(--box__shadow);
 }
 
-.smallSearchField::placeholder {
+.searchField::placeholder {
   font-family: var(--font__header);
 }
 
-.smallSearchField :focus {
+.searchField :focus {
   outline: none;
   background: var(--back__grad);
   border-radius: 3px;
+}
+
+.searchField {
+  box-sizing: border-box;
+  color: #3d4e61;
+  font-weight: 300;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #e1e7ed;
+  box-shadow: var(--box__shadow);
+  border-radius: 4px;
 }

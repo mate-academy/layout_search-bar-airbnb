@@ -1,3 +1,4 @@
+/*#region mainSettings*/
 @font-face {
   font-family: Avenir;
   src: url(fonts/Avenir-Book.ttf);
@@ -10,7 +11,6 @@
 }
 
 * {
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -18,6 +18,7 @@ html {
   font-family: "Avenir", sans-serif;
   font-size: 16px;
 }
+/*#endregion*/
 
 .searchBar {
   display: flex;
@@ -48,7 +49,6 @@ html {
 }
 
 .labelBig:after {
-  background-image: url("images/Search.svg");
   width: 19px;
   height: 19px;
   top: 25px;
@@ -58,7 +58,6 @@ html {
 }
 
 .labelSmall:after {
-  background-image: url("images/Search.svg");
   width: 11px;
   height: 11px;
   top: 15px;
@@ -98,18 +97,26 @@ html {
   font-weight: 300;
 }
 
-.inputBig::placeholder {
-  font-size: 16px;
-  line-height: 22px;
-}
-
-.inputSmall::placeholder {
-  font-size: 14px;
-}
-
 .input:focus {
   border-radius: 3px;
   font-weight: 600;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
+
+/*#region ImgForSearch*/
+.imgBig {
+  position: absolute;
+  width: 19px;
+  left: 26px;
+  bottom: 26px;
+}
+
+.imgSmall {
+  position: absolute;
+  left: 13px;
+  top: 15px;
+  width: 11px;
+  height: 11px;
+}
+/*#endregion*/
 

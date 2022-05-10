@@ -1,19 +1,20 @@
 @font-face {
   font-family: AvenirBook;
-  font-weight: 400;
   src: url(fonts/Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 400;
 }
 
 @font-face {
   font-family: AvenirHeavy;
-  font-weight: 800;
   src: url(fonts/Avenir-Heavy.ttf);
+  font-style: normal;
+  font-weight: 800;
 }
 
-.input_big {
+.input {
   height: 70px;
   width: 100%;
-
   font-family: Avenir-Book, Arial, Helvetica, sans-serif;
   font-size: 16px;
   color: #3d4e61;
@@ -28,12 +29,11 @@ input:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.container_big {
+.container {
+  position: relative;
   margin-top: 20px;
   width: 100%;
-  position: relative;
   border-radius: 4px;
-
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
 }
 
@@ -46,6 +46,12 @@ input:focus {
   border: 1px solid #e1e7ed;
 }
 
+.input_small {
+  height: 42px;
+  font-size: 14px;
+  padding: 20px 0 20px 33px;
+}
+
 .icon {
   position: absolute;
   width: 19px;
@@ -55,32 +61,9 @@ input:focus {
   color: #3d4e61;
 }
 
-.input_small {
-  height: 42px;
-  width: 100%;
-  font-family: Avenir-Book, Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  color: #3d4e61;
-  padding-left: 33px;
-  line-height: 19px;
-  box-sizing: border-box;
-  border-radius: 4px;
-  border: 1px solid #e1e7ed;
-}
-
-.container_small {
-  margin-top: 20px;
-  width: 100%;
-  position: relative;
-  border-radius: 4px;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-}
-
 .icon_small {
-  position: absolute;
   width: 11px;
   height: 11px;
   top: 15px;
   left: 13px;
-  color: #3d4e61;
 }

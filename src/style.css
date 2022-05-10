@@ -5,9 +5,9 @@
 }
 
 @font-face {
-  font-family: "Avenir-Heavy";
+  font-family: "Avenir";
   src: url(fonts/Avenir-Heavy.ttf);
-  font-weight: 400;
+  font-weight: 700;
 }
 
 body {
@@ -15,8 +15,11 @@ body {
   padding: 0;
 }
 
-.search {
+* {
   box-sizing: border-box;
+}
+
+.search {
   position: relative;
   width: 100%;
 }
@@ -73,8 +76,8 @@ body {
 }
 
 .searchInput:focus {
-  font-family: Avenir-Heavy, sans-serif;
-  /* font-weight: 400; */
+  font-family: Avenir, sans-serif;
+  font-weight: 800;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
   border-radius: 3px;

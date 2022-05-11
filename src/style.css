@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'avenir';
+  src:  url('./fonts/Avenir-Book.ttf') format('ttf');
+  src:  url('./fonts/Avenir-Heavy.ttf') format('ttf');
+}
+
+
+.wrapper{
+  max-width: 1240px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.search {
+  box-shadow: 0 2px 6px 0 rgba(61, 78, 97, 0.1);
+  border: 1px solid #E1E7ED;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.search__big:hover {
+  box-shadow: 0 2px 6px 0 rgba(61, 78, 97, 0.30);
+  border: 1px solid #E1E7ED;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.search__big{
+  width: 100%;
+  /* margin-top: 20px; */
+  margin-bottom: 20px;
+  padding: 25px 60px;
+  font-family: avenir, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #3D4E61;
+}
+
+.search__big::placeholder{
+  font-family: avenir, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #3D4E61;
+}
+
+.search__big:focus{
+  border: 1px solid #E1E7ED;
+  border-radius: 4px;
+  font-family: avenir, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  background-image: linear-gradient(to bottom, rgba(255,255,255, 1), rgba(246,246,0247,1));
+  outline: none;
+}
+
+.big{
+  position: relative;
+}
+
+.big::after{
+  content: "";
+  position: absolute;
+  background-image: url("./images/Search.svg");
+  background-size: 19px 19px;
+  left: 24px;
+  top: 25px;
+  width: 19px;
+  height: 19px;
+}
+
+.small{
+  position: relative;
+}
+
+.small::after{
+  content: "";
+  position: absolute;
+  background-image: url("./images/Search.svg");
+  background-size: 11px 11px;
+  left: 15px;
+  top: 15px;
+  width: 11px;
+  height: 11px;
+}
+
+.search__small{
+  max-width: 473px;
+  width: 100%;
+  padding: 10px 33px;
+  font-family: avenir, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #3D4E61;
+  text-shadow: none;
+}
+
+.search__small::placeholder{
+  font-family: avenir, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #3D4E61;
+  text-shadow: 1px 2px 3px rgb(178, 178, 178);
+}
+
+.search__small:focus{
+  border: 1px solid #E1E7ED;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  background-image: linear-gradient(to bottom, rgba(255,255,255, 1), rgba(246,246,0247,1));
+  outline: none;
+  text-shadow: none;
+}
+
+.search__small:hover {
+  box-shadow: 0 2px 6px 0 rgba(61, 78, 97, 0.30);
+  border: 1px solid #E1E7ED;
+  border-radius: 4px;
+  font-size: 14px;
+  text-shadow: none;
+}

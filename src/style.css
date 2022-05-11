@@ -1,3 +1,4 @@
+/* #region fonts */
 @font-face {
   font-family: "Avenir";
   src: url(./fonts/Avenir-Book.ttf);
@@ -11,7 +12,7 @@
   font-style: normal;
   font-weight: 800;
 }
-
+/* #endregion */
 .big {
   position: relative;
   margin-top: 20px;
@@ -19,15 +20,8 @@
 
 .big-field {
   padding: 0 62px;
-  width: 100%;
   height: 70px;
-  font-family: Avenir, Arial, sans-serif;
-  font-weight: 300;
   font-size: 16px;
-  background: #fff;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  border-radius: 4px;
 }
 
 .big-icon {
@@ -41,17 +35,20 @@
   margin-top: 20px;
 }
 
-.small-field {
-  padding: 0 33px;
+.field {
   width: 100%;
-  height: 42px;
   font-family: Avenir, Arial, sans-serif;
   font-weight: 300;
-  font-size: 14px;
   background: #fff;
   border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
+}
+
+.small-field {
+  padding: 0 33px;
+  height: 42px;
+  font-size: 14px;
 }
 
 .small-icon {
@@ -61,30 +58,15 @@
   bottom: 16px;
 }
 
-.big-field:hover {
+.field:hover {
   background: #fff;
   border: 1px solid #e1e7ed;
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
   border-radius: 4px;
 }
 
-.big-field:focus {
+.field:focus {
   font-family: Avenir, Arial, sans-serif ;
-  font-weight: 800;
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border: 1px solid #e1e7ed;
-  border-radius: 3px;
-}
-
-.small-field:hover {
-  background: #fff;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-  border-radius: 4px;
-}
-
-.small-field:focus {
-  font-family: Avenir, Arial, sans-serif;
   font-weight: 800;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;

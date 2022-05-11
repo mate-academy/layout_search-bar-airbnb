@@ -11,50 +11,47 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div class="search">
-      <form
-        action="get"
-        class="search--form--big"
-        data-qa="big"
-      >
-        <label for="inputBigSearsch">
-          <img
-            class="search--img--big"
-            src="./images/Search.svg"
-            alt="Search"
-          >
-        </label>
-        <input
-          type="search"
-          id = "inputBigSearsch"
-          data-qa="keypress"
-          class="search--input--big"
-          placeholder="Try &quot;Los Angeles&quot;"
+    <form
+      action="get"
+      class="search--form"
+      data-qa="big"
+    >
+      <label for="inputBigSearsch">
+        <img
+          class="search--img"
+          src="./images/Search.svg"
+          alt="Search"
         >
-      </form>
-    </div>
+      </label>
+      <input
+        type="search"
+        id = "inputBigSearsch"
+        data-qa="keypress"
+        class="search--input"
+        placeholder="Try &quot;Los Angeles&quot;"
+      >
+    </form>
+    
+    <form
+      action="get"
+      class="search--form form--small"
+      data-qa="small"
+    >
+      <label for="inputSmallSearsch">
+        <img
+          class="search--img img--small"
+          src="./images/Search.svg"
+          alt="Search"
+        >
+      </label>
+      <input
+        type="search"
+        id = "inputSmallSearsch"
+        data-qa="keypress"
+        class="search--input input--small"
+        placeholder="Try &quot;Los Angeles&quot;"
+      >
+    </form>
 
-    <div class="search">
-      <form
-        action="get"
-        class="search--form--big form--small"
-        data-qa="small"
-      >
-        <label for="inputSmallSearsch">
-          <img
-            class="search--img--big img--small"
-            src="./images/Search.svg"
-            alt="Search"
-          >
-        </label>
-        <input
-          type="search"
-          id = "inputSmallSearsch"
-          data-qa="keypress"
-          class="search--input--big input--small"
-          placeholder="Try &quot;Los Angeles&quot;"
-        >
-      </form>
-    </div>
   </body>
 </html>

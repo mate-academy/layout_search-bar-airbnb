@@ -11,29 +11,28 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form method="post">
-      <div class="form-field">
-        <label class="help">
-          <input
-            type="text"
-            name="search"
-            placeholder="Try &#34;Los Angeles&#34;"
-            class="field big"
-          >
-        </label>
-      </div>
-      <div class="form-fields">
-        <label class="help">
-          <input
-            type="text"
-            name="search"
-            placeholder="Try &#34;Los Angeles&#34;"
-            class="field small"
-          >
-        </label>
-      </div>
+    <form action="#"
+      method="post"
+      class="form">
+      <input
+        type="text"
+        name="search_big"
+        placeholder="Try &#34;Los Angeles&#34;"
+        class="input"
+        data-qa="big"
+      >
     </form>
-
-
+    
+    <form action="#"
+      method="post"
+      class="form_small">
+      <input
+        type="text"
+        name="search_small"
+        placeholder="Try &#34;Los Angeles&#34;"
+        class="input_small"
+        data-qa="small"
+      >
+    </form>
   </body>
 </html>

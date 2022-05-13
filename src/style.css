@@ -1,7 +1,6 @@
 html {
-  --button-hight: 20px;
-  --button-width: 20px;
-  --input-font-size: 20px;
+  --button-hight: 19px;
+  --button-width: 19px;
 }
 
 @font-face {
@@ -11,24 +10,24 @@ html {
   font-weight: 300;
 }
 
-.input {
+.input_line {
   width: 92%;
-  padding-left: 10px;
-  font-family: Avenir;
-  font-size: var(--input-font-size);
+  padding-left: 13.8px;
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
   border: 0;
-	outline: none;
-	cursor: default;
+  outline: none;
+  cursor: default;
 }
 
-.input-small {
-  padding-left: 4px;
-  font-size: calc(var(--input-font-size) * 0.65);
+.input_line_small {
+  padding-left: 6.8px;
+  font-size: 14px;
 }
 
 .button {
   position: relative;
-  top: 4px;
+  top: 4.4px;
   padding: 0;
   border: 0;
   background-color: transparent;
@@ -40,32 +39,34 @@ html {
 }
 
 .button-small {
-  top: 3px;
-  height: calc(var(--button-hight) * 0.65);
-  width: calc(var(--button-width) * 0.65);
+  top: 2.1px;
+  height: calc(var(--button-hight) * 0.57);
+  width: calc(var(--button-width) * 0.57);
 }
 
 .searchBar {
-  margin-top: 20px;
-  padding: 30px 0px 30px 30px;
-  border: 2px rgb(224, 237, 205);
-  border-radius: 7px;
-  box-shadow: 2px 2px 10px rgb(224, 237, 205), -2px -2px 10px rgb(224, 237, 205);
+  margin-top: 21px;
+  margin-left: 1px;
+  padding: 20px 0 21.5px 25px;
+  border: 1px #e1e7ed;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px #e1e7ed, -1px -1px 3px #e1e7ed;
 }
 
 .searchBar-small {
-  padding: 15px 0px 15px 30px;
+  margin-top: 22px;
+  padding: 9.8px 0 9px 11.8px;
 }
 
-input:hover {
-	cursor: pointer;
+.input_line:hover {
+  cursor: pointer;
 }
 
-.input:focus {
+.input_line:focus {
   cursor: default;
 }
 
-.input:hover::placeholder {
-  font-family: Avenir;
+.input_line:hover::placeholder {
+  font-family: Avenir, sans-serif;
   font-weight: 800;
 }

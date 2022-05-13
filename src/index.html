@@ -12,29 +12,37 @@
   </head>
   <body>
 
-    <form action="" method="get" data-qa="big">
+    <form 
+      action="http://localhost:8080/" 
+      method="get" 
+      data-qa="big"
+    >
       <div class="searchBar">
-          <button class="button" type="submit"></button>
-          <input 
-            class="input" 
-            type="search" 
-            name="reultOfSerch"
-            placeholder="Try &quot;Los Angeles&quot;"
-            autocomplete="off";
-            data-qa="keypress";
-          >
-      </div>
-    </form>
-
-    <form action="" method="get" data-qa="small">
-      <div class="searchBar searchBar-small">
-        <button class="button button-small" type="submit"></button>
+        <button class="button" type="submit"></button>
         <input 
-          class="input input-small" 
+          class="input_line" 
           type="search" 
           name="reultOfSerch"
           placeholder="Try &quot;Los Angeles&quot;"
-          autocomplete="off";
+          autocomplete="off"
+          data-qa="keypress"
+        >
+      </div>
+    </form>
+
+    <form 
+      action="http://localhost:8080/" 
+      method="get" 
+      data-qa="small"
+    >
+      <div class="searchBar searchBar-small">
+        <button class="button button-small" type="submit"></button>
+        <input 
+          class="input_line input_line_small" 
+          type="search" 
+          name="reultOfSerch"
+          placeholder="Try &quot;Los Angeles&quot;"
+          autocomplete="off"
         >
       </div>
     </form>

@@ -13,38 +13,34 @@
   <body>
 
     <form 
+      class="form"
       action="http://localhost:8080/" 
       method="get" 
       data-qa="big"
     >
-      <div class="searchBar">
-        <button class="button" type="submit"></button>
-        <input 
-          class="input_line" 
-          type="search" 
-          name="reultOfSerch"
-          placeholder="Try &quot;Los Angeles&quot;"
-          autocomplete="off"
-          data-qa="keypress"
+      <input 
+        class="searchBar searchBar-big"
+        type="search" 
+        name="reultOfSerch"
+        placeholder="Try &quot;Los Angeles&quot;"
+        autocomplete="off"
+        data-qa="keypress"
         >
-      </div>
     </form>
 
-    <form 
+    <form
+      class="form" 
       action="http://localhost:8080/" 
       method="get" 
       data-qa="small"
     >
-      <div class="searchBar searchBar-small">
-        <button class="button button-small" type="submit"></button>
-        <input 
-          class="input_line input_line_small" 
-          type="search" 
-          name="reultOfSerch"
-          placeholder="Try &quot;Los Angeles&quot;"
-          autocomplete="off"
+      <input
+        class="searchBar searchBar-small" 
+        type="search" 
+        name="reultOfSerch"
+        placeholder="Try &quot;Los Angeles&quot;"
+        autocomplete="off"
         >
-      </div>
     </form>
   </body>
 </html>

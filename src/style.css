@@ -1,5 +1,6 @@
 body {
   font-weight: 300;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -37,22 +38,22 @@ body {
   border-radius: 4px;
 }
 
-.input--small {
+.input.input--small {
   height: 42px;
   font-style: normal;
   font-size: 14px;
   line-height: 19px;
 }
 
-input::placeholder {
+.input::placeholder {
   font-family: Avenir, serif;
 }
 
-.search-form input[type="text"] {
+.input[type="text"] {
   padding-left: 62px;
 }
 
-.search-form-small input[type="text"] {
+.input--small[type="text"] {
   padding-left: 33px;
 }
 
@@ -76,13 +77,8 @@ input::placeholder {
   height: 19px;
 }
 
-.search-form-small::after {
-  content: "";
-  background-image: url(images/Search.svg);
+.search-form.search-form-small::after {
   background-size: 11px;
-  background-repeat: no-repeat;
-  display: inline-block;
-  position: absolute;
   left: 18px;
   top: 140px;
   width: 11px;

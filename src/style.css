@@ -1,0 +1,90 @@
+@font-face {
+  font-family: avenir;
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+body {
+  margin-top: 0;
+}
+
+.form {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.form-label {
+  display: inline-block;
+  width: 100%;
+}
+
+.top-search-bar {
+  height: 70px;
+}
+
+.bottom-search-bar {
+  height: 42px;
+}
+
+.search-image {
+  position: absolute;
+}
+
+.big-search-image {
+  width: 19px;
+  height: 19px;
+  left: 26px;
+  top: 25px;
+}
+
+.small-search-image {
+  width: 11px;
+  height: 11px;
+  left: 13px;
+  top: 15px;
+}
+
+.input-field {
+  outline: none;
+  font-family: avenir, sans-serif;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #3d4e61;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  padding: 0;
+  font-weight: 300;
+}
+
+.big-input-field {
+  font-size: 16px;
+  padding-left: 62px;
+}
+
+.small-input-field {
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 33px;
+}
+
+.input-field:focus {
+  color: #3d4e61;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  font-weight: bold;
+}
+
+.small-input-field:focus {
+  font-weight: 900;
+}
+
+.input-field::placeholder {
+  font-weight: 300;
+}
+
+.input-field:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}

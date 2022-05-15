@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'Avenir Heavy';
+  src: url('fonts/Avenir-Heavy.ttf');
+}
+label {
+  position: relative;
+  display: block;
+}
+.big-search {
+  margin-bottom: 20px;
+}
+.big-search::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  width: 25px;
+  height: 25px;
+  background-image: url('images/Search.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.small-search::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  width: 15px;
+  height: 15px;
+  background-image: url('images/Search.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+input {
+  font-weight: 300;
+}
+input[data-qa="big"] {
+  width: 100%;
+  padding: 20px 20px 20px 60px;
+  font-family: 'Avenir Heavy';
+  border: 1px solid #e2e8ee;
+  border-radius: 5px;
+}
+input[data-qa="small"] {
+  width: 100%;
+  padding: 10px 10px 10px 40px;
+  font-family: 'Avenir Heavy';
+  border: 1px solid #e2e8ee;
+  border-radius: 5px;
+}

@@ -1,6 +1,6 @@
+
 body {
   font-weight: 300;
-  overflow-x: hidden;
 }
 
 @font-face {
@@ -17,6 +17,7 @@ body {
 
 .input {
   width: 100%;
+  box-sizing: border-box;
   outline: none;
   color: #3d4e61;
   font-family: Avenir-Heavy, serif;
@@ -29,6 +30,18 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+}
+
+.search-form{
+  width: 100%;
+}
+
+.input[type="text"] {
+  padding-left: 62px;
+}
+
+.input--small[type="text"] {
+  padding-left: 33px;
 }
 
 .input:hover {
@@ -47,14 +60,6 @@ body {
 
 .input::placeholder {
   font-family: Avenir, serif;
-}
-
-.input[type="text"] {
-  padding-left: 62px;
-}
-
-.input--small[type="text"] {
-  padding-left: 33px;
 }
 
 .input:focus {
@@ -80,7 +85,7 @@ body {
 .search-form.search-form-small::after {
   background-size: 11px;
   left: 18px;
-  top: 140px;
+  top: 134px;
   width: 11px;
   height: 11px;
 }

@@ -1,6 +1,10 @@
-
 body {
   font-weight: 300;
+}
+
+*.input {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -16,8 +20,6 @@ body {
 }
 
 .input {
-  width: 100%;
-  box-sizing: border-box;
   outline: none;
   color: #3d4e61;
   font-family: Avenir-Heavy, serif;
@@ -32,15 +34,15 @@ body {
   line-height: 22px;
 }
 
-.search-form{
+.search-form {
   width: 100%;
 }
 
-.input[type="text"] {
+.input {
   padding-left: 62px;
 }
 
-.input--small[type="text"] {
+.input--small {
   padding-left: 33px;
 }
 
@@ -51,7 +53,7 @@ body {
   border-radius: 4px;
 }
 
-.input.input--small {
+.input--small {
   height: 42px;
   font-style: normal;
   font-size: 14px;
@@ -82,7 +84,7 @@ body {
   height: 19px;
 }
 
-.search-form.search-form-small::after {
+.search-form-small::after {
   background-size: 11px;
   left: 18px;
   top: 134px;

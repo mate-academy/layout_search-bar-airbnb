@@ -11,15 +11,13 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-
     <form
       action="http://localhost:8080/api"
       method="get"
       class="form bigForm"
       data-qa="big"
     >
-
-      <label class="bigImgBox" for="bigSearch">
+      <label class="imgBox" for="bigSearch">
         <img
           src="images/Search.svg"
           alt="search icon"
@@ -30,7 +28,7 @@
       <input
         type="search"
         name="bigSearch"
-        class="bigSearchInput"
+        class="searchInput"
         id="bigSearch"
         placeholder="Try &quot;Los Angeles&quot;"
         data-qa="keypress"
@@ -40,11 +38,10 @@
     <form
       action="http://localhost:8080/api"
       method="get"
-      class="form smallForm"
+      class="form"
       data-qa="small"
     >
-
-      <label class="smallImgBox" for="smallSearch">
+      <label class="imgBox" for="smallSearch">
         <img
           src="images/Search.svg"
           alt="search icon"
@@ -55,11 +52,10 @@
       <input
         type="search"
         name="smallSearch"
-        class="smallSearchInput"
+        class="searchInput searchInput--small"
         id="smallSearch"
         placeholder="Try &quot;Los Angeles&quot;"
       >
     </form>
-
   </body>
 </html>

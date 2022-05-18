@@ -10,16 +10,21 @@
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
   </head>
-  <body>
 
+  <body>
     <form 
       class="form"
       action="http://localhost:8080/" 
       method="get" 
       data-qa="big"
     >
+      <img 
+        class="picture" 
+        src="images/Search.svg" 
+        alt="search"
+      >
       <input 
-        class="searchBar searchBar-big"
+        class="searchBar"
         type="search" 
         name="reultOfSerch"
         placeholder="Try &quot;Los Angeles&quot;"
@@ -34,8 +39,13 @@
       method="get" 
       data-qa="small"
     >
+      <img 
+        class="picture picture--small" 
+        src="images/Search.svg" 
+        alt="search"
+      >
       <input
-        class="searchBar searchBar-small" 
+        class="searchBar searchBar--small" 
         type="search" 
         name="reultOfSerch"
         placeholder="Try &quot;Los Angeles&quot;"

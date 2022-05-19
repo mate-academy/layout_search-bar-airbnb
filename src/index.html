@@ -13,52 +13,48 @@
   <body>
 
     <!-- big form   -->
-    <label for="searchId">
+    <form
+      action="attr-req-value"
+      method="post"
+      data-qa="big"
+    >
+
       <img
         class="img"
         src="/images/search.svg"
         alt="search_img"
       >
 
-      <form
-        action="attr-req-value"
-        method="post"
-        data-qa="big"
+      <input
+        class="input"
+        type="search"
+        name="search"
+        placeholder="Try &quot;Los Angeles&quot;"
+        data-qa="keypress"
       >
-
-        <input
-          class="input"
-          type="search"
-          name="search"
-          placeholder="Try &quot;Los Angeles&quot;"
-          data-qa="keypress"
-        >
-      </form>
-    </label>
+    </form>
 
     <!-- small form -->
-    <label for="searchId2">
+    <form
+      action="attr-req-value"
+      method="post"
+      data-qa="small"
+    >
+
       <img
         class="img img2"
         src="/images/search.svg"
         alt="search_img"
-      >
+       >
 
-      <form
-        action="attr-req-value"
-        method="post"
-        data-qa="small"
+      <input
+        class="input searchId2"
+        type="search"
+        name="search"
+        id="searchId2"
+        placeholder="Try &quot;Los Angeles&quot;"
+        data-qa="keypress"
       >
-
-        <input
-          class="input searchId2"
-          type="search"
-          name="search"
-          id="searchId2"
-          placeholder="Try &quot;Los Angeles&quot;"
-          data-qa="keypress"
-        >
-      </form>
-    </label>
+    </form>
   </body>
 </html>

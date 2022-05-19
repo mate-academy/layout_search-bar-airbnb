@@ -35,10 +35,8 @@ body {
 
 .input {
   padding-left: 62px;
-  padding-top: 24px;
-  padding-bottom: 23px;
-  display: inline-block;
-  font-family: "Avenir", sans-serif;
+  padding-top: 23px;
+  font-family: Avenir, sans-serif;
   font-size: 16px;
   line-height: 22px;
   border: none;
@@ -74,18 +72,21 @@ body {
 .input--small {
   padding-left: 33px;
   padding-top: 11px;
-  font-size: 14px;
   line-height: 19px;
+  font-size: 14px;
 }
 
 .input::placeholder {
-  font-family: "Avenir", sans-serif;
+  font-family: Avenir, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0;
   text-align: left;
+}
 
+.input--small::placeholder {
+  font-size: 14px;
 }
 
 .input:focus::placeholder {

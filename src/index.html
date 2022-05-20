@@ -4,57 +4,61 @@
     <meta charset="UTF-8">
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+      content="
+        width=device-width,
+        user-scalable=no,
+        initial-scale=1.0,
+        maximum-scale=1.0,
+        minimum-scale=1.0
+      ">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <label>
-      <form
+    <form
+        class="form"
         action="https://mate-academy-form-lesson.herokuapp.com/create-application"
         method="post"
-        class="form"
         data-qa="big"
       >
-
-        <img
-          src="images/Search.svg"
-          alt="Search icon"
-          class="icon-1"
-        >
-
+      <label class="lable">
         <input
-          class="style searchBig"
+          class="input inputBig"
           data-qa="keypress"
           type="search"
           name="airbnbBig"
           placeholder="Try &quot;Los Angeles&quot;"
         >
-      </form>
-    </label>
 
-    <label>
-      <form
-        action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-        method="post"
-        class="form"
-        data-qa="small"
-      >
         <img
+          class="big_Img"
           src="images/Search.svg"
           alt="Search icon"
-          class="icon-2"
         >
+      </label>
+    </form>
 
+    <form
+      class="form"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+      data-qa="small"
+    >
+      <label class="lable">
         <input
-          class="style searchSmall"
+          class="input inputSmall"
           type="search"
           name="searchSmall"
           placeholder="Try &quot;Los Angeles&quot;"
         >
-      </form>
-    </label>
+
+        <img
+          class="small_Img"
+          src="images/Search.svg"
+          alt="Search icon"
+        >
+      </label>
+    </form>
   </body>
 </html>

@@ -1,79 +1,54 @@
 <!doctype html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8">
-    <meta 
+    <meta
       name="viewport" 
-      content="width=device-width, 
-              user-scalable=no, 
-              initial-scale=1.0, 
-              maximum-scale=1.0, 
+      content="width=device-width,
+              user-scalable=no,
+              initial-scale=1.0,
+              maximum-scale=1.0,
               minimum-scale=1.0"
     >
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible"
+    content="ie=edge">
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
   </head>
-
   <body>
-
-    <form 
-      class="frame" 
-      data-qa="big" 
-      action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
+    <form
+      class="frame frame-big"
+      data-qa="big"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
-    >
-      <button 
-        class="icon" 
-        type="submit"
-      >
-        <img 
-          class="bigButton" 
-          src="images/Search.svg" 
-          alt="submit"
-        >
-      </button>
-     
-      <label>     
-        <input 
-          class="line" 
-          type="text" 
-          name="search" 
-          data-qa="keypress" 
-          placeholder="Try &quot;Los Angeles&quot;"
-        >
-      </label>
-    </form>
-
-    <form 
-      class="frame frame--small" 
-      action="/Users/sergejunnikov/layout_search-bar-airbnb/Search/Vector.svg>" 
-      method="post" 
-      data-qa="small"
-    >
-      <button 
-        class="icon icon--small" 
-        type="submit"
-      >
-        <img 
-          class="smallButton" 
-          src="images/Search.svg" 
-          alt="submit"
-        >
-      </button>
-    
-      <label>
-        <input 
-          class="line line--small" 
-          type="text" 
-          name="search" 
+    > 
+      <label class="form__label form__label-big">
+        <input
+          class="line line-big"
+          type="text"
+          name="search"
           data-qa="keypress"
           placeholder="Try &quot;Los Angeles&quot;"
         >
       </label>
     </form>
 
+    <form
+      class="frame frame-small"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+      data-qa="small"
+    >
+      <label 
+        class="form__label form__label-small">
+        <input
+          class="line line-small"
+          type="text"
+          name="search"
+          data-qa="keypress"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
+    </form>
   </body>
-
 </html>

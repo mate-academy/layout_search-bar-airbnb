@@ -1,60 +1,76 @@
 @font-face {
-  font-family: 'Avenir Heavy';
-  src: url('fonts/Avenir-Heavy.ttf');
+  font-family: "Avenir";
+  src: url("fonts/Avenir.ttc");
+  font-weight: 300;
 }
-label {
+
+.big__label {
   position: relative;
   display: block;
+  margin: 20px auto;
 }
-.big__search {
-  margin-bottom: 20px;
-}
-.big__search::before {
-  content: '';
+
+.big__label::before {
+  content: " ";
   position: absolute;
   top: 25px;
   left: 25px;
   width: 19px;
   height: 19px;
-  background-image: url('images/Search.svg');
+  background-image: url("images/Search.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-input[data-qa="big"] {
+
+.big__input {
   width: 100%;
   height: 70px;
   padding: 20px 20px 20px 62px;
-  font-family: 'Avenir Heavy';
+  font-family: "Avenir", sans-serif;
   font-size: 16px;
+  font-weight: 300;
   border: 1px solid #e2e8ee;
   border-radius: 4px;
-  box-shadow: 0px 1px 8px rgba(61, 78, 97, 0.1);
-  color: #3D4E61;
+  color: #3d4e61;
 }
-.small__search::before {
-  content: '';
+
+.big__input:focus {
+  outline: none;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f6 100%);
+}
+
+.small__label {
+  position: relative;
+  display: block;
+}
+
+.small__label::before {
+  content: " ";
   position: absolute;
   top: 15px;
   left: 13px;
   width: 11px;
   height: 11px;
-  background-image: url('images/Search.svg');
+  background-image: url("images/Search.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-input[data-qa="small"] {
+
+.small__input {
   width: 100%;
   height: 42px;
   padding: 10px 10px 10px 33px;
-  font-family: 'Avenir Heavy';
+  font-family: "Avenir", sans-serif;
   font-size: 14px;
+  font-weight: 300;
   border: 1px solid #e2e8ee;
   border-radius: 5px;
-  color: #3D4E61;
+  color: #3d4e61;
 }
-input:focus {
+
+.small__input:focus {
   outline: none;
-  background: linear-gradient(180deg, #FFFFFF 0%, #F6F6F7 100%);
+  background: linear-gradient(180deg, #fff 0%, #f6f6f6 100%);
 }

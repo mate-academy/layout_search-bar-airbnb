@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Avenir";
+  src: url("./fonts/Avenir-Book.ttf");
+  font-weight: 300;
+}
+
+.input {
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding-left: 65px;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 4px;
+  position: relative;
+  background: url("https://raw.githubusercontent.com/annaRav/layout_search-bar-airbnb/48a5869269aebffeac5f82d2aac10af804d0bd85/src/images/Search.svg") no-repeat;
+}
+
+.search--bar {
+  margin: 20px auto 0;
+}
+
+.input-big {
+  height: 50px;
+  background-position: 25px 15px;
+}
+
+.input-small {
+  height: 30px;
+  background-position: 25px 5px;
+}
+
+.input:hover {
+  box-shadow: 3px 5px 10px grey, -3px 5px 10px grey;
+}
+
+.input:focus {
+  font-weight: bold;
+  background: linear-gradient(0deg, rgb(220, 220, 220) 0px, white 100%);
+  border: 1px solid black;
+}

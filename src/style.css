@@ -39,6 +39,7 @@ input {
   margin: 0 auto;
   padding: 0 25px;
   width: 100%;
+  min-height: 70px;
   font-weight: 900;
   line-height: 70px;
   border: 1px solid --border;
@@ -64,29 +65,31 @@ input {
 
 .search__form-small {
   padding: 0 12px;
-  height: 40px;
+  min-height: 40px;
   line-height: 40px;
 }
 
 .search__button {
+  position: absolute;
+  top: calc(50% - 10px);
   cursor: pointer;
   margin-right: 17px;
   width: 19px;
   height: 19px;
-  line-height: 70px;
   background-image: url(./images/Search.svg);
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .search__button-small {
-  margin-right: 9px;
+  top: calc(50% - 6px);
   width: 11px;
   height: 11px;
-  line-height: 40px;
 }
 
 .search__input {
   cursor: pointer;
+  padding-left: 36px;
   width: calc(100% - 45px);
   font-weight: 900;
   font-size: 16px;
@@ -99,5 +102,6 @@ input {
 }
 
 .search__input-small {
+  padding-left: 20px;
   font-size: 14px;
 }

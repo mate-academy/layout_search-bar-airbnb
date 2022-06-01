@@ -43,10 +43,9 @@
   margin-left: 12px;
 }
 
-.textArea,
-.textArea::placeholder {
+.textArea {
   font-family: "Avenir", Helvetica, sans-serif;
-  font-weight: 300;
+  font-weight: 800;
   color: #3d4e61;
   border: none;
   font-size: 16px;
@@ -57,13 +56,20 @@
   width: calc(100% - 75px);
 }
 
-.textArea--small,
-.textArea--small::placeholder {
+.textArea::placeholder {
+  font-weight: 300;
+}
+
+.textArea--small {
   font-size: 14px;
   line-height: 19px;
-  font-weight: 300;
+  font-weight: 900;
   margin-top: 10px;
   margin-left: 10px;
+}
+
+.textArea--small::placeholder {
+  font-weight: 400;
 }
 
 .search-form:hover {
@@ -73,5 +79,4 @@
 .search-form:focus-within {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
-  font-weight: 800;
 }

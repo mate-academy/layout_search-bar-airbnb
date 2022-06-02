@@ -11,32 +11,27 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body class="body">
-    <div class="div">
-      <form 
-        action="12345" 
-        method="post"
-        data-qa="big"
-      >
-        <input 
-          class="input"
-          type="text"
-          placeholder="Try &quot;Los Angeles&quot;"
-          data-qa="keypress"
-        >
-      </form>
-    </div>
-    <div class="div">
-      <form 
-        action="12345" 
-        method="post"
-        data-qa="small"
-      >
-        <input 
-          class="input--small"
-          type="text"
-          placeholder="Try &quot;Los Angeles&quot;"
-        >
-      </form>
-    </div>
+    <form
+       action="http://localhost:8080/"
+       method="post"
+       data-qa="big"
+     >
+      <input
+         data-qa="keypress"
+         type="text"
+         name="big Search bar airbnb"
+         placeholder="Try “Los Angeles”"
+         required
+         class="input"
+       >
+      <input
+         data-qa="small"
+         type="text"
+         name="small search"
+         placeholder="Try “Los Angeles”"
+         required
+         class="input--small"
+       >
+    </form>
   </body>
 </html>

@@ -1,84 +1,79 @@
 @font-face {
   font-family: "Avenir-Book";
-  src: url(fonts/Avenir-Book.ttf/);
+  src: url("./fonts/Avenir-Book.ttf");
+  font-weight: 300;
 }
 
 @font-face {
   font-family: "Avenir-Heavy";
-  src: url(fonts/Avenir-Heavy.ttf);
+  src: url("./fonts/Avenir-Heavy.ttf");
+  font-weight: 300;
 }
 
-html {
-  font-family: "Avenir", sans-serif;
+* {
+  box-sizing: border-box;
 }
 
-body {
-  margin-top: 0;
-}
-
-.first__block,
-.second__block {
+.form {
   position: relative;
 }
 
-.big__bar {
-  width: 100%;
-  font-size: 16px;
-  font-weight: 300;
-  border: 1px solid;
-  padding-top: 25px;
-  padding-bottom: 23px;
-  padding-left: 62px;
+.big-form {
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
-.big__bar:hover {
-  border: solid purple;
-  background-color: #e1e7ed;
-}
-
-.big__bar:focus {
-  border: solid blue;
-  background-color: #e1e7ed;
-}
-
-.small__bar {
-  width: 100%;
-  font-size: 14px;
-  line-height: 19.12px;
-  font-weight: 300;
-  margin-top: 10px;
-  padding-top: 12px;
-  padding-bottom: 10px;
-  padding-left: 33px;
-
-}
-
-.small__bar:focus {
-  border: solid blue;
-  background-color: #e1e7ed;
-}
-
-.img1 {
+.big-icon {
   position: absolute;
   height: 19px;
   width: 19px;
-  top: 48px;
-  left: 37px;
+  top: 26px;
+  left: 25px;
 }
 
-.img2 {
+.small-icon {
   position: absolute;
   height: 11px;
   width: 11px;
-  top: 25px;
+  top: 17px;
   left: 15px;
 }
 
-.search__bar {
+.big-bar {
+  font-size: 16px;
+  padding-top: 25px;
+  padding-bottom: 21px;
+  padding-left: 62px;
+  margin-bottom: 10px;
+  height: 70px;
+  line-height: 22px;
+}
+
+.small-bar {
+  font-size: 14px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  padding-left: 33px;
+  line-height: 19px;
+  height: 42px;
+}
+
+.search-bar::placeholder {
+  font-family: Avenir-Book, sans-serif;
+}
+
+.search-bar {
   border-radius: 4px;
+  width: 100%;
+  font-family: Avenir-Heavy, sans-serif;
   border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  width: 100%;
+}
+
+.search-bar:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.search-bar:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }

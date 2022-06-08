@@ -93,7 +93,7 @@ different font-weight. Then changing only the font-weight on your elements will 
 8. [TESTS] - Remember to style input placeholders correctly
 
 
-9. [TESTS] - Remember that the search-bar should have width: 100% on any screen.
+9. [TESTS] - Remember that the search-bar should have width: 100% on any screen. +
 
 
 10. [TESTS] - Remember, each search bar should be located in separate

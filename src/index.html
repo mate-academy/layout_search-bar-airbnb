@@ -12,24 +12,34 @@
   </head>
   <body>
     <h1>Search bar airbnb</h1>
-    <form action="" class="bigSearchBar">
-      <img src="images/Search.svg" alt="" class="image">
-      <input 
+    <form 
+      action="#"
+      method="get"
+      class="bigSearchBar"
+      data-qa="big"
+    >
+      <img src="images/Search.svg" alt="Search" class="image">
+      <label for="bigSearch">
+        <input
+        id="bigSearch"
         type="text" 
         class="firsSearchBar"
         placeholder="Try &quot;Los Angeles&quot"
-        data-qa="big"
         data-qa="keypress"
       >
+      </label>
     </form>
-    <form action="" class="smallSearchBar">
-      <img src="images/Search.svg" alt="" class="images">
-      <input 
-        type="text" 
+    <form action="#" class="smallSearchBar" method="get">
+      <img src="images/Search.svg" alt="Search" class="images">
+      <label for="smallSearch">
+        <input
+        id="smallSearch"
+        type="text"
         class="secondSearchBar"
         placeholder="Los Angeles"
         data-qa="small"
       >
+      </label>
     </form>
   </body>
 </html>

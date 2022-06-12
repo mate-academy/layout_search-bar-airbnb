@@ -1,11 +1,10 @@
 body {
   margin-top: 20px;
-  font-weight: 300;
 }
 
 @font-face {
   font-family: Avenir;
-  /* font-weight: 100; */
+  font-weight: 300;
   src: url(fonts/Avenir-Book.ttf);
 }
 
@@ -15,46 +14,41 @@ body {
   src: url(fonts/Avenir-Heavy.ttf);
 }
 
-.field:focus {
-  color: yellowgreen;
-}
-
-.def input {
+.form_field :first-child {
   box-sizing: border-box;
   width: 100%;
+  border-radius: 4px;
+  border: 1px solid rgba(225, 231, 237, 1);
+  font-family: Avenir, Helvetica, sans-serif;
+}
+
+.def .def_name {
   height: 70px;
+  font-size: 16px;
   padding-left: 62px;
   border: 1px solid rgba(225, 231, 237, 1);
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  border-radius: 4px;
-  font-size: 16px;
-  font-family: Avenir, Helvetica, sans-serif;
 }
 
 ::placeholder {
   color: rgba(61, 78, 97, 1);
 }
 
-.hov input {
-  box-sizing: border-box;
-  width: 100%;
+.hov .hov_name {
   height: 42px;
+  font-size: 14px;
   margin-top: 20px;
   padding-left: 33px;
-  border: 1px solid rgba(225, 231, 237, 1);
-  border-radius: 4px;
-  font-size: 14px;
-  font-family: Avenir, Helvetica, sans-serif;
 }
 
-.photo1 {
+.photo_big {
   position: absolute;
   width: 19px;
   left: 26px;
   top: 45px;
 }
 
-.photo2 {
+.photo_small {
   position: relative;
   width: 11px;
   left: 13px;

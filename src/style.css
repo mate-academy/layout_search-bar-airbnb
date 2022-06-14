@@ -3,15 +3,17 @@
 }
 
 @font-face {
-  font-family: "Avenir", Arial;
+  font-family: Avenir-Book;
   src: url(fonts/Avenir-Book.ttf);
   font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: Avenir, Arial;
+  font-family: Avenir-Heavy;
   src: url(fonts/Avenir-Heavy.ttf);
   font-weight: 300;
+  font-style: bold;
 }
 
 .form_1 {
@@ -21,7 +23,7 @@
 
 .input_1 {
   position: relative;
-  padding-left: 55px;
+  padding-left: 62px;
   display: inline-block;
   height: 70px;
   width: 100%;
@@ -29,6 +31,8 @@
   border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
+  font-family: Avenir-Book, sans-serif;
+  font-size: 12px;
 }
 
 .input_1:hover {
@@ -52,11 +56,13 @@
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
   border-radius: 3px;
+  font-family: Avenir-Heavy, sans-serif;
+  font-size: 16px;
 }
 
 .input_2 {
   position: relative;
-  padding-left: 30px;
+  padding-left: 33px;
   display: inline-block;
   height: 42px;
   width: 100%;
@@ -64,6 +70,8 @@
   border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
+  font-family: Avenir-Book, sans-serif;
+  font-size: 12px;
 }
 
 .input_2:hover {
@@ -87,18 +95,17 @@
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
   border-radius: 3px;
+  font-family: Avenir-Heavy, sans-serif;
+  font-size: 14px;
 }
 
 .form_1::after {
   content: "";
   background-image: url("images/Search.svg");
   background-size: 19px;
-  display: inline-block;
   position: absolute;
-  left: 26px;
-  top: 45px;
-  text-align: center;
-  line-height: 19px;
+  left: 34px;
+  top: 46px;
   width: 19px;
   height: 19px;
 }
@@ -107,24 +114,21 @@
   content: "";
   background-image: url("images/Search.svg");
   background-size: 11px;
-  display: inline-block;
   position: absolute;
-  left: 16px;
-  top: 126px;
-  text-align: center;
-  line-height: 11px;
+  left: 21px;
+  top: 125px;
   width: 11px;
   height: 11px;
 }
 
 .input_1::placeholder {
   font-size: 16px;
-  line-height: 22px;
+  font-style: normal;
+  font-weight: 300;
 }
 
 .input_2::placeholder {
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 19px;
+  font-style: normal;
+  font-weight: 300;
 }

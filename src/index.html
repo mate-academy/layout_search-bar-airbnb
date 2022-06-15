@@ -11,6 +11,47 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <form
+      action="https://mate-academy-search_bar-lesson.com"
+      method="post"
+      class="search--box"
+      data-qa="big"
+    >
+      <label>
+        <img 
+          src="./images/Search.svg"
+          class="image"
+          alt="search-icon"
+        >
+        
+        <input
+          class="input--search"
+          type="search"
+          name="search-big"
+          data-qa="keypress"
+          placeholder="Try &#34;Los Angeles&#34;">
+      </label>
+    </form>
+
+    <form
+      action="https://mate-academy-search_bar-lesson.com"
+      method="post"
+      class="search--box"
+      data-qa="small"
+    >
+      <label>
+        <img 
+          src="./images/Search.svg" 
+          class="image--small"
+          alt="search-icon"
+        >
+
+        <input
+         class="input--search input-search-small"
+         type="search"
+         name="search--small"
+         placeholder="Try &#34;Los Angeles&#34;"> 
+      </label>
+    </form>
   </body>
 </html>

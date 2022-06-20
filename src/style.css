@@ -1,3 +1,7 @@
+/* 20220620 properties "background" structured for better understanding */
+/* 20220622 selector "input" changed to class "textSearch" */
+/* 20220622 added color to class "textSearch" and attribute "placeholder" */
+
 @font-face {
   font-family: Avenir;
   font-weight: 300;
@@ -32,45 +36,60 @@ body {
   height: 42px;
 }
 
-input {
+.textSearch {
   height: 100%;
   border: none;
+  color: #3d4e61;
 }
 
-input[data-qa="keypress"] {
-  padding: 0 0 0 60px;
-  width: calc(100% - 60px);
-  background: url(images/Search.svg) no-repeat left 24px/68px 19px;
+.textSearch[data-qa="keypress"] {
+  padding: 0 0 0 62px;
+  width: calc(100% - 62px);
   font-size: 16px;
+  background: url(images/Search.svg)
+    no-repeat
+    left
+    24px/68px 19px
+  ;
 }
 
-input[data-qa="small"] {
-  padding: 0 0 0 35px;
-  width: calc(100% - 35px);
-  background: url(images/Search.svg) no-repeat left 15px/40px 11px;
+.textSearch[data-qa="small"] {
+  padding: 0 0 0 33px;
+  width: calc(100% - 33px);
   font-size: 14px;
+  background: url(images/Search.svg)
+    no-repeat
+    left
+    15px/40px 11px;
 }
 
-input::placeholder {
+.textSearch::placeholder {
   font-family: Avenir, sans-serif;
+  color: #3d4e61;
 }
 
-input:hover {
+.textSearch:hover {
   box-shadow: 0 3px 8px rgba(61,78,97,0.2);
 }
 
-input:focus {
+.textSearch:focus {
   font-weight: bold;
   border-radius: 3px;
   outline: 1px solid rgb(189, 184, 184);
 }
 
-input[data-qa="keypress"]:focus {
-  background: url(images/Search.svg) no-repeat left 25px/70px 20px,
+.textSearch [data-qa="keypress"]:focus {
+  background: url(images/Search.svg)
+    no-repeat
+    left
+    24px/68px 19px,
     linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
-input[data-qa="small"]:focus {
-  background: url(images/Search.svg) no-repeat left 15px/40px 12px,
+.textSearch [data-qa="small"]:focus {
+  background: url(images/Search.svg)
+    no-repeat
+    left
+    15px/40px 11px,
     linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }

@@ -18,7 +18,7 @@ body {
 
 .data-qa {
   box-sizing: border-box;
-  display: block;
+  display: flex;
   position: relative;
   margin: 20px 8px;
   padding: 0;
@@ -70,22 +70,21 @@ label:hover {
   box-sizing: border-box;
   width: 100%; /* треба подумати */
   outline: none;
-  position: absolute;
-  /* margin-right: 40px; */
-  border: none;
+  /* border: none; */
   font-family: Avenir, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   color: #3d4e61;
   margin-top: 22px;
-  margin-left: 17px;
+  margin-left: 25px;
   margin-bottom: 23px;
 }
 
 .serch-small {
+  box-sizing: border-box;
+  width: 100%;
   outline: none;
-  position: absolute;
   border: none;
   font-family: Avenir, sans-serif;
   font-style: normal;
@@ -93,20 +92,21 @@ label:hover {
   font-size: 14px;
   color: #3d4e61;
   margin-top: 9px;
-  margin-left: 10px;
+  margin-left: 0;
   margin-bottom: 10px;
 }
 
 .glass-big {
-  margin-top: 24px;
-  margin-left: 26px;
-  margin-bottom: 25px;
+  width: 23px;
+  margin: 24px 20px;
 }
 
 .glass-small {
+  width: 11px;
   margin-top: 14px;
-  margin-left: 12px;
+  margin-left: 13px;
   margin-bottom: 16px;
+  margin-right: 10px;
 }
 
 .serch-small :placeholder {

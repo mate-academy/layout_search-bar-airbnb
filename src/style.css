@@ -21,23 +21,7 @@ html {
   display: flex;
   position: relative;
   margin: 20px 0;
-}
 
-.searchImage {
-  display: block;
-  position: absolute;
-  height: 19px;
-  width: 19px;
-  left: 26px;
-  top: 25px;
-  fill: #3d4e61;
-}
-
-.smallSearchImage {
-  height: 11px;
-  width: 11px;
-  left: 13px;
-  top: 15px;
 }
 
 .searchInput {
@@ -53,7 +37,8 @@ html {
   color: #3d4e61;
   font-weight: 300;
   outline: none;
-  background: transparent;
+  background: transparent url("../src/images/Search.svg") no-repeat top 25px left 26px;
+  background-size: 19px;
 }
 
 .smallSearchInput {
@@ -61,6 +46,21 @@ html {
   padding: 0 0 0 33px;
   border: 1px solid #e1e7ed;
   font-size: 14px;
+  background-position: top 15px left 13px;
+  background-size: 11px;
+}
+
+.searchInput::placeholder {
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+  color: #3d4e61;
+  font-weight: 300;
+}
+
+.smallSearchInput::placeholder {
+  font-family: Avenir, sans-serif;
+  font-size: 14px;
+  color: #3d4e61;
 }
 
 .searchInput:hover {
@@ -68,10 +68,16 @@ html {
 }
 
 .searchInput:focus-within {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
   box-shadow: none;
   font-family: Avenir, sans-serif;
   color: #3d4e61;
   font-weight: 800;
+  background: url("../src/images/Search.svg") no-repeat top 25px left 26px, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background-size: 19px;
+}
+
+.smallSearchInput:focus-within {
+  background: url("../src/images/Search.svg") no-repeat top 15px left 13px, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background-size: 11px;
 }

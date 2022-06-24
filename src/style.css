@@ -26,9 +26,10 @@
   background-color: rgba(255, 255, 255, 1);
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
+  outline: none;
 }
 
-.search-one {
+.search--one {
   margin: 20px 0;
   height: 70px;
   padding-left: 62px;
@@ -37,7 +38,7 @@
   font-size: 16px;
 }
 
-.search-two {
+.search--two {
   margin-bottom: 0;
   height: 42px;
   padding-left: 33px;
@@ -46,13 +47,24 @@
   font-size: 14px;
 }
 
-.search:focus {
+.search--one:focus {
   font-weight: bold;
   border-radius: 3px;
-  background-image: url(images/Search.svg
-)linear-gradient(
-  rgba(255, 255, 255, 1) 0%,
-  rgba(246, 246, 247, 1) 100%);
+  background: url(images/Search.svg) 26px 25px no-repeat,
+    linear-gradient(
+      rgba(255, 255, 255, 1) 0%,
+      rgba(246, 246, 247, 1) 100%);
+}
+
+.search--two:focus {
+  font-weight: bold;
+  border-radius: 3px;
+  background: url(images/Search.svg) 11px no-repeat,
+    linear-gradient(
+      rgba(255, 255, 255, 1) 0%,
+      rgba(246, 246, 247, 1) 100%);
+  background-size: 11px;
+  font-size: 14px;
 }
 
 .search:hover {

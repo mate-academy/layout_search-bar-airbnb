@@ -54,22 +54,23 @@ body {
   height: 40px;
 }
 
-.glass {
-  position: absolute;
+.search-bar ::after {
   background-image: url(images/Search.svg);
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
   background-size: contain;
   height: 19px;
   width: 19px;
-  background-repeat: no-repeat;
-  top: 45px;
-  left: 34px;
+  top: 25px;
+  left: 26px;
 }
 
-.glass-small {
+.small-bar ::after {
   height: 11px;
   width: 11px;
-  top: 125px;
-  left: 21px;
+  top: 14px;
+  left: 12px;
 }
 
 .search_place ::placeholder {

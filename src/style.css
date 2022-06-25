@@ -2,6 +2,7 @@
 /* 20220620 selector "input" changed to class "textSearch" */
 /* 20220620 added color to class "textSearch" and attribute "placeholder" */
 /* 20220622 deleted over data attributes */
+/* 20220625 deleted all data attributes */
 
 @font-face {
   font-family: Avenir;
@@ -22,7 +23,7 @@ body {
   font-weight: 300;
 }
 
-.searchBar {
+.searchBarBig {
   margin: 20px 10px;
   border-radius: 4px;
   border: 1px solid #e1e7ed;
@@ -31,11 +32,32 @@ body {
   height: 70px;
 }
 
-.searchBar[data-qa="small"] {
+.searchBarSmall {
+  margin: 20px 10px;
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61,78,97,0.1);
+
   height: 42px;
 }
 
-.textSearch {
+.textSearchBig {
+  height: 100%;
+  border: none;
+  color: #3d4e61;
+
+  padding: 0 0 0 62px;
+  width: calc(100% - 62px);
+  font-size: 16px;
+
+  background: url(images/Search.svg)
+    no-repeat
+    left
+    24px/68px 19px
+  ;
+}
+
+.textSearchSmall {
   height: 100%;
   border: none;
   color: #3d4e61;
@@ -49,33 +71,16 @@ body {
     15px/40px 11px;
 }
 
-.textSearch[data-qa="keypress"] {
-  padding: 0 0 0 62px;
-  width: calc(100% - 62px);
-  font-size: 16px;
-  background: url(images/Search.svg)
-    no-repeat
-    left
-    24px/68px 19px
-  ;
-}
-
-.textSearch::placeholder {
+.textSearchBig::placeholder .textSearchSmall::placeholder {
   font-family: Avenir, sans-serif;
   color: #3d4e61;
 }
 
-.textSearch:hover {
-  box-shadow: 0 3px 8px rgba(61,78,97,0.2);
-}
-
-.textSearch:focus {
+.textSearchBig:focus {
   font-weight: bold;
   border-radius: 3px;
   outline: 1px solid rgb(189, 184, 184);
-}
 
-.textSearch[data-qa="keypress"]:focus {
   background: url(images/Search.svg)
     no-repeat
     left
@@ -83,10 +88,18 @@ body {
     linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
-.textSearch[data-qa="small"]:focus {
+.textSearchSmall:focus {
+  font-weight: bold;
+  border-radius: 3px;
+  outline: 1px solid rgb(189, 184, 184);
+
   background: url(images/Search.svg)
     no-repeat
     left
     15px/40px 11px,
     linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.textSearchBig:hover .textSearchSmall:hover {
+  box-shadow: 0 3px 8px rgba(61,78,97,0.2);
 }

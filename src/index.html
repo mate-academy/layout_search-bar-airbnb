@@ -15,6 +15,7 @@
       action="/" 
       method="get"
       class="block"
+      data-qa="big"
     >
       <div class="container big">
         <img
@@ -28,11 +29,19 @@
             class="big-input input"
             name="bigger"
             id="bigger"
-            data-qa="big keypress"
+            data-qa="keypress"
             placeholder="Try &#34;Los Angeles&#34;"
           >
         </label>
       </div>
+    </form>
+
+    <form
+      action="/" 
+      method="get"
+      class="block"
+      data-qa="small"
+    >
       <div class="container small">
         <img 
           src="./images/Search.svg"
@@ -45,8 +54,7 @@
             class="small-input input"
             name="smaller"
             id="smaller"
-            placeholder="Los Angeles"
-            data-qa="small"
+            placeholder="Try &#34;Los Angeles&#34;"
           >
         </label>
       </div>

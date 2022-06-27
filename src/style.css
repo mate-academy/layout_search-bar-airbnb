@@ -38,28 +38,34 @@ body {
   width: 100%;
   height: inherit;
   display: block;
-}
-
-.container {
-  position: relative;
-  top: 25px;
-  left: 26px;
-  margin: 0;
-  background-color: transparent;
-
+  /* text-align: center; */
 }
 
 .icon {
   width: 19px;
   height: 19px;
+  margin-left: 26px;
+  margin-top: 25px;
 }
 
 .input {
   position: absolute;
+  background-color: transparent;
   margin-left: 17px;
+  margin-top: 25px;
   border: 0;
   line-height: 22px;
   outline: none;
+}
+
+.input:focus {
+  background-color: transparent;
+  font-family: "Avenir", sans-serif;
+  padding: 0;
+  font-weight: 800;
+  line-height: 22px;
+  color: #3d4e61;
+  font-size: 16px;
 }
 
 .input::placeholder {
@@ -82,43 +88,33 @@ body {
   border-radius: 3px;
 }
 
-.input:focus {
-  background-color: transparent;
-  font-family: "Avenir", sans-serif;
-  padding: 0;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 22px;
-}
-
 .search-form--small {
   height: 42px;
 }
 
-.container--small {
-  top: 12px;
-  left: 13px;
-}
-
 .icon--small {
-  position: absolute;
-  top: 3px;
   width: 11px;
   height: 11px;
+  margin-left: 13px;
+  margin-top: 15px;
 }
 
 .input--small {
-  margin-left: 20px;
+  margin-left: 9px;
+  margin-top: 12px;
   line-height: 19px;
 }
 
 .input--small::placeholder {
+  font-family: "Avenir", sans-serif;
+  line-height: 22px;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .input--small:focus {
-  font-weight: 900;
+  font-family: "Avenir", sans-serif;
+  font-weight: 800;
   font-size: 14px;
   line-height: 19px;
 }

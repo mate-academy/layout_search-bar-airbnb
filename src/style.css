@@ -24,6 +24,7 @@ body {
 .container {
   margin: 20px 0;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  position: relative;
 }
 
 .container:hover {
@@ -36,9 +37,10 @@ body {
   border: 1px solid #e1e7ed;
   border-radius: 4px;
   font-family: Avenir, sans-serif;
+  outline: none;
 }
 
-input:focus {
+.input:focus {
   font-family: Avenir, sans-serif;
   font-weight: 800;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
@@ -62,20 +64,12 @@ input:focus {
   left: 13px;
 }
 
-.big {
-  position: relative;
-}
-
 .big-input {
   display: block;
   padding: 25px 62px;
   font-size: 16px;
   line-height: 22px;
   height: 70px;
-}
-
-.small {
-  position: relative;
 }
 
 .small-input {

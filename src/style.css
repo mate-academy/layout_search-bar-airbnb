@@ -27,9 +27,6 @@
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
   outline: none;
-}
-
-.search--one {
   margin: 20px 0;
   height: 70px;
   padding-left: 62px;
@@ -38,7 +35,7 @@
   font-size: 16px;
 }
 
-.search--two {
+.search--small {
   margin-bottom: 0;
   height: 42px;
   padding-left: 33px;
@@ -47,7 +44,7 @@
   font-size: 14px;
 }
 
-.search--one:focus {
+.search:focus {
   font-weight: bold;
   border-radius: 3px;
   background: url(images/Search.svg) 26px 25px no-repeat,
@@ -56,13 +53,8 @@
       rgba(246, 246, 247, 1) 100%);
 }
 
-.search--two:focus {
-  font-weight: bold;
-  border-radius: 3px;
-  background: url(images/Search.svg) 11px no-repeat,
-    linear-gradient(
-      rgba(255, 255, 255, 1) 0%,
-      rgba(246, 246, 247, 1) 100%);
+.search--small:focus {
+  background: url(images/Search.svg) 11px no-repeat;
   background-size: 11px;
   font-size: 14px;
 }

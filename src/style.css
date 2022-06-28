@@ -1,17 +1,14 @@
 /* Styling sheet */
 @font-face {
   font-family: "Avenir";
-  src: url(./fonts/Avenir-Book.ttf);
-  font-style: normal;
-  font-weight: 300;
+  src: url(fonts/Avenir-Book.ttf) format("truetype"),
+    url(fonts/Avenir-Heavy.ttf) format("truetype");
 }
 
-@font-face {
+/* @font-face {
   font-family: "Avenir";
-  src: url(./fonts/Avenir-Heavy.ttf);
-  font-style: normal;
-  font-weight: 800;
-}
+  src: url(fonts/Avenir-Heavy.ttf) format("truetype");
+} */
 
 .search-form {
   box-sizing: border-box;
@@ -46,7 +43,7 @@
 
 .textArea {
   font-family: Avenir, sans-serif;
-  font-weight: 800;
+  font-style: heavy;
   color: #3d4e61;
   border: none;
   font-size: 16px;
@@ -58,7 +55,7 @@
 }
 
 .textArea::placeholder {
-  font-weight: 300;
+  font-style: book;
 }
 
 .textArea--small {
@@ -72,6 +69,7 @@
 }
 
 .textArea--small::placeholder {
+  font-style: book;
   font-weight: 400;
 }
 

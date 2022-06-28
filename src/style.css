@@ -9,6 +9,12 @@ body {
   margin: 0;
 }
 
+.search-bar {
+  width: 100%;
+  height: 70px;
+  position: relative;
+}
+
 .search_place {
   box-sizing: border-box;
   margin: 20px 8px;
@@ -21,20 +27,12 @@ body {
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
 }
 
-.search_place :hover {
+.search_place:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
   border-radius: 4px;
 }
 
-.search_place :focus {
-  font-family: Avenir, sans-serif;
-  font-weight: 900;
-  color: #3d4e61;
-  background: linear-gradient(180deg, #ffff 0%, #f6f6f7 100%);
-  border-radius: 3px;
-}
-
-.serch {
+.search {
   height: 68px;
   box-sizing: border-box;
   width: 100%;
@@ -48,13 +46,21 @@ body {
   padding: 0 0 0 62px;
 }
 
-.serch-small {
+.search:focus {
+  font-family: Avenir, sans-serif;
+  font-weight: 900;
+  color: #3d4e61;
+  background: linear-gradient(180deg, #ffff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+}
+
+.search-small {
   font-size: 14px;
   padding: 0 0 0 33px;
   height: 40px;
 }
 
-.search-bar ::after {
+.search-bar::after {
   background-image: url(images/Search.svg);
   position: absolute;
   content: "";
@@ -63,17 +69,17 @@ body {
   height: 19px;
   width: 19px;
   top: 25px;
-  left: 26px;
+  left: 34px;
 }
 
-.small-bar ::after {
+.small-bar::after {
   height: 11px;
   width: 11px;
-  top: 14px;
-  left: 12px;
+  top: 15px;
+  left: 21px;
 }
 
-.search_place ::placeholder {
+.search::placeholder {
   font-family: Avenir, sans-serif;
   font-weight: 300;
 }

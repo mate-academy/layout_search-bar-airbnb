@@ -1,14 +1,18 @@
 /* Styling sheet */
+
 @font-face {
   font-family: "Avenir";
-  src: url(fonts/Avenir-Book.ttf) format("truetype"),
-    url(fonts/Avenir-Heavy.ttf) format("truetype");
+  src: url(fonts/Avenir-Book.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 300;
 }
 
-/* @font-face {
+@font-face {
   font-family: "Avenir";
   src: url(fonts/Avenir-Heavy.ttf) format("truetype");
-} */
+  font-style: normal;
+  font-weight: 800;
+}
 
 .search-form {
   box-sizing: border-box;
@@ -19,6 +23,7 @@
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
   margin-top: 20px;
+  font-family: Avenir, sans-serif;
 }
 
 .search-form--small {
@@ -31,7 +36,6 @@
   height: 19px;
   margin-top: 24px;
   margin-left: 25px;
-  padding: 0;
 }
 
 .icon--small {
@@ -42,34 +46,38 @@
 }
 
 .textArea {
-  font-family: Avenir, sans-serif;
-  font-style: heavy;
-  color: #3d4e61;
-  border: none;
-  font-size: 16px;
-  line-height: 22px;
   margin-top: 23px;
   margin-left: 18px;
   padding: 0;
+  border: none;
+
+  color: #3d4e61;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
   width: calc(100% - 75px);
+  /* text-align: left; */
 }
 
 .textArea::placeholder {
-  font-style: book;
+  font-family: Avenir, sans-serif;
+  font-weight: 400;
 }
 
 .textArea--small {
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 19px;
   margin-top: 10px;
   margin-left: 10px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 19px;
   width: calc(100% - 40px);
 }
 
 .textArea--small::placeholder {
-  font-style: book;
+  font-family: Avenir, sans-serif;
   font-weight: 400;
 }
 

@@ -62,7 +62,17 @@
   color: #3d4e61;
 }
 
+.formInputSmall::placeholder {
+  font-size: 14px;
+  line-height: 19px;
+  color: #3d4e61;
+}
+
 .formInputBig:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.formInputSmall:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
@@ -72,12 +82,8 @@
   outline-width: 0;
 }
 
-.formInputSmall::placeholder {
-  font-size: 14px;
-  line-height: 19px;
-  color: #3d4e61;
-}
-
-.formInputS:hover {
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+.formInputSmall:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+  outline-width: 0;
 }

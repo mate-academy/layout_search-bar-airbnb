@@ -1,18 +1,17 @@
 @font-face {
   font-family: Avenir;
-  font-style: normal;
   src: url(fonts/Avenir.ttc);
 }
 
 @font-face {
   font-family: Avenir;
-  font-style: book;
+  font-style: oblique;
   src: url(fonts/Avenir-Book.ttf);
 }
 
 @font-face {
   font-family: Avenir;
-  font-style: heavy;
+  font-style: bold;
   src: url(fonts/Avenir-Heavy.ttf);
 }
 
@@ -26,15 +25,9 @@ body {
 .searchLarge {
   box-sizing: border-box;
   margin-top: 20px;
-
   position: relative;
   height: 70px;
   width: 100%;
-  left: 0;
-  border-radius: 4px;
-  background: #fff;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
 }
 
 .largeLoop {
@@ -50,21 +43,35 @@ body {
   padding-inline-start: 62px;
   height: 100%;
   width: 100%;
-  border: #fff;
 
+  font-family: Avenir, sans-serif;
+  font-style: oblique;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: left;
+  vertical-align: top;
+  color: #3d4e61;
+  outline: none;
+
+  background: #fff;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+}
+
+.inpLarge::placeholder {
   font-family: Avenir, sans-serif;
   font-style: book;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 100%;
+  text-align: left;
+  vertical-align: top;
   color: #3d4e61;
-  outline: none;
 }
 
-::placeholder {
-  font-family: Avenir, sans-serif;
-}
-
-.searchLarge:hover {
+.inpLarge:hover {
+  background-color: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  stroke: solid;
   border: 1px solid #e1e7ed;
   box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
   border-radius: 4px;
@@ -74,9 +81,14 @@ body {
   font-family: Avenir, sans-serif;
   font-style: heavy;
   font-size: 16px;
+  line-height: 100%;
+  text-align: left;
+  vertical-align: top;
+
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
   border-radius: 3px;
+
 }
 
 .searchSmall {
@@ -107,10 +119,12 @@ body {
   width: 100%;
   border: #fff;
   font-family: Avenir, sans-serif;
-  font-style: normal;
+  font-style: book;
   font-weight: 400;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 100%;
+  text-align: left;
+  vertical-align: top;
   color: #3d4e61;
   outline: none;
 }
@@ -126,4 +140,10 @@ body {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
   border-radius: 3px;
+  font-family: Avenir, sans-serif;
+  font-style: heavy;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: left;
+  vertical-align: top;
 }

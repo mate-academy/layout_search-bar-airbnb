@@ -16,11 +16,6 @@
   font-style: bold;
 }
 
-body {
-  /* font-weight: 300px; */
-  box-sizing: border-box;
-}
-
 .window {
   margin-top: 20px;
   padding: 0;
@@ -34,7 +29,7 @@ body {
   font-family: Avenir, sans-serif;
   font-style: normal;
   border: none;
-  font-weight: lighter;
+  font-weight: 300;
   color: #3d4e61;
   cursor: pointer;
   padding: 0;
@@ -50,20 +45,23 @@ body {
   font-size: 14px;
   line-height: 40px;
   margin-left: 6px;
+  width: calc(100% - 33px);
+  font-weight: 400;
 }
 
 .big {
   font-size: 16px;
   line-height: 68px;
   margin-left: 13px;
+  width: calc(100% - 62px);
 }
 
 .data:hover {
-  color: red;
+  color: #3d4e61;
 }
 
 .data:focus {
-  color: blue;
+  color: #3d4e61;
 }
 
 .bigicon,

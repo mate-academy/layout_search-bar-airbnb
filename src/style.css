@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(/fonts/Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url(/fonts/Avenir-Heavy.ttf);
+  font-style: normal;
+  font-weight: 800;
+}
+
+body {
+  font-weight: 300px;
+}
+
+.input {
+  font-family: Avenir, Helvetica, sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+}
+
+.big-input {
+  display: block;
+  font-size: 16px;
+  height: 70px;
+  border-radius: 4px;
+  margin: 20px 0;
+  padding-left: 62px;
+}
+
+.big-input::placeholder {
+  font-weight: normal;
+}
+
+.big-input:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.big-input:focus {
+  font-weight: 800;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+  border: 1px solid #e1e7ed;
+}
+
+.inputBox {
+  position: relative;
+}
+
+.big-images {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: 26px;
+  top: 25px;
+}
+
+.small-input {
+  height: 42px;
+  font-size: 14px;
+  padding-left: 33px;
+}
+
+.small-input::placeholder {
+  font-weight: normal;
+}
+
+.small-input:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.small-input:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+  font-weight: 800;
+}
+
+.small-images {
+  position: absolute;
+  height: 11px;
+  width: 11px;
+  left: 13px;
+  top: 15px;
+}

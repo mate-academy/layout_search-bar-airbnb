@@ -5,29 +5,27 @@
 
 @font-face {
   font-family: Avenir;
-  font-style: oblique;/*oblique book*/
+  font-style: oblique;
   src: url(fonts/Avenir-Book.ttf);
 }
 
 @font-face {
   font-family: Avenir;
-  font-style: bold; /*bold, heavy*/
+  font-style: bold;
   src: url(fonts/Avenir-Heavy.ttf);
 }
 
 body {
   font-family: Avenir, sans-serif;
-
   box-sizing: border-box;
   font-weight: 300;
+
 }
 
 .searchLarge {
-  box-sizing: border-box;
   margin-top: 20px;
   position: relative;
   height: 70px;
-  width: 100%;
 }
 
 .largeLoop {
@@ -39,30 +37,35 @@ body {
   bottom: 26px;
 }
 
-.inpLarge {
-  padding-inline-start: 62px;
+input {
   height: 100%;
   width: 100%;
+  line-height: 100%;
+  outline: none;
 
   font-family: Avenir, sans-serif;
-  font-style: oblique; /*oblique book*/
-  font-size: 16px;
-  line-height: 100%;
+  font-style: oblique;
   text-align: left;
   vertical-align: top;
   color: #3d4e61;
-  outline: none;
-
   background: #fff;
   border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
   border-radius: 4px;
 }
 
-.inpLarge::placeholder {
-  font-family: Avenir, sans-serif;
-  font-style: oblique; /*oblique book*/
+.inpLarge {
+  padding-inline-start: 62px;
   font-size: 16px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+}
+
+.inpLarge::placeholder {
+  font-size: 16px;
+}
+
+::placeholder {
+  font-family: Avenir, sans-serif;
+  font-style: oblique;
   line-height: 100%;
   text-align: left;
   vertical-align: top;
@@ -72,32 +75,17 @@ body {
 .inpLarge:hover {
   background-color: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   stroke: solid;
-  border: 1px solid #e1e7ed;
   box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
-  border-radius: 4px;
 }
 
 .inpLarge:focus {
-  font-family: Avenir, sans-serif;
-  font-style: bold; /*bold, heavy*/
-  font-size: 16px;
-  line-height: 100%;
-  text-align: left;
-  vertical-align: top;
-
-  background: #fff;
-  border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  border-radius: 4px;
-
 }
 
 .searchSmall {
-  box-sizing: border-box;
   margin-top: 20px;
   position: relative;
   height: 42px;
-  width: 100%;
   border-radius: 4px;
 }
 
@@ -112,38 +100,19 @@ body {
 
 .inpSmall {
   padding-inline-start: 33px;
-  height: 100%;
-  width: 100%;
-
-  /* border: #fff; */
-  font-family: Avenir, sans-serif;
-  font-style: oblique;/*oblique book*/
   font-size: 14px;
-  line-height: 100%;
-  text-align: left;
-  vertical-align: top;
-  color: #3d4e61;
-  outline: none;
-
-  background: #fff;
-  border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  border-radius: 4px;
 }
 
-.searchSmall:hover {
-  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+.inpSmall::placeholder {
+  font-size: 14px;
+}
 
+.inpSmall:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
 }
 
 .inpSmall:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border: 1px solid #e1e7ed;
   border-radius: 3px;
-  font-family: Avenir, sans-serif;
-  font-style: bold; /*bold, heavy*/
-  font-size: 14px;
-  line-height: 100%;
-  text-align: left;
-  vertical-align: top;
 }

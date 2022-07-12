@@ -11,34 +11,48 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="action" method="post">
 
-      <div class="container bigContainer">
-        <img class="bigImg" src="images/Search.svg"
-        alt="imgs">
+    <form
+      action="action" method="get"
+      class="form-field bigSearch"
+      data-qa="big">
 
-        <label for="bigSearch" class="form-field">
-          <input type="text"
+      <label for="bigSearch" class="search">
+
+        <img
+        class="icon bigIcon"
+        src="images/Search.svg"
+        alt="bigIcon">
+
+        <input type="text"
           name="bigSearch"
           placeholder="Try &quot;Los Angeles&quot"
           id="bigSearch"
+          class="inputBig"
           data-qa="keypress">
-        </label>
-      </div>
+
+      </label>
+
     </form>
 
-    <form action="action" method="post">
+    <form
+      action="action" method="get"
+      class="form-field smallSearch"
+      data-qa="small">
 
-      <div class="container smallContainer">
-        <img class="smallImg" src="images/Search.svg"
+      <label for="smallSearch" class="search">
+
+        <img
+        class="icon smallIcon"
+        src="images/Search.svg"
         alt="imgs">
-        <label for="smallSearch">
-          <input type="text"
+
+        <input type="text"
           name="smallSearch"
           placeholder="Try &quot;Los Angeles&quot"
           id="smallSearch">
-        </label>
-      </div>
+      </label>
+
     </form>
 
   </body>

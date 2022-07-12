@@ -6,74 +6,91 @@
 }
 @font-face {
   font-family: "Avenir";
-  src: url(./fonts/Avenir-Heavy.ttf);
   font-style: normal;
+  src: url(./fonts/Avenir-Heavy.ttf);
   font-weight: 800px;
 }
 
 body {
-  padding: 0;
   margin-top: 20px;
-}
-
-.form-field {
-  width: 100%;
-  border: 1px solid rgba(225, 231, 237, 1);
-  border-radius: 4px;
+  font-weight: 300;
+  box-sizing: border-box;
 }
 
 .search {
   font-family: Avenir, sans-serif;
   color: rgba (61, 78, 97, 0.1);
   background: #fff;
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 4px;
+  font-weight: 800px;
+}
 
+.search::placeholder {
+  font-family: Avenir, sans-serif;
+  color: rgba(61, 78, 97, 1);
+  font-weight: 300px;
 }
 
 .bigSearch {
+  font-size: 16px;
   margin-bottom: 20px;
+  width: 100%;
   height: 70px;
+  line-height: 22px;
+  padding-left: 62px;
 }
 
-.inputBig {
-  width: 129px;
-  height: 22px;
-  margin-top: 25px;
-  margin-left: 62px;
-  margin-bottom: 23px;
-  font-size: 16px;
-  border: #fff;
+.bigSearch:hover {
+  box-shadow: 0 3px 8px rgba(61,78,97,0.2);
+  border: 1px solid rgba(225,231,237,1);
+  border-radius: 4px;
+}
+
+.bigSearch:focus {
+  border: 1px solid rgba(225,231,237,1);
+  border-radius: 3px;
+  background: linear-gradient
+    (180deg rgba(255, 255, 255, 1) 0%, rgba(246, 246, 247, 1) 100%);
+  outline: none;
 }
 
 .smallSearch {
+  width: 100%;
   height: 42px;
-}
-
-.inputSmall {
-  width: 167.29px;
-  height: 20px;
-  margin-top: 12px;
-  margin-left: 33px;
-  margin-bottom: 10px;
   font-size: 14px;
-  border: #fff;
+  padding-left: 33px;
+  line-height: 19px;
 }
 
-.icon {
-  position: absolute;
+.smallSearch:hover {
+  box-shadow: 0 3px 8px rgba(61,78,97,0.2);
+  border: 1px solid rgba(225,231,237,1);
+  border-radius: 4px;
+}
+
+.smallSearch:focus {
+  border: 1px solid rgba(225,231,237,1);
+  border-radius: 3px;
+  background: linear-gradient
+    (180deg rgba(255, 255, 255, 1) 0%, rgba(246, 246, 247, 1) 100%);
+  outline: none;
 }
 
 .bigIcon {
+  box-sizing: border-box;
+  position: absolute;
   width: 19px;
   height: 19px;
-  margin-left: 26px;
-  margin-top: 25px;
-  margin-bottom: 26px ;
+  left: 31px;
+  top: 45px;
 }
 
 .smallIcon {
+  box-sizing: border-box;
+  position: absolute;
   width: 11px;
   height: 11px;
-  margin-left: 13px;
-  margin-top: 15px;
-  margin-bottom: 16px ;
+  left: 20px;
+  top: 125px;
 }

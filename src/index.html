@@ -4,13 +4,37 @@
     <meta charset="UTF-8">
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <form class="container container-top"
+          method="get"
+          data-qa="big"
+        >
+      <button class="button-top button"
+          type="submit"
+      >
+      </button>
+      <input type="text"
+        data-qa="keypress"
+        placeholder="Try &quot;Los Angeles&quot;"
+        class="input-top input"
+          >
+    </form>
+    <form class="container container-bottom"
+       data-qa="small"
+       method="get"
+      >
+      <button class="button-bottom button">
+      </button>
+      <input type="text"
+         placeholder="Try &quot;Los Angeles&quot;"
+         class="input-bottom input"
+        >
+    </form>
+    </div>
   </body>
 </html>

@@ -13,22 +13,31 @@
   <body>
     <form action="action" method="post">
 
-      <label for="bigSearch">
-        <input type="text"
-         name="bigSearch"
-         id="bigSearch">
-      </label>
+      <div class="container">
+        <img class="bigImg" src="images/Search.svg"
+        alt="imgs">
 
+        <label for="bigSearch" class="form-field">
+          <input type="text"
+          name="bigSearch"
+          id="bigSearch"
+          data-qa="keypress">
+        </label>
+      </div>
     </form>
 
     <form action="action" method="post">
 
-      <label for="smallSearch">
-        <input type="text"
-         name="smallSearch"
-         id="smallSearch">
-      </label>
-
+      <div class="container">
+        <img class="smallImg" src="images/Search.svg"
+        alt="imgs">
+        <label for="smallSearch">
+          <input type="text"
+          name="smallSearch"
+          id="smallSearch">
+        </label>
+      </div>
     </form>
+
   </body>
 </html>

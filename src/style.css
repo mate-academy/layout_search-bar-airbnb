@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "Avenir" ;
+  font-family: "Avenir-Book" ;
   src: url(fonts/Avenir-Book.ttf);
 }
 
 @font-face {
-  font-family: "Avenir" ;
+  font-family: "Avenir-Heavy" ;
   font-weight: bold;
   src: url(fonts/Avenir-Heavy.ttf);
 }
@@ -14,10 +14,9 @@
 }
 
 .bar {
-  font-family: "Avenir", sans-serif;
+  font-family: "Avenir-Book", sans-serif;
   width: 100%;
   color: #3d4e61;
-  font-weight: 700;
   border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px rgb(61 78 97 / 10%);
   border-radius: 4px;
@@ -68,8 +67,10 @@
 }
 
 .bar:focus {
+  font-family: "Avenir-Heavy", sans-serif;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
   border-radius: 3px;
   outline: 0;
+  font-weight: 700;
 }

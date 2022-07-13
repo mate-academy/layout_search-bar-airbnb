@@ -20,12 +20,16 @@
       action="/"
       data-qa="big"
     >
-    <img
+        <img
     class="icon icon--big"
     src="./images/Search.svg"
     alt="logo"
     >
-      <input
+    <label 
+    for="search-input"
+    class="search-input--big"
+    >
+        <input
         class="input input--big"
         type="text"
         name="search"
@@ -33,26 +37,33 @@
         placeholder="Try &quot;Los-Angeles&quot"
         data-qa="keypress"
       >
-    </form>
-    <form
+    </label>
+      </form>
+      <form
       class="search-form search-form--small"
       method="get"
       action="/"
       data-qa="small"
-    >
-    <img
+      >
+        <img
     class="icon icon--small"
     src="./images/Search.svg"
     alt="logo-small"
-  >
-      <input
+        >
+        <label 
+        for="search-input--small"
+        class="search-input--small---label"
+        >
+        <input
         class="input input--small"
         type="text"
         name="search-small"
         placeholder="Try &quot;Los-Angeles&quot"
+        id="search-input--small"
       >
-    </form>
-  </div>
+        </label>
+      </form>
+    </div>
     <footer class="footer">
       &#169; Yevhenii Stanchenko.
     </footer>

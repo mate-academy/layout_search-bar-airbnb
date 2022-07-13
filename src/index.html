@@ -11,6 +11,50 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <div
+    class="container"
+    >  
+      <form
+      class="search-form search-form--big"
+      method="get"
+      action="/"
+      data-qa="big"
+    >
+    <img
+    class="icon icon--big"
+    src="./images/Search.svg"
+    alt="logo"
+    >
+      <input
+        class="input input--big"
+        type="text"
+        name="search"
+        id="search-input"
+        placeholder="Try &quot;Los-Angeles&quot"
+        data-qa="keypress"
+      >
+    </form>
+    <form
+      class="search-form search-form--small"
+      method="get"
+      action="/"
+      data-qa="small"
+    >
+    <img
+    class="icon icon--small"
+    src="./images/Search.svg"
+    alt="logo-small"
+  >
+      <input
+        class="input input--small"
+        type="text"
+        name="search-small"
+        placeholder="Try &quot;Los-Angeles&quot"
+      >
+    </form>
+  </div>
+    <footer class="footer">
+      &#169; Yevhenii Stanchenko.
+    </footer>
   </body>
 </html>

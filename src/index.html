@@ -11,6 +11,36 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <form
+      class="searchBar"
+      action="https://www.google.com/search?q=James+Webb+Space+Telescope&oi=ddle&ct=236838912&hl=en-GB&source=doodle-ntp&ved=0ahUKEwjAjODy8fX4AhWUP-wKHWXQBGkQPQgB"
+      method="get"
+      data-qa="big"
+    >
+      <div class="searchBarImg"></div>
+      <input
+        type="text"
+        name="bigSearchBar"
+        data-qa="keypress"
+        class="inputSearchBar inputBigSearchBar"
+        placeholder="Try “Los Angeles”"
+        autocomplete="off"
+      >
+    </form>
+    <form
+      class="searchBar smallSearchBar"
+      action="https://www.google.com/search?q=James+Webb+Space+Telescope&oi=ddle&ct=236838912&hl=en-GB&source=doodle-ntp&ved=0ahUKEwjAjODy8fX4AhWUP-wKHWXQBGkQPQgB"
+      method="get"
+      data-qa="small"
+    >
+      <div class="searchBarImg smallImg"></div>
+      <input
+        type="text"
+        name="smallSearchBar"
+        class="inputSearchBar inputSmallSearchBar"
+        placeholder="Try “Los Angeles”"
+        autocomplete="off"
+      >
+    </form>
   </body>
 </html>

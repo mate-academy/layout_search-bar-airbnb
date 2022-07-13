@@ -1,0 +1,79 @@
+
+@font-face {
+  font-family: Avenir;
+  src: url("fonts/Avenir-Book.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url("fonts/Avenir-Heavy.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+.searchBar {
+  margin-top: 20px;
+  position: relative;
+}
+
+.inputSearchBar {
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+  font-family: Avenir, sans-serif, color #3d4e61;
+  font-weight: 900;
+  color: #3d4e61;
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  background: fff;
+
+}
+
+.inputSearchBar:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+}
+
+.inputSearchBar:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+}
+
+.inputSearchBar::placeholder {
+  font-weight: 500;
+}
+
+.inputBigSearchBar {
+  height: 70px;
+  padding: 0 0 0 62px;
+  line-height: 22px;
+  font-size: 16px;
+}
+
+.searchBarImg {
+  background-image: url("images/Search.svg");
+  position: absolute;
+  height: 19px;
+  width: 19px;
+  left: 26px;
+  top: 25px;
+  border-radius: 0;
+}
+
+.smallImg {
+  height: 11px;
+  width: 11px;
+  left: 13px;
+  top: 15px;
+  border-radius: 0;
+  background-size: contain;
+}
+
+.inputSmallSearchBar {
+  height: 42px;
+  padding: 0 0 0 33px;
+  font-size: 14px;
+  line-height: 19px;
+}

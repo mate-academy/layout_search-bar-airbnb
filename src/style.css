@@ -1,4 +1,4 @@
- * {
+* {
     box-sizing: border-box;
   }
 
@@ -12,12 +12,14 @@
     font-family: "Avenir";
     src: url(fonts/Avenir-Heavy.ttf);
   }
+ 
+ 
   .form {
     margin-top: 20px;
     position: relative;
   }
  
-  .smaillInput, .bigInput {
+  .field {
     font-family: "Avenir", Arial, Helvetica, sans-serif;
     font-weight: 300;
     color: #3d4e61;
@@ -31,11 +33,11 @@
     padding-left: 33px;
   }
  
-  .smaillInput::placeholder, .bigInput::placeholder {
+  .field::placeholder {
     color: #3d4e61;
   }
  
-  .smaillInput:focus, .bigInput:focus {
+  .field:focus {
     outline: none;
     font-weight: 400;
     box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
@@ -44,7 +46,7 @@
     background-blend-mode: normal;
   }
  
-  .smaillInput:hover, .bigInput:hover {
+  .field:hover {
     box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
   }
  

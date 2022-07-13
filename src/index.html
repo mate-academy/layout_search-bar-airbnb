@@ -14,20 +14,13 @@
       action="http://localhost:8080/api"
       method="get">
 
-      <label class="bar">
-        <img
-          class="search__icon"
-          src="/images/Search.svg"
-          alt="lupa"
-        >
-        <input
-          class="input"
-          type="text"
-          placeholder="Try &quot;Los Angeles&quot;"
-          data-qa="keypress"
-          name="city"
-        >
-      </label>
+      <input
+        class="input"
+        type="text"
+        placeholder="Try &quot;Los Angeles&quot;"
+        data-qa="keypress"
+        name="search__big"
+      >
     </form>
 
     <form
@@ -35,18 +28,12 @@
       action="http://localhost:8080/api"
       method="get">
 
-      <label class="bar bar__small">
-        <img
-          class="search__icon search__icon__small"
-          src="images/Search.svg"
-          alt="lupa">
-        <input
-          class="input input__small"
-          type="text"
-          name="city"
-          placeholder="Try &quot;Los Angeles&quot;"
-        >
-      </label>
+      <input
+        class="input input__small"
+        type="text"
+        name="search__small"
+        placeholder="Try &quot;Los Angeles&quot;"
+      >
     </form>
 
   </body>

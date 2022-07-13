@@ -1,35 +1,26 @@
 * {
   box-sizing: border-box;
-  font-weight: 300;
-}
-
-form {
-  display: block;
-  margin-top: 0;
+  font-weight: normal;
 }
 
 .bigSearchBar {
   margin: 20px 0;
+  position: relative;
 }
 
-.bigButton {
+.bigImage {
   position: absolute;
-  padding: 25px 17px 25px 25px;
-}
-
-.bigButton img {
+  top: 25px;
+  left: 26px;
   width: 19px;
-}
-
-.btn {
-  border: none;
-  background-color: transparent;
+  height: 19px;
 }
 
 .bigSearchBarInput {
-  padding: 25px 0 25px 62.6px;
+  padding-left: 62px;
   font-size: 16px;
   height: 70px;
+  border-radius: 3px;
 }
 
 .input {
@@ -38,30 +29,32 @@ form {
   font-weight: 700;
   border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px rgb(61 78 97 / 10%);
-  border-radius: 4px;
   display: block;
   width: 100%;
 }
 
 .input::placeholder {
   color: #3d4e61;
-  font-weight: 300;
+  font-weight: 400;
 }
 
-.smallButton {
+.smallSearchBar {
+  position: relative;
+}
+
+.smallImage {
   position: absolute;
-  padding: 15px 9px 15px 13px;
-  height: 42px;
-}
-
-.smallButton img {
+  top: 15px;
+  left: 13px;
   width: 11px;
+  height: 11px;
 }
 
 .smallSearchBarInput {
-  padding: 12px 0 12px 33.33px;
+  padding-left: 33px;
   font-size: 14px;
   height: 42px;
+  border-radius: 4px;
 }
 
 .input:hover {

@@ -4,6 +4,12 @@
   font-weight: 300;
 }
 
+@font-face {
+  font-family: "Avenir-bold";
+  src: url(./fonts/Avenir-Heavy.ttf);
+  font-weight: bold;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -24,6 +30,7 @@
 .bar::placeholder {
   color: #3d4e61;
   width: 100%;
+  font-family: "Avenir", sans-serif;
 }
 
 .big-bar {
@@ -34,7 +41,7 @@
   border-radius: 4px;
   height: 70px;
   padding-left: 62px;
-  font-family: "Avenir", sans-serif;
+  font-family: "Avenir-bold", sans-serif;
   font-size: 16px;
   margin-top: 20px;
   margin-left: 8px;
@@ -47,7 +54,7 @@
   border-radius: 4px;
   width: calc(100% - 16px);
   height: 42px;
-  font-family: "Avenir", sans-serif;
+  font-family: "Avenir-bold", sans-serif;
   padding-left: 34px;
   font-size: 14px;
   margin-top: 20px;

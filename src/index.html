@@ -2,15 +2,40 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <form 
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
+      method="get" class="search"
+      data-qa="big"
+    >
+      <button type="submit" class="button_big"> </button>
+      <input 
+        type="search" 
+        name="a" 
+        data-qa="keypress" 
+        placeholder="Try &quot;Los Angeles&quot;" 
+        class="search_big"
+      >
+    </form>
+    <form 
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
+      method="get" 
+      class="search"
+      data-qa="small"
+    >
+      <button type="submit" class="button_small"> </button>
+      <input 
+        type="search" 
+        name="b" 
+        placeholder=" Try &quot;Los Angeles&quot;" 
+        class="search_small"
+      >
+    </form>
   </body>
 </html>

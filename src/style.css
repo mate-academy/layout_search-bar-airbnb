@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 /*Fonts*/
 
 @font-face {
@@ -21,7 +25,6 @@
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
   background: #fff;
-  box-sizing: border-box;
   position: relative;
   margin: 20px 0;
 }
@@ -32,42 +35,21 @@
 
 .form-img {
   position: absolute;
-  overflow: hidden;
-  z-index: 9;
 }
 
 .form-input {
-  position: relative;
   border: none;
-  box-sizing: border-box;
   width: 100%;
   font-family: Avenir, Helvetica, sans-serif;
   font-style: normal;
-  z-index: 9;
   background: transparent;
   padding: 0;
-}
-
-.form-effect {
-  display: block;
-  content: "";
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 4px;
 }
 
 .form-input:focus {
   outline: none;
   font-weight: bold;
-}
-
-.form-input:focus + .form-effect {
-  z-index: 1;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
 .form-input::placeholder {
@@ -76,10 +58,6 @@
 
 /*Search Big*/
 
-.form-big {
-  padding: 23px 0 23px 62px;
-}
-
 .form-img-big {
   top: 25px;
   left: 25px;
@@ -87,13 +65,10 @@
 
 .form-input-big {
   font-size: 16px;
+  padding: 23px 0 23px 62px;
 }
 
 /*Search Mini*/
-
-.form-mini {
-  padding: 10px 0 10px 33px;
-}
 
 .form-img-mini {
   width: 11px;
@@ -103,4 +78,5 @@
 
 .form-input-mini {
   font-size: 14px;
+  padding: 10px 0 10px 33px;
 }

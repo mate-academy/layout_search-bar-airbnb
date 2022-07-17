@@ -7,10 +7,39 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="fonts/Avenir-Book.ttf">
+    <link rel="preconnect" href="fonts/Avenir-Heavy.ttf">
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <form action="#" 
+      class="formSearch"
+      method="post"
+      data-qa="big"
+    >
+      <label>
+        <input 
+          class="inputLarge input" 
+          type="search"
+          data-qa="keypress"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
+    </form>
+
+    <form action="#" 
+      class="formSearch"
+      method="post"
+      data-qa="small"
+    >
+      <label>
+        <input 
+          class="inputSmall input" 
+          type="search"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
+    </form>
   </body>
 </html>

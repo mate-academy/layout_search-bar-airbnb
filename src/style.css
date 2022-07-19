@@ -11,13 +11,12 @@
 }
 
 body {
-  display: block;
   margin: 8px;
   font-family: "Avenir", sans-serif;
   font-size: 16px;
 }
 
-[data-qa="big"] {
+.form {
   width: 100%;
   height: 70px;
   margin: 20px auto 0;
@@ -33,10 +32,6 @@ body {
 .labelSearch::after {
   position: absolute;
   content: "";
-  display: block;
-}
-
-.labelSearchBig::after {
   background-image: url(../src/images/Search.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -46,64 +41,14 @@ body {
   left: 26px;
 }
 
-.inputTextBig {
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  outline: none;
-  box-sizing: border-box;
-  border: 1px solid #e1e7ed;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 300;
-  font-family: inherit;
-  color: #3d4e61;
-  padding: 0 0 0 62px;
-  border-radius: 4px;
-}
-
-.inputTextBig:hover {
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-  border-radius: 4px;
-  font-style: normal;
-}
-
-.inputTextBig:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border-radius: 3px;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 22px;
-  color: #3d4e61;
-}
-
-.inputTextBig::placeholder {
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 300;
-  font-family: inherit;
-  color: #3d4e61;
-}
-
-[data-qa="small"] {
-  width: 100%;
-  height: 42px;
-  margin-top: 20px;
-}
-
 .labelSearchSmall::after {
-  background-image: url(../src/images/Search.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
   width: 11px;
   height: 11px;
   top: 15px;
   left: 13px;
 }
 
-.inputTextSmall {
+.input {
   width: 100%;
   height: 100%;
   background: #fff;
@@ -111,34 +56,45 @@ body {
   outline: none;
   box-sizing: border-box;
   border: 1px solid #e1e7ed;
-  font-size: 14px;
-  line-height: 19px;
+  font-size: 16px;
+  line-height: 22px;
   font-weight: 300;
   font-family: inherit;
-  padding: 0 0 0 33px;
+  font-style: normal;
+  color: #3d4e61;
+  padding: 0 0 0 62px;
   border-radius: 4px;
+}
+
+.input:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.input:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.input::placeholder {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: inherit;
+  color: #3d4e61;
+}
+
+.formSmall {
+  height: 42px;
+  margin-top: 20px;
+}
+
+.inputTextSmall {
+  font-size: 14px;
+  line-height: 19px;
+  padding: 0 0 0 33px;
 }
 
 .inputTextSmall::placeholder {
   font-size: 14px;
   line-height: 19px;
-  font-weight: 300;
-  font-family: inherit;
-  color: #3d4e61;
-}
-
-.inputTextSmall:hover {
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-  border-radius: 4px;
-}
-
-.inputTextSmall:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border-radius: 3px;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 19px;
-  color: #3d4e61;
-  outline: none;
 }

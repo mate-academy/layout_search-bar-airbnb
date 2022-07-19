@@ -17,10 +17,14 @@
       class="search_form" 
       data-qa="big">
 
-      <input class="search_input" 
-      type="text" 
-      placeholder="Try &quot;Los Angeles&quot;" 
-      data-qa="big">
+      <label for="big_search" class="search_label">
+        <input class="search_input" 
+        type="text" 
+        placeholder="Try &quot;Los Angeles&quot;" 
+        id="big_search"
+        data-qa="keypress">
+      </label>
+
     </form>
 
     <form action="https://www.google.com/search" 
@@ -28,10 +32,14 @@
       class="search_form" 
       data-qa="small">
 
-      <input class="search_input" 
+      <label for="small_search">
+        <input class="search_input" 
         type="text" 
         placeholder="Try &quot;Los Angeles&quot;" 
-        data-qa="small">
+        data-qa="small"
+        id="small_search">
+      </label>
+
     </form>
 
   </body>

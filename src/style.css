@@ -1,48 +1,48 @@
 @font-face {
   font-family: Avenir;
   src: url(./fonts/Avenir.ttc);
-  font-weight: normal;
 }
 
-body{
+body {
   font-weight: 300;
+  padding: 0;
 }
 
 .search-large {
   box-sizing: border-box;
   width: 100%;
-  min-width:max-content;
+  min-width: max-content;
   height: 70px;
   border-radius: 4px;
-  background: #FFFFFF;
-  border: 1px solid #E1E7ED;
-  box-shadow: 0px 1px 8px rgba(61, 78, 97, 0.1);
+  background: #fff;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   padding: 0;
   overflow: hidden;
-  margin-top: 20px;
+  margin: 20px 0;
+  position: relative;
 }
 
-
 .search-large:hover {
-  box-shadow: 0px 3px 8px rgba(61, 78, 97, 0.2);
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
   border-radius: 4px;
 }
 
 .search-large:focus {
-  box-shadow: 0px 3px 8px rgba(61, 78, 97, 0.2);
-  background: linear-gradient(180deg, #FFFFFF 0%, #F6F6F7 100%);
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
 }
 
 .search-small {
   box-sizing: border-box;
   min-width: max-content;
-  margin-top: 20px;
+  margin: 20px 0;
   width: 100%;
   height: 42px;
-  background: #FFFFFF;
-  border: 1px solid #E1E7ED;
-  box-shadow: 0px 1px 8px rgba(61, 78, 97, 0.1);
+  background: #fff;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
   padding: 0;
   overflow: hidden;
@@ -50,56 +50,48 @@ body{
 
 }
 
-.search-small:hover{
-  box-shadow: 0px 3px 8px rgba(61, 78, 97, 0.2);
+.search-small:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
   border-radius: 4px;
 }
 
-.search-small:focus{
-  background: linear-gradient(180deg, #FFFFFF 0%, #F6F6F7 100%);
+.search-small:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
 }
 
 .text-large {
-  margin: 0px 17px;
   padding: 0;
-  display: inline-block;
-  font-family: 'Avenir';
+  font-family: Avenir, Arial, Helvetica, sans-serif;
   font-size: 16px;
-  line-height: 21.86px;
-  color: #3D4E61;
-  border: 1px;
+  line-height: 22px;
+  color: #3d4e61;
+  border: 0;
   width: 129px;
   height: 22px;
-  position: relative;
-  vertical-align: middle;
-  text-align: left;
+  position: absolute;
+  left: 62px;
+  top: 25px;
 }
 
-/* .text-large:hover {
-  font-weight: bold;
-} */
-
-.text-large:focus{
-  width: 160.98px
+.text-large:focus {
+  width: 160.98px;
 }
 
 .text-small {
-  display: inline-block;
-  vertical-align: middle;
-  font-family: 'Avenir';
+  font-family: Avenir, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 19.12px;
-  color: #3D4E61;
-  border: 1px;
+  line-height: 19px;
+  color: #3d4e61;
+  border: 0;
   width: 167.29px;
   height: 20px;
   padding: 0;
-  margin: 0 9px;
-  position: relative;
-
+  position: absolute;
+  left: 33px;
+  top: 12px;
 }
 
 .text-small:focus {
@@ -111,56 +103,39 @@ img {
 }
 
 .icon-search-large {
-  box-sizing: border-box;
-  display: inline-block;
-  vertical-align: middle;
-  width: 19px;
   height: 19px;
-}
-.icon-search-large:hover{
-  /* background: #687C94; */
-  border: 1px solid #687C94;
-}
-
-.icon-search-large:focus{
-  background: #687C94;
- /* border: 1px  solid #687C94; */
+  width: 19px;
+  position: absolute;
+  left: 26px;
+  top: 25px;
 }
 
+.icon-search-large:hover {
+  border: 1px solid #687c94;
+}
+
+.icon-search-large:focus {
+  background: #687c94;
+}
 
 .icon-search-small {
-  object-position: center;
-  object-fit: contain;
-  box-sizing: border-box;
-  display: inline-block;
-  vertical-align: middle;
   width: 11px;
   height: 11px;
-}
-
-.icon-search-small:hover {
-  background-color: #687C94;
-}
-
-.icon-search-small:focus {
-  background-color: #687C94;
-}
-
-.large-block {
-  position: relative;
-  top: 25px;
-  left: 26px;
-}
-
-.small-block {
-  position: relative;
-  top: 12px;
+  position: absolute;
+  top: 15px;
   left: 13px;
 }
 
+.icon-search-small:hover {
+  background-color: #687c94;
+}
 
+.icon-search-small:focus {
+  background-color: #687c94;
+}
 
-
-
-
-
+.text-large::placeholder {
+  padding: 0;
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+  margin: 0;
+}

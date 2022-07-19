@@ -9,43 +9,40 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form 
-      action="#" 
+    <form
       class="bigSearchBar"
-      method="get"
-    > 
-      <label class="searchBar1">
-        <img 
-          src="images/Search.svg" 
-          alt="a" 
-          class="image1"
-        >
-        <input
-          type="text"
-          class="firstSearchBar"
-          placeholder="Try &quot;Los Angeles &quot"
-          data-qa="big"
-        >
-      </label>
-    </form>
-    <form 
-      action="#" 
-      class="smallSearchBar" 
-      method="get"
+      action="#"
+      method="post"
+      data-qa="big"
     >
-      <label class="searchBar2">
-        <img 
-          src="images/Search.svg" 
-          alt="a" 
-          class="image2"
-        >
-        <input
-          type="text"
-          class="secondSearchBar"
-          placeholder="Try &quot;Los Angeles &quot"
-          data-qa="small"
-        >
-      </label>
+      <img
+        src="./images/Search.svg"
+        alt="a"
+        class="imageFirst"
+      >
+      <input
+        type="text"
+        class="bigSearchInput"
+        data-qa="keypress"
+        placeholder="Try &quot;Los Angeles&quot;"
+      >
+    </form>
+    <form
+      class="smallSearchBar"
+      action="#"
+      method="post"
+      data-qa="small"
+    >
+      <img
+        src="./images/Search.svg"
+        alt="a"
+        class="imageSecond"
+      >
+      <input
+        type="text"
+        class="smallSearchInput"
+        placeholder="Try &quot;Los Angeles&quot;"
+      >
     </form>
   </body>
 </html>

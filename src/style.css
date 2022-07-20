@@ -64,18 +64,15 @@ body {
   padding: 0;
   font-family: Avenir, Arial, Helvetica, sans-serif;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 21.86px;
   color: #3d4e61;
   border: 0;
-  width: 129px;
-  height: 22px;
+  width: 158px;
   position: absolute;
   left: 62px;
-  top: 25px;
-}
-
-.text-large:focus {
-  width: 160.98px;
+  right: 18.35%;
+  top: 35.71%;
+  bottom: 37.14%;
 }
 
 .text-small {
@@ -83,15 +80,21 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 19.12px;
   color: #3d4e61;
   border: 0;
-  width: 167.29px;
-  height: 20px;
   padding: 0;
   position: absolute;
+  width: 158px;
+  height: 19px;
   left: 33px;
-  top: 12px;
+  right: 55.27%;
+  top: 28.57%;
+  bottom: 26.19%;
+  /* left: 7.73%;
+  right: 55.27%;
+  top: 28.57%;
+  bottom: 26.19%; */
 }
 
 .text-small:focus {
@@ -103,39 +106,52 @@ img {
 }
 
 .icon-search-large {
-  height: 19px;
-  width: 19px;
+  box-sizing: border-box;
   position: absolute;
+  width: 19px;
+  height: 19px;
   left: 26px;
   top: 25px;
 }
 
-.icon-search-large:hover {
-  border: 1px solid #687c94;
-}
-
-.icon-search-large:focus {
-  background: #687c94;
-}
-
 .icon-search-small {
+  position: absolute;
   width: 11px;
   height: 11px;
-  position: absolute;
   top: 15px;
   left: 13px;
 }
 
-.icon-search-small:hover {
-  background-color: #687c94;
-}
-
-.icon-search-small:focus {
-  background-color: #687c94;
-}
-
 .text-large::placeholder {
-  padding: 0;
   font-family: Avenir, Arial, Helvetica, sans-serif;
-  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3d4e61;
+}
+
+.text-small::placeholder {
+  position: absolute;
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19.12px;
+  width: 167.29px;
+  height: 20px;
+  color: #3d4e61;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  left: 0%;
+  right: -5.88%;
+  top: 0%;
+  bottom: -5.26%;
+
+}
+
+.text-small:hover::placeholder {
+  filter: none;
+}
+
+.text-small:focus::placeholder {
+  font-weight: 900;
+  filter: none;
 }

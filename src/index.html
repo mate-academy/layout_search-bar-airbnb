@@ -11,62 +11,38 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div
-    class="container"
-    >  
-      <form
-      class="search-form search-form--big"
-      method="get"
+    <form
       action="/"
+      method="post"
       data-qa="big"
+      class="formSearch"
     >
-        <img
-    class="icon icon--big"
-    src="./images/Search.svg"
-    alt="logo"
-    >
-        <label 
-    for="search-input"
-    class="search-input--big"
-    >
-          <input
-        class="input input--big"
-        type="text"
-        name="search"
-        id="search-input"
-        placeholder="Try &quot;Los Angeles&quot"
-        data-qa="keypress"
-      >
-        </label>
-      </form>
-    </div>
-    <div
-      class="container"
-      >
-      <form
-      class="search-form search-form--small"
-      method="get"
+      <label>
+        <input
+          class="searchInput"
+          type="search"
+          name="search"
+          placeholder="Try &quot;Los Angeles&quot;"
+          data-qa="keypress"
+        >
+      </label>
+    </form>
+
+    <form
       action="/"
+      method="post"
       data-qa="small"
-      >
-        <img
-    class="icon icon--small"
-    src="./images/Search.svg"
-    alt="logo-small"
+      class="formSearch"
+    >
+      <label>
+        <input
+          class="searchInput searchInput--small"
+          type="search"
+          name="search"
+          placeholder="Try &quot;Los Angeles&quot;"
+          data-qa="keypress"
         >
-        <label 
-        for="search-input--small"
-        class="search-input--small---label"
-        >
-          <input
-        class="input input--small"
-        type="text"
-        name="search-small"
-        placeholder="Try &quot;Los Angeles&quot"
-        id="search-input--small"
-          >
-        </label>
-      </form>
-    </div>
+      </label>
+    </form>
   </body>
 </html>

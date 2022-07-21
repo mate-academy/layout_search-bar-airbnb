@@ -1,40 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"></meta>
+    <meta charset="UTF-8">
     <meta
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    > </meta>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"></meta>
+    >
+    <meta 
+      http-equiv="X-UA-Compatible" 
+      content="ie=edge"
+    >
     <title>Search bar airbnb</title>
-    <link rel="stylesheet" href="./style.css"></link>
+    <link 
+      rel="stylesheet" 
+      href="./style.css">
+    </link>
   </head>
   <body>
-    <form class="searchBar" action="/" 
-          method="post">
+    <form 
+      class="searchBar" 
+      action="/" 
+      method="post"
+      data-qa="big"
+    >
       <img src="images/Search.svg" 
-      alt="search symbol" class="searchSymbol"></img>
+        alt="search symbol" 
+        class="searchSymbol">
+      </img>
+      
       <input
           type="search"
           name="searchInput"
           class="searchInput"
-          placeholder="Try &quot;Los Angel&quot;"
-        ></input>
+          placeholder="Try &quot;Los Angeles&quot;"
+          data-qa="keypress"
+      >      
     </form>
-    <form class="searchBarSmall"
-     action="/" method="post">
+    
+    <form 
+      class="searchBarSmall"
+      action="/" 
+      method="post"
+      data-qa="small"
+    >
       <img
-          src="images/Search.svg"
-          alt="search symbol"
-          class="searchSymbolSmall"
-      ></img>
+        src="images/Search.svg"
+        alt="search symbol"
+        class="searchSymbolSmall"
+      >
+      </img>
+
       <input
           type="search"
           name="searchInput"
           class="searchInputSmall"
-          placeholder="Try &quot;Los Angel&quot;"
-      ></input>
+          placeholder="Try &quot;Los Angeles&quot;"
+      >
+      </input>
     </form>
   </body>
 </html>

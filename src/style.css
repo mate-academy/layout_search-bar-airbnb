@@ -15,12 +15,8 @@
 }
 
 .search-bar {
-  margin: 20px 0;
-}
-
-.search-bar__wrapper {
-  display: block;
   position: relative;
+  margin: 20px 0;
 }
 
 .search-bar__icon {
@@ -53,6 +49,11 @@
   font-weight: 800;
 }
 
+.search-bar__field::placeholder {
+  color: #3d4e61;
+  font-weight: 300;
+}
+
 .search-bar--big .search-bar__field {
   font-size: 16px;
   line-height: 22px;
@@ -73,9 +74,4 @@
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
   box-shadow: 0 0 0 transparent;
-}
-
-.search-bar__field::placeholder {
-  color: #3d4e61;
-  font-weight: 300;
 }

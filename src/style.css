@@ -2,11 +2,8 @@
   box-sizing: border-box;
 }
 
-div {
-  height: 20px;
-}
-
-input {
+.form-input-big,
+.form-input-small {
   outline: none;
 }
 
@@ -27,15 +24,16 @@ body {
   margin-top: 0;
 }
 
-form {
+.form {
   position: relative;
+  margin-top: 20px;
 }
 
 .form-field {
   display: block;
 }
 
-.form-field-big input {
+.form-input-big {
   position: relative;
   display: inline-block;
   width: 100%;
@@ -47,7 +45,7 @@ form {
   border-radius: 4px;
 }
 
-.form-field-small input {
+.form-input-small {
   position: relative;
   display: inline-block;
   width: 100%;
@@ -91,7 +89,7 @@ form {
 }
 
 input:focus {
-  background: linear-gradient(180deg, #fff 0%, #d8d8e0 100%);
+  background: linear-gradient(180deg, #fff 0, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
   border-radius: 3px;
   content: "";

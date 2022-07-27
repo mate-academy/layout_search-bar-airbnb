@@ -17,39 +17,42 @@
     >
   </head>
   <body>
-    <form 
-      class="searchBar searchBarBig" 
+    <div class="container">
+      <form 
       action="/" 
       method="post"
       data-qa="big"
-    > 
-      <label for="bigSearchInput" class="searchBarLabel">
-        <input
+      > 
+        <label for="bigSearchInput" class="form-label">
+          <span class="search-image search-image_big"></span>
+          <input
             type="search"
-            name="searchInput"
-            class="searchInput searchInputBig"
+            name="bigsearchInput"
+            class="form-label-input form-label-input_big"
             placeholder="Try &quot;Los Angeles&quot;"
             data-qa="keypress"
             id="bigsearchInput"
-        >
-      </label>      
-    </form>
-    
-    <form 
-      class="searchBar searchBarSmall"
-      action="/" 
-      method="post"
-      data-qa="small"
-    >
-      <label for="smallSearchInput">
-        <input
+          >
+        </label>
+      </form>
+    </div>
+    <div class="container">
+      <form class="searchBar_small"
+        action="/" 
+        method="post"
+        data-qa="small"
+      >      
+        <label for="smallSearchInput" class="form-label form-label_small">
+          <span class="search-image search-image_small"></span>
+          <input
             type="search"
             name="searchInput"
-            class="searchInput searchInputSmall"
+            class="form-label-input form-label-input_small"
             placeholder="Try &quot;Los Angeles&quot;"
             id="smallSearchInput"
-        >
-      </label>
-    </form>
+          >
+        </label>
+      </form>
+    </div>           
   </body>
 </html>

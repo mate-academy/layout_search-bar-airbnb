@@ -1,26 +1,21 @@
-* {
-  box-sizing: border-box;
-}
-
 @font-face {
-  font-family: Avenir;
-  src: url(fonts/Avenir-Heavy.ttf);
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: Avenir;
-  src: url(fonts/Avenir-Book.ttf);
+  font-family: "Avenir";
+  font-style: normal;
+  src: url("fonts/Avenir.ttc");
   font-weight: 300;
 }
 
-body {
-  font-family: Avenir, Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  /* margin: 0 8px; */
+@font-face {
+  font-family: "Avenir";
+  src: url("fonts/Avenir-Heavy.ttf");
+  font-weight: 900;
 }
 
-.container {
+body {
+  margin: 0 8px;
+}
+
+.form-wrap {
   margin-top: 20px;
 }
 
@@ -28,8 +23,9 @@ body {
   position: relative;
 }
 
-.form-label-input {
+.form {
   width: 100%;
+  /*margin-top: 20px;*/
   box-sizing: border-box;
   outline: none;
   border: 1px solid #e1e7ed;
@@ -38,47 +34,53 @@ body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   font-weight: 900;
   color: #3d4e61;
+  /*background-image: url("images/Search.svg");*/
+  /*background-repeat: no-repeat;*/
 }
 
-.form-label-input_big {
+.form_big {
+  /*background-size: 19px;*/
+  /*background-position: 25px 25px;*/
   height: 70px;
   padding: 25px 25px 25px 62px;
   font-size: 16px;
 }
 
-.form-label-input_small {
+.form_small {
+  /*background-size: 11px;*/
+  /*background-position: 12px 14px;*/
   height: 42px;
-  padding: 10px 12px 10px 33px;
+  padding: 10px 11px 10px 33px;
   font-size: 14px;
 }
 
-.form-label-input::placeholder {
+.form::placeholder {
   font-weight: 300;
 }
 
-.form-label-input:focus {
+.form:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
-.form-label-input:hover {
+.form:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.search-image {
+.search-icon {
   position: absolute;
   background: url("images/Search.svg") no-repeat ;
   background-size: cover;
 }
 
-.search-image_big {
+.search-icon_big {
   top: 0;
   left: 25px;
   width: 19px;
   height: 19px;
 }
 
-.search-image_small {
-  top: 4px;
+.search-icon_small {
+  top: 3px;
   left: 13px;
   width: 11px;
   height: 11px;

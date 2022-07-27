@@ -17,42 +17,37 @@
     >
   </head>
   <body>
-    <div class="container">
-      <form 
-      action="/" 
+    <form
+      class="form-wrap"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
       data-qa="big"
-      > 
-        <label for="bigSearchInput" class="form-label">
-          <span class="search-image search-image_big"></span>
-          <input
-            type="search"
-            name="bigsearchInput"
-            class="form-label-input form-label-input_big"
-            placeholder="Try &quot;Los Angeles&quot;"
-            data-qa="keypress"
-            id="bigsearchInput"
-          >
-        </label>
-      </form>
-    </div>
-    <div class="container">
-      <form class="searchBar_small"
-        action="/" 
-        method="post"
-        data-qa="small"
-      >      
-        <label for="smallSearchInput" class="form-label form-label_small">
-          <span class="search-image search-image_small"></span>
-          <input
-            type="search"
-            name="searchInput"
-            class="form-label-input form-label-input_small"
-            placeholder="Try &quot;Los Angeles&quot;"
-            id="smallSearchInput"
-          >
-        </label>
-      </form>
-    </div>           
+    >
+      <label class="form-label">
+        <span class="search-icon search-icon_big"></span>
+        <input
+          type="text"
+          class="form form_big"
+          placeholder="Try &quot;Los Angeles&quot;"
+          data-qa="keypress"
+        >
+      </label>
+    </form>
+
+    <form
+      class="form-wrap"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+      data-qa="small"
+    >
+      <label class="form-label">
+        <span class="search-icon search-icon_small"></span>
+        <input
+          type="text"
+          class="form form_small"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
+    </form>      
   </body>
 </html>

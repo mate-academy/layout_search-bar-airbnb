@@ -13,17 +13,12 @@ body {
   font-family: "Avenir", Arial, Helvetica, sans-serif;
 }
 
-input,
-form {
+.search-input-small,
+.search-input-big,
+.search-form {
   border: none;
   margin: 0;
   padding: 0;
-  background-color: transparent;
-}
-
-textarea:focus,
-input:focus {
-  outline: none;
   background-color: transparent;
 }
 
@@ -44,6 +39,12 @@ input:focus {
   color: #3d4e61;
   font-weight: 500;
   font-style: normal;
+}
+
+.search-input-small:focus,
+.search-input-big:focus {
+  outline: none;
+  background-color: transparent;
 }
 
 .search-input-small::placeholder,

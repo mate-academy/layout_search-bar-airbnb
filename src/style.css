@@ -26,18 +26,19 @@ form {
   
 .firstForm:hover {
   box-shadow: 0 3px 8px 0 #3d4e6133;
+  font-weight: 900;
 }
   
 .firstForm:focus {
   border-radius: 3px;
   background: linear-gradient(0deg, #e1e7ed, #e1e7ed),
     linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  font-weight: 900;
 }
 
 .firstLabel:before {
   content: "";
   background-image: url(images\Search.svg);
-  display: block;
   position: absolute;
   width: 62px;
   height: 100%;
@@ -51,10 +52,10 @@ form {
   height: 22px;
   margin: 22px 0 0 62px;
   border: 0;
+  outline: 0;
 }
 
 .firstInput::placeholder {
-  height: 22px;
   color: #3d4e61;
   font-size: 16px;
   font-family: "Avenir", sans-serif;
@@ -73,10 +74,13 @@ form {
   
 .secondForm:hover {
   box-shadow: 0 3px 8px 0 #3d4e6133;
+  font-weight: 900;
 }
   
 .secondForm:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  font-weight: 900;
+
 }
 
 .secondLabel:before {
@@ -96,10 +100,10 @@ form {
   height: 19px;
   margin: 9px 0 0 33px;
   border: 0;
+  outline: 0;
 }
 
 .secondInput::placeholder {
-  height: 19px;
   font-size: 14px;
   color: #3d4e61;
   font-family: "Avenir", sans-serif;

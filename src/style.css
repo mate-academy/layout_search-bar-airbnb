@@ -1,3 +1,5 @@
+/* fonts */
+
 @font-face {
   font-family: "Avenir";
   src: url(./fonts/Avenir-Book.ttf);
@@ -11,6 +13,8 @@
   font-weight: 300;
   font-style: "normal";
 }
+
+/* main blocks */
 
 .container {
   box-sizing: border-box;
@@ -31,9 +35,11 @@
   top: 20px;
 }
 
+/* buttons */
+
 .button {
   background-image: url(\images\Search.svg);
-  background-color: white;
+  background-color: transparent;
   color: #3d4e61;
   background-repeat: no-repeat;
   background-size: cover;
@@ -55,34 +61,35 @@
   position: absolute;
   top: 14px;
   left: 12px;
-
 }
+
+/* inputs */
 
 .input {
   outline: none;
   font-weight: bold;
-  width: auto;
+  width: 100%;
   color: #3d4e61;
   padding: 0;
   font-style: normal;
   font-family: inherit;
   border: none;
+  box-sizing: border-box;
+  height: 100%;
 }
 
 .inputTop {
-  position: relative;
-  left: 62px;
-  top: 23px;
   font-size: 16px;
   line-height: 22px;
+  padding-left: 62px;
 }
 
 .inputBottom {
-  position: absolute;
   font-size: 14px;
-  top: 10px;
-  left: 33px;
+  padding-left: 33px;
 }
+
+/* effects */
 
 .container:hover {
   background: #fff;
@@ -96,13 +103,8 @@
   font-family: "Avenir", sans-serif;
 }
 
-.container:focus-within {
+.input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
   border-radius: 3px;
-
-}
-
-.button:focus-within .input:focus-within:focus-within {
-  background-color: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }

@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <!-- <h1>Search bar airbnb</h1> -->
     <div class="search">
       <label for="first-input">
         <form 
@@ -20,15 +19,13 @@
           data-qa="big"
           method="get"
         >
-          <div class="search-icon">
-            <img 
+          <img 
+            class="search-icon" 
             src="./images/Search.svg" 
             alt="search-icon"
-            
           >
-          </div>
           <input
-            class="input first"
+            class="input"
             id="first-input" 
             type="text" 
             placeholder="Try &quot;Los Angeles&quot;"
@@ -51,7 +48,7 @@
           class="search-icon small-icon"
         >
         <input 
-          class="input second"
+          class="input input--small"
           id="second-input"
           type="text" 
           placeholder="Try &quot;Los Angeles&quot;"

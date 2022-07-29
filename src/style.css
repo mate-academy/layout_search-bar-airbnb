@@ -1,19 +1,21 @@
 @font-face {
-  font-family: Avenir;
+  font-family: "Avenir";
   src: url(./fonts/Avenir-Book.ttf);
   font-style: normal;
   font-weight: 300;
 }
 
 @font-face {
-  font-family: Avenir;
+  font-family: "Avenir";
   src: url(./fonts/Avenir-Heavy.ttf);
   font-style: normal;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 body {
   font-weight: 300;
+  box-sizing: border-box;
+  font-family: "Avenir", sans-serif;
 }
 
 .search {
@@ -28,11 +30,11 @@ body {
     rgba(61, 78, 97, 0.1);
   height: 70px;
   border-radius: 4px;
-  display: inline-block;
   width: 100%;
-  line-height: 71px;
   font-size: 16px;
+  display: flex;
   box-sizing: border-box;
+  align-items: center;
 }
 
 .search-form:hover {
@@ -41,54 +43,61 @@ body {
 }
 
 .search-form:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background: linear-gradient(180deg, #fff 0%, #3b3b8f 100%);
   border-radius: 3px;
   color: #3d4e61;
+  font-weight: 400;
 }
 
 .search-small {
   height: 42px;
+  width: 100%;
   line-height: 42px;
   font-size: 14px;
   font-weight: 400;
 }
 
-.search-small:focus {
+.input {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: inline-flex;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Avenir", sans-serif;
+}
+
+.input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
   color: #3d4e61;
+}
+
+.input::placeholder {
+  font-family: "Avenir", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3d4e61;
+}
+
+.input--small::placeholder {
+  font-size: 14px;
+  line-height: 19px;
   font-weight: 400;
 }
 
-.first::placeholder {
-  height: 22px;
-  font-size: 16px;
-  font-style: normal;
-  color: #3d4e61;
-}
-
-.second::placeholder {
-  height: 20px;
-  font-size: 14px;
-  font-style: normal;
-  color: #3d4e61;
-}
-
 .search-icon {
-  display: inline-block;
+  display: inline-flex;
   margin-right: 17px;
   margin-left: 26px;
+  width: 19px;
+  height: 19px;
 }
 
 .small-icon {
   margin-right: 9px;
   margin-left: 13px;
   width: 11px;
-}
-
-.input {
-  height: 22px;
-  border: 0;
-  display: inline-block;
-  font-size: 16px;
+  height: 11px;
 }

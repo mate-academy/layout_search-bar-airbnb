@@ -2,6 +2,13 @@
 
 @font-face {
   font-family: "Avenir";
+  src: url(fonts/Avenir.ttc);
+  font-style: normal;
+  font-weight: 300, 800;
+}
+
+@font-face {
+  font-family: "Avenir";
   src: url(fonts/Avenir-Book.ttf) format("truetype");
   font-style: normal;
   font-weight: 300;
@@ -64,21 +71,22 @@
 .textArea::placeholder {
   font-family: Avenir, sans-serif;
   font-weight: 400;
+  color: #3d4e61;
 }
 
 .textArea--small {
   margin-top: 10px;
   margin-left: 10px;
-  font-weight: 900;
-  font-style: normal;
   font-size: 14px;
   line-height: 19px;
-  width: calc(100% - 40px);
+  font-weight: 900;
+  /* width: calc(100% - 40px); */
 }
 
 .textArea--small::placeholder {
-  font-family: Avenir, sans-serif;
-  font-weight: 400;
+  /* font-family: Avenir, sans-serif; */
+  font-weight: 500;
+  color: #3d4e61;
 }
 
 .search-form:hover {

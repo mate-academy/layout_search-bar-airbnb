@@ -12,5 +12,41 @@
   </head>
   <body>
     <h1>Search bar airbnb</h1>
+    <form
+      action="http://localhost:8080/"
+      method="post"
+      data-qa="big"
+      class="bigSearch" >
+      <label for="gsearch">
+        <img src="/D:/IT/Mate/projects/layout_search-bar-airbnb/src/images/Search.svg"
+        alt="smallSearch"
+        class="img">
+        <input
+        class="input inputBig"
+        type="search"
+        name="gsearch"
+        placeholder="Try &quot;Los Angeles&quot"
+        data-qa="keypress"
+        >
+      </label>
+    </form>
+
+    <form
+      action="http://localhost:8080/"
+      method="post"
+      data-qa="small">
+      <label for="gsearch">
+        <img src="/D:/IT/Mate/projects/layout_search-bar-airbnb/src/images/Search.svg"
+        alt="BigSearch"
+        class="imgSmall"
+        >
+        <input
+          class="input inputSmall"
+          type="search"
+          name="gsearch"
+          placeholder="Try &quot;Los Angeles&quot"
+        >
+      </label>
+    </form>
   </body>
 </html>

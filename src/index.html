@@ -11,61 +11,46 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div class="main">
-
-      <div class="box">
-
-        <label class="form-field" >
-
-          <form 
-              action="/"
-              method="get"
-              data-qa="big"
-            >
-                
-            <img 
-            class="search__ImgBig" 
-            src=".\images\Search.svg" 
-            alt="search"
-            >
-            
-            <input type="search" 
-            name="big_search" 
-            class="big_search" 
-            data-qa="keypress"
-            placeholder="Try &quot;Los Angeles&quot;"
-            >
-          </form>
-
-        </label>
-
-      </div>
-        
-      <div class="box">
-        
-        <label class="form-field" >
-          <form 
-            action="/" 
-            method="get"
-            data-qa="small"
-          >
-            <img 
-            class="search__ImgSmall" 
-            src=".\images\Search.svg" 
-            alt="search"
-            >
-
-            <input type="search" 
-            name="small_search" 
-            class="small_search"  
-            placeholder="Try &quot;Los Angeles&quot;"
-            >
-          </form>
-
-        </label>
-
-      </div>
-      
-    </div>
+    <form
+      class="search__form"
+      action="#"
+      method="get"
+      data-qa="big"
+    >
+      <label class="search__label">
+        <img
+          class="search__icon"
+          src="images/Search.svg"
+          alt="search-img"
+        >
+        <input
+          class="search__input"
+          type="search"
+          name="searchBig"
+          placeholder="Try &quot;Los Angeles&quot;"
+          data-qa="keypress"
+        >
+      </label>
+    </form>
+    <form
+      class="search__form"
+      action="#"
+      method="get"
+      data-qa="small"
+    >
+      <label class="search__label search__label--small">
+        <img
+          class="search__icon search__icon--small"
+          src="images/Search.svg"
+          alt="search-img"
+        >
+        <input
+          class="search__input search__input--small"
+          type="search"
+          name="searchSmall"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
+    </form>
   </body>
 </html>

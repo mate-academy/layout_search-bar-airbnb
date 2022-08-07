@@ -12,46 +12,50 @@
 
   </head>
   <body>
-    <form
+    <main class="main">
+      <form
+      action="#"
+      method="get"
+      class="form"
       data-qa="big"
-      class="search-form"
-      action="/" method="post"
-    >
-      <label>
-        <img
-          class="icon"
-          src="images/Search.svg"
-          alt="Search Icon"
-        >
-        <input
-          data-qa="keypress"
-          class="textArea"
-          type="text"
-          name="search"
-          placeholder="Try&nbsp;&quot;Los&nbsp;Angeles&quot;">
-      </label>
-    </form>
+      >
 
-    <form
-      data-qa="small"
-      class="search-form search-form--small"
-      action="/"
-      method="post"
-    >
-      <label>
-        <img
-          class="icon icon--small"
-          src="./images/Search.svg"
-          alt="Search Icon"
+        <div class="search__bar big__search__bar">
+          <label for="big_search_bar">
+            <input
+            data-qa="keypress"
+            class="search__input search__input__big"
+            type="search"
+            name="bigSearchBar"
+            placeholder="Try &quot;Los Angeles&quot;" id="big_search_bar"
+            >
+          </label>
+        </div>
+
+      </form>
+
+      <form
+      action="#"
+      method="get"
+      class="form"
+      data-qa="small">
+        <div class="search__bar small__search__bar"
         >
-        <input
-          class="textArea textArea--small"
-          type="text"
-          name="search"
-          id="search-input-small"
-          placeholder="Try&nbsp;&quot;Los&nbsp;Angeles&quot;"
-        >
-      </label>
-    </form>
+          <label for="small_search_bar">
+            <input
+            class="search__input search__input__small"
+            type="search"
+            name="smallSearchBar"
+            placeholder="Try &quot;Los Angeles&quot;"
+            id="small_search_bar"
+            >
+          </label>
+        </div>
+      </form>
+
+
+    </main>
+
+
   </body>
 </html>

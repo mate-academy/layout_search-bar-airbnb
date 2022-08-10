@@ -1,16 +1,59 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
   </head>
+
   <body>
-    <h1>Search bar airbnb</h1>
+
+
+    <!--### Требования:
+  - использовать изображения из [src/images](src/images)
+  - должно быть две строки поиска
+  - панель поиска должна иметь ширину 100%
+  - расстояние между двумя строками поиска должно быть 20px
+  - большая панель поиска должна иметь верхний отступ 20px
+  - следовать стилям из макета
+  - по умолчанию `font-weight` должен быть 300
+  - панель поиска имеет 3 состояния по умолчанию: «наведение» и «фокус».
+  - не используйте JavaScript
+  - используйте `@font-face` для шрифтов
+  - добавить атрибут `data-qa="big"` для большой формы поиска и `data-qa="small"` для маленькой
+  - добавить атрибут `data-qa="keypress"` для ввода в большую форму поиска
+  ---
+  [КОНТРОЛЬНЫЙ СПИСОК] (https://github.com/mate-academy/layout_search-bar-airbnb/blob/master/checklist.md)
+
+  ### Советы и подсказки
+  - Добавьте **ВСЕ** атрибуты `data-qa`, необходимые в задаче.
+  - Текст `Попробуйте "Лос-Анджелес"` является заполнителем.
+  - Используйте `&quot;` вместо `"` в заполнителе.
+  - Обратите особое внимание на стили шрифтов. Используйте шрифты из папки `fonts`.
+  - Вы должны поместить «ввод» внутри «формы» для правильной обработки данных. Форма должна иметь «действие» и «метод».
+  атрибуты.
+  - Каждая панель поиска находится внутри своего собственного элемента `form`.
+  - Задача имеет стиль для состояния `: focus`. Формы, метки, div по умолчанию не фокусируются. Учитывайте это при выборе своего
+  макет.
+  - Помните, что элементы ввода и другие интерактивные элементы не наследуют стили шрифтов по умолчанию.
+  - Помните, что заполнитель имеет собственный набор стилей, доступных с помощью псевдоэлемента `::placeholder`.-->
+
+    <form data-qa="big">
+      <input
+        type="text"
+        placeholder="Try &quot;Los Angeles&quot;"
+        data-qa="keypress"
+      >
+    </form>
+
+    <form data-qa="small">
+      <input type="text" placeholder="Try &quot;Los Angeles&quot;" >
+    </form>
+
   </body>
+
 </html>

@@ -10,11 +10,24 @@ body {
   top: 25px;
 }
 
-.big-search {
+.iconSmall {
+  position: absolute;
+  height: 11px;
+  left: 13px;
+  right: 94.38%;
+  top: 15px;
+  bottom: 16px;
+}
+
+.bigSearch {
   position: relative;
 }
 
-.first-search {
+.smallSearch {
+  position: relative;
+}
+
+.firstSearch {
   width: 100%;
   height: 70px;
   margin-bottom: 20px;
@@ -29,25 +42,7 @@ body {
   font-size: 16px;
 }
 
-.first-search:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border-radius: 3px;
-}
-
-.first-search:hover {
-  box-shadow: 0 3px 8px rgb(61, 78, 97, 0.2);
-  border-radius: 4px;
-}
-
-.first-search::placeholder {
-  font-family: "Avenir Book", sans-serif;
-}
-
-.second-search::placeholder {
-  font-family: "Avenir Book", sans-serif;
-}
-
-.second-search {
+.secondSearch {
   width: 100%;
   height: 42px;
   font-size: 14px;
@@ -61,27 +56,32 @@ body {
   font-family: "Avenir Heavy", sans-serif;
 }
 
-.small-search {
-  position: relative;
-}
-
-.smallIcon {
-  position: absolute;
-  height: 11px;
-  left: 13px;
-  right: 94.38%;
-  top: 15px;
-  bottom: 16px;
-}
-
-.second-search:focus {
+.firstSearch:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
 }
 
-.second-search:hover {
+.secondSearch:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+}
+
+.firstSearch:hover {
   box-shadow: 0 3px 8px rgb(61, 78, 97, 0.2);
   border-radius: 4px;
+}
+
+.secondSearch:hover {
+  box-shadow: 0 3px 8px rgb(61, 78, 97, 0.2);
+  border-radius: 4px;
+}
+
+.firstSearch::placeholder {
+  font-family: "Avenir Book", sans-serif;
+}
+
+.secondSearch::placeholder {
+  font-family: "Avenir Book", sans-serif;
 }
 
 @font-face {

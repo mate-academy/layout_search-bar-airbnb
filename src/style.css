@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "Avenir-normal";
+  font-style: normal;
+  font-weight: 300;
+  src: url('./fonts/Avenir-Book.ttf');
+}
+
+@font-face {
+  font-family: "Avenir-heavy";
+  font-style: normal;
+  font-weight: 800;
+  src: url('./fonts/Avenir-Heavy.ttf');
+}
+
+body {
+  font-family: "Avenir-normal";
+}
+
+.big-search {
+  width: 100%;
+  height: 70px;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+  padding-left: 62px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+
+}
+
+.big-search::placeholder {
+  font-weight: 300;
+  color: #3d4e61;
+}
+
+.big-search:hover {
+  background: #fff;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  border-radius: 4px;
+}
+
+.big-search:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+}
+
+.small-search {
+  font-family: 'Avenir-normal';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 19px;
+  width: 427px;
+  height: 42px;
+  background: #FFFFFF;
+  border: 1px solid #E1E7ED;
+  box-shadow: 0px 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+  padding-left: 33px;
+}
+
+.small-search:hover {
+  background: #FFFFFF;
+  border: 1px solid #E1E7ED;
+  box-shadow: 0px 3px 8px rgba(61, 78, 97, 0.2);
+  border-radius: 4px;
+}
+
+.small-search:focus {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F6F6F7 100%);
+  border: 1px solid #E1E7ED;
+  border-radius: 3px;
+}
+
+.small-search::placeholder {
+  font-family: 'Avenir-normal';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: #3D4E61;
+}
+
+.search-form {
+  position: relative;
+  margin-top: 20px;
+}
+
+
+.search-image {
+  position: absolute;
+  top: 25px;
+  left: 26px;
+  width: 19px;
+  height: 19px;
+}
+
+.search-image-small {
+  position: absolute;
+  top: 17px;
+  left: 13px;
+  height: 11px;
+  width: 11px;
+}

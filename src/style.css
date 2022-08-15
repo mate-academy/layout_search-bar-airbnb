@@ -12,12 +12,19 @@
   font-weight: 900;
 }
 
+html {
+  font-style: normal;
+  font-weight: 300;
+  color: #3d4e61;
+}
+
 .form {
   margin-top: 20px;
   position: relative;
 }
 
 .search_field {
+  font-family: "Avenir", sans-serif;
   width: 100%;
   height: 70px;
   background: #fff;
@@ -25,8 +32,6 @@
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   padding-left: 62px;
   border-radius: 4px;
-  font-family: "Avenir", sans-serif;
-  color: #3d4e61;
   font-size: 16px;
   line-height: 22px;
 }
@@ -41,7 +46,6 @@
 .search_field_small {
   height: 42px;
   padding-left: 33px;
-  font-weight: 400;
   font-size: 14px;
   line-height: 19px;
 }
@@ -52,8 +56,13 @@
   top: 15px;
 }
 
+.search_field_::placeholder {
+  color: #3d4e61;
+}
+
 .search_field_small::placeholder {
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  color: #3d4e61;
+  text-shadow: -1px 3px 3px rgba(0, 0, 0, 0.15);
 }
 
 .search_field:hover {

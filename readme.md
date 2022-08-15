@@ -2,8 +2,8 @@
 
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
 
-- [DEMO LINK](https://Naveed-Soaukat.github.io/layout_search-bar-airbnb/)
-- [TEST REPORT LINK](https://Naveed-Soaukat.github.io/layout_search-bar-airbnb/report/html_report/)
+- [DEMO LINK](https://Naveed-Shoukat.github.io/layout_search-bar-airbnb/)
+- [TEST REPORT LINK](https://Naveed-Shoukat.github.io/layout_search-bar-airbnb/report/html_report/)
 
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
 

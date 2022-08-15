@@ -12,13 +12,20 @@
   font-weight: 800;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 12px;
+}
+
 .form {
-  margin-top: 20px;
+  margin-bottom: 20px;
   position: relative;
 }
 
 .search {
-  box-sizing: border-box;
   font-family: "Avenir", sans-serif;
   display: block;
   width: 100%;
@@ -33,7 +40,7 @@
   font-weight: 300;
 }
 
-.search-small {
+.search--small {
   padding: 10px 10px 11px 33px;
   font-size: 14px;
   line-height: 19px;
@@ -54,11 +61,10 @@
 .search:focus {
   font-weight: 800;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border-radius: 3px;
   outline: none;
 }
 
-.search-small::placeholder {
+.search--small::placeholder {
   font-size: 14px;
   line-height: 19px;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));

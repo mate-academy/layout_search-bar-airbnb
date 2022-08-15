@@ -11,13 +11,19 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form class="search-form" data-qa="big">
+    <form
+      class="search-form"
+      action="/"
+      method="get"
+      data-qa="big"
+    >
       <label>
         <input
           type="text"
-          class="big-search"
+          class="search-bar"
           data-qa="keypress"
           placeholder="Try &quot;Los Angeles&quot;"
+          name="search"
         >
         <img
           src="./images/Search.svg"
@@ -27,17 +33,23 @@
       </label>
 
     </form>
-    <form class="search-form" data-qa="small">
+    <form
+      class="search-form"
+      data-qa="small"
+      action="/"
+      method="get"
+    >
       <label>
         <input
           type="text"
-          class="small-search"
+          class="search-bar small-search"
           placeholder="Try &quot;Los Angeles&quot;"
+          name="search"
         >
         <img
           src="./images/Search.svg"
           alt="search"
-          class="search-image-small"
+          class="search-image search-image-small"
         >
       </label>
     </form>

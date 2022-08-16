@@ -14,42 +14,50 @@
   <body>
     <form
       action="/"
-      method="get"
+      method="post"
       class="searchBarForm"
       data-qa="big"
     >
-      <input
-        type="text"
-        name="bigSearchBar"
-        placeholder="Try &#34;Los Angeles&#34;"
-        data-qa="keypress"
-        class="searchBarBig"
-      >
-      <img
-        class="bigImage"
-        src="./images/Search.svg"
-        alt="searchImage"
-      >
+      <label>
+        <input
+          type="text"
+          name="bigSearchBar"
+          placeholder="Try &#34;Los Angeles&#34;"
+          data-qa="keypress"
+          class="searchBarBig"
+        >
+      </label>
+      <label>
+        <img
+          class="bigImage"
+          src="./images/Search.svg"
+          alt="searchImage"
+        >
+      </label>
     </form>
 
     <form
       action="/"
-      method="get"
+      method="post"
       class="searchBarForm"
       data-qa="small"
     >
+      <label>
+        <input
+          type="text"
+          name="smallSearchBar"
+          class="searchBarBig searchBarSmall"
+          placeholder="Try &#34;Los Angeles&#34;"
+        >
+      </label>
+      <label>
+        <img
+          class="smallImage"
+          src="./images/Search.svg"
+          alt="searchImage"
+        >
+      </label>
 
-      <input
-        type="text"
-        name="smallSearchBar"
-        class="searchBarBig searchBarSmall"
-        placeholder="Try &#34;Los Angeles&#34;"
-      >
-      <img
-        class="smallImage"
-        src="./images/Search.svg"
-        alt="searchImage"
-      >
 
     </form>
 

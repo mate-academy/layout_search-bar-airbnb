@@ -12,22 +12,28 @@
   font-style: normal;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Avenir", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
 body {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .search-form {
   position: relative;
-  margin-top: 20px;
+  margin: 20px 8px 0;
 }
 
 .search-bar {
-  box-sizing: border-box;
+  font-family: inherit;
   width: 100%;
-  font-family: "Avenir", sans-serif;
-  font-size: 14px;
-  font-weight: 300;
   line-height: 19px;
   color: #3d4e61;
   background: #fff;
@@ -50,9 +56,7 @@ body {
 }
 
 .search-bar::placeholder {
-  font-family: "Avenir", sans-serif;
   font-size: 14px;
-  font-weight: 300;
   color: #3d4e61;
 }
 
@@ -68,7 +72,7 @@ body {
 
 .icon {
   position: absolute;
-  top: 27px;
+  top: 26px;
   left: 25px;
 }
 

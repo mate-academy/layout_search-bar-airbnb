@@ -2,56 +2,56 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
-
   </head>
   <body>
-    <main class="main">
-      <form
-        action="#"
-        method="get"
-        class="form"
-        data-qa="big"
-      >
-        <div class="search__bar">
-          <label for="big_search_bar">
-            <input
-              data-qa="keypress"
-              class="search__input search__input__big"
-              type="search"
-              name="bigSearchBar"
-              placeholder="Try &quot;Los Angeles&quot;"
-              id="big_search_bar"
-            >
-          </label>
-        </div>
-      </form>
-
-      <form
-        action="#"
-        method="get"
-        class="form"
-        data-qa="small"
-      >
-        <div class="search__bar"
+    <form
+      class="buttonForm"
+      method="post"
+      action="&"
+      data-qa="big"
+    >
+      <label>
+        <img
+          class="dandruff"
+          src="images/Search.svg"
+          alt="Search"
         >
-          <label for="small_search_bar">
-            <input
-              class="search__input search__input__small"
-              type="search"
-              name="smallSearchBar"
-              placeholder="Try &quot;Los Angeles&quot;"
-              id="small_search_bar"
-            >
-          </label>
-        </div>
-      </form>
-    </main>
+
+        <input
+          class="searchBar"
+          type="search"
+          data-qa="keypress"
+          name="bigBar"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
+    </form>
+
+    <form
+      class="buttonForm smallForm"
+      method="post"
+      action="&"
+      data-qa="small"
+    >
+      <label>
+        <img
+          class="dandruff dandruffSmall"
+          src="images/Search.svg"
+          alt="Search"
+        >
+
+        <input
+          class="smallBar searchBar"
+          type="search"
+          name="smallBar"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
+    </form>
   </body>
 </html>

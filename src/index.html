@@ -12,31 +12,42 @@
   </head>
   <body>
     <form
-      action="url"
+      action="#"
       data-qa="big"
       method="post"
       class="container"
     >
       <label
-        class="big-search search"
+        class="big-search search "
         data-qa="big"
+      >
+        <img
+          src="../src/images/Search.svg"
+          alt="Search logo"
+          class="big-img-search"
         >
-        <img src="../src/images/Search.svg" alt="big-search-logo">
         <input
           type="text"
           placeholder="Try &quot;Los Angeles&quot;"
           data-qa="keypress"
-          >
+          class="big-input-search"
+        >
       </label>
 
       <label
         class="small-search search"
         data-qa="small"
+      >
+        <img
+          src="../src/images/Search.svg"
+          alt="Search logo"
+          class="small-img-search"
         >
-        <img src="../src/images/Search.svg" alt="small-search-logo">
         <input
           type="text"
-          placeholder="Try &quot;Los Angeles&quot;">
+          placeholder="Try &quot;Los Angeles&quot;"
+          class="small-input-search"
+        >
       </label>
     </form>
 

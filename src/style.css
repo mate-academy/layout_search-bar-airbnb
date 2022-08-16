@@ -1,0 +1,89 @@
+@font-face {
+  font-family: Avenir;
+  src: url("fonts/Avenir-Book.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url("fonts/Avenir-Heavy.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+
+body {
+  font-family: Avenir, Arial, Helvetica, sans-serif ;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.search__bar {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+  height: 70px;
+  box-sizing: border-box;
+}
+
+.small__search__bar {
+  height: 42px;
+}
+
+.search__img__big {
+  width: 19px;
+  height: 19px;
+  margin: 24px 18px 25px 25px;
+}
+
+.search__img__small {
+  width: 11px;
+  height: 11px;
+  margin: 14px 10px 15px 12px;
+}
+
+.search__input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  padding: 0;
+  font-size: 16px;
+}
+
+.search__input__small {
+  font-size: 14px;
+}
+
+.search__input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3d4e61;
+}
+
+.search__input__small::placeholder {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.search__bar:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+}
+
+.search__bar:focus-within {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+  box-shadow: none;
+}
+
+.search__input:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-left: none;
+  color: #3d4e61;
+  font-weight: 900;
+}

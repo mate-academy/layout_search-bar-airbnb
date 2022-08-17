@@ -12,7 +12,7 @@
   </head>
   <body>
     <form action="/" data-qa="big">
-      <div class="total">
+      <label for="big-search" class="total">
         <img
           src="./images/Search.svg"
           alt="magnifier icon"
@@ -20,15 +20,16 @@
         >
         <input
           type="text"
-          name="Search input"
+          name="Search-big-input"
           class="search-input search-input-big"
           placeholder="Try &quot;Los Angeles&quot;"
           data-qa="keypress"
+          id="big-search"
         >
-      </div>
+      </label>
     </form>
     <form action="/" data-qa="small">
-      <div class="total">
+      <label for="small-search" class="total">
         <img
           src="./images/Search.svg"
           alt="magnifier icon"
@@ -36,13 +37,12 @@
         >
         <input
           type="text"
-          name="Search input"
+          name="Search-small-input"
           class="search-input search-input-small"
           placeholder="Try &quot;Los Angeles&quot;"
+          id="small-search"
         >
-      </div>
-
+      </label>
     </form>
-
   </body>
 </html>

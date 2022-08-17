@@ -1,87 +1,88 @@
 @font-face {
   font-family: "Avenir";
-  src: url(./fonts/Avenir-Book.ttf);
-  font-weight: normal;
+  src: url(fonts/Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 300;
 }
 
-html {
-  font-family: "Avenir", sans-serif;
-
+@font-face {
+  font-family: "Avenir";
+  src: url(./fonts/Avenir-Heavy.ttf);
+  font-style: normal;
+  font-weight: 800;
 }
 
-.bi {
-  width: calc(100% - 62px);
-  height: 70px;
-  border-radius: 4px;
-  border: solid 1px #e1e7ed;
-  padding-left: 62px;
-  margin: 20px auto;
-  box-shadow: 0 1px 8px;
+* {
+  box-sizing: border-box;
+}
+
+.bar {
+  position: relative;
+  margin-top: 20px;
 }
 
 .big {
-  position: relative;
-  width: 100%;
+  padding-right: 62px;
 }
 
 .small {
-  position: relative;
+  padding-right: 33px;
+}
+
+.input {
+  border: 1px solid #e1e7ed;
   width: 100%;
-
-}
-
-.sm {
-  width: calc(100% - 33px);
-  height: 42px;
   border-radius: 4px;
-  border: solid 1px #e1e7ed;
+  color: #3d4e61;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+}
+
+.input:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.input:focus {
+  border-radius: 3px;
+  box-shadow: none;
+  font-weight: 900;
+  color: #3d4e61;
+  background: linear-gradient(#fff, #f6f6f7);
+  border: 1px solid #e1e7ed;
+  outline: none;
+}
+
+.inputBig {
+  height: 70px;
+  padding-left: 62px;
+  font-size: 16px;
+}
+
+.inputSmall {
+  height: 42px;
   padding-left: 33px;
-  box-shadow: 0 1px 8px;
+  font-size: 14px;
 }
 
-.big::before {
-  content: url(./images/Search.svg);
-  position: absolute;
-  width: 19px;
-  height: 19px;
-  z-index: 2;
-  top: 50%;
-  left: 26px;
-  transform: translateY(-50%);
-}
-
-.small::before {
+.bar::before {
   content: " ";
   position: absolute;
   background-image: url(./images/Search.svg);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.big::before {
+  width: 19px;
+  height: 19px;
+  left: 26px;
+}
+
+.small::before {
   background-size: cover;
   width: 11px;
   height: 11px;
-  z-index: 2;
-  top: 50%;
   left: 13px;
-  transform: translateY(-50%);
-}
-
-.bi:hover {
-  box-shadow: 0 3px 8px;
-}
-
-.bi:focus {
-  border-radius: 3px;
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border: 1px solid#e1e7ed;
-  box-shadow: none;
-  outline: none;
-}
-
-.sm:hover {
-  box-shadow: 0 3px 8px;
-}
-
-.sm:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border-radius: 3px;
-  box-shadow: none;
-  outline: none;
 }

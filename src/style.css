@@ -12,18 +12,16 @@
   font-style: normal;
 }
 
-.bigBoi {
+.form {
   margin-top: 20px;
   position: relative;
 }
 
-.smallBoi {
-  margin-top: 20px;
-  position: relative;
+.img {
+  position: absolute;
 }
 
 .svgBig {
-  position: absolute;
   width: 19px;
   height: 19px;
   left: 26px;
@@ -31,7 +29,6 @@
 }
 
 .svgSmall {
-  position: absolute;
   width: 11px;
   height: 11px;
   top: 15px;
@@ -75,18 +72,17 @@
   border-radius: 3px;
 }
 
-.topSearch::placeholder {
+::placeholder {
   font-family: "Avenir", sans-serif;
-  font-size: 16px;
+  color: #3d4e61;
   line-height: 22px;
   font-weight: 300;
-  color: #3d4e61;
+}
+
+.topSearch::placeholder {
+  font-size: 16px;
 }
 
 .bottomSearch::placeholder {
-  font-family: "Avenir", sans-serif;
   font-size: 14px;
-  line-height: 22px;
-  font-weight: 300;
-  color: #3d4e61;
 }

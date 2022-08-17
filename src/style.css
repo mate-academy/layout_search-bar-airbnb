@@ -16,17 +16,13 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: Avenir, sans-serif;
+}
+
 .bar {
   position: relative;
   margin-top: 20px;
-}
-
-.big {
-  padding-right: 62px;
-}
-
-.small {
-  padding-right: 33px;
 }
 
 .input {
@@ -35,7 +31,6 @@
   border-radius: 4px;
   color: #3d4e61;
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
-  font-family: Avenir, sans-serif;
   font-weight: 300;
 }
 
@@ -44,9 +39,8 @@
 }
 
 .input:focus {
-  border-radius: 3px;
   box-shadow: none;
-  font-weight: 900;
+  font-weight: 600;
   color: #3d4e61;
   background: linear-gradient(#fff, #f6f6f7);
   border: 1px solid #e1e7ed;
@@ -71,7 +65,6 @@
   background-image: url(./images/Search.svg);
   top: 50%;
   transform: translateY(-50%);
-  z-index: 2;
 }
 
 .big::before {

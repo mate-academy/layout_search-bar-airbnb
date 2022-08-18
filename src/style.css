@@ -19,8 +19,8 @@
   font-weight: 800;
 }
 
-body {
-  font-family: "Avenir", sans-serif;
+html {
+  font-family: "Avenir", Arial, sans-serif;
 }
 
 .SearchBox {
@@ -44,6 +44,9 @@ body {
 }
 
 .input {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 22px;
   box-sizing: border-box;
   border: none;
   padding-left: 62px;
@@ -54,9 +57,6 @@ body {
 }
 
 .input::placeholder {
-  font-family: Avenir, sans-serif;
-  font-size: 16px;
-  line-height: 22px;
   color: #3d4e61;
 }
 
@@ -65,9 +65,6 @@ body {
 }
 
 .input:focus {
-  font-family: "Avenir", sans-serif;
-  font-size: 16px;
-  line-height: 22px;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
   border-radius: 3px;
@@ -84,13 +81,18 @@ body {
   border-radius: 4px;
 }
 
-.iconSmall {
+.icon--Small {
   width: 11px;
   height: 11px;
   margin: 15px 0 16px 13px;
 }
 
 .inputSmall {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
   box-sizing: border-box;
   margin: 10px 0 12px 33px;
   border: none;
@@ -101,11 +103,6 @@ body {
 
 .inputSmall::placeholder {
   color: #3d4e61;
-  font-family: "Avenir", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
 }
 
 .smallSearchBox:hover {
@@ -113,11 +110,6 @@ body {
 }
 
 .inputSmall:focus {
-  font-family: "Avenir", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
   border-radius: 3px;

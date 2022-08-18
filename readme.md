@@ -1,7 +1,7 @@
 # Search bar for Airbnb
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://<your_account>.github.io/layout_search-bar-airbnb/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_search-bar-airbnb/report/html_report/)
+- [DEMO LINK](https://dmitriyn3679.github.io/layout_search-bar-airbnb/)
+- [TEST REPORT LINK](https://dmitriyn3679.github.io/layout_search-bar-airbnb/report/html_report/)
 
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
 
@@ -32,8 +32,7 @@ ___
 
 ### Tips & Hints
 - Add **ALL** `data-qa` attributes required in the task
-- Text `Try "Los Angeles"` is a placeholder.
-- Use `&quot;` instead of `"` in the placeholder.
+- Text `Try "Los Angeles"` in mockup is a placeholder.
 - Pay close attention to font styles. Use fonts from `fonts` folder.
 - You have to put `input` inside the `form` for correct data processing. Form should have `action` and `method`
 attributes.

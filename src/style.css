@@ -13,7 +13,8 @@
   display: block;
   position: relative;
   margin-top: 20px;
-  height: 68px;
+  box-sizing: border-box;
+  height: 70px;
 }
 
 .field-search-small {
@@ -44,22 +45,37 @@
 
 .text-search {
   font-family: Avenir, sans-serif;
-  border: none;
   color: #3d4e61;
+  outline: none;
+  border: 0;
+}
+
+.text-search-big::placeholder {
+  font-family: Avenir, sans-serif;
+  color: #3d4e61;
+  font-size: 16px;
+}
+
+.text-search-small::placeholder {
+  font-family: Avenir, sans-serif;
+  color: #3d4e61;
+  font-size: 14px;
 }
 
 .text-search-big {
-  font-size: 16px;
   line-height: 21.6px;
-  margin-top: 22px;
+  margin-top: 24px;
   margin-left: 62px;
+  padding: 0;
+  width: calc(100% - 62px);
 }
 
 .text-search-small {
-  margin-top: 9px;
+  margin-top: 10px;
   margin-left: 33px;
-  font-size: 14px;
   line-height: 19px;
+  padding: 0;
+  width: calc(100% - 33px);
 }
 
 .field-search-big::after {

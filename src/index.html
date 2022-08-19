@@ -11,40 +11,48 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form 
-    class="search-form"
-    action="/" 
-    method="get" 
-    data-qa="big">
-      <label for="search-input">
-        <img class="icon"
-             src="./images/Search.svg" 
-             alt="big icon search">
-        <input 
-          class="input" 
-          type="text"
-          name="search"
-          id="search-input"
-          data-qa="keypress"
-          placeholder="Try &quot;Los Angeles&quot;"
-        >
-      </label>
-    </form>
-    <form 
-    class="search-form-small"
-    action="/" 
-    method="get"
-    data-qa="small"
-    >
-      <label for="search-input2">
-        <input
-          class="input input-small"
-          type="text"
-          name="search2"
-          id="search-input2"
-          placeholder="Try &quot;Los Angeles&quot;"
-        >
-      </label>
-    </form>
+    <div>
+      <form 
+        class="search-form"
+        action="/" 
+        method="get" 
+        data-qa="big">
+        <label for="search-input">
+          <img class="icon"
+            src="./images/Search.svg" 
+            alt="big icon search">
+          <input 
+            class="input" 
+            type="text"
+            name="search"
+            id="search-input"
+            data-qa="keypress"
+            placeholder="Try &quot;Los Angeles&quot;"
+          > 
+        </label>
+      </form>
+    </div>
+    <div>  
+      <form 
+        class="search-form-small"
+        action="/" 
+        method="get"
+        data-qa="small"
+      >
+        <label for="search-input2">
+          <img 
+            class="icon-small"
+            src="./images/Search.svg" 
+            alt="small icon search">
+          <input
+            class="input input-small"
+            type="text"
+            name="search2"
+            id="search-input2"
+            placeholder="Try &quot;Los Angeles&quot;"
+          >
+        </label>
+      </form>
+    </div>
   </body>
 </html>

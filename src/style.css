@@ -1,0 +1,127 @@
+@font-face {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 300;
+  src: url(fonts/Avenir.ttc);
+}
+
+@font-face {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 900;
+  src: url(fonts/Avenir-Heavy.ttf);
+}
+
+@font-face {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 20px;
+}
+
+.Biglabel {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  height: 70px;
+}
+
+.Biglabel > svg {
+  position: absolute;
+  left: 26px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.BigInput {
+  width: 100%;
+  height: 100%;
+  font-family: "Avenir", sans-serif;
+  padding-left: 62px;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3d4e61;
+  font-weight: 900;
+  transition: all 0.3s;
+}
+
+.BigInput:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.BigInput::placeholder {
+  font-weight: 300;
+}
+
+.BigInput:focus {
+  outline: none;
+  font-weight: 900;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+  box-shadow: none;
+}
+
+.SmallLabel {
+  width: 100%;
+  height: 42px;
+  position: relative;
+  display: inline-block;
+}
+
+.SmallLabel > svg {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  left: 13px;
+  top: 15px;
+}
+
+.Smallinput {
+  width: 100%;
+  height: 100%;
+  padding-left: 33px;
+  background: #fff;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+  font-family: "Avenir", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: #3d4e61;
+  transition: all 0.3s;
+}
+
+.Smallinput:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.Smallinput::placeholder {
+  font-weight: 400;
+}
+
+.Smallinput:focus {
+  outline: none;
+  font-weight: 900;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+  box-shadow: none;
+}
+
+.margin {
+  height: 20px;
+}

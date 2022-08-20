@@ -11,48 +11,44 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div>
-      <form 
-        class="search-form"
-        action="/" 
-        method="get" 
-        data-qa="big">
-        <label for="search-input">
-          <img class="icon"
-            src="./images/Search.svg" 
-            alt="big icon search">
-          <input 
-            class="input" 
-            type="text"
-            name="search"
-            id="search-input"
-            data-qa="keypress"
-            placeholder="Try &quot;Los Angeles&quot;"
-          > 
-        </label>
-      </form>
-    </div>
-    <div>  
-      <form 
-        class="search-form-small"
-        action="/" 
-        method="get"
-        data-qa="small"
-      >
-        <label for="search-input2">
-          <img 
-            class="icon-small"
-            src="./images/Search.svg" 
-            alt="small icon search">
-          <input
-            class="input input-small"
-            type="text"
-            name="search2"
-            id="search-input2"
-            placeholder="Try &quot;Los Angeles&quot;"
-          >
-        </label>
-      </form>
-    </div>
+    <form 
+      action="http://localhost:8080/" 
+      method="get" 
+      data-qa="big"
+      class="search-form"
+    >
+      <div class="bigdiv">
+        <img 
+          class="icon"
+          src="./images/Search.svg" 
+          alt="big icon search">
+        <input 
+          class="input" 
+          type="text"
+          name="search"
+          data-qa="keypress"
+          placeholder="Try &quot;Los Angeles&quot;"
+        > 
+      </div>
+    </form>
+    <form 
+      action="http://localhost:8080/" 
+      method="get"
+      data-qa="small"
+      class="search-form search-form-small"
+    >
+      <div class="bigdiv smalldiv">
+        <img 
+          class="icon icon-small"
+          src="./images/Search.svg" 
+          alt="small icon search">
+        <input
+          class="input input-small"
+          type="text"
+          name="search2"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </div>
+    </form>
   </body>
 </html>

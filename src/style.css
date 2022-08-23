@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: Avenir;
   src: url(fonts/Avenir-Book.ttf);
@@ -9,73 +14,60 @@
   src: url(fonts/Avenir-Heavy.ttf);
 }
 
-.field-search-big {
-  display: block;
-  position: relative;
-  margin-top: 20px;
-  box-sizing: border-box;
-  height: 70px;
-}
-
-.field-search-small {
-  display: block;
-  position: relative;
-  height: 40px;
-  margin-top: 20px;
-}
-
 .field-search {
-  background: #fff;
-  border: 1px solid #e1e7ed;
-  border-radius: 4px;
-}
-
-.field-search:hover {
-  background: #fff;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-  border-radius: 4px;
-}
-
-.field-search:focus-within {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border: 1px solid #e1e7ed;
-  border-radius: 3px;
+  position: relative;
+  margin-top: 20px;
 }
 
 .text-search {
   font-family: Avenir, sans-serif;
   color: #3d4e61;
   outline: none;
-  border: 0;
-}
-
-.text-search-big::placeholder {
-  font-family: Avenir, sans-serif;
-  color: #3d4e61;
-  font-size: 16px;
-}
-
-.text-search-small::placeholder {
-  font-family: Avenir, sans-serif;
-  color: #3d4e61;
-  font-size: 14px;
+  background: #fff;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
 }
 
 .text-search-big {
   line-height: 21.6px;
-  margin-top: 24px;
-  margin-left: 62px;
-  padding: 0;
-  width: calc(100% - 62px);
+  height: 70px;
+  width: 100%;
+  padding: 25px 0 23px 62px;
+
 }
 
 .text-search-small {
-  margin-top: 10px;
-  margin-left: 33px;
+  height: 42px;
   line-height: 19px;
-  padding: 0;
-  width: calc(100% - 33px);
+  width: 100%;
+  padding: 10px 0 10px 33px;
+  background-color: white;
+}
+
+.text-search:hover {
+  background: #fff;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  border-radius: 4px;
+}
+
+.text-search:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+}
+
+.text-search::placeholder {
+  font-family: Avenir, sans-serif;
+  color: #3d4e61;
+}
+
+.text-search-big::placeholder {
+  font-size: 16px;
+}
+
+.text-search-small::placeholder {
+  font-size: 14px;
 }
 
 .field-search-big::after {
@@ -83,8 +75,8 @@
   display: block;
   position: absolute;
   width: 19px;
-  height: 19px;
-  left: 25px;
+  height: 25px;
+  left: 26px;
   top: 24px;
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
@@ -96,8 +88,8 @@
   content: "";
   position: absolute;
   display: block;
-  left: 12px;
-  top: 14px;
+  left: 13px;
+  top: 15px;
   width: 11px;
   height: 11px;
   background-image: url(images/Search.svg);

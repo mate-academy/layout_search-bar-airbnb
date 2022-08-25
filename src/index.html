@@ -17,37 +17,35 @@
   </head>
   <body>
     <form
-      method="post"
-      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="get"
+      action="/"
       data-qa="big"
-      class="field-search field-search-big"
+      class="search-form search-form-big"
     >
-      <label 
-        for="search" 
-      >
+      <label for="search-input">
         <input
+          class="input input--big"
           type="text"
+          name="search"
+          id="search-input"
           placeholder="Try &quot;Los Angeles&quot;"
-          class="text-search text-search-big"
-          id="search"
           data-qa="keypress"
         >
       </label>
     </form>
     <form
-      method="post"
-      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="get"
+      action="/"
       data-qa="small"
-      class="field-search field-search-small"
+      class="search-form search-form-small"
     >
-      <label 
-        for="search-small" 
-      >
+      <label for="search-input-small">
         <input
+          class="input input--small"
           type="text"
+          name="search"
           placeholder="Try &quot;Los Angeles&quot;"
-          class="text-search text-search-small"
-          id="search-small"
+          id="search-input-small"
         >
       </label>
     </form>

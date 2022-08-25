@@ -15,18 +15,18 @@
     <form
       action="index.html"
       method="post"
-      class="formbig searchForm-big"
-      data-qa="big" >
+      class="search_form search_form-big"
+      data-qa="big">
       <label
-        for="one"
-        class="form__label form-label-big">
+
+        class="search_form__label search_form-big__label">
         <input
-          class="input input-big"
           type="text"
-          name="form1"
+          id="big"
+          name="form2"
           data-qa="keypress"
           placeholder="Try &quot;Los Angeles&quot;"
-          id="one"
+          class="search_form__input search_form-big__input"
         >
       </label>
     </form>
@@ -35,16 +35,17 @@
       action="index.html"
       method="post"
       data-qa="small"
-      class="formbig searchForm-small">
+      class="search_form search_form-small">
       <label
-        for="two"
-        class="form__label form-label-small">
+        for="small"
+        class="search_form__label search_form-small__label">
         <input
-          class="input input-small"
           type="text"
+          id="small"
           name="form2"
           placeholder="Try &quot;Los Angeles&quot;"
-          id="two"
+          data-qa="keypress"
+          class="search_form__input search_form-small__input"
         >
       </label>
     </form>

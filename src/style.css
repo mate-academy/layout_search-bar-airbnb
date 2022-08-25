@@ -22,35 +22,35 @@ body {
   font-size: 16px;
 }
 
-.formbig {
+.search_form {
   display: flex;
   justify-content: center;
   margin: 20px auto 0;
 }
 
-.searchForm-big {
+.search_form-big {
   width: 100%;
   height: 70px;
 }
 
-.searchForm-small {
+.search_form-small {
   width: 100%;
   height: 42px;
 }
 
-.form__label {
+.search_form__label {
   position: relative;
   display: block;
   width: 100%;
 }
 
-.form__label:after {
+.search_form__label:after {
   position: absolute;
   content: "";
   display: block;
 }
 
-.form-label-big:after {
+.search_form-big__label::after {
   background-image: url("./images/Search.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -60,7 +60,7 @@ body {
   left: 26px;
 }
 
-.form-label-small::after {
+.search_form-small__label::after {
   background-image: url("./images/Search.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -70,7 +70,7 @@ body {
   left: 13px;
 }
 
-.input {
+.search_form__input {
   width: 100%;
   height: 100%;
   border: 1px solid #e1e7ed;
@@ -78,43 +78,42 @@ body {
   color: #3d4e61;
   font-weight: 300;
   font-family: inherit;
-  box-shadow: 0 1px 8px rgb(61 78 97 / 10%) ;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1) ;
   outline: none;
 }
 
-.input:hover {
+.search_form__input:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.input-big {
+.search_form-big__input {
   padding-left: 62px;
   font-style: 16px;
   line-height: 22px;
-  align-self: center;
 }
 
-.input-small {
+.search_form-small__input {
   padding-left: 33px;
   font-style: 14px;
   line-height: 19px ;
 }
 
-.input::placeholder {
+.search_form__input::placeholder {
   color: inherit;
   font-weight: 300;
 }
 
-.input-big::placeholder {
+.search_form-big__input::placeholder {
   font-size: 16px;
   line-height: 22px;
 }
 
-.input-small::placeholder {
+.search_form-small__input::placeholder {
   font-size: 14px;
   line-height: 22px;
 }
 
-.input:focus {
+.search_form__input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
   font-weight: 600;

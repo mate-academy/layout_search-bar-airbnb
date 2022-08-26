@@ -11,6 +11,10 @@
   src: url(fonts/Avenir-Heavy.ttf);
 }
 
+html {
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+}
+
 form {
   margin-top: 20px;
 }
@@ -28,15 +32,8 @@ form {
   margin-top: -10px;
 }
 
-.small-image {
-  width: 11px;
-  height: 11px;
-  left: 13px;
-  top: 50%;
-  margin-top: -6px;
-}
-
 .input {
+  font-family: inherit;
   width: 100%;
   height: 70px;
   padding-left: 62px;
@@ -48,7 +45,6 @@ form {
 }
 
 .input::placeholder {
-  font-family: Avenir, Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #3d4e61;
@@ -58,25 +54,27 @@ form {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
+.small-image {
+  width: 11px;
+  height: 11px;
+  left: 13px;
+  top: 50%;
+  margin-top: -6px;
+}
+
 .input:focus {
   font-weight: 800;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
+  outline: none;
 }
 
 .small-input {
-  font-family: Avenir, Arial, Helvetica, sans-serif;
   height: 42px;
   padding-left: 33px;
 }
 
 .small-input::placeholder {
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 19px;
-}
-
-.small-input:focus {
-  font-weight: 800;
 }

@@ -12,20 +12,47 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form> 
-      <div>
+    <form 
+      action="#" 
+      method="get"
+      data-qa="big"
+      class="form_search1" 
+    >
+      <img 
+        src="images/Search.svg" 
+        alt="icon"
+        class="icon"
+      >
+      <label for="s">
         <input
-        class="search1"
-        type="search"
-        placeholder="Try Los Angeles"
-        name="search"
-        data-qa="big"
-         >
-        <button type="submit" class="button">
-          <img class="search_image" src="images/Search.svg"
-          alt="img">
-        </button>
-      </div>
+          id="s"
+          type="search"
+          data-qa="keypress" 
+          placeholder="Try &quot;Los Angeles&quot;" 
+          class="search_bar"
+        >
+      </label>
+    </form>
+    <form
+      action="#" 
+      method="get"
+      data-qa="small"
+      class="form_search1"
+    >
+      <img 
+        src="images/Search.svg" 
+        alt="icon"
+        class="icon icon2"
+      >
+      <label for="d">
+        <input
+          id="d"
+          type="search" 
+          data-qa="keypress" 
+          placeholder="Try &quot;Los Angeles&quot;" 
+          class="search_bar search"
+        >
+      </label>
     </form>
   </body>
 </html>

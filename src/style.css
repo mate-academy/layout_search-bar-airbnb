@@ -30,14 +30,14 @@
   border-radius: 4px;
 }
 
-.input--big {
+.input__big {
   line-height: 21.6px;
   height: 70px;
   width: 100%;
   padding: 25px 0 23px 62px;
 }
 
-.input--small {
+.input__small {
   height: 42px;
   line-height: 19px;
   width: 100%;
@@ -57,16 +57,21 @@
   border-radius: 3px;
 }
 
+.input__small:focus {
+  font-style: normal;
+  font-weight: 900;
+}
+
 .input::placeholder {
   font-family: Avenir, sans-serif;
   color: #3d4e61;
 }
 
-.input--big::placeholder {
+.input__big::placeholder {
   font-size: 16px;
 }
 
-.input--small::placeholder {
+.input__small::placeholder {
   font-size: 14px;
 }
 

@@ -1,6 +1,10 @@
 @font-face {
-  font-family: Avenir;
-  src: url(fonts/Avenir-Book.ttf);
+  font-family: "Avenir";
+  src: url(./fonts/Avenir-Book.ttf);
+}
+@font-face {
+  font-family: "Avenir-Heavy";
+  src: url(./fonts/Avenir-Heavy.ttf);
 }
 
 * {
@@ -9,6 +13,7 @@
 
 html {
   font-family: "Avenir", serif;
+  font-weight: 400;
 }
 
 .searchBox {
@@ -25,7 +30,6 @@ html {
   width: 100%;
   outline: none;
   font-family: inherit;
-  font-weight: 400;
 }
 
 .label {
@@ -52,7 +56,6 @@ html {
 .bigInputArea::placeholder {
   color: #3d4e61;
   font-family: inherit;
-  font-weight: 400;
   font-size: 16px;
   line-height: 22px;
 }
@@ -63,7 +66,7 @@ html {
 
 .bigInputArea:focus {
   border: none;
-  font-family: inherit;
+  font-family: "Avenir-Heavy", serif;
   font-weight: 900;
   background-image: url(images/Search.svg), linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   background-repeat: no-repeat;
@@ -90,7 +93,6 @@ html {
 
 .smallInputArea::placeholder {
   font-family: inherit;
-  font-weight: 400;
   color: #3d4e61;
   font-size: 14px;
   line-height: 19px;
@@ -98,7 +100,7 @@ html {
 
 .smallInputArea:focus {
   border: none;
-  font-family: inherit;
+  font-family: "Avenir-Heavy", serif;
   font-weight: 900;
   font-size: 14px;
   line-height: 19px;

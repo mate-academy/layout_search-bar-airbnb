@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(./fonts/Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url(./fonts/Avenir-Heavy.ttf);
+  font-style: normal;
+  font-weight: 800;
+}
+
+.search {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  width: 19px;
+  top: 26px;
+  left: 25px;
+}
+
+.icon-small {
+  position: absolute;
+  width: 11px;
+  top: 15px;
+  left: 13px;
+}
+
+.input {
+  font-family: "Avenir", sans-serif;
+  display: block;
+  font-weight: 300;
+  padding: 0;
+  width: 100%;
+  margin-top: 20px;
+  background: #fff;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px #3d4e611a;
+  border-radius: 4px;
+}
+
+.input:hover {
+  box-shadow: 0 3px 8px #3d4e6133;
+}
+
+.input:focus {
+  font-weight: 800;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  outline: none;
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+}
+
+.input-small {
+  font-size: 14px;
+  line-height: 19px;
+  height: 42px;
+  padding-left: 33px;
+}
+
+.input-big {
+  font-size: 16px;
+  line-height: 22px;
+  height: 70px;
+  padding-left: 62px;
+}
+
+.input::placeholder {
+  color: #3d4e61;
+  /* font-family: "Avenir", sans-serif; */
+}

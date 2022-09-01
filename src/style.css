@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "Averin";
+  font-weight: 300;
+  font-style: normal;
+  src: url(./fonts/Avenir-Book.ttf);
+}
+@font-face {
+  font-family: "Averin";
+  font-weight: bold;
+  font-style: normal;
+  src: url(./fonts/Avenir-Heavy.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.searchForm {
+  font-weight: bold;
+  font-family: "Avenir", Arial, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  position: relative;
+  width: 100%;
+  height: 70px;
+  /* border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px; */
+  margin: 20px auto;
+  /* color: #3d4e61; */
+  /* line-height: 22px; */
+}
+
+.input {
+  position: relative;
+  padding: 25px 60px;
+  /* border: none; */
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  font-family: "Avenir", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+  color: #3d4e61;
+  transition: background 0.3s ease;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+}
+
+.input::placeholder {
+  font-family: "Avenir", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  font-style: normal;
+  border-width: 0;
+  padding: 0;
+  line-height: 22px;
+  color: #3d4e61;
+  border: none;
+}
+
+.input:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  border: none;
+}
+
+.input:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+  outline-width: 0;
+
+}
+
+.searchForm::after {
+  content: "";
+  background-image: url("./images/Search.svg");
+  background-size: 19px;
+  display: inline-block;
+  position: absolute;
+  left: 26px;
+  top: 25px;
+  text-align: center;
+  line-height: 19px;
+  width: 19px;
+  height: 19px;
+}
+
+.smallSearchForm {
+  height: 42px;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 19px;
+
+}
+
+.inputSmall {
+  padding: 12px 33px 10px;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.inputSmall::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  /* filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25)); */
+  color: #3d4e61;
+}
+
+.inputSmall:hover::placeholder {
+  filter: none;
+}
+
+.inputSmall:focus::placeholder {
+  filter: none;
+}
+
+.smallSearchForm::after {
+  background-size: 11px;
+  left: 13px;
+  top: 15px;
+  line-height: 11px;
+  width: 11px;
+  height: 11px;
+}

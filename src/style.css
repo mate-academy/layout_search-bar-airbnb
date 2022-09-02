@@ -11,36 +11,36 @@
 
 body {
   font-weight: 300;
+  padding-top: 12px;
 }
 
 input {
-  font-family: Avenir, sans-serif;
+  box-sizing: border-box;
   width: 100%;
+  font-family: Avenir, sans-serif;
   outline: none;
   margin-bottom: 20px;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
 }
 
 .big {
   font-size: 16px;
-  padding-left: 60px;
+  padding-left: 62px;
   background-image: url(./images/Search.svg);
   background-size: 19px;
   background-repeat: no-repeat;
-  background-position: 25px;
-  border: 1px solid #e1e7ed;
-  border-radius: 4px;
+  background-position: 26px;
   height: 70px;
 }
 
 .small {
   font-size: 14px;
-  padding-left: 40px;
+  padding-left: 33px;
   background-image: url(./images/Search.svg);
   background-size: 11px;
   background-repeat: no-repeat;
-  background-position: 15px;
-  border: 1px solid #e1e7ed;
-  border-radius: 4px;
+  background-position: left 12px top 14px;
   height: 42px;
 }
 
@@ -52,4 +52,8 @@ input:hover {
 input:focus {
   font-weight: bold;
   border: 1px solid blue;
+}
+
+input::placeholder {
+  font-family: Avenir, sans-serif;
 }

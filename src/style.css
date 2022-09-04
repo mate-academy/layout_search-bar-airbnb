@@ -31,6 +31,7 @@ body {
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   height: 70px;
   margin-bottom: 20px;
+  padding-left: 62px;
 }
 
 .input:hover {
@@ -45,16 +46,12 @@ body {
 
 .input-small {
   height: 42px;
+  padding-left: 33px;
 }
 
 .input::placeholder {
   font-size: 16px;
-  background-image: url("images/Search.svg");
-  background-position: 26px center;
-  background-repeat: no-repeat;
-  background-size: 19px;
   color: #3d4e61;
-  padding-left: 62px;
 }
 
 .input:focus::placeholder {
@@ -63,13 +60,29 @@ body {
 
 .input-small::placeholder {
   font-size: 14px;
-  background-image: url("images/Search.svg");
-  background-position: 13px center;
-  background-repeat: no-repeat;
-  background-size: 11px;
-  padding-left: 33px;
 }
 
-.input-small:focus::placeholder {
-  font-weight: 800;
+.input-form {
+  position: relative;
+}
+
+.search-icon::before {
+  position: absolute;
+  content: "";
+  background: url("images/Search.svg") left center no-repeat;
+  top: 25px;
+  left: 26px;
+  height: 19px;
+  width: 19px;
+}
+
+.search-icon-small::before {
+  position: absolute;
+  content: "";
+  background: url("images/Search.svg") left center no-repeat;
+  background-size: 11px;
+  top: 15px;
+  left: 13px;
+  height: 11px;
+  width: 11px;
 }

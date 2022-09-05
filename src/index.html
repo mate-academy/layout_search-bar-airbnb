@@ -11,25 +11,27 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <label>
+    <label for="bigSearchBar">
       <form action="#" method="post"
       data-qa="big" class="form">
+
         <img src="/images/Search.svg" alt="Big icon search"
         class="icon">
-        <input type="text" name="bigSearchBar"
-        id="bigSearchBar" data-qa="keypress"
+
+        <input type="search" name="bigSearchBar"
+        data-qa="keypress" id="bigSearchBar"
         placeholder="Try &quot;Los Angeles&quot;"
         class="input">
       </form>
     </label>
-    <label>
+    <label for="smallSearchBar">
       <form action="#" method="post"
-        data-qa="small"  class="form form--small">
+      data-qa="small"  class="form form--small">
 
         <img src="/images/Search.svg" alt="Small icon search"
         class="icon icon--small">
 
-        <input type="text" name="smallSearchBar"
+        <input type="search" name="smallSearchBar"
         id="smallSearchBar" placeholder="Try &quot;Los Angeles&quot;"
         class="input input--small" >
       </form>

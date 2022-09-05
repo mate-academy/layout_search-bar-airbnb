@@ -17,11 +17,11 @@ body {
 }
 
 .input {
-  height: 70px;
+  height: 68px;
   width: 100%;
   left: 0;
   top: 0;
-  padding-left: 65px;
+  padding-left: 60px;
   border-radius: 4px;
   background: #fff;
   border: 1px solid #e1e7ed;
@@ -35,8 +35,10 @@ body {
 }
 
 .inputSmall {
-  padding-left: 50px;
-  height: 42px;
+  padding-left: 33px;
+  height: 40px;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border: 1px solid #e1e7ed;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -45,16 +47,17 @@ body {
 }
 
 .bigSearch {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   margin-right: 20px;
-  margin-left: 20px;
+  margin-left: 10px;
+  overflow-x: auto;
 }
 
 .smallSearch {
   margin-right: 20px;
-  margin-left: 20px;
-  margin-top: 20px;
-
+  margin-left: 10px;
+  margin-top: 18px;
+  overflow-x: auto;
 }
 
 input:focus::placeholder {
@@ -76,14 +79,15 @@ input:focus::placeholder {
 }
 
 .input:focus {
-  background: #fff;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  border-radius: 4px;
+  border-radius: 3px;
   font-weight: 900;
   font-size: 16px;
   line-height: 22px;
   color: #3d4e61;
+  outline: none;
 }
 
 .inputSmall:hover {
@@ -98,27 +102,28 @@ input:focus::placeholder {
 }
 
 .inputSmall:focus {
-  background: #fff;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  border-radius: 4px;
+  border-radius: 3px;
   font-style: normal;
   font-weight: 900;
   font-size: 14px;
   line-height: 19px;
+  color: #3d4e61;
 }
 
 .icon_big {
   position: relative;
-  left: 30px;
+  left: 25px;
   top: 47px;
   display: block;
 }
 
 .icon_small {
   position: absolute;
-  padding-top: 15px;
-  left: 44px;
-  top: 118px;
+  padding-top: 13px;
+  left: 24px;
+  top: 113px;
   display: block;
 }

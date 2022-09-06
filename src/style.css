@@ -9,22 +9,22 @@
   src: url(../src/fonts/Avenir-Heavy.ttf);
 }
 
+html {
+  font-family: Avenir, sans-serif;
+}
+
 body {
   font-weight: 300;
   padding-top: 12px;
 }
 
-input {
+.input {
   box-sizing: border-box;
   width: 100%;
-  font-family: Avenir, sans-serif;
   outline: none;
   margin-bottom: 20px;
   border: 1px solid #e1e7ed;
   border-radius: 4px;
-}
-
-.big {
   font-size: 16px;
   padding-left: 62px;
   background-image: url(./images/Search.svg);
@@ -44,16 +44,14 @@ input {
   height: 42px;
 }
 
-input:hover {
-  border: 1px solid blueviolet;
+.input:hover {
   text-decoration: underline;
 }
 
-input:focus {
+.input:focus {
   font-weight: bold;
-  border: 1px solid blue;
 }
 
-input::placeholder {
+.input::placeholder {
   font-family: Avenir, sans-serif;
 }

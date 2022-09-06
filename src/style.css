@@ -1,12 +1,18 @@
-body {
-  margin: 0;
+@font-face {
+  font-family: "Avenir";
+  src: url(./fonts/Avenir-Book.ttf);
+  font-style: normal;
 }
 
 @font-face {
-  font-family: Avenir, sans-serif;
-  src: url(./fonts/Avenir-Book.ttf);
+  font-family: "Avenir";
   src: url(./fonts/Avenir-Heavy.ttf);
-  font-style: normal;
+  font-style: bold;
+}
+
+body {
+  margin: 0;
+  font-family: "Avenir", sans-serif;
 }
 
 .bigSearch {
@@ -36,11 +42,13 @@ input {
 }
 
 input:hover {
-  background-color: rgb(199, 217, 224);
+  border-color: rgb(142, 64, 64);
 }
 
 input:focus {
-  background-color: rgb(247, 198, 198);
+  border-color: rgb(23, 230, 23);
+  font-family: "Avenir", sans-serif;
+  font-style: bold;
 }
 
 .input--big::placeholder {

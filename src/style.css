@@ -22,6 +22,7 @@ html {
 }
 
 .searchForm {
+  font-family: inherit;
   font-style: normal;
   position: relative;
   width: 100%;
@@ -31,6 +32,7 @@ html {
 }
 
 .input {
+  font-family: inherit;
   position: relative;
   padding: 25px 62px;
   display: inline-block;
@@ -47,7 +49,8 @@ html {
 }
 
 .input::placeholder {
-  font-family: "Avenir", sans-serif;
+  font-family: inherit;
+  /* font-family: "Avenir", sans-serif; */
   font-weight: 300;
   font-size: 16px;
   font-style: normal;
@@ -97,18 +100,11 @@ html {
 }
 
 .inputSmall::placeholder {
+  font-family: inherit;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
   color: #3d4e61;
-}
-
-.inputSmall:hover::placeholder {
-  filter: none;
-}
-
-.inputSmall:focus::placeholder {
-  filter: none;
 }
 
 .smallSearchForm::after {

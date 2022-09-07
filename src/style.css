@@ -10,19 +10,15 @@
 }
 
 html {
-  font-family: Avenir, sans-serif;
-}
-
-body {
-  font-weight: 300;
   padding-top: 12px;
+  font-weight: 300;
 }
 
 .input {
+  font-family: Avenir, sans-serif;
   box-sizing: border-box;
   width: 100%;
   outline: none;
-  margin-bottom: 20px;
   border: 1px solid #e1e7ed;
   border-radius: 4px;
   font-size: 16px;
@@ -32,9 +28,10 @@ body {
   background-repeat: no-repeat;
   background-position: 26px;
   height: 70px;
+  margin-bottom: 20px;
 }
 
-.small {
+.input--small {
   font-size: 14px;
   padding-left: 33px;
   background-image: url(./images/Search.svg);
@@ -50,8 +47,4 @@ body {
 
 .input:focus {
   font-weight: bold;
-}
-
-.input::placeholder {
-  font-family: Avenir, sans-serif;
 }

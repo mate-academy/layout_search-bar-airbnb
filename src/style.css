@@ -1,0 +1,72 @@
+html {
+  --button-hight: 19px;
+  --button-width: 19px;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+
+.input_line {
+  width: 92%;
+  padding-left: 13.8px;
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+  border: 0;
+  outline: none;
+  cursor: default;
+}
+
+.input_line_small {
+  padding-left: 6.8px;
+  font-size: 14px;
+}
+
+.button {
+  position: relative;
+  top: 4.4px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  height: var(--button-hight);
+  width: var(--button-width);
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.button-small {
+  top: 2.1px;
+  height: calc(var(--button-hight) * 0.57);
+  width: calc(var(--button-width) * 0.57);
+}
+
+.searchBar {
+  margin-top: 21px;
+  margin-left: 1px;
+  padding: 20px 0 21.5px 25px;
+  border: 1px #e1e7ed;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px #e1e7ed, -1px -1px 3px #e1e7ed;
+}
+
+.searchBar-small {
+  margin-top: 22px;
+  padding: 9.8px 0 9px 11.8px;
+}
+
+.input_line:hover {
+  cursor: pointer;
+}
+
+.input_line:focus {
+  cursor: default;
+}
+
+.input_line:hover::placeholder {
+  font-family: Avenir, sans-serif;
+  font-weight: 800;
+}

@@ -7,10 +7,30 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
+    <title>Airbnb</title>
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"  data-qa="big">
+      <label class="label_big">
+        <input
+          class="field_up icon"
+          type="text"
+          data-qa="keypress"
+          placeholder="Try&quot;Los Angeles&quot;"
+          name="search_big"
+          value="Try &quot;Los Angeles&quot;"
+        >
+      </label>
+    </form>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" data-qa="small">
+      <input
+        class="field_down icon_down"
+        type="text"
+        placeholder="Try&quot;Los Angeles&quot;"
+        name="search_big"
+        value="Try &quot;Los Angeles&quot;"
+      >
+    </form>
   </body>
 </html>

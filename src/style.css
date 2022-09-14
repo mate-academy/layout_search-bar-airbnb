@@ -28,13 +28,11 @@ html {
   display: flex;
   justify-content: center;
   margin: 20px auto 0;
-  width: 100%;
   height: 70px;
 }
 
 .label_search-form {
   position: relative;
-  display: block;
   width: 100%;
 }
 
@@ -70,6 +68,7 @@ html {
 }
 
 .input_search-form_big::placeholder {
+  font-family: inherit;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
@@ -77,8 +76,6 @@ html {
 }
 
 .input_search-form_big:hover {
-  width: 100%;
-  height: 100%;
   background: #fff;
   border: 1px solid #e1e7ed;
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
@@ -86,9 +83,7 @@ html {
 }
 
 .input_search-form_big:focus {
-  width: 100%;
-  height: 100%;
-  font-family: Avenir, sans-serif;
+  font-family: inherit;
   font-weight: 300;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
@@ -117,7 +112,7 @@ html {
 }
 
 .input_search-form_small::placeholder {
-  font-family: Avenir, sans-serif;
+  font-family: inherit;
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
@@ -125,8 +120,6 @@ html {
 }
 
 .input_search-form_small:hover {
-  width: 100%;
-  height: 100%;
   background: #fff;
   border: 1px solid #e1e7ed;
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
@@ -134,9 +127,7 @@ html {
 }
 
 .input_search-form_small:focus {
-  width: 100%;
-  height: 100%;
-  font-family: Avenir, sans-serif;
+  font-family: inherit;
   font-weight: 300;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;

@@ -1,5 +1,4 @@
 * {
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -26,6 +25,7 @@ body {
   margin: 0;
   margin-left: 8px;
   margin-right: 8px;
+  padding: 0;
 }
 
 .form_main {
@@ -35,7 +35,7 @@ body {
   height: 70px;
 }
 
-.form_down {
+.form__small {
   height: 42px;
 }
 
@@ -49,12 +49,12 @@ body {
   position: absolute;
   content: "";
   display: block;
-}
-
-.label_big::after {
   background: url(./images/Search.svg);
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.label_big::after {
   width: 19px;
   height: 19px;
   top: 25px;
@@ -62,9 +62,6 @@ body {
 }
 
 .label_small::after {
-  background: url(./images/Search.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
   width: 11px;
   height: 11px;
   top: 15px;
@@ -93,7 +90,7 @@ body {
   line-height: 22px;
 }
 
-.field_down {
+.field__small {
   padding-left: 33px;
   font-size: 14px;
   line-height: 19px;
@@ -109,7 +106,7 @@ body {
   line-height: 22px;
 }
 
-.field_down::placeholder {
+.field__small::placeholder {
   font-size: 14px;
   line-height: 22px;
 }

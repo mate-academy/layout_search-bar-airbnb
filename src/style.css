@@ -16,7 +16,8 @@ html {
 .inputclass {
   font-family: "Avenir-heavy", sans-serif;
   font-style: normal ;
-  width: 1230px;
+  width: 100%;
+  box-sizing: border-box;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
@@ -24,6 +25,7 @@ html {
   border: 1px solid rgb(225, 231, 237) ;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
+  outline-style: none;
 }
 
 .labelclass {
@@ -35,7 +37,6 @@ html {
   font-size: 16px;
   line-height: 22px;
   font-weight: 800;
-  width: 1200px;
   height: 70px;
   background-image: url(./images/Search.svg);
   background-size: 19px;
@@ -54,7 +55,6 @@ input:focus {
 
 .small {
   height: 42px;
-  width: 1230px;
   background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
   background-size: 11px;

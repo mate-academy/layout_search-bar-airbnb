@@ -41,9 +41,13 @@ body {
   margin-top: 20px;
 }
 
-.big {
+.big::placeholder {
   font-size: 16px;
   line-height: 22px;
+
+}
+
+.big {
   height: 70px;
   background-image: url(./images/Search.svg);
   background-size: 19px;
@@ -69,10 +73,15 @@ input:focus {
 
 .small {
   height: 42px;
-  line-height: 19px;
+
   background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
   background-size: 11px;
   background-position: 13px center ;
   padding-left: 33px;
+}
+
+.small::placeholder {
+  font-size: 14px;
+  line-height: 19px;
 }

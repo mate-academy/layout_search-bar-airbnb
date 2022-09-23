@@ -4,13 +4,39 @@
     <meta charset="UTF-8">
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <h1>Search bar airbnb</h1>
+    <form action="http://www.google.com" method="post" >
+      <label for="search-bar-one"></label>
+
+      <input
+      type="search"
+      name="search-bar-one"
+      id="searchBarOnene"
+      class="search-bar search-image"
+      placeholder="Try&#8220;Los Angeles&#8220;"
+      data-qa="big keypress"
+     
+      >
+    </form>
+    <form>
+      <img src="src/images/Search.svg" alt="Image of magnifying glass ">
+      <label for="search-bar-two"></label>
+      <input
+      type="search"
+      name="search-bar-two"
+      id="search-bar-two"
+      class="search-bar search-image"
+      placeholder="Try&quot;Los Angeles&quot;"
+      data-qa="small"
+      >
+    </form>
+
   </body>
 </html>

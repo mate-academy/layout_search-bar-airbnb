@@ -33,6 +33,7 @@ html {
 
 .search__icons {
   position: absolute;
+  color: var(--color_search_text);
 }
 
 .searchbig__icon {
@@ -59,6 +60,11 @@ html {
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   color: var(--color_search_text);
   font-weight: inherit;
+}
+
+.search__inputs::placeholder {
+  /* color: var(--color_search_text); */
+  color: inherit;
 }
 
 .search__inputs:hover {

@@ -37,10 +37,9 @@
 
 .search2 {
   height: 42px ;
-  background-position-x: 13px;
-  background-position-y: 50%;
+  background-position: 13px center;
   background-size: 11px;
-  padding-left: 33px;
+  padding: 10px 0 11px 33px;
   font-size: 14px;
 }
 
@@ -59,17 +58,13 @@
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   background-image: url(../src/images/Search.svg);
   background-repeat: no-repeat;
-  background-position: 25px 26px;
+  background-position: 25px center;
   border: 1px solid #e1e7ed;
   border-radius: 3px;
+  font-weight: bold;
+
 }
 
-.search1:focus::placeholder {
-  font-weight: 900;
-}
-
-.search2:focus {
-  background-position-x: 13px;
-  background-position-y: 50%;
-  background-size: 11px;
+.search-bar:focus::placeholder {
+  color: #3d4e61;
 }

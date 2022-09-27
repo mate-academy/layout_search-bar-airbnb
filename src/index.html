@@ -11,13 +11,17 @@
   </head>
 
   <body>
-    <form action="/" method="post">
-      <label class="search_form" data-qa="keypress">
+    <form 
+      action="/" 
+      method="post" 
+      data-qa="big"
+    >
+      <label class="search_form">
         <input
           type="search"
           class="form-field"
           name="big_search"
-          data-qa="big"
+          data-qa="keypress"
           placeholder="Try &quot;Los Angeles&quot;"
         >
         <img
@@ -26,13 +30,17 @@
           alt="search"
         >
       </label>
-      
+    </form>
+    <form 
+      action="/" 
+      method="post" 
+      data-qa="small"
+    >
       <label class="search_form">
         <input
           type="search"
           class="form-field form-field_small"
           name="small_search"
-          data-qa="small"
           placeholder="Try &quot;Los Angeles&quot;"
         >
         <img

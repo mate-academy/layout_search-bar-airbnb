@@ -6,47 +6,57 @@
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body class="body">
     <div class="space"></div>
-    <form
-    action="http://www.google.com"
-    method="post"
-    data-qa="big"
-    class="form-search"
-    >
-      <label for="search-bar-one">
-        <input
-        type="search"
-        name="search-bar-one"
-        id="searchBarOne"
-        class="search-bar search1"
-        placeholder="Try &quot;Los Angeles&quot;"
-        data-qa="keypress"
-        >
-      </label>
-    </form>
+    <div class="form">
+      <form
+      action="http://www.google.com"
+      method="post"
+      data-qa="big"
+      class="form-search"
+      >
+        <label for="search-bar-one" >
+          <img
+          src="../src/images/Search.svg"
+          alt="magnify glass"
+          class="magnify1">
+          <input
+          type="search"
+          name="search-bar-one"
+          id="searchBarOne"
+          class="search-bar search1"
+          placeholder="Try &quot;Los Angeles&quot;"
+          data-qa="keypress"
+          >
+        </label>
+      </form>
+    </div>
+
     <div class="space1"> </div>
-    <form
-    action="http://www.google.com"
-    method="post"
-    data-qa="small"
-    class="form-search"
-    >
-      <label for="search-bar-two">
-        <input
-        type="search"
-        name="search-bar-two"
-        id="searchBarTwo"
-        class="search-bar search2"
-        placeholder="Try &quot;Los Angeles&quot;"
-        >
-      </label>
-
-    </form>
-
+    <div class="form">
+      <form
+      action="http://www.google.com"
+      method="post"
+      data-qa="small"
+      class="form-search"
+      >
+        <label for="search-bar-two">
+          <img
+          src="../src/images/Search.svg"
+          alt="magnify glass"
+          class="magnify2">
+          <input
+             type="search"
+             name="search-bar-two"
+             id="searchBarTwo"
+             class="search-bar search2"
+             placeholder="Try &quot;Los Angeles&quot;"
+                  >
+        </label>
+      </form>
+    </div>
   </body>
 </html>

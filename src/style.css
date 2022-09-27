@@ -20,6 +20,24 @@
 
 form {
   margin: 20px 0;
+  position: relative;
+}
+
+.button {
+  z-index: 1;
+  border: none;
+  background: none;
+  position: absolute;
+  top: 25px;
+  left: 26px;
+  padding: 0;
+}
+
+.small {
+  width: 14px;
+  position: absolute;
+  top: -11px;
+  left: -15px;
 }
 
 .search {
@@ -35,7 +53,7 @@ form {
 .bigSearch {
   padding: 0 0 0 62px;
   height: 70px;
-  background: url("./images/Search.svg") no-repeat 24px 24px;
+  /* background: url("./images/Search.svg") no-repeat 24px 24px; */
   background-size: 19px;
   font-size: 16px;
   color: #3d4e61;
@@ -43,11 +61,6 @@ form {
 
 ::-webkit-input-placeholder {
   color: #3d4e61;
-}
-
-.bigSearch::before {
-  content: "";
-  background: url("./images/Search.svg") no-repeat 24px 24px;
 }
 
 .search:hover {
@@ -65,7 +78,7 @@ form {
 
 .smallSearch {
   padding-left: 33px;
-  background: url("./images/Search.svg") no-repeat 13px 15px;
+  /* background: url("./images/Search.svg") no-repeat 13px 15px; */
   background-size: 11px;
   height: 42px;
   font-size: 14px;

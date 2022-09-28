@@ -1,4 +1,3 @@
-/* stylelint-disable block-no-empty */
 @font-face {
   font-family: Avenir;
   src: url(./fonts/Avenir-Book.ttf);
@@ -13,23 +12,56 @@
   font-weight: 800;
 }
 
+.form {
+  position: relative;
+}
+
+.bigForm {
+  font-size: 16px;
+  top: 20px;
+}
+
+.smallForm {
+  font-size: 14px;
+  top: 40px;
+}
+
 body {
   margin-top: 0;
 }
 
 .searchBar {
-  height: 70px;
   width: 100%;
   border: solid 1px #e1e7ed;
   border-radius: 4px;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   color: #3d4e61;
+  font-weight: 300;
+}
+
+.bigSearchBar {
+  height: 70px;
+  font-size: 16px;
   padding-left: 62px;
 }
 
-.searchBar::placeholder:hover {
+.smallSearchBar {
+  height: 42px;
+  padding-left: 33px;
+  font-size: 14px;
   font-weight: 300;
+}
+
+.searchBar::placeholder {
   font-family: Avenir, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.smallSearchBar::placeholder {
+  font-family: Avenir, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 .searchBar:hover {
@@ -45,13 +77,11 @@ body {
   font-weight: 800;
 }
 
-.smallSearchBar {
-  height: 42px;
-  padding-left: 33px;
+.icon {
+  position: absolute;
 }
 
 .bigIcon {
-  position: absolute;
   top: 25px;
   left: 26px;
 }
@@ -59,23 +89,6 @@ body {
 .smallIcon {
   width: 11px;
   height: 11px;
-  position: absolute;
   top: 15px;
   left: 13px;
 }
-
-.bigForm {
-  font-size: 16px;
-  position: relative;
-  top: 20px;
-  line-height: 20px;
-}
-
-.smallForm {
-  text-align: center;
-  font-size: 14px;
-  position: relative;
-  top: 40px;
-}
-
-/* 1 */

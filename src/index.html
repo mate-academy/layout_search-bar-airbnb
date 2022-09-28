@@ -11,6 +11,32 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
+    <form
+      action="#"
+      method="POST"
+      data-qa="big"
+    >
+      <input
+        type="text"
+        name="firstSearchInput"
+        class="input first-search-input"
+        placeholder="Try &quot;Los Angeles&quot;"
+        data-qa="keypress"
+      >
+    </form>
+    <form
+      action="#"
+      method="POST"
+      data-qa="small"
+    >
+      <input
+        type="text"
+        name="secondSearchInput"
+        class="input second-search-input"
+        placeholder="Try &quot;Los Angeles&quot;"
+        data-qa="small"
+      >
+    </form>
     <img
       src="images/Search.svg"
       alt="search-icon"
@@ -20,20 +46,6 @@
       src="images/Search.svg"
       alt="search-icon"
       class="second-search-icon"
-    >
-    <input
-      type="text"
-      name="firstSearchInput"
-      class="input first-search-input"
-      placeholder="Try &quot;Los Angeles&quot;"
-      data-qa="big keypress"
-    >
-    <input
-      type="text"
-      name="secondSearchInput"
-      class="input second-search-input"
-      placeholder="Try &quot;Los Angeles&quot;"
-      data-qa="small"
     >
   </body>
 </html>

@@ -44,46 +44,44 @@ body {
   border-color: #e1e7ed;
   border-radius: 4px;
   border-width: 1px;
+
+  font-family: inherit;
+  color: #3d4e61;
 }
 
-.inputLabel > img {
+.inputIconBig {
   position: absolute;
   top: 25px;
   left: 26px;
+  width: 19px;
+}
+
+.inputIconSmall {
+  position: absolute;
+  top: 15px;
+  left: 13px;
+  width: 11px;
+}
+
+:focus {
+  background: linear-gradient(70deg, blue, pink);
+
 }
 
 .big {
   padding-left: 62px;
-  background: url("./images/Search.svg") no-repeat left;
   background-size: 19px;
   background-position: 25px 26px;
-
-  /* /font-family: Avenir-Book;
-  font-size: 16px; */
 }
-
-/* .form::placeholder {
-  font-family: Avenir-Book;
-  font-size: 16px;
-  color: #3D4E61;
-} */
 
 .small {
   padding-left: 33px;
-  background: url("./images/Search.svg") no-repeat left;
   background-size: 11px;
   background-position: 12px;
-
-  /* font-family: Avenir-Book;
-  font-size: 14px; */
 
   width: 100%;
   height: 42px;
 }
-
-/* .bold {
-  font-family: Avenir-Heavy;
-} */
 
 .default {
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
@@ -93,3 +91,7 @@ body {
   box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
 
 }
+
+/* .focus::placeholder {
+  font-family: Avenir-Heavy;
+} */

@@ -11,11 +11,22 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
+
     <div class="searchBarBig">
-      <form class="inputDefault form formBig" action="/" method="get">
+
+      <form 
+        class="inputDefault form formBig" 
+        action="/" 
+        method="get"
+        data-qa="big"
+        >
         <div class="labelBig">
-          <label class="inputLabel">
-            <img src="/src/images/Search.svg" alt="Search" class="inputIcon">
+          <label class="inputLabelBig">
+            <img 
+              src="/images/Search.svg" 
+              alt="Search" 
+              class="inputIconBig"
+              >
             <input 
               type="search" 
               class="inputField big default"
@@ -25,65 +36,121 @@
           </label>
         </div>
       </form>
-      <form class="inputHover form formBig" action="/" method="get">
+
+      <form 
+        class="inputHover form formBig" 
+        action="/" 
+        method="get"
+        data-qa="big"
+        >
         <div class="labelBig">
-          <label class="inputLabel">
+          <label class="inputLabelBig">
+            <img 
+              src="/images/Search.svg" 
+              alt="Search" 
+              class="inputIconBig"
+              >
             <input 
-            type="search" 
-            class="inputField big hover"
-            data-qa="keypress"
-            placeholder="Try &quot;Los Angeles&quot;"
+              type="search" 
+              class="inputField big hover"
+              data-qa="keypress"
+              placeholder="Try &quot;Los Angeles&quot;"
             >
           </label>
         </div>
       </form>
-      <form class="inputFocus form formBig" action="/" method="get">
+
+      <form 
+        class="inputFocus form formBig" 
+        action="/" 
+        method="get" 
+        data-qa="big"
+        >
         <div class="labelBig">
-          <label class="inputLabel">
+          <label class="inputLabelBig">
+            <img 
+              src="/images/Search.svg" 
+              alt="Search" 
+              class="inputIconBig"
+              >
             <input 
-            type="search" 
-            class="inputField big bold"
-            data-qa="keypress"
-            placeholder="Los An|"
+              type="search" 
+              class="inputField big focus"
+              data-qa="keypress"
+              placeholder="Los An|"
             >
           </label>
         </div>
       </form>
     </div>
+
     <div class="searchBarSmall">
-      <form class="inputDefault form formSmall" action="/" method="get">
-        <label class="inputLabelSmall">
-          <input 
-            type="search" 
-            class="inputField small default"
-            data-qa="keypress"
-            placeholder="Los Angeles"
+
+      <form 
+        class="inputDefault form formSmall" 
+        action="/" 
+        method="get"
+        data-qa="small"
+        >
+        <div class="labelSmall">
+          <label class="inputLabelSmall">
+            <img 
+              src="/images/Search.svg" 
+              alt="Search" 
+              class="inputIconSmall"
             >
-        </label>
+            <input 
+              type="search" 
+              class="inputField small default"
+              placeholder="Los Angeles"
+            >
+          </label>
+        </div>
       </form>
 
-      <form class="inputHover form formSmall" action="/" method="get">
-        <label class="inputLabelSmall">
-          <input 
-            type="search" 
-            class="inputField small hover"
-            data-qa="keypress"
-            placeholder="Los Angeles"
+      <form 
+        class="inputHover form formSmall" 
+        action="/" 
+        method="get"
+        data-qa="small"
+        >
+        <div class="labelSmall">
+          <label class="inputLabelSmall">
+            <img 
+              src="/images/Search.svg" 
+              alt="Search" 
+              class="inputIconSmall"
             >
-        </label>
+            <input 
+              type="search" 
+              class="inputField small hover"
+              placeholder="Los Angeles"
+              >
+          </label>
+        </div>
       </form>
 
-      <form class="inputFocus form formSmall" action="/" method="get">
-        <label class="inputLabelSmall">
-          <input 
-            type="search" 
-            class="inputField small bold"
-            data-qa="keypress"
-            placeholder="Los Ang|"
+      <form 
+        class="inputFocus form formSmall" 
+        action="/" 
+        method="get"
+        data-qa="small"
+        >
+        <div class="labelSmall">
+          <label class="inputLabelSmall">
+            <img 
+              src="/images/Search.svg" 
+              alt="Search" 
+              class="inputIconSmall"
             >
-        </label>
+            <input 
+              type="search" 
+              class="inputField small focus"
+              placeholder="Los Ang|"
+            >
+          </label>
+        </div>
       </form>
-
     </div>
   </body>
 </html>

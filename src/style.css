@@ -31,19 +31,16 @@ html {
   position: relative;
 }
 
-.search__icons {
+.search-icon {
   position: absolute;
   color: var(--color_search_text);
-}
-
-.searchbig__icon {
   width: 19px;
   height: 19px;
   left: 26px;
   top: 25px;
 }
 
-.searchsmall__icon {
+.icon--small {
   width: 11px;
   height: 11px;
   left: 13px;
@@ -63,8 +60,8 @@ html {
 }
 
 .search__inputs::placeholder {
-  /* color: var(--color_search_text); */
-  color: inherit;
+  color: var(--color_search_text);
+  /* color: inherit; */
 }
 
 .search__inputs:hover {
@@ -79,17 +76,17 @@ html {
   font-weight: 900;
 }
 
-.searchbig__input {
+.input--big {
   height: 70px;
   font-size: 16px;
   line-height: 22px;
   padding-left: 62px;
 }
 
-.searchsmall__input {
+.input--small {
+  /* font-weight: inherit; */
   height: 42px;
   font-size: 14px;
   line-height: 19px;
-  font-weight: inherit;
   padding-left: 33px;
 }

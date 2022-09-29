@@ -12,27 +12,23 @@ body {
   font-family: Avenir-Book, sans-serif;
   color: #3d4e61;
 
-  width: 900px;
-
-  position: relative;
-  left: 48px;
-  top: 48px;
 }
 
 .searchBarBig {
   width: 100%;
+  margin-top: 20px;
+
+  position: relative;
 }
 
 .searchBarSmall {
-  width: 427px;
+  width: 100%;
+
+  position: relative;
 }
 
 .form {
   margin-bottom: 20px;
-}
-
-.searchBarBig:first-child {
-  margin-top: 20px;
 }
 
 .inputField {
@@ -47,6 +43,8 @@ body {
 
   font-family: inherit;
   color: #3d4e61;
+
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
 }
 
 .inputIconBig {
@@ -63,15 +61,14 @@ body {
   width: 11px;
 }
 
-:focus {
-  background: linear-gradient(70deg, blue, pink);
-
-}
-
 .big {
   padding-left: 62px;
   background-size: 19px;
   background-position: 25px 26px;
+
+  font-size: 16px;
+  font-family: Avenir-Book, sans-serif;
+  color: #3d4e61;
 }
 
 .small {
@@ -81,17 +78,21 @@ body {
 
   width: 100%;
   height: 42px;
+
+  font-size: 14px;
+  font-family: Avenir-Book, sans-serif;
+  color: #3d4e61;
 }
 
-.default {
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
-}
-
-.hover {
+.inputField:hover {
   box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
-
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
-/* .focus::placeholder {
-  font-family: Avenir-Heavy;
-} */
+.inputField:focus {
+  font-family: Avenir-Heavy, sans-serif;
+}
+
+.inputField::placeholder {
+  color: #3d4e61;
+}

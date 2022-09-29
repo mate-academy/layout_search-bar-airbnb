@@ -15,6 +15,7 @@
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
       data-qa="big"
+      for="bigSearch"
     >
       <label>
         <div class="box">
@@ -38,21 +39,23 @@
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
-      data-qa="searchBar--small"
+      data-qa="searchBar searchBar--small"
+      for="smallSearch"
     >
       <label>
-        <div class="box--small">
+        <div class="box box--small">
           <img
-            class="icon--small"
+            class="icon icon--small"
             src="./images/Search.svg"
             alt="search"
           >
           <input
-            class="searchBar--small"
+            class="searchBar searchBar--small"
             id="smallSearch"
             type="search"
             name="searchBar"
             placeholder="Try &quot;Los Angeles&quot;"
+            data-qa="small"
           >
         </div>
       </label>

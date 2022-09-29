@@ -11,52 +11,33 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div class="container">
-      <form
-    data-qa="big"
-    action="/"
-    method="/"
-    class="firstBar"
-    >
-        <label for="bigBar">
-          <button class="button_big">
-            <img
-            class="img img_big"
-            src="./images/Search.svg"
-            alt="search"
-            >
-          </button>
-          <input
-          class="search bigBar"
-          type="search"
-          name="bigSearchBar"
-          data-qa="keypress"
-          placeholder="Try &quot;Los Angeles&quot;"
-          >
-        </label>
-      </form>
-      <form
-      data-qa="small"
+    <form
       action="/"
-      method="/"
+      method="post"
+      class="first__form"
+      data-qa="big"
+    >
+      <input
+        class="form__input form__input--large"
+        type="text"
+        name="form__input--large"
+        placeholder="Try &quot;Los Angeles&quot;"
+        data-qa="keypress"
       >
-        <label for="smallBar">
-          <button class="button_small">
-            <img
-            class="img img_small"
-            src="./images/Search.svg"
-            alt="search"
-            >
-          </button>
-          <input
-          class="search smallBar"
-          type="search"
-          name="smallSearchBar"
-          placeholder="Try &quot;Los Angeles&quot;"
-          >
-        </label>
-      </form>
-    </div>
+    </form>
+    <form
+      action="/"
+      method="post"
+      class="second__form"
+      data-qa="small"
+    >
+      <input
+        class="form__input form__input--small"
+        type="text"
+        name="form__input--small"
+        placeholder="Try &quot;Los Angeles&quot;"
+      >
+    </form>
   </body>
 </html>
 </html>

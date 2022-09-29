@@ -8,43 +8,25 @@
   src: url(./fonts/Avenir-Heavy.ttf) format("truetype");
 }
 
-/* BIG SEARCHBAR */
-.bigSearch {
-  margin: 20px 0;
-}
-
-#big {
-  height: 70px;
-  padding-left: 62px;
-  line-height: 22px;
-  background: #fff;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  border-radius: 4px;
+.search__input {
   width: 100%;
   text-align: left;
   font-family: Avenir, sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
 }
 
-#big::placeholder {
+.search__input::placeholder {
   color: #3d4e61;
 }
 
-#inputImgBig {
-  position: absolute;
-  margin: 25px 0 0 26px;
-  width: 19px;
-  height: 19px;
-  color: #687c94;
-}
-
-#big:hover {
+.search__input:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-#big:focus {
+.search__input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   outline: none;
   border-radius: 3px;
@@ -52,43 +34,39 @@
   font-weight: 700;
 }
 
+.img {
+  position: absolute;
+  color: #687c94;
+}
+
+/* BIG SEARCHBAR */
+.big-search {
+  margin: 20px 0;
+}
+
+.big {
+  height: 70px;
+  padding-left: 62px;
+  line-height: 22px;
+  font-size: 16px;
+}
+
+.img__big {
+  margin: 25px 0 0 26px;
+  width: 19px;
+  height: 19px;
+}
+
 /* SMALL SEARCHBAR */
-#small {
-  width: 100%;
-  text-align: left;
-  font-family: Avenir, sans-serif;
-  font-weight: 400;
+.small {
   font-size: 14px;
   height: 42px;
-  background: #fff;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  border-radius: 4px;
   line-height: 19px;
   padding-left: 33px;
 }
 
-#inputImgSmall {
-  position: absolute;
+.img__small {
   margin: 15px 0 0 13px;
   width: 11px;
   height: 11px;
-  color: #687c94;
-}
-
-#small::placeholder {
-  color: #3d4e61;
-}
-
-#small:hover {
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-}
-
-#small:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border-radius: 3px;
-  font-family: Avenir-Heavy, sans-serif;
-  font-size: 14px;
-  color: #3d4e61;
-  outline: none;
 }

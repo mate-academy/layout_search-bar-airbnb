@@ -22,8 +22,6 @@ body {
 }
 
 .input::placeholder {
-  font-family: "Avenir", sans-serif;
-  font-size: 16px;
   color: hsl(212, 23%, 31%);
 }
 
@@ -44,12 +42,14 @@ body {
 }
 
 .input {
+  font-family: "Avenir", sans-serif;
+  font-size: 16px;
   background: hsl(0, 0%, 100%);
   border: 1px solid hsl(210, 25%, 91%);
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
   height: 70px;
-  width: calc(100% - var(--big-text-padding-left));
+  width: 100%;
   padding-left: var(--big-text-padding-left);
 }
 
@@ -78,6 +78,5 @@ body {
 
 .input--small {
   height: 42px;
-  width: calc(100% - var(--small-text-padding-left));
   padding-left: var(--small-text-padding-left);
 }

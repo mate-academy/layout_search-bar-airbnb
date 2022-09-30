@@ -13,16 +13,12 @@
     <div class="container">
 
       <form
-        class="search--bar--big"
         action="/"
-        method="get" data-qa="big"
+        method="get"
+        data-qa="big"
       >
         <label for="search--input--big" class="lable">
-          <img
-           class="icon"
-           src="./images/Search.svg"
-           alt="Company logo"
-          >
+
           <input
             class="input--big"
             placeholder="Try &#34Los Angeles&#34"
@@ -31,27 +27,32 @@
             id="big"
             data-qa="keypress"
           >
+
+          <img
+          class="icon"
+          src="./images/Search.svg"
+          alt="Company logo"
+         >
         </label>
       </form>
 
       <form
-        class="search--bar--small"
         action="/"
         method="get"
         data-qa="small"
       >
         <label for="search--input--small">
-          <img
-           class="icon icon--small"
-           src="./images/Search.svg"
-           alt="Company logo"
-          >
           <input
-            class="input--small"
+            class="input--big input--small "
             placeholder="Try &#34Los Angeles&#34"
             type="text"
             name="search"
             id="small"
+          >
+          <img
+           class="icon icon--small"
+           src="./images/Search.svg"
+           alt="Company logo"
           >
         </label>
       </form>

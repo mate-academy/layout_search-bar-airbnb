@@ -11,9 +11,14 @@
   src: url(./fonts/Avenir-Heavy.ttf);
 }
 
+.body :last-child {
+  margin: 0;
+}
+
 .form {
   width: 100%;
   display: flex;
+  margin: 20px 0;
 }
 
 .input {
@@ -24,6 +29,9 @@
   font-family: "Avenir", sans-serif;
   font-weight: bold;
   color: #3d4d61;
+  height: 68px;
+  font-size: 16px;
+  padding: 0 0 0 62px;
 }
 
 .input:hover {
@@ -41,13 +49,7 @@
 }
 /* ------------------------------big form--------------------------------- */
 
-.input--big {
-  height: 68px;
-  font-size: 16px;
-  padding: 0 0 0 62px;
-}
-
-.bigIcon {
+.icon {
   position: absolute;
   width: 19px;
   margin: 25px 0 26px 26px;
@@ -61,18 +63,10 @@
   padding: 0 0 0 33px;
 }
 
-.smallIcon {
+.icon--small {
   position: absolute;
   width: 11px;
   margin: 15px 0 16px 13px;
 }
 
 /* --------------------------------------------------------------- */
-
-.margin-bottom {
-  margin-bottom: 20px;
-}
-
-.margin-top {
-  margin-top: 20px;
-}

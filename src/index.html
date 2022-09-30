@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="html">
   <head>
     <meta charset="UTF-8">
     <meta
@@ -12,43 +12,32 @@
   </head>
   <body>
     <form
-      action="#"
+      class="form"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
-      class="form formBig"
       data-qa="big"
     >
-      <div class="form__item">
-        <img
-          src="images/Search.svg"
-          alt="search"
-          class="form__icon"
-        >
-        <input
-          type="text"
-          placeholder="Try &quot;Los Angeles&quot;"
-          class="form__input search"
-        >
-      </div>
+      <input
+        type="search"
+        class="form__input"
+        placeholder="Try &quot;Los Angeles&quot;"
+        data-qa="keypress"
+        name="bigSearch"
+      >
     </form>
 
     <form
-      action="#"
+      class="form"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
-      class="form formSmall"
       data-qa="small"
     >
-      <div class="form__item">
-        <img
-          src="images/Search.svg"
-          alt="search"
-          class="form__icon"
-        >
-        <input
-          type="text"
-          placeholder="Try &quot;Los Angeles&quot;"
-          class="form__input search"
-        >
-      </div>
+      <input
+        type="search"
+        class="form__input input--small"
+        placeholder="Try &quot;Los Angeles&quot;"
+        name="smallSearch"
+      >
     </form>
   </body>
 </html>

@@ -2,15 +2,51 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+ 
+    <link href="fonts/Avenir-Book.ttf" rel="stylesheet">
+    <form action="#" 
+           method="post" 
+           data-qa="big"
+    >
+      <div class="searchBar">
+        <label>
+          <img src="images/Search.svg" 
+               class="bigIcon"
+               alt="bigIcon"
+          >
+          <input type="search"  
+                  class="big" 
+                  placeholder="Try &quot;Los Angeles&quot;"
+                  data-qa="keypress"
+          >
+        </label>
+      </div>
+    </form>
+
+    <form action="#" 
+          method="post" 
+          data-qa="small"
+     >
+      <div class="searchBar">
+        <label>
+          <img src="images/Search.svg" 
+               class="smallIcon"
+               alt="smallIcon"
+          >
+          <input type="search" 
+                 class="small" 
+                 placeholder="Try &quot;Los Angeles&quot;"
+                 data-qa="keypress"
+          >
+        </label>
+      </div>
+    </form>
   </body>
 </html>

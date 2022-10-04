@@ -1,7 +1,7 @@
 # Search bar for Airbnb
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://<your_account>.github.io/layout_search-bar-airbnb/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_search-bar-airbnb/report/html_report/)
+- [DEMO LINK](https://Yurii-Pozho.github.io/layout_search-bar-airbnb/)
+- [TEST REPORT LINK](https://Yurii-Pozho.github.io/layout_search-bar-airbnb/report/html_report/)
 
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
 
@@ -25,7 +25,7 @@ ___
 - a search bar has 3 state default, `hover` and `focus`
 - don't use JavaScript
 - use `@font-face` for fonts
-- add attribute `data-qa="big"` for big search form, and `data-qa="small"` for small
+- add attribute `data-qa="big"` for big search form, and `data-qa="small"` for smallgit 
 - add attribute `data-qa="keypress"` to input in big search form
 ---
 --> [CHECKLIST](https://github.com/mate-academy/layout_search-bar-airbnb/blob/master/checklist.md)

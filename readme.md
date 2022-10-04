@@ -25,7 +25,7 @@ ___
 - a search bar has 3 state default, `hover` and `focus`
 - don't use JavaScript
 - use `@font-face` for fonts
-- add attribute `data-qa="big"` for big search form, and `data-qa="small"` for small
+- add attribute `data-qa="big"` for big search form, and `data-qa="small"` for smallgit 
 - add attribute `data-qa="keypress"` to input in big search form
 ---
 --> [CHECKLIST](https://github.com/mate-academy/layout_search-bar-airbnb/blob/master/checklist.md)

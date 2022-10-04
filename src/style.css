@@ -18,6 +18,11 @@ body {
   box-sizing: border-box;
 }
 
+* {
+  text-decoration: none;
+  outline: none;
+}
+
 .form-field {
   margin-top: 20px;
   display: block;
@@ -25,7 +30,6 @@ body {
   height: 70px;
   padding: 0;
   padding-left: 62px;
-  outline: none;
   border: 1px solid #e1e7e9;
   border-radius: 4px;
   font-size: 16px;
@@ -68,10 +72,11 @@ body {
 }
 
 .form-field::placeholder {
-  font-family: "Avenir", sans-serif;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
+  
   color: #3d4e61;
 }
 

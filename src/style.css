@@ -1,6 +1,7 @@
 @font-face {
   src: url(./fonts/Avenir-Book.ttf);
   font-family: Avenir-Book;
+
 }
 
 @font-face {
@@ -8,7 +9,8 @@
   font-family: Avenir-Heavy;
 }
 
-body {
+html {
+  font-family: Avenir-Book, sans-serif;
   font-weight: 300px;
 }
 
@@ -22,7 +24,7 @@ body {
 }
 
 .Search-bar ::placeholder {
-  font-family: Avenir-Book, sans-serif;
+
   color: #3d4e61;
 }
 
@@ -34,11 +36,11 @@ body {
 }
 
 .Search-bar-big {
-  height: 69px;
+  height: 68px;
 }
 
 .Search-bar-smal {
-  height: 41px;
+  height: 40px;
 }
 
 .Search-bar-big ::placeholder {
@@ -60,7 +62,7 @@ body {
 }
 
 .Search-bar-big .Button {
-  margin: 25px 18px 0 25px;
+  margin: 24px 18px 0 25px;
   width: 19px;
   height: 19px;
   border: 0;
@@ -70,13 +72,13 @@ body {
 .Search-bar-smal .Button {
   height: 11px;
   width: 11px;
-  margin: 15px 10px 16px 11px;
+  margin: 14px 10px 0 11px;
   background-size: 11px;
   border: 0;
 }
 
 .Search-bar .Input {
-  font-family: Avenir-Book, sans-serif;
+  font: inherit;
   border: 0;
   width: 100%;
   color: #3d4e61;
@@ -84,7 +86,7 @@ body {
 }
 
 .Search-bar-big .Input {
-  margin: 23px 0 24px;
+  margin: auto 0;
   font-size: 16px;
   height: 22px;
 }

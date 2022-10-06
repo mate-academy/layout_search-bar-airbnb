@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir.ttc);
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: bold;
+  src: url(fonts/Avenir-Heavy.ttf);
+}
+
+.search-form-big::placeholder {
+  color: #3d4e61;
+  font-weight: 400;
+}
+
+.search-form-big {
+  
+  height: 70px;
+  /* line-height: 22px; */
+  width: 100%;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: Avenir, serif;
+  padding: 25px 62px;
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+
+}
+
+.search-form-big:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  font-weight: 400;
+
+}
+
+.search-form-big:focus {
+
+  border-radius: 3px;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  font-weight: 400;
+}
+
+.big-form {
+  position: relative;
+  /* margin-top: 20px;  */
+  margin: 20px 8px;
+}
+
+.big-form::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  background-image: url(images/search.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 19px;
+  top: 25px;
+  left: 26px;
+    
+}
+
+.search-form-small::placeholder {
+  color: #3d4e61;
+  font-weight: 400;
+}
+
+.search-form-small {
+  box-sizing: border-box;
+  height: 42px;
+  width: 100%;
+  font-size: 14px;
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+  padding: 12px 33px;
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+}
+
+.small-form {
+  position: relative;
+  margin: 20px 8px;
+}
+
+.small-form::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  background-image: url(images/search.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 11px;
+  height: 11px;
+  top: 15px;
+  left: 13px;
+    
+}
+    
+.search-form-small:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  font-weight: 400;
+
+}
+
+.search-form-small:focus {
+  font-weight: 900;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}

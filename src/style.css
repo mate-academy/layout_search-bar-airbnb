@@ -2,6 +2,11 @@ body {
   margin: 0;
 }
 
+html {
+  font-weight: 300;
+  font-family: Avenir, serif;
+  font-size: 16px;
+}
 @font-face {
   font-family: Avenir;
   src: url(fonts/Avenir.ttc);
@@ -18,19 +23,21 @@ body {
   font-weight: 400;
 }
 
-.search-form-big {
-  
-  height: 70px;
-  /* line-height: 22px; */
+.search-form {
   width: 100%;
-  font-size: 16px;
-  font-weight: 300;
-  font-family: Avenir, serif;
-  padding: 25px 62px;
+  box-sizing: border-box;
+  font-weight: inherit;
+  font-family: inherit;
   border-radius: 4px;
   border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+}
 
+.search-form-big {
+  
+  height: 70px;
+  font-size: inherit;
+  padding: 25px 62px;
 }
 
 .search-form-big:hover {
@@ -48,7 +55,6 @@ body {
 
 .big-form {
   position: relative;
-  /* margin-top: 20px;  */
   margin: 20px 8px;
 }
 
@@ -72,16 +78,10 @@ body {
 }
 
 .search-form-small {
-  box-sizing: border-box;
+  
   height: 42px;
-  width: 100%;
   font-size: 14px;
-  font-family: Avenir, sans-serif;
-  font-weight: 300;
   padding: 12px 33px;
-  border-radius: 4px;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
 }
 
 .small-form {

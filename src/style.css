@@ -14,13 +14,15 @@ html {
   font-weight: 300;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .input__form {
   display: block;
-
 }
 
 .img__big {
-  box-sizing: border-box;
   position: absolute;
   width: 19px;
   height: 93px;
@@ -28,19 +30,16 @@ html {
 }
 
 .img__small {
-  box-sizing: border-box;
   position: absolute;
   width: 11px;
   height: 41px;
   left: 21px;
-
 }
 
 .search {
   font-family: inherit;
   font-weight: 500;
   width: 100%;
-  box-sizing: border-box;
   border-radius: 4px;
   background: #fff;
   border: 1px solid #e1e7ed;
@@ -75,11 +74,11 @@ html {
   line-height: 19px;
   font-weight: 900;
   font-family: inherit;
+  outline: none;
 }
 
 .search::placeholder {
   color: #3d4e61;
   font-family: inherit;
   font-weight: 400;
-
 }

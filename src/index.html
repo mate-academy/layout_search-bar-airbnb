@@ -19,14 +19,15 @@
   </head>
 
   <body>
-    <label
-      class="form_box"
-      for="search_big"
+
+    <form
+      action="localhost"
+      method="post"
+      data-qa="big"
     >
-      <form
-        action="localhost"
-        method="post"
-        data-qa="big"
+      <label
+        class="form_box"
+        for="search_big"
       >
         <input
           data-qa="keypress"
@@ -35,16 +36,19 @@
           id="search_big"
           placeholder="Try &quot;Los Angeles&quot"
         >
-      </form>
-    </label>
+      </label>
+    </form>
 
-    <label
-      class="form_box"
-      for="search_small"
+
+
+    <form
+      id="form"
+      data-qa="small"
     >
-      <form
-        id="form"
-        data-qa="small"
+
+      <label
+        class="form_box"
+        for="search_small"
       >
         <input
           class="search search_small"
@@ -52,8 +56,9 @@
           id="search_small"
           placeholder="Try &quot;Los Angeles&quot"
         >
-      </form>
-    </label>
+      </label>
+
+    </form>
   </body>
 
 </html>

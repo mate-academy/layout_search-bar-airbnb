@@ -1,15 +1,6 @@
-html {
-  font-family: "Avenir", sans-serif;
-}
-
 @font-face {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: inherit;
+  font-family: "Avenir";
+  src: url(fonts/Avenir.ttc);
   font-style: normal;
   font-weight: 800px;
 }
@@ -45,10 +36,30 @@ html {
 }
 
 .first-input:hover {
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 800px;
+  width: 100%;
+  height: 70px;
+  border: 1px solid;
+  border-color: rgba(225, 231, 237, 1);
+  border-radius: 4px;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  position: relative;
+  padding-left: 62px;
 }
 
 .first-input:focus {
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 800px;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  position: relative;
+  padding-left: 62px;
   background: linear-gradient(180deg, #ffff 0%, #f6f6f7 100%);
   border-radius: 3px;
   border: 1px solid #e1e7ed;
@@ -61,6 +72,7 @@ html {
 }
 
 .second-input {
+  font-family: inherit;
   font-weight: 900px;
   font-size: 14px;
   padding-left: 33px;
@@ -74,6 +86,7 @@ html {
 }
 
 .second-input:hover {
+  font-family: inherit;
   font-weight: 900px;
   font-size: 14px;
   box-sizing: border-box;
@@ -83,6 +96,7 @@ html {
 }
 
 .second-input:focus {
+  font-family: inherit;
   font-weight: 900px;
   font-size: 14px;
   box-sizing: border-box;

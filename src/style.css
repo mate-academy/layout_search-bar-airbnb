@@ -60,6 +60,7 @@ body {
 }
 
 .search-form__input {
+  color: #3d4e61; /* text color when typing */
   /* take up 100% of the parent element (search-form) */
   width: 100%;
   height: 100%;
@@ -68,6 +69,11 @@ body {
   border-radius: 4px;
   font-family: inherit; /* font-family: Avenir; font-weight: 300; */
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+}
+
+.search-form__input::placeholder {
+  color: inherit; /* inherit from search-form__input */
+  font-weight: 300;
 }
 
 .search-form__input:hover {

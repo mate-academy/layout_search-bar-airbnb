@@ -50,6 +50,9 @@ body {
 .search-form__label--big::after {
   background-image: url("./images/Search.svg");
   background-repeat: no-repeat;
+  /* scale as large as possible within its container (no cropp. or stretch.) */
+  /* tiling effect when container larger than image (set 'no-repeat' above) */
+  background-size: contain;
   width: 19px;
   height: 19px;
   top: 25px;
@@ -82,3 +85,6 @@ body {
   font-size: 16px;
   line-height: 22px; /* identical to box height - centering vertically */
 }
+  /* scale as large as possible within its container (no cropp. or stretch.) */
+  /* tiling effect when container larger than image (set 'no-repeat' above) */
+  background-size: contain;

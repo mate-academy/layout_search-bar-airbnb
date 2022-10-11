@@ -32,16 +32,16 @@
 }
 
 .text {
+  font-family: Avenir, sans-serif;
   border: none;
   outline: none;
+  position: absolute;
+  color: #3d4e61;
 }
 
 .text.large {
-  font-family: Avenir, sans-serif;
   font-size: 16px;
   line-height: 22px;
-  color: #3d4e61;
-  position: absolute;
   width: 158px;
   left: 62px;
   top: 35.71%;
@@ -50,23 +50,17 @@
 
 .text.small {
   padding: 0;
-  position: absolute;
-  font-family: Avenir, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
-  color: #3d4e61;
   left: 33px;
   top: 25%;
   bottom: 30%;
 }
 
-.text.small::placeholder {
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-}
-
 .icon {
+  position: absolute;
   padding: 0;
   border: none;
   outline: none;
@@ -74,7 +68,6 @@
 }
 
 .icon.large {
-  position: absolute;
   width: 19px;
   height: 19px;
   left: 26px;
@@ -82,7 +75,6 @@
 }
 
 .icon.small {
-  position: absolute;
   width: 11px;
   height: 11px;
   top: 15px;
@@ -101,15 +93,14 @@
   border-radius: 4px;
 }
 
+.text.small::placeholder {
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 .text.large:focus::placeholder {
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.text.small:focus {
-  font-family: Avenir, sans-serif;
-  font-style: normal;
+.text:focus {
   font-weight: 900;
-  font-size: 14px;
-  line-height: 19px;
-  color: #3d4e61;
 }

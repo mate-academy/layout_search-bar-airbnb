@@ -21,3 +21,64 @@ body {
   font-family: Avenir, sans-serif;
   font-size: 16px;
 }
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search-form--big {
+  height: 70px;
+}
+
+.search-form__label {
+  /* offset relative to itself, based on top, right, bottom, and left values */
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.search-form__label::after {
+  /* insert "empty" generated content right after label */
+  content: "";
+  /* remove this "empty" element from the normal document flow */
+  /* position relative to the initial containing block (search-form) */
+  position: absolute;
+}
+
+.search-form__label--big::after {
+  background-image: url("./images/Search.svg");
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 19px;
+  top: 25px;
+  left: 26px;
+}
+
+.search-form__input {
+  /* take up 100% of the parent element (search-form) */
+  width: 100%;
+  height: 100%;
+  outline: none; /* or outline: 0; */
+  border: 1px solid #e1e7ed;
+  border-radius: 10px;
+  font-family: inherit; /* font-family: Avenir; font-weight: 300; */
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+}
+
+.search-form__input:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.search-form__input:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.search-form__input--big {
+  padding-left: 62px;
+  font-size: 16px;
+  line-height: 22px; /* identical to box height - centering vertically */
+}

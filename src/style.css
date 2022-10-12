@@ -1,3 +1,7 @@
+html {
+  font-family: "Avenir", sans-serif;
+}
+
 @font-face {
   font-family: "Avenir";
   font-weight: 300;
@@ -33,19 +37,15 @@
   height: 70px;
   font-size: 16px;
   padding-left: 62px;
-  font-family: "Avenir", sans-serif;
   line-height: 22px;
-  color: #3d4e61;
 }
 
 .input-field-sm {
   height: 42px;
   font-size: 14px;
   padding-left: 33px;
-  font-family: "Avenir", sans-serif;
   font-weight: 400;
   line-height: 19.12px;
-  color: #3d4e61;
 }
 
 .form:hover {
@@ -57,10 +57,13 @@
 
 .form:focus {
   font-weight: bold;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
 .form::placeholder {
-  color: #3d4e61;
+  font-family: inherit;
+  font-weight: 300;
 }
 
 .img {

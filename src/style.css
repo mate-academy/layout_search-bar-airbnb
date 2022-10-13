@@ -27,18 +27,23 @@
   border-radius: 4px;
 }
 
-.input-big {
+.input--big {
   height: 70px;
   padding: 25px 62px;
   font-size: 16px;
   line-height: 22px;
 }
 
-.input-small {
+.input--small {
   height: 42px;
   padding: 12px 33px;
   font-size: 14px;
   line-height: 19px;
+}
+
+.form {
+  position: relative;
+  margin: 20px 0;
 }
 
 .input::placeholder {
@@ -62,31 +67,31 @@
   z-index: 1;
 }
 
-.search-box-big {
+.form--big {
   position: relative;
   margin: 20px 0;
 }
 
-.search-box-big::before {
+.form--big::before {
   width: 19px;
   height: 19px;
   top: 50%;
   left: 26px;
 }
 
-.search-box-small {
+.form--small {
   position: relative;
   margin: 20px 0;
 }
 
-.search-box-small::before {
+.form--small::before {
   width: 11px;
   height: 11px;
   top: 50%;
   left: 13px;
 }
 
-.input-big:focus {
+.input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
   border-radius: 3px;

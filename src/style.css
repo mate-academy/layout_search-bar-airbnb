@@ -30,12 +30,12 @@
 
 .firstSearch {
   color: rgba(61, 78, 97, 1);
-  height: 70px;
-  width: 100%;
   font-size: 16px;
   line-height: 22px;
+  height: 70px;
+  width: 100%;
   background: rgba(255, 255, 255, 1);
-  background-image: url(images\Search.svg);
+  background-image: url("images\Search.svg");
   background-repeat: no-repeat;
   background-position: 26px;
   background-size: 19px;
@@ -43,6 +43,7 @@
   border: 1px solid rgba(225, 231, 237, 1);
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
+  outline: none;
 }
 
 .firstSearch:hover {
@@ -53,7 +54,7 @@
 
 .firstSearch:focus {
   font-weight: bold;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 1),
+  background: url("images\Search.svg") linear-gradient(180deg, rgba(255, 255, 255, 1),
   rgba(246, 246, 247, 1) 100%);
   border: 1px solid rgba(225, 231, 237, 1);
   border-radius: 3px;
@@ -70,14 +71,15 @@
   height: 42px;
   width: 100%;
   background: rgba(255, 255, 255, 1);
-  background-image: url(images\Search.svg);
+  background-image: url("images\Search.svg");
   background-repeat: no-repeat;
-  background-position: 15px;
+  background-position: 12px 14px;
   background-size: 11px;
   padding-left: 33px;
   border: 1px solid rgba(225, 231, 237, 1);
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
+  outline: none;
 }
 
 .secondSearch:hover {
@@ -88,6 +90,7 @@
 
 .secondSearch:focus {
   font-weight: bold;
+  color: rgba(61, 78, 97, 0.2);
   background: linear-gradient(180deg, rgba(255, 255, 255, 1),
   rgba(246, 246, 247, 1), 100%);
   border: 1px solid rgba(225, 231, 237, 1);

@@ -7,7 +7,7 @@
   --input-width: calc(100vw - 100px);
 }
 
-form {
+.form {
   border: 1px solid #e1e7ed;
   border-radius: 4px;
   margin-top: 20px;
@@ -19,16 +19,16 @@ form {
   height: 40px;
 }
 
-form:hover {
+.form:hover {
   box-shadow: 0 3px 8px rgb(61, 78, 97, 0.2);
 }
 
-form:focus {
+.form:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
 }
 
-button {
+.button {
   background: url(images/Search.svg);
   height: 19px;
   width: 19px;
@@ -47,7 +47,7 @@ button {
   margin: 14px 0 0 12px;
 }
 
-input {
+.input {
   border: none;
   background-color: transparent;
   width: var(--input-width);
@@ -65,7 +65,7 @@ input {
   line-height: 21.86px;
 }
 
-.smallInp {
+.inputSmall {
   font-size: 13.5px;
   margin-left: 5px;
   line-height: 19.12px;
@@ -74,6 +74,7 @@ input {
 .input:active {
   color: #3d4e61;
   outline-style: none;
+  background-color: transparent;
 }
 
 .input:focus {
@@ -81,13 +82,10 @@ input {
   background: transparent;
   text-shadow: 5px 5px 8px rgba(61, 78, 97, 0.1);
   font-weight: 900;
+  background-color: transparent;
+
 }
 
 .input:focus::placeholder {
   color: transparent;
-}
-
-input::placeholder {
-  font-weight: 100;
-  
 }

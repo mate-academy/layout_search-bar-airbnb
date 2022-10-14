@@ -11,7 +11,6 @@
   </head>
   <body class="body">
     <h1 class="heading">Search bar airbnb</h1>
-    <div class="space"></div>
     <div class="form">
       <form
       action="http://www.google.com"
@@ -20,23 +19,20 @@
       class="form-search"
       >
         <label for="search-bar-one" >
-          <img
-          src="../src/images/Search.svg"
-          alt="magnify glass"
-          class="magnify1">
+
           <input
           type="search"
           name="search-bar-one"
           id="searchBarOne"
           class="search-bar search1"
           placeholder="Try &quot;Los Angeles&quot;"
+          onfocus="this.placeholder='Los Ang'"
           data-qa="keypress"
           >
         </label>
       </form>
     </div>
 
-    <div class="space1"> </div>
     <div class="form">
       <form
       action="http://www.google.com"
@@ -45,16 +41,13 @@
       class="form-search"
       >
         <label for="search-bar-two">
-          <img
-          src="../src/images/Search.svg"
-          alt="magnify glass"
-          class="magnify2">
           <input
              type="search"
              name="search-bar-two"
              id="searchBarTwo"
              class="search-bar search2"
              placeholder="Try &quot;Los Angeles&quot;"
+             onfocus="this.placeholder='Los Ang'"
                   >
         </label>
       </form>

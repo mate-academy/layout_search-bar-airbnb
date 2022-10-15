@@ -12,43 +12,31 @@
   </head>
   <body>
     <form
-      action="https://www.google.com/search"
-      method="get"
-      class="box boxForBigSearchBar"
+      class="formForInput"
+      action="#"
+      method="post"
       data-qa="big"
     >
-      <img
-        src="images/Search.svg"
-        alt="image"
-        class="imageForBig"
-      >
       <input
-        type="search"
-        name="searchBarBig"
-        placeholder="Try &quot;Los Angeles&quot;"
-        class="input inputInBigSearchBar"
+        name="bigSearch"
         data-qa="keypress"
+        class="input"
+        type="search"
+        placeholder="Try &quot;Los Angeles&quot;"
       >
     </form>
+
     <form
-      action="https://www.google.com/search"
-      method="get"
-      class="formSmall"
+      action="#"
+      method="post"
       data-qa="small"
     >
-      <label class="box labelSmall">
-        <img
-          src="images/Search.svg"
-          alt="image"
-          class="imageForSmall"
-        >
-        <input
-          type="search"
-          name="inputSmall"
-          placeholder="Try &quot;Los Angeles&quot;"
-          class="input inputInSmallSearchBar"
-        >
-      </label>
+      <input
+        name="smallSearch"
+        class="inputSmall"
+        type="search"
+        placeholder="Try &quot;Los Angeles&quot;"
+      >
     </form>
   </body>
 </html>

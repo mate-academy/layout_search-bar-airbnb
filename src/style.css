@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "Avenir-Book";
+  src: url(./fonts/Avenir-Book.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir-Heavy";
+  src: url(./fonts/Avenir-Heavy.ttf);
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Avenir-Book", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.formBig {
+  margin-top: 20px;
+}
+
+.formSmall {
+  margin-top: 20px;
+}
+
+.firstSearch {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+
+.inputBig {
+  background: #fff;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+  width: 100%;
+  height: 70px;
+  padding-left: 62px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3d4e61;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  outline: none;
+}
+
+.inputBig:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.inputBig:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.inputBig::placeholder {
+  font-family: "Avenir-Book", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3d4e61;
+  text-shadow: none;
+}
+
+.iconBig {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: 26px;
+  top: 25px;
+}
+
+.secondSearch {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+
+.inputSmall {
+  background: #fff;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+  width: 100%;
+  height: 42px;
+  padding-left: 33px;
+  padding-bottom: 12px;
+  padding-top: 10px;
+  outline: none;
+  font-size: 14px;
+  line-height: 19px;
+  color: #3d4e61;
+}
+
+.inputSmall:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.inputSmall:focus {
+  background: linear-gradient(180deg, #fff 0%,
+  #f6f6f7 100%);
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.inputSmall::placeholder {
+  font-family: "Avenir-Book", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  color: #3d4e61;
+  text-shadow: none;
+}
+
+.iconSmall {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  left: 13px;
+  top: 15px;
+}

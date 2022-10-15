@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8">
     <meta
@@ -11,54 +11,49 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    
-    <div class="search-form-big">
-      <form 
-        action="#"
-        method="post"
-        data-qa="big"
-      >
-        <label for="search-input-big">
-          <img 
+    <form 
+      action="#"
+      method="post"
+      data-qa="big"
+      class="search-form search-form-big"
+    >
+      <label for="search-input-big">
+        <img 
           src="images/Search.svg" 
           alt="Search" 
-          class="big-icon"
-          >
-          <input 
+          class="icon big-icon"
+        >
+        <input 
           type="search" 
           name="search-input-big"
           id="search-big"
-          class="search-input-big"
+          class="search-input search-input-big"
           data-qa="keypress"
           placeholder="Try &quot;Los Angeles&quot"
-          >
-        </label>
-      </form>
-    </div>
-
-    <div class="search-form-small">
-      <form 
-        action="#"
-        method="post"
-        data-qa="small"
-      >
-        <label for="search-input-small">
-          <img 
+        >
+      </label>
+    </form>
+    <form 
+      action="#"
+      method="post"
+      data-qa="small"
+      class="search-form search-form-small"
+    >
+      <label for="search-input-small">
+        <img 
           src="images/Search.svg" 
           alt="Search" 
-          class="small-icon"
-          >
-          <input 
+          class="icon small-icon"
+        >
+        <input 
           type="search" 
           name="search-input-small"
           id="search-input-small"
-          class="search-input-small"
+          class="search-input search-input-small"
           data-qa="keypress"
           placeholder="Try &quot;Los Angeles&quot"
-          >
-        </label>
-      </form>
-    </div>
-    
+        >
+      </label>
+    </form>
   </body>
 </html>

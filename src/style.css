@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "Avenir-Heavy";
+  src: url(./fonts/Avenir-Heavy.ttf);
+  font-weight: 800;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Avenir-Book";
+  src: url(./fonts/Avenir-Book.ttf);
+  font-weight: 300;
+  font-size: normal;
+}
+
+body {
+  font-family: "Avenir-Book", Arial, Helvetica, sans-serif;
+}
+
+.search-input {
+  display: flex;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 25px 0 25px 62px;
+  background: url(./images/Search.svg) no-repeat left 25px top 24px;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+}
+
+.search-input-small {
+  display: flex;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 20px;
+  padding: 11px 0 13px 33px;
+  background: url(./images/Search.svg) no-repeat left 12px top 15px;
+  background-size: 11px;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+}
+
+.search-input::placeholder,
+.search-input-small::placeholder {
+  font-family: "Avenir-Book", Arial, Helvetica, sans-serif;
+  font-size: 16px bold;
+  font-weight: 300px;
+  color: #3d4e61;
+}
+
+.search-input-small::placeholder {
+  font-family: "Avenir-Book", Arial, Helvetica, sans-serif;
+  font-size: 14px ;
+
+}
+
+.search-input:hover {
+  display: flex;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 20px;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  border-radius: 4px;
+}
+
+.search-input-small:hover {
+  display: flex;
+  width: 100%;
+  font-size: 14px;
+  margin-top: 20px;
+  background-size: 11px;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.2);
+  border-radius: 4px;
+}
+
+.search-input:focus {
+  font-family: "Avenir-Heavy", Arial, Helvetica, sans-serif;
+  display: flex;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 20px;
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+}
+
+.search-input-small:focus {
+  font-family: "Avenir-Heavy", Arial, Helvetica, sans-serif;
+  width: 100%;
+  font-size: 14px;
+  margin-top: 20px;
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+}

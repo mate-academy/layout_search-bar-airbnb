@@ -51,8 +51,10 @@ body {
   border-radius: 3px;
   font-weight: 900;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  background: url(./images/Search.svg) no-repeat 25px center, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  background-repeat: no-repeat;
+  background-image: url(./images/Search.svg), linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 25px center, center;
+  background-size: 19px 19px, contain;
 }
 
 .search-small {
@@ -64,12 +66,12 @@ body {
 .search-small::placeholder {
   font-size: 14px;
   line-height: 20px;
-  /* font-weight: 900; */
 }
 
 .search-small:focus {
   border-radius: 3px;
   font-weight: 900;
-  background: url(./images/Search.svg) no-repeat 12px center/ 11px 11px, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background-position: 12px center, center;
+  background-size: 11px 11px, contain;
   background-repeat: no-repeat;
 }

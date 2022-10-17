@@ -1,7 +1,4 @@
 * {
-  z-index: 1;
-  border: none;
-  background: none;
   box-sizing: border-box;
 }
 
@@ -15,9 +12,12 @@
   src: url(./fonts/Avenir-Book.ttf);
 }
 
-body {
+html {
   color: #3d4e61;
   font-family: Avenir, sans-serif;
+}
+
+body {
   margin: 0 8px;
 }
 
@@ -67,6 +67,9 @@ body {
 
 .sub,
 .sub2 {
+  z-index: 1;
+  border: none;
+  background: none;
   position: absolute;
   width: 19px;
   height: 19px;
@@ -95,10 +98,13 @@ body {
 
 .search-input:focus {
   font-size: 16px;
+  font-weight: bold;
 }
 
 .search-input__small:focus {
   font-size: 14px;
+  font-weight: bold;
+
 }
 
 .subSmall {

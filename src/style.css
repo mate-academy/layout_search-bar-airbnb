@@ -1,8 +1,98 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(fonts\Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url(fonts\Avenir-Heavy.ttf);
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url(fonts\Avenir.ttc);
+  font-style: bold;
+  font-weight: 900;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Avenir", sans-serif;
+}
+
 .firstForm {
   margin-top: 20px;
 }
 
 .firstSearch {
-  color: rgba(61, 78, 97,1);
+  color: rgba(61, 78, 97, 1);
+  font-size: 16px;
+  line-height: 22px;
   height: 70px;
+  width: 100%;
+  background: rgba(255, 255, 255, 1);
+  background-image: url("images\Search.svg");
+  background-repeat: no-repeat;
+  background-position: 26px;
+  background-size: 19px;
+  padding-left: 62px;
+  border: 1px solid rgba(225, 231, 237, 1);
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+  outline: none;
+}
+
+.firstSearch:hover {
+  border: 1px solid rgba(225, 231, 237, 1);
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  border-radius: 4px;
+}
+
+.firstSearch:focus {
+  font-weight: bold;
+  background: url("images\Search.svg") linear-gradient(180deg, rgba(255, 255, 255, 1),
+  rgba(246, 246, 247, 1) 100%);
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 3px;
+}
+
+.secondForm {
+  margin: 20px 0;
+}
+
+.secondSearch {
+  color: rgba(61, 78, 97, 1);
+  font-size: 14px;
+  line-height: 19.12px;
+  height: 42px;
+  width: 100%;
+  background: rgba(255, 255, 255, 1);
+  background-image: url("images\Search.svg");
+  background-repeat: no-repeat;
+  background-position: 12px 14px;
+  background-size: 11px;
+  padding-left: 33px;
+  border: 1px solid rgba(225, 231, 237, 1);
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+  outline: none;
+}
+
+.secondSearch:hover {
+  border: 1px solid rgba(225, 231, 237, 1);
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  border-radius: 4px;
+}
+
+.secondSearch:focus {
+  font-weight: bold;
+  color: rgba(61, 78, 97, 0.2);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1),
+  rgba(246, 246, 247, 1), 100%);
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 3px;
 }

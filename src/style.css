@@ -21,15 +21,20 @@
 
 * {
   box-sizing: border-box;
+}
+
+.body {
   font-family: "Avenir", sans-serif;
 }
 
 .firstForm {
   margin-top: 20px;
+  position: relative;
 }
 
 .secondForm {
   margin: 20px 0;
+  position: relative;
 }
 
 .search {
@@ -38,11 +43,6 @@
   line-height: 22px;
   height: 70px;
   width: 100%;
-  background: rgba(255, 255, 255, 1);
-  background-image: url("images\Search.svg");
-  background-repeat: no-repeat;
-  background-position: 26px;
-  background-size: 19px;
   padding-left: 62px;
   border: 1px solid rgba(225, 231, 237, 1);
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
@@ -50,13 +50,25 @@
   outline: none;
 }
 
+.icon {
+  position: absolute;
+  top: 25px;
+  left: 26px;
+}
+
 .search--small {
   font-size: 14px;
   line-height: 19.12px;
   height: 42px;
-  background-position: 12px 14px;
-  background-size: 11px;
+  background: rgba(255, 255, 255, 1);
   padding-left: 33px;
+}
+
+.icon--small {
+  width: 11px;
+  height: 11px;
+  top: 15px;
+  left: 13px;
 }
 
 .search:hover {
@@ -67,14 +79,8 @@
 
 .search:focus {
   font-weight: bold;
-  background: url("images\Search.svg") linear-gradient(180deg, rgba(255, 255, 255, 1),
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1),
   rgba(246, 246, 247, 1) 100%);
   border: 1px solid rgba(225, 231, 237, 1);
   border-radius: 3px;
-}
-
-.search--small:focus {
-  color: rgba(61, 78, 97, 0.2);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 1),
-  rgba(246, 246, 247, 1), 100%);
 }

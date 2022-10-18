@@ -1,5 +1,6 @@
 @font-face {
   font-family: Avenir;
+  font-style: normal;
   src: url(fonts/Avenir-Book.ttf);
 }
 
@@ -9,30 +10,48 @@
   src: url(fonts/Avenir-Heavy.ttf);
 }
 
-.margin-form {
+html {
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+}
+
+.body__formBig__margins {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.body_form_imgBig {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: 35px;
+  top: 46px;
+}
+
+.body_form_imgSmall {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  left: 22px;
+  top: 126px;
+}
+
 .input {
-  font-family: Avenir, Arial, Helvetica, sans-serif;
+  font-family: inherit;
+  font-style: normal;
   font-size: 16px;
   font-weight: 300;
   width: 100%;
   height: 70px;
   line-height: 22px;
   padding-left: 62px;
-  box-sizing: border-box;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border: 1px solid #e1e7ed;
   border-radius: 4px;
   background: #fff;
-  background-image: url(images/Search.svg);
-  background-repeat: no-repeat;
-  background-position: absolute;
-  background-position-x: 26px;
-  background-position-y: 25px;
-  background-size: 19px 19px;
 }
 
 .input:hover {
@@ -43,49 +62,14 @@
   font-weight: bold;
   border-radius: 3px;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  background-image: url(images/Search.svg);
-  background-repeat: no-repeat;
-  background-position: absolute;
-  background-position-x: 26px;
-  background-position-y: 25px;
-  background-size: 19px 19px;
+  outline-style: none;
 }
 
-.input-small {
-  font-family: Avenir, Arial, Helvetica, sans-serif;
+.input--small {
   font-size: 14px;
-  font-weight: 300;
-  width: 100%;
   height: 42px;
   line-height: 19px;
   padding-left: 33px;
-  box-sizing: border-box;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  border: 1px solid #e1e7ed;
-  border-radius: 4px;
-  background: #fff;
-  background-image: url(images/Search.svg);
-  background-repeat: no-repeat;
-  background-position: absolute;
-  background-position-x: 13px;
-  background-position-y: 15px;
-  background-size: 11px 11px;
-}
-
-.input-small:hover {
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-}
-
-.input-small:focus {
-  font-weight: bold;
-  border-radius: 3px;
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  background-image: url(images/Search.svg);
-  background-repeat: no-repeat;
-  background-position: absolute;
-  background-position-x: 15px;
-  background-position-y: 13px;
-  background-size: 11px 11px;
 }
 
 input::placeholder {

@@ -11,25 +11,32 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="http://localserver:3000/api"
+    <form
+    class="margin-form"
+    action="#"
     method="post"
     data-qa="big"
     >
-      <input type="search"
-      data-qa="keypress"
-      placeholder="Try &quot;Los Angeles&quot;"
-      class="search-input"
+      <input
+        name="search"
+        data-qa="keypress"
+        class="input"
+        type="search"
+        placeholder="Try &quot;Los Angeles&quot;"
       >
     </form>
-    <form
-    data-qa="small"
-    action="http://localserver:3000/api"
-    method="post">
-      <input type="search"
-      placeholder="Try &quot;Los Angeles&quot;"
-      class="search-input-small"
-      >
 
+    <form
+      action="#"
+      method="post"
+      data-qa="small"
+    >
+      <input
+        name="search"
+        class="input-small"
+        type="search"
+        placeholder="Try &quot;Los Angeles&quot;"
+      >
     </form>
   </body>
 </html>

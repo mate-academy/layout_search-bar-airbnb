@@ -4,13 +4,48 @@
     <meta charset="UTF-8">
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width, initial-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+
+    <form
+      class="search-line"
+      data-qa="big"
+      action="git add path/to/changed_file path/to/new_file "
+      method="get" >
+      <label
+        class="label big"
+      >
+        <input
+          class="line first-search"
+          data-qa="keypress"
+          type="text"
+          name="first"
+          placeholder ="Try &quot;Los Angeles&quot"
+        >
+      </label>
+    </form>
+
+    <form
+      class="search-line"
+      data-qa="small"
+      action=" "
+      method="get">
+      <label
+        class="label small"
+      >
+        <input
+          class="line second-search"
+          type="text"
+          name="second"
+          placeholder="Try &quot;Los Angeles&quot"
+        >
+      </label>
+    </form>
+
   </body>
 </html>

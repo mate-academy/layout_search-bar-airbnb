@@ -12,50 +12,46 @@
   </head>
   <body>
 
-    <div>
-      <form
-        action="http://localhost:8080/"
-        method="post"
-        class="firstSearchString"
-        data-qa="big"
-        >
-        <label>
-          <img
-          src="images/Search.svg"
-          alt="img"
-          class="imageOne"
-          >
-          <input
-            type="text"
-            placeholder="Try &quot;Los Angeles&quot"
-            data-qa="keypress"
-            class="firstInputLine"
-          >
-        </label>
-      </form>
-    </div>
-
-    <div>
-      <form
+    <form
       action="http://localhost:8080/"
       method="post"
-      class="secondSearchString"
-      data-qa="small"
-      >
-        <label>
-          <img
-          src="images/Search.svg"
-          alt="img"
-          class="imageTwo"
-          >
-          <input
-            type="text"
-            placeholder="Try &quot;Los Angeles&quot"
-            class="secondInputLine"
-          >
-        </label>
-      </form>
-    </div>
+      class="SearchString firstSearchString"
+      data-qa="big"
+    >
+      <label>
+        <img
+        src="images/Search.svg"
+        alt="img"
+        class="imageOne"
+        >
+        <input
+          type="text"
+          placeholder="Try &quot;Los Angeles&quot"
+          data-qa="keypress"
+          class="firstInputLine"
+        >
+      </label>
+    </form>
+
+    <form
+    action="http://localhost:8080/"
+    method="post"
+    class="SearchString secondSearchString"
+    data-qa="small"
+    >
+      <label>
+        <img
+        src="images/Search.svg"
+        alt="img"
+        class="imageTwo"
+        >
+        <input
+          type="text"
+          placeholder="Try &quot;Los Angeles&quot"
+          class="secondInputLine"
+        >
+      </label>
+    </form>
 
   </body>
 </html>

@@ -14,10 +14,8 @@ body {
 }
 
 .search-bar-container {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  margin-top: 20px;
 }
 
 form {
@@ -26,34 +24,49 @@ form {
 
 .search-bar::placeholder {
   font-family: Avenir-Book, sans-serif;
+  color: #475465;
 }
 
 .search-bar {
+  display: inline-block;
+  width: 99.65%;
   border: 1px solid #e0e0e0;
-  border-radius: 2px;
+  border-radius: 4px;
   font-family: Avenir-Book, sans-serif;
   background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
 }
 
 .search-bar:focus {
   outline: none;
 }
 
-.search-bar-big {
-  height: 50px;
-  width: 97%;
-  padding-left: 3%;
-  font-size: 18px;
-  background-position: 15px;
+.search-bar:hover {
+  border: 1px solid #c4c4c4;
+}
 
+.search-bar-big {
+  height: 66px;
+  font-size: 16px;
+  background-position: 25px 24px;
+  margin-bottom: 20px;
+}
+
+.search-bar-big::placeholder {
+  font-size: 16px;
+  padding-left: 61px;
 }
 
 .search-bar-small {
-  height: 20px;
-  width: 98.25%;
-  padding-left: 1.75%;
-  font-size: 16px;
+  height: 35px;
+  font-size: 14px;
   background-position: 10px;
-  background-size: 10px;
+  background-size: 11px;
+  padding: 2px;
+}
+
+.search-bar-small::placeholder {
+  font-size: 14px;
+  padding-left: 30px;
 }

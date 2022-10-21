@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(./fonts/Avenir-Book.ttf);
+}
+
+body {
+  font-family: "Avenir", sans-serif;
+  font-weight: 300;
+
+}
+
+.submitlarge {
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  width: 19px;
+  height: 19px;
+  cursor: pointer;
+  margin-right: 14px;
+  position: relative;
+  top: -1px;
+  color: transparent;
+
+}
+
+.submitsmall {
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: 73% 73%;
+  border: none;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 0;
+  position: relative;
+  top: 1px;
+  color: transparent;
+}
+
+.submit:focus {
+  outline: none;
+}
+
+.textlarge {
+  border: none;
+  background-color: transparent;
+  font-size: inherit;
+  padding: 0;
+}
+
+.textsmall {
+  border: none;
+  background-color: transparent;
+  font-size: inherit;
+  padding: 0;
+  line-height: 20px;
+}
+
+.textlarge::placeholder {
+  font-family: "Avenir", sans-serif;
+  font-weight: 300;
+  color: #3d4e61;
+}
+
+.textsmall::placeholder {
+  font-family: "Avenir", sans-serif;
+  font-weight: 300;
+  color: #3d4e61;
+}
+
+.textlarge:focus {
+  outline: none;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color: #3d4e61;
+}
+
+.textsmall:focus {
+  outline: none;
+  color: #3d4e61;
+}
+
+.textlarge:focus::placeholder {
+  outline: none;
+  text-shadow: none;
+}
+
+.textsmall:focus::placeholder {
+  outline: none;
+  text-shadow: none;
+}
+
+.large-searchbar {
+  width: 99.7%;
+  height: 68px;
+  margin-top: 20px;
+  border: #e1e7ed 1px solid;
+  border-left: #e1e7ed 1px solid;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  box-sizing: content-box;
+}
+
+.large-searchbar:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.large-searchbar:focus-within {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  outline: none;
+}
+
+.small-searchbar {
+  width: 99.7%;
+  height: 40px;
+  margin-top: 20px;
+  border: #e1e7ed 1px solid;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+}
+
+.small-searchbar:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.small-searchbar:focus-within {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  outline: none;
+}
+
+.largeform {
+  padding: 23px 25px 25px;
+  position: relative;
+  font-size: 16px;
+}
+
+.smallform {
+  padding: 10px 13px 16px;
+  position: relative;
+  font-size: 14px;
+}

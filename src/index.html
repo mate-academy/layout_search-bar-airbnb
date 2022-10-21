@@ -14,30 +14,33 @@
     <form
       action="/"
       method="get"
-      class="search-form"
+      class="search-form search-form--big"
       data-qa="big"
     >
-      <input
-        type="text"
-        name="search"
-        class="search-bar"
-        data-qa="keypress"
-        placeholder="Try &quot;Los Angeles&quot;"
-      >
+      <label class="search-label search-label--big">
+        <input
+          type="text"
+          class="search-bar search-bar--big"
+          data-qa="keypress"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
     </form>
 
     <form
       action="/"
       method="get"
-      class="search-form"
+      class="search-form search-form--small"
       data-qa="small"
     >
-      <input
-        type="text"
-        name="searchSmall"
-        class="search-bar search-bar--small"
-        placeholder="Try &quot;Los Angeles&quot;"
+      <label class="search-label search-label--small">
+        <input
+          type="text"
+          name="searchSmall"
+          class="search-bar search-bar--small"
+          placeholder="Try &quot;Los Angeles&quot;"
         >
+      </label>
     </form>
   </body>
 </html>

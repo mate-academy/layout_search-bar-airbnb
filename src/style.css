@@ -20,19 +20,9 @@
 .form {
   position: relative;
   margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.second-form {
-  position: relative;
-}
-
-.form:nth-child(2) {
-  margin: 0;
 }
 
 .searchBar {
-  display: block;
   width: 100%;
   height: 70px;
   background: #fff;
@@ -40,14 +30,25 @@
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
   font-family: Avenir, sans-serif;
+}
+
+.searchBar--big {
   font-size: 16px;
   padding: 0 0 0 62px;
   line-height: 22px;
   font-weight: 800;
 }
 
+.searchBar--small {
+  height: 42px;
+  font-size: 14px;
+  padding-left: 33px;
+  line-height: 19px;
+}
+
 ::placeholder {
   font-weight: 300;
+  color: #3d4e61;
 }
 
 .searchBar:hover {
@@ -64,22 +65,15 @@
 
 .searchBar__img {
   position: absolute;
+
+}
+
+.searchBar--big__img {
   top: 25px;
   left: 26px;
-  display: block;
 }
 
-.searchBar-small {
-  display: block;
-  height: 42px;
-  font-size: 14px;
-  padding-left: 33px;
-  line-height: 19px;
-}
-
-.searchBar-small__img {
-  position: absolute;
-  display: block;
+.searchBar--small__img {
   width: 11px;
   height: 11px;
   top: 15px;

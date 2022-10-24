@@ -23,6 +23,7 @@ body {
 }
 
 .search {
+  font-family: inherit;
   outline: none;
   width: 100%;
   background-size: 1em;
@@ -62,14 +63,17 @@ body {
   height: 42px;
 }
 
-.big::placeholder {
+.search::placeholder {
+  font-family: inherit;
   color: #3d4e61;
+}
+
+.big::placeholder {
   font-size: 16px;
   line-height: 22px;
 }
 
 .small::placeholder {
-  color: #3d4e61;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;

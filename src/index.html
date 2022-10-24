@@ -17,12 +17,15 @@
       data-qa="big"
       class="search-form"
     >
-      <input
-        class="search-input search-input-big"
-        type="search"
-        placeholder="Try &quot;Los Angeles&quot;"
-        data-qa="keypress"
-      >
+      <label for="search-input" class="search-input-label">
+        <input
+          class="search-input search-input-big"
+          id="search-input"
+          type="search"
+          placeholder="Try &quot;Los Angeles&quot;"
+          data-qa="keypress"
+        >
+      </label>
     </form>
 
     <form
@@ -31,11 +34,14 @@
       data-qa="small"
       class="search-form search-form-small"
     >
-      <input
-        class="search-input search-input-small"
-        type="search"
-        placeholder="Try &quot;Los Angeles&quot;"
-      >
+      <label for="search-input-small" class="search-input-label search-input-label-small">
+        <input
+          class="search-input search-input-small"
+          id="search-input-small"
+          type="search"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
     </form>
   </body>
 </html>

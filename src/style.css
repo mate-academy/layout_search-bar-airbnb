@@ -13,7 +13,9 @@
 }
 
 html {
-  font: 300 16px "Avenir", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  font-family: "Avenir", Arial, sans-serif;
 }
 
 .form {
@@ -43,18 +45,15 @@ html {
   font-size: 14px;
 }
 
-.search:hover,
-.search_small:hover {
+.search:hover {
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
 }
 
-.search:focus,
-.search_small:focus {
+.search:focus {
   outline: none;
   font-weight: 800;
 }
 
-.search::placeholder,
-.search_small::placeholder {
+.search::placeholder {
   font-weight: 300;
 }

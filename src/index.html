@@ -11,8 +11,12 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form class="form" action="/" method="get">
-      <label for="search-bar-b">
+    <form 
+      action="/" 
+      method="get"
+      data-qa="big"
+    >
+      <label class="label" for="search-bar-b">
         <img class="search-icon icon-b" src="./images/Search.svg" alt="search-icon">
         <input 
           class="search-bar big" 
@@ -20,12 +24,16 @@
           name="search-bar-b" 
           id="search-bar-b"
           placeholder="Try &quot;Los Angeles&quot;"
-          data-qa="big"
+          data-qa="keypress"
         >
       </label>
     </form>
-    <form class="form" action="/" method="get">
-      <label for="search-bar-s">
+    <form 
+      action="/" 
+      method="get"
+      data-qa="small"
+    >
+      <label class="label" for="search-bar-s">
         <img class="search-icon icon-s" src="./images/Search.svg" alt="search-icon">
         <input 
           class="search-bar small" 

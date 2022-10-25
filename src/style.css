@@ -29,10 +29,20 @@ body form:first-child {
 
 .search-bar {
   font-family: "Avenir", sans-serif;
+  height: 70px;
   width: 100%;
+  font-size: 16px;
+  padding-left: 62px;
   border: 1px solid #e1e7ed;
   border-radius: 4px;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+}
+
+.search-bar-small {
+  font-weight: 400;
+  height: 42px;
+  font-size: 14px;
+  padding-left: 33px;
 }
 
 .search-bar::placeholder {
@@ -48,6 +58,7 @@ body form:first-child {
   font-weight: 900;
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  outline: none;
 }
 
 .label {
@@ -56,31 +67,15 @@ body form:first-child {
 
 .search-icon {
   position: absolute;
-}
-
-.icon-b {
   height: 19px;
   width: 19px;
   left: 26px;
   top: -1px;
 }
 
-.icon-s {
+.search-icon-small {
   height: 11px;
   width: 11px;
   left: 13px;
   top: 3px;
-}
-
-.big {
-  height: 70px;
-  font-size: 16px;
-  padding-left: 62px;
-}
-
-.small {
-  font-weight: 400;
-  height: 42px;
-  font-size: 14px;
-  padding-left: 33px;
 }

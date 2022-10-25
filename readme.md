@@ -1,7 +1,7 @@
 # Search bar for Airbnb
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://<your_account>.github.io/layout_search-bar-airbnb/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_search-bar-airbnb/report/html_report/)
+- [DEMO LINK](https://mttony.github.io/layout_search-bar-airbnb/)
+- [TEST REPORT LINK](https://mttony.github.io/layout_search-bar-airbnb/report/html_report/)
 
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
 
@@ -15,16 +15,16 @@ ___
 ![screenshot](./references/search-bar-example.png)
 
 ### Requirements:
-- use images from [src/images](src/images)
-- there must be two search bars
-- search bar must have width 100%
-- distance between two search bars must be 20px
-- the big search bar must have top indent 20px
+- use images from [src/images](src/images) 
+- there must be two search bars DONE
+- search bar must have width 100% DONE
+- distance between two search bars must be 20px DONE
+- the big search bar must have top indent 20px DONE
 - follow styles from the mock
 - default `font-weight` must be 300
 - a search bar has 3 state default, `hover` and `focus`
 - don't use JavaScript
-- use `@font-face` for fonts
+- use `@font-face` for fonts  DONE
 - add attribute `data-qa="big"` for big search form, and `data-qa="small"` for small
 - add attribute `data-qa="keypress"` to input in big search form
 ---
@@ -42,5 +42,3 @@ attributes.
 layout.
 - Remember that inputs and other interactive elements don’t inherit font styles by default.
 - Remember that placeholder has its own set of styles available using `::placeholder` pseudo-element.
-
-

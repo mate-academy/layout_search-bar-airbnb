@@ -1,52 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
+    <meta charset="UTF-8">
     <meta
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     >
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar airbnb</title>
-    <link rel="stylesheet" href="./style.css" >
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <form
-      class="forms"
-      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="post"
+      action="/"
+      method="get"
       data-qa="big"
     >
-      <label class="label1">
+      <label class="search__bar">
         <img
-          src="./images/Search.svg"
-          alt="#"
-          class="searchimgbig"
+        src="./images/Search.svg"
+        alt="search icon"
+        class="search__icon"
         >
         <input
-          class="input1"
           type="search"
-          placeholder="Try &quot;Los Angeles&quot;"
+          class="search__field"
           data-qa="keypress"
+          placeholder="Try &quot;Los Angeles&quot;"
+          name="bigInput"
         >
       </label>
     </form>
     <form
-      class="forms"
-      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="post"
+      action="/"
+      method="get"
       data-qa="small"
     >
-      <label class="label2">
+      <label class="search__bar">
         <img
           src="./images/Search.svg"
-          alt="#"
-          class="searchimgsmall"
+          alt="search icon"
+          class="search__icon search__icon--small"
         >
         <input
-          class="input2"
           type="search"
+          class="search__field search__field--small"
           placeholder="Try &quot;Los Angeles&quot;"
+          name="smallInput"
         >
       </label>
     </form>

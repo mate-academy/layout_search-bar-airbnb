@@ -1,0 +1,80 @@
+:root {
+  --border-color: #e1e7ed;
+  --text-color: #3d4e61;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(/fonts/Avenir.ttc);
+}
+
+html {
+  font-weight: 300;
+  font-family: "Avenir", Helvetica, sans-serif;
+}
+
+body {
+  margin-top: 20px;
+}
+
+.searchbar {
+  font-family: inherit;
+  width: 100%;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  color: var(--text-color);
+  font-weight: 900;
+  padding: 0;
+}
+
+.searchbar:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.searchbar:focus {
+  outline: none;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+}
+
+.searchbar::placeholder {
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.searchbar--big {
+  margin-bottom: 20px;
+  height: 70px;
+  padding-left: 62px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.searchbar--small {
+  height: 42px;
+  padding-left: 33px;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.input-container {
+  position: relative;
+}
+
+.image--big {
+  position: absolute;
+  left: 26px;
+  bottom: 46px;
+  width: 19px;
+  height: 19px;
+}
+
+.image--small {
+  position: absolute;
+  left: 13px;
+  top: 15px;
+  width: 11px;
+  height: 11px;
+}

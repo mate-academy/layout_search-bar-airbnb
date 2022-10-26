@@ -11,6 +11,46 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <form 
+      action="https://mate.academy" 
+      method="get" 
+      data-qa="big"
+    >
+      <div class="input-container">
+        <img 
+          src="/images/Search.svg" 
+          alt="search icon" 
+          class="image image--big"
+        >
+        <label for="first">
+          <input 
+            type="text" 
+            id="first" 
+            placeholder="Try &quot;Los Angeles&quot;" 
+            class="searchbar searchbar--big" 
+            data-qa="keypress"
+          >
+        </label>
+      </div>
+    </form>
+    <form 
+      action="https://mate.academy" 
+      method="get" 
+      data-qa="small"
+    >
+      <div class="input-container">
+        <img 
+          src="/images/Search.svg" 
+          alt="search icon" 
+          class="image image--small">
+        <label for="second">
+          <input 
+            type="text" 
+            id="second" 
+            placeholder="Try &quot;Los Angeles&quot;" 
+            class="searchbar searchbar--small">
+        </label>
+      </div>
+    </form>
   </body>
 </html>

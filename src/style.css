@@ -1,0 +1,39 @@
+@font-face {
+  font-family: Avenir, serif;
+  src:
+    url(./fonts/Avenir.ttc),
+    url(./fonts/Avenir-Book),
+    url(./fonts/Avenir-Heavy);
+}
+
+.search {
+  width: 100%;
+  margin: 0 0 1.25em;
+  padding: 1em 2em;
+  font-weight: 300;
+  text-indent: 0.5em;
+  background: white url(./images/Search.svg) 1em no-repeat;
+  border: 1px solid rgba(200, 200, 200, 0.75);
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(200, 200, 200, 0.5);
+}
+
+.searchMain {
+  font-family: Avenir-Heavy;
+  font-size: 1em;
+  background-size: 1em;
+}
+
+.searchSub {
+  font-family: Avenir;
+  font-size: 0.75em;
+  background-size: 0.75em;
+}
+
+.search:hover {
+  background-color: aliceblue;
+}
+
+.search:focus {
+  background-color: bisque;
+}

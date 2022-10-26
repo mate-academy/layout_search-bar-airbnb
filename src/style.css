@@ -2,7 +2,7 @@
   font-family: Avenir;
   font-weight: 300;
   font-style: normal;
-  src: url(./fonts/Avenir.ttc);
+  src: url(./fonts/Avenir-Book.ttf);
 }
 
 @font-face {
@@ -10,6 +10,10 @@
   font-weight: 900;
   font-style: normal;
   src: url(./fonts/Avenir-Heavy.ttf);
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html {
@@ -21,6 +25,7 @@ html {
   margin: 20px 0;
   position: relative;
   background: #fff;
+  
 }
 
 .term {
@@ -29,19 +34,27 @@ html {
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border: 1px solid #e1e7ed;
   border-radius: 4px;
+  width: 100%;
 }
 
 .term--big {
+  color: #3d4e61;
   font-size: 16px;
+  height: 70px;
   width: 100%;
-  line-height: 68px;
-  padding: 0 62px;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+  display: block;
+  padding: 24px 0 24px 62px;
+  background: transparent url(images/Search.svg) no-repeat
+    26px center;
+  background-size: 19px 19px;
 }
 
 .term--small {
   font-size: 14px;
-  width: 100%;
-  height: 38px;
+  height: 42px;
   padding-left: 33px;
 }
 
@@ -54,6 +67,7 @@ html {
   left: 26px;
   width: 19px;
   height: 19px;
+  position: absolute;
 }
 
 .search-small {
@@ -69,11 +83,9 @@ html {
 
 .term:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-  border-radius: 3px;
 }
 
 .term:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border-radius: 3px;
   font-weight: 900;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }

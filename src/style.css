@@ -14,6 +14,7 @@
 
 html {
   font-family: Avenir, sans-serif;
+  --box-shadows: 1px 3px 8px rgba(61, 78, 97, 0.2);
 }
 
 body {
@@ -34,14 +35,16 @@ body {
 }
 
 .search:hover {
-  box-shadow: 1px 3px 8px rgba(61, 78, 97, 0.2);
+  box-shadow: var(--box-shadows);
 }
 
 .search:focus {
-  box-shadow: 1px 3px 8px rgba(61, 78, 97, 0.2);
+  box-shadow: var(--box-shadows);
 }
 
 .search:focus::placeholder {
+  font-family: inherit;
+  color: #3d4e61;
   text-shadow: 1px 14px 8px #000;
 }
 
@@ -61,11 +64,6 @@ body {
   background-position-x: 13px;
   background-position-y: center;
   height: 42px;
-}
-
-.search::placeholder {
-  font-family: inherit;
-  color: #3d4e61;
 }
 
 .big::placeholder {

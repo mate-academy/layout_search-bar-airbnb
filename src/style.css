@@ -3,9 +3,8 @@
   box-sizing: border-box;
 }
 
-.search-form {
-  position: relative;
-  margin-top: 20px;
+html {
+  font-family: "Avenir", sans-serif;
 }
 
 @font-face {
@@ -20,6 +19,11 @@
   font-weight: 900;
 }
 
+.search-form {
+  position: relative;
+  margin-top: 20px;
+}
+
 .input {
   width: 100%;
   border: 1px solid #e1e7ed;
@@ -29,16 +33,12 @@
 
 .input-big {
   height: 70px;
-  padding-left: 62px;
-  padding-top: 25px;
-  padding-bottom: 23px;
+  padding: 25px 0 23px  62px;
 }
 
 .input-small {
   height: 42px;
-  padding-left: 33px;
-  padding-top: 12px;
-  padding-bottom: 10px;
+  padding: 12px 0 10px  33px;
 }
 
 .input:hover {
@@ -94,9 +94,9 @@
 
 .icon-2 {
   position: absolute;
+  top: 15px;
+  left: 13px;
   width: 11px;
   height: 11px;
-  left: 13px;
-  top: 15px;
   bottom: 16px;
 }

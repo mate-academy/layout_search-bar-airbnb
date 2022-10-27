@@ -9,7 +9,7 @@ body {
   font-weight: 300;
 }
 
-.rectangle {
+.label {
   box-sizing: border-box;
   position: absolute;
   left: 0%;
@@ -22,12 +22,12 @@ body {
   border-radius: 4px;
 }
 
-.rectangle:hover {
+.label:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
   border-radius: 4px;
 }
 
-.rectangle:focus-within {
+.label:focus-within {
   background: linear-gradient(180deg, #fff 0%, #f6f6f6 100%);
   border-radius: 3px;
 }
@@ -36,9 +36,6 @@ body {
   position: relative;
   margin: 20px auto;
   width: 100%;
-}
-
-.search-large {
   height: 70px;
 }
 
@@ -46,68 +43,56 @@ body {
   height: 42px;
 }
 
-.icon-box {
+.search-icon {
   position: absolute;
-}
-
-.large-icon-box {
   width: 19px;
   height: 19px;
   left: 26px;
   top: 25px;
 }
 
-.small-icon-box {
+.search-icon-small {
   left: 12px;
   right: 94.38%;
-  top: 29.71%;
+  top: 26.71%;
   bottom: 38.1%;
+  width: 0.8rem;
 }
 
-.small-icon-box img {
-  width: 0.7rem;
-}
-
-.text {
+.input {
   position: absolute;
   right: 1%;
   border: 0;
-}
-
-.text:focus {
-  outline: none;
-  background-color: #0000;
-  font-weight: 600;
-}
-
-.text-normal {
   left: 62px;
   top: 35.71%;
   bottom: 37.14%;
   font-size: 16px;
 }
 
-.text-small {
+.input:focus {
+  outline: none;
+  background-color: #0000;
+  font-weight: 600;
+}
+
+.input-small {
   left: 32px;
   top: 28.57%;
   bottom: 26.19%;
   font-size: 14px;
 }
 
-.text::placeholder {
+.input::placeholder {
   position: absolute;
   left: 0%;
   top: 0%;
   color: #3d4e61;
-}
-
-.text-normal::placeholder {
   bottom: -15.79%;
   font-size: 16px;
   line-height: 22px;
 }
 
-.text-small::placeholder {
+.input-small::placeholder {
   right: -5.88%;
   bottom: -5.26%;
   font-size: 14px;

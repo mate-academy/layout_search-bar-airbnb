@@ -1,4 +1,21 @@
+@font-face {
+  font-family: Avenir;
+  font-weight: 300;
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 900;
+  src: url(fonts/Avenir-Heavy.ttf);
+}
+
+html {
+  font-family: Avenir, serif;
+}
+
 .search {
+  box-sizing: border-box;
   display: flex;
   margin: 20px 0;
   background: #fff;
@@ -14,19 +31,20 @@
 
 .input {
   width: 100%;
-  border: 0;
+  border: none;
   padding: 0;
   margin-top: 25px;
   margin-bottom: 23px;
+  font-family: inherit;
 }
 
 .input-small {
   margin-top: 12px;
+  line-height: 19px;
   margin-bottom: 10px;
 }
 
 .input::placeholder {
-  font-family: inherit;
   font-weight: 300;
   font-size: 16px;
   width: 100%;
@@ -35,8 +53,8 @@
 }
 
 .input-small::placeholder {
-  font-size: 14px;
   font-weight: 400;
+  font-size: 14px;
 }
 
 .search:hover {

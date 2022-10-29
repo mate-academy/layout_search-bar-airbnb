@@ -1,7 +1,15 @@
 @font-face {
   font-family: "Avenir";
-  src: url(./fonts/Avenir-Book.ttf) format("book"),
-    url(./fonts/Avenir-Heavy.ttf) format("heavy");
+  src: url(./fonts/Avenir-Book.ttf) format("book");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url(./fonts/Avenir-Heavy.ttf) format("heavy");
+  font-style: normal;
+  font-weight: 800;
 }
 
 html {
@@ -52,11 +60,10 @@ html {
 }
 
 .search-icon-small {
-  left: 12px;
-  right: 94.38%;
-  top: 26.71%;
-  bottom: 38.1%;
-  width: 0.8rem;
+  height: 11px;
+  width: 11px;
+  left: 13px;
+  top: 15px;
 }
 
 .input {
@@ -85,17 +92,14 @@ html {
 
 .input::placeholder {
   position: absolute;
-  left: 0%;
-  top: 0%;
+  left: 0;
+  top: 0;
   color: #3d4e61;
-  bottom: -15.79%;
   font-size: 16px;
   line-height: 22px;
 }
 
 .input-small::placeholder {
-  right: -5.88%;
-  bottom: -5.26%;
   font-size: 14px;
   line-height: 19px;
   font-style: normal;

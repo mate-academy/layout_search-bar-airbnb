@@ -24,8 +24,7 @@ body {
   padding-top: 12px;
 }
 
-.big-box,
-.small-box {
+.box {
   position: relative;
   font-weight: 900px;
   font-family: Avenir, Arial, sans-serif;
@@ -40,6 +39,10 @@ body {
   border-radius: 4px;
   color: #3d4e61;
   transition: box-shadow 0.2s ease;
+  height: 70px;
+  padding-left: 62px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .search-box::placeholder {
@@ -58,13 +61,6 @@ body {
   outline: none;
 }
 
-.search-box-big {
-  height: 70px;
-  padding-left: 62px;
-  font-size: 16px;
-  line-height: 22px;
-}
-
 .search-box-small {
   height: 42px;
   padding-left: 33px;
@@ -72,12 +68,8 @@ body {
   line-height: 19px;
 }
 
-.icon-search-big,
-.icon-search-small {
+.icon-search {
   position: absolute;
-}
-
-.icon-search-big {
   left: 26px;
   top: 25px;
   width: 19px;

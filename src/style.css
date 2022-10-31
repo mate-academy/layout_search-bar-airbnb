@@ -16,8 +16,12 @@
   font-style: normal;
 }
 
-html {
+* {
   box-sizing: border-box;
+}
+
+html {
+  font-family: "Avenir", sans-serif;
 }
 
 .form {
@@ -30,7 +34,7 @@ html {
 
 .input {
   width: 100%;
-  font-family: "Avenir", sans-serif;
+  font-family: inherit;
   font-weight: 400;
   background: #fff;
   border: 1px solid #e1e7ed;
@@ -58,8 +62,10 @@ html {
   line-height: 22px;
 }
 
-.input__big::placeholder {
+.input__big:focus::placeholder,
+.input__small:focus::placeholder {
   color: var(--main-color);
+  font-weight: 400;
 }
 
 .input__small {
@@ -67,11 +73,6 @@ html {
   height: 42px;
   font-size: 14px;
   line-height: 19px;
-}
-
-.input__small::placeholder {
-  color: var(--main-color);
-
 }
 
 .searchicon {

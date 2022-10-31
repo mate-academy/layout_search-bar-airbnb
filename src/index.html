@@ -11,18 +11,27 @@
     <form
       action="server.name"
       method="get"
+      data-qa="big"
     >
       <label class="label">
         <input
           type="search"
           placeholder="Try &#34Los Angeles&quot"
-          data-qa="big"
+          data-qa="keypress"
           class="search search__big"
         >
+      </label>
+    </form>
+
+    <form
+      action="server.name"
+      method="get"
+      data-qa="small"
+    >
+      <label class="label">
         <input
           type="search"
           placeholder="Try &#34Los Angeles&quot"
-          data-qa="small"
           class="search search__small"
         >
       </label>

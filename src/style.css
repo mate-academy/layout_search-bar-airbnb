@@ -41,6 +41,11 @@ html {
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
   color: var(--main-color);
+  outline: none;
+}
+
+.input::placeholder {
+  color: inherit;
 }
 
 .input:hover {
@@ -50,15 +55,23 @@ html {
 .input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
-  font-weight: 900;
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-  outline: none;
+  font-weight: 600;
 }
 
 .input__big {
   height: 70px;
   padding: 23px 62px;
   font-size: 16px;
+  line-height: 22px;
+}
+
+.input__big::placeholder {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.input__small::placeholder {
+  font-size: 14px;
   line-height: 22px;
 }
 

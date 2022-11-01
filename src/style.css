@@ -18,7 +18,6 @@
 
 body {
   font-weight: 300;
-  color: rgba(61, 78, 97, 1);
 }
 
 .label {
@@ -32,12 +31,13 @@ body {
   border: 1px solid #e1e7ed;
   padding: 0;
   padding-left: 62px;
-  /* display: block; */
   width: 100%;
   height: 70px;
   border-radius: 4px;
   font-size: 16px;
   font-family: "Avenir", sans-serif;
+  color: #3d4e61;
+
 }
 
 .icon {
@@ -54,9 +54,11 @@ body {
 .input:focus {
   outline: 1px solid rgba(225, 231, 237, 1);
   font-family: "Avenir", sans-serif;
-  font-weight: 800;
+  font-weight: 900;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
 .input:focus::placeholder {
@@ -74,4 +76,8 @@ body {
   font-size: 14px;
   padding-left: 33px;
   height: 42px;
+}
+
+.input--small:focus {
+  text-shadow: 0 0 0 rgba(0, 0, 0, 1);
 }

@@ -12,7 +12,7 @@
   font-style: normal;
 }
 
-body {
+html {
   font-family: "Avenir", sans-serif;
 }
 
@@ -21,7 +21,14 @@ body {
   margin-top: 20px;
 }
 
+.search-input {
+  position: relative;
+}
+
 .input {
+  background-image: url("./images/Search.svg");
+  background-position: 26px center;
+  background-repeat: no-repeat;
   width: 100%;
   height: 70px;
   box-sizing: border-box;
@@ -36,6 +43,8 @@ body {
 }
 
 .input_small {
+  background-size: 11px;
+  background-position: 13px center;
   height: 42px;
   font-size: 14px;
   line-height: 19px;
@@ -57,12 +66,14 @@ body {
   border-radius: 3px;
   outline: none;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background-image: url("./images/Search.svg");
+  background-position: 26px center;
+  background-repeat: no-repeat;
 }
 
-.search-icon {
-  position: absolute;
-  top: 25px;
-  left: 26px;
+.input_small:focus {
+  background-size: 11px;
+  background-position: 13px center;
 }
 
 .search-icon_small {

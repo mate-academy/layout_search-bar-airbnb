@@ -12,6 +12,10 @@
   font-weight: 800;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: "Avenir", sans-serif;
   font-size: 16px;
@@ -31,15 +35,17 @@ html {
   top: 25px;
   left: 26px;
 
+  width: 19px;
+  height: 19px;
   margin: 0;
   padding: 0;
 
   border: none;
-  background: none;
+  background-image: url("./images/Search.svg");
+  background-size: contain;
 }
 
 .searchbar__field {
-  box-sizing: border-box;
   width: 100%;
   height: 70px;
   padding: 0 62px;
@@ -67,9 +73,7 @@ html {
 .searchbar__button--small {
   top: 14px;
   left: 13px;
-}
 
-.img--small {
   height: 11px;
   width: 11px;
 }
@@ -87,8 +91,5 @@ html {
 
 .searchbar__field::placeholder {
   color: #3d4e61;
-}
-
-.searchbar__field:focus::placeholder {
-  color: transparent;
+  font-weight: 300;
 }

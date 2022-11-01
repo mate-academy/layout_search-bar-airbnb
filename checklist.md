@@ -98,3 +98,5 @@ different font-weight. Then changing only the font-weight on your elements will 
 
 10. [TESTS] - Remember, each search bar should be located in separate
 form element.
+
+11. [DESIGN] - Do not forget to remove default outline from inputs.

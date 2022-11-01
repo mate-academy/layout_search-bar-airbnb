@@ -12,60 +12,51 @@
   font-weight: 900;
 }
 
-body {
+* {
+  box-sizing: border-box;
+}
+
+html {
   font-family: Avenir, sans-serif;
 }
 
 .searchBar {
   display: block;
-  box-sizing: border-box;
   width: 100%;
-  position: relative;
-  margin-top: 20px;
-  background-color: #fff;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   height: 70px;
-  border-radius: 3px;
-  padding: 0;
+  margin-top: 20px;
   padding-left: 62px;
+
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 25px 24px;
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
 }
 
-.searchBar > * {
-  position: absolute;
-}
-
-.searchBar--size_s {
+.searchBar-small {
   height: 42px;
   padding-left: 33px;
+
+  background-position: 12px 14px;
+  background-size: 11px;
   border-radius: 4px;
 }
 
-.searchBar__icon {
-  top: 24px;
-  left: 25px;
-}
-
-.searchBar__icon--size_s {
-  width: 11px;
-  height: 11px;
-  left: 12px;
-  top: 14px;
-}
-
 .searchBar__input {
+  height: 100%;
+  width: 100%;
   font-family: inherit;
+  font-size: 16px;
+  color: #3d4e61;
+
   background-color: transparent;
   border: none;
   outline: none;
-  color: #3d4e61;
-  padding: 0;
-  height: 70px;
-  font-size: 16px;
 }
 
-.searchBar__input--size_s {
-  height: 42px;
+.searchBar__input-small {
   font-size: 14px;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -76,15 +67,15 @@ body {
 
 .searchBar:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-  text-shadow: none;
 }
 
 .searchBar:focus-within {
-  background: linear-gradient(#fff, #f6f6f7);
+  background: url(images/Search.svg) no-repeat 25px 24px, linear-gradient(#fff, #f6f6f7);
 }
 
-.searchBar__input:focus::placeholder {
-  color: transparent;
+.searchBar-small:focus-within {
+  background-position: 12px 14px;
+  background-size: 11px;
 }
 
 .searchBar__input:focus {
@@ -93,7 +84,7 @@ body {
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.searchBar__input--size_s:focus {
+.searchBar__input-small:focus {
   font-size: 14px;
   filter: none;
 }

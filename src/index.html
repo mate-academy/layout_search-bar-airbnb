@@ -16,23 +16,18 @@
       action="/"
       method="post"
       data-qa="big"
+      class="form"
     >
 
-      <div class="position">
-        <img
-          src="images/Search.svg"
-          alt="loupe"
-          class="icon"
-        >
-      </div>
+      <div class="icon"></div>
 
       <input
         type="search"
         name="bigSearchBar"
-        class="big-input"
+        class="form__input"
         placeholder="Try &quot;Los Angeles&quot;"
         data-qa="keypress"
-        >
+      >
     </form>
 
     <form
@@ -40,20 +35,14 @@
       method="post"
       data-qa="small"
     >
-      <div class="position-small">
-        <img
-          src="images/Search.svg"
-          alt="loupe"
-          class="icon icon-small"
-        >
-      </div>
+      <div class="icon icon--small"></div>
 
       <input
         type="search"
         name="smallSearchBar"
-        class="big-input small-input"
+        class="form__input input--small"
         placeholder="Try &quot;Los Angeles&quot;"
-        >
+      >
     </form>
   </body>
 </html>

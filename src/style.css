@@ -12,21 +12,18 @@
   font-weight: bold;
 }
 
-body {
-  margin-top: 20px;
-
-}
-
-.position {
-  position: relative;
-}
-
-.big-input {
+html {
   font-family: Avenir, sans-serif;
   font-weight: 300;
+}
+
+form {
+  margin: 20px 0;
+}
+
+.form__input {
   width: 100%;
   height: 70px;
-  margin-bottom: 20px;
   padding-left: 62px;
   background: #fff;
   border: 1px solid #e1e7ed;
@@ -36,43 +33,47 @@ body {
 }
 
 .icon {
+  background-image: url(images/Search.svg);
+  height: 19px;
+  width: 19px;
   position: absolute;
-  top: 25px;
-  left: 26px;
+  background-repeat: no-repeat;
+  margin-top: 25px;
+  margin-left: 26px;
 }
 
-.big-input::placeholder {
+.form__input::placeholder {
+  font-family: Avenir, sans-serif;
+  line-height: 22px;
   font-size: 16px;
 }
 
-.big-input:hover {
+.form__input:hover {
   background: #fff;
   border: 1px solid #e1e7ed;
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
   border-radius: 4px;
 }
 
-.big-input:focus::placeholder {
+.form__input:focus::placeholder {
+  font-family: Avenir, sans-serif;
   font-weight: bold;
 }
 
-.small-input {
+.input--small {
+  padding: 0 0 1px 33px;
   height: 42px;
-  padding-left: 33px;
-  font-size: 14px;
 }
 
-.icon-small {
+.icon--small {
+  background-size: cover;
   height: 11px;
   width: 11px;
-  top: 15px;
-  left: 13px;
+  margin-top: 15px;
+  margin-left: 13px;
 }
 
-.small-input::placeholder {
+.input--small::placeholder {
   font-size: 14px;
-}
-
-.position-small {
-  position: relative;
+  line-height: 20px;
 }

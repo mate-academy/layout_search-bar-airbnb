@@ -27,7 +27,7 @@ body {
 
 .search-bar {
   width: 100%;
-  padding: 0 20px 20px;
+  padding: 0 10px 20px;
 }
 
 form[data-qa="big"] {
@@ -42,21 +42,24 @@ form[data-qa="big"] {
 
 .search-bar-label::before {
   content: "";
-  width: 30px;
-  height: 30px;
   display: inline-block;
   background: url(images/Search.svg) no-repeat center center;
   position: absolute;
+  background-size: contain;
 }
 
 .search-bar form[data-qa="big"] .search-bar-label::before {
-  left: 10px;
-  bottom: 20px;
+  left: 26px;
+  top: 25px;
+  width: 19px;
+  height: 19px;
 }
 
 .search-bar form[data-qa="small"] .search-bar-label::before {
-  left: 5px;
-  bottom: 7px;
+  left: 13px;
+  top: 15px;
+  width: 11px;
+  height: 11px;
 }
 
 .search-bar-input {
@@ -67,7 +70,6 @@ form[data-qa="big"] {
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   font-family: "Avenir" , sans-serif;
   font-weight: 300;
-  font-size: 1rem;
 }
 
 .search-bar-input:hover {
@@ -85,13 +87,15 @@ form[data-qa="big"] {
 }
 
 .search-bar form[data-qa="big"] .search-bar-input {
-  padding-left: 45px;
+  padding-left: 62px;
   height: 70px;
   line-height: 70px;
+  font-size: 16px;
 }
 
 .search-bar form[data-qa="small"] .search-bar-input {
-  padding-left: 40px;
+  padding-left: 33px;
   height: 42px;
   line-height: 42px;
+  font-size: 14px;
 }

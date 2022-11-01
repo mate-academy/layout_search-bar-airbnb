@@ -18,7 +18,10 @@
 
 * {
   box-sizing: border-box;
-  font-weight: 300;
+}
+
+html {
+  font-family: Avenir, sans-serif;
 }
 
 .search_bar {
@@ -28,7 +31,10 @@
 }
 
 .image {
-  background: url(./images/Search.svg)0 0/cover no-repeat;
+  background-image: url(./images/Search.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
 }
 
@@ -60,7 +66,7 @@
 }
 
 .inputs::placeholder {
-  font-family: Avenir, sans-serif;
+  font-family: inherit;
   font-weight: 400;
   color: #3d4e61;
 }
@@ -70,7 +76,7 @@
 }
 
 .inputs:focus {
-  font-family: Avenir, sans-serif;
+  font-family: inherit;
   font-weight: 900;
   outline: none;
   background: linear-gradient(180deg, #ffff 0%, #f6f6f7 100%);

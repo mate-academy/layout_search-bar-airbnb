@@ -11,44 +11,45 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form class="serch_bar-container serch_bar-condition"
+    <form class="serch_bar-container"
       action="#"
       method="post"
       data-qa="big"
     >
-      <span class="input_icon">
-        <img src="../src/images/Search.svg" alt="finder-logo">
-      </span>
-      <label>
-        <input
-        id="input_big"
-        type="text"
-        class="input_big"
-        placeholder="Try &#34Los Angeles&#34"
-        >
-      </label>
+      <img
+        src="../src/images/Search.svg"
+        alt="finder-logo"
+        class="input_icon"
+      >
+
+      <input
+      id="input_big"
+      type="text"
+      class="input_big"
+      placeholder="Try &#34Los Angeles&#34"
+      >
+      <label for="input_big"></label>
     </form>
 
     <form
-      class="serch_bar-container-small serch_bar-condition"
+      class="serch_bar-container-small"
       action="#"
       method="post"
       data-qa="small"
     >
-      <span class="input_icon-small">
-        <img src="../src/images/Search.svg" alt="finder-logo"
-          width="11"
-          height="11"
-        >
-      </span>
-      <label>
-        <input
-        type="text"
-        data-qa="small"
-        class="input_small"
-        placeholder="Try &#34Los Angeles&#34"
-        >
-      </label>
+
+      <img
+        src="../src/images/Search.svg"
+        alt="finder-logo"
+        class="input_icon-small"
+      >
+      <input
+      type="text"
+      id="input_small"
+      class="input_small"
+      placeholder="Try &#34Los Angeles&#34"
+      >
+      <label for="input_small"></label>
     </form>
   </body>
 </html>

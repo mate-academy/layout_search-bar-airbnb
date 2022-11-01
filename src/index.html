@@ -14,11 +14,11 @@
     <form 
       action="/" 
       method="get"
+      class="search search-big"
       data-qa="big"
-      class="search-big"
     >
       <label class="search-bar">
-        <button class="search-bar__button-big">
+        <button class="search-bar__button">
           <img 
             src="/images/Search.svg"
             alt="search-button"
@@ -26,7 +26,7 @@
         </button>
         <input 
           type="text" 
-          class="search-bar__input-big"
+          class="search-bar__input"
           name="input-big"
           data-qa="keypress"
           placeholder="Try &quot;Los Angeles&quot;"
@@ -37,18 +37,20 @@
     <form 
       action="/" 
       method="get"
-      class="search-small"
+      class="search"
+      data-qa="small"
     >
       <label class="search-bar">
-        <button class="search-bar__button-small">
+        <button class="search-bar__button button-small">
           <img 
             src="/images/Search.svg"
             alt="search-button"
+            class="img-small"
           >
         </button>
         <input 
           type="text" 
-          class="search-bar__input-small"
+          class="search-bar__input input-small"
           name="input-small"
           data-qa="keypress"
           placeholder="Try &quot;Los Angeles&quot;"

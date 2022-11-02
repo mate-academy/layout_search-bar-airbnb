@@ -74,9 +74,20 @@ html {
 .input::placeholder {
   color: inherit;
   font-weight: 300;
+  filter: none;
 }
 
 .input:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.input--small::placeholder {
+  color: inherit;
+  font-weight: 300;
+  filter: none;
+}
+
+.input--small:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
@@ -84,19 +95,5 @@ html {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
   outline: none;
-}
-
-.input--small::placeholder {
-  color: inherit;
-  font-weight: 300;
-}
-
-.input--small:hover {
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-}
-
-.input--small:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border-radius: 3px;
-  outline: none;
+  font-weight: 900;
 }

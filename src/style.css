@@ -61,10 +61,6 @@ html {
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.searchBar__input::placeholder {
-  color: #3d4e61;
-}
-
 .searchBar:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
@@ -74,17 +70,21 @@ html {
 }
 
 .searchBar-small:focus-within {
-  background-position: 12px 14px;
+  background: url(images/Search.svg) no-repeat 12px 14px, linear-gradient(#fff, #f6f6f7);
   background-size: 11px;
 }
 
 .searchBar__input:focus {
   font-weight: 900;
-  font-size: 16px;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.searchBar__input::placeholder {
+  color: inherit;
+  font-weight: 300;
+  filter: none;
 }
 
 .searchBar__input-small:focus {
   font-size: 14px;
-  filter: none;
 }

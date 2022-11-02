@@ -15,44 +15,37 @@
   <body>
     <form
       data-qa="big"
-      class="bigForm form"
+      class="form--change"
       action="http://localhost:8080/"
-      method="post"
+      method="get"
     >
-      <img
-        class="bigIcon"
-        src="./images/Search.svg"
-        alt="icon"
-      >
-
-      <input
-        data-qa="keypress"
-        class="firstBar input"
-        type="text"
-        name="firstSearch"
-        placeholder="Try &quot;Los Angeles&quot;"
-      >
-
+      <label class="input--wrapper">
+        <input
+          class="input"
+          type="text"
+          name="bigSearchBar"
+          placeholder="Try &quot;Los Angeles&quot;"
+          data-qa="keypress"
+        >
+        <div class="icon"></div>
+      </label>
     </form>
 
     <form
       data-qa="small"
       action="http://localhost:8080/"
-      method="post"
-      class="smallForm form"
+      method="get"
+      class="form--change"
     >
-      <img
-        class="smallIcon"
-        src="./images/Search.svg"
-        alt="icon"
-      >
-
-      <input
-        class="secondBar input"
-        type="text"
-        name="secondSearch"
-        placeholder="Try &quot;Los Angeles&quot;"
-      >
+      <label class="input--wrapper">
+        <input
+          class="input small--input"
+          type="text"
+          name="smallSearchBar"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+        <div class="icon small--icon"></div>
+      </label>
     </form>
   </body>
 </html>

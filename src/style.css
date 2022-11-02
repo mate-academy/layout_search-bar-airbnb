@@ -1,21 +1,21 @@
 @font-face {
-  font-family: Avenir-Book;
+  font-family: "Avenir";
   font-style: normal;
   font-weight: 300;
-  src: url(/fonts/Avenir-Book.ttf);
+  src: url("./fonts/Avenir-Book.ttf");
 }
 
 @font-face {
-  font-family: Avenir-Heavy;
+  font-family: "Avenir";
   font-style: normal;
   font-weight: 900;
-  src: url(/fonts/Avenir-Heavy.ttf);
+  src: url("./fonts/Avenir-Heavy.ttf");
 }
 
-body,
 div,
 input,
-label {
+label,
+form {
   margin: 0;
   padding: 0;
 }
@@ -25,7 +25,7 @@ label {
 }
 
 body {
-  font-family: Avenir-Book, sans-serif;
+  font-family: "Avenir", sans-serif;
   font-weight: 300;
 }
 
@@ -61,6 +61,8 @@ body {
 
 .input::placeholder {
   color: #3d4e61;
+  font-weight: 300;
+  font-family: inherit;
 }
 
 .image {
@@ -69,7 +71,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  z-index: -1;
+  z-index: 1;
 }
 
 .imageBig {

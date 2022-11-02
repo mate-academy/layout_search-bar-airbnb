@@ -102,4 +102,4 @@ form element.
 11. [DESIGN] - After you added custom focus styles (border and shadow),
 and there is still default outline - you should remove it.
 
-11. [DESIGN] - placeholder shoudn't change style on focus
+11. [DESIGN] - Placeholder shoudn't change style on focus

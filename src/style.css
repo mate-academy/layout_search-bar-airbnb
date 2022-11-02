@@ -1,0 +1,80 @@
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Heavy.ttf);
+  font-style: normal;
+  font-weight: 800;
+}
+
+body {
+  font-family: Avenir , serif;
+  font-weight: 400;
+}
+
+.form {
+  margin-top: 20px;
+  position: relative;
+}
+
+/* position for big box & icon */
+
+.form__input {
+  height: 65px;
+  padding: 25px 60px;
+  font-size: 16px;
+  line-height: 20px;
+
+  font-family: inherit;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 2px 5px 10px rgba(70, 74, 92, 0.14);
+  border: 1px solid #e1e9ed;
+  border-radius: 4px;
+}
+
+.form__vector {
+  position: absolute;
+
+  top: 25px;
+  left: 25px;
+  height: 20px;
+}
+
+/* position for small box & icon */
+
+.form__input--small {
+  height: 42px;
+  padding: 12px 33px;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.form__vector--small {
+  top: 15px;
+  left: 15px;
+  height: 12px;
+}
+
+/*pseudos*/
+
+.form__input::placeholder {
+  color: #3d4e61;
+}
+
+.form__input:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.form__input:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 3px;
+  font-weight: 600;
+}

@@ -12,47 +12,39 @@
   </head>
   <body>
     <form
-      class="search-form"
-      action="http://localhost:8080/"
-      method="get"
+      action="test"
+      method="post"
+      class="searchbar"
       data-qa="big"
     >
-      <label for="search-input">
-        <img
-          src="./images/Search.svg"
-          alt="search icon"
-          class="icon search__icon"
-        >
-        <input
-          class="big_search_input"
-          type="text"
-          id="big-search"
-          name="big_search"
-          placeholder="Try &quot;Los Angeles&quot;"
-          data-qa="keypress"
-        >
-      </label>
+      <div class="searchbar__button">
+      </div>
+
+      <input
+        type="search"
+        name="search"
+        class="searchbar__field"
+        placeholder="Try &quot;Los Angeles&quot;"
+        data-qa="keypress"
+      >
     </form>
+
     <form
-      action="http://localhost:8080/"
-      method="get"
-      class="small-search-form"
+      action="test"
+      method="post"
+      class="searchbar searchbar--small"
       data-qa="small"
     >
-      <label for="small-search-form"></label>
-      <img
-        src="./images/Search.svg"
-        alt="small search icon"
-        class="icon small__search__img"
-      >
+      <div class="searchbar__button searchbar__button--small">
+      </div>
+
       <input
-        type="text"
-        class="small__search__input"
-        id="small__search"
-        name="small__search"
+        type="search"
+        name="search"
+        class="searchbar__field searchbar__field--small"
         placeholder="Try &quot;Los Angeles&quot;"
+        data-qa="keypress"
       >
-      </label>
     </form>
   </body>
 </html>

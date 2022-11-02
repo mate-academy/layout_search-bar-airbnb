@@ -18,6 +18,9 @@ html {
 }
 
 .input {
+  background-image: url(./images/Search.svg);
+  background-position: 26px 25px;
+  background-repeat: no-repeat;
   font-family: inherit;
   width: 100%;
   height: 70px;
@@ -31,14 +34,13 @@ html {
 }
 
 .input-small {
+  background-position: 13px center;
   width: 100%;
   height: 42px;
-  background-position: 13px center;
   background-size: 11px;
   padding-left: 33px;
   font-size: 14px;
   line-height: 19px;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .icon {
@@ -77,6 +79,7 @@ html {
   font-weight: 800;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  outline: none;
 }
 
 .input-small:focus {
@@ -89,8 +92,5 @@ html {
 
 .input::placeholder {
   color: rgba(61, 78, 97, 1);
-}
-
-.input::placeholder:focus {
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }

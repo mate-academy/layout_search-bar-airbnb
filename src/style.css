@@ -1,6 +1,9 @@
+html {
+  font-weight: 300;
+}
+
 body {
   margin-top: 0;
-  font-weight: 300;
 }
 
 @font-face {
@@ -26,13 +29,16 @@ body {
   font-family: "Avenir", sans-serif;
 }
 
-input::placeholder {
+.inputWrapper {
+  position: relative;
+}
+
+.searchBar::placeholder {
   color: #3d4e61;
 }
 
 .form {
   margin-top: 20px;
-  position: relative;
 }
 
 .bigInput {
@@ -52,9 +58,11 @@ input::placeholder {
   position: absolute;
   top: 25px;
   left: 26px;
-  display: block;
   width: 19px;
   height: 19px;
+  background-image: url(images/Search.svg);
+  background-size: cover;
+  background-position: center;
 }
 
 .smallIcon {
@@ -71,7 +79,6 @@ input::placeholder {
 .bigInput:focus {
   font-family: "Avenir", sans-serif;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  font-weight: 800;
   text-shadow: 1px 3px 3px #b0b4b9;
   border-radius: 3px;
   color: #3d4e61;
@@ -80,7 +87,6 @@ input::placeholder {
 .smallInput:focus {
   font-family: "Avenir", sans-serif;
   font-style: normal;
-  font-weight: 800;
   font-size: 14px;
   line-height: 19px;
   color: #3d4e61;

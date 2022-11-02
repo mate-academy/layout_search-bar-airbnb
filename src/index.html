@@ -12,45 +12,34 @@
   </head>
   <body>
     <form
-      class="form1"
-      data-qa="big"
-      method="post"
-      action="http://localhost:8080/"
+    action="/"
+    method="get"
+    class="search-form search-form--big"
+    data-qa="big"
     >
-      <img
-        src="./images/Search.svg"
-        alt="search-icon"
-        class="search-img-big"
-      >
-      <label for="input">
+      <label class="search-label search-label--big">
         <input
-        data-qa="keypress"
-        type="search"
-        name="search"
-        class="searchBar barBig"
-        placeholder="Try &quot;Los Angeles&quot;"
-      >
-      </label>
-    </form>
-    <form
-      class="form2"
-      data-qa="small"
-      method="post"
-      action="http://localhost:8080/"
-    >
-      <img
-        src="./images/Search.svg"
-        alt="search-icon"
-        class="search-img-small"
-      >
-      <label for="input">
-        <input
-          type="search"
-          name="search2"
-          class="searchBar barSmall"
+          type="text"
+          class="search-bar search-bar--big"
+          data-qa="keypress"
           placeholder="Try &quot;Los Angeles&quot;"
         >
+      </label>
+    </form>
 
+    <form
+      action="/"
+      method="get"
+      class="search-form search-form--small"
+      data-qa="small"
+    >
+      <label class="search-label search-label--small">
+        <input
+          type="text"
+          name="searchSmall"
+          class="search-bar search-bar--small"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
       </label>
     </form>
   </body>

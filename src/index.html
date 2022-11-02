@@ -1,6 +1,10 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="stylesheet"
+    href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    >
     <meta charset="UTF-8">
     <meta
       name="viewport"
@@ -11,6 +15,39 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <form
+      action="#"
+      method="get"
+      class="form"
+      data-qa="big"
+    >
+      <label class="searchInput">
+        <div class="icon"></div>
+        <input
+          class="input"
+          type="text"
+          name="bigSearchBar"
+          data-qa="keypress"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
+    </form>
+
+    <form
+      action="#"
+      method="get"
+      class="form"
+      data-qa="small"
+    >
+      <label class="searchInput">
+        <div class="icon smallIcon"></div>
+        <input
+          class="input inputSmall"
+          type="text"
+          name="smallSearchBar"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
+    </form>
   </body>
 </html>

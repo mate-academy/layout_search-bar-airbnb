@@ -16,11 +16,12 @@
       method="get"
     ></form>
 
-    <div>
-      <input 
+    <div class="searchSar" data-qa="big">
+      <input
         class="bigSearchInput" 
         type="text" name="search" 
         placeholder="Try &quot;Los Angeles&quot"
+        data-qa="keypress"
       >
       <img 
         class="bigSearchImg" 
@@ -29,19 +30,17 @@
       >
     </div>
 
-    <div data-qa="big">
+    <div class="searchSar">
       <input 
         class="smallSearchInput" 
         type="text" name="search" 
         placeholder="Try &quot;Los Angeles&quot"
-      
-        data-qa="keypress"
+        data-qa="small"
       >
       <img 
         class="smallSearchImg" 
         src="images/Search.svg" 
         alt="SearchBar"
-        data-qa="small"
       >
     </div>
 

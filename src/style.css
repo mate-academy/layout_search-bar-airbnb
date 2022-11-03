@@ -23,56 +23,45 @@ body {
 /* #endregion */
 
 /* #region containers */
-.serch_bar-container-small,
-.serch_bar-container {
+.sarch-bar {
   position: relative;
+  height: 70px;
   margin-top: 20px;
 }
 
-.serch_bar-container {
-  height: 70px;
-}
-
-.serch_bar-container-small {
+.sarch-bar--small {
   height: 42px;
 }
 
 /* #endregion  */
 
 /* #region inputs and logos */
-.input_big,
-.input_small {
+.sarch-bar__input {
+  height: 70px;
+  padding-left: 62px;
   outline: none;
   width: 100%;
   font-family: inherit;
   font-size: inherit;
-  position: relative;
   border: var(--border);
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
-  padding: 0;
 }
 
-.input_big {
-  height: 70px;
-  padding-left: 62px;
-}
-
-.input_small {
+.sarch-bar__input--small {
   padding-left: 33px;
   height: 42px;
   font-size: 14px;
 }
 
-.input_icon {
+.sarch-bar__icon {
   position: absolute;
   top: 25px;
   left: 27px;
   z-index: 1;
 }
 
-.input_icon-small {
-  position: absolute;
+.sarch-bar__icon--small {
   width: 11px;
   height: 11px;
   top: 15px;
@@ -84,19 +73,16 @@ body {
 
 /* #region status */
 
-.input_big:focus,
-.input_small:focus {
+.sarch-bar__input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
 }
 
-.input_big:focus::placeholder,
-.input_small:focus::placeholder {
+.sarch-bar__input:focus::placeholder {
   font-weight: 900;
 }
 
-.input_big:hover,
-.input_small:hover {
+.sarch-bar__input:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 

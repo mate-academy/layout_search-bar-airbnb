@@ -9,12 +9,15 @@
   src: url(fonts/Avenir-Heavy.ttf);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: Avenir, sans-serif;
 }
 
 .search-field {
-  box-sizing: border-box;
   display: block;
   background: #fff;
   border: 1px solid #e1e7ed;
@@ -28,7 +31,7 @@ html {
   position: absolute;
   border: none;
   outline: none;
-  margin-top: 23px;
+  margin: 23px 0 0 18px;
   padding: 0;
   height: 22px;
   font-family: inherit;
@@ -36,12 +39,10 @@ html {
   font-size: 16px;
   line-height: 22px;
   color: #3d4e61;
-  margin-left: 18px;
 }
 
 .image-of-field {
-  margin-top: 24px;
-  margin-left: 25px;
+  margin: 24px 0 0 25px;
 }
 
 .input-of-field::placeholder {
@@ -71,26 +72,15 @@ html {
 }
 
 .search-field--small {
-  box-sizing: border-box;
-  position: relative;
-  display: block;
   height: 42px;
-  background: #fff;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  border-radius: 4px;
+  margin: 0;
 }
 
 .input-of-field--small {
-  position: absolute;
-  padding: 0;
-  border: none;
-  outline: none;
   line-height: 19px;
-  margin-top: 10px;
-  margin-left: 10px;
-  font-family: inherit;
-  
+  margin: 8px 0 0 10px;
+  padding: 0;
+  height: 22px;
 }
 
 .image-of-field--small {
@@ -98,27 +88,12 @@ html {
 }
 
 .input-of-field--small::placeholder {
-  font-family: inherit;
-  font-weight: 400;
   font-size: 14px;
   line-height: 19px;
-  color: #3d4e61;
-}
-
-.search-field--small:hover {
-  background: #fff;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-  border-radius: 4px;
 }
 
 .search-field--small:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border: 1px solid #e1e7ed;
-  border-radius: 3px;
-  font-family: inherit;
   font-weight: 900;
   font-size: 14px;
   line-height: 19px;
-  color: #3d4e61;
 }

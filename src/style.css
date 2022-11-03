@@ -17,63 +17,56 @@
   padding: 0;
 }
 
-/* .form {
-  position: relative;
-  margin: 20px auto 9px;
-} */
-
 .input::placeholder {
   font-family: Avenir, sans-serif;
   font-weight: 300;
 }
 
-.first_bar {
+.bar {
   box-sizing: border-box;
   font-family: AvenirB, sans-serif;
-  font-size: 16px;
-  line-height: 22px;
   color: #3d4e61;
-  background: url(images/Search.svg) no-repeat 26px center;
-  background-size: 19px 19px;
   border: 1px solid #e1e7ed;
-  height: 70px;
-  width: 100%;
-  margin-top: 12px;
-  padding-left: 62px;
   border-radius: 4px;
 }
 
-.first_bar:hover {
+.bar-first {
+  width: 100%;
+  height: 70px;
+  margin-top: 12px;
+  padding-left: 62px;
+  line-height: 22px;
+  font-size: 16px;
+  background: url(images/Search.svg) no-repeat 26px center;
+  background-size: 19px 19px;
+}
+
+.bar-first:hover {
   box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
   background: url(images/Search.svg) no-repeat 26px center, #fff;
 }
 
-.first_bar:focus {
+.bar-first:focus {
   font-family: AvenirH, sans-serif;
   background: url(images/Search.svg) no-repeat 26px center, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
   outline: none;
 }
 
-.second_bar {
-  box-sizing: border-box;
-  font-size: 14px;
-  line-height: 19px;
-  margin-top: 20px;
+.bar-second {
   width: 100%;
-  padding-left: 33px;
   height: 42px;
+  margin-top: 20px;
+  padding-left: 33px;
+  line-height: 19px;
+  font-size: 14px;
   background: url(images/Search.svg) no-repeat;
   background-size: 11px 11px;
   background-position: top 14px left 12px;
-  border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
-  border-radius: 4px;
-  color: #3d4e61;
-  font-family: AvenirB, sans-serif;
 }
 
-.second_bar:hover {
+.bar-second:hover {
   font-weight: 400;
   background: url(images/Search.svg) no-repeat 13px;
   background-size: 11px 11px;
@@ -81,7 +74,7 @@
   box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
 }
 
-.second_bar:focus {
+.bar-second:focus {
   font-family: AvenirH, sans-serif;
   font-weight: 900;
   background: url(images/Search.svg) no-repeat linear-gradient(180deg, #fff 0%, #f6f6f7 100%);

@@ -1,5 +1,5 @@
 # Search bar for Airbnb
-Replace `<your_account>` with your Github username and copy the links to Pull Request description:
+Replace `1veee` with your Github username and copy the links to Pull Request description:
 - [DEMO LINK](https://1veee.github.io/layout_search-bar-airbnb/)
 - [TEST REPORT LINK](https://1veee.github.io/layout_search-bar-airbnb/report/html_report/)
 

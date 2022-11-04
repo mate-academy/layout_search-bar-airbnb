@@ -1,0 +1,115 @@
+
+@font-face {
+  font-family: "Avenir Book";
+  src: url("./fonts/Avenir-Book.woff2") format("woff2"),
+    url("./fonts/Avenir-Book.woff") format("woff"),
+    url("./fonts/Avenir-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("./fonts/Avenir-Heavy.woff2") format("woff2"),
+    url("./fonts/Avenir-Heavy.woff") format("woff"),
+    url("./fonts/Avenir-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Avenir-Book", sans-serif;
+  color: #3d4e61;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.search-container {
+  margin-top: 20px;
+}
+
+.label-search {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 1px 1px 8px rgba(61, 78, 97, 0.1);
+}
+
+.big-label {
+  line-height: 70px;
+  height: 70px;
+}
+
+.small-label {
+  height: 42px;
+  line-height: 42px;
+}
+
+.small-font {
+  font-size: 14px;
+}
+
+.big-font {
+  font-size: 16px;
+}
+
+.big-container {
+  height: 70px;
+}
+
+.small-container {
+  height: 42px;
+}
+
+.search-fields {
+  background-color: transparent;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  width: 90%;
+  text-shadow: 2px 2px 2px #d0d0d0;
+  font-family: "Avenir", sans-serif;
+  color: #3d4e61;
+}
+
+.search-fields::placeholder {
+  font-family: "Avenir-Book", sans-serif;
+  text-shadow: none;
+  color: #3d4e61;
+}
+
+.no-outline:focus {
+  outline: none;
+}
+
+.small-icon {
+  width: 11px;
+  margin-right: 8px;
+  margin-left: 13px;
+}
+
+.big-icon {
+  width: 19px;
+  margin-right: 17px;
+  margin-left: 26px;
+}
+
+.search-container:focus-within {
+  background: linear-gradient(180deg, #ffff 0%, #f6f6f7 100%);
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  font-family: "Avenir-Book", sans-serif;
+  color: #3d4e61;
+}
+
+.search-container:hover {
+  border: 1px solid #e1e7ed;
+  box-shadow: 1px 3px 8px rgba(61, 78, 97, 0.2);
+  border-radius: 4px;
+  font-family: "Avenir-Book", sans-serif;
+  color: #3d4e61;
+}

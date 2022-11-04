@@ -1,16 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" >
     <meta
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     >
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" >
     <title>Search bar airbnb</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" >
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="get">
+
+      <div class="bigSearchSar" data-qa="big">
+        <input
+          class="bigSearchInput" 
+          type="text" name="search" 
+          placeholder="Try &quot;Los Angeles&quot"
+          data-qa="keypress"
+        >
+        <img 
+          class="bigSearchImg" 
+          src="images/Search.svg" 
+          alt="SearchBar"
+        >
+      </div>
+    </form>
+
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="get">
+      <div class="smallSearchSar">
+        <input 
+          class="smallSearchInput" 
+          type="text" name="search" 
+          placeholder="Try &quot;Los Angeles&quot"
+          data-qa="small"
+        >
+        <img 
+          class="smallSearchImg" 
+          src="images/Search.svg" 
+          alt="SearchBar"
+        >
+      </div>
+    </form>
   </body>
+
 </html>

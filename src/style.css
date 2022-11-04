@@ -12,7 +12,9 @@
   font-weight: 600;
 }
 
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Avenir", sans-serif;
@@ -24,10 +26,8 @@ body {
   justify-content: center;
   margin: 20px auto 0;
   width: 100%;
-}
-
-.search-form--big {
   height: 70px;
+
 }
 
 .search-form--small {
@@ -48,9 +48,7 @@ body {
   display: block;
   background-image: url("./images/Search.svg");
   background-repeat: no-repeat;
-}
 
-.search-label--big::after {
   width: 19px;
   height: 19px;
   top: 25px;
@@ -64,27 +62,29 @@ body {
   left: 13px;
 }
 
+.search-bar {
+  width: 100%;
+  height: 100%;
+
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding-left: 62px;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #3d4e61;
+  font-weight: 300;
+  font-family: inherit;
+
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  outline: none;
+}
+
 .search-bar:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.searchBar {
-width: 100%;
-  height: 100%;
-  border: 1px solid #e0e0e0;
-  border-radius: 4px;
-  color: #3d4e61;
-  font-weight: 300;
-  font-family: inherit;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  outline: none;
-  
-  padding-left: 62px;
-  font-size: 16px;
-  line-height: 22px;
-}
-
-.searchBar--small {
+.search-bar--small {
   padding-left: 33px;
   font-size: 14px;
   line-height: 19px;
@@ -94,9 +94,6 @@ width: 100%;
   color: inherit;
   font-weight: 300;
   line-height: 22px;
-}
-
-.search-bar--big::placeholder {
   font-size: 16px;
 }
 

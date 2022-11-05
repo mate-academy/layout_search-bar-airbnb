@@ -1,26 +1,20 @@
 
 @font-face {
-  font-family: "Avenir Book";
-  src: url("./fonts/Avenir-Book.woff2") format("woff2"),
-    url("./fonts/Avenir-Book.woff") format("woff"),
-    url("./fonts/Avenir-Book.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+  font-family: "Avenir";
+  src: url("./fonts/Avenir.ttc");
+  /* font-display: swap; */
 }
 
 @font-face {
-  font-family: "Avenir";
-  src: url("./fonts/Avenir-Heavy.woff2") format("woff2"),
-    url("./fonts/Avenir-Heavy.woff") format("woff"),
-    url("./fonts/Avenir-Heavy.ttf") format("truetype");
-  font-weight: 900;
+  font-family: "Avenir-Heavy";
+  src: url("./fonts/Avenir-Heavy.ttf");
+  /* font-weight: 900;
   font-style: normal;
-  font-display: swap;
+  font-display: swap; */
 }
 
 body {
-  font-family: "Avenir-Book", sans-serif;
+  font-family: "Avenir", sans-serif;
   color: #3d4e61;
   box-sizing: border-box;
 }
@@ -74,15 +68,14 @@ body {
   border-bottom-style: hidden;
   width: 90%;
   text-shadow: 2px 2px 2px #d0d0d0;
-  font-family: "Avenir", sans-serif;
+  font-family: "Avenir-Heavy", sans-serif;
   color: #3d4e61;
 }
 
 .search-fields::placeholder {
   text-shadow: none;
-  font-family: "Avenir-Book", sans-serif;
+  font-family: "Avenir", sans-serif;
   color: #3d4e61;
-  font-weight: 400;
 }
 
 .no-outline:focus {

@@ -12,9 +12,9 @@
   </head>
   <body>
     <form
-      action="/"
+      action="."
       method="get"
-      class="search_form big-search_form"
+      class="search_form"
       data-qa="big"
     >
       <label>
@@ -25,12 +25,17 @@
           placeholder="Try &quot;Los Angeles&quot;"
           data-qa="keypress"
         >
+        <img
+          src="./images/Search.svg"
+          alt="Icon"
+          class="form__icon-big"
+        >
       </label>
     </form>
     <form
-      action="/"
+      action="."
       method="get"
-      class="search_form small-search_form"
+      class="search_form"
       data-qa="small"
     >
       <label>
@@ -39,6 +44,11 @@
           class="search_input small-search_input"
           name="small-search_input"
           placeholder="Try &quot;Los Angeles&quot;"
+        >
+        <img
+          src="./images/Search.svg"
+          alt="Icon"
+          class="form__icon-small"
         >
       </label>
     </form>

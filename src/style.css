@@ -19,7 +19,6 @@ html {
   position: relative;
   margin-top: 20px;
   outline: none;
-
 }
 
 .input-search {
@@ -55,10 +54,14 @@ html {
 
 .mglass-small {
   top: 15px;
-  bottom: 38.1%;
   left: 13px;
   width: 11px;
   height: 11px;
+}
+
+.input-search:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  outline: none;
 }
 
 .input-search:focus {
@@ -72,11 +75,11 @@ html {
   outline: none;
 }
 
-.input-search:hover {
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-  outline: none;
-}
-
-.input-search::placeholder {
+.input-search::placeholder:focus {
   color: #3d4e61;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  text-shadow: none;
+  outline: none;
 }

@@ -18,6 +18,7 @@
 
 html {
   font-family: "Avenir", Helvetica, sans-serif;
+  font-weight: 300;
   --font-color: #3d4e61;
 }
 
@@ -26,62 +27,59 @@ body {
   color: var(--font-color);
 }
 
-.form-fieldLarge {
+.form-field--big {
   margin-bottom: 20px;
 }
 
-.formLarge {
+.form {
   margin-top: 20px;
   position: relative;
 }
 
-.formSmall {
-  position: relative;
+.form--small {
+  margin-top: 0;
 }
 
 .input {
   width: 100%;
   background: #fff;
   font-family: inherit;
+  font-size: 16px;
   color: var(--font-color);
   border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
   outline: none;
   padding: 0;
-}
-
-.inputLarge {
   padding-left: 62px;
   height: 70px;
 }
 
-.inputSmall {
+.input--small {
   padding-left: 33px;
   height: 42px;
+  font-size: 14px;
 }
 
-.searchImageLarge {
+.icon {
   position: absolute;
   top: 25px;
   left: 26px;
 }
 
-.searchImageSmall {
-  position: absolute;
+.icon--small {
   top: 15px;
   left: 13px;
 }
 
-.inputLarge:hover,
-.inputSmall:hover {
+.input:hover {
   background: #fff;
   border: 1px solid #e1e7ed;
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
   border-radius: 4px;
 }
 
-.inputLarge::placeholder {
+.input::placeholder {
   font-family: inherit;
   color: var(--font-color);
   font-weight: 300;
@@ -89,15 +87,12 @@ body {
   line-height: 22px;
 }
 
-.inputSmall::placeholder {
-  font-family: inherit;
-  color: var(--font-color);
-  font-weight: 300;
+.input--small::placeholder {
   font-size: 14px;
   line-height: 19px;
 }
 
-.inputLarge:focus {
+.input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
   border-radius: 3px;
@@ -109,13 +104,7 @@ body {
   padding-left: 62px;
 }
 
-.inputSmall:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border: 1px solid #e1e7ed;
-  border-radius: 3px;
-  font-family: inherit;
-  font-weight: 800;
-  color: var(--font-color);
+.input--small:focus {
   font-size: 14px;
   line-height: 19px;
   padding-left: 33px;

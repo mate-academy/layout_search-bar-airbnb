@@ -38,7 +38,7 @@ body {
   height: 42px;
 }
 
-.searchBar {
+.input {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
@@ -50,34 +50,26 @@ body {
   outline: none;
   background: none;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.searchBar-big::placeholder {
-  font-family: inherit;
-  color: #3d4e61;
-  font-weight: 300;
-  font-size: 16px;
-  text-shadow: none;
-}
-
-.searchBar-small::placeholder {
-  font-family: inherit;
-  color: #3d4e61;
-  font-weight: 300;
-  font-size: 14px;
-  text-shadow: none;
-}
-
-.searchBar-big {
   padding: 0 0 0 62px;
-  font-size: 16px;
 }
 
-.searchBar-big:hover {
+.input::placeholder {
+  font-family: inherit;
+  color: #3d4e61;
+  font-weight: 300;
+  font-size: 16px;
+  text-shadow: none;
+}
+
+.input--small::placeholder {
+  font-size: 14px;
+}
+
+.input:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.searchBar-big:focus {
+.input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
   font-weight: 900;
@@ -90,38 +82,33 @@ body {
   background: none;
 }
 
-.searchBar-small {
+.input--small {
   padding: 0 0 0 33px;
   font-size: 14px;
 }
 
-.searchBar-small:hover {
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+.input--small:hover {
   text-shadow: none;
 }
 
-.searchBar-small:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border-radius: 3px;
-  font-weight: 900;
+.input--small:focus {
   text-shadow: none;
 }
 
-.buttom__searchBar-big {
+.buttom__input-big {
   position: absolute;
-  z-index: 2;
   top: 25px;
   left: 26px;
 }
 
-.buttom__searchBar-small {
+.buttom__input--small {
   position: absolute;
   left: 13px;
   top: 15px;
   height: 11px;
 }
 
-.img1 {
+.icon--small {
   width: 11px;
   height: 11px;
 }

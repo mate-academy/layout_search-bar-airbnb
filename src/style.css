@@ -1,9 +1,13 @@
 @font-face {
-  font-family: Avenir;
+  font-family: "Avenir";
   src: url(fonts/Avenir.ttc);
 }
 
-div {
+html {
+  font-family: "Avenir";
+}
+
+.search-form {
   position: relative;
   margin-top: 20px;
   max-width: 100%;
@@ -18,6 +22,7 @@ div {
   padding-left: 62px;
   border: 1px solid #e1e7ed;
   border-radius: 4px;
+  outline: none;
 }
 
 .small {
@@ -29,9 +34,10 @@ div {
   padding-left: 33px;
   border: 1px solid #e1e7ed;
   border-radius: 4px;
+  outline: none;
 }
 
-.big_search {
+.icon {
   position: absolute;
   top: 25px;
   left: 26px;
@@ -40,7 +46,7 @@ div {
   color: #687c94;
 }
 
-.small_search {
+.icon--small {
   position: absolute;
   width: 11px;
   height: 11px;
@@ -50,7 +56,7 @@ div {
 }
 
 .big::placeholder {
-  font-family: Avenir, Avenir-Book, Avenir-Heavy, sans-serif;
+  font-family: inherit;
   font-style: book;
   font-weight: 300;
   font-size: 16px;
@@ -58,14 +64,14 @@ div {
 }
 
 .small::placeholder {
-  font-family: Avenir, Avenir-Book, Avenir-Heavy, sans-serif;
+  font-family: inherit;
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
 }
 
 .big:hover {
-  font-family: Avenir, Avenir-Book, Avenir-Heavy, sans-serif;
+  font-family: inherit;
   font-style: book;
   box-sizing: border-box;
   font-size: 16px;
@@ -78,7 +84,7 @@ div {
 }
 
 .small:invalid {
-  font-family: Avenir, Avenir-Book, Avenir-Heavy, sans-serif;
+  font-family: inherit;
   font-style: book;
   box-sizing: border-box;
   font-size: 14px;
@@ -91,7 +97,7 @@ div {
 }
 
 .small:hover {
-  font-family: Avenir, Avenir-Book, Avenir-Heavy, sans-serif;
+  font-family: inherit;
   font-style: book;
   box-sizing: border-box;
   font-size: 14px;

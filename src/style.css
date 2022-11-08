@@ -11,6 +11,10 @@
   font-style: normal;
 }
 
+html {
+  font-family: "Avenir", sans-serif;
+}
+
 .input {
   border-width: 0;
   border: 0;
@@ -19,17 +23,14 @@
 }
 
 .input--small {
-  border-width: 0;
-  border: 0;
-  width: 100%;
   padding: 0 0 0 33px;
 }
 
 .input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  font-family: "Avenir", sans-serif;
+  font-family: inherit;
   font-style: normal;
-  font-weight: 900;
+  font-weight: bold;
   color: #3d4e61;
   display: inline-block;
   outline: none;
@@ -64,7 +65,7 @@
 
 .input--small:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  font-family: "Avenir", sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-weight: 900;
   color: #3d4e61;

@@ -12,8 +12,10 @@
   font-weight: 900;
 }
 
-body {
-  font-family: Avenir, sans-serif;
+html {
+  font-family: Avenir, Roboto, sans-serif;
+  --border-color: #e1e7ed;
+  --main-text-color: #3d4e61;
 }
 
 .search {
@@ -22,7 +24,7 @@ body {
   margin-top: 20px;
 }
 
-.imageBig {
+.image {
   position: absolute;
   display: block;
   left: 26px;
@@ -31,7 +33,7 @@ body {
   height: 19px;
 }
 
-.imageSmall {
+.image--small {
   position: absolute;
   left: 13px;
   top: 15px;
@@ -39,7 +41,7 @@ body {
   height: 11px;
 }
 
-.bigInput {
+.input {
   font-family: inherit;
   font-size: 16px;
   line-height: 22px;
@@ -47,16 +49,16 @@ body {
   width: 100%;
   height: 70px;
   padding-left: 62px;
-  border: 1px solid #e1e7ed;
+  border: 1px solid var(--border-color);
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
-  color: #3d4e61;
+  color: var(--main-text-color);
 }
 
-.smallInput {
+.input--small {
   font-family: inherit;
   box-sizing: border-box;
-  border: 1px solid #e1e7ed;
+  border: 1px solid var(--border-color);
   width: 100%;
   font-size: 14px;
   line-height: 19px;
@@ -64,32 +66,32 @@ body {
   padding-left: 33px;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
-  color: #3d4e61;
+  color: var(--main-text-color);
 }
 
-.bigInput::placeholder {
-  color: #3d4e61;
+.input::placeholder {
+  color: var(--main-text-color);
 }
 
-.bigInput:hover {
+.input:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.bigInput:focus {
+.input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
   font-weight: 900;
 }
 
-.smallInput::placeholder {
-  color: #3d4e61;
+.input--small::placeholder {
+  color: var(--main-text-color);
 }
 
-.smallInput:hover {
+.input--small:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.smallInput:focus {
+.input--small:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
   font-weight: 900;

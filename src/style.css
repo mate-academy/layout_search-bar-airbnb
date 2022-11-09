@@ -29,6 +29,8 @@ html {
 }
 
 .line {
+  font-family: inherit;
+  font-weight: lighter ;
   outline: none;
   width: 100%;
   cursor: default;
@@ -38,7 +40,8 @@ html {
 }
 
 .big-search {
-  padding-left: 63px;
+  padding-left: 58px;
+  padding-top: 1px;
   height: 70px;
   background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
@@ -46,12 +49,13 @@ html {
 }
 
 .small-search {
-  padding-left: 34px;
+  padding-left: 29px;
+  padding-top: 1px;
   height: 42px;
   background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
-  background-position: top 12px left 14px ;
-  background-size: 12px 14px;
+  background-position: top 13px left 12px ;
+  background-size: 11px 13px;
 }
 
 .line:hover {
@@ -62,12 +66,8 @@ html {
   color: #000;
 }
 
-.line::placeholder {
-  font-family: inherit;
-}
-
 .big-search::placeholder {
-  left: 59px;
+  left: 61px;
   top: 23px;
   font-size: 16px;
 }

@@ -16,7 +16,7 @@ html {
   font-family: Avenir, Helvetica, sans-serif;
 }
 
-.Big_form {
+.form {
   margin: 20px 0;
   position: relative;
 }
@@ -31,6 +31,7 @@ html {
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
   font-weight: 300;
+  outline: none;
 }
 
 .input:hover {
@@ -49,7 +50,7 @@ html {
   font-family: inherit;
 }
 
-.Big_form::before {
+.form::before {
   content: "";
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
@@ -63,7 +64,7 @@ html {
   transform: translateY(-50%);
 }
 
-.Small_form {
+.small--form {
   position: relative;
 }
 
@@ -73,6 +74,7 @@ html {
   padding: 10px 0 10px 33px;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   font-weight: 400;
+  outline: none;
 }
   
 .small__input:hover {
@@ -91,7 +93,7 @@ html {
   font-family: inherit;
 }
   
-.Small_form::before {
+.small--form::before {
   content: "";
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;

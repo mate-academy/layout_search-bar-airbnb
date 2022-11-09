@@ -12,6 +12,14 @@
   font-weight: 300;
 }
 
+html {
+  font-family: Avenir, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 .search-form {
   position: relative;
   margin-top: 20px;
@@ -20,7 +28,7 @@
 }
 
 .big {
-  font-family: Avenir, Helvetica, sans-serif;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 300;
   width: 100%;
@@ -32,7 +40,7 @@
 }
 
 .small {
-  font-family: Avenir, Helvetica, sans-serif;
+  font-family: inherit;
   font-weight: 800;
   font-size: 11px;
   height: 42px;
@@ -63,7 +71,6 @@
 
 .big::placeholder {
   font-family: inherit;
-  font-style: book;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
@@ -78,8 +85,6 @@
 
 .big:hover {
   font-family: inherit;
-  font-style: book;
-  box-sizing: border-box;
   font-size: 16px;
   line-height: 100%;
   text-align: left;
@@ -91,8 +96,6 @@
 
 .small:hover {
   font-family: inherit;
-  font-style: book;
-  box-sizing: border-box;
   font-size: 14px;
   line-height: 100%;
   text-align: left;

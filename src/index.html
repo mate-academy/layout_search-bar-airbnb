@@ -14,14 +14,15 @@
       data-qa="big"
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
     >
-      <label for="searc">
-          <input
-            class="form__input"
-            data-qa="keypress"
-            type="search"
-            name="search"
-            placeholder="Try &quot;Los Angeles&quot;"
-          >
+      <label for="search">
+        <input
+          class="form__input"
+          data-qa="keypress"
+          type="search"
+          name="search"
+          id="search"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
       </label>
       <img
         src="images/Search.svg"
@@ -33,14 +34,15 @@
     <form
       class="form form--small"
       method="get"
-      data-qa="small"
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
     >
-      <label for="search">
+      <label for="searchsmall">
         <input
           class="form__input form__input--small"
           type="search"
           name="search"
+          data-qa="small"
+          id="searchsmall"
           placeholder="Try &quot;Los Angeles&quot;"
         >
       </label>

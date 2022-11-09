@@ -1,5 +1,8 @@
 * {
   box-sizing: border-box;
+}
+
+html {
   font-family: "Avenir", sans-serif;
 }
 
@@ -11,7 +14,7 @@
 }
 
 @font-face {
-  font-family: "Avenir-bold";
+  font-family: "Avenir";
   src: url("./fonts/Avenir-Heavy.ttf");
   font-style: normal;
   font-weight: 900;
@@ -58,7 +61,11 @@
 .input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
-  font-family: "Avenir-bold", sans-serif;
+  font-weight: 900;
+}
+
+.input::placeholder {
+  font-weight: 300;
 }
 
 .icon {

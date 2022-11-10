@@ -1,13 +1,13 @@
 @font-face {
   font-family: Avenir;
-  src: url(fonts/Avenir-Book.ttf);
+  src: url(/Avenir-Book.0ec99b1d.ttf);
   font-style: normal;
   font-weight: 300;
 }
 
 @font-face {
   font-family: Avenir;
-  src: url(fonts/Avenir-Heavy.ttf);
+  src: url(/Avenir-Heavy.78db0b48.ttf);
   font-style: normal;
   font-weight: 900;
 }
@@ -53,14 +53,20 @@ html {
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
   color: var(--main-text-color);
-  outline: none;
 }
 
 .input--small {
+  font-family: inherit;
+  box-sizing: border-box;
+  border: 1px solid var(--border-color);
+  width: 100%;
   font-size: 14px;
   line-height: 19px;
   height: 42px;
   padding-left: 33px;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+  color: var(--main-text-color);
 }
 
 .input::placeholder {
@@ -76,3 +82,20 @@ html {
   border-radius: 3px;
   font-weight: 900;
 }
+
+.input--small::placeholder {
+  color: var(--main-text-color);
+}
+
+.input--small:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.input--small:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+  font-weight: 900;
+}
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */

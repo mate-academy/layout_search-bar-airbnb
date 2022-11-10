@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(fonts/Avenir-Book.ttf) format(ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url(fonts/Avenir-Heavy.ttf) format(ttf);
+  font-style: bold;
+  font-weight: 300;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input {
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  background: #fff;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  font-family: Avenir, Helvetica, sans-serif;
+  padding: 0 60px;
+}
+
+.big {
+  width: 100%;
+  margin: 20px 0;
+  height: 70px;
+  background-size: 19px 19px;
+  background-position: 25px 26px;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 0 60px;
+  font-weight: 300;
+}
+
+.big::placeholder {
+  color: #3d4e61;
+  font-weight: 300;
+}
+
+.small {
+  width: 100%;
+  height: 42px;
+  background-size: 11px 11px;
+  background-position: 12px 13px;
+  font-size: 14px;
+  line-height: 19px;
+  padding-left: 33px;
+  font-weight: 300;
+}
+
+.small::placeholder {
+  color: #3d4e61;
+  font-weight: 300;
+}
+
+.big:hover {
+  background: #fff;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  border-radius: 4px;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: 19px 19px;
+  background-position: 25px 26px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.big:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: 19px 19px;
+  background-position: 25px 26px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.small:hover {
+  background: #fff;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  border-radius: 4px;
+  height: 42px;
+  background-size: 11px 11px;
+  background-position: 15px 13px;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 19px;
+  color: #3d4e61;
+}
+
+.small:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+  background-size: 11px 11px;
+  background-position: 15px 13px;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 19px;
+}

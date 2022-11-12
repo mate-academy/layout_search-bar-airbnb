@@ -55,7 +55,7 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #3d4e61;
-  border: hidden;
+  border: none;
 }
 
 .search--small {
@@ -84,11 +84,11 @@ body {
   font-size: 14px;
   line-height: 19px;
   color: #3d4e61;
-  border: hidden;
+  border: none;
 }
 
 .input::placeholder {
-  font-family: Avenir, Helvetica, sans-serif;
+  font-family: inherit;
   color: #3d4e61;
   font-size: 16px;
   font-weight: 500;
@@ -106,19 +106,14 @@ body {
 }
 
 .search:focus {
+  font-weight: bold;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.2);
   border-radius: 3px;
 }
 
-.input:hover {
-  font-weight: bold;
-  font-family: Avenir-Heavy, Helvetica, sans-serif;
-  border: hidden;
-}
-
 .input--small:hover {
   font-weight: 900;
   font-family: Avenir-Heavy, Helvetica, sans-serif;
-  border: hidden;
+  border: none;
 }

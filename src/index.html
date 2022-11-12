@@ -13,49 +13,54 @@
   <body>
     <form
       action="https://www.google.com/"
-      method="post"
+      method="get"
       class="search-container"
       data-qa="keypress"
     >
       <label
         data-qa="big"
-        class="label-search"
+        class="label"
       >
         <img
-          class="search-icon"
+          class="icon"
           src="./images/Search.svg"
           alt="seach-icon"
         >
+
         <input
-          type="search"
-          name="seach"
-          id="seach-big"
-          class="search-field big-font"
+          type="text"
+          name="search"
+          id="search-big"
+          class="input input--big-font"
           placeholder="Try &quot;Los Angeles&quot;"
         >
+
       </label>
     </form>
+
     <form
       action="https://www.google.com/"
-      method="post"
+      method="get"
       class="search-container small-container"
     >
       <label
-        class="label-search small-label"
+        class="label label--small"
         data-qa="small"
       >
         <img
-          class="search-icon small-icon"
-          alt="search-icon"
+          class="icon icon--small"
+          alt="icon"
           src="./images/Search.svg"
         >
+
         <input
-          type="search"
+          type="text"
           name="search-small"
-          id="seach-small"
+          id="search-small"
           placeholder="Try &quot;Los Angeles&quot;"
-          class="search-field search-field-small"
+          class="input input--small"
         >
+
       </label>
     </form>
   </body>

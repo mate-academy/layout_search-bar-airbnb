@@ -98,3 +98,8 @@ different font-weight. Then changing only the font-weight on your elements will 
 
 10. [TESTS] - Remember, each search bar should be located in separate
 form element.
+
+11. [DESIGN] - After you added custom focus styles (border and shadow),
+and there is still default outline - you should remove it.
+
+11. [DESIGN] - Placeholder shoudn't change style on focus

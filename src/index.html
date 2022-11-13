@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta
+    <meta 
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     >
@@ -11,6 +11,30 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <form
+      class="search-big" 
+      data-qa="big" 
+      action="search" 
+      method="get"
+    >
+      <input
+        type="text" 
+        placeholder="Try &quot;Los Angeles&quot;" 
+        class="input-big" 
+        data-qa="keypress"
+      >
+    </form>
+    <form
+      class="search-small" 
+      data-qa="small" 
+      action="search" 
+      method="get"
+    >
+      <input
+        type="text" 
+        placeholder="Try &quot;Los Angeles&quot;" 
+        class="input-small"
+      >
+    </form>
   </body>
 </html>

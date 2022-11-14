@@ -11,6 +11,138 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <form
+      action="/"
+      method="post"
+      class="searchBarForm firstForm"
+      data-qa="big"
+    >
+      <label class="labelForSearch" for="searchBar">Default</label>
+      <div class="containerForSearch">
+        <img
+          class="icon"
+          src="./images/Search.svg"
+          alt="Search bar icon"
+        >
+        <input
+          id="searchBar"
+          class="searchBar"
+          type="text"
+          name="search"
+          placeholder="Try &quot;Los Angeles&quot;"
+          data-qa="keypress"
+        >
+      </div>
+    </form>
+    <form
+      action="/"
+      method="post"
+      class="searchBarForm"
+      data-qa="big"
+    >
+      <label class="labelForSearch" for="searchBarHover">Hover</label>
+      <div class="containerForSearch">
+        <img
+          class="icon"
+          src="./images/Search.svg"
+          alt="Search bar icon"
+        >
+        <input
+          id="searchBarHover"
+          class="searchBar searchBarHover"
+          type="text"
+          name="search"
+          placeholder="Try &quot;Los Angeles&quot;"
+          data-qa="keypress"
+        >
+      </div>
+    </form>
+    <form
+      action="/"
+      method="post"
+      class="searchBarForm"
+      data-qa="big"
+    >
+      <label class="labelForSearch" for="searchBarFocus">Focus</label>
+      <div class="containerForSearch">
+        <img
+          class="icon"
+          src="./images/Search.svg"
+          alt="Search bar icon"
+        >
+        <input
+          id="searchBarFocus"
+          class="searchBar searchBarHover searchBarFocus"
+          type="text"
+          name="search"
+          placeholder="Los An|"
+          data-qa="keypress"
+        >
+      </div>
+    </form>
+
+    <form
+      action="/"
+      method="post"
+      class="searchBarFormSmall first"
+      data-qa="small"
+    >
+      <div class="containerForSearch smallContainer">
+        <img
+          class="icon iconSmall"
+          src="./images/Search.svg"
+          alt="Search bar icon"
+        >
+        <input
+          id="searchBarSmall"
+          class="searchBar searchBarSmall"
+          type="text"
+          name="search"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </div>
+    </form>
+    <form
+      action="/"
+      method="post"
+      class="searchBarFormSmall"
+      data-qa="small"
+    >
+      <div class="containerForSearch smallContainer">
+        <img
+          class="icon iconSmall"
+          src="./images/Search.svg"
+          alt="Search bar icon"
+        >
+        <input
+          id="searchBarHoverSmall"
+          class="searchBar searchBarHover searchBarSmall"
+          type="text"
+          name="search"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </div>
+    </form>
+    <form
+      action="/"
+      method="post"
+      class="searchBarFormSmall"
+      data-qa="small"
+    >
+      <div class="containerForSearch smallContainer">
+        <img
+          class="icon iconSmall"
+          src="./images/Search.svg"
+          alt="Search bar icon"
+        >
+        <input
+          id="searchBarFocusSmall"
+          class="searchBar searchBarHover searchBarFocus searchBarSmall"
+          type="text"
+          name="search"
+          placeholder="Los Ang|"
+        >
+      </div>
+    </form>
   </body>
 </html>

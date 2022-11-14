@@ -27,14 +27,11 @@
 
 .search-icon {
   position: absolute;
-}
-
-.icon-big {
   top: 25px;
   left: 26px;
 }
 
-.icon-small {
+.search-icon--small {
   top: 15px;
   left: 13px;
   width: 11px;
@@ -49,10 +46,10 @@
   border-radius: 4px;
   color: var(--font-color);
   font-family: inherit;
-}
-
-.search-input::placeholder {
-  color: var(--font-color);
+  height: 70px;
+  padding-left: 62px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .search-input:hover {
@@ -67,26 +64,22 @@
   font-weight: 900;
 }
 
-.input-big {
-  height: 70px;
-  padding-left: 62px;
+.search-input::placeholder {
+  color: var(--font-color);
+  font-family: inherit;
+  font-weight: 300;
   font-size: 16px;
   line-height: 22px;
 }
 
-.input-big::placeholder {
-  font-size: 16px;
-  line-height: 22px;
-}
-
-.input-small {
+.search-input--small {
   height: 42px;
   padding-left: 33px;
   font-size: 14px;
   line-height: 19px;
 }
 
-.input-small::placeholder {
+.search-input--small::placeholder {
   font-size: 14px;
   line-height: 19px;
 }

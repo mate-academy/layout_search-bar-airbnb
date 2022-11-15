@@ -1,18 +1,23 @@
 @font-face {
-  font-family: "Avenir";
+  font-family: "Avenir", sans-serif;
   src: local("Avenir-Book"),
-    local("Avenir-Heavy"),
-    url(fonts/Avenir-Book.ttf) format("truetype"),
-    url(fonts/Avenir-Heavy.ttf) format("truetype");
+    url(fonts/Avenir-Book.ttf) format("truetype");
   font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir", sans-serif;
+  src: local("Avenir-Heavy"),
+    url(fonts/Avenir-Heavy.ttf) format("truetype");
+  font-weight: 900;
 }
 
 body {
   font-family: "Avenir", sans-serif;
-  font-weight: 300;
+  /* font-weight: 300; */
 }
 
-.big_Field {
+.bigField {
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -24,7 +29,7 @@ body {
   height: 70px;
   vertical-align: middle;
   padding-left: 62px;
-  font-family: inherit;
+  font-family: "Avenir", sans-serif;
   font-style: normal;
   font-size: 16px;
   font-weight: 300;
@@ -37,14 +42,14 @@ body {
 }
 
 .firstBar::placeholder {
-  font-family: inherit;
+  font-family: "Avenir", sans-serif;
   font-style: normal;
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
   /* identical to box height */
   color: #3d4e61;
-  opacity: 0.4;
+  /* opacity: 0.4; */
 }
 
 .text-Field_icon {
@@ -64,8 +69,8 @@ body {
   transform: translateY(-50%);
 }
 
-.big_Field:hover {
-  font-family: inherit;
+.bigField:hover {
+  font-family: "Avenir", sans-serif;
   font-style: normal;
   font-size: 16px;
   font-weight: 300;
@@ -77,11 +82,11 @@ body {
   border-radius: 4px;
 }
 
-.big_Field:focus {
-  font-family: inherit;
+.bigField:focus {
+  font-family: "Avenir", sans-serif;
   font-style: normal;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 900;
   line-height: 22px;
   color: #3d4e61;
   background: linear-gradient(180deg, #ffff 0%, #f6f6f7 100%);
@@ -89,18 +94,19 @@ body {
   border-radius: 3px;
 }
 
-.small_Field {
+.smallField {
   margin-bottom: 20px;
 }
 
-.second_Bar {
+.secondBar {
   display: flex;
   box-sizing: border-box;
   width: 100%;
   height: 42px;
   vertical-align: middle;
   padding-left: 33px;
-  font-family: inherit;
+  font-family: "Avenir", sans-serif;
+  font-style: normal;
   font-size: 14px;
   font-weight: 300;
   line-height: 42px;
@@ -111,15 +117,15 @@ body {
   border-radius: 4px;
 }
 
-.second_Bar::placeholder {
-  font-family: inherit;
+.secondBar::placeholder {
+  font-family: "Avenir", sans-serif;
   font-style: normal;
   font-size: 14px;
   font-weight: 300;
   line-height: 19px;
   /* identical to box height */
   color: #3d4e61;
-  opacity: 0.4;
+  /* opacity: 0.4; */
 }
 
 .text-Field_icon_2 {
@@ -140,8 +146,8 @@ body {
   transform: translateY(-50%);
 }
 
-.small_Field:hover {
-  font-family: inherit;
+.smallField:hover {
+  font-family: "Avenir", sans-serif;
   font-style: normal;
   font-size: 14px;
   font-weight: 300;
@@ -153,11 +159,11 @@ body {
   border-radius: 4px;
 }
 
-.small_Field:focus {
-  font-family: inherit;
+.smallField:focus {
+  font-family: "Avenir", sans-serif;
   font-style: normal;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 900;
   line-height: 19px;
   /* identical to box height */
   color: #3d4e61;

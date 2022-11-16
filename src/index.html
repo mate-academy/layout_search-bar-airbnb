@@ -12,44 +12,42 @@
   </head>
   <body>
     <form
-      action="/"
-      method="get"
-      data-qa="big"
-     >
-
-      <label for="big" class="label">
-        <img
-          class="img-b"
-          src="images/Search.svg"
-          alt="Search-b"
-        >
-
-        <input
-          type="text"
-          name="big"
-          placeholder="Try &quot;Los Angeles&quot;" data-qa="keypress"
-          class="big-input"
-        >
-      </label>
+    action="https://airbnb.com/s/all"
+    method="get"
+    class="search-form"
+    data-qa="big"
+  >
+      <input
+        class="input"
+        type="text"
+        name="query"
+        placeholder="Try &quot;Los Angeles&quot;"
+        data-qa="keypress"
+      >
+      <img
+        src="images/Search.svg"
+        alt="search icon"
+        class="search-icon"
+      >
     </form>
+
     <form
-      action="/"
+      action="https://airbnb.com/s/all"
       method="get"
+      class="search-form"
       data-qa="small"
-     >
-      <label for="small" class="label">
-        <img
-          class="img-s"
-          src="images/Search.svg"
-          alt="Search-s"
-        >
-        <input
-          type="text"
-          name="small"
-          class="small-input"
-          placeholder="Try &quot;Los Angeles&quot;"
-        >
-      </label>
+    >
+      <input
+        class="input input-small"
+        type="text"
+        name="query"
+        placeholder="Try &quot;Los Angeles&quot;"
+      >
+      <img
+        src="images/Search.svg"
+        alt="search icon"
+        class="search-icon search-icon-small"
+      >
     </form>
   </body>
 </html>

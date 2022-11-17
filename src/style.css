@@ -1,25 +1,23 @@
 @font-face {
-  font-family: "AvenirBook";
+  font-family: "Avenir";
   src: url(./fonts/Avenir-Book.ttf);
-  font-style: normal;
+  font-weight: 300;
 }
 
 @font-face {
   font-family: "AvenirHeavy";
   src: url(./fonts/Avenir-Heavy.ttf);
-  font-style: normal;
 }
 
 * {
   box-sizing: border-box;
-  font-weight: 300;
+}
+
+html {
+  font-family: "Avenir", sans-serif;
 }
 
 .form {
-  margin-top: 20px;
-}
-
-.form1 {
   margin-top: 20px;
 }
 
@@ -38,13 +36,13 @@
 }
 
 .largebar::placeholder {
-  font-family: "AvenirBook", sans-serif;
+  font-family: inherit;
   font-size: 16px;
   line-height: 22px;
   color: #3d4e61;
 }
 
-.image1 {
+.icon {
   position: absolute;
   left: 34px;
   top: 45px;
@@ -56,13 +54,13 @@
 }
 
 .smallbar::placeholder {
-  font-family: "AvenirBook", sans-serif;
+  font-family: inherit;
   font-size: 14px;
   height: 20px;
   color: #3d4e61;
 }
 
-.image2 {
+.small_icon {
   position: absolute;
   height: 11px;
   left: 21px;
@@ -80,4 +78,5 @@
   font-family: "AvenirHeavy", sans-serif;
   background: linear-gradient(180deg, #ffff 0%, #f6f6f7 100%);
   border-radius: 3px;
+  outline: none;
 }

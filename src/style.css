@@ -17,7 +17,15 @@ html {
   font-style: normal;
 }
 
-.big-search {
+.big-zoom {
+  position: absolute;
+  height: 19px;
+  width: 19px;
+  top: 25px;
+  left: 26px;
+}
+
+.form-field {
   display: flex;
   box-sizing: border-box;
   margin-top: 20px;
@@ -27,106 +35,69 @@ html {
   border: 1px solid rgba(225, 231, 237, 1);
   border-radius: 4px;
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
-}
-
-.big-zoom {
-  float: left;
-  vertical-align: middle;
-  margin: 25px 17px 26px 26px;
-}
-
-.big-form-field {
-  padding: 0;
-  margin-top: 25px;
-  margin-bottom: 23px;
-  /* vertical-align: middle; */
-  border: none;
+  padding-left: 62px;
   line-height: 22px;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   font-family: inherit;
-}
-
-.small-search {
-
-  display: flex;
-  box-sizing: border-box;
-  height: 42px;
-  width: 100%;
-  border: 1px solid rgba(225, 231, 237, 1);
-  border-radius: 4px;
-  
-  box-shadow: 0 1 8 0 rgba(61, 78, 97, 0.1);
+  outline: none;
 }
 
 .small-zoom {
-  float: left;
-  margin-left: 13px;
-  margin-top: 15px;
+  left: 13px;
+  top: 15px;
   height: 11px;
   width: 11px;
+  position: absolute;
 }
 
 .small-form-field {
-  padding: 0;
-  margin-bottom: 10px;
-  margin-left: 9px;
-  margin-top: 10px;
-  border: none;
+  height: 42px;
+  padding-left: 33px;
   line-height: 20px;
-  width: 167.29px;
   font-weight: 300;
   font-size: 14px;
   font-family: inherit;
+  outline: none;
 }
 
-.big-form-field:hover::placeholder {
+.form-field:hover::placeholder {
   font-family: inherit;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
-  color: #687c94;
+  border: none;
 }
 
-.big-search:hover {
+.form-field:hover {
   box-shadow: 0 3 8 0 rgba(61, 78, 97, 0.2);
 }
 
-.big-search:focus {
+.form-field:focus {
   border-radius: 3px;
   color: rgba(61, 78, 97, 1);
+  background: linear-gradient(0deg, #e1e7ed, #e1e7ed),
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
-.big-form-field:focus::placeholder {
+.form-field:focus::placeholder {
   color: #687c94;
+  border: none;
   font-family: inherit;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 800;
   font-size: 16px;
-  background-color: #f6f6f7;
-}
-
-.small-search:hover {
-  box-shadow: 0 3 8 0 rgba(61, 78, 97, 0.2);
-}
-
-.small-search:focus {
-  border-radius: 3px;
-  background-color: #f6f6f7;
-}
-
-.small-form-field:hover::placeholder {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  color: #687c94;
 }
 
 .small-form-field:focus::placeholder {
+  color: #687c94;
+  border: none;
   font-family: inherit;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 800;
   font-size: 14px;
-  color: #687c94;
+}
+
+.label {
+  position: relative;
 }

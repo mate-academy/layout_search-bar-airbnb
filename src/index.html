@@ -12,39 +12,36 @@
   </head>
   <body>
     <form method="get" data-qa="big">
-      <div class="big-search">
-        <label for="big-search">
-          <img 
-            src="images/Search.svg" 
-            alt="bigSearch" 
-            class="big-zoom">
-          <input
-            data-qa="keypress"
-            id="big-search"
-            class="big-form-field" 
-            type="text" 
-            name="search" 
-            placeholder="Try &quot;Los Angeles&quot;"
-          >
-        </label>
-      </div>
+      <label class="label">
+        <input
+          data-qa="keypress"
+          class="form-field" 
+          type="text" 
+          name="search" 
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+        <img 
+          src="images/Search.svg" 
+          alt="bigSearch" 
+          class="big-zoom"
+        >
+      </label>
     </form>
     
     <form method="get" data-qa="small">
-      <div class="small-search">
-        <label for="small-input">
-          <img 
-            src="images/Search.svg" 
-            alt="smallSearch" 
-            class="small-zoom">
-          <input
-            id="small-input"
-            class="small-form-field" 
-            type="search" name="search" 
-            placeholder="Try &quot;Los Angeles&quot;"
-          >
-        </label>
-      </div>
+      <label class="label">
+        <input
+          class="form-field small-form-field" 
+          type="search" 
+          name="search" 
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+        <img 
+          src="images/Search.svg" 
+          alt="smallSearch" 
+          class="small-zoom"
+        >
+      </label>
     </form>
   </body>
 </html>

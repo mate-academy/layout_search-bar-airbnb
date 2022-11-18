@@ -1,0 +1,96 @@
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-style: normal;
+  font-weight: 800;
+}
+
+html {
+  font-family: "Avenir-Book", Arial, Helvetica, sans-serif;
+}
+
+.big-bar {
+  height: 68px;
+  border: 1px solid rgb(230, 228, 228);
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.label {
+  display: flex;
+  position: relative;
+}
+
+.icon-big {
+  position: absolute;
+  height: 19px;
+  width: 19px;
+  left: 25px;
+  right: 18px;
+  top: 24px;
+}
+
+.big-bar .input-big {
+  border: 0;
+  width: 100%;
+  font-size: 16px;
+  padding: 24px 62px;
+}
+
+.big-bar:hover {
+  box-shadow: 1px 5px 5px gray;
+}
+
+.big-bar input::placeholder {
+  font-family: "Avenir-Book", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-shadow: none;
+}
+
+.small-bar {
+  height: 40px;
+  border: 1px solid rgb(230, 228, 228);
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.icon-small {
+  position: absolute;
+  height: 11px;
+  width: 11px;
+  left: 12px;
+  right: 10px;
+  top: 14px;
+}
+
+.small-bar .input-small {
+  border: 0;
+  width: 100%;
+  font-family: "Avenir", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  padding: 10.6px 33px;
+}
+
+.small-bar:hover {
+  box-shadow: 1px 5px 5px lightgray;
+}
+
+.big-bar input:focus {
+  font-family: "Avenir-Heavy", Arial, Helvetica, sans-serif;
+  text-shadow: rgb(161, 156, 156) 0.5px 5px 10px;
+}
+
+.small-bar input:focus {
+  font-family: "Avenir-Heavy", Arial, Helvetica, sans-serif;
+}
+
+.small-bar input::placeholder {
+  font-family: "Avenir-Book", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}

@@ -13,31 +13,44 @@
   <body class="body">
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="get"
-      class="firstForm"
+      class="form"
+      method="post"
+      data-qa="big"
     >
-      <input
-        type="search"
-        name="firstSearch"
-        id="firstSearch"
-        class="firstSearch"
-        data-qa="big"
-        placeholder="Try &quot;Los Angeles&quot;"
+      <label class="field">
+        <img
+        src="./images/Search.svg"
+        alt="search-svg-img"
+        class="img"
       >
+        <input
+          type="search"
+          name="bigSearch"
+          class="search-input"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
     </form>
+
     <form
-      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="get"
-      class="secondForm"
+      action="airbnb.com"
+      class="form form--small"
+      method="post"
+      data-qa="small"
     >
-      <input
-        type="search"
-        name="secondSearch"
-        id="secondSearch"
-        class="secondSearch"
-        data-qa="small"
-        placeholder="Try &quot;Los Angeles&quot;"
-      >
+      <label class="field">
+        <img
+          src="./images/Search.svg"
+          alt="search-svg-img"
+          class="img img--small"
+        >
+        <input
+          type="search"
+          name="smallSearch"
+          class="search-input search-input--small"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
     </form>
   </body>
 </html>

@@ -14,7 +14,6 @@
 
 html {
   font-family: "Avenir", sans-serif;
-  font-style: normal;
 }
 
 .big-zoom {
@@ -37,7 +36,6 @@ html {
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
   padding-left: 62px;
   line-height: 22px;
-  font-style: normal;
   font-weight: 300;
   font-size: 16px;
   font-family: inherit;
@@ -58,44 +56,38 @@ html {
   line-height: 20px;
   font-weight: 300;
   font-size: 14px;
-  font-family: inherit;
-  outline: none;
 }
 
 .form-field:hover::placeholder {
   font-family: inherit;
   font-weight: 300;
-  font-style: normal;
   border: none;
+  outline: none;
 }
 
 .form-field:hover {
-  box-shadow: 0 3 8 0 rgba(61, 78, 97, 0.2);
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
 }
 
 .form-field:focus {
   border-radius: 3px;
-  background-color: #f6f6f7;
+  background: #f6f6f7;
 }
 
 .form-field:focus::placeholder {
   color: #687c94;
   border: none;
   font-family: inherit;
-  font-style: normal;
   font-weight: 800;
   font-size: 16px;
+  outline: none;
 }
 
 .small-form-field:focus::placeholder {
-  color: #687c94;
-  border: none;
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 800;
   font-size: 14px;
+
 }
 
-.label {
+.form {
   position: relative;
 }

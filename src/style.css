@@ -1,17 +1,19 @@
 @font-face {
   font-family: "Avenir";
+  font-weight: 300;
   src: url(\fonts\Avenir.ttc);
 }
 
 @font-face {
   font-family: "Avenir";
+  font-weight: 300;
   src: url(\fonts\Avenir-Book.ttf);
 }
 
 @font-face {
   font-family: "Avenir";
-  src: url(\fonts\Avenir-Heavy.ttf);
   font-weight: bold;
+  src: url(\fonts\Avenir-Heavy.ttf);
 }
 
 .html {
@@ -21,9 +23,6 @@
 
 .form {
   margin-top: 20px;
-}
-
-.barContainer {
   position: relative;
   display: flex;
   content: none;
@@ -37,7 +36,7 @@
 }
 
 .input {
-  font-family: "Avenir", sans-serif;
+  font-family: inherit;
   line-height: 70px;
   padding-left: 62px;
   width: 100%;

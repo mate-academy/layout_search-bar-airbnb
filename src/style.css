@@ -1,24 +1,27 @@
 @font-face {
-  font-family: "Avenir-Book";
-  src: url("fonts/Avenir-Book.ttf");
+  font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 300;
 }
 
 @font-face {
-  font-family: "Avenir-Heavy";
-  src: url("fonts/Avenir-Heavy.ttf");
+  font-family: Avenir-Heavy;
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-style: normal;
+  font-weight: bold;
 }
 
 html {
-  font-family: "Avenir-Heavy", serif;
+  font-family: Avenir-Heavy, serif;
 }
 
 .body {
   margin: 0 8px;
 }
 
-form[data-qa="big"],
-form[data-qa="small"] {
-  margin: 20px 0 0;
+form[data-qa="big"] {
+  margin: 20px 0;
 }
 
 form[data-qa="big"] > input {
@@ -40,7 +43,7 @@ form[data-qa="big"] > input {
 }
 
 form[data-qa="big"] > input::placeholder {
-  font-family: "Avenir-Book", serif;
+  font-family: Avenir, serif;
 }
 
 form[data-qa="small"] > input {
@@ -62,7 +65,7 @@ form[data-qa="small"] > input {
 }
 
 form[data-qa="small"] > input::placeholder {
-  font-family: "Avenir-Book", serif;
+  font-family: Avenir, serif;
 }
 
 form[data-qa="big"] > input:hover {

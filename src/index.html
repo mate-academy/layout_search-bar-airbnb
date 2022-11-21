@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" >
     <meta
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
@@ -11,24 +11,27 @@
     <link rel="stylesheet" href="./style.css" >
   </head>
   <body>
-    <label class="searchBar__label">
-      <input
-        class="searchBar"
-        type="search"
-        name="searchBar"
-        data-qa="big"
-        placeholder="Try &quot Los Angeles &quot"
-      >
-    </label>
-
-    <label class="searchBar__label searchBar__label--small">
-      <input
-        class="searchBar searchBar--small"
-        type="search"
-        name="searchBar"
-        data-qa="small"
-        placeholder="Try &quot Los Angeles &quot"
-      >
-    </label>
+    <form class="search" data-qa="big">
+      <label>
+        <input
+          class="searchBar searchBar--big"
+          type="search"
+          name="searchBar"
+          data-qa="keypress"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
+    </form>
+    <form class="search search--small" data-qa="small">
+      <label>
+        <input
+          class="searchBar searchBar--small"
+          type="search"
+          name="searchBar"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
+    </form>
+    
   </body>
 </html>

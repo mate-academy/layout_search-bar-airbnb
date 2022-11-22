@@ -1,15 +1,15 @@
 @font-face {
   font-family: Avenir;
-  src: url(fonts/Avenir-Book.ttf);
+  src: url(./fonts/Avenir-Book.ttf);
   font-style: normal;
   font-weight: 300;
 }
 
 @font-face {
   font-family: Avenir-Heavy;
-  src: url(fonts/Avenir-Heavy.ttf);
+  src: url(./fonts/Avenir-Heavy.ttf);
   font-style: normal;
-  font-weight: bold;
+  font-weight: 800;
 }
 
 html {
@@ -30,8 +30,7 @@ form[data-qa="big"] > input {
   /* padding: 24px 25px 22px 62px; */
   padding-left: 62px;
   box-sizing: border-box;
-  background: url("images/Search.svg") #fff no-repeat 25px 26px;
-  background-size: 19px 19px;
+  background: url("./images/Search.svg") 25px center 19px 19px no-repeat;
 
   border-radius: 4px;
   font-size: 16px;
@@ -56,8 +55,7 @@ form[data-qa="small"] > input {
   padding-left: 33px;
   box-sizing: border-box;
 
-  background: url("images/Search.svg") #fff no-repeat 15px 13px;
-  background-size: 11px 11px;
+  background: url("./images/Search.svg") 13px 15px/11px 11px no-repeat;
   border-radius: 4px;
   font-size: 14px;
   /* line-height: 19px; */
@@ -80,9 +78,10 @@ form[data-qa="big"] > input:hover {
 
 form[data-qa="big"] > input:focus {
   box-shadow: unset;
-  background: url("images/Search.svg") #fff no-repeat 25px 26px linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background: url(./images/Search.svg) 25px center/19px 19px no-repeat, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
   outline: none;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 form[data-qa="small"] > input:hover {
@@ -91,8 +90,9 @@ form[data-qa="small"] > input:hover {
 
 form[data-qa="small"] > input:focus {
   box-shadow: unset;
-  background: url("images/Search.svg") no-repeat 15px 13px linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background: url(./images/Search.svg) 13px 15px/11px 11px no-repeat, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
   border: 1px solid #e1e7ed;
   outline: none;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }

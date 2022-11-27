@@ -38,11 +38,12 @@ html {
 }
 
 .label {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  padding: 0 17px 0 26px;
+  display: block;
   position: absolute;
+  top: 50%;
+  left: 26px;
+  transform: translateY(-50%);
+  cursor: text;
 }
 
 .img {
@@ -52,7 +53,7 @@ html {
 .input {
   width: 100%;
   padding: 23px 26px 23px 62px;
-  font-family: "Avenir", sans-serif;
+  font-family: inherit;
   font-weight: 900;
   font-size: 1rem;
   line-height: 22px;
@@ -88,7 +89,7 @@ html {
 }
 
 .form-small__label {
-  padding: 0 9px 0 13px;
+  left: 13px;
 }
 
 .img-small {

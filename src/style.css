@@ -1,5 +1,8 @@
 * {
   box-sizing: border-box;
+}
+
+html {
   font-family: Avenir, sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -29,6 +32,9 @@
 
 .search__ipt {
   display: block;
+  font-size: inherit;
+  line-height: inherit;
+  font-family: inherit;
   width: 100%;
   padding: 20px 40px 20px 62px;
   height: 70px;
@@ -49,7 +55,7 @@
 }
 
 .search__ipt:focus {
-  font-family: Avenir, sans-serif;
+  font-family: inherit;
   font-weight: 900;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;

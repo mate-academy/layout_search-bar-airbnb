@@ -11,48 +11,43 @@
     <link rel="stylesheet" href="./style.css" >
   </head>
   <body>
-    <div class="large-searchbar">
-      <form
-        action="#"
-        class="largeform"
-        method="post"
-        data-qa="big"
 
-      >
-        <input
-          type="submit"
-          class="submitlarge"
-          value="."
-          tabindex="-1"
-        >
-        <input
+    <form
+        action="/"
+        class="search-form"
+        method="get"
+        data-qa="big"
+    >
+
+
+      <input
           type="text"
-          class="textlarge"
+          class="input"
+          id="search-input"
           placeholder="Try &quot;Los Angeles&quot;"
           data-qa="keypress"
-
-        >
-      </form>
-    </div>
-    <div class="small-searchbar">
-      <form
-        action="#"
-        class="smallform"
-        method="post"
-        data-qa="small"
       >
-        <input
-          type="submit"
-          class="submitsmall"
-          value="." tabindex="-1"
-        >
-        <input
-          type="text"
-          class="textsmall"
-          placeholder="Try &quot;Los Angeles&quot;"
 
-        >
-      </form>
-    </div>
+
+    </form>
+
+    <form
+        action="/"
+        class="search-form"
+        method="get"
+        data-qa="small"
+    >
+
+
+      <input
+            type="text"
+            class="input input-small"
+            id="search-input1"
+            placeholder="Try &quot;Los Angeles&quot;"
+
+      >
+
+
+    </form>
   </body>
 </html>

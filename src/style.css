@@ -20,7 +20,7 @@ html {
   font-family: Avenir, Arial, sans-serif;
 }
 
-.wrapper {
+.form {
   height: 70px;
   width: 100%;
   margin-top: 20px;
@@ -29,23 +29,23 @@ html {
   border-radius: 4px;
   box-shadow: 0 1px 8px 0 #3d4e611a;
   background: #fff;
-  display: flex;
   position: relative;
 }
 
-.wrapper_small {
+.form_small {
   height: 42px;
   width: 100%;
 }
 
 .img {
-  position: absolute;
   width: 19px;
   height: 19px;
   left: 26px;
   top: 25px;
+  bottom: 26px;
   border: none;
   background-color: #fff;
+  position: absolute;
 }
 
 .img_small {
@@ -56,26 +56,26 @@ html {
 }
 
 .input {
-  font-family: Avenir, Arial, sans-serif;
-  position: absolute;
+  font-family: inherit;
   height: 22px;
   width: 129px;
-  top: 25px;
-  left: 62px;
+  margin-top: 25px;
+  margin-left: 62px;
   border: none;
   outline: none;
   line-height: 22px;
   font-size: 16px;
   font-weight: 800;
+  padding: 0;
 }
 
 .input_small {
   height: 20px;
   width: 167.29px;
-  top: 12px;
-  left: 33px;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 20px;
+  margin-top: 12px;
+  margin-left: 33px;
 }
 
 .input::placeholder {

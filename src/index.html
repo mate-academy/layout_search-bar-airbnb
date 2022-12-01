@@ -11,6 +11,55 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <div class="container">
+      <form
+        action="/"
+        method="get"
+        class="formField"
+        data-qa="big"
+      >
+        <button
+          class="searchButton"
+        >
+          <img
+            src="./images/Search.svg"
+            alt="Пошук"
+            width="19"
+            height="19"
+          >
+        </button>
+        <input
+          type="text"
+          placeholder="Try &#34;Los Angeles&#34;"
+          id="search1"
+          class="searchInput searchInput--big"
+          data-qa="keypress"
+        >
+      </form>
+      <!-- 2-nd form -->
+      <form
+        action="/"
+        method="get"
+        class="formField formField--small"
+        data-qa="small"
+      >
+        <button
+          class="searchButton searchButton--small"
+        >
+          <img
+            src="./images/Search.svg"
+            alt="Пошук"
+            width="11"
+            height="11"
+          >
+        </button>
+        <input
+          type="text"
+          placeholder="Try &#34;Los Angeles&#34;"
+          id="search2"
+          class="searchInput searchInput--small"
+        >
+      </form>
+    </div>
   </body>
 </html>

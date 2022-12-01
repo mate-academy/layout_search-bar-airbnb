@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(fonts/Avenir-Book.ttf);
+  font-weight: 300;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Avenir, Helvetica, sans-serif;
+}
+
+.form {
+  position: relative;
+}
+
+.input {
+  margin-top: 20px;
+  padding-left: 62px;
+  display: block;
+  font-size: 16px;
+  width: 100%;
+  height: 70px;
+  background: #fff;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+}
+
+.input:hover {
+  background: #fff;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2) ;
+}
+
+.input:focus {
+  background: linear-gradient (180deg
+  #fff 0%
+  #f6f6f7
+  100%);
+  border: 1px  solid  #e1e7ed;
+  border-radius: 3px;
+  outline: none;
+}
+
+.input::placeholder {
+  font-style: normal;
+  font-weight: 300px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3d4e61;
+}
+
+.photo_first {
+  height: 19px;
+  width: 19px;
+  position: absolute;
+  left: 26px;
+  top: 26px;
+}
+
+.input--small {
+  height: 42px;
+  padding-left: 32px;
+}
+
+.input--small::placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  height: 20px;
+}
+
+.photo_second {
+  height: 11px;
+  width: 11px;
+  position: absolute;
+  left: 13px;
+  top: 15px;
+}

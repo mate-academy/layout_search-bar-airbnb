@@ -19,7 +19,7 @@ html {
   font-weight: 300;
 }
 
-form {
+.form {
   margin: 8px;
 }
 
@@ -36,11 +36,11 @@ form {
   box-sizing: border-box;
 }
 
-form[data-qa="big"] .Search {
+.form[data-qa="big"] .Search {
   height: 70px;
 }
 
-.fild-txt {
+.field-txt {
   width: 100%;
   padding-bottom: 2px;
   padding-left: 33px;
@@ -48,29 +48,28 @@ form[data-qa="big"] .Search {
   border: none;
   font-size: 14px;
   line-height: 19px;
-  /*color: hsl(212, 23%, 31%);*/
   font-family: Avenir-Book, sans-serif;
   font-weight: 400;
 }
 
-input[data-qa="keypress"] {
+.field-txt[data-qa="keypress"] {
   font-size: 16px;
   line-height: 22px;
   padding-left: 62px;
 }
 
-.fild-txt::placeholder {
+.field-txt::placeholder {
   font-family: Avenir-Book, sans-serif;
   font-weight: 400;
 }
 
-.fild-txt:hover {
+.field-txt:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
   font-family: Avenir-Book, sans-serif;
   font-weight: 400;
 }
 
-.fild-txt:focus {
+.field-txt:focus {
   background-color: linear-gradient(180deg, hsl(0, 0%, 100%) 0%,
   hsl(240, 6%, 97%) 100%);
   border-radius: 3px;
@@ -86,14 +85,14 @@ input[data-qa="keypress"] {
   box-sizing: border-box;
 }
 
-form[data-qa="big"] .search-image {
+.form[data-qa="big"] .search-image {
   top: 24px;
   left: 25px;
   width: 19px;
   height: 19px;
 }
 
-form[data-qa="small"] .search-image {
+.form[data-qa="small"] .search-image {
   top: 14px;
   left: 12px;
   width: 11px;

@@ -16,7 +16,7 @@
   box-sizing: border-box;
 }
 
-form {
+input {
   outline: none;
 }
 
@@ -25,7 +25,7 @@ html {
   font-weight: 300;
   font-size: 16px;
 
-  --border-color: #e1e7ed;
+  --primary-color: #e1e7ed;
 }
 
 body {
@@ -64,20 +64,20 @@ body {
   font-weight: 900;
   font-size: 1rem;
   color: #3d4e61;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--primary-color);
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
   transition: box-shadow 0.1s ease;
 }
 
 .input:hover {
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--primary-color);
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
   border-radius: 4px;
 }
 
 .input:focus {
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--primary-color);
   border-radius: 3px;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
@@ -104,7 +104,6 @@ body {
 .form--small__input {
   padding: 11px 13px 10px 33px;
   font-size: 12px;
-  line-height: 19px;
 }
 
 .form--small__input:focus {

@@ -12,47 +12,33 @@
   </head>
   <body>
     <form
-      class="container"
+      class="form"
       action="https://www.google.com/search"
       method="get"
       data-qa="big"
     >
-      <img
-        class="icon"
-        src="./images/Search.svg"
-        alt="Search Icon"
-      >
-      <label for="searchBarBig">
-        <input
-          class="searchbar"
-          type="text"
-          id="searchBarBig"
-          name="userSearch"
-          placeholder="Try &quot;Los Angeles&quot;"
-          data-qa="keypress"
-        >
-      </label>
+      <input
+        class="input"
+        type="text"
+        id="searchBarBig"
+        name="userSearch"
+        placeholder="Try &quot;Los Angeles&quot;"
+        data-qa="keypress"
+       >
     </form>
     <form
-      class="container container--small"
+      class="form"
       action="https://www.google.com/search"
       method="get"
       data-qa="small"
     >
-      <img
-        class="icon icon--small"
-        src="./images/Search.svg"
-        alt="Search Icon"
+      <input
+        class="input input--small"
+        type="search"
+        id="searchBarSmall"
+        name="search"
+        placeholder="Try &quot;Los Angeles&quot;"
       >
-      <label for="searchBarSmall">
-        <input
-          class="searchbar searchbar--small"
-          type="search"
-          id="searchBarSmall"
-          name="search"
-          placeholder="Try &quot;Los Angeles&quot;"
-        >
-      </label>
     </form>
   </body>
 </html>

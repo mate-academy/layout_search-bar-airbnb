@@ -12,82 +12,90 @@
   font-weight: 800;
 }
 
-html {
+* {
   box-sizing: border-box;
+}
+
+html {
   font-family: Avenir, Helvetica, sans-serif;
   --text-color: #3d4e61;
   --border-color: #e1e7ed;
   --background-color: #fff;
 }
 
-.container {
-  position: relative;
+.form {
+  margin-top: 20px;
+}
+
+.input {
+  font-family: inherit;
   width: 100%;
-  height: 68px;
+  height: 70px;
+  padding: 0 0 0 62px;
   background: var(--background-color);
   border: 1px solid var(--border-color);
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.icon {
-  position: absolute;
-  top: 24px;
-  left: 25px;
-  width: 19px;
-}
-
-.searchbar {
-  position: absolute;
-  top: 22px;
-  left: 62px;
-  border: none;
   outline: none;
-  background: transparent;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 22px;
-  color: var(--text-color);
-  font-family: inherit;
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 25px;
 }
 
-.searchbar::placeholder {
-  font-size: 16px;
-  line-height: 22px;
-  color: var(--text-color);
+.input::placeholder {
   font-family: inherit;
+  font-style: normal;
+  color: var(--text-color);
+  width: 150px;
+  height: 22px;
+  font-size: 16px;
+  margin-left: 61px;
 }
 
-.container:hover {
+.input:hover {
   background: var(--background-color);
   border: 1px solid var(--border-color);
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
   border-radius: 4px;
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 25px;
 }
 
-.container:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+.input:focus {
+  font-weight: 800;
+  background: linear-gradient(180deg, var(--background-color) 0%, #f6f6f7 100%);
   border: 1px solid var(--border-color);
   border-radius: 3px;
-  font-weight: 800;
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 25px;
 }
 
-.container--small {
-  height: 40px;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  border-radius: 4px;
-}
-
-.icon--small {
-  width: 11px;
-  top: 14px;
-  left: 12px;
-}
-
-.searchbar--small {
-  top: 9px;
-  left: 32px;
+.input--small {
+  height: 42px;
+  padding: 0 0 0 33px;
+  font-size: 14px;
   font-weight: 400;
+  background-position: 15px;
+  background-size: 11px;
+}
+
+.input--small::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.input--small:hover {
+  background-position: 15px;
+  background-size: 11px;
+}
+
+.input--small:focus {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 19px;
+  background-position: 15px;
+  background-size: 11px;
 }

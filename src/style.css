@@ -12,6 +12,10 @@
   font-weight: 900;
 }
 
+:root {
+  --primary-color: #e1e7ed;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -23,9 +27,6 @@ input {
 html {
   font-family: "Avenir", sans-serif;
   font-weight: 300;
-  font-size: 16px;
-
-  --primary-color: #e1e7ed;
 }
 
 body {
@@ -38,11 +39,12 @@ body {
 
 .form {
   position: relative;
-}
-
-.form:not(:last-child) {
   margin-bottom: 20px;
 }
+
+/* .form:not(:last-child) {
+  margin-bottom: 20px;
+} */
 
 .label {
   display: block;
@@ -88,11 +90,12 @@ body {
   font-family: inherit;
   font-weight: 300;
   font-size: 1rem;
+  line-height: 22%;
   color: #3d4e61;
   text-shadow: none;
 }
 
-.form--small__label {
+.label--small {
   left: 13px;
 }
 
@@ -101,18 +104,19 @@ body {
   height: 11px;
 }
 
-.form--small__input {
-  padding: 11px 13px 10px 33px;
+.input--small {
+  padding: 12px 13px 12px 33px;
   font-size: 12px;
 }
 
-.form--small__input:focus {
+.input--small:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   box-shadow: none;
   text-shadow: none;
 }
 
-.form--small__input::placeholder {
+.input--small::placeholder {
   font-weight: 400;
   font-size: 14px;
+  line-height: 20%;
 }

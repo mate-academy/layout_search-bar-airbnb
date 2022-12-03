@@ -11,57 +11,21 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <!-- <form method="get" action="/">
-
-      <label 
-        class="searchBar bigBar" 
-        data-qa="big"
-      >
-        <button>
-          <img 
-            src="images/Search.svg" 
-            class="bigLoopImg"
-            alt="Loop image"
-            >
-        </button>
-        <input 
-          class="barInput bigInput"
-          type="text" 
-          name="bigSearch" 
-          data-qa="keypress"
-          placeholder="Try &quot;Los Angeles&quot;"
-        >
-      </label>
-
-      <label class="searchBar smallBar" data-qa="small">
-        <button>
-          <img 
-            src="images/Search.svg" 
-            class="smallLoopImg"
-            alt="Loop image"
-          >
-        </button>
-        <input 
-          class="barInput smallInput"
-          type="text" 
-          name="smallSearch" 
-          placeholder="Try &quot;Los Angeles&quot;"
-        >
-
-
-      </label> -->
-
     <div class="searchBar">
-      <form class="bigBar">
+      <form class="bigBar" data-qa="big">
         <img 
           src="images/Search.svg" 
           alt="search-icon"
           class="bigLoopImg"
         >
-        <input type="text" placeholder="Try &quot;Los Angeles&quot;">
+        <input 
+          type="text" 
+          placeholder="Try &quot;Los Angeles&quot;"
+          data-qa="keypress"
+        >
       </form>
 
-      <form class="smallBar">
+      <form class="smallBar" data-qa="small">
         <img 
           src="images/Search.svg" 
           alt="search-icon"
@@ -70,6 +34,5 @@
         <input type="text" placeholder="Try &quot;Los Angeles&quot;">
       </form>
     </div>
-    <!-- </form> -->
   </body>
 </html>

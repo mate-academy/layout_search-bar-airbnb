@@ -69,6 +69,7 @@ label {
   font-size: 14px;
   transition: all 0.2s ease;
   padding-bottom: 3px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .little-bar button img {
@@ -101,6 +102,10 @@ label {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.little-bar input:hover {
+  text-shadow: none;
+}
+
 .little-bar:focus-within {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
@@ -110,4 +115,5 @@ label {
 
 .little-bar input:focus {
   font-weight: bold;
+  text-shadow: none;
 }

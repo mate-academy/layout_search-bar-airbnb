@@ -11,6 +11,30 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <form action="https://mate.academy/" method="post" 
+      class="search-bar" data-qa="big"
+    >
+      <button type="submit">
+        <img src="./images/Search.svg" alt="loupe">
+      </button>
+      <label>
+        <input type="text" placeholder="Try &quot;Los Angeles&quot;"
+          name="search" data-qa="keypress" 
+          tabindex="1"
+        >
+      </label>
+    </form>
+    <form action="https://mate.academy/" method="post" 
+      class="little-bar" data-qa="small"
+    >
+      <button type="submit">
+        <img src="./images/Search.svg" alt="loupe">
+      </button>
+      <label>
+        <input type="text" placeholder="Try &quot;Los Angeles&quot;"
+          name="search" tabindex="1"
+        >
+      </label>
+    </form>
   </body>
 </html>

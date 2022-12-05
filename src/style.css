@@ -1,5 +1,4 @@
 * {
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -19,8 +18,7 @@
 
 html {
   font-family: "Avenir", sans-serif;
-  font-size: 16px;
-  justify-content: center;
+  padding: 0;
 }
 
 .search__form {
@@ -38,8 +36,7 @@ html {
   height: 42px;
 }
 
-.form__label {
-  display: block;
+.form__div {
   position: relative;
   width: 100%;
 }
@@ -87,9 +84,9 @@ html {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.form__input::placeholder {
+.form__input::placeholder:focus {
   color: inherit;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 .form__input_big::placeholder {

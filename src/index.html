@@ -11,19 +11,30 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    
-
-
-    <div class="searchBar">
-      <form class="bigBar"> 
+    <div class="search__bar">
+      
+      <form class="big__bar search__bar" data-qa="big"> 
         <input 
           placeholder="Try &quot;Los Angeles&quot;"
-          class="bigInput"
+          class="search__input big__input"
+          data-qa="keypress"
           >
         <img 
           src="images/Search.svg" 
-          alt="search logo" 
+          alt="search icon" 
           class="big__logo"
+        >
+      </form>
+
+      <form class="small__bar search__bar" data-qa="small"> 
+        <input 
+          placeholder="Try &quot;Los Angeles&quot;"
+          class="search__input small__input"
+          >
+        <img 
+          src="images/Search.svg" 
+          alt="search icon" 
+          class="small__logo"
         >
       </form>
     </div>

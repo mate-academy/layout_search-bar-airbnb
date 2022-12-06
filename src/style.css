@@ -15,6 +15,9 @@
 }
 
 html {
+  font-family: "Avenir", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+
   --inpt-bckgr-color: #fff;
   --inpt-brdr-color: #e1e7ed;
   --inpt-text-color: #3d4e61;
@@ -28,17 +31,17 @@ html {
 .input {
   width: 100%;
   height: 70px;
+  padding-left: 62px;
   background: var(--inpt-bckgr-color);
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 22px;
+  color: var(--inpt-text-color);
   border: 1px solid var(--inpt-brdr-color);
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
   outline: none;
-  padding-left: 62px;
-  font-family: "Avenir", Arial, Helvetica, sans-serif;
-  font-weight: 900;
-  font-size: 16px;
-  line-height: 22px;
-  color: var(--inpt-text-color);
 }
 
 .input:hover {

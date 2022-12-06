@@ -21,7 +21,7 @@ body {
   font-weight: 400;
 }
 
-.search-bar {
+.search--bar {
   width: 100%;
   background: #fff;
   border: 1px solid #e1e7ed;
@@ -30,9 +30,10 @@ body {
   font-family: "Avenir", sans-serif;
   font-weight: bold;
   color: #3d4e61;
+  outline: none;
 }
 
-.big-bar {
+.bar {
   padding: 26px 0;
   font-size: 16px;
   line-height: 22px;
@@ -40,53 +41,53 @@ body {
   padding-left: 62px;
 }
 
-.small-bar {
+.small--bar {
   padding: 15px 0;
   font-size: 14px;
   height: 42px;
   padding-left: 33px;
 }
 
-.SearchForm {
+.search--form {
   margin-top: 20px;
 }
 
-.searchIcon {
+.search--icon {
   position: absolute;
 
 }
 
-.smallIcon {
+.small--icon {
   padding-left: 13px;
   padding-top: 15px;
   width: 11px;
   height: 11px;
 }
 
-.bigIcon {
+.icon {
   padding-left: 26px;
   padding-top: 25px;
   width: 18px;
   height: 18px;
 }
 
-.small-bar::placeholder {
+.small--bar::placeholder {
   font-size: 14px;
   color: #3d4e61;
   font-weight: normal;
 }
 
-.big-bar::placeholder {
+.bar::placeholder {
   font-size: 16px;
   color: #3d4e61;
   font-weight: normal;
 }
 
-.SearchForm:hover {
+.search--form:hover {
   box-shadow: 0 3px 8px rgb(61 78 97 / 20%);
 }
 
-:focus {
+.search--bar:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
   border-radius: 3px;

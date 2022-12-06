@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form class="SearchForm"
+    <form class="search--form"
       action="https://google.com"
+      method="get"
       data-qa="big"
-      method="post"
     >
-      <label class="searchlabel">
-        <svg class="searchIcon bigIcon"
+      <label class="search--label">
+        <svg class="search--icon icon"
           width="19"
           height="19"
           viewBox="0 0 19 19"
@@ -27,21 +27,20 @@
             stroke="#687C94">
           </path>
         </svg>
-        <input class="search-bar big-bar"
+        <input class="search--bar bar"
           type="search"
           placeholder="Try &quot;Los Angeles&quot"
           data-qa="keypress"
         >
       </label>
     </form>
-    <form  class="SearchForm"
+    <form  class="search--form"
       action="https://google.com"
       data-qa="small"
       method="post"
     >
-      <label class="searchlabel">
-
-        <svg class="searchIcon smallIcon"
+      <label class="search--label">
+        <svg class="search--icon small--icon"
           viewBox="0 0 19 19"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +50,7 @@
             stroke="#687C94">
           </path>
         </svg>
-        <input class="search-bar small-bar"
+        <input class="search--bar small--bar"
           type="search"
           placeholder="Try &quot;Los Angeles&quot"
         >

@@ -11,33 +11,37 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div class="searchBar searchBarBig" data-qa="big">
-      <form
-        action="/action_page.php"
-        method="get"
-      >
+    <form
+      action="/action_page.php"
+      method="get"
+      class="searchBar"
+      data-qa="big"
+    >
+      <label>
         <input
-          class="searchInput searchInputBig"
+          class="searchInput"
           type="text"
           placeholder="Try &quot;Los Angeles&quot;"
           name="query"
           data-qa="keypress"
         >
-      </form>
-    </div>
-
-    <div class="searchBar searchBarSmall" data-qa="small">
-      <form
-        action="/action_page.php"
-        method="get"
-      >
+      </label>
+    </form>
+    <form
+      action="/action_page.php"
+      method="get"
+      class="searchBar"
+      data-qa="small"
+    >
+      <label>
         <input
           class="searchInput searchInputSmall"
           type="text"
           placeholder="Try &quot;Los Angeles&quot;"
           name="query"
         >
-      </form>
-    </div>
+      </label>
+    </form>
   </body>
 </html>
+

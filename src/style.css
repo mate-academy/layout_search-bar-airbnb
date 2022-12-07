@@ -62,18 +62,21 @@ html {
 .search:hover {
   background: var(--inpt-bckgr-color);
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-  border: 1px solid var(--inpt-brdr-color);
   border-radius: 4px;
-  font-family: inherit;
+  font-family: Avenir-Book, sans-serif;
   font-weight: 300;
 }
 
 .search:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background: linear-gradient(180deg, var(--inpt-bckgr-color) 0%, #f6f6f7 100%);
   border-radius: 3px;
-  border: 1px solid var(--inpt-brdr-color);
+  outline: none;
   font-family: Avenir-Heavy, sans-serif;
   font-weight: 900;
+}
+
+.search:focus::placeholder {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .small--search {
@@ -87,18 +90,21 @@ html {
 }
 
 .small--search:hover {
-  background: #fff;
+  background: var(--inpt-bckgr-color);
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-  border: 1px solid var(--inpt-brdr-color);
   border-radius: 4px;
-  font-family: inherit;
+  font-family: Avenir-Book, sans-serif;
   font-weight: 300;
 }
 
 .small--search:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background: linear-gradient(180deg, var(--inpt-bckgr-color) 0%, #f6f6f7 100%);
   border-radius: 3px;
-  border: 1px solid var(--inpt-brdr-color);
   font-family: Avenir-Heavy, sans-serif;
   font-weight: 900;
+  outline: none;
+}
+
+.small--search:focus::placeholder {
+  text-shadow: none;
 }

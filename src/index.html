@@ -11,30 +11,34 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form
-      class="big_search_form"
-      data-qa="big"
-    >
-      <label class="search_bar">
-        <input
-          class="input_big_search_bar"
-          type="search"
-          placeholder="Try &#34;Los Angeles&#34;"
-          data-qa="keypress"
-        >
-      </label>
-    </form>
-    <form
-      class="small_search_form"
-      data-qa="small"
-    >
-      <label>
-        <input
-          class="input_small_search_bar"
-          type="search"
-          placeholder="Try Los Angeles"
-        >
-      </label>
-    </form>
+    <div class="margint_indent">
+      <form
+        class="search_form"
+        data-qa="big"
+      >
+        <img src="images/Search.svg" alt="search:" class="search_svg">
+        <label class="search_bar">
+          <input
+            class="input_big_search_bar"
+            type="search"
+            placeholder="Try &#34;Los Angeles&#34;"
+            data-qa="keypress"
+          >
+        </label>
+      </form>
+      <form
+        class="search_form_small"
+        data-qa="small"
+      >
+        <img src="images/Search.svg" alt="search:" class="search_svg_small">
+        <label>
+          <input
+            class="input_small_search_bar"
+            type="search"
+            placeholder="Try &#34;Los Angeles&#34;"
+          >
+        </label>
+      </form>
+    </div>
   </body>
 </html>

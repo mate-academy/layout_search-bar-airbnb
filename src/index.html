@@ -12,31 +12,18 @@
   </head>
   <body>
     <form action="search-bar" method="get">
-      <div class="search__big">
-        <input
+      <input
         type="text"
         placeholder="Try &quot;Los Angeles&quot;"
-        data-qa="big"
+        required
         class="big"
-        >
-        <img
-        src="./images/Search.svg"
-        alt="search"
-        class="big__logo">
-      </div>
-
-      <div class="search__small">
-        <input
-        type="text"
-        placeholder="Try &quot;Los Angeles&quot;"
-        data-qa="small"
-        class="small"
-        >
-        <img
-        src="./images/Search.svg"
-        alt="search"
-        class="small__logo">
-      </div>
+        data-qa="big">
+      <input
+          type="text"
+          placeholder="Try &quot;Los Angeles&quot;"
+          required
+          class="small"
+          data-qa="small">
     </form>
   </body>
 </html>

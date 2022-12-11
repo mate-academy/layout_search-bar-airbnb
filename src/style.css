@@ -1,0 +1,64 @@
+body {
+  margin-top: 20px;
+}
+
+@font-face {
+  font-family: "Avenir-Book", Arial, Helvetica, sans-serif;
+  src: url(./fonts/Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir-Heavy", Arial, Helvetica, sans-serif;
+  src: url(./fonts/Avenir-Heavy.ttf);
+  font-style: normal;
+  font-weight: 900;
+}
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  font-family: "Avenir-Heavy", Arial, Helvetica, sans-serif;
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+}
+
+.input--big {
+  height: 70px;
+  font-size: 16px;
+  background-position: 26px 25px;
+  background-size: 19px 19px;
+  padding-left: 62px;
+}
+
+.input--small {
+  height: 42px;
+  font-size: 14px;
+  background-position: 13px 15px;
+  background-size: 11px 11px;
+  padding-left: 33px;
+}
+
+input::placeholder {
+  font-family: "Avenir-Book", Arial, Helvetica, sans-serif;
+}
+
+input:hover {
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  border-radius: 4px;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+input:focus {
+  background-image: url(./images/Search.svg), linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  color: #3d4e61;
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+  outline: none;
+}

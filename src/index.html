@@ -10,7 +10,37 @@
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
   </head>
-  <body>
-    <h1>Search bar airbnb</h1>
+  <body class="body">
+
+    <form
+      class="form-field"
+      action="http://localhost:8080/"
+      method="post">
+
+      <label class="search-bar">
+        <input
+          class="input"
+          type="search"
+          data-qa="big keypress"
+          placeholder="Try &quot Los Angeles &quot"
+          >
+      </label>
+    </form>
+
+    <form
+      class="form-field"
+      action="http://localhost:8080/"
+      method="post">
+
+      <label class="search-bar">
+        <input
+          class="input input-small"
+          type="search"
+          data-qa="small"
+          placeholder="Try &quot Los Angeles &quot"
+          >
+      </label>
+    </form>
+
   </body>
 </html>

@@ -37,8 +37,6 @@ html {
 }
 
 .form-label {
-  position: relative;
-  display: block;
   width: 100%;
 }
 
@@ -50,6 +48,7 @@ html {
   border-radius: 4px;
   font-family: inherit;
   color: #3d4e61;
+  outline: none;
 }
 
 .form-input-big {
@@ -66,6 +65,7 @@ html {
 
 .form-img {
   position: absolute;
+  outline: none;
 }
 
 .form-img-big {
@@ -84,17 +84,20 @@ html {
 
 .form-input:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  outline: none;
 }
 
 .form-input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
   font-weight: 600;
+  outline: none;
 }
 
 .form-input::placeholder {
   color: inherit;
   font-weight: 300;
+  outline: none;
 }
 
 .form-input-big::placeholder {

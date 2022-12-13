@@ -15,14 +15,18 @@
     <form
       class="form-field"
       action="http://localhost:8080/"
-      method="post">
+      method="post"
+      data-qa="big">
 
       <label class="search-bar">
+        <img class="icon-big"
+          src="./images/Search.svg"
+          alt="search">
         <input
-          class="input"
+          class="input input-big"
           type="search"
-          data-qa="big keypress"
-          placeholder="Try &quot Los Angeles &quot"
+          data-qa="keypress"
+          placeholder="Try &quot;Los Angeles&quot"
           >
       </label>
     </form>
@@ -30,14 +34,17 @@
     <form
       class="form-field"
       action="http://localhost:8080/"
-      method="post">
+      method="post"
+      data-qa="small">
 
       <label class="search-bar">
+        <img class="icon-small"
+          src="./images/Search.svg"
+          alt="search">
         <input
           class="input input-small"
           type="search"
-          data-qa="small"
-          placeholder="Try &quot Los Angeles &quot"
+          placeholder="Try &quot;Los Angeles&quot"
           >
       </label>
     </form>

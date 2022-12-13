@@ -12,44 +12,43 @@
   </head>
   <body>
     <form
-      class="searchBarForm"
+      class="search-bar-form search-bar-big"
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="get"
+      data-qa="big"
     >
-      <div class="searchBarBig" data-qa="big">
-        <input
-          class="searchBarInput searchBarBigInput"
-          type="text"
-          name="searchBar"
-          placeholder="Try &quot;Los Angeles&quot;"
-          data-qa="keypress"
-        >
-        <img
-          class="searchBarBigPicture"
-          src="./images/Search.svg"
-          alt="search bar picture"
-        >
-      </div>
+      <input
+        class="search-bar__input search-bar-big__input"
+        type="text"
+        name="searchBar"
+        placeholder="Try &quot;Los Angeles&quot;"
+        data-qa="keypress"
+      >
+      <img
+        class="search-bar-big__picture"
+        src="./images/Search.svg"
+        alt="search bar picture"
+      >
     </form>
 
     <form
-      class="searchBarForm"
+      class="search-bar-form search-bar-small"
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="get"
+      data-qa="small"
     >
-      <div class="searchBarSmall" data-qa="small">
-        <input
-          class="searchBarInput searchBarSmallInput"
-          type="text"
-          name="searchBar"
-          placeholder="Try &quot;Los Angeles&quot;"
-        >
-        <img
-          class="searchBarSmallPicture"
-          src="./images/Search.svg"
-          alt="search bar picture"
-        >
-      </div>
+      <input
+        class="search-bar__input search-bar-small__input"
+        type="text"
+        name="searchBar"
+        placeholder="Try &quot;Los Angeles&quot;"
+      >
+      <img
+        class="searchBarSmallPicture"
+        src="./images/Search.svg"
+        alt="search bar picture"
+      >
+
     </form>
   </body>
 </html>

@@ -74,11 +74,9 @@ html {
   padding-left: 33px;
 }
 
-.loop--small::placeholder {
-  color: var(--main-color2);
-}
-
 .loop--small:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%)
     url(images/Search.svg) no-repeat 13px 15px/11px;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  outline: none;
 }

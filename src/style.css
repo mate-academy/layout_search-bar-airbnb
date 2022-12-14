@@ -1,21 +1,19 @@
 @font-face {
   font-family: Avenir;
   src: url(fonts/Avenir-Book.ttf);
+  font-style: normal;
   font-weight: 300;
 }
 
 @font-face {
-  font-family: Avenir-Heavy;
+  font-family: Avenir;
   src: url(fonts/Avenir-Heavy.ttf);
-  font-weight: bold;
+  font-style: normal;
+  font-weight: 800;
 }
 
 * {
   box-sizing: border-box;
-}
-
-body {
-  margin: 0;
 }
 
 .form {
@@ -42,7 +40,7 @@ body {
 }
 
 .element:focus::placeholder {
-  font-weight: 900;
+  font-weight: 800;
 }
 
 .element:focus {
@@ -54,14 +52,15 @@ body {
 .big-picture {
   position: absolute;
   left: 26px;
-  top: 23px;
+  top: 24px;
   height: 19px;
   width: 19px;
 }
 
 .small-element {
   height: 42px;
-  padding-left: 31px;
+  font-size: 14px;
+  padding-left: 33px;
 }
 
 .small-picture {

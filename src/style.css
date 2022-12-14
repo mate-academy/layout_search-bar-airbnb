@@ -12,60 +12,43 @@
   font-weight: 800;
 }
 
-* {
-  margin: 0;
-  padding: 0;
+html * {
+  border: none;
+  outline: none;
+  background-color: #fff0;
+  font-family: Avenir, sans-serif;
+}
+
+.searchContainer {
+  box-sizing: border-box;
+  margin-top: 20px;
+  min-width: 200px;
+  background-color: #ffff;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
 }
 
 .searchContainer--big {
-  box-sizing: border-box;
-  margin: 20px 8px 0;
   height: 70px;
-  min-width: 200px;
-  background-color: #ffff;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  border-radius: 4px;
 }
 
 .searchContainer--small {
-  box-sizing: border-box;
-  margin: 20px 8px 0;
   height: 42px;
-  min-width: 200px;
-  background-color: #ffff;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  border-radius: 4px;
-
-}
-
-.searchButton--big {
-  height: 19px;
-  line-height: 19px;
-  margin: 24px 17px 0 25px;
-  background-color: #fff0;
-  border: none;
-  float: left;
-}
-
-.searchButton--small {
-  height: 11px;
-  line-height: 11px;
-  margin: 14px 9px 0 12px;
-  background-color: #fff0;
-  border: none;
-  float: left;
 }
 
 .searchIcon--big {
   width: 19px;
   height: 19px;
+  margin: 24px 18px 0 25px;
+  float: left;
 }
 
 .searchIcon--small {
   width: 11px;
   height: 11px;
+  margin: 14px 10px 0 12px;
+  float: left;
 }
 
 .searchContainer--big:hover,
@@ -89,34 +72,26 @@
   overflow: hidden;
 }
 
-.searchInput--big {
+.searchInput {
+  padding: 0;
   width: 100%;
-  border: none;
-  outline: none;
-  background-color: #fff0;
-  font-family: Avenir, sans-serif;
+  color: #3d4e61;
   font-weight: 300;
+}
+
+.searchInput--big {
   font-size: 16px;
   line-height: 68px;
-  color: #3d4e61;
 }
 
 .searchInput--small {
-  width: 100%;
-  border: none;
-  outline: none;
-  background-color: #fff0;
-  font-family: Avenir, sans-serif;
-  font-weight: 300;
   font-size: 14px;
   line-height: 40px;
-  color: #3d4e61;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .searchInput--big::placeholder {
   height: 68px;
-  font-family: Avenir, sans-serif;
   font-size: 16px;
   font-weight: 300;
   color: #3d4e61;
@@ -125,7 +100,6 @@
 
 .searchInput--small::placeholder {
   height: 40px;
-  font-family: Avenir, sans-serif;
   font-size: 14px;
   font-weight: 300;
   color: #3d4e61;
@@ -133,14 +107,12 @@
 }
 
 .searchInput--big:focus {
-  font-family: Avenir, sans-serif;
   font-size: 16px;
   font-weight: 800;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .searchInput--small:focus {
-  font-family: Avenir, sans-serif;
   font-size: 14px;
   font-weight: 800;
   text-shadow: none;

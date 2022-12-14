@@ -15,9 +15,10 @@
       action="/action_page.php"
       method="get"
       data-qa="big"
+      class="form"
     >
       <input
-        class="input search bigsearch"
+        class="form__input"
         type="text"
         placeholder="Try &quot;Los Angeles&quot;"
         data-qa="keypress"
@@ -25,25 +26,25 @@
       <img
         src="/images/Search.svg"
         alt="searchloop"
-        class="searchloop"
+        class="form__loop"
       >
     </form>
     <form
       action="/action_page.php"
       method="get"
       data-qa="small"
+      class="form"
     >
       <input
         type="text"
-        class="inputsmall search smallsearch"
+        class="form__input form__input--small"
         placeholder="Try &quot;Los Angeles&quot;"
       >
       <img
-        src="/images/Search.svg"
-        alt="searchloop"
-        class="loopsmall"
+      src="/images/Search.svg"
+      alt="searchloop"
+      class="form__loop form__loop--small"
       >
     </form>
-
   </body>
 </html>

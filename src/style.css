@@ -33,10 +33,10 @@ html {
 .search {
   width: 100%;
   font-family: inherit;
-  color: var(--main-color2);
+  color: #3d4e61;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
-  border: 1px solid var(--main-color);
+  border: 1px solid var(--main-color1);
 }
 
 .loop {
@@ -45,9 +45,6 @@ html {
   font-size: 16px;
   background: url(images/Search.svg) no-repeat 26px 25px/19px;
   padding-left: 62px;
-  border: 1px solid var(--main-color);
-  border-radius: 3px;
-  outline: none;
 }
 
 .loop--small {
@@ -66,7 +63,7 @@ html {
 }
 
 .loop:hover {
-  border: 1px solid var(--main-color);
+  border: 1px solid var(--main-color1);
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
   border-radius: 4px;
 }
@@ -75,17 +72,13 @@ html {
   font-weight: 800;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%)
     url(images/Search.svg) no-repeat 26px 25px/19px;
+  border: 1px solid var(--main-color1);
+  border-radius: 3px;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.loop--small:hover {
-  border: 1px solid var(--main-color);
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-  border-radius: 4px;
+  outline: none;
 }
 
 .loop--small:focus {
-  font-weight: 800;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%)
     url(images/Search.svg) no-repeat 13px 15px/11px;
 }

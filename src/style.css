@@ -21,16 +21,11 @@ html {
   font-weight: 300;
 }
 
-input,
-input::placeholder {
-  font-family: inherit;
-}
-
-.search-bar-form {
+.form {
   margin-top: 20px;
 }
 
-.search-bar__input {
+.form__input {
   height: 100%;
   width: 100%;
   outline: none;
@@ -40,24 +35,29 @@ input::placeholder {
   border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
+  font-family: inherit;
 }
 
-.search-bar__input:hover {
+.form__input:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.search-bar__input:focus {
+.form__input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
   font-weight: 900;
 }
 
-.search-bar-big {
+.form__picture {
+  position: absolute;
+}
+
+.form--big {
   position: relative;
   height: 70px;
 }
 
-.search-bar-big__input {
+.form__input--big {
   padding-left: 62px;
   margin-bottom: 20px;
 
@@ -65,26 +65,24 @@ input::placeholder {
   line-height: 22px;
 }
 
-.search-bar-big__picture {
-  position: absolute;
+.form__picture--big {
   left: 26px;
   top: 25px;
 }
 
-.search-bar-small {
+.form--small {
   position: relative;
   height: 42px;
 }
 
-.search-bar-small__input {
+.form__input--small {
   padding-left: 33px;
 
   font-size: 14px;
   line-height: 19px;
 }
 
-.searchBarSmallPicture {
-  position: absolute;
+.form__picture--small {
   height: 11px;
   width: 11px;
   left: 13px;

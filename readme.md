@@ -1,7 +1,7 @@
 # Search bar for Airbnb
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://<your_account>.github.io/layout_search-bar-airbnb/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_search-bar-airbnb/report/html_report/)
+- [DEMO LINK](https://LinaD01609.github.io/layout_search-bar-airbnb/)
+- [TEST REPORT LINK](https://LinaD01609.github.io/layout_search-bar-airbnb/report/html_report/)
 
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
 
@@ -16,10 +16,10 @@ ___
 
 ### Requirements:
 - use images from [src/images](src/images)
-- there must be two search bars
+ there must be two search bars
 - search bar must have width 100%
-- distance between two search bars must be 20px
-- the big search bar must have top indent 20px
+- distance between two search bars must be 20px 
+the big search bar must have top indent 20px 
 - follow styles from the mock
 - default `font-weight` must be 300
 - a search bar has 3 state default, `hover` and `focus`
@@ -31,9 +31,9 @@ ___
 --> [CHECKLIST](https://github.com/mate-academy/layout_search-bar-airbnb/blob/master/checklist.md)
 
 ### Tips & Hints
-- Add **ALL** `data-qa` attributes required in the task
-- Text `Try "Los Angeles"` is a placeholder.
-- Use `&quot;` instead of `"` in the placeholder.
+- Add **ALL** `data-qa` attributes required in the task -->
+ Text `Try "Los Angeles"` is a placeholder.
+ Use `&quot;` instead of `"` in the placeholder. 
 - Pay close attention to font styles. Use fonts from `fonts` folder.
 - You have to put `input` inside the `form` for correct data processing. Form should have `action` and `method`
 attributes.

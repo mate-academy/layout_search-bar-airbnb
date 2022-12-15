@@ -19,6 +19,10 @@
   font-style: normal;
 }
 
+html {
+  font-family: Avenir;
+}
+
 .form {
   display: flex;
   position: relative;
@@ -36,8 +40,8 @@
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
   color: #3d4e61;
-  font-family: Avenir;
   font-weight: 500;
+  font-family: inherit;
 }
 
 .form__input:hover {
@@ -58,8 +62,7 @@
   font-size: 14px;
 }
 
-::placeholder {
-  font-family: Avenir;
+.form__input::placeholder {
   font-weight: 300;
   color: #3d4e61;
 }

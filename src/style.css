@@ -13,7 +13,6 @@
 }
 
 * {
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -42,12 +41,11 @@ html {
   position: absolute;
   content: "";
   display: block;
+  background: url(images/Search.svg) no-repeat;
+  background-size: contain;
 }
 
 .search_label_big:after {
-  background-image: url(images/Search.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
   width: 19px;
   height: 19px;
   top: 25px;
@@ -55,9 +53,6 @@ html {
 }
 
 .search_label_small:after {
-  background-image: url(images/Search.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
   width: 11px;
   height: 11px;
   top: 15px;

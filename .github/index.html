@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Search bar airbnb</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="formBlock">
+      <form
+
+        data-qa="big"
+        name="searchForm"
+        action="/"
+        class="searchForm"
+        method="get"
+      >
+        <label class="searchLabel">
+          <img
+            src="./images/Search.svg"
+            class= "icon"
+            alt="FaceIcon">
+          <input
+            data-qa="keypress"
+            class="searchInput"
+            type="text"
+            name="search"
+            id="searchInput"
+            placeholder="Try &quot;Los Angeles&quot;"
+          >
+        </label>
+      </form>
+    </div>
+    <div class="formBlock formBlockSm">
+      <form
+      data-qa="small"
+      name="searchForm"
+      action="/"
+      class="searchForm"
+      method="get"
+      >
+        <label class="searchLabel">
+          <img
+            src="./images/Search.svg"
+            class= "icon iconSm"
+            alt="FaceIcon">
+          <input
+            class="searchInput searchInputSm"
+            type="text"
+            name="search"
+            id="searchInputSm"
+            placeholder="Try &quot;Los Angeles&quot"
+          >
+        </label>
+      </form>
+    </div>
+  </body>
+</html>

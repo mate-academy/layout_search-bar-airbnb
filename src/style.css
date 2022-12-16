@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
 @font-face {
   font-family: Avenir;
   src: url(fonts/Avenir-Book.ttf);
@@ -9,72 +14,78 @@
   src: url(fonts/Avenir-Heavy.ttf);
 }
 
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir.ttc);
+  font-style: normal;
+}
+
 body {
   position: relative;
   font-family: Avenir, Arial, Helvetica, sans-serif;
-  margin: 20px 8px;
+  margin: 8px;
   font-weight: 300;
 }
 
-.search_bar {
+.search_barBig {
+  margin-top: 20px;
   box-sizing: border-box;
   --color-of-input-border: #e1e7ed;
   --color-of-input-background: #fff;
+  color: #3d4e61;
+  font-family: Avenir, sans-serif;
+  position: relative;
+  height: 70px;
 }
 
-.search_bar_input {
-  box-sizing: border-box;
+.search_barBig_input {
+  position: relative;
   width: 100%;
+  height: 100%;
   outline: none;
-  height: 70px;
-  line-height: 70px;
+  line-height: 68px;
   padding-left: 62px;
   font-size: 16px;
-  margin-bottom: 20px;
   border: 1px solid var(--color-of-input-border);
   background: var(--color-of-input-background);
+  font-family: Avenir, sans-serif;
+  color: #3d4e61;
   box-shadow: 0 1px 8px rgb(61 78 97 / 10%);
   border-radius: 4px;
 }
 
-.button_search_bar_input {
+::placeholder {
+  font-family: Avenir, sans-serif;
+  color: #3d4e61;
+}
+
+.image_findBig {
   position: absolute;
-  padding: 0;
-  height: 19px;
   width: 19px;
+  height: 19px;
   top: 25px;
-  bottom: 26px;
   left: 26px;
-  right: 17px;
-  border: none;
-  background: transparent;
 }
 
-.image_find_first {
-  height: 19px;
-  width: 19px;
-}
-
-.search_bar_input::placeholder {
+.search_barBig::placeholder {
   font-size: 16px;
   line-height: 22px;
   color: #3d4e61;
-  font-family: Avenir, Arial, Helvetica, sans-serif;
+  font-family: Avenir, sans-serif;
 }
 
-.search_bar_input:focus {
+.search_barBig_input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   height: 70px;
   border: 1px solid #e1e7ed;
   border-radius: 3px;
-  font-family: Avenir, Arial, Helvetica, sans-serif;
+  font-family: Avenir, sans-serif;
   font-size: 16px;
   color: #3d4e61;
-  font-weight: 900;
 }
 
-.search_bar_input:hover {
+.search_barBig_input:hover {
   background: #fff;
   border: 1px solid #e1e7ed;
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
@@ -82,55 +93,50 @@ body {
   border-radius: 4px;
 }
 
-.search_bar_second {
+.search_barSmall {
   box-sizing: border-box;
   --color-of-border-input: #e1e7ed;
   --color-of-input-background: #fff;
-  line-height: 40px;
+  margin: 20px auto 0;
+  height: 42px;
   position: relative;
+  color: #3d4e61;
+  font-family: Avenir, sans-serif;
+  font-size: 14px;
+  line-height: 40px;
 }
 
-.search_bar_second_input {
+.search_barSmall_input {
   position: relative;
   box-sizing: border-box;
   width: 100%;
   outline: none;
   height: 42px;
   padding-left: 33px;
-  font-size: 12px;
+  font-size: 14px;
   border: 1px solid var(--color-of-border-input);
   background: var(--color-of-input-background);
   box-shadow: 0 1px 8px rgb(61 78 97 / 10%);
   border-radius: 4px;
 }
 
-.search_bar_label_second {
-  position: relative;
-}
-
-/* .button_search_bar_second_input {
+.image_findSmall {
   position: absolute;
-  padding: 0;
-  border: none;
-  background: transparent;
-} */
-
-.image_find_second {
-  position: absolute;
-  left: 13px;
-  top: 16px;
-  height: 11px;
+  z-index: 1;
   width: 11px;
+  height: 11px;
+  left: 13px;
+  top: 15px;
 }
 
-.search_bar_second_input::placeholder {
+.search_barSmall_input::placeholder {
   font-size: 14px;
   line-height: 19px;
   color: #3d4e61;
   font-family: Avenir, Arial, Helvetica, sans-serif;
 }
 
-.search_bar_second_input:focus {
+.search_barSmall_input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
   border-radius: 3px;
@@ -138,11 +144,14 @@ body {
   font-style: normal;
   font-weight: 900;
   font-size: 14px;
+  line-height: 19px;
+  color: #3d4e61;
 }
 
-.search_bar_second_input:hover {
+.search_barSmall_input:hover {
   background: #fff;
   border: 1px solid #e1e7ed;
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
   border-radius: 4px;
+  color: #3d4e61;
 }

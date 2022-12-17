@@ -10,49 +10,45 @@
   </head>
   <body>
     <form
+      class="searchContainer--big searchContainer"
       action="/"
       method="post"
       data-qa="big"
     >
-      <div class="searchContainer--big searchContainer">
-        <img
-          class="searchIcon--big"
-          src="images/Search.svg"
-          alt="magnifying glass"
+      <img
+        class="searchIcon--big"
+        src="images/Search.svg"
+        alt="magnifying glass"
+      >
+      <div class="inputWrapper">
+        <input
+          type="text"
+          name="search--big"
+          class="searchInput--big searchInput"
+          data-qa="keypress"
+          placeholder="Try &quot;Los Angeles&quot;"
         >
-        </img>
-        <div class="inputWrapper">
-          <input
-            type="text"
-            name="search--big"
-            class="searchInput--big searchInput"
-            data-qa="keypress"
-            placeholder="Try &quot;Los Angeles&quot;"
-          >
-        </div>
       </div>
     </form>
 
     <form
+    class="searchContainer--small searchContainer"
       action="/"
       method="post"
       data-qa="small"
     >
-      <div class="searchContainer--small searchContainer">
-        <img
-          class="searchIcon--small"
-          src="images/Search.svg"
-          alt="magnifying glass"
+      <img
+        class="searchIcon--small"
+        src="images/Search.svg"
+        alt="magnifying glass"
+      >
+      <div class="inputWrapper">
+        <input
+          type="text"
+          name="search--small"
+          class="searchInput--small searchInput"
+          placeholder="Try &quot;Los Angeles&quot;"
         >
-        </img>
-        <div class="inputWrapper">
-          <input
-            type="text"
-            name="search--small"
-            class="searchInput--small searchInput"
-            placeholder="Try &quot;Los Angeles&quot;"
-          >
-        </div>
       </div>
     </form>
   </body>

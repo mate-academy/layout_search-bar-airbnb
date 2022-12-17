@@ -1,17 +1,16 @@
 @font-face {
   font-family: Avenir;
   src: url(fonts/Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 300;
 }
 
 @font-face {
-  font-family: Avenir-Heavy;
+  font-family: Avenir;
   src: url(fonts/Avenir-Heavy.ttf);
+  font-style: normal;
+  font-weight: 900;
 }
-
-/* html {
-  margin: 0;
-  padding: 0;
-} */
 
 .search-form {
   background: #fff;
@@ -54,7 +53,7 @@
 .input {
   border: none;
   outline: none;
-  font-family: Avenir, Arial, Helvetica, sans-serif;
+  font-family: inherit;
   background-color: #fff;
   width: 100%;
   box-sizing: border-box;
@@ -74,7 +73,7 @@
   padding-top: 3px;
 }
 
-input::placeholder {
+.input::placeholder {
   font-weight: 400;
   font-family: Avenir, Arial, Helvetica, sans-serif;
 }

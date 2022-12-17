@@ -7,9 +7,21 @@
 
 @font-face {
   font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Avenir;
   src: url(fonts/Avenir-Heavy.ttf);
   font-style: normal;
   font-weight: 900;
+}
+
+html {
+  font-weight: 300;
+  font-family: Avenir, Arial, Helvetica, sans-serif;
 }
 
 .search-form {
@@ -75,5 +87,5 @@
 
 .input::placeholder {
   font-weight: 400;
-  font-family: Avenir, Arial, Helvetica, sans-serif;
+  font-family: inherit;
 }

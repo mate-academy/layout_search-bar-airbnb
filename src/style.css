@@ -26,17 +26,17 @@ input::placeholder {
   font-family: inherit;
 }
 
-.inputWrapper {
+.input-wrapper {
   position: relative;
   display: block;
 }
 
-.inputWrapperBig {
+.input-wrapperBig {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.inputWrapper::after {
+.input-wrapper::after {
   content: "";
 
   display: block;
@@ -47,10 +47,12 @@ input::placeholder {
   top: 25px;
   left: 26px;
 
-  background: url(./images/Search.svg) no-repeat center cover;
+  background: url(./images/Search.svg) no-repeat center;
+  background-size: cover;
+
 }
 
-.inputWrapperSmall::after {
+.input-wrapperSmall::after {
   width: 11px;
   height: 11px;
 

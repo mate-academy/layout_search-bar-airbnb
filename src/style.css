@@ -31,7 +31,7 @@ input::placeholder {
   display: block;
 }
 
-.input-wrapperBig {
+.input-wrapper--big {
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -52,7 +52,7 @@ input::placeholder {
 
 }
 
-.input-wrapperSmall::after {
+.input-wrapper--small::after {
   width: 11px;
   height: 11px;
 
@@ -60,7 +60,7 @@ input::placeholder {
   left: 13px;
 }
 
-.form_field {
+.form-field {
   width: 100%;
 
   background: #fff;
@@ -72,25 +72,25 @@ input::placeholder {
   font-weight: 900;
 }
 
-.inputBig {
+.form-field--big {
   height: 70px;
   padding-left: 62px;
   font-size: 16px;
   line-height: 22px;
 }
 
-.inputSmall {
+.form-field--small {
   height: 42px;
   padding-left: 33px;
   font-size: 14px;
   line-height: 19px;
 }
 
-.form_field:hover {
+.form-field:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.form_field:focus {
+.form-field:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
   border-radius: 3px;
@@ -98,7 +98,7 @@ input::placeholder {
   outline: none;
 }
 
-.form_field::placeholder {
+.form-field::placeholder {
   color: #3d4e61;
   font-weight: 300;
 }

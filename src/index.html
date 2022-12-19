@@ -13,13 +13,14 @@
   <body>
     
     <form
-      class="search-form big" 
+      class="search-form search-form--big" 
       action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
       method="post"
       data-qa="big"
     >
       <label>
-        <input  
+        <input
+          class="search-form__input search-form__input--big"
           type="text"
           placeholder="Try &quot;Los Angeles&quot;"
           data-qa="keypress"
@@ -28,13 +29,17 @@
     </form>
 
     <form 
-      class="search-form small"
+      class="search-form search-form--small"
       action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
       method="post" 
       data-qa="small"
     >
       <label>
-        <input type="text" placeholder="Try &quot;Los Angeles&quot;">
+        <input 
+          class="search-form__input search-form__input--small"
+          type="text" 
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
       </label>
     </form>
 

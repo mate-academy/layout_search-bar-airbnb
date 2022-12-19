@@ -11,40 +11,36 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header></header>
-    <main>
-      <div class="search">
-        <form
-          class="search-bar big-bar"
-          data-qa="big"
+    <div class="search">
+      <form
+        class="search-bar big-bar"
+        data-qa="big"
+      >
+        <input
+          class="search-input big-input"
+          data-qa="keypress"
+          placeholder= "Try &quot;Los Angeles&quot;"
         >
-          <input
-            class="search-input big-input"
-            data-qa="keypress"
-            placeholder= "Try &quot;Los Angeles&quot;"
-          >
-          <img
-            src="images/Search.svg"
-            alt="icon"
-            class="logo big-logo"
-          >
-        </form>
-        <form
-          class="search-bar small-bar"
-          data-qa="small"
+        <img
+          src="images/Search.svg"
+          alt="icon"
+          class="logo big-logo"
         >
-          <input
-            placeholder="Try &quot;Los Angeles&quot;"
-            class="search-input small-input"
-          >
-          <img
-            src="images/Search.svg"
-            alt="icon"
-            class="logo small-logo"
-          >
-        </form>
-      </div>
-    </main>
-    <footer></footer>
+      </form>
+      <form
+        class="search-bar small-bar"
+        data-qa="small"
+      >
+        <input
+          placeholder="Try &quot;Los Angeles&quot;"
+          class="search-input small-input"
+        >
+        <img
+          src="images/Search.svg"
+          alt="icon"
+          class="logo small-logo"
+        >
+      </form>
+    </div>
   </body>
 </html>

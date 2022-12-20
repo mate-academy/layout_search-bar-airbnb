@@ -17,6 +17,10 @@
   font-family: Avenir, Arial, sans-serif;
 }
 
+form {
+  margin-top: 20px;
+}
+
 .input1 {
   width: 100%;
   height: 70px;
@@ -26,15 +30,13 @@
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
   background-size: 19px;
-  background-position: 26px 25px;
+  background-position: 25px 26px;
   font-family: inherit;
   font-style: normal;
   font-size: 16px;
   line-height: 22px;
   color: #3d4e61;
   padding-left: 62px;
-  margin-top: 12px;
-  margin-bottom: 20px;
 }
 
 .input2 {
@@ -53,7 +55,23 @@
   font-size: 14px;
   line-height: 19px;
   color: #3d4e61;
-  padding-left: 34px;
+  padding-left: 33px;
+}
+
+.input1::placeholder {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3d4e61;
+}
+
+.input2::placeholder {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #3d4e61;
 }
 
 .input1:hover {

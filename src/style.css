@@ -24,17 +24,13 @@ body {
   padding: 20px 7.6px 7.5px ;
 }
 
-ul {
-  margin: 0;
-}
-
-form {
+.form {
   position: relative;
 }
 
-.bar1 {
+.bar {
   width: 100%;
-  font-family: "Avenir", sans-serif;
+  font-family: inherit;
   font-size: 16px;
   line-height: 22px;
   outline: none;
@@ -47,65 +43,34 @@ form {
   border-radius: 4px;
 }
 
-.bar1:focus {
+.bar:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
   border-radius: 3px;
-  /* filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25)); */
   font-weight: 300;
 }
 
-.bar1:hover {
+.bar:hover {
   background: #fff;
   border: 1px solid #e1e7ed;
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
   border-radius: 4px;
 }
 
-.bar1::placeholder {
-  font-family: "Avenir", sans-serif;
-  font-size: 16px;
-  line-height: 22px;
-  color: #3d4e61;
-}
-
-.bar2 {
-  width: 100%;
-  font-family: "Avenir", sans-serif;
+.bar--small {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
   height: 42px;
   padding-left: 33.5px;
-  outline: none;
-  background: #fff;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  border-radius: 4px;
 }
 
-.bar2:hover {
-  background: #fff;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-  border-radius: 4px;
-}
-
-.bar2:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border: 1px solid #e1e7ed;
-  border-radius: 3px;
-  font-weight: 300;
+.bar--small:focus {
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.bar2::placeholder {
-  font-family: "Avenir", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
+.bar--small::placeholder {
   color: #3d4e61;
 }
 

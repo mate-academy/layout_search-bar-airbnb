@@ -1,3 +1,8 @@
+:root {
+  --bigOffsetInput: 62px;
+  --smallOffsetInput: 33px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -100,13 +105,11 @@ body {
 
 .SearchBar--big .SearchBar__input {
   font-size: 16px;
-  --bigOffsetInput: 62px;
   margin-left: var(--bigOffsetInput);
   width: calc(100% - var(--bigOffsetInput));
 }
 
 .SearchBar--small .SearchBar__input {
-  --smallOffsetInput: 33px;
   margin-left: var(--smallOffsetInput);
   width: calc(100% - var(--smallOffsetInput));
   line-height: 19px;

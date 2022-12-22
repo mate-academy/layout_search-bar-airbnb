@@ -1,0 +1,142 @@
+/* Add "Avenir" 300 */
+@font-face {
+  font-family: "Avenir";
+  src: url(fonts/Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+
+/* Add "Avenir" bold */
+@font-face {
+  font-family: "Avenir";
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: 900;
+}
+
+/* Add font family to all body */
+body {
+  font-family: "Avenir", Arial, sans-serif;
+}
+
+/* Position big form */
+.form__big {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Style input field big form */
+.form__big-field {
+  /* Add size  */
+  height: 70px;
+  width: 100%;
+  /* Add inside indents */
+  padding-left: 62px;
+  padding-top: auto;
+  /* Style background border and box shadow */
+  background: #fff;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+  /* Style typography */
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3d4e61;
+}
+
+/* Add typography to placeholder */
+.form__big-field::placeholder {
+  font-family: inherit;
+  font-weight: 300;
+  color: #3d4e61;
+}
+
+/* Add hover style for input field */
+.form__big-field:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+/* Add focus Style for input field */
+.form__big-field:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+  outline: none;
+}
+
+/* Style search button */
+.form__big-button {
+  /* Position button inside input field */
+  position: absolute;
+  top: 25px;
+  left: 26px;
+  padding: 0;
+  /* Style cursor when we hover the button */
+  cursor: pointer;
+  /* Delete background-color and border */
+  background-color: transparent;
+  border: none;
+}
+
+/* Position small form */
+.form__small {
+  position: relative;
+}
+
+/* Style Small field input */
+.form__small-field {
+  /* Size */
+  height: 42px;
+  width: 100%;
+  /* Position */
+  padding-top: auto;
+  padding-left: 33px;
+  /* Fonts Style */
+  font-family: inherit;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 19px;
+  color: #3d4e61;
+  /* Border style */
+  background: #fff;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+}
+
+/* Style small field placeholder */
+.form__small-field::placeholder {
+  font-family: inherit;
+  font-weight: 300;
+  color: #3d4e61;
+}
+
+/* Style small field state when its hovering */
+.form__small-field:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+/* Style small field state when its focusing*/
+.form__small-field:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+  outline: none;
+}
+
+/* Position and style of the small button  */
+.form__small-button {
+  position: absolute;
+  top: 14px;
+  left: 13px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Add icon size inside button in small field */
+.form__small-button img {
+  width: 11px;
+  height: 11px;
+}

@@ -18,10 +18,13 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
+  /* width: 100%; */
 }
 
 .input {
-  padding: 0 0 0 62px;
+  display: block;
+  padding-left: 62px;
   font-family: inherit;
   color: rgba(61, 78, 97, 1);
   font-size: 16px;
@@ -34,11 +37,14 @@ body {
 
 .input:hover {
   box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+
 }
 
 .input:focus {
   outline: none;
   font-weight: 800;
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .input::placeholder {
@@ -50,11 +56,16 @@ body {
   position: relative;
 }
 
+.input:focus::placeholder {
+  color: transparent;
+  text-shadow: none;
+}
+
 .input-small {
   height: 39px;
   width: 100%;
   border-radius: 4px;
-  padding: 0 0 0 33px;
+  padding-left: 33px;
   font-size: 14px;
 }
 
@@ -65,22 +76,17 @@ body {
 .search-form {
   position: relative;
   margin-top: 20px;
-  height: 70px;
-}
-
-.search-form-small {
-  position: relative;
-  margin-top: 20px;
+  margin-left: 10px;
 }
 
 .searchMagnifier {
   position: absolute;
   top: 25px;
-  left: 25px;
+  left: 26px;
 }
 
 .searchMagnifier-small {
   position: absolute;
   top: 15px;
-  left: 15px;
+  left: 13px;
 }

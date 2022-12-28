@@ -1,0 +1,130 @@
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: bold;
+  src: url(fonts/Avenir-Heavy.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Avenir, Helvetica, sans-serif;
+  font-style: normal;
+}
+
+.label {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.input_big {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.38;
+  color: #3d4e61;
+  outline: none;
+  padding-left: 62px;
+}
+
+.icon_big {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 26px;
+  width: 19px;
+  height: 19px;
+}
+
+.input_big:hover {
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  border-radius: 4px;
+  color: #3d4e61;
+}
+
+.input_big:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+}
+
+.input_big::placeholder {
+  font-size: 16px;
+  color: #3d4e61;
+  font-family: inherit;
+}
+
+.big_bar {
+  margin-top: 20px;
+}
+
+.small_bar {
+  display: flex;
+  width: 100%;
+  height: 42px;
+  margin-top: 20px;
+}
+
+.input_small {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #3d4e61;
+  outline: none;
+  padding: 12px 33px;
+}
+
+.icon_small {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 13px;
+  width: 11px;
+  height: 11px;
+}
+
+.input_small:hover {
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  border-radius: 4px;
+  color: #3d4e61;
+}
+
+.input_small:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+  color: #3d4e61;
+}
+
+.input_small::placeholder {
+  color: #3d4e61;
+  font-family: inherit;
+}

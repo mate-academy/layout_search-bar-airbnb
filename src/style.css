@@ -19,16 +19,15 @@ html {
 body {
   margin: 0;
   padding: 0;
-  /* width: 100%; */
 }
 
 .input {
-  display: block;
-  padding-left: 62px;
+  box-sizing: border-box;
+  padding: 0 0 0 62px;
   font-family: inherit;
   color: rgba(61, 78, 97, 1);
   font-size: 16px;
-  height: 69px;
+  height: 70px;
   width: 100%;
   border: 1px solid rgba(225, 231, 237, 1);
   border-radius: 4px;
@@ -62,10 +61,10 @@ body {
 }
 
 .input-small {
-  height: 39px;
+  height: 42px;
   width: 100%;
   border-radius: 4px;
-  padding-left: 33px;
+  padding: 0 0 0 33px;
   font-size: 14px;
 }
 
@@ -76,7 +75,8 @@ body {
 .search-form {
   position: relative;
   margin-top: 20px;
-  margin-left: 10px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .searchMagnifier {

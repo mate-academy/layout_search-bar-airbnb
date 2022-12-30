@@ -1,17 +1,20 @@
 @font-face {
   font-family: Avenir;
+  font-weight: normal;
+  font-style: normal;
   src: url(fonts/Avenir-Book.ttf);
 }
 
 @font-face {
   font-family: Avenir;
-  font-weight: bold;
+  font-weight: 900;
+  font-style: normal;
   src: url(fonts/Avenir-Heavy.ttf);
 }
 
 .search {
-  display: inline-flex;
-  width: 100%;
+  display: flex;
+  justify-content: flex-start;
   font-weight: 300;
   background: #fff;
   border: 1px solid #e1e7ed;
@@ -21,50 +24,43 @@
 }
 
 .big {
-  height: 69px;
+  height: 68px;
   margin-bottom: 20px;
-  margin-top: 11px;
+  margin-top: 20px;
 }
 
 .small {
-  height: 43px;
+  height: 40px;
 }
 
 .search-iconsm {
   width: 11px;
   height: 11px;
-  margin-top: 15px;
-  margin-left: 13px;
-  margin-right: 9px;
+  top: 135px;
+  margin: 15px 9px 16px 13px;
   order: -1;
 }
 
 .search-iconbg {
   width: 19px;
   height: 19px;
-  margin-top: 25px;
-  margin-left: 26px;
-  margin-right: 17px;
+  margin: 25px 17px 25px 26px;
   order: -1;
 }
 
-.SFBig {
-  border: 0;
-  height: 22px;
-  margin-top: 24px;
-}
-
-.SFSmall {
-  width: 167.29px;
-  border: 0;
-  height: 20px;
-  margin-top: 10px;
-}
-
-.search-field:focus {
+.SFBig:focus {
   font-family: Avenir, "Times New Roman", Times, serif;
-  font-weight: bold;
+  font-weight: 900;
+  font-style: normal;
   font-size: 16px;
+  outline: none;
+}
+
+.SFSmall:focus {
+  font-family: Avenir, "Times New Roman", Times, serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 14px;
   outline: none;
 }
 
@@ -95,4 +91,10 @@
   font-size: 14px;
   line-height: 19.12px;
   color: #3d4e61;
+}
+
+.search-field {
+  font-family: Avenir, "Times New Roman", Times, serif;
+  border: 0;
+  flex-grow: 1;
 }

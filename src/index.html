@@ -11,63 +11,44 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-
     <form
-      class="search"
-      action="http://localhost:8080"
+      action="/"
+      class="form"
       method="get"
       data-qa="big"
     >
-      <button
-        name="search_button"
-        class="search_button"
-        type="submit"
+      <img
+        class="image"
+        src="images/Search.svg"
+        alt="magnifying glass"
       >
-        <img
-          class="search_icon"
-          src="./images/Search.svg"
-          alt="search_icon"
-        >
-      </button>
-
       <input
         class="input"
-        name="search_large"
-        id="search_large"
         type="search"
-        data-qa="keypress"
+        name="search1"
         placeholder="Try &quot;Los Angeles&quot;"
+        data-qa="keypress"
       >
     </form>
 
     <form
-      class="search search_small"
-      action="http://localhost:8080"
-      method="get"
+      action="/"
+      class="form form--small"
       data-qa="small"
+      method="get"
     >
-      <button
-          name="search_button_small"
-          class="search_button search_button_small"
-          type="submit"
+      <img
+        class="image image--small"
+        src="images/Search.svg"
+        alt="magnifying glass"
       >
-        <img
-          class="search_icon_small"
-          src="./images/Search.svg"
-          alt="search_icon_small"
-        >
-      </button>
-
       <input
-        class="input input_small"
-        name="search_small"
-        id="search_small"
+        class="input input--small"
         type="search"
-        data-qa="keypress"
+        name="search2"
         placeholder="Try &quot;Los Angeles&quot;"
       >
     </form>
-
   </body>
 </html>
 

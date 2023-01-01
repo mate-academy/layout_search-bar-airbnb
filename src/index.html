@@ -9,8 +9,35 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
+
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <form
+      action="/"
+      method="get"
+      data-qa="big"
+    >
+      <input
+        type="text"
+        name="searchBar"
+        class="search-large"
+        placeholder="Try &quot;Los Angeles&quot;"
+        data-qa="keypress"
+      >
+    </form>
+
+    <form
+      action="/"
+      method="get"
+      data-qa="small"
+    >
+      <input
+        type="text"
+        name="searchBar"
+        class="search-small"
+        placeholder="Try &quot;Los Angeles&quot;"
+      >
+    </form>
+
   </body>
 </html>

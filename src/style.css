@@ -21,12 +21,11 @@ body {
   font-weight: 300;
 }
 
-.bigForm {
+.form {
   margin-top: 20px;
-  margin-bottom: 20px;
 }
 
-.searchLabel {
+.label {
   position: relative;
 }
 
@@ -36,13 +35,13 @@ body {
   left: 26px;
 }
 
-.bigInput {
+.input {
   font-family: "Avenir", sans-serif;
   padding-left: 62px;
   outline: none;
   height: 70px;
   width: 100%;
-  font-weight: bold;
+  font-weight: 900;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 16px;
   border: 1px solid var(--border-gray);
@@ -53,18 +52,17 @@ body {
   background-color: #fff;
 }
 
-.bigInput::placeholder {
-  font-family: "Avenir", sans-serif;
+.input::placeholder {
   font-weight: 300;
   text-shadow: none;
   color: var(--text-dark);
 }
 
-.bigInput:hover {
+.input:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.bigInput:focus {
+.input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid var(--border-gray);
   border-radius: 3px;
@@ -75,45 +73,37 @@ body {
   left: 13px;
 }
 
-.smallInput {
-  font-family: "Avenir", sans-serif;
-  width: 100%;
+.input--small {
   height: 42px;
-  border: 1px solid var(--border-gray);
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  border-radius: 4px;
-  box-sizing: border-box;
   padding-left: 33px;
-  background-color: #fff;
-  font-weight: bold;
   font-size: 14px;
   line-height: 1.4;
-  color: var(--text-dark);
-  outline: none;
+  text-shadow: none;
 }
 
-.smallInput::placeholder {
-  font-family: "Avenir", sans-serif;
+.input--small::placeholder {
   font-weight: 400;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   color: var(--text-dark);
 }
 
-.smallInput:hover {
+.input--small:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.smallInput:hover::placeholder {
+.input--small:hover::placeholder {
   text-shadow: none;
   color: var(--text-dark);
 }
 
-.smallInput:focus {
+.input--small:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
+  box-shadow: none;
 }
 
-.smallInput:focus::placeholder {
+.input--small:focus::placeholder {
   text-shadow: none;
   color: var(--text-dark);
 }

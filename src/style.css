@@ -33,7 +33,6 @@ form {
 
 .input--small {
   padding-left: 33px;
-  font-style: normal;
   margin-top: 20px;
   border-radius: 4px;
   height: 42px;
@@ -41,6 +40,7 @@ form {
 
 :root {
   --placeholder-color: #3d4e61;
+  --searcher-position: absolute;
 }
 
 .input--big::placeholder {
@@ -73,7 +73,7 @@ form {
 }
 
 .first-searcher {
-  position: absolute;
+  position: var(--searcher-position);
   width: 19px;
   height: 19px;
   left: 26px;
@@ -81,7 +81,7 @@ form {
 }
 
 .second-searcher {
-  position: absolute;
+  position: var(--searcher-position);
   width: 11px;
   height: 11px;
   left: 13px;

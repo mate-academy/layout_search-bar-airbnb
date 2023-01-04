@@ -12,5 +12,22 @@
   </head>
   <body>
     <h1>Search bar airbnb</h1>
+    <form action="/search" data-qa="big">
+      <label for="big-search">
+        <input type="text" id="big-search" 
+  name="q" 
+  placeholder="Try &quot;Los Angeles&quot;" 
+  data-qa="keypress"
+  >
+      </label>
+    </form>
+    <form action="/search" data-qa="small">
+      <label for="small-search">
+        <input type="text" id="small-search" 
+  name="q" 
+  placeholder="Try &quot;Los Angeles&quot;"
+  >
+      </label>
+    </form>
   </body>
 </html>

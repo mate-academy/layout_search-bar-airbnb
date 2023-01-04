@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Avenir-Book";
+  src: url("/fonts/Avenir-Book.ttf") format("truetype");
+}
+
+body {
+  font-family: "Avenir-Book", sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+
+form {
+  margin: 20px;
+}
+
+input[type="text"] {
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-position-y: center;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+input[type="text"]:focus {
+  border-color: rgb(255, 12, 12);
+  outline: none;
+}
+
+input[type="text"]:hover {
+  border-color: rgb(136, 136, 136);
+}
+
+form[data-qa="big"] {
+  margin-top: 20px;
+}
+
+input[data-qa="keypress"][type="text"] {
+  font-size: 24px;
+  padding: 16px 30px;
+}

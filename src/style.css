@@ -26,7 +26,6 @@ body {
   font-family: inherit;
   font-size: 16px;
   font-weight: 800;
-  color: #3d4e61;
   background: url(images/Search.svg) 26px center no-repeat;
   padding: 23px 10px 23px 62px;
   border: 1px solid #e1e7ed;
@@ -34,11 +33,12 @@ body {
   border-radius: 4px;
   outline: none;
   box-sizing: border-box;
+  --main-text-color: #3d4e61;
 }
 
 .search::placeholder {
   font-weight: 300;
-  color: #3d4e61;
+  color: var(--main-text-color);
 }
 
 .search:hover {

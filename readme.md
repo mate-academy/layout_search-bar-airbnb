@@ -3,12 +3,14 @@ Replace `<your_account>` with your Github username and copy the links to Pull Re
 - [DEMO LINK](https://d-hubych.github.io/layout_search-bar-airbnb/)
 - [TEST REPORT LINK](https://d-hubych.github.io/layout_search-bar-airbnb/report/html_report/)
 
-> Follow [this instructions](https://github.com/mate-academy/layout_task-guideline#how-to-solve-the-layout-tasks-on-github)
+> Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
+
 ___
 
+## ❗️❗️❗️ DON'T FORGET TO PROOFREAD YOUR CODE WITH [CHECKLIST](https://github.com/mate-academy/layout_search-bar-airbnb/blob/master/checklist.md) BEFORE SENDING YOUR PULL REQUEST❗️❗️❗️
+
 ## The task
-Create HTML page with two search bars as designed in [the mockup](https://www.figma.com/file/kf3AWulK9elrNk34wtpjPw/Airbnb-Search-bar?node-id=0%3A1).
-This search bar will be part of big project.
+> Create HTML page with two search bars as designed in [the mockup](https://www.figma.com/file/kf3AWulK9elrNk34wtpjPw/Airbnb-Search-bar?node-id=0%3A1). This search bar will be part of big project.
 
 ![screenshot](./references/search-bar-example.png)
 
@@ -28,9 +30,17 @@ This search bar will be part of big project.
 ---
 --> [CHECKLIST](https://github.com/mate-academy/layout_search-bar-airbnb/blob/master/checklist.md)
 
-### Common mistakes
+### Tips & Hints
 - Add **ALL** `data-qa` attributes required in the task
-- Do not use tabs. Use 2 spaces for indentation.
-- Don't use repeated styles.
-- Text `Try "Los Angeles"` in mockup is a placeholder.
-- Check font styles. Use fonts from `fonts` folder.
+- Text `Try "Los Angeles"` is a placeholder.
+- Use `&quot;` instead of `"` in the placeholder.
+- Pay close attention to font styles. Use fonts from `fonts` folder.
+- You have to put `input` inside the `form` for correct data processing. Form should have `action` and `method`
+attributes.
+- Each search bar be inside its own `form` element.
+- Task has styling for `:focus` state. Forms, labels, divs are not focusable by default. Consider it when selecting your
+layout.
+- Remember that inputs and other interactive elements don’t inherit font styles by default.
+- Remember that placeholder has its own set of styles available using `::placeholder` pseudo-element.
+
+

@@ -1,18 +1,17 @@
-/* @font-face {
-  font-family: Avenir;
-  src: url(fonts/Avenir.ttf);
-} */
-
 @font-face {
-  font-family: Avenir-Book;
+  font-family: "Avenir";
   src: url(fonts/Avenir-Book.ttf);
   font-weight: 300;
 }
 
 @font-face {
-  font-family: Avenir-Heavy;
+  font-family: "Avenir";
   src: url(fonts/Avenir-Heavy.ttf);
   font-weight: 900;
+}
+
+html {
+  font-family: Avenir, sans-serif;
 }
 
 .container {
@@ -23,7 +22,7 @@
 }
 
 .input {
-  font-family: Avenir, Avenir-Book, Avenir-Heavy, sans-serif;
+  font-family: inherit;
   font-weight: 900;
   color: #3d4e61;
   padding-left: 62px;
@@ -69,7 +68,7 @@
 }
 
 .input::placeholder {
-  font-family: Avenir, Avenir-Book, Avenir-Heavy, sans-serif;
+  font-family: inherit;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;

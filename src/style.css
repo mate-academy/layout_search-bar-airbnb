@@ -29,6 +29,7 @@
   background: url(images/Search.svg) no-repeat 26px 25px, #fff;
   background-size: 19px;
   padding-left: 62px;
+  font-size: 16px;
 }
 
 .search-bar:hover {
@@ -37,7 +38,7 @@
 
 .search-bar::placeholder {
   font-family: inherit;
-  font-size: 16px;
+  font-size: inherit;
   color: #3d4e61;
 }
 
@@ -47,9 +48,9 @@
   background-size: 11px;
   box-shadow: 0 1px 8px 0 #3d4e6133;
   padding-left: 33px;
-}
-
-.search-bar--small::placeholder {
   font-size: 14px;
 }
 
+.search-bar--small::placeholder {
+  font-size: inherit;
+}

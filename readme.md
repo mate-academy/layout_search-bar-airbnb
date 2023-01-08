@@ -20,9 +20,9 @@ ___
 + search bar must have width 100%
 + distance between two search bars must be 20px
 + the big search bar must have top indent 20px
-- follow styles from the mock
++ follow styles from the mock
 + default `font-weight` must be 300
-- a search bar has 3 state default, `hover` and `focus`
++ a search bar has 3 state default, `hover` and `focus`
 + don't use JavaScript
 + use `@font-face` for fonts
 + add attribute `data-qa="big"` for big search form, and `data-qa="small"` for small

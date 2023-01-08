@@ -5,6 +5,7 @@
 
 * {
   box-sizing: border-box;
+  font-weight: 300;
 }
 
 body {
@@ -37,10 +38,11 @@ body {
   height: 70px;
   border: 1px solid #e1e7ed;
   border-radius: 4px;
-  font-weight: 400;
+  font-weight: bold;
   line-height: 21.86px;
   font-family: Avenir, sans-serif;
   font-size: 16px;
+  color: #3d4e61;
 }
 
 .small-img {
@@ -59,13 +61,11 @@ body {
   border-radius: 4px;
   background: #fff;
   border: 1px solid #e1e7ed;
-  padding-top: 12px;
-  padding-left: 33px;
-  padding-bottom: 11px;
+  padding: 12px 0 11px 33px;
   font-family: Avenir, sans-serif;
   font-style: normal;
   color: #3d4e61;
-  font-weight: 400;
+  font-weight: bold;
   font-size: 14px;
   line-height: 19px;
 }
@@ -76,12 +76,15 @@ body {
 
 .big-input :focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  outline: none;
 }
 
 .small-input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  outline: none;
 }
 
 ::placeholder {
   color: #3d4e61;
+  font-weight: 400;
 }

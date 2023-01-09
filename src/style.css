@@ -14,8 +14,12 @@
   font-weight: 900;
 }
 
-.form {
+html {
   font-family: "Avenir", sans-serif;
+}
+
+.form {
+  font-family:inherit;
   color: #3d4e61;
   font-weight: 300;
   width: 100%;
@@ -24,8 +28,11 @@
   height: 70px;
 }
 
-.img {
+.img, .img-small {
   position: absolute;
+}
+
+.img {
   width: 19px;
   height: 19px;
   left: 26px;
@@ -34,7 +41,7 @@
 
 .search {
   outline: none;
-  font-family: "Avenir", sans-serif;
+  font-family: inherit;
   width: 100%;
   border: 1px solid #e1e7ed;
   border-radius: 4px;
@@ -71,7 +78,6 @@
 }
 
 .img-small {
-  position: absolute;
   width: 11px;
   height: 11px;
   left: 13px;

@@ -11,31 +11,33 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form id="largeform" data-qa="big">
+    <form class="form" data-qa="big">
       <img
-      src="images/Search.svg"
-      alt="search icon"
-      id="largeicon"
+        src="images/Search.svg"
+        alt="search icon"
+        class="icon"
       >
       <input
-      id="largesearch"
-      type="text"
-      data-qa="keypress"
-      placeholder="Try &quot;Los Angeles&quot;"
+        class="search"
+        type="text"
+        name="search"
+        data-qa="keypress"
+        placeholder="Try &quot;Los Angeles&quot;"
       >
     </form>
 
-    <form id="smallform" data-qa="small">
+    <form class="form form--small" data-qa="small">
       <img
-      src="images/Search.svg"
-      alt="search icon"
-      id="smallicon"
+        src="images/Search.svg"
+        alt="search icon"
+        class="icon icon--small"
       >
       <input
-      id="smallsearch"
-      type="text"
-      data-qa="keypress"
-      placeholder="Try &quot;Los Angeles&quot;"
+        class="search search--small"
+        type="text"
+        name="search"
+        data-qa="keypress"
+        placeholder="Try &quot;Los Angeles&quot;"
     >
     </form>
   </body>

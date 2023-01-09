@@ -25,46 +25,58 @@ body {
 }
 
 .big-form {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-top: 25px;
-  padding-left: 26px;
-  padding-bottom: 26px;
+  margin: 20px 0;
+  background-color: var(--white);
+  box-sizing: border-box;
   display: flex;
   align-items: center;
-  background-color: var(--white);
+  height: 70px;
   border: 1px solid var(--border-color);
   border-radius: 4px;
-  box-shadow: 0 1px 8px
-    rgba(61, 78, 97, 0.1);
-  transition: all 0.3s;
-  box-sizing: border-box;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
 }
 
-.big-form:hover {
-  box-shadow: 0 3px 8px
-    rgba(61, 78, 97, 0.2);
+.big-form-label {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  padding-left: 26px;
+  padding-top: 25px;
+  padding-bottom: 26px;
+  z-index: 2;
+  color: var(--icon-color);
 }
 
 .big-form-input {
   width: 100%;
-  margin-left: 17px;
-  border: 0;
-  background-color: transparent;
+  height: 100%;
+  padding-left: 62px;
   outline: none;
+  border: none;
+  background-color: transparent;
+  box-sizing: border-box;
+  transition: all 0.3s;
+  font-size: 16px;
 }
 
 .big-form-input::placeholder {
   font-size: 16px;
-  line-height: 22px;
+  font-weight: 300;
   color: var(--placeholder);
 }
 
+.big-form-input:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
 .big-form-input:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border-radius: 3px;
-  font-size: 16px;
-  font-weight: 600;
+  font-weight: bold;
   color: var(--placeholder);
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
 }

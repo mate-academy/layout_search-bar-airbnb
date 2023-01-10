@@ -1,0 +1,104 @@
+@font-face {
+  font-family: Avenir;
+  font-weight: 300;
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 300;
+  src: url(fonts/Avenir-Heavy.ttf);
+}
+
+body {
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.search_form {
+  height: 70px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #000;
+  line-height: 70px;
+  margin: 20px 0;
+}
+
+.search_form_little {
+  height: 42px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #000;
+  line-height: 42px;
+}
+
+.field {
+  height: 19px;
+  width: 158px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.field_little {
+  height: 19px;
+  width: 158px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.search {
+  margin: 0 10px;
+  border: none;
+  outline: none;
+  height: 19px;
+  width: 19px;
+  background-color: #fff;
+}
+
+.search_little {
+  margin: 0 5px;
+  height: 11px;
+  width: 11px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+}
+
+.search_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.search_image_little {
+  height: 11px;
+  width: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.field::placeholder {
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.field_little::placeholder {
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.form:hover {
+  box-shadow: 4px 4px 4px  #00000040;
+}
+
+.field_focus:focus {
+  text-shadow: 2px 2px 2px  #00000040;
+}

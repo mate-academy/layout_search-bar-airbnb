@@ -1,14 +1,14 @@
 
 @font-face {
   src: url(fonts/Avenir-Book.ttf);
-  font-weight: 300;
+  font-weight: 400;
   font-family: Avenir, sans-serif;
 }
 
 @font-face {
   src: url(fonts/Avenir-Heavy.ttf);
   font-family: Avenir, sans-serif;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 html {
@@ -18,7 +18,7 @@ html {
 .big,
 .small {
   font-family: inherit;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
   color: #3d4e61;
   display: block;
@@ -58,5 +58,10 @@ html {
   background-color: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
   outline: none;
-  font-weight: bold;
+  font-weight: 900;
+}
+
+.big::placeholder,
+.small::placeholder {
+  font-weight: 400;
 }

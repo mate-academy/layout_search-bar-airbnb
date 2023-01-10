@@ -4,6 +4,12 @@
   src: url(./fonts/Avenir-Book.ttf);
 }
 
+@font-face {
+  font-family: Avenir;
+  font-weight: bold;
+  src: url(./fonts/Avenir-Heavy.ttf);
+}
+
 body {
   font-family: Avenir, sans-serif;
 
@@ -13,8 +19,7 @@ body {
   --color-dark: rgba(61, 78, 97, 0.1);
 }
 
-.form1,
-.form2 {
+.form {
   position: relative;
   margin-top: 20px;
 }
@@ -54,24 +59,18 @@ body {
   outline: none;
 }
 
-.form1 input::placeholder {
-  font-weight: normal;
+.form__input::placeholder {
+  font-weight: 300;
   color: var(--color-gray);
 }
 
-.form2 input::placeholder {
-  font-weight: normal;
-  color: var(--color-gray);
-}
-
-.form1 img {
+.form__img {
   position: absolute;
   left: 26px;
   top: 25px;
 }
 
-.form2 img {
-  position: absolute;
+.form__img--small {
   width: 11px;
   height: 11px;
   left: 13px;

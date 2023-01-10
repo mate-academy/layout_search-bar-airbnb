@@ -13,19 +13,20 @@
 
 * {
   box-sizing: border-box;
-  padding: 0;
 }
 
-body {
+html {
   font-family: "Avenir", sans-serif;
   font-size: 16px;
 }
 
+input {
+  padding: 0;
+}
+
 .search-form {
   display: flex;
-  justify-content: center;
   margin: 20px auto 0;
-  width: 100%;
 }
 
 .search-form_big {
@@ -46,12 +47,12 @@ body {
   position: absolute;
   content: "";
   display: block;
-}
-
-.search-form__label_big::after {
   background-image: url("../src/images/Search.svg");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.search-form__label_big::after {
   width: 19px;
   height: 19px;
   top: 25px;
@@ -59,9 +60,6 @@ body {
 }
 
 .search-form__label_small::after {
-  background-image: url("../src/images/Search.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
   width: 11px;
   height: 11px;
   top: 15px;

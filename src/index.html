@@ -11,21 +11,43 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="https://www.airbnb.com.ua/" method="get">
-      <label class="search_bar">
-        <button type="submit">
-          <img src="https://raw.githubusercontent.com/mate-academy/layout_search-bar-airbnb/b502445e6909cc80a492852e0d464ccf5f15cbf9/src/images/Search.svg" 
-          alt="search_button"
-          >
-        </button>
-        <div class="the_bar">
-          <input 
-          type="text" 
-          placeholder="Try &quot Los Angeles &quot"
-          name="search_bar" 
+    <form
+      class="bar"
+      action="http://localhost:3000.api"
+      method="post"
+    >
+      <label>
+        <input
+          class="search-bar big" 
+          type="text"
+          placeholder="Try &#34Los Angeles&#34"
+          data-qa="big"
         >
-        </div>
       </label>
+      <img
+        class="img-big"
+        src="images/Search.svg"
+        alt="logo"
+      >
+    </form>
+    <form
+      class="bar"
+      action="http://localhost:3000.api"
+      method="post"
+    >
+      <label>
+        <input 
+          class="search-bar small"
+          type="text"
+          placeholder="Try &#34Los Angeles&#34"
+          data-qa="small"
+        >
+      </label>
+      <img
+        class="img-small"
+        src="images/Search.svg"
+        alt="logo"
+      >
     </form>
   </body>
 </html>

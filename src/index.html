@@ -11,24 +11,29 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div class="seach-bars big">
-      <form class="seach-bars__form formBig" 
+    <div class="seach-bars">
+      <form class="seach-bars__form seach-bars__form--big" 
         data-qa="big" method="post"
       >
-        <img src="images/Search.svg" alt="search">
-        <input class="seach-bars__input inputBig" 
+        <div class="seach-bars__bigImg">
+          <img src="images/Search.svg" alt="search"          > 
+        </div>
+         
+        <input class="seach-bars__input seach-bars__input--big" 
           data-qa="keypress"
           type="text"
           placeholder="Try &quot;Los Angeles&quot;"
         >
       </form>
     </div>
-    <div class="seach-bars small">
-      <form class="seach-bars__form formSmall" data-qa="small" 
+    <div class="seach-bars">
+      <form class="seach-bars__form seach-bars__form--small" data-qa="small" 
         method="post"
       >
-        <img src="images/Search.svg" alt="search">
-        <input class="seach-bars__input inputSmall" type="text" 
+        <div class="seach-bars__smallImg">
+          <img src="images/Search.svg" alt="search">
+        </div>
+        <input class="seach-bars__input seach-bars__input--small" type="text" 
           placeholder="Try &quot;Los Angeles&quot;"
         >
       </form>

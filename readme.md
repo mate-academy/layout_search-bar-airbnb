@@ -38,7 +38,7 @@ ___
 + You have to put `input` inside the `form` for correct data processing. Form should have `action` and `method`
 attributes.
 + Each search bar be inside its own `form` element.
-- Task has styling for `:focus` state. Forms, labels, divs are not focusable by default. Consider it when selecting your
++ Task has styling for `:focus` state. Forms, labels, divs are not focusable by default. Consider it when selecting your
 layout.
 - Remember that inputs and other interactive elements don’t inherit font styles by default.
 - Remember that placeholder has its own set of styles available using `::placeholder` pseudo-element.

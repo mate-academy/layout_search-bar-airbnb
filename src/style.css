@@ -16,7 +16,10 @@
   font-weight: 700;
 }
 
-/*--------General style------------------*/
+body {
+  --color: #3d4e61;
+  --shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 .searchbar {
   height: 70px;
@@ -33,7 +36,7 @@
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  color: #3d4e61;
+  color: var(--color);
   border: 1px solid #e1e7ed;
   border-radius: 4px;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
@@ -44,10 +47,8 @@
 }
 
 .type-line::placeholder {
-  color: #3d4e61;
+  color: var(--color);
 }
-
-/*--------------Serchvar-Big---------------*/
 
 .search-icon__big {
   left: 26px;
@@ -61,17 +62,14 @@
   padding-left: 62px;
 }
 
-.searchbar__big:hover {
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-}
-
+.searchbar__big:hover,
 .searchbar__big:focus {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
 .type-line__big:focus {
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  filter: drop-shadow(var(--shadow));
+  text-shadow: var(--shadow);
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   font-family: "Avenir Heavy", sans-serif;
 }
@@ -80,8 +78,6 @@
   font-family: "Avenir", sans-serif;
   text-shadow: none;
 }
-
-/*--------------Serchvar-Small---------------*/
 
 .searchbar__small {
   height: 42px;

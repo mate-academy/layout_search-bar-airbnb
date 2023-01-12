@@ -1,5 +1,4 @@
 * {
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -23,7 +22,6 @@ body {
 }
 
 .search-form {
-  display: flex;
   justify-content: center;
   margin: 20px auto 0;
 }
@@ -41,7 +39,6 @@ body {
 .search-form_label {
   position: relative;
   display: block;
-  width: 100%;
 }
 
 .search-form_label:after {
@@ -90,6 +87,7 @@ body {
   padding-left: 33px;
   font-size: 14px;
   line-height: 19px;
+  height: 42px;
 }
 
 .input:hover {
@@ -102,7 +100,7 @@ body {
   border-radius: 3px;
 }
 
-input::placeholder {
+.input::placeholder {
   color: inherit;
   font-weight: 300;
 }

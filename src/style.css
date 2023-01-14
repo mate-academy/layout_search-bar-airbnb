@@ -39,6 +39,10 @@ body {
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
 }
 
+.united-search-input::placeholder {
+  color: inherit
+}
+
 .united-search-input:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
@@ -63,9 +67,8 @@ body {
   background-size: contain;
 
   position: absolute;
-  top: calc(
-    var(--big-search-height) / 2 - var(--search-size-img-L) / 2
-  );
+  top: 50%;
+  transform: translateY(-50%);
   left: 26px;
 }
 
@@ -90,9 +93,8 @@ body {
   background-size: contain;
 
   position: absolute;
-  top: calc(
-    var(--small-search-height) / 2 - var(--search-size-img-S) / 2 - 1px
-  );
+  top: 50%;
+  transform: translateY(-50%);
   left: 13px;
 }
 

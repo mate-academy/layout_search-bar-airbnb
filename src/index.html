@@ -10,44 +10,55 @@
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
   </head>
+ 
   <body>
-   
+    <h1>Search bar airbnb</h1>
+    
     <form  action="/"  method="get">  
-      <label for="field_id_label">
-        <div class="search_form form">       
-          <button class="search"
-          id="field_id_label"
-          >         
-            <img class="search_image" src="images/Search.svg" alt="image">
-          </button>
+      <div class="search_form form">       
+        <button class="search">         
+          <img 
+            class="search_image" 
+            src="images/Search.svg" 
+            alt="image"
+          >
+        </button>
   
-          <input type="text"
-            class="field field_focus"
-            placeholder="Try &quot;Los Angeles&quot;"
-            data-qa="big keypress"
-             >
-        </div>             
-      </label>   
+        <label for="input1">
+          <div class="field_id">
+            <input 
+              type="text"
+              class="field field_focus"
+              placeholder="Try &quot;Los Angeles&quot;"
+              data-qa="big keypress"
+              id="input1"
+            >
+          </div>
+        </label>
+      </div>             
     </form>
 
     <form action="/" method="get">
-      <label for="field_little_id_label">
-        <div class="search_form_little form">
-          <button class="search_little"
-            id="field_little_id_label"
-          >         
-            <img class="search_image_little" 
-              src="images/Search.svg" alt="image"
-            >
-          </button>
-            
-          <input type="text"
-            class="field_little field_focus"
-            placeholder="Try &quot;Los Angeles&quot;"
-            data-qa="little" 
+      <div class="search_form_little form">
+        <button class="search">         
+          <img 
+            class="search_image search_image_little" 
+            src="images/Search.svg"
+            alt="image"
           >
-        </div> 
-      </label>
+        </button>
+        <label for="input_id">
+          <div class="field_id field_id_little">
+            <input 
+                type="text"
+                class="field field_little field_focus"
+                placeholder="Try &quot;Los Angeles&quot;"
+                data-qa="little" 
+                id="input_id"
+            >
+          </div>
+        </label>
+      </div> 
     </form>
   </body>
 </html>

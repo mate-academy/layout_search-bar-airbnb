@@ -10,10 +10,20 @@
   src: url(fonts/Avenir-Heavy.ttf);
 }
 
-body {
+html {
   font-family: Avenir, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-size: 18px;
+}
+
+.field_id {
+  display: inline-block;
+  height: 70px;
+  width: 90%;
+}
+
+.field_id_little {
+  height: 42px;
 }
 
 .search_form {
@@ -42,26 +52,11 @@ body {
 }
 
 .field_little {
-  height: 19px;
-  width: 158px;
-  border: none;
-  outline: none;
   font-size: 16px;
 }
 
 .search {
   margin: 0 10px;
-  border: none;
-  outline: none;
-  height: 19px;
-  width: 19px;
-  background-color: #fff;
-}
-
-.search_little {
-  margin: 0 5px;
-  height: 11px;
-  width: 11px;
   border: none;
   outline: none;
   background-color: #fff;
@@ -77,10 +72,6 @@ body {
 .search_image_little {
   height: 11px;
   width: 11px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
 }
 
 .field::placeholder {
@@ -90,9 +81,7 @@ body {
 }
 
 .field_little::placeholder {
-  font-family: Avenir, Arial, Helvetica, sans-serif;
   font-size: 16px;
-  font-weight: 300;
 }
 
 .form:hover {

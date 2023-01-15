@@ -45,35 +45,40 @@ body {
   font-weight: 300;
 }
 
-.sb-big {
-  margin-bottom: 20px;
-  margin-top: 20px;
-
-  padding-top: 23px;
-  padding-bottom: 23px;
-  padding-left: 62px;
-}
-
-.sb-small {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 33px;
-
-  font-size: 14px;
-}
-
 .form-big,
 .form-small {
   position: relative;
 }
 
-.search-icon {
+.icon-container::before {
   position: absolute;
+  display: block;
+  content: " ";
+  background-image: url("./images/Search.svg");
+  width: 19px;
+  height: 19px;
+
   top: 25px;
   left: 26px;
 }
 
-.si-small {
+.ic-small::before {
+  background-size: contain;
+  width: 11px;
+  height: 11px;
+
   top: 15px;
   left: 13px;
+}
+
+.sb-big {
+  margin: 20px 0;
+
+  padding: 23px 0 23px 62px;
+}
+
+.sb-small {
+  padding: 10px 0 10px 33px;
+
+  font-size: 14px;
 }

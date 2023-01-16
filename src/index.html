@@ -11,24 +11,42 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="http://localhost:5500/api" method="post">
+    <form 
+      action="http://localhost:5500/api" 
+      method="post"
+      class="search-bar big-search-bar"
+      >
       <div>
         <input 
           type="text"
           placeholder="Try &quot;Los Angeles&quot;"
-          class="input-icon input-icon-big search-bar big-search-bar"
+          class="input input-big"
           data-qa="big"
         >
+        <img
+          src="./images/Search.svg" 
+          alt="icon"
+          class="icon icon-big"
+          >
       </div>
     </form>
-    <form action="http://localhost:5500/api" method="post">
+    <form 
+      action="http://localhost:5500/api" 
+      method="post"
+      class="search-bar small-search-bar"
+      >
       <div>
         <input 
           type="text"
           placeholder="Try &quot;Los Angeles&quot;"
-          class="input-icon input-icon-small search-bar small-search-bar"
+          class="input input-small"
           data-qa="small"
         >
+        <img
+          src="./images/Search.svg" 
+          alt="icon"
+          class="icon icon-small"
+          >
       </div>
     </form>
   </body>

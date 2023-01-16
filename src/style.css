@@ -56,8 +56,8 @@
 }
 
 .form__item {
+  font-family: Avenir, sans-serif;
   width: 100%;
-  box-sizing: border-box;
   background-color: #fff;
   border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
@@ -65,14 +65,11 @@
 }
 
 .form__item-big {
-  padding: 23px 0 23px 62px;
+  padding: 0 0 0 62px;
   height: 70px;
-  border-radius: 4px;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
 }
 
 .form__item-big::placeholder {
-  font-family: Avenir, Helvetica, sans-serif;
   font-weight: 400;
   color: #3d4e61;
   font-size: 16px;
@@ -85,22 +82,17 @@
 }
 
 .form__item-big:focus {
+  outline: transparent;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-  font-family: Avenir-Heavy, Helvetica, sans-serif;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
 .form__item-little {
-  padding: 12px 0 10px 33px;
+  padding: 0 0 0 33px;
   height: 42px;
-  border-radius: 4px;
-  background: #fff;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
 }
 
 .form__item-little::placeholder {
-  font-family: Avenir, Helvetica, sans-serif;
   font-weight: 400;
   color: #3d4e61;
   font-size: 14px;
@@ -115,7 +107,7 @@
 .form__item-little:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
-  font-family: Avenir-Heavy, Helvetica, sans-serif;
+  outline: transparent;
 }
 
 .form__item-little:hover::placeholder {

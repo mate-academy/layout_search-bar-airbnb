@@ -12,10 +12,6 @@
   font-weight: 800;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   font-family: "Avenir", serif;
 }
@@ -32,6 +28,10 @@ body {
 
   font-family: inherit;
   font-size: 16px;
+}
+
+.search-bar[type="search"]::-webkit-search-cancel-button {
+  display: none;
 }
 
 .search-bar:hover {
@@ -51,7 +51,12 @@ body {
 
 .form-big,
 .form-small {
+  box-sizing: border-box;
   position: relative;
+}
+
+.form-big {
+  margin: 20px 0;
 }
 
 .icon-container::before {
@@ -76,8 +81,6 @@ body {
 }
 
 .sb-big {
-  margin: 20px 0;
-
   padding: 23px 0 23px 62px;
 }
 

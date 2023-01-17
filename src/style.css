@@ -10,12 +10,16 @@
   src: url(fonts/Avenir-Heavy.ttf);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Avenir-Book", sans-serif;
   font-weight: 300;
 }
 
-.bigFoarm {
+.big-foarm {
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -24,7 +28,7 @@ body {
   position: relative;
 }
 
-img {
+.big-image {
   float: left;
   position: absolute;
   top: 25px;
@@ -34,7 +38,7 @@ img {
   object-position: center center;
 }
 
-img.small {
+.small_image {
   float: left;
   position: absolute;
   top: 15px;
@@ -44,59 +48,54 @@ img.small {
   object-position: center center;
 }
 
-input.bigSeachBar {
-  box-sizing: border-box;
+input.big-seachbar {
   padding: 24px 62px 23px;
   width: 100%;
-  font-family: "Avenir-Book", sans-serif;
   font-weight: 300;
   font-size: 16px;
-  line-height: 21.86px;
+  line-height: 22px;
   border: 1px solid;
   border-radius: 4px;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-color: rgba(225, 231, 237, 1);
 }
 
-input.bigSeachBar:hover {
+input.big-seachbar:hover {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-input.bigSeachBar:focus {
+input.big-seachbar:focus {
   outline: none;
   font-weight: 900;
   background-image: linear-gradient(#fff0, #f6f6f7ff);
 }
 
-.smallSeachBar {
+.small-seachbar {
   box-sizing: border-box;
   padding: 11px 33px 10px;
   width: 100%;
-  font-family: "Avenir-Book", sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 19.12px;
-  border: 1px solid;
+  border: 1px solid rgba(225, 231, 237, 1);
   border-radius: 4px;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  border-color: rgba(225, 231, 237, 1);
 }
 
-input.smallSeachBar:hover {
+input.small-seachbar:hover {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-input.smallSeachBar:focus {
+input.small-seachbar:focus {
   outline: none;
-  font-family: "Avenir-Heavy", sans-serif;
   font-weight: 900;
   background-image: linear-gradient(#fff0, #f6f6f7ff);
 }
 
-input.bigSeachBar::placeholder {
+input.big-seachbar::placeholder {
   color: rgba(61, 78, 97, 1);
 }
 
-input.smallSeachBar::placeholder {
+input.small-seachbar::placeholder {
   color: rgba(61, 78, 97, 1);
 }

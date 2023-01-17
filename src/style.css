@@ -28,18 +28,23 @@ input:focus::placeholder {
   color: transparent;
 }
 
-.icon {
-  position: absolute;
+.label {
+  height: 70px;
 }
 
-.iconBig {
+.label__small {
+  height: 42px;
+}
+
+.icon {
+  position: absolute;
   width: 19px;
   height: 19px;
   top: 25px;
   left: 26px;
 }
 
-.iconSmall {
+.icon--small {
   width: 11px;
   height: 11px;
   top: 15px;
@@ -61,8 +66,6 @@ input:focus::placeholder {
 
 .searchBig__form {
   padding: 25px 0 23px 62px;
-  line-height: 22px;
-  vertical-align: middle;
 }
 
 .searchSmall {
@@ -72,7 +75,6 @@ input:focus::placeholder {
 
 .searchSmall__form {
   padding: 12px 0 10px 33px;
-  line-height: 19px;
 }
 
 .search:hover {
@@ -82,5 +84,8 @@ input:focus::placeholder {
 .search:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
+  font-family: Avenir, Helvetica, sans-serif;
   font-weight: 800;
+  outline-style: none;
+  box-shadow: none;
 }

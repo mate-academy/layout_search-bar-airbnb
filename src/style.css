@@ -19,16 +19,16 @@ body {
   font-weight: 300;
 }
 
-.big-foarm {
+.form {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.input-container {
+.container {
   position: relative;
 }
 
-.big-image {
+.image {
   float: left;
   position: absolute;
   top: 25px;
@@ -38,17 +38,14 @@ body {
   object-position: center center;
 }
 
-.small_image {
-  float: left;
-  position: absolute;
+.small--image {
   top: 15px;
   left: 13px;
   width: 11px;
   height: 11px;
-  object-position: center center;
 }
 
-input.big-seachbar {
+.seach-bar {
   font-family: inherit;
   padding: 23px 62px;
   width: 100%;
@@ -60,42 +57,22 @@ input.big-seachbar {
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
 }
 
-input.big-seachbar:hover {
+.seach-bar:hover {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-input.big-seachbar:focus {
+.seach-bar:focus {
   outline: none;
   font-weight: 900;
   background-image: linear-gradient(#fff0, #f6f6f7ff);
 }
 
-.small-seachbar {
-  font-family: inherit;
+.small--seachbar {
   padding: 11px 33px 10px;
-  width: 100%;
-  font-weight: 300;
   font-size: 14px;
   line-height: 19px;
-  border: 1px solid rgba(225, 231, 237, 1);
-  border-radius: 4px;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
 }
 
-input.small-seachbar:hover {
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-input.small-seachbar:focus {
-  outline: none;
-  font-weight: 900;
-  background-image: linear-gradient(#fff0, #f6f6f7ff);
-}
-
-input.big-seachbar::placeholder {
-  color: rgba(61, 78, 97, 1);
-}
-
-input.small-seachbar::placeholder {
+.seach-bar::placeholder {
   color: rgba(61, 78, 97, 1);
 }

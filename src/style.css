@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(fonts/Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-style: normal;
+  font-weight: 800;
+}
+
+:root {
+  --grey: #3d4e61;
+  --light-grey: #e1e7ed;
+  --dark-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  --light-shadow-1: 0 1px 8px rgba(61, 78, 97, 0.1);
+  --light-shadow-2: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #fff0;
+  font-family: Avenir, sans-serif;
+}
+
+.searchContainer {
+  margin-top: 20px;
+  background-color: #ffff;
+  border: 1px solid var(--light-grey);
+  box-shadow: var(--light-shadow-1);
+  border-radius: 4px;
+}
+
+.searchContainer--big {
+  height: 70px;
+}
+
+.searchContainer--small {
+  height: 42px;
+}
+
+.searchIcon--big {
+  width: 19px;
+  height: 19px;
+  margin: 24px 18px 0 25px;
+  float: left;
+}
+
+.searchIcon--small {
+  width: 11px;
+  height: 11px;
+  margin: 14px 10px 0 12px;
+  float: left;
+}
+
+.searchContainer:hover {
+  box-shadow: var(--light-shadow-2);
+}
+
+.searchContainer:focus-within {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+}
+
+.searchContainer--big:focus-within {
+  text-shadow: var(--dark-shadow);
+}
+
+.searchContainer--small:focus-within {
+  box-shadow: none;
+}
+
+.searchInput {
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  color: var(--grey);
+  font-weight: 300;
+}
+
+.searchInput--big {
+  font-size: 16px;
+  line-height: 68px;
+  width: calc(100% - 70px);
+}
+
+.searchInput--small {
+  font-size: 14px;
+  line-height: 40px;
+  text-shadow: var(--dark-shadow);
+  width: calc(100% - 40px);
+}
+
+.searchInput--big::placeholder {
+  height: 68px;
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--grey);
+  text-shadow: none;
+}
+
+.searchInput--small::placeholder {
+  height: 40px;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--grey);
+  text-shadow: var(--dark-shadow);
+}
+
+.searchInput--big:focus {
+  font-size: 16px;
+  font-weight: 800;
+  text-shadow: var(--dark-shadow);
+}
+
+.searchInput--small:focus {
+  font-size: 14px;
+  font-weight: 800;
+  text-shadow: none;
+}
+
+.searchContainer--small:hover .searchInput--small,
+.searchContainer--small:hover .searchInput--small::placeholder {
+  text-shadow: none;
+}

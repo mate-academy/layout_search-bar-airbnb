@@ -14,10 +14,10 @@
 
 * {
   box-sizing: border-box;
-  font-family: Avenir, sans-serif;
 }
 
 html {
+  font-family: Avenir, sans-serif;
   width: 100%;
 }
 
@@ -36,6 +36,7 @@ html {
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   height: 70px;
   font-size: 16px;
+  font-family: inherit;
   width: 100%;
   padding: 24px 0 25px 62px;
   outline: none;
@@ -77,10 +78,12 @@ html {
   text-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
   font-weight: 800;
   outline: none;
+  font-family: inherit;
 }
 
 ::placeholder {
   color: #3d4e61;
+  /* font-family: inherit; */
 }
 
 input[type="search"]::-webkit-search-cancel-button {

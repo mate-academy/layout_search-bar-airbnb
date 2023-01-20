@@ -2,21 +2,18 @@
   font-family: Avenir;
   src: url(fonts/Avenir.ttc);
   font-weight: 300;
-  font-style: normal;
 }
 
 @font-face {
   font-family: Avenir;
   src: url(fonts/Avenir-Book.ttf);
   font-weight: 400;
-  font-style: normal;
 }
 
 @font-face {
   font-family: Avenir;
   src: url(fonts/Avenir-Heavy.ttf);
   font-weight: 900;
-  font-style: normal;
 }
 
 * {
@@ -34,6 +31,7 @@
 .form__items::before {
   content: " ";
   position: absolute;
+  z-index: 2;
   background: url("images/Search.svg");
 }
 
@@ -55,7 +53,6 @@
 
 .form__item {
   font-family: Avenir, sans-serif;
-  font-weight: 400;
   width: 100%;
   background-color: #fff;
   border: 1px solid #e1e7ed;

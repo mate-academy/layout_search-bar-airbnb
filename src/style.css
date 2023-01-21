@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(./fonts/Avenir-Book.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url(./fonts/Avenir-Heavy.ttf);
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+
+.form {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+}
+
+.small-form {
+  top: 110px;
+}
+
+.input {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  padding: 0 0 0 62px;
+  background: #fff;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+  font-weight: 300;
+  font-family: "Avenir", sans-serif;
+  box-sizing: border-box;
+}
+
+.small-input {
+  height: 42px;
+  padding: 0 0 0 33px;
+}
+
+.small-input:not(:focus) {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+::placeholder {
+  font-family: "Avenir", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3d4e61;
+  text-shadow: none;
+}
+
+.small-input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+:focus {
+  font-weight: 900;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+  border: 1px solid #e1e7ed;
+  outline: none;
+}
+
+:not(.search-button):hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+:not(.small-input):focus {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  
+}
+
+:focus:not(.small-input)::placeholder {
+  /* color: transparent; */
+  font-family: "Avenir", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3d4e61;
+  text-shadow: none;
+}
+
+.search-button {
+  position: absolute;
+  left: 26px;
+  top: 25px;
+  padding: 0;
+  background-image: url(images/Search.svg);
+  width: 19px;
+  height: 19px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+}
+
+.small-search-button {
+  width: 11px;
+  height: 11px;
+  left: 13px;
+  top: 15px;
+}

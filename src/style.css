@@ -18,7 +18,6 @@
 
 body {
   margin: 8px;
-  font-family: Avenir, Arial, Helvetica, sans-serif;
 }
 
 .form-big {
@@ -29,11 +28,7 @@ body {
   position: relative;
 }
 
-.big {
-  width: 100%;
-}
-
-.big:before {
+.form:before {
   display: block;
   position: absolute;
   content: "";
@@ -77,16 +72,7 @@ body {
   border-radius: 3px;
 }
 
-.small {
-  width: 100%;
-}
-
-.small:before {
-  display: block;
-  position: absolute;
-  content: "";
-  background-image: url(./images/search.svg);
-  background-repeat: no-repeat;
+.form-small:before {
   background-size: 11px 11px;
   height: 11px;
   width: 11px;

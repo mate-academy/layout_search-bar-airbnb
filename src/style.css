@@ -12,13 +12,7 @@
   font-weight: 900;
 }
 
-body {
-  font-weight: normal;
-  font-size: 16px;
-}
-
 .container {
-  font-weight: normal;
   margin-top: 20px;
   position: relative;
 }
@@ -74,15 +68,22 @@ body {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
   border-radius: 3px;
-
 }
 
 .search-small:focus {
   font-size: 14px;
 }
 
-.search:focus::placeholder {
-  font-weight: normal;
+.search::placeholder {
+  font-family: inherit;
+  font-weight: 300;
+  color: #3d4e61;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.search-small::placeholder {
+  font-size: 14px;
 }
 
 .search:hover {

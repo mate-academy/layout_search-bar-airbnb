@@ -23,11 +23,11 @@ body {
   right: 10px;
 }
 
-.small-form {
+.form--theme-small {
   top: 110px;
 }
 
-.input {
+.form__input {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -44,16 +44,16 @@ body {
   box-sizing: border-box;
 }
 
-.small-input {
+.form__input_small {
   height: 42px;
   padding: 0 0 0 33px;
 }
 
-.small-input:not(:focus) {
+.form__input_small:not(:focus) {
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-::placeholder {
+.form__input::placeholder {
   font-family: "Avenir", sans-serif;
   font-style: normal;
   font-size: 16px;
@@ -62,13 +62,13 @@ body {
   text-shadow: none;
 }
 
-.small-input::placeholder {
+.form__input_small::placeholder {
   font-size: 14px;
   font-weight: 400;
   line-height: 19px;
 }
 
-:focus {
+.form__input:focus {
   font-weight: 900;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
@@ -76,17 +76,16 @@ body {
   outline: none;
 }
 
-:not(.search-button):hover {
+:not(.form__search-button):hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-:not(.small-input):focus {
+.form__input:not(.form__input_small):focus {
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   
 }
 
-:focus:not(.small-input)::placeholder {
-  /* color: transparent; */
+.form__input:focus:not(.form__input_small)::placeholder {
   font-family: "Avenir", sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -96,7 +95,7 @@ body {
   text-shadow: none;
 }
 
-.search-button {
+.form__search-button {
   position: absolute;
   left: 26px;
   top: 25px;
@@ -110,7 +109,7 @@ body {
   background-color: transparent;
 }
 
-.small-search-button {
+.form__search-button_small {
   width: 11px;
   height: 11px;
   left: 13px;

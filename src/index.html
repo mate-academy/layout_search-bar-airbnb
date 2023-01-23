@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="get"
@@ -25,16 +24,16 @@
         id="bigSearchBar"
         placeholder="Try &quot;Los Angeles&quot;"
         data-qa="keypress"
-        class="input"
+        class="form__input"
      >
-      <button type="submit" class="search-button"></button>
+      <button type="submit" class="form__search-button"></button>
     </form>
 
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="get"
       data-qa="small"
-      class="form small-form"
+      class="form form--theme-small"
     >
       <label for="smallSearchBar"></label>
       <input
@@ -42,9 +41,9 @@
         name="smallSearchBar"
         id="smallSearchBar"
         placeholder="Try &quot;Los Angeles&quot;"
-        class="input small-input"
+        class="form__input form__input_small"
       >
-      <button type="submit" class="search-button small-search-button"></button>
+      <button type="submit" class="form__search-button form__search-button_small"></button>
     </form>
 
   </body>

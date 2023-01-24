@@ -12,12 +12,7 @@
   font-weight: 800;
 }
 
-* {
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
+html {
   font-family: "Avenir", sans-serif;
   font-weight: 300;
 }
@@ -32,6 +27,8 @@ body {
 .search-bar__field,
 .search-bar__input {
   width: 100%;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .search-bar__big {
@@ -41,7 +38,6 @@ body {
 
 .search-bar__small {
   height: 42px;
-  margin: 20px 0;
 }
 
 .search-bar__field {
@@ -80,7 +76,7 @@ body {
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
   font-family: inherit;
-  font-weight: 300;
+  font-weight: inherit;
   font-size: 16px;
   line-height: 22px;
   color: #3d4e61;
@@ -101,7 +97,7 @@ body {
 
 .search-bar__input::placeholder {
   color: inherit;
-  font-weight: 300;
+  font-weight: inherit;
 }
 
 .search-bar__input--small {

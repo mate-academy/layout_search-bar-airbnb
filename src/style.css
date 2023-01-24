@@ -10,6 +10,10 @@
   src: url(/fonts/Avenir-Heavy.ttf);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .searchbar {
   display: flex;
   align-items: center;
@@ -26,11 +30,13 @@
 }
 
 .big_searchbar {
-  padding: 25px;
+  height: 70px;
+  padding: 0 26px;
 }
 
 .small_searchbar {
-  padding: 12px;
+  height: 42px;
+  padding: 0 13px;
 }
 
 .big_icon {
@@ -72,6 +78,7 @@
   line-height: 20px;
   font-size: 14px;
   font-weight: 400;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .searchbar_form:hover {
@@ -93,4 +100,8 @@
 
 .small_input_field:focus {
   font-weight: 900;
+}
+
+.small_searchbar:hover .small_input_field {
+  filter: none;
 }

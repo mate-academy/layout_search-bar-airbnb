@@ -1,7 +1,5 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 @font-face {
@@ -22,6 +20,11 @@ input::placeholder {
   color: #3d4e61;
 }
 
+input:active::placeholder {
+  font-weight: 800;
+  text-shadow: 0 5px 4px rgba(0, 0, 0, 0.25);
+}
+
 .form__element {
   margin-top: 20px;
   width: 100%;
@@ -32,26 +35,36 @@ input::placeholder {
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
 }
 
+.form__element:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.form__element:active {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
 .form__element__inner {
+  /* border: 1px solid #000; */
   width: 100%;
   height: 100%;
   position: absolute;
 }
 
 .text__input {
-  line-height: 22px;
+  line-height: 21.86px;
   position: absolute;
+  background: transparent;
   border: 0;
-  left: 61px;
+  left: 62px;
   top: 25px;
   bottom: 23px;
 }
 
 .icon {
   position: absolute;
-  top: 26px;
-  left: 27px;
-  bottom: 25px;
+  top: 25px;
+  left: 26px;
+  bottom: 26px;
   width: 19px;
   height: 19px;
   margin-right: 17px;

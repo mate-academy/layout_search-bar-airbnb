@@ -27,8 +27,8 @@ body {
 }
 
 .search-bar,
-.search-bar_label,
-.search-bar_input {
+.search-bar__label,
+.search-bar__input {
   width: 100%;
 }
 
@@ -41,12 +41,12 @@ body {
   height: 42px;
 }
 
-.search-bar_label {
+.search-bar__label {
   display: block;
   position: relative;
 }
 
-.search-bar_label::after {
+.search-bar__label::after {
   content: "";
   display: block;
   position: absolute;
@@ -55,21 +55,21 @@ body {
   background-size: contain;
 }
 
-.search-bar_labelSmall::after {
+.search-bar__label--small::after {
   width: 11px;
   height: 11px;
   left: 13px;
   top: 15px;
 }
 
-.search-bar_labelBig::after {
+.search-bar__label--big::after {
   width: 19px;
   height: 19px;
   left: 26px;
   top: 25px;
 }
 
-.search-bar_input {
+.search-bar__input {
   width: 100%;
   height: 100%;
   outline: none;
@@ -83,24 +83,24 @@ body {
   color: #3d4e61;
 }
 
-.search-bar_input::placeholder {
+.search-bar__input::placeholder {
   color: inherit;
   font-weight: 300;
 }
 
-.search-bar_input:hover {
+.search-bar__input:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.search-bar_input:focus {
+.search-bar__input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
-.search-bar_inputBig {
+.search-bar__input--big {
   padding-left: 62px;
 }
 
-.search-bar_inputSmall {
+.search-bar__input--small {
   font-size: 14px;
   line-height: 19px;
   padding-left: 33px;

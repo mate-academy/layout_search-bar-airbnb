@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Book.ttf);
+}
+
 html {
   font-weight: 300;
 }
@@ -13,14 +18,13 @@ html {
 
 .bigSearch {
   background: #fff;
-  width: 900px;
+  width: 100%;
   height: 70px;
   border-radius: 4px;
   font-family: Avenir, sans-serif;
-  font-weight: 300;
   font-size: 16px;
   line-height: 22px;
-  padding: 25px 7px 23px 62px;
+  padding: 24px 7px 24px 62px;
   border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
 }
@@ -48,8 +52,16 @@ html {
   height: 19px;
 }
 
+.BigSearch::placeholder {
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3d4e61;
+  font-weight: 400;
+}
+
 .smallSearch {
-  width: 427px;
+  width: 100%;
   height: 42px;
   background: #ffff;
   font-weight: 400;
@@ -60,7 +72,7 @@ html {
   border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
-  padding: 12px 5px 10px 33px;
+  padding: 11px 5px 11px 33px;
 }
 
 .smallSearch:hover {
@@ -75,6 +87,10 @@ html {
 }
 
 .smallSearch::placeholder {
+  font-family: Avenir, sans-serif;
+  color: #3d4e61;
+  font-size: 14px;
+  line-height: 19px;
   font-weight: 400;
 }
 

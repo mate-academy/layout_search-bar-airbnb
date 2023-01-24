@@ -17,21 +17,25 @@
   <body>
     <form
       action="#"
-      method="post"
+      method="get"
       name="search"
       class="form"
       data-qa="big"
     >
-      <input
-        type="search"
-        name="search"
-        placeholder="Try &quot;Los Angeles&quot;"
-        class="field"
-        data-qa="keypress"
-      >
-      <button type="submit" class="btn search">
-        <img src="images/Search.svg" alt="search-icon">
-      </button>
+      <label>
+        <input
+          type="search"
+          name="search"
+          placeholder="Try &quot;Los Angeles&quot;"
+          class="field"
+          data-qa="keypress"
+        >
+        <img
+          src="images/Search.svg"
+          alt="search-icon"
+          class="search"
+        >
+      </label>
     </form>
     <form
       action="/"
@@ -40,19 +44,19 @@
       class="small-form"
       data-qa="small"
     >
-      <input
-        type="search"
-        name="search"
-        placeholder="Try &quot;Los Angeles&quot;"
-        class="small-field"
-      >
-      <button type="submit" class="btn small-search">
+      <label>
+        <input
+          type="search"
+          name="search"
+          placeholder="Try &quot;Los Angeles&quot;"
+          class="small-field field"
+        >
         <img
           src="images/Search.svg"
           alt="small-search-icon"
-          class="small-icon"
+          class="small-icon search"
         >
-      </button>
+      </label>
     </form>
   </body>
 </html>

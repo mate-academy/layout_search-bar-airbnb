@@ -12,21 +12,48 @@
   </head>
   <body>
 
-    <form action="#" data-qa="big">
-      <input
-      type="search"
-      name="search-big"
-      class="big"
-      data-qa="keypress"
-      placeholder="Try 'Los Angeles'"
+    <form
+      class="form"
+      action="google.com"
+      data-qa="big"
     >
+      <label>
+        <img
+          src="images/Search.svg"
+          alt="search"
+          class="search"
+        >
+        <input
+          type="search"
+          name="search-big"
+          class="big input"
+          data-qa="keypress"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
     </form>
-    <input
-      type="search"
-      name="search-small"
-      class="small"
+
+
+    <form
+      class="form"
+      action="google.com"
       data-qa="small"
-      placeholder="Try 'Los Angeles'"
     >
+      <label>
+        <img
+          src="images/Search.svg"
+          alt="search"
+          class="search-small__img"
+        >
+        <input
+          type="search"
+          name="search-small"
+          class="small input"
+          data-qa="keypress"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
+    </form>
+
   </body>
 </html>

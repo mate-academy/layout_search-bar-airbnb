@@ -9,6 +9,8 @@ Replace `<your_account>` with your Github username and copy the links to Pull Re
 
 ---
 
+
+
 ## ❗️❗️❗️ DON'T FORGET TO PROOFREAD YOUR CODE WITH [CHECKLIST](https://github.com/mate-academy/layout_search-bar-airbnb/blob/master/checklist.md) BEFORE SENDING YOUR PULL REQUEST❗️❗️❗️
 
 ## The task

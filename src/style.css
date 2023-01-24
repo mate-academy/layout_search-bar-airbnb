@@ -12,10 +12,14 @@
   font-weight: 800;
 }
 
-body {
+* {
+  box-sizing: border-box;
+}
+
+html {
   font-family: "Avenir", sans-serif;
   font-weight: 300;
-  box-sizing: border-box;
+
 }
 
 .search-form {
@@ -84,13 +88,4 @@ body {
 .bar--small {
   font-size: 14px;
   line-height: 40px;
-}
-
-.bar-small:focus {
-  font-weight: 800;
-}
-
-.bar-small:focus::placeholder {
-  font-weight: 300;
-  text-shadow: none;
 }

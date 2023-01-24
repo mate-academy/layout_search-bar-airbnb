@@ -12,8 +12,16 @@
   font-weight: 800;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .body {
   margin-top: 20px;
+}
+
+.form {
+  position: relative;
 }
 
 .searchBar {
@@ -37,13 +45,14 @@
 
 .searchBar::placeholder {
   font-family: Avenir, sans-serif;
-  position: absolute;
   font-size: 16px;
   line-height: 22px;
   font-weight: 300;
-  padding-left: 62px;
-  padding-top: 25px;
+  /* padding: 25px auto 23px 62px; */
+  padding-left: 61px;
+  padding-top: 26px;
   padding-bottom: 23px;
+  color: #3d4e61;
 }
 
 .searchBar:hover {
@@ -74,7 +83,8 @@
   width: 11px;
   height: 11px;
   left: 13px;
-  top: 5px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .smallSearchBar:focus {
@@ -86,7 +96,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
-  padding-left: 33px;
-  padding-top: 12px;
+  padding-left: 32px;
+  padding-top: 13px;
   padding-bottom: 10px;
 }

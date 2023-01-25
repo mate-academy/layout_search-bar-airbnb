@@ -16,7 +16,7 @@
   src: url(./fonts/Avenir-Heavy.ttf);
 }
 
-.text--input::placeholder {
+.text__input::placeholder {
   font-family: Avenir, sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -24,7 +24,7 @@
   color: #3d4e61;
 }
 
-.form--element {
+.form {
   margin-top: 20px;
   width: 100%;
   height: 70px;
@@ -34,21 +34,28 @@
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
 }
 
-.form--element:hover {
+.form--small {
+  width: 100%;
+  height: 42px;
+}
+
+.form:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.form--element:active {
+.form:active {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
-.form--element--inner {
+.form__label {
   width: 100%;
   height: 100%;
   position: absolute;
 }
 
-.text--input {
+.text__input {
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
   position: absolute;
   background: transparent;
   font-weight: 800;
@@ -59,11 +66,20 @@
   bottom: 25px;
 }
 
-.text--input:active {
+.text__input--small {
+  font-size: 14px;
+  font-weight: 800;
+  border: 0;
+  top: 11px;
+  bottom: 11px;
+  left: 32px;
+}
+
+.text__input:active {
   text-shadow: 0 5px 4px rgba(0, 0, 0, 0.25);
 }
 
-.text--input:focus {
+.text__input:focus {
   outline: 0;
 }
 
@@ -77,32 +93,16 @@
   margin-right: 17px;
 }
 
-.form--element--inner--small {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-
-.form--element--small {
-  margin-top: 20px;
-  width: 100%;
-  height: 42px;
-  border-radius: 4px;
-  border: 1px solid #e1e7ed;
-  position: relative;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-}
-
 .icon--small {
-  position: absolute;
   height: 11px;
   width: 11px;
   top: 14px;
   left: 12px;
   bottom: 17px;
+  margin: 0;
 }
 
-.text--input--small::placeholder {
+.text__input--small::placeholder {
   font-family: Avenir, sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -110,31 +110,18 @@
   color: #3d4e61;
 }
 
-.text--input--small:hover::placeholder {
+.text__input--small:hover::placeholder {
   text-shadow: 0 5px 4px rgba(0, 0, 0, 0.25);
 }
 
-.text--input--small {
-  font-family: Avenir, sans-serif;
-  font-size: 14px;
-  font-weight: 800;
-  color: #3d4e61;
-  position: absolute;
-  border: 0;
-  background: transparent;
-  top: 11px;
-  bottom: 11px;
-  left: 32px;
-}
-
-.text--input--small:focus {
+.text__input--small:focus {
   outline: 0;
 }
 
-.form--element--small:hover {
+.form--small:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.form--element--small:active {
+.form--small:active {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }

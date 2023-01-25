@@ -4,10 +4,10 @@
   font-weight: 300;
 }
 
-body {
-  box-sizing: border-box;
-  font-family: "Avenir", sans-serif;
-  font-weight: 300;
+@font-face {
+  font-family: "Avenir";
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: 700;
 }
 
 .form {
@@ -54,8 +54,8 @@ body {
 .input:focus {
   border-radius: 3px;
   background-color: Linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  font-family: "Avenir-Book", sans-serif;
   font-weight: 700;
+  outline: none;
 }
 
 .input:hover {

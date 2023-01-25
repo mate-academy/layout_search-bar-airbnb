@@ -1,4 +1,4 @@
-<!doctype html>
+<!Doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -11,6 +11,51 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <div class="page">
+      <form
+        action="/"
+        method="get"
+        data-qa="big"
+        class="bigForm"
+      >
+        <label class="bigField">
+          <input
+            class="input input--big"
+            data-qa="keypress"
+            type="text"
+            name="bigSearchBar"
+            id="big"
+            placeholder="Try &quot;Los Angeles&quot;"
+          >
+          <img
+            class="icon"
+            src="./images/Search.svg"
+            alt="search"
+          >
+        </label>
+      </form>
+
+      <form
+        action="/"
+        method="get"
+        data-qa="small"
+        class="smallForm"
+      >
+        <label class="smallField">
+          <input
+            class="input input--small"
+            type="text"
+            name="smallSearchBar"
+            id="small"
+            placeholder="Try &quot;Los Angeles&quot;"
+          >
+          <img
+            class="icon icon--small"
+            src="./images/Search.svg"
+            alt="search" 
+          >
+        </label>
+      </form>
+    </div>
   </body>
 </html>

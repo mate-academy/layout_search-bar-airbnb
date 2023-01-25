@@ -1,18 +1,11 @@
 @font-face {
-  font-family: Anevir;
+  font-family: "Anevir";
   src: url("./fonts/Avenir-Book.ttf");
 }
 
 @font-face {
-  font-family: AnevirBold;
+  font-family: "AnevirBold";
   src: url("./fonts/Avenir-Heavy.ttf");
-}
-
-body * {
-  /*stylelint-disable-next-line font-family-no-missing-generic-family-keyword*/
-  font-family: Anevir;
-  font-weight: 300;
-  color: #3d4e61;
 }
 
 body {
@@ -23,8 +16,11 @@ body {
   margin-top: 20px;
 }
 
-.big,
-.small {
+.big__input,
+.small__input {
+  font-family: "Anevir", sans-serif;
+  font-weight: 300;
+  color: #3d4e61;
   box-sizing: border-box;
   width: 100%;
   background: #fff;
@@ -34,14 +30,14 @@ body {
   caret-color: #3d4e61;
 }
 
-.big {
+.big__input {
   height: 70px;
   padding: 25px 0 25px 62px;
   font-size: 16px;
   line-height: 21px;
 }
 
-.small {
+.small__input {
   height: 42px;
   padding: 12px 0 12px 33px;
   font-weight: 400;
@@ -49,19 +45,18 @@ body {
   line-height: 19px;
 }
 
-.big:hover,
-.small:hover {
+.big__input:hover,
+.small__input:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.big:focus,
-.small:focus {
+.big__input:focus,
+.small__input:focus {
   border-radius: 3px;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   font-weight: 900;
   outline: none;
-  /*stylelint-disable-next-line font-family-no-missing-generic-family-keyword*/
-  font-family: AnevirBold;
+  font-family: "AnevirBold", sans-serif;
 }
 
 .label {
@@ -89,15 +84,15 @@ body {
   top: 5px;
 }
 
-.big:focus {
+.big__input:focus {
   text-shadow: 0 3px 2px rgba(61, 78, 97, 0.05);
 }
 
-.small::placeholder {
+.small__input::placeholder {
   text-shadow: 0 3px 2px rgba(61, 78, 97, 0.05);
 }
 
-.small:hover::placeholder,
-.small:focus::placeholder {
+.small__input:hover::placeholder,
+.small__input:focus::placeholder {
   text-shadow: none;
 }

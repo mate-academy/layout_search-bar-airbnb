@@ -12,13 +12,14 @@
   </head>
   <body>
     <div class="searchBar_big_container">
-      <form 
-        action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
+      <form
+        action="https://mate-academy-form-lesson.herokuapp.com/create-application"
         method="post"
         data-qa="big"
-        >
+      >
         <label for="searchBar_big"></label>
-        <input 
+        <input
+          class="searchBar_big"
           type="search"
           id="searchBar_big"
           name="searchBar"
@@ -30,12 +31,14 @@
     </div>
 
     <div class="searchBar_small_container">
-      <form 
-        action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
+      <form
+        action="https://mate-academy-form-lesson.herokuapp.com/create-application"
         method="post"
-        data-qa="small">
+        data-qa="small"
+      >
         <label for="searchBar_small"></label>
-        <input 
+        <input
+          class="searchBar_small"
           type="search"
           id="searchBar_small"
           name="searchBar"
@@ -44,6 +47,6 @@
         <button type="submit" class="submit_searchButton_small"></button>
       </form>
     </div>
-    
+
   </body>
 </html>

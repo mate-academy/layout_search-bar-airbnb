@@ -43,4 +43,3 @@ layout.
 - Remember that inputs and other interactive elements don’t inherit font styles by default.
 - Remember that placeholder has its own set of styles available using `::placeholder` pseudo-element.
 
-

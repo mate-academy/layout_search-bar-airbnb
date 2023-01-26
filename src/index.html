@@ -15,28 +15,43 @@
       action="index.html" 
       method="post" 
       data-qa="big" 
-      class="search-bar big-bar"
+      class="form big-bar"
     >
-      <input 
+      <label class="field">
+        <input 
         type="search" 
         name="input" 
         data-qa="keypress" 
-        placeholder="Try 'Los Angeles'"
-      >
-      <img src="images/Search.svg" alt="search">
+        placeholder="Try &quot;Los Angeles&quot;"
+        class="input input-big"
+        >
+        <img 
+        src="images/Search.svg" 
+        alt="search" 
+        class="search-icon icon-big"
+        >
+      </label>
     </form>
+    
     <form 
       action="index.html" 
       method="post" 
       data-qa="small" 
-      class="search-bar small-bar"
+      class="form small-bar"
     >
-      <input
-        type="search"
-        name="input"
-        placeholder="Try 'Los Angeles'"
-      >
-      <img src="images/Search.svg" alt="search">
+      <label class="field">
+        <input
+          type="search"
+          name="input"
+          placeholder="Try &quot;Los Angeles&quot;"
+          class="input input-small"
+        >
+        <img 
+        src="images/Search.svg" 
+        alt="search" 
+        class="search-icon icon-small"
+        >
+      </label>
     </form>
   </body>
 </html>

@@ -16,12 +16,16 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: Avenir, sans-serif;
+}
+
 body {
   margin: 0;
   font-weight: 300;
 }
 
-.bigForm {
+.form {
   position: relative;
   margin-top: 20px;
   height: 70px;
@@ -41,7 +45,6 @@ body {
 
 .searchBar {
   position: absolute;
-  font-family: Avenir, sans-serif;
   font-size: 16px;
   line-height: 22px;
   width: 100%;
@@ -72,19 +75,11 @@ body {
 
 .searchBar::placeholder {
   color: rgba(61, 78, 97, 1);
-  font-family: Avenir, sans-serif;
   font-size: 16px;
   line-height: 22px;
 }
 
-.smallForm {
-  position: relative;
-  height: 70px;
-  margin-left: 8px;
-  margin-right: 8px;
-}
-
-.icon2 {
+.icon-small {
   position: absolute;
   width: 11px;
   height: 11px;
@@ -93,14 +88,14 @@ body {
   z-index: 2;
 }
 
-.small--serchBar {
+.serchBar--small {
   font-size: 14px;
   line-height: 19px;
   height: 42px;
   padding-left: 33px;
 }
 
-.small--serchBar::placeholder {
+.serchBar--small::placeholder {
   font-size: 14px;
   line-height: 19px;
 }

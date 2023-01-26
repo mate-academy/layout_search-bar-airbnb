@@ -12,6 +12,10 @@
   font-weight: 800;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: "Avenir", sans-serif;
   font-weight: 300;
@@ -21,18 +25,7 @@ html {
   display: flex;
   justify-content: center;
   border-radius: 4px;
-}
-
-.search-bar,
-.search-bar__field,
-.search-bar__input {
-  width: 100%;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.search-bar__big {
-  margin: 20px 0;
+  margin: 20px auto;
   height: 70px;
 }
 
@@ -41,13 +34,12 @@ html {
 }
 
 .search-bar__field {
-  display: block;
   position: relative;
+  width: 100%;
 }
 
-.search-bar__field::after {
+.search-bar__field:after {
   content: "";
-  display: block;
   position: absolute;
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;

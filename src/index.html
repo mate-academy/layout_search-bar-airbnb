@@ -12,26 +12,46 @@
   </head>
   <body>
     <form
-      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="post">
-      <label for="search-bar-big" class="lable-input-search-big">
-        <input
-          type="search"
-          class="search-bar search-bar--big"
-          data-qa="big"
-          placeholder="Try &quot;Los Angeles&quot;"
+      class="form form--big"
+      action="#"
+      method="get"
+      data-qa="keypress"
+    >
+      <input
+        class="search search--big"
+        type="search"
+        name="bigSearch"
+        data-qa="big"
+        placeholder="Try &#34;Los Angeles&#34;"
+      >
+      <button class="search__btn search__btn--big">
+        <img
+          class="search__img--big"
+          src="./images/Search.svg"
+          alt="Search big"
         >
-      </label>
+      </button>
     </form>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-      <label for="search-bar-small" class="lable-input-search-small">
-        <input
-          type="search"
-          class="search-bar search-bar-small"
-          data-qa="small"
-          placeholder="Try &quot;Los Angeles&quot;"
+
+    <form
+      class="form form--small"
+      action="#"
+      method="get"
+    >
+      <input
+        class="search search--small"
+        type="search"
+        name="smallSearch"
+        data-qa="small"
+        placeholder="Try &#34;Los Angeles&#34;"
+      >
+      <button class="search__btn search__btn--small">
+        <img
+          class="search__img--small"
+          src="./images/Search.svg"
+          alt="Search small"
         >
-      </label>
+      </button>
     </form>
   </body>
 </html>

@@ -39,7 +39,7 @@ body {
   z-index: 2;
 }
 
-.bigSerchBar {
+.searchBar {
   position: absolute;
   font-family: Avenir, sans-serif;
   font-size: 16px;
@@ -54,13 +54,13 @@ body {
   cursor: pointer;
 }
 
-.bigSerchBar:hover {
+.searchBar:hover {
   background: #fff;
   border: 1px solid rgba(225, 231, 237, 1);
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.bigSerchBar:focus {
+.searchBar:focus {
   background: linear-gradient(180deg, #fff 0%, rgba(225, 231, 237, 1) 100%);
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   color: rgba(61, 78, 97, 1);
@@ -70,7 +70,7 @@ body {
   border-radius: 3px;
 }
 
-.bigSerchBar::placeholder {
+.searchBar::placeholder {
   color: rgba(61, 78, 97, 1);
   font-family: Avenir, sans-serif;
   font-size: 16px;
@@ -93,40 +93,14 @@ body {
   z-index: 2;
 }
 
-.serchBar {
-  position: absolute;
-  width: 100%;
-  font-family: Avenir, sans-serif;
+.small--serchBar {
   font-size: 14px;
   line-height: 19px;
   height: 42px;
-  border: 1px solid rgba(225, 231, 237, 1);
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  border-radius: 4px;
-  background-color: #fff;
   padding-left: 33px;
-  cursor: pointer;
 }
 
-.serchBar:hover {
-  background: #fff;
-  border: 1px solid rgba(225, 231, 237, 1);
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-}
-
-.serchBar:focus {
-  background: linear-gradient(180deg, #fff 0%, rgba(225, 231, 237, 1) 100%);
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-  color: rgba(61, 78, 97, 1);
-  font-weight: 800;
-  outline: none;
-  border: 1px solid rgba(225, 231, 237, 1);
-  border-radius: 3px;
-}
-
-.serchBar::placeholder {
-  color: rgba(61, 78, 97, 1);
-  font-family: Avenir, sans-serif;
+.small--serchBar::placeholder {
   font-size: 14px;
   line-height: 19px;
 }

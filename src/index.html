@@ -11,44 +11,50 @@
     <link rel="stylesheet" href="./style.css" >
   </head>
   <body>
-    <form action="https://localhost:8080/api"
+    <form 
+      action="https://localhost:8080/api"
       method="post"
       data-qa="big"
-      class="big_bar">
+      class="big_bar"
+    >
 
-      <div class="label"> 
-        <img src="images/Search.svg"
-            alt="Search_icon"
-            class="icon_big"
+      <label class="label"> 
+        <img
+          src="images/Search.svg"
+          alt="Search_icon"
+          class="icon icon_big"
         >
 
         <input
           type="text"
           name="search"
-          class="input_big"
+          class="input input_big"
           data-qa="keypress"
           placeholder="Try &quot;Los Angeles&quot;"
         >
-      </div>
+      </label>
     </form>
 
-    <form action="https://localhost:8080/api"
-        method="post"
-        data-qa="small"
-        class="small_bar">
+    <form
+      action="https://localhost:8080/api"
+      method="post"
+      data-qa="small"
+      class="small_bar"
+    >
 
-      <div class="label">
-        <img src="images/Search.svg"
-              alt="Search_icon"
-              class="icon_small"
+      <label class="label">
+        <img 
+          src="images/Search.svg"
+          alt="Search_icon"
+          class="icon icon_small"
         >
 
         <input type="text"
-            name="search"
-            class="input_small"
-            placeholder="Try &quot;Los Angeles&quot;"
+          name="search"
+          class="input input_small"
+          placeholder="Try &quot;Los Angeles&quot;"
         >
-      </div>
+      </label>
     </form>
   </body>
 </html>

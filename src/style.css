@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Avenir";
+  font-weight: 300;
+  font-style: normal;
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: "Avenir";
+  font-weight: 800;
+  font-style: normal;
+  src: url(fonts/Avenir-Heavy.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Avenir, sans-serif;
+  margin-top: 0;
+}
+
+.search {
+  margin-top: 20px;
+}
+
+.form_field {
+  position: relative;
+}
+
+.form_field::before {
+  background-image: url(images/Search.svg);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 26px;
+  width: 19px;
+  height: 19px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.form_field_small::before {
+  top: 6px;
+  left: 13px;
+  width: 11px;
+  height: 11px;
+}
+
+.input {
+  width: 100%;
+  padding-left: 62px;
+  height: 70px;
+  font-size: 16px;
+  border: 1px #e1e7ed solid;
+  font-family: inherit;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.inputSmall {
+  padding-left: 33px;
+  height: 42px;
+  font-size: 14px;
+}
+
+.input::placeholder {
+  position: relative;
+}
+
+.input:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.input:focus {
+  border-radius: 3px;
+}

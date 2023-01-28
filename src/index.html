@@ -11,45 +11,47 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form 
-     class="bigSearchForm"
-     action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-     method="post"
-     data-qa="big"
-    >
-      <label class="wrapper">
-        <img 
-         src="./images/Search.svg" 
-         alt="bigsearch" 
-         class="bigImageSearch"
-        >
-        <input 
-         type="text" 
-         class="bigInput input" 
-         placeholder="Try “Los Angeles”"
-         data-qa="keypress"
-        >
-      </label>
-    </form>
-  
-    <form 
-     class="smallSearchForm"
-     action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-     method="post"
-     data-qa="small"
-    >
-      <label class="wrapper">
-        <img 
-        src="./images/Search.svg" 
-        alt="smallsearch" 
-        class="imageSearchSmall"
-        >
-        <input 
-         type="text" 
-         class="SmallInput input" 
-         placeholder="Try “Los Angeles”"
-        >
-      </label>
-    </form>
+    <div class="block">
+      <form 
+      class="search__form-block"
+      action="/"
+      method="post"
+      data-qa="big"
+      >
+        <label class="search__label">
+          <img 
+           src="./images/Search.svg" 
+           alt="bigsearch" 
+           class="image"
+          >
+          <input 
+           type="text" 
+           class="search__form-input" 
+           placeholder="Try &quot;Los Angeles&quot;"
+           data-qa="keypress"
+          >
+        </label>
+      </form>
+   
+      <form 
+       action="/"
+       method="post"
+       data-qa="small"
+       class="search__form-block small__form-block"
+      >
+        <label class="search__label small-search-label">
+          <img 
+          src="./images/Search.svg" 
+          alt="smallsearch" 
+          class="image small__image-search"
+          >
+          <input 
+           type="text" 
+           class="search__form-input small__form-input " 
+           placeholder="Try &quot;Los Angeles&quot;"
+          >
+        </label>
+      </form>
+    </div>
   </body>
 </html>

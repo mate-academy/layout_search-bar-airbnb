@@ -12,17 +12,21 @@
   font-weight: 900;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Avenir-Book", sans-serif;
   font-weight: 300;
 
 }
 
-.form {
+.search-bar__form {
   margin-top: 20px;
 }
 
-.search {
+.search-bar__input {
   width: 100%;
   font-weight: 400;
   background: #fff;
@@ -32,64 +36,56 @@ body {
   font-family: inherit;
   box-sizing: border-box;
   color: #3d4e61;
+  outline: none;
 }
 
-.bar--big {
+.search-bar__input--big {
   padding-left: 62px;
   background: url(./images/Search.svg) no-repeat 26px;
   background-size: 19px 19px;
   font-size: 16px;
   height: 70px;
-  box-sizing: border-box;
-
 }
 
-.bar--small {
+.search-bar__input--small {
   padding-left: 33px;
   background: url(./images/Search.svg) no-repeat 13px;
   background-size: 11px 11px;
   font-weight: 400;
   font-size: 14px;
   height: 42px;
-  box-sizing: border-box;
 }
 
-.search:hover {
+.search-bar__input:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.search.bar--big::placeholder {
+.search-bar__input.search-bar__input--big::placeholder {
   font-family: inherit;
   font-size: 16px;
   color: inherit;
 }
 
-.search.bar--small::placeholder {
+.search-bar__input.search-bar__input--small::placeholder {
   font-family: inherit;
   font-size: 14px;
   color: inherit;
 }
 
-.bar--big:focus {
+.search-bar__input--big:focus {
   background: url(./images/Search.svg) no-repeat 26px 50%/19px, linear-gradient(180deg, #fff 0%, rgb(246, 246, 247) 100%);
   border-radius: 3px;
-  outline: none;
 }
 
-.bar--small:focus {
+.search-bar__input--small:focus {
   background: url(./images/Search.svg) no-repeat 13px 50%/11px, linear-gradient(180deg, #fff 0%, rgb(246, 246, 247) 100%);
   border-radius: 3px;
-  outline: none;
 }
 
-.bar--big:focus::placeholder {
-  font-family: "Avenir-Heavy", sans-serif;
-  outline: none;
+.search-bar__input--big:focus::placeholder {
   font-size: 16px;
 }
 
-.bar--small:focus::placeholder {
-  font-family: "Avenir-Heavy", sans-serif;
+.search-bar__input--small:focus::placeholder {
   font-size: 14px;
-  outline: none;
 }

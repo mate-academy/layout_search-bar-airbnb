@@ -11,42 +11,46 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <label class="big_form" data-qa="big">
-      <img
-        class="big_form_img"
-        src="images/Search.svg" 
-        alt="search"
-      >
-      <form 
-        action="#" 
-        method="get"
-      >
+    <form
+      class="form" 
+      data-qa="big"
+      action="#" 
+      method="get"
+    >
+      <label>
+        <img
+          class="icon"
+          src="images/Search.svg" 
+          alt="search"
+        >
         <input
-          class="big_input"
+          class="input"
           type="search" 
           name="search"
           placeholder="Try &quot;Los Angeles&quot;"
           data-qa="keypress"
         >
-      </form>
-    </label>
-    <label class="small_form" data-qa="small">
-      <img
-        class="small_form_img"
-        src="images/Vector.svg" 
-        alt="search"
-      >
-      <form
-        action="#"
-        method="get"
-      >
+      </label>
+    </form>
+    <form
+      class="small--form" 
+      data-qa="small"
+      action="#"
+      method="get"
+    >
+      <label>
+        <img
+          class="small--icon"
+          src="images/Vector.svg" 
+          alt="search"
+        >
         <input
-          class="small_input"
+          class="small--input"
           type="search" 
           name="search"
           placeholder="Try &quot;Los Angeles&quot;"
         >
-      </form>
-    </label>
+      </label>
+    </form>
   </body>
 </html>

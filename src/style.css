@@ -19,7 +19,6 @@
 body {
   font-family: "Avenir-Book", sans-serif;
   font-weight: 300;
-
 }
 
 .search-bar__form {
@@ -82,8 +81,13 @@ body {
   border-radius: 3px;
 }
 
+.search-bar__input:focus {
+  font-family: "Avenir-Heavy", sans-serif;
+}
+
 .search-bar__input--big:focus::placeholder {
   font-size: 16px;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .search-bar__input--small:focus::placeholder {

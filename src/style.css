@@ -13,12 +13,12 @@
   margin-top: 20px;
 }
 
-.searchBarWrapper {
+.search-bar-wrapper {
   position: relative;
   width: 100%;
 }
 
-.searchBar {
+.search-bar {
   background: #fff;
   border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
@@ -30,18 +30,18 @@
   box-sizing: border-box;
 }
 
-.searchBar:hover {
+.search-bar:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
   transition: box-shadow 150ms;
 }
 
-.searchBar:focus {
+.search-bar:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   outline: none;
   font-family: "Avenir", Arial, sans-serif;
 }
 
-.searchBar.barSizeL {
+.search-bar.bar-size-xl {
   position: relative;
   height: 70px;
   margin-bottom: 20px;
@@ -51,13 +51,13 @@
   font-weight: 900;
 }
 
-.searchBar.barSizeL:focus {
+.search-bar.bar-size-xl:focus {
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   font-family: "Avenir", Arial, sans-serif;
   font-weight: 900;
 }
 
-.searchBar.barSizeS {
+.search-bar.bar-size-sm {
   position: relative;
   height: 42px;
   font-style: normal;
@@ -67,13 +67,13 @@
   padding-left: 33px;
 }
 
-.searchBar::placeholder {
+.search-bar::placeholder {
   position: absolute;
   color: #3d4e61;
   font-family: "Avenir", Arial, sans-serif;
 }
 
-.searchBar.barSizeL::placeholder {
+.bar-size-xl::placeholder {
   width: 158px;
   left: 62px;
   top: 35.71%;
@@ -83,11 +83,11 @@
   font-weight: 300;
 }
 
-.searchBar.barSizeL:focus::placeholder {
+.search-bar.bar-size-xl:focus::placeholder {
   text-shadow: none;
 }
 
-.searchBar.barSizeS::placeholder {
+.bar-size-sm::placeholder {
   left: 33px;
   top: 12px;
   font-style: normal;
@@ -97,24 +97,24 @@
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.searchBar.barSizeS:hover::placeholder {
+.search-bar.bar-size-sm:hover::placeholder {
   text-shadow: none;
   transition: text-shadow 150ms;
 }
 
-.searchIcon {
+.search-icon {
   position: absolute;
   z-index: 2;
 }
 
-.searchIcon.searchIconSizeL {
+.search-icon.search-icon-size-xl {
   width: 19px;
   height: 19px;
   left: 26px;
   top: 25px;
 }
 
-.searchIcon.searchIconSizeS {
+.search-icon.search-icon-size-sm {
   left: 13px;
   top: 15px;
   width: 11px;

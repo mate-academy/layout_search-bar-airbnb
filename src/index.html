@@ -16,36 +16,52 @@
       action="/"
       mathod="post"
       data-qa="big"
-      class="bigButton"
-    >
-      <label class="bigButton">
-        <input
-        data-qa="keypress"
-        class="bar bar_big"
-        type="text"
-        name="bigSearchBar"
-        id="bigOne"
-        placeholder="Tty &quot;Los Angeles&quot;"
+      class="bigOne"
       >
-      </label>
+      <div class="bigButton">
+        <img
+          src="/src/images/Search.svg"
+          alt="search"
+          class="bigButton-icon"
+        >
+        <div class="bigButton-search">
+          <label>
+            <input
+              class="bigButton-search__text"
+              data-qa="keypress"
+              type="text"
+              name="bigSearchBar"
+              id="bigOne"
+              placeholder="Try &quot;Los Angeles&quot;"
+            >
+          </label>
+        </div>
+      </div>
     </form>
     <form
-      action="/"
-      mathod="post"
-      data-qa="small"
-      class="smallButton"
-    >
-      <label>
-        <input
-        class="bar bar_small"
-        type="text"
-        name="smallSearchBar"
-        id="smallOne"
-        placeholder="Tty &quot;Los Angeles&quot;"
+        action="/"
+        mathod="post"
+        data-qa="small"
+        class="smallOne"
       >
-
-      </label>
-
+      <div class="smallButton">
+        <img
+          src="/src/images/Search.svg"
+          alt="search"
+          class="smallButton-icon"
+        >
+        <div class="smallButton-search">
+          <label>
+            <input
+              class="smallButton-search__text"
+              type="text"
+              name="smallSearchBar"
+              id="smallOne"
+              placeholder="Try &quot;Los Angeles&quot;"
+            >
+          </label>
+        </div>
+      </div>
     </form>
   </body>
 </html>

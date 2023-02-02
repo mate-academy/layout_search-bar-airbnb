@@ -12,6 +12,10 @@
   font-weight: 800;
 }
 
+*:focus::placeholder {
+  opacity: 0;
+}
+
 html {
   font-family: "Avenir-Book", sans-serif;
 }
@@ -81,12 +85,14 @@ html {
   background-position-x: 26px;
   background-position-y: 25px;
   background-size: 19px 19px;
+  font-weight: bold;
 }
 
 .input--small:focus {
   background-position-x: 13px;
   background-position-y: 15px;
   background-size: 11px 11px;
+  font-weight: bold;
 }
 
 .input--big::placeholder {

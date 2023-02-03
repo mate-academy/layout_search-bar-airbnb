@@ -9,9 +9,7 @@
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
   </head>
-
   <body>
-    <h1>Search bar airbnb</h1>
     <form 
       class="search" 
       data-qa="big" 
@@ -19,13 +17,17 @@
       method="post"
     >
       <label>
-        <img alt="icon" class="icon" src="images/Search.svg">
+        <img 
+          alt="icon" 
+          class="icon icon--big" 
+          src="images/Search.svg">
         <input 
           id="id"
           name="input"
           type="text" 
-          class="input" 
-          placeholder=" Try &quot; Los Angeles&quot" data-qa="keypress"
+          class="input input--big" 
+          placeholder=" Try &quot;Los Angeles&quot" 
+          data-qa="keypress"
         >
       </label>
     </form>
@@ -36,12 +38,16 @@
       method="post"
     >
       <label>
-        <img alt="icon--small" class="icon icon--small" src="images/Search.svg">
+        <img 
+          alt="icon" 
+          class="icon icon--small" 
+          src="images/Search.svg"
+        >
         <input 
           name="input"
           type="text"
           class="input input--small" 
-          placeholder=" Try &quot; Los Angeles&quot"
+          placeholder=" Try &quot;Los Angeles&quot"
         >
       </label>
     </form>

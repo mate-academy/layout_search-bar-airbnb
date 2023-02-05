@@ -22,9 +22,7 @@ html {
   box-sizing: border-box;
 }
 
-.formBig {
-  display: block;
-  box-sizing: border-box;
+.big-search-form {
   width: 100%;
   margin-top: 20px;
   background: #fff;
@@ -35,7 +33,8 @@ html {
   position: relative;
 }
 
-.bigSearch {
+.input-big-form {
+  position: relative;
   border: none;
   outline: none;
   width: 100%;
@@ -48,14 +47,14 @@ html {
   color: #3d4e61;
 }
 
-.bigS {
-  position: absolute;
+.label-big-form {
+  display: block;
   background: transparent;
-  margin-left: 40px;
-  padding: 22px;
+  padding: 22px 0 0 62px;
+  width: 100%;
 }
 
-.formBig:before {
+.big-search-form:before {
   background: url(./images/Search.svg) no-repeat;
   content: " ";
   position: absolute;
@@ -65,7 +64,7 @@ html {
   background-size: cover;
 }
 
-.formBig:hover {
+.big-search-form:hover {
   background: #fff;
   border: 1px solid #e1e7ed;
   border-radius: 4px;
@@ -73,7 +72,7 @@ html {
   line-height: 22px;
 }
 
-.formBig:focus {
+.big-search-form:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
   border-radius: 3px;
@@ -81,7 +80,7 @@ html {
   line-height: 22px;
 }
 
-.formSmall {
+.small-search-form {
   width: 100%;
   margin-top: 20px;
   background: #fff;
@@ -92,7 +91,7 @@ html {
   position: relative;
 }
 
-.smallSearch {
+.input-small-form {
   border: none;
   outline: none;
   width: 100%;
@@ -105,16 +104,17 @@ html {
   color: #3d4e61;
 }
 
-.smallS {
+.label-small-form {
   position: absolute;
   background: transparent;
-  margin-left: 23px;
-  padding: 9px;
-  height: 40px;
+  display: block;
+  padding: 9px 0 0 32px;
+
   font-size: 14px;
+  width: 100%;
 }
 
-.formSmall:before {
+.small-search-form:before {
   background: url(./images/Search.svg) no-repeat;
   content: " ";
   position: absolute;
@@ -124,7 +124,7 @@ html {
   background-size: cover;
 }
 
-.formSmall:hover {
+.small-search-form:hover {
   background: #fff;
   border: 1px solid #e1e7ed;
   border-radius: 4px;
@@ -132,7 +132,7 @@ html {
   line-height: 19px;
 }
 
-.formSmall:focus {
+.small-search-form:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
   border-radius: 3px;
@@ -142,12 +142,12 @@ html {
   line-height: 19px;
 }
 
-.bigSearch::placeholder {
+.input-big-form::placeholder {
   font-weight: 300;
   color: #3d4e61;
 }
 
-.smallSearch::placeholder {
+.input-small-form::placeholder {
   font-weight: 300;
   color: #3d4e61;
 }

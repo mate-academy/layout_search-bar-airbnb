@@ -9,8 +9,55 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
+
+
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <form
+      action="https://www.google.com/"
+      method="post"
+      data-qa="big"
+      class="Big-input"
+    >
+      <img
+        src="./images/Search.svg"
+        alt="zoom"
+        class="Img-Big"
+      >
+
+
+      <input
+        type="text"
+        name="searchGlobal"
+        class="bigSearchInput"
+        placeholder="Try &quot;Los Angeles&quot;"
+        data-qa="keypress"
+      >
+    </form>
+
+    <form
+    action="https://www.google.com/"
+    method="post"
+    class="Small-input"
+    >
+      <img
+        src="./images/Search.svg"
+        alt="zoom"
+        class="small-Img"
+      >
+
+      <input
+        type="text"
+        name="searchLocal"
+        class="small-search-input"
+        placeholder="Try &quot;Los Angeles&quot;"
+        data-qa="small"
+      >
+
+    </form>
+
+
+
+
   </body>
 </html>

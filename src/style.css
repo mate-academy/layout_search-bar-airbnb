@@ -30,7 +30,7 @@ body {
   align-items: center;
 }
 
-.search-bar-big {
+.search-bar {
   width: 100%;
   max-height: 70px;
   margin-top: 20px;
@@ -65,6 +65,8 @@ body {
   height: 19px;
   width: 19px;
   align-items: center;
+  left: 26px;
+  top: 25px;
 }
 
 .search-bar-big button {
@@ -76,17 +78,6 @@ body {
   border-radius: 4px;
 }
 
-.small-search {
-  width: 100%;
-  margin: 20px;
-  display: flex;
-  background: #fff;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  border-radius: 4px;
-  height: 42px;
-}
-  
 .small-search input {
   width: 100%;
   height: 40px;
@@ -100,27 +91,27 @@ body {
   max-height: 42px;
 }
 
-.search-button-small {
+.search-button {
   border: 0;
   background: #fff;
   cursor: pointer;
   border-radius: 4px;
-  margin: 13px 9px 15px 13px;
   padding: 0;
 }
 
 .small-search button img {
   width: 11px;
+  margin: 13px 9px 13px 13px;
+  padding: 0;
 }
 
-.search-bar-big:hover {
+.search-bar:hover {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
   font-family: "Avenir-book", Helvetica, sans-serif;
 }
 
-.search-bar-big input:hover {
+.search-bar input:hover {
   font-family: "Avenir-book", Helvetica, sans-serif;
-  font-size: 16px;
 }
 
 .search-bar-big:focus {
@@ -129,32 +120,11 @@ body {
   font-family: "Avenir-heavy", Helvetica, sans-serif;
 }
 
-.search-bar-big input:focus {
+.search-bar input:focus {
   outline: none;
   font-family: "Avenir-heavy", Helvetica, sans-serif;
 }
 
 input::placeholder {
   color: #3d4e61;
-}
-
-.small-search:hover {
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
-  font-family: "Avenir-book", Helvetica, sans-serif;
-}
-
-.small-search input:hover {
-  font-family: "Avenir-book", Helvetica, sans-serif;
-  font-size: 16px;
-}
-
-.small-search:focus {
-  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
-  outline: none;
-  font-family: "Avenir-heavy", Helvetica, sans-serif;
-}
-
-.small-search input:focus {
-  outline: none;
-  font-family: "Avenir-heavy", Helvetica, sans-serif;
 }

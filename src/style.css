@@ -12,7 +12,6 @@
   font-style: normal;
 }
 
-/* variables */
 :root {
   --input-big-left-margin: 61px;
   --input-small-left-margin: 32px;
@@ -53,9 +52,7 @@ html {
 
 .search__bar::before {
   content: " ";
-  background-image: url(images/Search.svg);
-  background-position: center;
-  background-size: cover;
+  background: url(images/Search.svg) center cover;
   width: 19px;
   height: 19px;
   position: absolute;
@@ -98,7 +95,6 @@ html {
   font-size: inherit;
   line-height: 22px;
   font-weight: 800;
-  color: #3d4e61;
 }
 
 .search__input::-webkit-search-cancel-button {
@@ -114,6 +110,6 @@ html {
 }
 
 .search__input::placeholder {
-  font-weight: 300;
+  font-weight: 400;
   color: #3d4e61;
 }

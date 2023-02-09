@@ -1,16 +1,12 @@
 @font-face {
   font-family: Avenir;
   src: url(fonts/Avenir.ttc);
-}
-
-* {
-  font-family: "Avenir", sans-serif;
+  font-weight: 300;
 }
 
 label {
   position: relative;
   display: block;
-  width: 100%;
   margin-top: 20px;
 }
 
@@ -23,17 +19,13 @@ label {
 .search {
   box-sizing: border-box;
   width: 100%;
-  color: #3d4e61;
-  font-weight: 300;
+  height: 70px;
+  padding-left: 62px;
+  font-family: "Avenir", sans-serif;
+  font-size: 16px;
   border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
-}
-
-.searchBig {
-  height: 70px;
-  padding-left: 62px;
-  font-size: 16px;
 }
 
 .search:hover {
@@ -44,6 +36,7 @@ label {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
   font-weight: 900;
+  outline: none;
 }
 
 .dandruffSmall {
@@ -58,4 +51,8 @@ label {
   height: 42px;
   padding-left: 33px;
   font-size: 14px;
+}
+
+::placeholder {
+  font-weight: 300;
 }

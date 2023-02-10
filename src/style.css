@@ -1,5 +1,4 @@
 * {
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -17,7 +16,7 @@
   src: url(fonts/Avenir-Heavy.ttf) format(truetype);
 }
 
-body {
+html {
   font-family: "Avenir", sans-serif;
   font-size: 16px;
 }
@@ -27,32 +26,28 @@ body {
 }
 
 .input {
+  padding: 0 0 0 62px;
+  height: 70px;
   border: 1px solid #e1e7ed;
   border-radius: 4px;
   color: #3d4e61;
   width: 100%;
+  font-size: 16px;
   box-shadow: 0 1px 8px 0 #3d4e611a;
   outline: none;
   font-weight: 300;
   font-family: inherit;
 }
 
-.input_big {
-  padding-left: 62px;
-  height: 70px;
-}
-
 .input_small {
   padding-left: 33px;
   height: 42px;
+  font-size: 14px;
 }
 
 .input::placeholder {
   color: inherit;
   font-weight: 300;
-}
-
-.input_big::placeholder {
   font-size: 16px;
   line-height: 22px;
 }
@@ -84,9 +79,6 @@ body {
   position: absolute;
   content: "";
   display: block;
-}
-
-.label_big::after {
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
   background-size: contain;

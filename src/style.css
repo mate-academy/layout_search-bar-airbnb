@@ -1,0 +1,30 @@
+.container-search {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.container-search-big {
+  margin-top: 20px;
+}
+
+.container-search::before {
+  content: "";
+  background-image: url(./images/Search.svg);
+  display: inline-block;
+  position: absolute;
+  background-size: cover;
+}
+
+.container-search-big::before {
+  width: 19px;
+  height: 19px;
+  left: 26px;
+  top: 25px;
+}
+
+.container-search-small::before {
+  width: 11px;
+  height: 11px;
+  left: 13px;
+  top: 15px;
+}

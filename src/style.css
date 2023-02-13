@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Avenir" ;
   src: url(./fonts/Avenir.ttc) ;
-  font-weight: 300 ;
+  font-weight: 400 ;
   font-style: normal ;
 }
 
@@ -19,53 +19,81 @@
   font-style: normal ;
 }
 
+.body {
+  box-sizing: border-box ;
+  margin: 0 ;
+  padding: 0 5px;
+}
+
 .search-form {
-  width: 100% ;
-  border: 1px solid #e1e7ed ;
-  box-shadow: 0 3px 8px #e1e7ed ;
+  --color: #e1e7ed;
+  border: 1px solid var(--color) ;
+  box-shadow: 0 1px 8px var(--color) ;
   border-radius: 4px ;
-  padding: 20px ;
-  margin-bottom: 20px ;
-  font-size: 20px ;
+  padding: 25px 0 23px 26px;
+  margin-top: 20px ;
+  font-size: 16px ;
+  line-height: 22px ;
   cursor: pointer ;
+  color: #3d4e61 ;
+}
+
+.search-form small {
+  padding: 12px 0 10px 13px;
 }
 
 .input {
-  font-family: AvenirBook, Avenir, sans-serif ;
+  font-family: Avenir, sans-serif ;
   font-size: inherit ;
-  color: #000 ;
   border: none ;
   line-height: 20px ;
-  position: absolute ;
-  font-weight: 300 ;
+  font-weight: 400 ;
   font-style: normal ;
-  width: 100% ;
-  cursor: pointer;
+  cursor: pointer ;
+  padding: 0 0 0 40px ;
+}
+
+.small .input {
+  padding-left: 24px ;
 }
 
 .small {
   padding: 10px ;
-  font-size: 17px ;
+  font-size: 14px ;
+  line-height: 19px ;
 }
 
-.icon {
-  margin: 5px 10px 0 ;
+.icon-big {
+  position: absolute ;
+  display: block ;
+  width: 19px ;
+  height: 19px ;
+  /* margin: 2px ; */
   cursor: pointer ;
 }
 
-.input:focus {
-  background-color: #e9e ;
-  color: #291 ;
+.icon-small {
+  position: absolute ;
+  display: block ;
+  width: 11px ;
+  height: 11px ;
+  margin: 4px 4px 4px 3px;
+  cursor: pointer ;
 }
 
 .search-form:hover {
-  background-color: #d4d0d0 ;
+  box-shadow: 0 3px 8px var(--color) ;
 }
 
-.search-form:hover .input {
-  background-color: #d4d0d0 ;
+.search-form:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+}
+
+.input:focus {
+  color: #3d4e61 ;
 }
 
 .h1 {
-  opacity: 0 ;
+  display: none;
 }

@@ -6,31 +6,25 @@ html {
   font-family: Avenir, Helvetica, sans-serif;
 }
 
-.container-search {
+.container {
   margin-bottom: 20px;
   position: relative;
-}
-
-.container-search-big {
   margin-top: 20px;
 }
 
-.container-search::before {
+.container::before {
   content: "";
   background-image: url(./images/Search.svg);
   display: inline-block;
   position: absolute;
   background-size: cover;
-}
-
-.container-search-big::before {
   width: 19px;
   height: 19px;
   left: 26px;
   top: 25px;
 }
 
-.container-search-small::before {
+.container-small::before {
   width: 11px;
   height: 11px;
   left: 13px;
@@ -47,14 +41,13 @@ html {
   padding: 20px 62px;
   height: 70px;
   font-size: 16px;
-  line-height: 22px;
+  font-family: inherit;
 }
 
 .input-small {
   padding: 11px 33px;
   height: 42px;
   font-size: 14px;
-  line-height: 19px;
 }
 
 ::placeholder {

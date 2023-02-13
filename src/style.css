@@ -1,14 +1,12 @@
 @font-face {
   font-family: "Avenir";
   src: url(./fonts/Avenir-Book.ttf);
-  font-style: normal;
   font-weight: 300;
 }
 
 @font-face {
   font-family: "Avenir";
   src: url(./fonts/Avenir-Heavy.ttf);
-  font-style: normal;
   font-weight: 900;
 }
 
@@ -19,16 +17,13 @@ body {
   font-weight: 300;
 }
 
-input {
-  font: inherit;
-}
-
 .searchForm {
   position: relative;
 }
 
 .searchField {
   display: block;
+  font: inherit;
   box-sizing: border-box;
   width: 100%;
   background: #fff;
@@ -37,18 +32,21 @@ input {
   border-radius: 4px;
   color: #3d4e61;
   outline: none;
-  height: 42px;
-  padding-left: 33px;
-  font-size: 14px;
-  line-height: 19px;
 }
 
-.bigField {
+.searchField--big {
   height: 70px;
   padding-left: 62px;
   margin-bottom: 20px;
   font-size: 16px;
   line-height: 22px;
+}
+
+.searchField--small {
+  height: 42px;
+  padding-left: 33px;
+  font-size: 14px;
+  line-height: 19px;
 }
 
 .searchField::placeholder {
@@ -65,25 +63,22 @@ input {
   font-weight: 900;
 }
 
-.searchSubmit {
+.iconSearch {
   position: absolute;
-  width: 11px;
-  height: 11px;
-  left: 13px;
-  top: 14px;
-  padding: 0;
-  border: 0;
-  background: rgba(255, 255, 255, 0);
-  cursor: pointer;
+  background-image: url(./images/Search.svg);
+  background-size: cover;
 }
 
-.submitBig {
+.iconBig {
   width: 19px;
   height: 19px;
   left: 26px;
   top: 25px;
 }
 
-.img {
-  width: 100%;
+.iconSmall {
+  width: 11px;
+  height: 11px;
+  left: 13px;
+  top: 15px;
 }

@@ -7,10 +7,48 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Search bar airbnb</title>
+    <title>Search bar airbnb</title> 
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <form 
+      action="http://localhost:5500/api"
+      method="post"
+      class="search-bar big-search-bar"
+    >
+      <div>
+        <input 
+          type="text"
+          placeholder="Try &quot;Los Angeles&quot;"
+          class="input input-big"
+          data-qa="big"
+        >
+        <img
+          src="./images/Search.svg" 
+          alt="Search"
+          class="icon icon-big"
+        >
+      </div>
+    </form>
+
+    <form 
+      action="http://localhost:5500/api"
+      method="post"
+      class="search-bar small-search-bar"
+    >
+      <div>
+        <input 
+          type="text"
+          placeholder="Try &quot;Los Angeles&quot;"
+          class="input input-small"
+          data-qa="small"
+        >
+        <img
+          src="./images/Search.svg" 
+          alt="Search"
+          class="icon icon-small"
+        >
+      </div>
+    </form>
   </body>
 </html>

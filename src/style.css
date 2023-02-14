@@ -27,6 +27,18 @@
   border-radius: 4px;
 }
 
+.big-form::after {
+  content: "";
+  background-image: url("./images/Search.svg");
+  background-size: 19px;
+  display: inline-block;
+  position: absolute;
+  left: 26px;
+  top: calc(50% - 10px);
+  width: 19px;
+  height: 19px;
+}
+
 .big-input {
   height: 70px;
   padding-left: 62px;
@@ -45,29 +57,27 @@
   position: relative;
 }
 
-.big-image {
-  position: absolute;
-  height: 19px;
-  left: 26px;
-  top: 25px;
-}
-
 .small-input {
   height: 42px;
   padding-left: 33px;
   font-size: 14px;
 }
 
+.small-form::after {
+  content: "";
+  background-image: url("./images/Search.svg");
+  background-size: 11px;
+  display: inline-block;
+  position: absolute;
+  left: 13px;
+  top: calc(50% - 6px);
+  width: 11px;
+  height: 11px;
+}
+
 .small-form {
   margin-top: 20px;
   position: relative;
-}
-
-.small-image {
-  position: absolute;
-  top: 15px;
-  left: 13px;
-  height: 11px;
 }
 
 .small-input::placeholder {
@@ -81,17 +91,21 @@
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.input:focus {
+.big-input:focus {
   outline: none;
   font-weight: 800;
   font-size: 16px;
-  text-shadow: 0 5px 4px #52565b;
+  text-shadow: 0 3px 3px #e0e0e1;
+  color: #3d4e61;
 }
 
 .input:focus::placeholder {
   text-shadow: none;
 }
 
-.input-small:focus {
+.small-input:focus {
+  outline: none;
   font-size: 14px;
+  font-weight: 800;
+  color: #3d4e61;
 }

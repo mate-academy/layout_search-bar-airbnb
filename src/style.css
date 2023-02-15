@@ -1,23 +1,33 @@
 @font-face {
-  font-family: Avenir;
-  src: url(fonts/Avenir-Heavy.ttf);
+  font-family: "Avenir";
+  src: url("fonts/Avenir-Book.ttf");
+  src: local("fonts/Avenir-Book.ttf"),
+    url("fonts/Avenir-Book.ttf") format("truetype");
+  font-weight: 300;
   font-style: normal;
-  font-weight: 900;
 }
 
 @font-face {
-  font-family: Avenir;
-  src: url(fonts/Avenir-Book.ttf);
+  font-family: "Avenir";
+  src: url("fonts/Avenir-Heavy.ttf");
+  src: local("fonts/Avenir-Heavy.ttf"),
+    url("fonts/Avenir-Heavy.ttf") format("truetype");
+  font-weight: 800;
   font-style: normal;
-  font-weight: 400;
 }
 
 * {
+  margin: 0;
+  padding: 0;
+  border: none;
   box-sizing: border-box;
+  background: none;
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
 }
 
 .cover {
-  margin-top: 20px;
+  margin: 20px 8px 0;
 }
 
 .form {
@@ -50,7 +60,7 @@
   outline: none;
   color: #3d4e61;
   font-family: Avenir-Book, sans-serif;
-  font-weight: 900;
+  font-weight: 800;
 }
 
 .input:focus {
@@ -61,7 +71,7 @@
 
 .input::placeholder {
   color: #3d4e61;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .inputBig {

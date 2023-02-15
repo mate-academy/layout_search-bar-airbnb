@@ -1,0 +1,29 @@
+.html {
+  box-sizing: border-box;
+}
+
+.body {
+  margin: 0;
+  --header-height: 50px;
+  --footer-height: 50px;
+
+  background-color: rgb(246, 243, 243);
+}
+
+.header {
+  height: var(--header-height);
+  margin-bottom: 20px;
+
+  background-color: rgb(17, 17, 17);
+}
+
+.main {
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  padding: 0 20px;
+
+}
+
+.footer {
+  height: var(--footer-height);
+  background-color: rgb(17, 17, 17);
+}

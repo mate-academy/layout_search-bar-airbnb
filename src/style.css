@@ -21,9 +21,13 @@
 
 .body {
   box-sizing: border-box ;
-  margin: 0 8px ;
-  padding: 0 ;
+  margin: 0 auto ;
+  padding: 0 8px ;
   border: 0 ;
+}
+
+.container {
+  width: 100% ;
 }
 
 .search-form {
@@ -31,17 +35,18 @@
   border: 1px solid var(--color) ;
   box-shadow: 0 1px 8px var(--color) ;
   border-radius: 4px ;
-  padding: 23px 10px 23px 26px ;
+  padding: 23px 10px 19px 26px ;
   margin-top: 20px ;
   cursor: pointer ;
-  width: auto ;
 }
 
 .search-form.small {
-  padding: 12px 10px 9px 12px;
+  padding: 12px 8px 5px 12px ;
 }
 
 .input {
+  width: 100% ;
+  overflow: hidden ;
   padding-inline: 0 ;
   font-family: Avenir, sans-serif ;
   font-size: 16px ;
@@ -50,8 +55,7 @@
   border: none ;
   cursor: pointer ;
   padding: 0 0 0 36px ;
-  width: 90% ;
-  outline: none;
+  outline: none ;
   background-color: #fff ;
 }
 
@@ -67,12 +71,14 @@
 
 .search-input {
   position: relative ;
-  color: #3d4e61;
+  display: inline-block ;
+  color: #3d4e61 ;
+  width: 100% ;
+  overflow: hidden ;
 }
 
 .icon-big {
   position: absolute ;
-  display: block ;
   top: 0 ;
   left: 0 ;
   width: 19px ;
@@ -82,10 +88,9 @@
 
 .icon-small {
   position: absolute ;
-  display: block ;
   width: 11px ;
   height: 11px ;
-  top: 3px ;
+  top: 2px ;
   left: 0 ;
   cursor: pointer ;
 }
@@ -94,14 +99,14 @@
   box-shadow: 0 3px 8px var(--color) ;
 }
 
-/* .input :focus {
- 
-} */
+.input:focus-within {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%) ;
+}
 
-/* .search-form :focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border-radius: 3px;
-} */
+.search-form:focus-within {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%) ;
+  border-radius: 3px ;
+}
 
 .h1 {
   display: none;

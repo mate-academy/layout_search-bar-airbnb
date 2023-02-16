@@ -2,7 +2,6 @@
   font-family: Avenir;
   src: url(fonts/Avenir.ttc);
   font-style: normal;
-  font-weight: 300;
 }
 
 html {
@@ -14,21 +13,19 @@ body {
   margin: 20px 8px;
 }
 
-.buttonBig {
-  width: 19px;
+.button {
   position: absolute;
+  width: 19px;
   padding: 25px 26px;
   cursor: pointer;
 }
 
-.buttonSmall {
+.button-small {
   width: 11px;
-  position: absolute;
   padding: 15px 13px;
-  cursor: pointer;
 }
 
-.serchFormBig {
+.serch-form {
   box-sizing: border-box;
   width: 100%;
   height: 70px;
@@ -43,33 +40,21 @@ body {
   padding: 25px 0 23px 62px;
 }
 
-.serchFormSmall {
-  box-sizing: border-box;
-  width: 100%;
+.serch-form-small {
   height: 42px;
-  color: #3d4e61;
-  background: #fff;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  border-radius: 4px;
-  font-family: inherit;
   font-size: 14px;
   padding: 11px 0 11px 33px;
 }
 
-.serchForm:hover {
-  background: #fff;
-  border: 1px solid #e1e7ed;
+.serch-form:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-  border-radius: 4px;
 }
 
-.serchForm:focus {
+.serch-form:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border: 1px solid #e1e7ed;
   border-radius: 3px;
 }
 
-.serchForm::placeholder {
+.serch-form::placeholder {
   opacity: 0.9;
 }

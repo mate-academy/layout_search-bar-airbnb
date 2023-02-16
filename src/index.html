@@ -13,43 +13,41 @@
   <body class="body">
 
     <form 
-      method="get"
+      class="searchForm"
       action="/"
       data-qa="big" 
-      class="searchBar--big"
+      method="post"
     > 
       <img 
-        class="icon" 
-        src="./images/Search.svg" 
-        alt="companyLogo"
+        class="searchIcon" 
+        src="images/Search.svg" 
+        alt="searchIcon"
       >
 
       <input 
+        class="searchInput" 
         type="text" 
-        name="text" 
-        class="search--big" 
-        id="searchLine--big"
-        placeholder="Try &quot;Los Ageles &quot;"
+        data-qa="keypress"
+        placeholder="Try &quot;Los Angeles&quot;"
       >
     </form>
 
     <form 
-      method="get"
-      action="/"
+      class="searchForm searchForm__small"
       data-qa="small" 
-      class="searchBar--smallfo"
+      method="post"
+      action="/"
     > 
       <img 
-        class="icon-small" 
-        src="./images/Search.svg" 
-        alt="companyLogo"
+        class="searchIcon__small" 
+        src="images/Search.svg" 
+        alt="searchIcon"
       >
 
       <input 
+        class="searchInput searchInput__small" 
         type="text" 
-        name="text" 
-        class="search--small" 
-        placeholder="Try &quot;Los Angeles &quot;"
+        placeholder="Try &quot;Los Angeles&quot;"
       >
     </form>
   </body>

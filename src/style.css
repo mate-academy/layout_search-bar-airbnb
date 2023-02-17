@@ -42,15 +42,18 @@ body {
   border-radius: 4px;
 }
 
-.search-input-big {
+.search-input {
   width: 100%;
   padding: 0;
-  border: 0;
-  outline: none;
   box-shadow: 0 0;
-  font-size: 16px;
+  outline: none;
+  border: none;
   border-radius: 4px;
   font-family: inherit;
+}
+
+.search-input-big {
+  font-size: 16px;
 }
 
 .search-button-big {
@@ -70,13 +73,7 @@ body {
 }
 
 .search-input-small {
-  width: 100%;
   font-size: 14px;
-  font-family: inherit;
-  padding: 0;
-  border: none;
-  box-shadow: 0 0;
-  border-radius: 4px;
 }
 
 .search-button {
@@ -107,6 +104,6 @@ body {
   font-family: "Avenir-heavy", Helvetica, sans-serif;
 }
 
-input::placeholder {
+.search-input::placeholder {
   color: #3d4e61;
 }

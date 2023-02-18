@@ -11,14 +11,46 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body class="body">
-    <header class="header"></header>
 
-    <main class="main">
-      <div class="searchBar">
+    <form
+      class="searchBar"
+      action="http://localhost:8080/api"
+      method="post"
+      data-qa="big"
+    >
+      <img
+        class="searchIcon"
+        src="images/Search.svg"
+        alt="searchIcon"
+      >
+      <input
+        class="searchBarField"
+        placeholder="Try &quot;Los Angeles&quot;"
+        type="text"
+        data-qa="keypress"
+      >
+    </form>
 
-      </div>
-    </main>
 
-    <footer class="footer"></footer>
+    <form
+      class="searchBar searchBar--small"
+      action="http://localhost:8080/api"
+      method="post"
+      data-qa="small"
+    >
+      <img
+        class="searchIcon searchIcon--small"
+        src="images/Search.svg"
+        alt="searchIcon"
+      >
+      <input
+        class="searchBarField searchBarField--small"
+        placeholder="Try &quot;Los Angeles&quot;"
+        type="text"
+        data-qa="keypress"
+      >
+    </form>
+
+
   </body>
 </html>

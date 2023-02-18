@@ -23,33 +23,28 @@
 
 .search__pic {
   position: absolute;
-  padding: 25px 17px 26px 26px;
   width: 19px;
   height: 19px;
+  align-self: center;
+  padding-left: 26px;
 }
 
 .search__pic__small {
   position: absolute;
-  padding: 15px 0 16px 13px;
   width: 11px;
   height: 11px;
+  align-self: center;
+  padding-left: 13px;
+  padding-bottom: 1px;
 }
 
 /* #endregion */
 
-.search__wrapper {
-  display: flex;
+.form {
   align-items: center;
   margin: 20px 0;
-}
-
-.form {
   font-weight: 300;
-  position: relative;
   width: 100%;
-  text-align: center;
-  flex-direction: row;
-  align-items: center;
 }
 
 /* #region input */
@@ -68,7 +63,6 @@
   font-family: "Avenir", sans-serif;
   font-weight: 300;
   color: #3d4e61;
-  display: block;
   height: 70px;
   width: 100%;
   padding-left: 62px;
@@ -88,10 +82,11 @@
   font-family: "Avenir", sans-serif;
   font-weight: 800;
   outline: none;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.input:focus::before {
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+.input:focus::placeholder {
+  text-shadow: none;
 }
 
 .input:hover {
@@ -103,24 +98,26 @@
 /* #region input__small */
 
 .input__small {
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   height: 42px;
   padding-left: 33px;
-  font-weight: 400;
   font-size: 14px;
   line-height: 19px;
 }
 
 .input__small::placeholder {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   line-height: 19px;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.input__small:focus {
+  text-shadow: none;
+  font-weight: 800;
 }
 
 .input__small:hover::placeholder {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 19px;
+  filter: none;
 }
 
 /* #endregion */

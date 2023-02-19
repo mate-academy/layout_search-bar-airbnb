@@ -12,53 +12,40 @@
   </head>
  
   <body>
-    <h1>Search bar airbnb</h1>
-    
-    <form  action="/"  method="get">  
-      <div class="search_form form">       
-        <button class="search">         
-          <img 
-            class="search_image" 
-            src="images/Search.svg" 
-            alt="image"
-          >
-        </button>
-  
-        <label for="input1">
-          <div class="field_id">
-            <input 
-              type="text"
-              class="field field_focus"
-              placeholder="Try &quot;Los Angeles&quot;"
-              data-qa="big keypress"
-              id="input1"
-            >
-          </div>
-        </label>
-      </div>             
+        
+    <form  action="https://mate-academy-form-lesson.herokuapp.com/create-application"  
+    method="post"  
+    data-qa="big"
+    class="form"
+    >  
+      <img 
+        src="images/Search.svg" 
+        alt="image"
+        class="searchimage"
+      >
+      <input 
+        type="text"
+        class="field field_focus"
+        placeholder="Try &quot;Los Angeles&quot;"
+        data-qa="keypress"
+      >
     </form>
 
-    <form action="/" method="get">
-      <div class="search_form_little form">
-        <button class="search">         
-          <img 
-            class="search_image search_image_little" 
-            src="images/Search.svg"
-            alt="image"
-          >
-        </button>
-        <label for="input_id">
-          <div class="field_id field_id_little">
-            <input 
-                type="text"
-                class="field field_little field_focus"
-                placeholder="Try &quot;Los Angeles&quot;"
-                data-qa="little" 
-                id="input_id"
-            >
-          </div>
-        </label>
-      </div> 
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+     method="post"
+     data-qa="small"
+     class="form form_little"
+     >
+      <img 
+        src="images/Search.svg"
+        alt="image"
+        class="searchimage searchimage_little"
+      >
+      <input 
+        type="text"
+        class="field field_little field_focus"
+        placeholder="Try &quot;Los Angeles&quot;"
+      >
     </form>
   </body>
 </html>

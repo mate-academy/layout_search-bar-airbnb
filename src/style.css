@@ -1,27 +1,22 @@
 @font-face {
   font-family: "Avenir";
   src: url(./fonts/Avenir-Book.ttf);
-  font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 @font-face {
   font-family: "Avenir";
   src: url(./fonts/Avenir-Heavy.ttf);
-  font-style: normal;
   font-weight: 900;
 }
 
-* {
-  font-family: "Avenir", sans-serif;
-  box-sizing: border-box;
-  outline: none;
-  font-weight: 300;
+html {
   font-style: normal;
-  height: 100%;
 }
 
-.bigForm {
+.form {
+  outline: none;
+  box-sizing: border-box;
   font-weight: 900;
   position: relative;
   width: 100%;
@@ -32,18 +27,13 @@
   box-shadow: 0 1px 8px 0 #3d4e611a;
 }
 
-.smallForm {
-  font-weight: 900;
-  position: relative;
-  margin-top: 20px;
-  width: 100%;
+.small__form {
   height: 42px;
-  border-radius: 4px;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px 0 #3d4e611a;
 }
 
-.bigBar {
+.bar {
+  font-family: "Avenir", sans-serif;
+  outline: none;
   color: #3d4e61;
   padding: 23px 0 23px 62px;
   font-size: 16px;
@@ -51,21 +41,16 @@
   border-radius: 4px;
   width: 100%;
   border: none;
-  font-weight: 900;
+  font-weight: 800;
 }
 
-.smallBar {
-  color: #3d4e61;
+.small__bar {
   font-size: 14px;
   line-height: 19px;
-  border-radius: 4px;
-  width: 100%;
   padding: 10px 0 10px 33px;
-  border: none;
-  font-weight: 900;
 }
 
-.searchBig {
+.search {
   background-image: url(../src/images/Search.svg);
   background-repeat: no-repeat;
   background-color: #fff;
@@ -77,46 +62,27 @@
   height: 19px;
   border: none;
   cursor: pointer;
-
+  color: transparent;
 }
 
-.searchSmall {
-  position: absolute;
+.search__small {
   background-size: 11px 11px;
   width: 11px;
   height: 11px;
   top: 15px;
   left: 13px;
   bottom: 16px;
-  background-image: url(../src/images/Search.svg);
-  border: none;
-  background-repeat: no-repeat;
-  background-color: #fff;
-  cursor: pointer;
 }
 
-.bigForm:hover {
+.form:hover {
   box-shadow: 0 3px 8px 0 #3d4e6133;
 }
 
-.smallForm:hover {
-  box-shadow: 0 3px 8px 0 #3d4e6133;
-}
-
-.bigForm input:focus {
+.form input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
-.smallForm input:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-}
-
-.bigBar::placeholder {
+.bar::placeholder {
   color: #3d4e61;
   font-weight: 300;
-}
-
-.smallBar::placeholder {
-  color: #3d4e61;
-  font-weight: 400;
 }

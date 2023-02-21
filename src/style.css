@@ -2,6 +2,13 @@
   font-family: Avenir;
   font-weight: 300;
   font-style: normal;
+  src: url(./fonts/Avenir.ttc);
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 300;
+  font-style: normal;
   src: url(./fonts/Avenir-Book.ttf);
 }
 
@@ -35,8 +42,8 @@
 
 .form__input--small {
   height: 42px;
-  padding: 12px 33px;
   font-size: 14px;
+  padding: 12px 33px;
   line-height: 19.12px;
 }
 
@@ -62,6 +69,12 @@
   border-radius: 4px;
 }
 
+.form__input::placeholder {
+  font-family: inherit;
+  font-weight: 300;
+  font-style: normal;
+}
+
 .form__input:focus {
   font-family: inherit;
   font-weight: 800;
@@ -71,12 +84,3 @@
   background: linear-gradient(0deg, #e1e7ed, #e1e7ed),
     linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
-
-/* .form__input::placeholder {
-  font-family: inherit;
-  font-size: 16;
-} */
-
-/* .form__input--small::placeholder {
-  font-size: 14;
-} */

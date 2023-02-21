@@ -13,14 +13,18 @@
   <body>
     <form
       data-qa="big"
-      action="http://localhost:8080/"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
-      class="form first_form"
+      class="form"
     >
-      <div class="input__wrapper__big">
-        <img src="./images/Search.svg" alt="Icon search">
+      <div class="input__wrapper input__wrapper__big">
+        <img
+          src="./images/Search.svg"
+          alt="Icon search"
+          class="search_icon search__icon-big"
+        >
         <input
-          class="large large_icon"
+          class="search"
           type="search"
           name="large"
           id="large"
@@ -31,20 +35,24 @@
     </form>
 
     <form
-      action="http://localhost:8080/"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
       data-qa="small"
       class="form"
     >
-      <div class="input__wrapper__small">
-        <img src="./images/Search.svg" alt="Search icon">
+      <div class="input__wrapper input__wrapper__small">
+        <img
+          src="./images/Search.svg"
+          alt="Icon search"
+          class="search_icon search__icon-small"
+        >
         <input
-        class="small small_icon"
-        type="search"
-        name="small"
-        id="small"
-        data-qa="keypress"
-        placeholder="Try &quot;Los Angeles&quot;"
+          class="search searchSmall"
+          type="search"
+          name="small"
+          id="small"
+          data-qa="keypress"
+          placeholder="Try &quot;Los Angeles&quot;"
         >
       </div>
     </form>

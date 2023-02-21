@@ -16,24 +16,23 @@
       method="post"
       class="form-search"
       data-qa="big"
+      autocomplete="off"
     >
-      <input
-        type="text"
-        name="searchRequest"
-        placeholder="Try &quot;Los Angeles&quot;"
-        class="form-input big"
-        data-qa="keypress"
-      >
-      <button
-        type="submit"
-        class="btn btn-big"
-      >
+      <label>
         <img
           src="images/Search.svg"
-          alt="search button"
+          alt="search icon"
           width="19px"
+          class="search-icon big-icon"
         >
-      </button>
+        <input
+          type="text"
+          name="searchRequest"
+          placeholder="Try &quot;Los Angeles&quot;"
+          class="form-input input-big"
+          data-qa="keypress"
+        >
+      </label>
     </form>
 
     <form
@@ -41,23 +40,22 @@
       method="post"
       class="form-search"
       data-qa="small"
+      autocomplete="off"
     >
-      <input
-        type="text"
-        name="searchRequest"
-        placeholder="Try &quot;Los Angeles&quot;"
-        class="form-input small"
-      >
-      <button
-        type="submit"
-        class="btn btn-small"
-      >
+      <label>
         <img
           src="images/Search.svg"
-          alt="search button"
+          alt="search icon"
           width="11px"
+          class="search-icon small-icon"
         >
-      </button>
+        <input
+          type="text"
+          name="searchRequest"
+          placeholder="Try &quot;Los Angeles&quot;"
+          class="form-input input-small"
+        >
+      </label>
     </form>
   </body>
 </html>

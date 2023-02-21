@@ -16,29 +16,33 @@
       data-qa="big"
       class="search"
       >
-      <label class="search_box">
-        <img src="./images/Search.svg" alt="search_icon">
+      <label class="search_box" for="big_input_container">
+
         <input
-          type="text"
-          class="search_input input_big"
+          id="big_input_container"
+          type="search"
+          class="search_input"
           data-qa="keypress"
           placeholder="Try &quot;Los Angeles&quot;"
         >
+        <img src="./images/Search.svg" alt="search_icon">
       </label>
     </form>
 
     <form
       action="#"
       data-qa="small"
-      class="search_small"
+      class="search search_small"
       >
-      <label class="search_box small_box">
-        <img src="./images/Search.svg" alt="search_icon">
+      <label class="search_box small_box" for="small_input_container">
+
         <input
-          type="text"
+          type="search"
+          id="small_input_container"
           class="search_input input_small"
           placeholder="Try &quot;Los Angeles&quot;"
         >
+        <img src="./images/Search.svg" alt="search_icon">
       </label>
     </form>
     <form action="#"></form>

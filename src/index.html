@@ -2,15 +2,58 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <!-- ***** Big Search Bar **** -->
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+      data-qa="big"
+      class="search-box"
+    >
+      <label class="search-bar">
+        <img
+          src="images/Search.svg"
+          alt="search-icon"
+          class="search-bar__icon--big"
+        >
+
+        <input
+          type="text"
+          name="bigSearch"
+          class="search-bar__text"
+          data-qa="keypress"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
+    </form>
+
+    <!-- ***** Small Search Bar **** -->
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+      data-qa="small"
+      class="search-box"
+    >
+      <label class="search-bar search-bar--small">
+        <img
+          src="images/Search.svg"
+          alt="search-icon"
+          class="search-bar__icon--small"
+        >
+
+        <input
+          type="text"
+          name="smallSearch"
+          class="search-bar__text search-bar__text--small"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
+    </form>
   </body>
 </html>

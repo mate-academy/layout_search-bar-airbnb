@@ -98,12 +98,14 @@ html {
 
 .search__input:focus {
   outline: none;
-  filter: none;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+
   font-weight: 800;
 }
 
-.search__input_big:focus {
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+.search__input_small:focus,
+.search__input_small:hover {
+  filter: none;
 }
 
 .search__input::placeholder {

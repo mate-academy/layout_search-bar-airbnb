@@ -17,32 +17,33 @@
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="get"
     >
-      <button class="search_button" data-qa="keypress"><img src="images/Search.svg" alt="search"></button>
-      <input
+      <label class="search_img" data-qa="keypress"><img src="images/Search.svg" alt="Search icon"></label>
+      <label>
+        <input
         class="search_bar"
         name="search"
         type="text"
         placeholder="Try &quot;Los Angeles&quot;"
-        data-qa="big"
-      >
+        data-qa="keypress"
+        >
+      </label>
     </form>
-    <form class="form small" data-qa="small">
-      <button class="search_button small_button" data-qa="keypress">
+    <form class="form small__form" data-qa="small">
+      <label class="search_img small_img">
         <img
           src="images/Search.svg"
-          alt="search"
+          alt="Search icon"
           class="small_search_picturee"
-          width="11px"
-          height="11px"
-          >
-      </button>
-      <input
+        >
+      </label>
+      <label>
+        <input
         class="search_bar small_search_bar"
         name="search"
         type="text"
         placeholder="Try &quot;Los Angeles&quot;"
-        data-qa="big"
-      >
+        >
+      </label>
     </form>
   </body>
 </html>

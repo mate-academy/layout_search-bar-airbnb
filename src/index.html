@@ -12,16 +12,21 @@
   </head>
   <body>
     <form 
-      class="BigSearchForm" 
+      class="searchForm" 
       action="#" 
       method="post"
       data-qa="big"
     >
-      <label class="BigSearchForm__label">
-        <img src="images/Search.svg" alt="searchImg">
-        <input 
+      <label>
+        <img
+          class="bigSearchForm__img" 
+          src="images/Search.svg" 
+          alt="searchImg"
+        >
+        <input
+          class="searchForm__input" 
           type="search" 
-          name="bigsearch" 
+          name="bigSearch" 
           placeholder="Try &quot;Los Angeles&quot;"
           data-qa="keypress"
         >
@@ -29,16 +34,21 @@
     </form>
 
     <form 
-      class="SmallSearchForm" 
+      class="searchForm" 
       action="#" 
       method="post"
       data-qa="small"
     >
-      <label class="SmallSearchForm__label">
-        <img src="images/Search.svg" alt="searchImg">
+      <label>
+        <img 
+          class="smallSearchForm__img"
+          src="images/Search.svg" 
+          alt="searchImg"
+        >
         <input 
+          class="searchForm__input input--small"
           type="search" 
-          name="bigsearch" 
+          name="bigSearch" 
           placeholder="Try &quot;Los Angeles&quot;"
         >
       </label>      

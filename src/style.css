@@ -20,11 +20,17 @@ html {
   font-family: Avenir, sans-serif;
 }
 
+:root {
+  --white-color: #fff;
+  --border-color: #e1e7ed;
+  --input-color: #3d4e61;
+}
+
 .searchForm {
   position: relative;
   margin-top: 20px;
   height: 70px;
-  background: #fff;
+  background: var(--white-color);
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
 }
 
@@ -48,27 +54,27 @@ html {
   padding-left: 62px;
   padding-top: 25px;
   padding-bottom: 25px;
-  border: 1px solid #e1e7ed;
+  border: 1px solid var(--border-color);
   outline: none;
 }
 
 .input:hover {
-  background: #fff;
-  border: 1px solid #e1e7ed;
+  background: var(--white-color);
+  border: 1px solid  var(--border-color);
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
   border-radius: 4px;
 }
 
 .input:focus {
-  color: #3d4e61;
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border: 1px solid #e1e7ed;
+  color: var(--input-color);
+  background: linear-gradient(180deg, var(--white-color) 0%, #f6f6f7 100%);
+  border: 1px solid  var(--border-color);
   border-radius: 3px;
 }
 
 .input::placeholder {
   font-family: inherit;
-  color: #3d4e61;
+  color: var(--input-color);
   font-weight: 400;
 }
 

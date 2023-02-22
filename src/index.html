@@ -17,35 +17,44 @@
       class="form big-form" 
       action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
       method="post"
-      data-qa="big">
-      <label 
-        for="searchbar" 
-        class="form__lable">
+      data-qa="big"
+    >
+      <label>
+        <img
+          src="images/Search.svg" 
+          alt="loop-icon" 
+          class="form__icon-big"
+        >
+        <input 
+          type="text" 
+          name="searchbar" 
+          id="searchbar" 
+          class="form__big-input input"
+          placeholder="Try &quot;Los Angeles&quot;"
+          data-qa="keypress"
+        >
       </label>
-      <input 
-        type="text" 
-        name="searchbar" 
-        id="searchbar" 
-        class="form__big-input input"
-        placeholder="Try &quot;Los Angeles&quot;"
-        data-qa="keypress"
-      >
     </form>
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
       method="post"
       data-qa="small"
-      class="form small-form">
-      <label 
-        for="searchbar2" 
-        class="form__lable">
+      class="form small-form"
+    >
+      <label>
+        <img
+          src="images/Search.svg" 
+          alt="loop-icon" 
+          class="form__icon-sm"
+        >
+        <input 
+          type="text" 
+          class="form__small-input input" 
+          name="searchbar" 
+          id="searchbar2"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
       </label>
-      <input type="text" 
-        class="form__small-input input" 
-        name="searchbar" 
-        id="searchbar2"
-        placeholder="Try &quot;Los Angeles&quot;"
-      >
     </form>
   </body>
 </html>

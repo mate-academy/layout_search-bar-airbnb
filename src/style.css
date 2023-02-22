@@ -14,10 +14,12 @@
 
 * {
   box-sizing: border-box;
+
+}
+
+body {
   margin-top: 0;
   padding: 0;
-  font-family: Avenir, sans-serif;
-  font-weight: 300;
 }
 
 .form {
@@ -26,21 +28,13 @@
 }
 
 .search-bar {
+  font-family: "Avenir", sans-serif;
   width: 100%;
   border: 1px solid #e1e7ed;
   border-radius: 4px;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   outline: none;
   color: #3d4e61;
-}
-
-.search-btn {
-  position: absolute;
-  border: none;
-  background: none;
-}
-
-.big {
   height: 70px;
   padding: 22px 0 23px 62px;
   font-size: 16px;
@@ -48,29 +42,21 @@
   font-weight: 800;
 }
 
-.big-search-btn {
-  top: 25px;
-  left: 26px;
-  width: 19px;
-  cursor: pointer;
-}
-
-.big::placeholder {
+.search-bar::placeholder {
   color: #3d4e61;
   font-weight: 300;
 }
 
-.big:hover {
+.search-bar:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.big:focus {
+.search-bar:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
   border-radius: 3px;
 }
 
-.small {
+.search-bar--small {
   height: 42px;
   padding: 10px 0 10px 33px;
   font-size: 14px;
@@ -78,26 +64,19 @@
   font-weight: 800;
 }
 
-.small-search-btn {
-  left: 13px;
-  top: 13px;
+.search-icon {
+  position: absolute;
+  border: none;
+  background: none;
+  top: 25px;
+  left: 26px;
+  width: 19px;
   cursor: pointer;
 }
 
-.small-button-img {
+.search-icon--small {
+  left: 13px;
+  top: 15px;
   width: 11px;
-}
-
-.small::placeholder {
-  color: #3d4e61;
-  font-weight: 300;
-}
-
-.small:hover {
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-}
-
-.small:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border-radius: 3px;
+  height: 11px;
 }

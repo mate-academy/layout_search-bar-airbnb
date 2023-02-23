@@ -12,6 +12,7 @@
   font-weight: 800;
 }
 
+html,
 input {
   font-family: "Avenir", Arial, Helvetica, sans-serif;
 }
@@ -24,9 +25,9 @@ input {
 .input {
   font-size: 16px;
   font-weight: 300;
-  line-height: 18.4px;
+  line-height: 22px;
   width: 100%;
-  padding: 25px 62px;
+  padding: 23px 62px;
   background: white;
   border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
@@ -36,7 +37,7 @@ input {
 
 .input--small {
   font-size: 14px;
-  padding: 11px 33px;
+  padding: 9px 33px;
 }
 
 .input::placeholder {
@@ -59,7 +60,8 @@ input {
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.search-icon {
+.search-icon::before {
+  content: "";
   background: url("./images/Search.svg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -72,7 +74,7 @@ input {
   cursor: pointer;
 }
 
-.search-icon--small {
+.search-icon--small::before {
   top: 15px;
   left: 13px;
   width: 11px;

@@ -23,14 +23,10 @@ html {
 
 .search_icon {
   position: absolute;
-}
-
-.search_icon--big {
   height: 19px;
   width: 19px;
   padding-left: 26px;
   padding-top: 25px;
-
 }
 
 .search_icon--small {
@@ -41,7 +37,10 @@ html {
 }
 
 .search_bar {
-  padding: 0;
+  height: 70px;
+  padding-left: 62px;
+  font-size: 16px;
+  line-height: 22;
   outline: none;
   width: 100%;
   font-family: inherit;
@@ -69,13 +68,6 @@ html {
   color: #3d4e61;
 }
 
-.search_bar--big {
-  height: 70px;
-  padding-left: 62px;
-  font-size: 16px;
-  line-height: 22;
-}
-
 .search_bar--big:focus {
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
@@ -85,4 +77,8 @@ html {
   font-size: 14px;
   padding-left: 33px;
   height: 42px;
+}
+
+.search_bar--small:focus {
+  box-shadow: none;
 }

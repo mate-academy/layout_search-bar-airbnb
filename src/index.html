@@ -11,6 +11,39 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <form 
+      action="/"
+      method="POST"
+      data-qa="big"
+      class="search-field"
+    >
+      <label class="label-input">
+        <input
+          type="text"
+          name="search-query"
+          id="search-query"
+          placeholder="Try &quot;Los Angeles&quot;"
+          data-qa="keypress"
+          class="search-input"
+        >
+      </label>
+    </form>
+
+    <form 
+      action="/"
+      method="POST"
+      data-qa="small"
+      class="search-field small"
+    >
+      <label class="label-input label-input-small">
+        <input
+          type="text"
+          name="search-query-small"
+          id="search-query-small"
+          placeholder="Try &quot;Los Angeles&quot;"
+          class="search-input-small"
+        >
+      </label>
+    </form>
   </body>
 </html>

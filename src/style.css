@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(fonts/Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-style: normal;
+  font-weight: 800;
+}
+
+body {
+  font-family: "Avenir", Times, serif;
+  font-weight: 300;
+  color: #3d4e61;
+}
+
+.SearchBar::placeholder {
+  color: #3d4e61;
+  font-weight: 500;
+}
+
+.searchForm {
+  position: relative;
+  margin-top: 20px;
+}
+
+.SearchBar {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  color: #3d4e61;
+  font-family: inherit;
+  font-weight: 300;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px
+    rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 62px;
+  outline: none;
+}
+
+.SearchBar:hover {
+  box-shadow: 0 3px 8px
+    rgba(61, 78, 97, 0.2);
+}
+
+.SearchBar:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  font-weight: 800;
+  border-radius: 3px;
+}
+
+.Icon {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: 26px;
+  top: 25px;
+  bottom: 26px;
+  z-index: 1;
+}
+
+.smallSearchBar {
+  width: 100%;
+  height: 42px;
+  font-size: 14px;
+  padding-left: 33px;
+}
+
+.smallIcon {
+  width: 11px;
+  height: 11px;
+  left: 13px;
+  top: 15px;
+  bottom: 16px;
+}

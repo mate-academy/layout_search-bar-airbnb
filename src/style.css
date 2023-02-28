@@ -11,8 +11,6 @@
 }
 
 body {
-  color: #3d4e62;
-  font-weight: 300;
   font-size: 16px;
   --input-height: 70px;
   --padding-left: 62px;
@@ -27,6 +25,7 @@ body {
 .search__bar-input {
   font-family: Avenir, sans-serif;
   font-size: 1rem;
+  font-weight: 300;
   line-height: 22px;
   box-sizing: border-box;
   background-image: url(./images/Search.svg);
@@ -93,4 +92,10 @@ body {
   font-weight: bold;
   border: 1px solid #f1e7ed;
   outline: none;
+}
+
+.search__bar-input--small::placeholder {
+  padding-bottom: 13px;
+  padding-top: calc(var(--padding-top) / 2);
+  color: #3d4e61;
 }

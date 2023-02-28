@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta
+      
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     >
@@ -12,5 +13,44 @@
   </head>
   <body>
     <h1>Search bar airbnb</h1>
+    <form 
+      class="big__form"
+      action="#" 
+      method="post"
+      data-qa="big"
+      >
+      <label 
+        for="bigSearch" 
+        class="label__big label__search">
+        <input 
+          type="text"
+          name="bigSearch"
+          class="input__big input__search"
+          data-qa="keypress"
+          id="bigSearch"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
+    </form>
+
+    <form 
+      class="small__form"
+      action="#" 
+      method="post"
+      data-qa="small">
+      <label 
+        for="smallSearch" 
+        class="label__small label__search">
+        <input 
+          type="text"
+          name="smallSearch"
+          class="input__small input__search"
+          id="smallSearch"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
+    </form>
+       
+  
   </body>
 </html>

@@ -12,49 +12,48 @@
   </head>
   <body>
     <h1>Search bar airbnb</h1>
-        <form 
-          class="search-box boxbig" 
-          data-qa="big" 
-          data-qa="keypress" 
-          action="\action_page.php" 
-          method="get"
+    <form 
+      class="search-box boxbig" 
+      data-qa="big" 
+      action="\action_page.php" 
+       method="post"
+    >
+      <button
+        class="search-btn"
+      >
+        <img 
+          class="search-img" 
+          src="\src\images\Search.svg" 
+          alt="img"
         >
-          <button
-            class="search-btn"
-          >
-            <img 
-              class="search-img" 
-              src="\src\images\Search.svg" 
-              alt=""
-            >
-            </button>
-          <input 
-            class="search-form" 
-            type="text" 
-            placeholder="Try &quot;Los Angeles&quot;"
-          >
-        </form>
-        <form 
-           class="search-box boxsmall"  
-           data-qa="small" 
-           action="\action_page.php" 
-           method="get"
+      </button>
+      <input 
+        class="search-form" 
+        type="text" 
+        data-qa="keypress" 
+        placeholder="Try &quot;Los Angeles&quot;"
+      >
+    </form>
+    <form 
+      class="search-box boxsmall"  
+      data-qa="small" 
+      action="\action_page.php" 
+      method="post"
+    >
+      <button 
+        class="search-btn"
+      >
+        <img 
+          class="search-img" 
+          src="\src\images\Search.svg" 
+          alt="img"
         >
-          <button 
-            class="search-btn"
-          >
-          <img 
-            class="search-img" 
-            src="\src\images\Search.svg" 
-            alt=""
-          >
-          </button>
-          <input 
-            class="search-form" 
-            type="text" 
-            placeholder="Try &quot;Los Angeles&quot;"
-          >
-        </form>
-    
+      </button>
+      <input 
+        class="search-form" 
+        type="text" 
+        placeholder="Try &quot;Los Angeles&quot;"
+      >
+    </form>
   </body>
 </html>

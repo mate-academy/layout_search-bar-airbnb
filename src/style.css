@@ -5,6 +5,14 @@
   font-style: normal;
 }
 
+html {
+  font-family: Avenir, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 .search-form {
   position: relative;
   margin-top: 20px;
@@ -17,21 +25,13 @@
 }
 
 .icon-small {
-  position: absolute;
   width: 11px;
   top: 15px;
   left: 13px;
 }
 
-.input {
-  box-sizing: border-box;
-}
-
 input::placeholder {
-  /* font-family: Avenir, Arial, sans-serif;
-  font-size: 16px; */
   color: #3d4e61;
-  /* font-style: inherit; */
 }
 
 input:hover {
@@ -45,31 +45,21 @@ input:focus {
   border: 1px solid #e1e7ed;
   border-radius: 3px;
   font-weight: bold;
+  outline: none;
 }
 
-.input-big {
+.input {
+  font-family: inherit;
   height: 70px;
   border: 1px solid rgba(225, 231, 237, 1);
   border-radius: 4px;
   width: 100%;
   padding-left: 62px;
-
-  font-family: Avenir, Arial, sans-serif;
   font-size: 16px;
-  color: #3d4e61;
 }
 
 .input-small {
   height: 42px;
-  border: 1px solid rgba(225, 231, 237, 1);
-  border-radius: 4px;
-  width: 100%;
   padding-left: 33px;
-
-  font-family: Avenir, Arial, sans-serif;
   font-size: 14px;
-  color: #3d4e61;
 }
-/* input::placeholder {
-  padding-left: 50px;
-} */

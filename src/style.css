@@ -1,65 +1,55 @@
 @font-face {
-  font-family: Avenir-Heavy;
+  font-family: "Avenir-Heavy";
   src: local("Avenir-Heavy"),
-  url(/src/fonts/Avenir-Heavy.ttf);
+    url(/src/fonts/Avenir-Heavy.ttf);
 }
 @font-face {
-  font-family: Avenir-Book;
+  font-family: "Avenir-Book";
   src: local("Avenir-Book"),
-  url(/src/fonts/Avenir-Book.ttf);
+    url(/src/fonts/Avenir-Book.ttf);
 }
 
-
-
 body {
-
   font-weight: 300px;
-  
 }
 
 .search-box {
-
   display: flex;
   flex-direction: row;
   margin-top: 20px;
   box-shadow: 2px 2px 2px  rgb(176, 176, 176);
-
 }
 
-.smallform {
-  font-family: Avenir-Book;
+.form {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.form--small {
+  font-family: "Avenir-Book" , sans-serif;
   padding: 5px;
-  border: 1px solid rgb(255, 255, 255);
 }
 
-.smallform:focus{
+.form--small:focus {
   outline: 0;
-  border: 1px solid gainsboro;
 }
 
-.bigform{
-  font-family: Avenir-Heavy;
-  padding: 20px;
-  border: 1px solid rgb(255, 255, 255);
+.form--big {
+  font-family: "Avenir-Heavy" , sans-serif;
+  padding: 20px 10px;
 }
 
-.bigform:focus{
+.form--big:focus {
   outline: 0;
 }
 
 .search-box:hover {
-  
   border: 1px solid black;
   box-shadow: 2px gray;
-
 }
 
-
 .search-btn {
-  cursor:grab;
-  padding: 6px 6px 1px;
+  cursor: grab;
+  padding: 6px 1px 2px 10px;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(255, 255, 255);
-  height: var(--height);
-
 }

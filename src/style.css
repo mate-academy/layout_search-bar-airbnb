@@ -21,29 +21,42 @@
   font-size: 14px;
 }
 
-form {
-  margin-top: 20px;
-}
-
-.svgBig {
+.icon {
+  width: 19px;
+  height: 19px;
   position: absolute;
   margin: 26px;
 }
 
-.svgSmall {
+.icon--small {
+  width: 11px;
+  height: 11px;
   position: absolute;
   margin-top: 15px;
   margin-left: 13px;
   margin-right: 16px;
 }
 
-::placeholder {
-  font-family: "Avenir", Arial, sans-serif;
-  font-weight: 400;
+form {
+  margin-top: 20px;
 }
 
-:focus {
+::placeholder {
+  font-family: "Avenir", Arial, sans-serif;
+  font-weight: 300;
+}
+
+input:hover,
+input:active {
+  border: 3px solid rgb(217, 128, 242);
+  border-color: rgb(217, 128, 242);
+}
+
+input:focus,
+input:active {
   outline: 0;
+  border: 2px solid rgb(217, 128, 242);
+  border-color: rgb(217, 128, 242);
 }
 
 @font-face {

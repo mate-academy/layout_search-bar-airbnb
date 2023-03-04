@@ -11,6 +11,45 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <form 
+      id="form" 
+      action="https://www.google.com/search" 
+      method="get" 
+    > 
+      <label>
+        <img 
+          class="icon"
+          src="https://icons.iconarchive.com/icons/gakuseisean/ivista-2/128/Start-Menu-Search-icon.png" 
+       >
+        <input 
+          data-qa="big" 
+          data-qa="keypress"
+          class="search" 
+          type="search"
+          placeholder="Los Angeles"
+        >
+      </label>
+    </form>
+
+    <form 
+      id="form2"
+      action="https://www.google.com/search" 
+      method="get"
+      data-qa="small" 
+    > 
+      <label>
+        <img 
+          class="icon icon--small"
+          src="https://icons.iconarchive.com/icons/gakuseisean/ivista-2/128/Start-Menu-Search-icon.png" 
+          alt=""
+        >
+        <input 
+          class="search2"
+          type="search"
+          placeholder="Los Angeles"
+        >
+     </label>
+    </form>
   </body>
 </html>
+

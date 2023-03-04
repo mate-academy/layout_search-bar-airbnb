@@ -11,29 +11,39 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form class="search-form_1 search-form"
+    <form 
+      class="search-form_large search-form"
       data-qa="big" 
       action="https://www.w3schools.com/action_page.php" 
       method="post"
     >
-      <input data-qa="keypress" 
-      class="input_1 input" 
-      type="text"
-      name="greater_input"
-      placeholder="Try &quot;Los Angeles&quot;"
-      >
+      <label class="search-input" for="search-input">
+        <input 
+          data-qa="keypress" 
+          class="input_1 input" 
+          id="search-input"
+          type="text"
+          name="greater_input"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
     </form>
-    <form class="search-form_2 search-form"
+    <form 
+      class="search-form_small search-form"
       data-qa="small" 
       action="https://www.w3schools.com/action_page.php" 
       method="post"
     >
-      <input class="input_2 input" 
-        data-qa="keypress" 
-        type="text"
-        name="less_input"
-        placeholder="Try &quot;Los Angeles&quot;"
-      >
+      <label for="search-input_2">
+        <input
+          class="input_2 input" 
+          data-qa="keypress" 
+          type="text"
+          id="search-input_2"
+          name="less_input"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
     </form>
   </body>
 </html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Search-bar-airbnb</title>
+    <link rel="stylesheet" href="style.css">
+    <style media="screen, print">
+      @font-face {
+        font-family: "Avenir";
+        src: url("src/fonts");
+      }
+
+      body {
+        font-family: "Bitstream Vera Serif Bold", serif;
+      }
+    </style>
+
+  </head>
+  <body>
+    <form class="f-big"
+          action=""
+          method="post"
+          role="search"
+          data-qa="big"
+    >
+          <div class="search-form form-big">
+            <button class="btn-big"
+                    type="submit"
+            >
+              <img src="src/images/Search.svg"
+                   alt="images"
+              >
+            </button>
+            <input class="form-control-big d-block"
+                   type="search"
+                   placeholder="Try &quot;Los Angeles&quot;"
+                   aria-label="Search"
+                   data-qa="keypress"
+            >
+          </div>
+    </form>
+
+    <form class="f-small" action="" method="post" role="search" data-qa="small">
+        <div class="search-form form-small">
+          <button class="btn-small"
+                  type="submit">
+            <img  class="img-s"
+                  src="src/images/Search.svg"
+                  alt="images"
+            >
+          </button>
+          <input class="form-control-small d-block"
+                 type="search"
+                 placeholder="Try &quot;Los Angeles&quot;"
+                 aria-label="Search"
+          >
+        </div>
+    </form>
+  </body>
+</html>

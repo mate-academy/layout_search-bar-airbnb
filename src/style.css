@@ -9,33 +9,36 @@
     url(fonts/Avenir-Book.ttf);
 }
 
-body {
-  font-weight: 300px;
-}
-
 .search-box {
+  font-weight: 300;
   display: flex;
   flex-direction: row;
   margin-top: 20px;
-  box-shadow: 2px 2px 2px  rgb(176, 176, 176);
+  border: 1px solid rgb(237, 229, 229);
+  border-radius: 5px;
 }
 
 .form {
-  border: 1px solid rgb(255, 255, 255);
+  font-weight: 300;
+  border: none;
+  text-align: left;
 }
 
 .form--small {
+  font-size: 14px;
   font-family: "Avenir-Book" , sans-serif;
-  padding: 5px;
+  padding: 10px;
 }
 
 .form--small:focus {
   outline: 0;
+
 }
 
 .form--big {
-  font-family: "Avenir-Heavy" , sans-serif;
-  padding: 20px 10px;
+  font-family: "Avenir-Book" , sans-serif;
+  font-size: 16px;
+  padding: 23px 12px;
 }
 
 .form--big:focus {
@@ -49,7 +52,18 @@ body {
 
 .search-btn {
   cursor: grab;
-  padding: 6px 1px 2px 10px;
   background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(255, 255, 255);
+  border: none;
+}
+
+.btn--one {
+  padding: 0 6px 0 25px;
+}
+
+.btn--two {
+  padding: 2px 0 2px 12px;
+}
+
+.img--two {
+  width: 11px;
 }

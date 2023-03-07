@@ -1,15 +1,27 @@
 @font-face {
-  font-family: Avenir-Book;
+  font-family: Avenir;
   src: url(fonts/Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 300;
 }
 @font-face {
-  font-family: Avenir-Heavy;
-  font-weight: bold;
+  font-family: Avenir;
   src: url(fonts/Avenir-Heavy.ttf);
+  font-style: normal;
+  font-weight: 800;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Avenir, sans-serif;
 }
 
 .labelSearch {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   display: block;
   margin-top: 20px;
   width: 100%;
@@ -17,6 +29,8 @@
   border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
+
+  height: 70px;
 }
 
 .labelSearch:focus-within {
@@ -28,10 +42,6 @@
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.labelSearch-big {
-  height: 70px;
-}
-
 .labelSearch-small {
   height: 42px;
 }
@@ -40,10 +50,8 @@
   background: url(./images/search.svg);
   background-repeat: no-repeat;
   border: 0;
-  font-family: Avenir-Book, sans-serif;
-}
+  font-family: inherit;
 
-.inputSearch-big {
   background-size: 19px 19px;
   background-position: 25px 24px;
   font-size: 16px;
@@ -60,12 +68,13 @@
 }
 
 .inputSearch::placeholder {
-  font-family: Avenir-Book, sans-serif;
+  font-family: inherit;
   text-align: left;
   color: #3d4e61;
 }
 
 .inputSearch:focus {
   outline: none;
-  font-family: Avenir-Heavy, sans-serif;
+  font-family: inherit;
+  font-weight: bold;
 }

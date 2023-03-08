@@ -7,10 +7,7 @@
 .body {
   font-family: Avenir, sans-serif;
   font-weight: 300;
-}
-
-.form {
-  margin-top: 20px;
+  border-radius: 4px;
 }
 
 .search {
@@ -19,26 +16,41 @@
   border: 1px solid rgb(232, 230, 230);
   border-radius: 4px;
   box-shadow: 0 1px 8px #7f7f7f26;
+  margin-top: 20px;
 }
 
 * {
-  border-radius: 4px;
-  font-family: Avenir, sans-serif;
   box-sizing: border-box;
+}
+
+.form-Big::before {
+  content: "";
+  background: url(images/Search.svg) center no-repeat;
+  position: absolute;
+  left: 1em;
+  top: 3.1em;
+  height: 19px;
+  width: 3.5em;
+  background-size: 19px;
+}
+
+.form-Small::before {
+  content: "";
+  background: url(images/Search.svg) center no-repeat;
+  position: absolute;
+  left: 0.7em;
+  top: 8em;
+  background-size: 12px;
+  height: 18px;
+  width: 2em;
 }
 
 .search-Big {
   height: 70px;
-  background: url(images/Search.svg) 25px center no-repeat;
-  background-size: 19px;
-  background-position: 25px 24px;
 }
 
 .search-Small {
   height: 42px;
-  background: url(images/Search.svg) 12px center no-repeat;
-  background-size: 11px;
-  background-position: 12px 14px ;
 }
 
 .search-Big::placeholder {

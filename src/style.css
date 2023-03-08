@@ -1,0 +1,85 @@
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir.ttc);
+}
+
+.search {
+  display: flex;
+  margin-top: 20px;
+  background: hsl(0, 0%, 100%);
+  border: 1px solid hsl(210, 25%, 91%);
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+}
+
+.button-big {
+  padding: 0;
+  margin: 24px 18px 21.5px 25px;
+  border: none;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.button-big > img {
+  width: 19px;
+  height: 19px;
+}
+
+.input {
+  flex: 1;
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #3d4e61;
+  border: none;
+}
+
+.menu-bar2 {
+  margin-top: 20px;
+}
+
+.button-small > img {
+  width: 11px;
+}
+
+.button-small {
+  padding: 0;
+  margin: 13.5px 10px 12px 12px;
+  border: none;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.input2 {
+  flex: 1;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  border: none;
+}
+
+.search:hover {
+  border: 1px solid hsl(210, 25%, 91%);
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  border-radius: 4px;
+}
+
+::placeholder {
+  color: #3d4e61;
+}
+
+.search:focus {
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  border: 1px solid hsl(210, 25%, 91%);
+  border-radius: 3px;
+}
+
+.input:focus {
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  outline: none;
+}
+
+.input2:focus {
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  outline: none;
+}

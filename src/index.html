@@ -11,58 +11,60 @@
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
   </head>
-  <body class="page">
-    <form
-      action="/"
-      method="GET"
-      class="search-form page__search-form"
-      data-qa="big"
-    >
-      <label for="search" class="search-form__label">
-        <img
-          src="./images/Search.svg"
-          width="19"
-          height="19"
-          alt="Search icon"
+  <body>
+    <div class="wrapper">
+      <form
+        action="/"
+        method="GET"
+        class="search-form wrapper__search-form"
+        data-qa="big"
+      >
+        <label for="search" class="search-form__label">
+          <img
+            src="./images/Search.svg"
+            width="19"
+            height="19"
+            alt="Search icon"
+          >
+        </label>
+
+        <input
+          data-qa="keypress"
+          class="search-form__input"
+          name="search"
+          id="search"
+          type="text"
+          placeholder="Try &quot;Los Angeles&quot;"
         >
-      </label>
+      </form>
 
-      <input
-        data-qa="keypress"
-        class="search-form__input"
-        name="search"
-        id="search"
-        type="text"
-        placeholder="Try &quot;Los Angeles&quot;"
+      <form
+        action="/"
+        method="GET"
+        class="search-form wrapper__search-form search-form--size_small"
+        data-qa="small"
       >
-    </form>
-
-    <form
-      action="/"
-      method="GET"
-      class="search-form page__search-form search-form--size_small"
-      data-qa="small"
-    >
-      <label
-        for="search--size_small"
-        class="search-form__label search-form__label--size_small"
-      >
-        <img
-          src="./images/Search.svg"
-          alt="search icon"
-          width="11"
-          height="11"
+        <label
+          for="search--size_small"
+          class="search-form__label search-form__label--size_small"
         >
-      </label>
+          <img
+            src="./images/Search.svg"
+            alt="search icon"
+            width="11"
+            height="11"
+          >
+        </label>
 
-      <input
-        data-qa="hover"
-        class="search-form__input search-form__input--size_small"
-        id="search--size_small"
-        name="searchSmall"
-        type="text"
-        placeholder="Try &quot;Los Angeles&quot;"
-      >
-    </form>
+        <input
+          data-qa="hover"
+          class="search-form__input search-form__input--size_small"
+          id="search--size_small"
+          name="searchSmall"
+          type="text"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </form>
+    </div>
   </body>
 </html>

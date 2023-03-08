@@ -1,0 +1,67 @@
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir.ttc),
+    url(fonts/Avenir-Book.ttf),
+    url(fonts/Avenir-Heavy.ttf);
+  font-weight: 300;
+}
+
+.image {
+  position: absolute;
+  top: 25px;
+  left: 26px;
+}
+
+.image-small {
+  width: 0.7em;
+  height: 0.7em;
+  top: 15px;
+  left: 13px;
+}
+
+.div {
+  position: relative;
+}
+
+.form {
+  margin-top: 20px;
+}
+
+.bar {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  background-color: #fff;
+  box-shadow: 0 1px 8px rbga(61 78 97 0.1);
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+  height: 70px;
+  font-size: 16px;
+  padding-left: 62px;
+}
+
+.bar-small {
+  height: 42px;
+  font-size: 14px;
+  padding-left: 33px;
+}
+
+.bar:hover {
+  border: 1px solid #e1e7ed;
+  background-color: #fff;
+  box-shadow: 0 3px 8px rbga(61 78 97 0.2);
+  font-family: Avenir, sans-serif;
+}
+
+.bar:focus {
+  border-radius: 3px;
+  background-color: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  font-family: Avenir, sans-serif;
+  font-weight: bold;
+}
+
+::placeholder {
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+}

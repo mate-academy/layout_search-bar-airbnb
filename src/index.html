@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -8,9 +8,63 @@
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar airbnb</title>
+    <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <div class="wrapper">
+      <form
+        action="/"
+        method="GET"
+        class="search-form wrapper__search-form"
+        data-qa="big"
+      >
+        <label for="search" class="search-form__label">
+          <img
+            src="./images/Search.svg"
+            width="19"
+            height="19"
+            alt="Search icon"
+          >
+        </label>
+
+        <input
+          data-qa="keypress"
+          class="search-form__input"
+          name="search"
+          id="search"
+          type="text"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </form>
+
+      <form
+        action="/"
+        method="GET"
+        class="search-form wrapper__search-form search-form--size_small"
+        data-qa="small"
+      >
+        <label
+          for="search--size_small"
+          class="search-form__label search-form__label--size_small"
+        >
+          <img
+            src="./images/Search.svg"
+            alt="search icon"
+            width="11"
+            height="11"
+          >
+        </label>
+
+        <input
+          data-qa="hover"
+          class="search-form__input search-form__input--size_small"
+          id="search--size_small"
+          name="searchSmall"
+          type="text"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </form>
+    </div>
   </body>
 </html>

@@ -19,15 +19,16 @@
   padding: 25px 0 23px 62px;
 }
 
-form {
-
-  padding: 0;
-  margin: auto;
-}
-
 .search-bar__input {
 
   height: 22px;
+  border: none;
+}
+
+.search-bar__input:focus {
+
+  outline: none;
+  border: none;
 }
 
 .search-bar__input::placeholder {
@@ -71,17 +72,6 @@ form {
   border-radius: 3px;
 }
 
-input {
-
-  border: none;
-}
-
-input:focus {
-
-  outline: none;
-  border: none;
-}
-
 .search-bar-small {
 
   width: 427px;
@@ -93,6 +83,7 @@ input:focus {
 .search-bar__input-small {
 
   height: 22px;
+  border: none;
 }
 
 .search-bar__input-small::placeholder {
@@ -104,6 +95,12 @@ input:focus {
 
   width: 19px;
   height: 19px;
+}
+
+.search-bar__input-small:focus {
+
+  outline: none;
+  border: none;
 }
 
 .search-bar__label-small:before {

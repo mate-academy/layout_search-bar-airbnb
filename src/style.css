@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "Avenir";
+  src: url("./fonts/Avenir-Book.ttf");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("./fonts/Avenir-Heavy.ttf");
+  font-style: normal;
+  font-weight: 900;
+}
+
+body * {
+  font-family: "Avenir", sans-serif;
+  font-weight: 300;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sForm {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto 0;
+}
+
+.sFormLarge {
+  height: 70px;
+}
+
+.sFormSmall {
+  height: 42px;
+}
+
+.sFormBlock {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.sFormBlock:after {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url("./images/Search.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.sFormBlockLarge:after {
+  width: 19px;
+  height: 19px;
+  top: 25px;
+  left: 26px;
+}
+
+.sFormBlockSmall:after {
+  width: 11px;
+  height: 11px;
+  top: 15px;
+  left: 13px;
+}
+
+.sFormInput {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  color: #3d4e61;
+  font-family: inherit;
+  font-weight: 300;
+  box-shadow: 0 1px 8px rgb(61,78,97, 0.1);
+  outline: none;
+}
+
+.sFormInput:hover {
+  box-shadow: 0 3px 8px rgb(61,78,97, 0.2);
+}
+
+.sFormInput:focus {
+  box-shadow: 0 3px 8px rgb(61,78,97, 0.2);
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+  font-weight: 900;
+}
+
+.sFormInput:focus::placeholder {
+  font-weight: 300;
+}
+
+.sFormInLarge {
+  padding-left: 62px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.sFormInSmall {
+  padding-left: 33px;
+  font-size: 14px;
+  line-height: 19px;
+}

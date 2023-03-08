@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form class="search-form search-form-big" data-qa="big">
-      <label for="search-big" class="search-form__label label-big">
+    <form class="search-form" data-qa="big">
+      <label for="search" class="search-form__label">
         <img
           src="./images/Search.svg"
           width="19"
@@ -23,16 +23,19 @@
 
       <input
         data-qa="keypress"
-        class="search-form__input input-big"
+        class="search-form__input"
         name="search"
-        id="search-big"
+        id="search"
         type="text"
         placeholder="Try &quot;Los Angeles&quot;"
       >
     </form>
 
-    <form class="search-form search-form-small" data-qa="small">
-      <label for="search-small" class="search-form__label label-small">
+    <form class="search-form search-form--size_small" data-qa="small">
+      <label
+        for="search--size_small"
+        class="search-form__label search-form__label--size_small"
+      >
         <img
           src="./images/Search.svg"
           alt="search icon"
@@ -43,8 +46,9 @@
 
       <input
         data-qa="hover"
-        class="search-form__input input-small"
-        id="search-small"
+        class="search-form__input search-form__input--size_small"
+        id="search--size_small"
+        name="searchSmall"
         type="text"
         placeholder="Try &quot;Los Angeles&quot;"
       >

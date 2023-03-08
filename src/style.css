@@ -1,0 +1,115 @@
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: Avenir-heavy;
+  src: url(./fonts/Avenir-Heavy.ttf);
+}
+
+body {
+  font-weight: 300;
+}
+
+.bigSearchBar {
+  width: 100%;
+  height: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #fff;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+}
+
+.bigSearchBar:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.bigSearchBar:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+}
+
+.bigButton {
+  background-color: #fff;
+  border: 0;
+  margin: 25px 17px 26px 26px;
+}
+
+.bigImg {
+  width: 19px;
+  height: 19px;
+}
+
+.bigText {
+  width: 129px;
+  height: 22px;
+  border: 0;
+  margin: 25px 709px 23px 17px;
+}
+
+.bigText::placeholder {
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3d4e61;
+  font-weight: inherit;
+}
+
+.bigText:focus {
+  font-family: Avenir-heavy, sans-serif;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.smallSearchBar {
+  width: 100%;
+  height: 42px;
+  background: #fff;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+}
+
+.smallSearchBar:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.smallSearchBar:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+}
+
+.smallButton {
+  background-color: #fff;
+  border: 0;
+  margin: 15px 9px 16px 13px;
+}
+
+.smallImg {
+  width: 11px;
+  height: 11px;
+}
+
+.smallText {
+  width: 167.29px;
+  height: 20px;
+  border: 0;
+  margin: 12px 709px 10px 9px;
+}
+
+.smallText::placeholder {
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #3d4e61;
+  /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
+  font-weight: inherit;
+}
+
+.smallText:focus {
+  font-family: Avenir-heavy, sans-serif;
+}

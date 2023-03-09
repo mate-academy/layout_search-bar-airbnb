@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -11,50 +11,44 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-
-    <div class="container">
-
-      <form
-        action="/search"
-        method="get"
-        class="search-bar"
-        data-qa="big"
-      >
-        <label
-          for="search"
-          class="search-bar__label"
+    <form
+      class="form-search form-big"
+      action="#"
+      method="post"
+      data-qa="big">
+      <label class="form-label form-label-big">
+        <img
+          class="form-img form-img-big"
+          src="./images/Search.svg"
+          alt="search big img"
         >
-        </label>
         <input
           type="text"
-          id="search"
-          name="q"
+          class="form-input form-input-big"
           placeholder="Try &quot;Los Angeles&quot;"
-          class="search-bar__input"
           data-qa="keypress"
         >
-      </form>
+      </label>
+    </form>
 
-      <form
-        action="/search"
-        method="get"
-        class="search-bar-small"
-        data-qa="small"
-      >
-        <label
-          for="search"
-          class="search-bar__label-small"
+    <form
+      class="form-search form-small"
+      action="#"
+      method="post"
+      data-qa="small"
+    >
+      <label class="form-label form-label-small">
+        <img
+          class="form-img form-img-small"
+          src="./images/Search.svg"
+          alt="search small img"
         >
-        </label>
         <input
           type="text"
-          id="search-small"
-          name="q"
+          class="form-input form-input-small"
           placeholder="Try &quot;Los Angeles&quot;"
-          class="search-bar__input-small"
         >
-      </form>
-
-    </div>
+      </label>
+    </form>
   </body>
 </html>

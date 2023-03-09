@@ -11,12 +11,6 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <!-- <div>
-      <img
-      src="./images/Search.svg"
-      alt="looking glass"
-      class="searchIcon"
-      > -->
     <form
       action="https://www.google.com"
       method="GET"
@@ -24,12 +18,12 @@
       >
       <input
         type="text"
-        class="searchbar searchbar__big"
+        class="searchbar"
         placeholder="Try &quot;Los Angeles&quot;"
         data-qa="keypress"
+        name="q"
         >
     </form>
-    <!-- </div> -->
     <form
       action="https://www.google.com"
       method="GET"
@@ -39,6 +33,7 @@
         type="text"
         class="searchbar searchbar__small"
         placeholder="Try &quot;Los Angeles&quot;"
+        name="q"
         >
     </form>
   </body>

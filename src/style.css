@@ -43,12 +43,12 @@
 
 .searchbar:focus {
   font-weight: bold;
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background: url(./images/Search.svg) no-repeat left 26px bottom 50%, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   outline: 0;
   box-shadow: 0 3px 8px #3d4e6133;
-  background-image: url(./images/Search.svg);
+  /* background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
-  background-position: left 26px bottom 50%;
+  background-position: left 26px bottom 50%; */
 }
 
 .searchbar__small {
@@ -60,14 +60,14 @@
   background-position: left 12px bottom 50%;
   background-size: 11px;
 
-  font-family: Avenir, Helvetica, sans-serif;
-  font-weight: 300;
   font-size: 14px;
 }
 
 .searchbar__small:focus {
-  background-image: url(./images/Search.svg);
+  background: url(./images/Search.svg) no-repeat left 12px bottom 50%, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background-size: 11px, cover;
+  /* background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
   background-position: left 12px bottom 50%;
-  background-size: 11px;
+  background-size: 11px; */
 }

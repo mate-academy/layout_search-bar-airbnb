@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(fonts/Avenir-Book.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: 900;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-weight: 300;
+  font-size: 16px;
+  font-family: "Avenir" , Arial, Helvetica, sans-serif;
+}
+
+.search_me {
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  position: relative;
+  display: flex;
+  margin: 20px 0;
+}
+
+.tiny {
+  height: 40px;
+}
+
+.search_glass {
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  top: 25px;
+  left: 26px;
+}
+
+.search_glass_tiny {
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  top: 15px;
+  left: 13px;
+}
+
+.input {
+  font-size: inherit;
+  font-weight: 900;
+  font-family: inherit;
+  width: 100%;
+  height: 70px;
+  background-color: transparent;
+  padding-left: 62px;
+  transition: 0.3s;
+  color: #22272c;
+  border: 1px solid rgba(131, 131, 131, 0.13);
+  outline: none;
+  border-radius: 4px;
+    
+}
+
+.small {
+  font-size: 14px;
+  height: 42px;
+  padding-left: 32px;
+  padding-bottom: 2px;
+}
+
+.search_me:hover {
+  box-shadow: 0 3px 8px rgba(65, 72, 94, 0.2);
+}
+
+.search_me:focus-within {
+  background: 12px 14px, linear-gradient(180deg, #fff 0%, #e0e0e070 100%);
+}
+
+.tiny:hover {
+  box-shadow: 0 3px 8px rgba(65, 72, 94, 0.2);
+}
+
+.input::placeholder {
+  font-weight: 300;
+}
+
+.input:focus::placeholder {
+  font-weight: 900;
+}

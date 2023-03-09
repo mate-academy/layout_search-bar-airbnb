@@ -51,7 +51,7 @@ html {
 
 .input {
   font-size: inherit;
-  font-weight: inherit;
+  font-weight: 900;
   font-family: inherit;
   width: 100%;
   height: 70px;
@@ -59,8 +59,9 @@ html {
   padding-left: 62px;
   transition: 0.3s;
   color: #22272c;
-  border: 1px transparent;
-  outline-color: transparent;
+  border: 1px solid rgba(131, 131, 131, 0.13);
+  outline: none;
+  border-radius: 4px;
     
 }
 
@@ -76,15 +77,11 @@ html {
 }
 
 .search_me:focus-within {
-  background: linear-gradient(180deg, #fff0 0%, #b2b2b6 100%);
+  background: 12px 14px, linear-gradient(180deg, #fff 0%, #e0e0e070 100%);
 }
 
 .tiny:hover {
   box-shadow: 0 3px 8px rgba(65, 72, 94, 0.2);
-}
-
-.tiny:focus-within {
-  background: linear-gradient(180deg, #fff0 0%, #b2b2b6 100%);
 }
 
 .input::placeholder {
@@ -93,12 +90,5 @@ html {
 
 .input:focus::placeholder {
   font-weight: 900;
-}
-
-.small::placeholder {
-  font-weight: 300;
-}
-
-.small:focus::placeholder {
-  font-weight: 900;
+  color: transparent;
 }

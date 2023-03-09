@@ -19,7 +19,7 @@
 html {
   --background-color: #fff;
   --border-color: #e1e7ed;
-  --shadow-color: #3d4e61;
+  --shadow-text-color: #3d4e61;
 }
 
 body {
@@ -44,9 +44,9 @@ body {
   font-family: inherit;
   background: var(--background-color);
   border: 1px solid var(--border-color);
-  box-shadow: 0 1px 8px var(--shadow-color) 0.1;
+  box-shadow: 0 1px 8px var(--shadow-text-color) 0.1;
   border-radius: 4px;
-  color: #3d4e61;
+  color: var(--shadow-text-color);
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
@@ -73,14 +73,13 @@ body {
   padding-left: 33px;
   height: 42px;
   line-height: 19px;
-  width: 100%;
 }
 
 .search:hover {
   font-weight: 300;
   background: var(--background-color);
   border: 1px solid var(--border-color);
-  box-shadow: 0 3px 8px var(--shadow-color) 0.2;
+  box-shadow: 0 3px 8px var(--shadow-text-color) 0.2;
   border-radius: 4px;
 }
 

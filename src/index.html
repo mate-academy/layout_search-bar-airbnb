@@ -9,8 +9,52 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="D:\made_academy\projects\layout_search-bar-airbnb\src\images\Search.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+      data-qa="big"
+    >
+      <label>
+        <img
+          src=".\images\Search.svg"
+          alt="magnifying big glass"
+          class="icon"
+        >
+        <input
+          type="text"
+          name="defaultInput"
+          placeholder="Try &quot;Los Angeles&quot;"
+          class="defaultInput"
+          data-qa="keypress"
+        >
+      </label>
+    </form>
+
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+      data-qa="small"
+    >
+      <label>
+        <img
+          src=".\images\Search.svg" alt="magnifying small glass"
+          class="icon icon--small"
+          data-qa="small"
+        >
+        <input
+          type="text"
+          name="defaultInput--small"
+          placeholder="Try &quot;Los Angeles&quot;"
+          class="defaultInput defaultInput--small"
+        >
+      </label>
+    </form>
   </body>
 </html>
+

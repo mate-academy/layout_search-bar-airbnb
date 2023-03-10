@@ -12,20 +12,17 @@
   src: url(./fonts/Avenir-Heavy.ttf);
 }
 
-body {
+* {
+  box-sizing: border-box;
   font-family: "Avenir", sans-serif;
   font-weight: 300;
-  box-sizing: border-box;
 }
 
 .field {
   width: 100%;
+  height: 70px;
   display: flex;
   margin-top: 20px;
-}
-
-.bigField {
-  height: 70px;
 }
 
 .smallField {
@@ -43,9 +40,6 @@ body {
   background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-.bigSearchBar::after {
   height: 19px;
   width: 19px;
   top: 25px;
@@ -68,16 +62,13 @@ body {
   border-radius: 4px;
   outline: none;
   color: #3d4e61;
+  padding-left: 62px;
+  line-height: 22;
+  font-size: 16px;
 }
 
 .input:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-}
-
-.bigInput {
-  padding-left: 62px;
-  line-height: 22;
-  font-size: 16px;
 }
 
 .smallInput {
@@ -88,7 +79,7 @@ body {
   padding-left: 33px;
 }
 
-.bigInput:focus {
+.input:focus {
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 

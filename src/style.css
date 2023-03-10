@@ -19,7 +19,7 @@
   padding-left: 62px;
   border: 1px solid #e1e7ed;
   border-radius: 3px;
-  box-shadow: 0 1px 8px 0 #3d4e611a;
+  box-shadow: 0 3px 8px 0 #3d4e611a;
 
   background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
@@ -45,14 +45,18 @@
   text-shadow: none;
 }
 
+.searchbar:hover::placeholder {
+  text-shadow: none;
+}
+
 .searchbar:hover {
-  box-shadow: 0 3px 8px #3d4e6133;
+  box-shadow: 0 3px 8px 0 #3d4e6133;
 }
 
 .searchbar:focus {
   background: url(./images/Search.svg) no-repeat left 26px bottom 50%, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   outline: 0;
-  box-shadow: 0 3px 8px #3d4e6133;
+  box-shadow: 0 3px 8px 0 #3d4e6133;
 
   font-weight: bold;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -73,4 +77,5 @@
 .searchbar__small:focus {
   background: url(./images/Search.svg) no-repeat left 12px bottom 50%, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   background-size: 11px, cover;
+  text-shadow: none;
 }

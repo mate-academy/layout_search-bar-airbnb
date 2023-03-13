@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(fonts/Avenir-Book.ttf);
+  font-style: "Book";
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-style: "Heavy";
+  font-weight: 800;
+}
+
+body {
+  font-family: "Avenir", Arial, Helvetica, sans-serif;
+}
+
+.bar {
+  margin-top: 20px;
+  height: 70px;
+}
+
+.bar__small {
+  margin-top: 20px;
+  height: 42px;
+}
+
+.form {
+  border: 1px rgba(225, 231, 237, 1) solid;
+  height: 100%;
+  width: 100%;
+  font-family: inherit;
+  outline: none;
+  border-radius: 4px;
+  padding: 25px 0 23px 62px;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  font-size: 16px;
+}
+
+.small__form {
+  padding: 11px 0 11px 33px;
+  font-size: 14px;
+}
+
+::placeholder {
+  color: #3d4e61;
+  line-height: 100%;
+}
+
+.image {
+  position: absolute;
+}
+
+.big__image {
+  width: 19px;
+  height: 19px;
+  margin: 25px 17px 26px 26px;
+}
+
+.small__image {
+  width: 11px;
+  height: 11px;
+  margin: 15px 9px 16px 13px;
+}
+
+.form:hover {
+  font-style: "Book";
+  box-shadow: 0 1px 8px rgba(47, 89, 136, 0.3);
+}
+
+.form:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.small__form:hover {
+  font-style: "Book";
+  box-shadow: 0 1px 8px rgba(47, 89, 136, 0.3);
+}
+
+.small__form:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  font-style: "Heavy";
+}

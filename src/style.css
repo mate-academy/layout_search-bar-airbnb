@@ -1,8 +1,10 @@
+/*Add custom font*/
 @font-face {
   font-family: Avenir;
   src: url(./fonts/Avenir.ttc);
 }
 
+/* styles shered with the both search bar */
 .search-bar {
   display: flex;
   margin-top: 20px;
@@ -12,14 +14,10 @@
   border-radius: 4px;
 }
 
+/* Search icon, works like a button */
 .search-icon-big {
   border: none;
-  margin-left: 6px;
-  width: 56px;
-  height: 68px;
-  background: url(./images/Search.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
+  padding: 24px 18px 25px 25px;
 }
 
 .input-big-bar {
@@ -27,8 +25,8 @@
   flex: 1;
   font-family: Avenir, sans-serif;
   font-size: 16px;
-  font-weight: 500;
-  color: #3d4e61;
+  font-weight: 300;
+  color: rgb(61, 78, 97);
   border: none;
 }
 
@@ -47,6 +45,7 @@
   border-radius: 4px;
 }
 
+/* CSS styles when any of the elements are in focus*/
 .search-bar:focus-within {
   background: linear-gradient(180deg, rgb(255,
   255, 255) 0%, rgb(246, 246, 247) 100%);
@@ -55,26 +54,19 @@
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+/* CSS styles SMALL SEARCH BAR */
 .search-bar.small {
   margin-top: 20px;
 }
 
 .search-icon-small {
-  padding-top: 0;
-  margin-left: 2px;
-  height: 40px;
-  width: 30px;
-  background: url(./images/Search.svg);
-  background-repeat: no-repeat;
-  background-size: 11px;
-  background-position: center center;
   border: none;
-  background-color: rgb(255, 255, 255);
+  padding: 14px 10px 15px 12px;
+  width: 11px;
 }
 
 .input-small-bar {
   padding-top: 0;
-  padding-left: 1px;
   flex: 1;
   font-family: Avenir, sans-serif;
   font-style: normal;
@@ -84,6 +76,7 @@
   border: none;
 }
 
+/* font decoration element focused */
 .input-small-bar:focus {
   outline: none;
   background: linear-gradient(180deg,
@@ -93,6 +86,7 @@
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+/* placeholder font color */
 ::placeholder {
-  color: #3d4e61;
+  color: rgb(61, 78, 97);
 }

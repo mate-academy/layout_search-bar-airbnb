@@ -11,47 +11,41 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div class="container">
-      <form
-        class="form__search"
-        action="#"
-        method="post"
-        data-qa="big"
-      >
-        <img
-          class="icon__big icon"
-          src="./images/Search.svg"
-          alt="icon"
-        >
+    <form
+      class="form__search"
+      action="#"
+      method="post"
+      data-qa="big"
+    >
+      <label class="lable-search">
         <input
-          class="input__big input__bar"
+          class="input-search"
           type="search"
           name="bigSearch"
           placeholder="Try &quot;Los Angeles&quot;"
           data-qa="keypress"
+          autocomplete="off"
           required
         >
-      </form>
+      </label>
+    </form>
 
-      <form
-        class="form__search"
-        action="#"
-        method="post"
-        data-qa="small"
-      >
-        <img
-          class="icon__small icon"
-          src="./images/Search.svg"
-          alt="icon"
-        >
+    <form
+      class="form__search"
+      action="#"
+      method="post"
+      data-qa="small"
+    >
+      <label class="lable-search lable-smallSearch">
         <input
-          class="input__small input__bar"
+          class="input-search input-smallSearch"
           type="search"
           name="smallSearch"
           placeholder="Try &quot;Los Angeles&quot;"
+          autocomplete="off"
           required
         >
-      </form>
-    </div>
+      </label>
+    </form>
   </body>
 </html>

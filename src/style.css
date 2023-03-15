@@ -22,6 +22,17 @@ html {
   margin-top: 20px;
 }
 
+.search {
+  position: relative;
+}
+
+.img {
+  position: absolute;
+  height: 19px;
+  left: 26px;
+  top: 25px;
+}
+
 .input {
   display: block;
   width: 100%;
@@ -33,14 +44,10 @@ html {
   font-family: inherit;
   font-weight: 900;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  background-image: url(images/Search.svg);
-  background-repeat: no-repeat;
   height: 70px;
   padding-left: 62px;
   font-size: 16px;
   line-height: 22px;
-  background-size: 19px;
-  background-position: 26px 25px;
 }
 
 .input::placeholder {
@@ -52,13 +59,17 @@ html {
   text-shadow: none;
 }
 
+.img-small {
+  height: 11px;
+  left: 13px;
+  top: 15px;
+}
+
 .input-search-small {
   height: 42px;
   padding-left: 33px;
   font-size: 14px;
   line-height: 19px;
-  background-size: 11px;
-  background-position: 13px 15px;
 }
 
 .input-search-small::placeholder {
@@ -72,7 +83,6 @@ html {
 
 .input:focus {
   background: linear-gradient(180deg, rgb(255, 255, 255) 0%,
-  rgb(246, 246, 247) 100%,
-  inherit);
+  rgb(246, 246, 247) 100%);
   border-radius: 3px;
 }

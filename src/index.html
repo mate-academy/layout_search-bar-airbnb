@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-
     <form
       action="#"
       method="POST"
@@ -20,26 +19,41 @@
     >
       <input
         name="searchInput"
+        id="searchInput"
         class="form__input"
         placeholder="Try &quot;Los Angeles&quot;"
         data-qa="keypress"
       >
-      <button type="submit" class="form__btn"></button>
+
+      <label for="searchInput" class="form__btn">
+        <img
+          src="./images/Search.svg"
+          alt="Search"
+          class="form__image"
+        >
+      </label>
     </form>
 
     <form
       action="#"
       method="POST"
-      class="form"
+      class="form form--small"
       data-qa="small"
     >
       <input
         name="searchInput"
+        id="searchInputSmall"
         class="form__input"
         placeholder="Try &quot;Los Angeles&quot;"
       >
-      <button type="submit" class="form__btn"></button>
-    </form>
 
+      <label for="searchInputSmall" class="form__btn">
+        <img
+          src="./images/Search.svg"
+          alt="Search"
+          class="form__image"
+        >
+      </label>
+    </form>
   </body>
 </html>

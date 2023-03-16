@@ -4,13 +4,13 @@
 @font-face {
   font-family: Avenir;
   font-weight: 300;
-  src: url(./fonts/Avenir-Book.ttf);
+  src: url(./fonts/Avenir-Book.ttf) format("truetype");
 }
 
 @font-face {
   font-family: Avenir;
   font-weight: bold;
-  src: url(./fonts/Avenir-Heavy.ttf);
+  src: url(./fonts/Avenir-Heavy.ttf) format("truetype");
 }
 
 .form {
@@ -32,14 +32,13 @@
 }
 
 .form__btn {
-  border: none;
-  display: block;
-  width: 19px;
-  height: 19px;
-  background: url(./images/Search.svg);
   position: absolute;
   left: 26px;
   top: 25px;
+}
+
+.form__image {
+  display: block;
 }
 
 .form__input::placeholder {
@@ -57,17 +56,18 @@
   outline: none;
 }
 
-.form[data-qa="small"] > .form__input {
+.form--small .form__input {
   height: 42px;
   font-size: 14px;
   padding-left: 33px;
 }
 
-.form[data-qa="small"] .form__btn {
-  width: 11px;
-  height: 11px;
-  background-size: 11px 11px;
-  background-repeat: no-repeat;
+.form--small .form__btn {
   left: 13px;
   top: 15px;
+}
+
+.form--small .form__image {
+  width: 11px;
+  height: 11px;
 }

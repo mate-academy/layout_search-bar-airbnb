@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: Avenir, sans-serif;
   font-weight: 300;
@@ -32,8 +36,7 @@ html {
   display: block;
 }
 
-.input-style {
-  box-sizing: border-box;
+.input {
   font-family: inherit;
   outline: none;
   height: 70px;
@@ -47,7 +50,7 @@ html {
   background-color: #fff;
 }
 
-.smallSearchInput {
+.input-small {
   font-size: 14px;
   height: 42px;
   padding-left: 33px;
@@ -69,23 +72,23 @@ html {
   left: 13px;
 }
 
-.placeholder-style::placeholder {
+.input::placeholder {
   font-family: inherit;
   color: #3d4e61;
 }
 
-.hover-style:hover {
+.input:hover {
   font-family: inherit;
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.focus-style:focus {
+.input:focus {
   font-family: "Avenir-Heavy", sans-serif;
   color: #3d4e61;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
-.smallSearchInput:focus {
+.input-small:focus {
   font-size: 14px;
   font-weight: 900;
 }

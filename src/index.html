@@ -11,48 +11,52 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <!-- <div class="container"> -->
-    <form class="searchBar"
-          action="https://www.google.com.ua/search"
-          method="get"
-          data-qa="big"
+    <form 
+      class="searchBar bigSearchBar"
+      action="https://www.google.com.ua/search"
+      method="get"
+      data-qa="big"
     >
       <label class="label" for="html">
-        <button type="submit">
-          <img class="img" 
-               src="images/Search.svg"
-               alt="Search"
+        <button class="button" type="submit">
+          <img 
+            class="img" 
+            src="images/Search.svg"
+            alt="Search"
           >
         </button>
-        <input type="text" 
-               id="html"
-               placeholder="Try &quot;Los Angeles&quot;"               data-qa="keypress" 
-               autocomplete="off"
+        <input
+          class="input bigInput"
+          type="text" 
+          id="html"
+          placeholder="Try &quot;Los Angeles&quot;" data-qa="keypress" 
+          autocomplete="off"
         >
       </label>
     </form>
-    <!-- </div> -->
-
-    <!-- <div class="smallContainer"> -->
-    <form class="smSearchBar"
-          action="https://www.google.com.ua/search"
-          method="get"
-          data-qa="small"
+    
+    <form 
+      class="searchBar smSearchBar"
+      action="https://www.google.com.ua/search"
+      method="get"
+      data-qa="small"
     >
-      <label class="smLabel" for="smhtml">
-        <button type="submit">
-          <img class="smImg" 
-               src="images/Search.svg"
-               alt="Search"
+      <label class="label smLabel" for="smhtml">
+        <button class="button smButton" type="submit">
+          <img 
+            class="smImg" 
+            src="images/Search.svg"
+            alt="Search"
           >
         </button>
-        <input type="text" 
-               id="smhtml"
-               placeholder="Try &quot;Los Angeles&quot;"               data-qa="keypress" 
-               autocomplete="off"
+        <input
+          class="input smInput"
+          type="text" 
+          id="smhtml"
+          placeholder="Try &quot;Los Angeles&quot;" data-qa="keypress"
+          autocomplete="off"
         >
       </label>
     </form>
-    <!-- </div> -->
   </body>
 </html>

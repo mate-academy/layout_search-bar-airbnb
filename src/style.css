@@ -1,3 +1,8 @@
+/* * {
+  width: 100%;
+  box-sizing: border-box;
+} */
+
 :root {
   --grey: #3d4e61;
   --grey-light: #e1e7ed;
@@ -19,7 +24,7 @@ html {
   font-family: "Avenir", sans-serif;
 }
 
-.form {
+.search {
   width: 100%;
   box-sizing: border-box;
   display: block;
@@ -33,7 +38,7 @@ html {
   font-weight: 300;
 }
 
-.one {
+.search--small {
   height: 70px;
   padding-left: 62px;
   font-size: 16px;
@@ -44,13 +49,13 @@ html {
   background-position: 26px center;
 }
 
-.one:hover {
+.search--small:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
   font-family: inherit;
   font-weight: 300;
 }
 
-.one:focus {
+.search--small:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
   outline: 0;
@@ -58,7 +63,7 @@ html {
   font-weight: 700;
 }
 
-.two {
+.search--big {
   height: 42px;
   padding-left: 33px;
   font-size: 14px;
@@ -70,20 +75,20 @@ html {
   outline: 0;
 }
 
-.two:hover {
+.search--big:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
   font-family: inherit;
   font-weight: 300;
 }
 
-.two:focus {
+.search--big:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
   font-family: inherit;
   font-weight: 700;
 }
 
-.one::placeholder {
+.search--small::placeholder {
   font-family: inherit;
   color: var(--grey);
   font-size: 16px;
@@ -91,7 +96,7 @@ html {
   font-weight: 300;
 }
 
-.two::placeholder {
+.search--big::placeholder {
   font-family: inherit;
   color: var(--grey);
   font-size: 14px;

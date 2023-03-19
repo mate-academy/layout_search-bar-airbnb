@@ -12,12 +12,12 @@
   </head>
   <body>
     <form 
-      class="searchBar bigSearchBar"
-      action="https://www.google.com.ua/search"
+      class="search-bar big-search-bar"
+      action="https://www.google.com/search"
       method="get"
       data-qa="big"
     >
-      <label class="label" for="html">
+      <label class="label">
         <button class="button" type="submit">
           <img 
             class="img" 
@@ -26,35 +26,37 @@
           >
         </button>
         <input
-          class="input bigInput"
+          class="input big-input"
           type="text" 
-          id="html"
+          name="q"
           placeholder="Try &quot;Los Angeles&quot;" data-qa="keypress" 
           autocomplete="off"
+          required
         >
       </label>
     </form>
     
     <form 
-      class="searchBar smSearchBar"
+      class="search-bar small-search-bar"
       action="https://www.google.com.ua/search"
       method="get"
       data-qa="small"
     >
-      <label class="label smLabel" for="smhtml">
-        <button class="button smButton" type="submit">
+      <label class="label small-label" >
+        <button class="button small-button" type="submit">
           <img 
-            class="smImg" 
+            class="small-img"
             src="images/Search.svg"
             alt="Search"
           >
         </button>
         <input
-          class="input smInput"
+          class="input small-input"
           type="text" 
-          id="smhtml"
+          name="q"
           placeholder="Try &quot;Los Angeles&quot;" data-qa="keypress"
           autocomplete="off"
+          required
         >
       </label>
     </form>

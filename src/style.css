@@ -14,7 +14,7 @@
   box-sizing: border-box;
 }
 
-.searchBar {
+.search-bar {
   margin-top: 20px;
   height: 70px;
   background: #fff;
@@ -23,7 +23,7 @@
   border-radius: 4px;
 }
 
-.smSearchBar {
+.small-search-bar {
   height: 42px;
 }
 
@@ -36,7 +36,7 @@
   align-items: center;
 }
 
-.smLabel {
+.small-label {
   padding: 0 13px;
 }
 
@@ -48,37 +48,34 @@
   background: #fff;
 }
 
-.smButton {
+.small-button {
   width: 11px;
   height: 11px;
 }
 
-.img {
-  width: 19px;
-  height: 19px;
-}
-
-.smImg {
+.small-img {
   display: flex;
   width: 11px;
   height: 11px;
 }
 
 .input {
+  outline: 0;
   background: none;
   border: none;
   color: #3d4e61;
   font-weight: bold;
 }
 
-.bigInput {
+.big-input {
+  line-height: 28px;
   margin-left: 14px;
   text-indent: 4px;
   font-size: 16px;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.smInput {
+.small-input {
   margin-left: 9px;
   font-size: 14px;
 }
@@ -89,51 +86,26 @@
   text-shadow: none;
 }
 
-.bigInput::placeholder {
-  font-size: 16px;
-}
-
-.smInput::placeholder {
-  font-size: 14px;
-}
-
-.searchBar:hover {
+.search-bar:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.bigSearchBar:hover {
+.big-search-bar:hover {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.searchBar:focus-within,
-.searchBar:focus-within:hover {
+.search-bar:focus-within,
+.search-bar:focus-within:hover {
   background: linear-gradient(#fff 0%, #f6f6f7 100%);
   border-radius: 3px;
 }
 
-.bigSearchBar:focus-within,
-.bigSearchBar:focus-within:hover {
+.big-search-bar:focus-within,
+.big-search-bar:focus-within:hover {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.smSearchBar:focus-within,
-.smSearchBar:focus-within:hover {
+.small-search-bar:focus-within,
+.small-search-bar:focus-within:hover {
   box-shadow: none;
-}
-
-.input:focus {
-  outline: 0;
-  color: #3d4e61;
-  font-weight: bold;
-}
-
-.bigInput:focus {
-  line-height: 68px;
-  font-size: 16;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.smInput:focus {
-  font-size: 14;
-  text-shadow: none;
 }

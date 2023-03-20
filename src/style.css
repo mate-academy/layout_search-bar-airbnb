@@ -32,6 +32,12 @@
   width: 100%;
 }
 
+.input--small {
+  height: 42px;
+  font-size: 14px;
+  padding-left: 33px;
+}
+
 .formButton {
   border: none;
   display: block;
@@ -41,6 +47,15 @@
   position: absolute;
   left: 26px;
   top: 25px;
+}
+
+.formButton--small {
+  width: 11px;
+  height: 11px;
+  background-size: 11px 11px;
+  background-repeat: no-repeat;
+  left: 13px;
+  top: 15px;
 }
 
 .input::placeholder {
@@ -58,19 +73,4 @@
   border-radius: 3px;
   font-weight: bold;
   outline: none;
-}
-
-.form[data-qa="small"] > .input {
-  height: 42px;
-  font-size: 14px;
-  padding-left: 33px;
-}
-
-.form[data-qa="small"] .formButton {
-  width: 11px;
-  height: 11px;
-  background-size: 11px 11px;
-  background-repeat: no-repeat;
-  left: 13px;
-  top: 15px;
 }

@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url(./fonts/Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url(./fonts/Avenir-Heavy.ttf);
+  font-style: normal;
+  font-weight: 800;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  height: 48px;
+  padding: 0 16px;
+}
+
+input[type="text"] {
+  border: none;
+  flex: 1;
+  font-size: 12px;
+  height: 100%;
+  margin-right: 16px;
+  outline: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  height: 100%;
+}
+
+button img {
+  height: 100%;
+  width: auto;
+}
+
+.search-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-image: url("../src/images/search.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 18px;
+  padding-right: 24px;
+  border-radius: 20px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  margin-top: 20px;
+}
+
+.search-box label {
+  margin-left: 40px;
+  font-size: 15px;
+}
+
+.search-box input {
+  flex: 1;
+  padding-left: 40px;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid #555;
+}
+
+.search-box-small {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+  background-image: url("../src/images/search.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 18px;
+  padding-right: 24px;
+  border-radius: 20px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  margin-top: 20px;
+  margin-left: 60px;
+}
+
+.search-box-small label {
+  margin-left: 30px;
+  font-size: 12px;
+}
+
+.search-box-small input {
+  flex: 1;
+  padding-left: 30px;
+  font-size: 14px;
+  outline: none;
+  border: 1px solid #555;
+  height: 100%;
+}
+
+.search-box input:focus {
+  box-shadow: 0 0 3px 3px rgba(66, 133, 244, 0.5);
+}
+
+.search-box::before {
+  content: "";
+  background-image: url("../src/images/search.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+}
+
+.search-box:hover .search-input {
+  border: 1px solid #007791;
+}
+
+.search-box:focus-within .search-input {
+  border: 2px solid #007791;
+  box-shadow: 0 0 3px 3px rgba(0, 119, 145, 0.5);
+}

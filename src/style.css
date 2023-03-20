@@ -1,0 +1,120 @@
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+@font-face {
+  font-family: Avenir-Book;
+  src: url(fonts\Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: Avenir-Heavy;
+  src: url(fonts\Avenir-Heavy.ttf);
+}
+
+.search {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(225, 231, 237, 1);
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(61, 78, 97, 1);
+  font-weight: 300;
+  outline: 0;
+}
+
+.search-1 {
+  padding-left: 62px;
+  height: 70px;
+}
+
+.search-2 {
+  height: 42px;
+  padding-left: 33px;
+}
+
+img {
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.img-1 {
+  width: 19px;
+  height: 19px;
+  margin: 25px 17px 26px 26px;
+}
+
+.img-2 {
+  width: 11px;
+  height: 11px;
+  margin: 15px 9px 16px 13px;
+}
+
+.input {
+  margin-top: 20px;
+}
+
+.search::placeholder {
+  color: rgba(61, 78, 97, 1);
+}
+
+.search-1::placeholder {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: Avenir-Book;
+}
+
+.search-1:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  border-radius: 4px;
+}
+
+.search-1:focus {
+  font-family: Avenir-Heavy;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%,
+  rgba(246, 246, 247, 1) 100%);
+  border-radius: 3px;
+}
+
+.search-1:focus::placeholder {
+  font-family: Avenir-Heavy;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.search-2::placeholder {
+  font-family: Avenir-Book;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  color: rgba(61, 78, 97, 1);
+}
+
+.search-2:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  border-radius: 4px;
+}
+
+.search-2:hover::placeholder {
+  filter: none;
+}
+
+.search-2:focus {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%,
+  rgba(246, 246, 247, 1) 100%);
+  border-radius: 3px;
+  font-family: Avenir-Heavy;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.search-2:focus::placeholder {
+  font-family: Avenir-Heavy;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 19px;
+}

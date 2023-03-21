@@ -26,16 +26,15 @@ body {
 .search-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  margin-left: 20px;
+  align-items: left;
+  margin-top: 10px;
+  margin-left: 12px;
 }
 
 form {
   display: flex;
   align-items: center;
   background-color: #fff;
-  border-radius: 20px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   height: 48px;
   padding: 0 16px;
@@ -46,80 +45,66 @@ input[type="text"] {
   flex: 1;
   font-size: 12px;
   height: 100%;
-  margin-right: 16px;
+  margin-right: 10px;
   outline: none;
 }
 
-button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  height: 100%;
-}
-
-button img {
-  height: 100%;
-  width: auto;
-}
-
 .search-box {
+  position: relative;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: left;
   width: 100%;
-  height: 80px;
-  background-image: url("../src/images/search.svg");
+  height: 75px;
   background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 18px;
-  padding-right: 24px;
-  border-radius: 20px;
+  background-size: 16px;
+  padding-right: 1px;
+  border-radius: 10px;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
-  margin-top: 20px;
+  margin-top: 10px;
+  border: 2px solid rgb(228, 223, 223);
+  text-align: left;
 }
 
 .search-box label {
-  margin-left: 40px;
+  margin-left: 10px;
   font-size: 15px;
 }
 
 .search-box input {
   flex: 1;
-  padding-left: 40px;
-  font-size: 18px;
+  padding-left: 2px;
+  font-size: 16px;
   outline: none;
-  border: 1px solid #555;
 }
 
 .search-box-small {
+  position: relative;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: left;
   width: 100%;
-  height: 45px;
-  background-image: url("../src/images/search.svg");
+  height: 40px;
   background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 18px;
-  padding-right: 24px;
-  border-radius: 20px;
+  background-size: 10px;
+  padding-right: 1px;
+  border-radius: 10px;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
-  margin-top: 20px;
-  margin-left: 60px;
+  margin-top: 10px;
+  border: 2px solid rgb(228, 223, 223);
+  text-align: left;
 }
 
 .search-box-small label {
-  margin-left: 30px;
-  font-size: 12px;
+  margin-left: 40px;
+  font-size: 10px;
 }
 
 .search-box-small input {
   flex: 1;
-  padding-left: 30px;
-  font-size: 14px;
+  padding-left: 2px;
+  font-size: 10px;
   outline: none;
-  border: 1px solid #555;
-  height: 100%;
 }
 
 .search-box input:focus {
@@ -129,11 +114,23 @@ button img {
 .search-box::before {
   content: "";
   background-image: url("../src/images/search.svg");
+  font-size: medium;
+  padding: 10px 10px 10px 0.5px;
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: left;
   width: 16px;
   height: 16px;
-  margin-left: 10px;
+}
+
+.search-box-small::before {
+  content: "";
+  background-image: url("../src/images/search.svg");
+  font-size: small;
+  padding: 5px 5px 5px 0.5px;
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 4px;
+  height: 4px;
 }
 
 .search-box:hover .search-input {

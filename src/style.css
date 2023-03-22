@@ -9,8 +9,12 @@
   src: url(fonts/Avenir-Heavy.ttf);
 }
 
-* {
+html {
   font-family: Avenir, sans-serif;
+}
+
+* {
+  font-family: inherit;
   box-sizing: border-box;
 }
 
@@ -68,7 +72,7 @@
 }
 
 .big-input {
-  line-height: 28px;
+  line-height: 32px;
   margin-left: 14px;
   text-indent: 4px;
   font-size: 16px;
@@ -90,10 +94,6 @@
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.big-search-bar:hover {
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-}
-
 .search-bar:focus-within,
 .search-bar:focus-within:hover {
   background: linear-gradient(#fff 0%, #f6f6f7 100%);
@@ -101,6 +101,7 @@
 }
 
 .big-search-bar:focus-within,
+.big-search-bar:hover,
 .big-search-bar:focus-within:hover {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }

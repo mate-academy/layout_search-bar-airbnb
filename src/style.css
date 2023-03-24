@@ -9,14 +9,15 @@ html {
 }
 
 :root {
-  --main-text-color: #3d4e61;
+  --main-text-color: #000;
+  --main-border-color: #e1e7ed;
 }
 
 .searchBar {
   display: block;
   width: 100%;
   box-sizing: border-box;
-  border: 1px solid #e1e7ed;
+  border: 1px solid var(--main-border-color);
   border-radius: 4px;
   background: #fff;
   /* box-shadow: 0px 1px 8px rgba(61, 78, 97, 0.1); */
@@ -55,7 +56,7 @@ html {
 .searchBar::placeholder {
   font-family: Avenir, sans-serif;
   font-style: normal;
-  color: var(--main-text-color);
+  color: #3d4e61;
 }
 
 .searchBar-big::placeholder {
@@ -69,16 +70,56 @@ html {
 }
 
 .searchBar:hover {
-  border: 1px solid #9400d3;
-  text-decoration: underline #9400d3;
+  border: 1px solid var(--main-border-color);
   color: var(--main-text-color);
 }
 
 .searchBar:focus {
-  border: 1px solid #0085e5;
+  border: 1px solid var(--main-border-color);
   border-radius: 3px;
-  text-decoration: underline #0085e5;
+  /* background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%); */
   color: var(--main-text-color);
+  /* text-decoration: underline #0085e5; */
   /* turn off black border  */
   outline: none;
+  /* font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px; */
+}
+
+.searchBar-big:focus {
+  /* background-image: url("images/Search.svg");
+  background-size: 19px 19px;
+  background-position: 25px 24px;
+  background-repeat: no-repeat; */
+  /* background: url("images/Search.svg") no-repeat, linear-gradient(180deg, #FFF 0%, #F6F6F7 100%); */
+  /* background-size: 19px 19px;
+  background-position: 25px 24px; */
+  /* background-repeat: no-repeat; */
+  /* background: url("images/Search.svg") no-repeat, linear-gradient(180deg, #FFF 0%, #F6F6F7 100%)  */
+  /* background-image: url("images/Search.svg");
+  background-size: 19px 19px;
+  background-position: 25px 24px;
+  background-repeat: no-repeat; */
+  background: url("images/Search.svg") no-repeat 25px 24px, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.searchBar-small:focus {
+  /* background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%); */
+  /* background: url("images/Search.svg"), linear-gradient(180deg, #FFF 0%, #F6F6F7 100%); */
+  /* scale backgrownd image */
+  /* background-size: 11px 11px;
+  background-position: 12px 14px;
+  background-repeat: no-repeat; */
+  /* background-color: 
+  linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+  background-image: url("images/Search.svg");
+  background-size: 19px 19px;
+  background-position: 25px 24px;
+  background-repeat: no-repeat; */
+  /* background: url("images/Search-small.svg") no-repeat 12px 14px, linear-gradient(180deg, #FFF 0%, #F6F6F7 100%); */
+  background: url("images/Search.svg") no-repeat 12px 14px, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  /* background-size: 11px 11px; */
 }

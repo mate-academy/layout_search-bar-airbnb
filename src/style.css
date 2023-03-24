@@ -18,32 +18,25 @@
 
 body {
   font-family: "Avenir", sans-serif;
-  font-weight: 800;
+  font-weight: 400;
 }
 
-.search-container {
-  display: flex;
-  justify-content: center;
-  align-items: left;
-  margin-top: 8px;
-  margin-left: 2px;
+.input::placeholder {
+  font-family: "Avenir", sans-serif;
+  font-weight: 400;
+  opacity: 0.5;
+  color: #3d4e61;
 }
 
-input[type="text"] {
+.input {
   position: relative;
   padding-left: 20px;
   border: none;
-  flex: 1;
+  border-width: 0;
+  flex: 0.5;
   font-size: 14px;
   height: 100%;
   outline: none;
-}
-
-input::placeholder {
-  font-family: "Avenir", sans-serif;
-  font-weight: 400;
-  opacity: 1;
-  color: #3d4e61;
 }
 
 .search-box {
@@ -57,18 +50,22 @@ input::placeholder {
   background-size: 16px;
   border-radius: 7px;
   margin-top: 10px;
-  border: 2px solid rgb(228, 223, 223);
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(228, 223, 223);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
   text-align: left;
   background-color: #fff;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
   padding-left: 20px;
 }
 
 .search-box input {
   flex: 1;
+  border: none;
   padding-left: 1px;
   font-size: 16px;
   outline: none;
+  border-width: 0;
 }
 
 .search-box-small {
@@ -79,21 +76,25 @@ input::placeholder {
   width: 100%;
   height: 40px;
   background-repeat: no-repeat;
-  background-size: 8px;
-  padding-right: 8px;
-  border-radius: 7px;
+  background-size:12px;
+  border-radius: 6px;
+  margin-top: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(228, 223, 223);
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
-  margin-top: 8px;
-  border: 2px solid rgb(228, 223, 223);
   text-align: left;
-  padding-left: 8px;
+  background-color: #fff;
+  padding-left: 20px;
 }
 
 .search-box-small input {
   flex: 1;
+  border: none;
   padding-left: 1px;
   font-size: 12px;
   outline: none;
+  border-width: 0;
 }
 
 .search-box input:focus {
@@ -104,9 +105,9 @@ input::placeholder {
   content: "";
   background-image: url("../src/images/search.svg");
   font-size: medium;
-  padding: 9px 10px 10px 0.5px;
+  padding: 9px 10px 10px 9px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   width: 16px;
   height: 16px;
 }
@@ -114,12 +115,12 @@ input::placeholder {
 .search-box-small::before {
   content: "";
   background-image: url("../src/images/search.svg");
-  background-size: 12px;
+  background-size: 40%;
   font-size: small;
-  padding: 10px 8px 9px 1px;
+  padding: 10px 8px 8px 10px;
   background-repeat: no-repeat;
   background-position: left;
-  width: 10px;
+  width: 16px;
   height: 8px;
 }
 

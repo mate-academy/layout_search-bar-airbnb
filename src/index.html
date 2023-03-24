@@ -22,7 +22,7 @@
           type="text" 
           id="search-input" 
           class="search-input" 
-          placeholder="&nbsp;&nbsp;Try &nbsp;&quot;Los Angeles&quot;"
+          placeholder="Try &quot;Los Angeles&quot;"
           data-qa="keypress"
         >
       </form>
@@ -37,10 +37,17 @@
         <input 
           type="text"
           id="search-input-small"  
-          class="search-input-small" 
-          placeholder="&nbsp;&nbsp;Try &nbsp;&quot;Los Angeles&quot;"
+          class="search-input-small, search-box input, search-box-small input" 
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+        
+        <label for="search-box"></label>
+        <label for="search-box-small"></label>
+        <label for="search-box, search-box-small"></label>
+        <input type="text" id="search-box" 
+        class= "search-box, search-box-small"
         >
       </form>
-    </div>
+    </div> 
   </body>
 </html>

@@ -31,11 +31,16 @@ body {
   font-weight: 300;
 }
 
-form label {
+.search-form {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.search-wrapper {
   position: relative;
 }
 
-form label:before {
+.search-wrapper:before {
   content: "";
   position: absolute;
   left: 26px;
@@ -49,89 +54,78 @@ form label:before {
   z-index: 1;
 }
 
-form.small-form label:before {
+.small-form .search-wrapper:before {
   left: 13px;
   top: 5px;
   width: 11px;
   height: 11px;
 }
 
-form {
-  width: 100%;
-  margin-top: 20px;
-}
-
-.big-form input {
-  font-size: 16px;
-  line-height: 22px;
-  padding-left: 62px;
+.search-input {
   border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
-  width: 100%;
-  height: 70px;
-  font-family: inherit;
   transition: 0.4s ease-in-out;
+  font-family: inherit;
+  width: 100%;
 }
 
-.small-form input {
+.search-input__big {
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 62px;
+  height: 70px;
+}
+
+.search-input__small {
   font-size: 14px;
   line-height: 19px;
   padding-left: 33px;
   height: 42px;
-  width: 100%;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  border-radius: 4px;
-  transition: 0.4s ease-in-out;
-  font-family: inherit;
 }
 
-.big-form input::placeholder {
-  font-size: 16px;
-  line-height: 22px;
+.search-input::placeholder {
   color: #3d4e61;
 }
 
-.small-form input::placeholder {
+.search-input__big::placeholder {
+  font-size: 16px;
+  line-height: 22px;
+
+}
+
+.search-input__small::placeholder {
   font-size: 14px;
   line-height: 19px;
   font-weight: 300;
-  color: #3d4e61;
 }
 
-.big-form input:hover::placeholder,
-.small-form input:hover::placeholder {
+.search-input:hover::placeholder {
   font-weight: 400;
 }
 
-.big-form input:hover {
+.search-input:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
   transition: 0.4s ease-in-out;
 }
 
-.small-form input:hover {
+.search-input__small:hover {
   text-shadow: none;
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-  transition: 0.4s ease-in-out;
 }
 
-.big-form input:focus {
+.search-input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   box-shadow: none;
   border-radius: 3px;
   transition: 0.4s ease-in-out;
   outline: none;
+  font-weight: 900;
+}
+
+.search-input__big:focus {
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  font-weight: 900;
 }
 
-.small-form input:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  box-shadow: none;
+.search-input__small:focus {
   text-shadow: none;
-  border-radius: 3px;
-  transition: 0.4s ease-in-out;
-  outline: none;
-  font-weight: 900;
 }

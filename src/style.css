@@ -1,13 +1,6 @@
-/* stylelint-disable no-duplicate-selectors */
-/* stylelint-disable no-descending-specificity */
 * {
   box-sizing: border-box;
 }
-
-/* @font-face {
-  font-family: Avenir;
-  src: url(fonts/Avenir.ttc);
-} */
 
 @font-face {
   font-family: Avenir;
@@ -41,8 +34,6 @@
 
 .large_sb_button {
   position: absolute;
-  /* background: #687C94;
-  border: 1px solid #687C94; */
   top: 25px;
   left: 26px;
   height: 19px;
@@ -55,7 +46,7 @@
   position: absolute;
   left: 62px;
   height: 100%;
-  width: 200px;
+  width: 100%;
   padding: 0;
   font-family: Avenir, Helvetica, sans-serif;
   font-size: 16px;
@@ -86,9 +77,7 @@
   outline: 0;
 }
 
-/* Try to increase specificity to remove filter
- from placeholder on focus - dos not work :((( */
-.large_sb_form > .large_sb_input::placeholder {
+.large_sb_input::placeholder {
   filter: none;
   font-family: Avenir, Helvetica, sans-serif;
   font-size: 16px;
@@ -96,8 +85,6 @@
   color: hsl(212, 23%, 31%);
   font-weight: normal;
 }
-
-/* Add style for small SB: */
 
 .small_sb_container {
   margin-top: 20px;
@@ -117,8 +104,6 @@
 
 .small_sb_button {
   position: absolute;
-  /* background: #687C94;
-  border: 1px solid #687C94; */
   top: 15px;
   left: 13px;
   height: 11px;
@@ -131,7 +116,7 @@
   position: absolute;
   left: 33px;
   height: 100%;
-  width: 200px;
+  width: 100%;
   padding: 0;
   font-family: Avenir, Helvetica, sans-serif;
   font-style: normal;

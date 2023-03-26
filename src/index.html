@@ -3,71 +3,73 @@
   <head>
     <meta charset="UTF-8">
     <meta
-    name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <!-- <h1>Search bar airbnb</h1> -->
+
     <div class="large_sb_container">
       <form
-      data-qa="big"
-      class="large_sb_form"
-      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="get"
+        data-qa="big"
+        class="large_sb_form"
+        action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+        method="get"
       >
-        <!-- <input
-        type="button"
-        class="large_sb_button large_sb_content"
-        name="large_sb_search"
-        data-qa="keypress"
-        > -->
         <button
-        class="large_sb_button large_sb_content"
-        type="submit"
-        name="large_sb_search"
+          class="large_sb_button large_sb_content"
+          type="submit"
+          name="large_sb_search"
         >
-          <img
-          src="images/Search.svg"
-          alt="magnifying_glass_large"
-          >
+          <label class="img_label">
+            <img
+            src="images/Search.svg"
+            alt="magnifying_glass_large"
+            >
+          </label>
         </button>
-        <input
-        data-qa="keypress"
-        class="large_sb_input large_sb_content"
-        type="search"
-        placeholder="Try &quot;Los Angeles&quot;"
-        >
+        <label class="input_label">
+          <input
+            data-qa="keypress"
+            class="large_sb_input large_sb_content"
+            type="search"
+            placeholder="Try &quot;Los Angeles&quot;"
+          >
+        </label>
       </form>
     </div>
 
     <div class="small_sb_container">
       <form
-      data-qa="small"
-      class="small_sb_form"
-      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="get"
+        data-qa="small"
+        class="small_sb_form"
+        action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+        method="get"
       >
         <button
-        class="small_sb_button small_sb_content"
-        type="submit"
-        name="small_sb_search"
+          class="small_sb_button small_sb_content"
+          type="submit"
+          name="small_sb_search"
         >
-          <img
-          class="small_sb_img"
-          src="images/Search.svg"
-          alt="magnifying_glass_small"
-          >
+          <label class="img_label">
+            <img
+              class="small_sb_img"
+              src="images/Search.svg"
+              alt="magnifying_glass_small"
+            >
+          </label>
         </button>
-        <input
-        class="small_sb_input small_sb_content"
-        type="search"
-        placeholder="Try &quot;Los Angeles&quot;"
-        data-qa="keypress"
-        >
+        <label class="input_label">
+          <input
+            class="small_sb_input small_sb_content"
+            type="search"
+            placeholder="Try &quot;Los Angeles&quot;"
+            data-qa="keypress"
+          >
+        </label>
       </form>
     </div>
 

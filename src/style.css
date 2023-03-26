@@ -45,10 +45,7 @@ body {
   position: absolute;
   left: 26px;
   top: 2px;
-  background-image: url(./images/Search.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  background: url(./images/Search.svg) no-repeat center / contain;
   width: 19px;
   height: 19px;
   z-index: 1;
@@ -68,9 +65,6 @@ body {
   transition: 0.4s ease-in-out;
   font-family: inherit;
   width: 100%;
-}
-
-.search-input__big {
   font-size: 16px;
   line-height: 22px;
   padding-left: 62px;
@@ -86,12 +80,8 @@ body {
 
 .search-input::placeholder {
   color: #3d4e61;
-}
-
-.search-input__big::placeholder {
   font-size: 16px;
   line-height: 22px;
-
 }
 
 .search-input__small::placeholder {
@@ -120,9 +110,6 @@ body {
   transition: 0.4s ease-in-out;
   outline: none;
   font-weight: 900;
-}
-
-.search-input__big:focus {
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 

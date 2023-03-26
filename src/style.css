@@ -4,12 +4,14 @@
 }
 
 @font-face {
-  font-family: Avenir Book;
+  font-family: Avenir;
+  font-weight: 400;
   src: url(fonts/Avenir-Book.ttf);
 }
 
 @font-face {
-  font-family: Avenir Heavy;
+  font-family: Avenir;
+  font-weight: 900;
   src: url(fonts/Avenir-Heavy.ttf);
 }
 
@@ -20,21 +22,21 @@ input {
   background-position: 25px 24px;
 }
 
-input.small {
+input.searchbar-small {
   background: url(images/Search.svg) no-repeat;
-  background-position: 12px 14px;
   background-size: 11px 11px;
+  background-position: 12px 14px;
 }
 
 body {
   margin-top: 0;
 }
 
-.searchbar {
+form {
   margin-top: 20px;
 }
 
-.big {
+.searchbar {
   padding: 0;
   width: 100%;
   height: 68px;
@@ -43,32 +45,32 @@ body {
   border: 1px solid #e1e7ed;
   border-radius: 4px;
   text-indent: 62px;
-  font-family: Avenir Heavy, sans-serif;
+  font-family: Avenir, sans-serif;
+  font-weight: 900;
   font-size: 16px;
   box-shadow: 0 1px 8px #3d4e611a;
 }
 
-.big::placeholder {
-  font-family: Avenir Book, sans-serif;
+.searchbar::placeholder {
+  font-family: inherit;
+  font-weight: 300;
   font-size: 16px;
   line-height: 100%;
   text-align: left;
   vertical-align: top;
 }
 
-.big:hover {
+.searchbar:hover {
   box-shadow: 0 3px 8px #3d4e6133;
-  font-family: Avenir Heavy, sans-serif;
 }
 
-.big:focus {
+.searchbar:focus {
   border: 1px solid #e1e7ed;
   border-radius: 3px;
   background: url(images/Search.svg) no-repeat 25px 24px, linear-gradient(to bottom, #fff, #f6f6f7);
-  font-family: Avenir Heavy, sans-serif;
 }
 
-.small {
+.searchbar-small {
   width: 100%;
   height: 40px;
   line-height: 19.12px;
@@ -77,13 +79,14 @@ body {
   border-radius: 3px;
   box-shadow: 0 1px 8px #3d4e611a;
   text-indent: 33px;
-  font-family: Avenir Heavy, sans-serif;
+  font-family: Avenir, sans-serif;
+  font-weight: 900;
   font-size: 14px;
   color: rgba(61, 78, 97, 1);
 }
 
-.small::placeholder {
-  font-family: Avenir Book, sans-serif;
+.searchbar-small::placeholder {
+  font-family: inherit;
   font-weight: 300;
   font-size: 14px;
   line-height: 100%;
@@ -91,12 +94,11 @@ body {
   vertical-align: top;
 }
 
-.small:hover {
+.searchbar-small:hover {
   box-shadow: 0 3px 8px #3d4e6133;
-  font-family: Avenir Heavy, sans-serif;
 }
 
-.small:focus {
-  background: url(images/Search.svg) 11px no-repeat 12px 14px, linear-gradient(to bottom, #fff, #f6f6f7);
-  font-family: Avenir Heavy, sans-serif;
+.searchbar-small:focus {
+  background: url(images/Search.svg) no-repeat 12px 14px, linear-gradient(to bottom, #fff, #f6f6f7);
+  background-size: 11px;
 }

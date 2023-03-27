@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width, user-scalable=no,
+      initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar airbnb</title>
@@ -12,34 +13,36 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="get">
-      <div>
-        <label data-qa="keypress">
-          <input
-            class="form-big form"
-            type="text"
-            name="search_big"
-            data-qa="big"
-            src="./images/Search.svg"
-            placeholder="Try &quot;Los Angeles&quot;"
-          >
-        </label>
-      </div>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="get"
+      data-qa="big"
+    >
+      <label>
+        <input
+          class="form"
+          type="search"
+          name="search_big"
+          data-qa="keypress"
+          src="./images/Search.svg"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
     </form>
 
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="get">
-      <div>
-        <label>
-          <input
-            class="form-small form"
-            type="text"
-            name="search-small"
-            data-qa="small"
-            src="./images/Search.svg"
-            placeholder="Try &quot;Los Angeles&quot;"
-          >
-        </label>
-      </div>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="get"
+    >
+      <label>
+        <input
+          class="form form-small"
+          type="search"
+          name="search-small"
+          data-qa="small"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
     </form>
 
   </body>

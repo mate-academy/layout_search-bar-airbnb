@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(.\fonts\Avenir-Book.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(.\fonts\Avenir-Heavy.ttf);
+  font-weight: 700;
+}
+
+:root {
+  --input-border-color: #e1e7ed;
+  --input-color: #3d4e61;
+  --placeholder-color: #3d4e61;
+  --box-shadow-color: rgba(61, 78, 97, 0.2);
+}
+
+.form {
+  margin-top: 20px;
+  position: relative;
+}
+
+.input {
+  border: 1px solid var(--input-border-color);
+  box-shadow: 0 1px 8px var(--box-shadow-color);
+  border-radius: 4px;
+  color: var(--input-color);
+  font-size: 16px;
+  font-weight: 300;
+  height: 70px;
+  padding-left: 62px;
+  width: 100%;
+}
+
+input {
+  font-family: Avenir, sans-serif;
+}
+
+.input--small {
+  height: 42px;
+  font-size: 14px;
+  padding-left: 33px;
+}
+
+.formButton {
+  border: none;
+  display: block;
+  width: 19px;
+  height: 19px;
+  background: url(./images/Search.svg);
+  position: absolute;
+  left: 26px;
+  top: 25px;
+}
+
+.formButton--small {
+  width: 11px;
+  height: 11px;
+  background-size: 11px 11px;
+  background-repeat: no-repeat;
+  left: 13px;
+  top: 15px;
+}
+
+.input::placeholder {
+  font-weight: 300;
+  color: var(--placeholder-color);
+  text-shadow: none;
+}
+
+.input:hover {
+  box-shadow: 0 3px 8px var(--box-shadow-color);
+}
+
+.input:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+  font-weight: bold;
+  outline: none;
+  box-shadow: 0 3px 8px var(--box-shadow-color);
+}
+
+.input--small:focus {
+  box-shadow: none;
+}

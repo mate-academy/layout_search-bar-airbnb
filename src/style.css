@@ -36,6 +36,20 @@ html {
   font-weight: 300;
 }
 
+.search:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  font-family: inherit;
+  font-weight: 300;
+}
+
+.search:focus {
+  background: url(./images/Search.svg) linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+  outline: 0;
+  font-family: inherit;
+  font-weight: 700;
+}
+
 .search--small {
   height: 70px;
   padding-left: 62px;
@@ -45,20 +59,6 @@ html {
   background-repeat: no-repeat;
   background-size: 19px;
   background-position: 26px center;
-}
-
-.search--small:hover {
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-  font-family: inherit;
-  font-weight: 300;
-}
-
-.search--small:focus {
-  background: url(./images/Search.svg) linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border-radius: 3px;
-  outline: 0;
-  font-family: inherit;
-  font-weight: 700;
 }
 
 .search--big {
@@ -73,31 +73,18 @@ html {
   outline: 0;
 }
 
-.search--big:hover {
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+.search::placeholder {
   font-family: inherit;
+  color: var(--grey);
   font-weight: 300;
-}
-
-.search--big:focus {
-  background: url(./images/Search.svg) linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border-radius: 3px;
-  font-family: inherit;
-  font-weight: 700;
 }
 
 .search--small::placeholder {
-  font-family: inherit;
-  color: var(--grey);
   font-size: 16px;
   line-height: 22px;
-  font-weight: 300;
 }
 
 .search--big::placeholder {
-  font-family: inherit;
-  color: var(--grey);
   font-size: 14px;
   line-height: 19px;
-  font-weight: 300;
 }

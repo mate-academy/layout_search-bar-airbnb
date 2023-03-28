@@ -28,43 +28,38 @@
   margin-top: 20px;
   height: 68px;
   position: relative;
+}
 
+.bigInput {
   background: var(--default-background-color);
   border: var(--border);
   border-radius: var(--default-border-radius);
   box-shadow: var(--default-box-shadow);
-}
 
-.bigForm:hover {
-  box-shadow: var(--hover-box-shadow);
-}
-
-.bigForm:focus {
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-
-  background: var(--focus-background-color);
-  border-radius: var(--focus-border-radius);
-}
-
-.bigInput {
   outline: none;
-  border: none;
 
   position: absolute;
-  top: 22px;
-  left: 61px;
+  top: 0;
+  left: 0;
   right: 0;
-  bottom: 24px;
+  bottom: 0;
+
+  padding: 0 62px;
 
   font-size: 16px;
-  line-height: 22px;
-
   font-family: var(--font-in-form);
   font-weight: var(--focus-font-weight);
   color: var(--text-color);
+}
+
+.bigInput:hover {
+  box-shadow: var(--hover-box-shadow);
+}
+
+.bigInput:focus {
+  background: var(--focus-background-color);
+  border-radius: var(--focus-border-radius);
+  box-shadow: var(--hover-box-shadow);
 }
 
 .bigInput::placeholder {
@@ -73,7 +68,7 @@
 
 .BigImage {
   position: absolute;
-  top: 26px;
+  top: 25px;
   left: 26px;
   height: 19px;
   width: 19px;
@@ -83,42 +78,38 @@
   height: 42px;
   margin-top: 20px;
   position: relative;
-
-  border: var(--border);
-  border-radius: var(--default-border-radius);
-  box-shadow: var(--default-box-shadow);
-  background: var(--default-background-color);
-}
-
-.smallForm:hover {
-  box-shadow: var(--hover-box-shadow);
-}
-
-.smallForm:focus {
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-
-  border-radius: var(--focus-border-radius);
-  background: var(--focus-background-color);
 }
 
 .smallInput {
+  background: var(--default-background-color);
+  border: var(--border);
+  border-radius: var(--default-border-radius);
+  box-shadow: var(--default-box-shadow);
+
   outline: none;
-  border: none;
+
   position: absolute;
   top: 0;
-  left: 33px;
+  left: 0;
   right: 0;
   bottom: 0;
 
-  font-size: 14px;
-  line-height: 19px;
+  padding: 0 33px;
 
+  font-size: 14px;
   font-family: var(--font-in-form);
   font-weight: var(--focus-font-weight);
   color: var(--text-color);
+}
+
+.smallInput:hover {
+  box-shadow: var(--hover-box-shadow);
+}
+
+.smallInput:focus {
+  border-radius: var(--focus-border-radius);
+  background: var(--focus-background-color);
+  text-shadow: none;
 }
 
 .smallInput::placeholder {
@@ -127,9 +118,8 @@
 
 .smallImage {
   position: absolute;
-  top: 14px;
-  bottom: 16px;
-  left: 12px;
+  top: 15px;
+  left: 13px;
   height: 11px;
   width: 11px;
 }

@@ -14,15 +14,17 @@
       method="get"
       data-qa="big"
     >
-      <label for="searchInputBig"></label>
-      <input type="text"
-        id="searchInputBig"
+      <label>
+        <input type="text"
+        name="searchInputBig"
         class="searchInput"
-        name="searchInput"
         placeholder="Try &quot;Los Angeles&quot;"
         data-qa="keypress" required
       >
-      <button type="submit" class="searchIcon"></button>
+      </label>
+      <button type="submit"
+       class="searchIcon">
+      </button>
     </form>
 
     <form
@@ -31,14 +33,16 @@
       method="get"
       data-qa="small"
     >
-      <label for="searchInputSmall"></label>
-      <input type="text"
-        id="searchInputSmall"
+      <label>
+        <input type="text"
+        name="searchInputSmall"
         class="searchInput searchInputSmall"
-        name="searchInput"
         placeholder="Try &quot;Los Angeles&quot;" required
       >
-      <button type="submit" class="searchIcon searchIcon--small"></button>
+      </label>
+      <button type="submit"
+       class="searchIcon searchIcon--small">
+      </button>
     </form>
   </body>
 </html>

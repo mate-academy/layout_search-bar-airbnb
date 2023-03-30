@@ -10,6 +10,14 @@
   src: url(fonts/Avenir-Heavy.ttf);
 }
 
+:root {
+  --main-text-color: #3d4e61;
+}
+
+.html {
+  box-shadow: 0 1px 8px #ecedef
+}
+
 .body {
   margin-top: 0;
 }
@@ -20,13 +28,12 @@
 }
 
 .search-field {
+  color: var(--main-text-color);
   width: 100%;
   height: 70px;
-  background-color: #fff ;
   border-radius: 4px;
   border: solid 1px #e1e7ed;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  font-size: 16px;
+   font-size: 16px;
   font-family: Avenir, sans-serif;
   font-weight: 300px;
   padding-left: 62px;
@@ -40,7 +47,7 @@
 
 .search-field::placeholder {
   font-weight: 300px;
-  color: #3d4e61;
+  color: var(--main-text-color);
   font-size: 16px;
   line-height: 100%;
 }
@@ -85,7 +92,7 @@
 
 .search-field:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  color: #3d4e61;
+  color: var(--main-text-color);
   font-weight: bold;
   outline: none;
 }

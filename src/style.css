@@ -1,19 +1,53 @@
-
-input[type="search"] {
-  border: none;
+@font-face {
+  font-family: 'Avenir';
+  src: url('./fonts/AvenirLight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
 }
 
-input[type="search"]:focus {
+@font-face {
+  font-family: 'AvenirHeavy';
+  src: url('./fonts/AvenirHeavy.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+input[data-qa="big"] {
+  border: none;
+  margin-left: 5px;
+  font-family: AvenirHeavy;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #3d4e61;
+}
+
+input[data-qa="big"]::placeholder {
+  font-family: Avenir;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+  color: #3d4e61;
+}
+
+input[data-qa="big"]:focus {
   outline: none;
+}
+
+.button {
+  border: none;
 }
 
 .inputItemContainer {
   padding: 30px;
-  border: 1px solid gray;
+  border: 1px solid #E1E7ED;
+  border-radius: 4px;
   display: flex;
   align-items: center;
+  height: 70px;
+  background-color: #fff;
 }
 
-.inputImg {
+/* .inputImg {
   border: 1px solid gray;
-}
+} */

@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 300;
+  src: url("fonts/Avenir-Book.ttf");
+}
+
+@font-face {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 900;
+  src: url("fonts/Avenir-Heavy.ttf");
+}
+
+:root {
+  --main-bg-color: #fff;
+  --grey-color-1: #3d4e61;
+  --grey-color-2: #3d4e6133;
+  --border-color: #e1e7ed;
+  --black-color: #00000040;
+  --shadow-color: #3d4e611a;
+  --white-color: #f6f6f7;
+}
+
+html {
+  font-family: "Avenir", sans-serif;
+  font-weight: 300;
+}
+
+.bigContainer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  display: block;
+}
+
+.bigSearchBar {
+  width: 100%;
+  position: relative;
+  padding-left: 62px;
+  height: 70px;
+  background: var(--main-bg-color);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 1px 8px var(--shadow-color);
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.searchIcon-1 {
+  position: absolute;
+  width: 19px;
+  margin-right: 17px;
+  margin-left: 26px;
+  margin-top: 25px;
+  z-index: 1;
+}
+
+.bigSearchBar::placeholder {
+  color: var(--grey-color-1);
+  font-weight: 300;
+}
+
+.bigSearchBar:hover {
+  box-shadow: 0 3px 8px var(--grey-color-2);
+}
+
+.bigSearchBar:focus {
+  background: linear-gradient(180deg,
+  var(--main-bg-color) 0%,
+  var(--white-color) 100%);
+  box-shadow: 0 4px 4px var(--black-color);
+  font-weight: 900;
+  outline: none;
+  color: var(--grey-color-1);
+  text-shadow: 0 4px 4px var(--black-color);
+}
+
+.smallContainer {
+  height: 42px;
+  position: relative;
+}
+
+.smallSearchBar {
+  width: 100%;
+  position: relative;
+  padding-left: 33px;
+  height: 42px;
+  background: var(--main-bg-color);
+  border: 1px solid var(--border-color);
+  filter: drop-shadow(0 1px 8px var(--shadow-color));
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.searchIcon-2 {
+  position: absolute;
+  width: 11px;
+  margin-right: 9px;
+  margin-left: 13px;
+  margin-top: 15px;
+  z-index: 1;
+}
+
+.smallSearchBar::placeholder {
+  color: var(--grey-color-1);
+  font-weight: 300;
+  filter: drop-shadow(0 4px 4px var(--black-color));
+}
+
+.smallSearchBar:hover::placeholder {
+  filter: none;
+}
+
+.smallSearchBar:hover {
+  box-shadow: 0 3px 8px var(--grey-color-2);
+  filter: none;
+}
+
+.smallSearchBar:focus {
+  background: linear-gradient(180deg,
+  var(--main-bg-color) 0%,
+  var(--white-color) 100%);
+  font-weight: 900;
+  outline: none;
+  color: var(--grey-color-1);
+  text-shadow: none;
+  box-shadow: none;
+}

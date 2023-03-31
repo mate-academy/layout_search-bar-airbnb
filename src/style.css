@@ -1,0 +1,100 @@
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+html {
+  font-family: Avenir, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-text-color: #000;
+  --main-border-color: #e1e7ed;
+}
+
+.searchBar {
+  display: block;
+  width: 100%;
+  position: relative;
+  border: 1px solid var(--main-border-color);
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.searchBar-big {
+  height: 70px;
+}
+
+.searchBar-small {
+  height: 42px;
+}
+
+.icon {
+  position: absolute;
+}
+
+.icon-big {
+  width: 19px;
+  height: 19px;
+  left: 25px;
+  top: 24px;
+}
+
+.icon-small {
+  width: 11px;
+  height: 11px;
+  left: 12px;
+  top: 14px;
+}
+
+.field {
+  font-family: inherit;
+  border: none;
+  position: absolute;
+  width: 85%;
+  cursor: inherit;
+}
+
+.field-big {
+  font-size: 16px;
+  font-weight: 300;
+  height: 22px;
+  line-height: 22px;
+  top: 23px;
+  left: 61px;
+}
+
+.field-small {
+  font-size: 14px;
+  font-weight: 400;
+  height: 19px;
+  line-height: 19px;
+  top: 10px;
+  left: 32px;
+}
+
+.field::placeholder {
+  color: #3d4e61;
+}
+
+.searchBar:hover {
+  color: var(--main-text-color);
+}
+
+.searchBar:focus-within {
+  border-radius: 3px;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.field:focus {
+  background: inherit;
+  /* turn off black border */
+  outline: none;
+}

@@ -13,29 +13,27 @@ html {
   --main-border-color: #e1e7ed;
 }
 
-.bar {
+.searchBar {
   display: block;
+  width: 100%;
   box-sizing: border-box;
   position: relative;
-  width: 100%;
   border: 1px solid var(--main-border-color);
   border-radius: 4px;
   background: #fff;
   cursor: pointer;
   margin-top: 20px;
-  /* box-shadow: 0px 1px 8px rgba(61, 78, 97, 0.1); */
 }
 
-.bar-big {
+.searchBar-big {
   height: 70px;
 }
 
-.bar-small {
+.searchBar-small {
   height: 42px;
 }
 
 .icon {
-  float: left;
   position: absolute;
 }
 
@@ -83,12 +81,11 @@ html {
   color: #3d4e61;
 }
 
-.bar:hover {
+.searchBar:hover {
   color: var(--main-text-color);
-  /* box-shadow: 0px 3px 8px rgba(61, 78, 97, 0.2); */
 }
 
-.bar:focus-within {
+.searchBar:focus-within {
   border-radius: 3px;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }

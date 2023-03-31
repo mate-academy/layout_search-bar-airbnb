@@ -28,7 +28,7 @@
   background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
   font-family: "Avenir", sans-serif;
-  outline: 0;
+  outline: none;
 }
 
 .big--bar {
@@ -38,20 +38,21 @@
   background-size: 19px 19px;
   font-weight: 300;
   font-size: 16px;
+  line-height: 22px;
 }
 
 .search--bar:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.search--bar:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border-radius: 3px;
-}
-
 .big--bar::placeholder {
   line-height: 22px;
   color: #3d4e61;
+}
+
+.search--bar:focus {
+  background: url(images/Search.svg) no-repeat 26px 25px, linear-gradient(360deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
 }
 
 .small--bar {
@@ -63,11 +64,14 @@
   font-size: 14px;
 }
 
-.small--bar:focus {
-  font-weight: 900;
-}
-
 .small--bar::placeholder {
   line-height: 20px;
   color: #3d4e61;
+}
+
+.small--bar:focus {
+  font-weight: 900;
+  background: url(images/Search.svg) no-repeat 13px 15px, linear-gradient(360deg, #fff 0%, #f6f6f7 100%);
+  background-size: 11px;
+  border-radius: 3px;
 }

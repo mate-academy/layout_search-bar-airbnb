@@ -13,8 +13,11 @@
   font-weight: 900;
 }
 
-.search--bar {
+* {
   box-sizing: border-box;
+}
+
+.search--bar {
   display: block;
   margin-top: 20px;
   width: 100%;
@@ -25,6 +28,7 @@
   background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
   font-family: "Avenir", sans-serif;
+  outline: 0;
 }
 
 .big--bar {
@@ -46,7 +50,6 @@
 }
 
 .big--bar::placeholder {
-  box-sizing: border-box;
   line-height: 22px;
   color: #3d4e61;
 }
@@ -65,7 +68,6 @@
 }
 
 .small--bar::placeholder {
-  box-sizing: border-box;
   line-height: 20px;
   color: #3d4e61;
 }

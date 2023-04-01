@@ -11,28 +11,44 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="http://localhost:8080/"
-    method="post"
-    class="bar-form"
-    name="bar-form">
-      <div class="big-field" data-qa="big">
-        <input type="text"
-          class="big-search-bar"
+    <form
+     action="http://localhost:8080/"
+     method="post"
+     class="bar-form"
+     name="bar-form"
+    >
+      <div
+       class="field"
+       data-qa="big"
+      >
+        <input
+          type="text"
+          class="search-bar"
           data-qa="keypress"
-          name="fist-field"
-          placeholder="Try &#34Los Angeles&#34">
-        <img src="./images/Search.svg"
-        alt="image"
-        class="big-image">
+          name="first-field"
+          placeholder="Try &#34Los Angeles&#34"
+        >
+        <img
+         src="./images/Search.svg"
+         alt="image"
+         class="image"
+        >
       </div>
-      <div class="small-field" data-qa="small">
-        <input type="text"
-          class="small-search-bar"
-          name="fist-field"
-          placeholder="Try &#34Los Angeles&#34">
-        <img src="./images/Search.svg"
-        alt="image"
-        class="small-image">
+      <div
+       class="field small-field"
+       data-qa="small"
+      >
+        <input
+         type="text"
+         class="search-bar small-search-bar"
+         name="second-field"
+         placeholder="Try &#34Los Angeles&#34"
+        >
+        <img
+         src="./images/Search.svg"
+         alt="image-small"
+         class="image image-small"
+        >
       </div>
     </form>
   </body>

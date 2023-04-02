@@ -17,7 +17,7 @@
   font-weight: 800;
 }
 
-body {
+:root {
   --border-color: #e1e7ed;
   --border-radius: 4px;
   --font-family: "Avenir", serif;
@@ -27,13 +27,10 @@ body {
 .searchBar {
   position: relative;
   margin-top: 20px;
-}
-
-.largeSearchBar {
   height: 70px;
 }
 
-.smallSearchBar {
+.searchBar--small {
   height: 42px;
 }
 
@@ -49,15 +46,12 @@ body {
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-}
-
-.largeSearchBar__input {
   padding-left: 62px;
   font-size: 16px;
   line-height: 22px;
 }
 
-.smallSearchBar__input {
+.searchBar--small__input {
   padding-left: 33px;
   font-size: 14px;
   line-height: 19px;
@@ -86,24 +80,21 @@ body {
   border: 0;
   background-color: transparent;
   cursor: pointer;
-}
-
-.largeSearchBar__button {
   padding-left: 26px;
   padding-right: 17px;
 }
 
-.smallSearchBar__button {
+.searchBar--small__button {
   padding-left: 13px;
   padding-right: 9px;
 }
 
-.largeSearchBar__img {
+.searchBar__img {
   height: 19px;
   width: 19px;
 }
 
-.smallSearchBar__img {
+.searchBar--small__img {
   height: 11px;
   width: 11px;
 }

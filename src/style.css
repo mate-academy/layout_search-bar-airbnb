@@ -19,6 +19,10 @@
   font-weight: 300;
 }
 
+html {
+  font-family: Avenir, sans-serif;
+}
+
 body {
   margin-top: 20px;
 }
@@ -34,17 +38,16 @@ body {
   height: 66px;
   width: calc(100% - 62px);
   padding-left: 62px;
-}
-
-.input,
-.input:hover,
-.input:focus,
-.input::placeholder {
-  font-family: Avenir, sans-serif;
+  font-family: inherit;
   color: #3d4e61;
   background-image: url("./images/Search.svg");
   background-repeat: no-repeat;
   background-position: left 26px bottom 25px;
+}
+
+.input::placeholder {
+  font-family: inherit;
+  color: #3d4e61;
 }
 
 .input:hover {
@@ -56,8 +59,18 @@ body {
 
 .input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border: 1px solid #e1e7ed;
+  border: 1px solid hsl(210, 25%, 91%);
   border-radius: 3px;
+  outline: none;
+}
+
+.input:hover,
+.input:focus {
+  font-family: inherit;
+  color: #3d4e61;
+  background-image: url("./images/Search.svg");
+  background-repeat: no-repeat;
+  background-position: left 26px bottom 25px;
 }
 
 .input-small {
@@ -67,9 +80,10 @@ body {
   height: 38px;
   width: calc(100% - 33px);
   padding-left: 33px;
+  background-position: left 12px bottom 15px;
+  background-size: 11px 11px;
 }
 
-.input-small,
 .input-small:hover,
 .input-small:focus {
   background-position: left 12px bottom 15px;

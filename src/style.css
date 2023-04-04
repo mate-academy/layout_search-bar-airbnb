@@ -16,6 +16,10 @@
   font-weight: 300;
 }
 
+.html {
+  font-family: Avenir, sans-serif;
+}
+
 .label.searchbar {
   width: 100%;
   height: 70px;
@@ -32,14 +36,23 @@
   margin-top: 20px;
 }
 
-.icon--big {
+.icon {
   position: absolute;
+  z-index: 1;
+}
+
+.icon--big {
   width: 19px;
   height: 19px;
   top: 25px;
   left: 26px;
-  z-index: 1;
+}
 
+.icon--small {
+  width: 11px;
+  height: 11px;
+  top: 15px;
+  left: 13px;
 }
 
 .input--big {
@@ -50,9 +63,8 @@
   font-family: Avenir, sans-serif;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 400;
   color: #3d4e61;
-  border: hidden;
+  border: none;
 }
 
 .searchbar--small {
@@ -66,15 +78,6 @@
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
 }
 
-.icon--small {
-  position: absolute;
-  width: 11px;
-  height: 11px;
-  top: 15px;
-  left: 13px;
-  z-index: 1;
-}
-
 .input--small {
   position: absolute;
   text-indent: 33px;
@@ -83,7 +86,6 @@
   font-family: Avenir, sans-serif;
   font-size: 14px;
   line-height: 19px;
-  font-weight: 400;
   color: #3d4e61;
   border: none;
 }
@@ -96,7 +98,8 @@
   outline: none;
 }
 
-.searchbar--big:focus {
+.searchbar--big:focus,
+.searchbar--small:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
   border: hidden;
@@ -105,11 +108,6 @@
 
 .searchbar--small:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-}
-
-.searchbar--small:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border-radius: 3px;
 }
 
 input:focus {
@@ -124,7 +122,6 @@ input:focus {
   font-style: normal;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 400;
   color: #3d4e61;
 }
 
@@ -133,6 +130,5 @@ input:focus {
   font-style: normal;
   font-size: 14px;
   line-height: 19px;
-  font-weight: 400;
   color: #3d4e61;
 }

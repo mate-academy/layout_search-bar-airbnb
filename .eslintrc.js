@@ -1,3 +1,14 @@
 module.exports = {
-  extends: '@mate-academy/eslint-config',
-};
+    "env": {
+        "browser": true,
+    },
+    "extends": "eslint:recommended",
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {
+    }
+}

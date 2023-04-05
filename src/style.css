@@ -20,18 +20,24 @@
   font-family: Avenir, sans-serif;
 }
 
-.searchbar--big {
+/* styles of searchbars */
+.searchbar {
   position: relative;
   width: 100%;
   background: #fff;
   margin-top: 20px;
 }
 
-.icon {
-  position: absolute;
+.searchbar--small {
+  margin-top: 20px;
+  width: 100%;
+  height: 42px;
+  background: #fff;
 }
 
-.icon--big {
+/* styles of icons */
+.icon {
+  position: absolute;
   width: 19px;
   height: 19px;
   top: 25px;
@@ -45,7 +51,8 @@
   left: 13px;
 }
 
-.input--big {
+/* styles of inputs */
+.input {
   text-indent: 62px;
   height: 70px;
   width: 100%;
@@ -58,54 +65,37 @@
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
 }
 
-.searchbar--small {
-  position: relative;
-  margin-top: 20px;
-  width: 100%;
-  height: 42px;
-  background: #fff;
-}
-
 .input--small {
   text-indent: 33px;
   height: 42px;
-  width: 100%;
-  font-family: Avenir, sans-serif;
   font-size: 14px;
   line-height: 19px;
-  color: #3d4e61;
-  border-radius: 4px;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
 }
 
 /* styles for pseudo classes */
-
-.searchbar--big:hover {
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-  border: hidden;
-  outline: none;
-}
-
-.searchbar--big:focus,
-.searchbar--small:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border-radius: 3px;
-  outline: none;
-}
-
+.searchbar:hover,
 .searchbar--small:hover {
+  outline: none;
+  border: hidden;
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-input:focus {
+.searchbar:focus,
+.searchbar--small:focus {
   outline: none;
-  font-weight: 900;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.input:focus,
+.input--small:focus {
+  outline: none;
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
 }
 
 /* styles for placeholders */
-
-.input--big::placeholder {
+.input::placeholder {
   font-family: Avenir, sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -113,8 +103,6 @@ input:focus {
 }
 
 .input--small::placeholder {
-  font-family: Avenir, sans-serif;
   font-size: 14px;
   line-height: 19px;
-  color: #3d4e61;
 }

@@ -11,40 +11,42 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div class="bigSearch">
-      <div class="icon1">
-        <img src="images/Search.svg" alt="searchIcon">
-      </div>
-      <form
-        data-qa="big"
-        action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-        method="post">
+    <form
+      data-qa="big"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+    >
+      <label class="search">
+        <img
+          src="images/Search.svg"
+          alt="searchIcon"
+          class="icon1"
+        >
         <input
           type="text"
           data-qa="keypress"
           class="searchbar1"
-          placeholder="Try &quot Los Angeles &quot">
-      </form>
-    </div>
-
-    <div class="smallSearch">
-      <div >
+          placeholder="Try &quot;Los Angeles&quot"
+        >
+      </label>
+    </form>
+    <form
+      data-qa="small"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+    >
+      <label class="search search--small">
         <img
           src="images/Search.svg"
           alt="searchIcon"
           class="icon2"
         >
-      </div>
-      <form
-        data-qa="small"
-        action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-        method="post">
         <input
           type="text"
           class="searchbar2"
-          placeholder="Try &quot Los Angeles &quot"
+          placeholder="Try &quot;Los Angeles&quot"
         >
-      </form>
-    </div>
+      </label>
+    </form>
   </body>
 </html>

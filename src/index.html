@@ -14,12 +14,13 @@
     <!-- <h1>Search bar airbnb</h1> -->
     <div class="search-bar-big">
       <div class="search-container-big">
-        <form id="big" 
+        <form data-qa="big"
         action="https://localhost:3000/api" 
         method="post" >
           <div class="search-image">
             <label for = "keypress"></label>
             <input id="keypress" 
+            data-qa="keypress"
             class="search-field-big" 
             type="text" name="search" 
             placeholder="Try &quot;Los Angeles&quot;">
@@ -29,7 +30,7 @@
     </div>
     <div class="search-bar-small">
       <div class="search-container-small">
-        <form id="small" 
+        <form data-qa="small"
         action="https://localhost:3000/api" 
         method="post" >
           <div class="search-image-small">

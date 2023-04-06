@@ -12,35 +12,35 @@
   </head>
   <body>
     <form
-      action="#"
-      method="post"
       class="search_bar"
+      method="get"
+      action="#"
       data-qa="big"
     >
-      <label for="search--label-1"></label>
-      <input
-        id="search--label-1"
-        class="search_input"
-        type="text"
-        data-qa="keypress"
-        placeholder="Try &quot;Los Angeles&quot;"
-      >
-
+      <label class="search--label">
+        <input
+          class="search_input"
+          type="search"
+          data-qa="keypress"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
     </form>
 
     <form
-      action="#"
-      method="post"
       class="search_bar"
+      method="get"
+      action="#"
       data-qa="small"
     >
-      <label for="search--label-2"></label>
-      <input
-        id="search--label-2"
-        type="text"
-        class="search_input search_input_small"
-        placeholder="Try &quot;Los Angeles&quot;"
-      >
+      <label class="search--label search--label-small">
+        <input
+          class="search_input search_input_small"
+          type="search"
+          data-qa="keypress"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
     </form>
   </body>
 </html>

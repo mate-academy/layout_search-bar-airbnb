@@ -16,7 +16,7 @@
   font-weight: 700;
 }
 
-.html {
+body {
   font-family: Avenir, sans-serif;
 }
 
@@ -53,10 +53,10 @@
 
 /* styles of inputs */
 .input {
+  font-family: Avenir, sans-serif;
   text-indent: 62px;
   height: 70px;
   width: 100%;
-  font-family: Avenir, sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #3d4e61;
@@ -87,13 +87,9 @@
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
-/* when I make bold in below with font-weight 900 then focus into
-input, placeholder text turns to bold as well.
-I couldn't understand clearly from Figma... */
 .input:focus,
 .input--small:focus {
   outline: none;
-  font-family: Avenir, sans-serif;
   font-weight: 900;
 }
 
@@ -101,6 +97,7 @@ I couldn't understand clearly from Figma... */
 .input::placeholder {
   font-family: Avenir, sans-serif;
   font-size: 16px;
+  font-weight: 300;
   line-height: 22px;
   color: #3d4e61;
 }

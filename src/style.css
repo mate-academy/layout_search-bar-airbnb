@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(./fonts/Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url(./fonts/Avenir-Heavy.ttf);
+  font-style: normal;
+  font-weight: 800;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Avenir", sans-serif;
+  --input-primary-color: #ffff;
+  --input-secondary-color: #f6f6f7;
+  --border-color: #e1e7ed;
+  --shadow-standart: #3d4e611a;
+  --shadow-hover: #3d4e6133;
+  --text-color: #3d4e61;
+}
+
+.heading {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.search-form {
+  position: relative;
+  margin: 20px 0;
+}
+
+.search-bar {
+  box-sizing: border-box;
+  font-family: inherit;
+  width: 100%;
+  height: 70px;
+  padding-left: 62px;
+  color: var(--text-color);
+  background-color: var(--input-primary-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  box-shadow: 0 1px 8px var(--shadow-standart);
+  font-size: medium;
+}
+
+.search-bar--small {
+  padding-left: 33px;
+  font-size: 14px;
+  height: 42px;
+}
+
+.search-bar:hover {
+  box-shadow: 0 3px 8px var(--shadow-hover);
+}
+
+.search-bar:focus {
+  outline: none;
+  background: linear-gradient(
+    180deg,
+    var(--input-primary-color) 0%,
+    var(--input-secondary-color) 100%
+  );
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  font-weight: 800;
+}
+
+::placeholder {
+  font-weight: 300;
+}
+
+.search-bar[type="search"]::-webkit-search-decoration,
+.search-bar[type="search"]::-webkit-search-cancel-button,
+.search-bar[type="search"]::-webkit-search-results-button,
+.search-bar[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+.search-icon {
+  position: absolute;
+  width: 19px;
+  top: 25px;
+  left: 26px;
+}
+
+.search-icon--small {
+  position: absolute;
+  width: 11px;
+  top: 15px;
+  left: 13px;
+}

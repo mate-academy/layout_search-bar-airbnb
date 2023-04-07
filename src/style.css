@@ -14,6 +14,9 @@
 
 * {
   box-sizing: border-box;
+}
+
+body {
   font-family: "Avenir", sans-serif;
 }
 
@@ -41,8 +44,11 @@
   background: transparent;
   flex: 1;
   border: 0;
-  margin-left: 17px;
-  height: 22px;
+  width: 100%;
+  height: 100%;
+  padding-left: 18px;
+  font-size: 16px;
+  line-height: 22px;
   outline: none;
 }
 
@@ -57,9 +63,7 @@
 .smallImg {
   height: 11px;
   width: 11px;
-  margin-top: 15px;
-  margin-bottom: 16px;
-  margin-left: 13px;
+  margin: 15px auto 16px 12px;
 }
 
 .smallBar {
@@ -83,28 +87,33 @@
   flex: 1;
   border: 0;
   outline: none;
-  height: 20px;
-  margin-left: 8px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 9px;
+  padding-bottom: 3px;
 }
 
 .inputSearchSmall::placeholder {
+  font-family: "Avenir", sans-serif;
   font-size: 14px;
   color: #3d4e61;
 }
 
 .inputSearchBig::placeholder {
+  font-family: "Avenir", sans-serif;
   font-size: 16px;
   color: #3d4e61;
 }
 
 .inputSearchSmall:focus::placeholder {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  font-family: "AvenirHeavy", sans-serif;
   font-weight: 900;
-  font-style: normal;
 }
 
 .inputSearchBig:focus::placeholder {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  font-family: "AvenirHeavy", sans-serif;
   font-weight: 900;
-  font-style: normal;
 }

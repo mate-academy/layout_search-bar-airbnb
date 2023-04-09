@@ -2,52 +2,41 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, 
-      maximum-scale=1.0, minimum-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bars</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div class="search-container">
-      <form 
-        class="search-box" 
-        data-qa="big"
-      >
-        <label for="search-input"></label>
+    <form class="search-bar big" data-qa="big">
+      <div class="input-container">
+        <label for="search-input-big"></label>
         <input 
-          type="text" 
-          id="search-input" 
-          class="search-input" 
-          placeholder="Try &quot;Los Angeles&quot;"
-          data-qa="keypress"
+        type="text" 
+        id="search-input-big" 
+        placeholder="Try &quot;Los Angles &quot;" 
+        class="search-input" 
+        data-qa="keypress"
         >
-      </form>
-    </div>
-
-    <div class="search-container">
-      <form 
-        class="search-box-small" 
-        data-qa="small"
-      >
+        <img src="./images/search.svg" alt="Search Icon" class="search-icon big">
+      </div>
+    </form>
+    <form class="search-bar small" data-qa="small">
+      <div class="input-container">
         <label for="search-input-small"></label>
         <input 
-          type="text"
-          id="search-input-small"  
-          class="search-input-small, search-box input, search-box-small input" 
-          placeholder="Try &quot;Los Angeles&quot;"
+        type="text" 
+        id="search-input-small" 
+        placeholder="Try &quot;Los Angles &quot;" 
+        class="search-input"
         >
-        
-        <label for="search-box"></label>
-        <label for="search-box-small"></label>
-        <label for="search-box, search-box-small"></label>
-        <input type="text" id="search-box" 
-        class= "search-box, search-box-small"
-        >
-      </form>
-    </div> 
+        <img src="./images/search.svg" alt="Search Icon" class="search-icon small">
+      </div>
+    </form>
   </body>
 </html>
+
+
+
+
+

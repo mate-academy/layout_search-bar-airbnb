@@ -6,7 +6,7 @@
 }
 
 @font-face {
-  font-family: "AvenirHeavy";
+  font-family: "Avenir", sans-serif;
   src: url(./fonts/Avenir-Heavy.ttf);
   font-style: normal;
   font-weight: 900;
@@ -20,7 +20,7 @@ body {
   font-family: "Avenir", sans-serif;
 }
 
-.bigImg {
+.icon {
   margin-top: 25px;
   margin-bottom: 26px;
   margin-left: 25px;
@@ -42,6 +42,7 @@ body {
 
 .inputSearchBig {
   background: transparent;
+  font-family: inherit;
   flex: 1;
   border: 0;
   width: 100%;
@@ -60,7 +61,7 @@ body {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
-.smallImg {
+.icon--small {
   height: 11px;
   width: 11px;
   margin: 15px auto 16px 12px;
@@ -83,6 +84,7 @@ body {
 }
 
 .inputSearchSmall {
+  font-family: inherit;
   background: transparent;
   flex: 1;
   border: 0;
@@ -91,29 +93,24 @@ body {
   font-size: 14px;
   line-height: 20px;
   margin-left: 9px;
-  padding-bottom: 3px;
 }
 
 .inputSearchSmall::placeholder {
-  font-family: "Avenir", sans-serif;
   font-size: 14px;
   color: #3d4e61;
 }
 
 .inputSearchBig::placeholder {
-  font-family: "Avenir", sans-serif;
   font-size: 16px;
   color: #3d4e61;
 }
 
 .inputSearchSmall:focus::placeholder {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  font-family: "AvenirHeavy", sans-serif;
   font-weight: 900;
 }
 
 .inputSearchBig:focus::placeholder {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  font-family: "AvenirHeavy", sans-serif;
   font-weight: 900;
 }

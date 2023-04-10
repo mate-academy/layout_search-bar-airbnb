@@ -16,6 +16,10 @@
   font-style: normal;
 }
 
+:root {
+  --serch-color: #3d4e61;
+}
+
 html {
   font-family: "Avenir-Book", "Avenir-Heavy", sans-serif;
 }
@@ -32,7 +36,7 @@ html {
   border-radius: 4px;
   font-family: inherit;
   font-weight: 900;
-  color: #3d4e61;
+  color: var(--serch-color);
   height: 70px;
   font-size: 16px;
   line-height: 22px;
@@ -46,19 +50,19 @@ html {
   top: 25px;
 }
 
+.search--small {
+  height: 42px;
+  font-size: 14px;
+  line-height: 19px;
+  padding-left: 33px;
+}
+
 .icon--small {
   position: absolute;
   left: 13px;
   top: 15px;
   height: 11px;
   width: 11px;
-}
-
-.smallSearch {
-  height: 42px;
-  font-size: 14px;
-  line-height: 19px;
-  padding-left: 33px;
 }
 
 .search:hover {
@@ -72,6 +76,6 @@ html {
 
 .search::placeholder {
   font-family: inherit;
-  color: inherit;
+  color: var(--serch-color);
   font-weight: 300;
 }

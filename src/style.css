@@ -1,0 +1,107 @@
+@font-face {
+  font-family: Avenir;
+  font-weight: 300;
+  src: url(fonts/Avenir-Book.ttf);
+}
+@font-face {
+  font-family: Avenir;
+  font-weight: 900;
+  src: url(fonts/Avenir-Heavy.ttf);
+}
+
+* {
+  font-family: "Avenir", sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+.bigSearchField {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  border-radius: 4px;
+  font-weight: 900;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  border: 1px solid rgba(225, 231, 237, 1);
+  color: rgba(61, 78, 97, 1);
+}
+
+.shell {
+  position: relative;
+}
+
+.img {
+  position: absolute;
+}
+
+.shell .img {
+  top: 25px;
+  left: 26px;
+  height: 19px;
+  width: 19px;
+}
+
+.smallSearchInputShell .img {
+  top: 15px;
+  left: 13px;
+  height: 11px;
+  width: 11px;
+}
+
+.input {
+  height: 70px;
+  line-height: 22px;
+  font-size: 16px;
+  padding-left: 62px;
+}
+
+.input:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.input:focus {
+  box-shadow: 0 3px 8px 0 rgba(97, 61, 62, 0.2);
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  outline: none;
+}
+
+.smallSearchInput {
+  height: 42px;
+  line-height: 19px;
+  font-size: 14px;
+  padding-left: 33px;
+}
+
+.input::placeholder {
+  color: rgba(61, 78, 97, 1);
+  font-weight: 300;
+  position: relative;
+  text-shadow: none;
+}
+
+.smallSearchInput::placeholder {
+  font-weight: 300;
+  /* text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+   - small bars in the mockup had text-shadow
+    but in test it hadn`t text-shadow*/
+}
+
+.smallSearchInput:hover::placeholder {
+  text-shadow: none;
+}
+
+.smallSearchInput:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.smallSearchInput:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+  box-shadow: none;
+  outline: none;
+}

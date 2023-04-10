@@ -11,22 +11,12 @@
 
 * {
   font-family: "Avenir", sans-serif;
-  font-weight: 300;
   box-sizing: border-box;
 }
 
-.bigSearchField {
+.big-search-field {
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-input {
-  width: 100%;
-  border-radius: 4px;
-  font-weight: 900;
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
-  border: 1px solid rgba(225, 231, 237, 1);
-  color: rgba(61, 78, 97, 1);
 }
 
 .shell {
@@ -44,7 +34,7 @@ input {
   width: 19px;
 }
 
-.smallSearchInputShell .img {
+.small-search-input-shell .img {
   top: 15px;
   left: 13px;
   height: 11px;
@@ -52,10 +42,17 @@ input {
 }
 
 .input {
+  width: 100%;
   height: 70px;
-  line-height: 22px;
-  font-size: 16px;
   padding-left: 62px;
+  color: rgba(61, 78, 97, 1);
+  font-size: 16px;
+  font-weight: 900;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  line-height: 22px;
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
 }
 
 .input:hover {
@@ -66,42 +63,23 @@ input {
   box-shadow: 0 3px 8px 0 rgba(97, 61, 62, 0.2);
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   outline: none;
 }
 
-.smallSearchInput {
+.input::placeholder {
+  font-weight: 300;
+  text-shadow: none;
+}
+
+.small-search-input {
   height: 42px;
   line-height: 19px;
   font-size: 14px;
   padding-left: 33px;
-}
-
-.input::placeholder {
-  color: rgba(61, 78, 97, 1);
-  font-weight: 300;
-  position: relative;
   text-shadow: none;
 }
 
-.smallSearchInput::placeholder {
-  font-weight: 300;
-  /* text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-   - small bars in the mockup had text-shadow
-    but in test it hadn`t text-shadow*/
-}
-
-.smallSearchInput:hover::placeholder {
-  text-shadow: none;
-}
-
-.smallSearchInput:hover {
-  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
-}
-
-.smallSearchInput:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+.small-search-input:focus {
   border-radius: 3px;
   box-shadow: none;
-  outline: none;
 }

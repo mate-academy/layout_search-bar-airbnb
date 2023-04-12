@@ -12,23 +12,25 @@
   </head>
   <body>
     <form 
+      class="big"
       action="#" 
       method="get" 
       data-qa="big"
     >
-      <div class="search-box">
+      <label class="search-box">
         <img 
           class="search" 
           src="./images/Search.svg" 
-          alt="#"
+          alt="search-icon"
         >
         <input 
+         name="big"
          type="text" 
          class="input" 
          placeholder="Try “Los Angeles”"
          data-qa="keypress"
         >
-      </div>
+      </label>
     </form>
 
     <form 
@@ -36,18 +38,19 @@
       method="get" 
       data-qa="small"
     >
-      <div class="search-box small">
+      <label class="search-box small">
         <img 
           class="search-small" 
           src="./images/Search.svg" 
-          alt="#"
+          alt="search-icon-small"
         >
-        <input 
+        <input
+         name="small"
          type="text" 
          class="input-small" 
          placeholder="Try “Los Angeles”"
         >
-      </div>
+      </label>
     </form>
   </body>
 </html>

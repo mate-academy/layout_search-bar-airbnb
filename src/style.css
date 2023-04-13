@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Avenir-Book";
   src: url("fonts/Avenir-Book.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -17,28 +17,23 @@
   margin-top: 20px;
 }
 
-.big {
-  height: 66px;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 22px;
-}
-
-.small {
-  height: 38px;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 19px;
-}
-
 .form-field {
   font-family: "Avenir-Heavy", sans-serif;
   color: #3d4e61;
   width: 100%;
+  height: 66px;
+  font-size: 16px;
+  line-height: 22px;
   background: #fff;
   border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   border-radius: 4px;
+}
+
+.small {
+  height: 38px;
+  font-size: 14px;
+  line-height: 19px;
 }
 
 .form-field:hover {
@@ -52,31 +47,12 @@
 }
 
 .form-field::placeholder {
-  position: absolute;
   font-family: "Avenir-Book", sans-serif;
   color: #3d4e61;
 }
 
-.big::placeholder {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 22px;
-  margin-top: 20px;
-}
-
-.small::placeholder {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 19px;
-  margin-top: 12px;
-}
-
 .icon {
   position: absolute;
-}
-
-.large {
   top: 25px;
   left: 26px;
 }
@@ -88,7 +64,7 @@
   left: 13px;
 }
 
-input.big[type="text"] {
+input[type="text"] {
   text-indent: 62px;
 }
 

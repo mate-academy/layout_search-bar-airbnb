@@ -1,19 +1,20 @@
-/* stylelint-disable font-family-no-missing-generic-family-keyword */
-
 @font-face {
-  font-family: "DefaultHover";
-  src: url(fonts/Avenir-Book.ttf);
+  font-family: "Avenir-Book";
+  src: url(./fonts/Avenir-Book.ttf);
   font-weight: 300px;
 }
 
 @font-face {
-  font-family: "focus";
-  src: url(fonts/Avenir-Heavy.ttf);
+  font-family: "Avenir";
+  src: url(./fonts/Avenir-Heavy.ttf);
   font-weight: 300px;
+}
+
+.form {
+  position: relative;
 }
 
 .form_big {
-  position: relative;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -38,7 +39,7 @@
 }
 
 .input::placeholder {
-  font-family: "DefaultHover";
+  font-family: Avenir-Book, sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #3d4e61;
@@ -52,15 +53,11 @@
 }
 
 .input:focus {
-  font-family: "focus";
+  font-family: Avenir, sans-serif;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
   border-radius: 3px;
   outline: none;
-}
-
-.form {
-  position: relative;
 }
 
 .icon--small {

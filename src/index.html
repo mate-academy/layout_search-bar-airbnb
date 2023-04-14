@@ -11,35 +11,42 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
+    <form action="#"
+    method="get"
+    data-qa="big"
+    class="big-search-field"
+    >
+      <div class="shell">
+        <img
+        class="img"
+        src="images/Search.svg"
+        alt="search-icon-big">
+        <label>
+          <input
+          name="bigSearchInput"
+          type="text"
+          placeholder="Try &quot;Los Angeles&quot;"
+          class="input"
+          data-qa="keypress"
+        >
+        </label>
+      </div>
+    </form>
     <form
     action="#"
     method="get"
-    data-qa="big"
-    class="form-field">
-      <label>
-        <input
-        type="search"
-        class="bar-input bar-input-large"
-        placeholder="Try &quot;Los Angeles&quot;"
-        data-qa="keypress">
-
-        <img class="icon icon-large" src="./images/Search.svg" alt="search">
-      </label> 
-    </form>
-
-    <form action="#"
-    method="get"
     data-qa="small"
-    class="form-field">
-      <label>
-        <input
-        type="search"
-        class="bar-input bar-input-small"
-        placeholder="Try &quot;Los Angeles&quot;">
-
-        <img class="icon icon-small" src="./images/Search.svg" alt="search">
-      </label>
-
+    class="small-search-field">
+      <div class="shell small-search-input-shell">
+        <img class="img" src="images/Search.svg" alt="search-icon-small">
+        <label>
+          <input
+          name="smallSearchInput"
+          type="text"
+          placeholder="Try &quot;Los Angeles&quot;"
+          class="small-search-input input">
+        </label>
+      </div>
     </form>
   </body>
 </html>

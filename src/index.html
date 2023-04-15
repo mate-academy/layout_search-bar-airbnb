@@ -10,54 +10,45 @@
   </head>
 
   <body>
-    <div class="container">
-      <form
-        class="form"
-        action="/"
-        method="get"
-        data-qa="big"
+    <form
+      class="form"
+      action="/"
+      method="get"
+      data-qa="big"
+    >
+      <img
+        src="images/Search.svg" alt="magnifying"
+        class="icon"
       >
-        <label for="icon" class="icon">
-          <img
-            src="images/Search.svg" alt="magnifying"
-            class="image"
-          >
-        </label>
-        <input
-          id="icon"
-          class="input"
-          type="text"
-          name="Search"
-          placeholder="Try &quot;Los Angeles&quot;"
-          data-qa="keypress"
-        >
-      </form>
-    </div>
-    <div class="container-small comtainer">
-      <form
-        action="/"
-        method="get"
-        data-qa="small"
-        class="form--small form"
+      <input
+        id="icon"
+        class="input"
+        type="text"
+        name="Search"
+        placeholder="Try &quot;Los Angeles&quot;"
+        data-qa="keypress"
       >
-        <label
-          for="icon--small"
-          class="icon--small icon"
-          >
-          <img
-            id="icon--small"
-            src="images/Search.svg"
-            alt="magnifying"
-            class="image--small"
-          >
-        </label>
-        <input
-          class="input input--small"
-          type="text"
-          name="Search"
-          placeholder="Try &quot;Los Angeles&quot;" data-qa="keypress">
-      </form>
-    </div>
+    </form>
+
+    <form
+      action="/"
+      method="get"
+      data-qa="small"
+      class="form--small form"
+    >
+      <img
+        id="icon--small"
+        src="images/Search.svg"
+        alt="magnifying"
+        class="icon icon--small "
+      >
+      <input
+        class="input input--small"
+        type="text"
+        name="Search"
+        placeholder="Try &quot;Los Angeles&quot;" data-qa="keypress">
+    </form>
+    
   </body>
 
 </html>

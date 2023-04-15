@@ -17,12 +17,14 @@
         method="get"
         data-qa="big"
       >
-        <img
-          src="images/Search.svg" alt="magnifying"
-          class="image"
-        >
-        
+        <label for="icon" class="icon">
+          <img
+            src="images/Search.svg" alt="magnifying"
+            class="image"
+          >
+        </label>
         <input
+          id="icon"
           class="input"
           type="text"
           name="Search"
@@ -31,7 +33,6 @@
         >
       </form>
     </div>
-
     <div class="container-small comtainer">
       <form
         action="/"
@@ -39,11 +40,17 @@
         data-qa="small"
         class="form--small form"
       >
-        <img
-          src="images/Search.svg"
-          alt="magnifying"
-          class="image image--small"
-        >
+        <label
+          for="icon--small"
+          class="icon--small icon"
+          >
+          <img
+            id="icon--small"
+            src="images/Search.svg"
+            alt="magnifying"
+            class="image--small"
+          >
+        </label>
         <input
           class="input input--small"
           type="text"
@@ -51,9 +58,6 @@
           placeholder="Try &quot;Los Angeles&quot;" data-qa="keypress">
       </form>
     </div>
-
-
-
   </body>
 
 </html>

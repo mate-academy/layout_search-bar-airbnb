@@ -26,7 +26,7 @@ body {
   position: absolute;
   display: block;
   color: #687c94;
-  padding-left: 26px ;
+  padding-left: 26px;
   text-align: center;
 }
 
@@ -45,24 +45,23 @@ body {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.form:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border-radius: 3px;
-}
-
 .input {
   width: 100%;
   border: 0;
   outline: none;
   font-family: inherit;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 68px;
   color: #3d4e61;
   padding-left: 62px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .input:focus {
   font-weight: 800;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
 }
 
 .input::placeholder {
@@ -80,16 +79,6 @@ body {
   height: 42px;
 }
 
-.form--small:hover {
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-}
-
-.form--small:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border-radius: 3px;
-
-}
-
 .input--small {
   padding-top: 10px;
   padding-bottom: 8px;
@@ -99,11 +88,9 @@ body {
   color: #3d4e61;
 }
 
-.input--small:hover {
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-}
-
 .input--small:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
   font-weight: 800;
   line-height: 19px;
   color: #3d4e61;

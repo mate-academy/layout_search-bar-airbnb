@@ -17,7 +17,7 @@
 
 body {
   margin-top: 20px;
-  font-family: inherit;
+  font-family: "Avenir", sans-serif;
 }
 
 * {
@@ -52,12 +52,15 @@ body {
   top: 0;
   bottom: -16px;
 
-  font-family: "Avenir", sans-serif;
+  font-family: inherit;
   font-style: normal;
-  font-weight: 300;
   font-size: 16px;
   line-height: 22px;
   color: #3d4d61;
+}
+
+.input-big::placeholder:focus {
+  font-weight: 900;
 }
 
 .big-icon {
@@ -96,12 +99,15 @@ body {
   top: 0;
   bottom: 6px;
 
-  font-family: "Avenir", sans-serif;
+  font-family: inherit;
   font-style: normal;
-  font-weight: 300;
   font-size: 14px;
   line-height: 19px;
   color: #3d4e61;
+}
+
+.input-small::placeholder:focus {
+  font-weight: 900;
 }
 
 .small-icon {

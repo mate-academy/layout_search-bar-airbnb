@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: "Avenir";
+  font-weight: 700;
+  src: url(fonts/Avenir-Heavy.ttf);
+}
+
+html {
+  font-family: inherit;
+}
+
+form {
+  margin: 20px 0;
+}
+
+.searh-bar-big {
+  width: 100%;
+  height: 70px;
+  font-weight: 300;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+  padding: 0 62px;
+}
+
+.searh-bar-big::placeholder {
+  font-size: 16px;
+  line-height: 22px;
+  color: #3d4e61;
+}
+
+.searh-bar-big:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.searh-bar-big:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+  font-weight: 300;
+}
+
+.searh-bar-small {
+  width: 100%;
+  height: 42px;
+  background: #fff;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+  padding: 0 33px;
+}
+
+.searh-bar-small:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.searh-bar-small:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+}
+
+.searh-bar-small::placeholder {
+  font-size: 14px;
+  line-height: 19px;
+  color: #3d4e61;
+}
+
+.label-class-big {
+  position: relative;
+}
+
+.label-class-big::before {
+  content: "";
+  background-image: url("images/Search.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: 26px;
+  top: 0;
+}
+
+.label-class-small {
+  position: relative;
+}
+
+.label-class-small::before {
+  content: "";
+  background-image: url("images/Search.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  left: 13px;
+  top: 0;
+}

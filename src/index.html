@@ -26,13 +26,15 @@
             alt="Search logo"
           >
         </div>
-        <input
-          class="search-input"
-          type="text"
-          name="search-input"
-          placeholder="Try &quot;Los Angeles&quot;"
-          data-qa="keypress"
-        >
+        <div class="div-input">
+          <input
+            class="search-input"
+            type="text"
+            name="search-input"
+            placeholder="Try &quot;Los Angeles&quot;"
+            data-qa="keypress"
+          >
+        </div>
       </div>
     </form>
 
@@ -43,16 +45,22 @@
       data-qa="small"
     >
       <div class="search-box search-box--small">
-        <img class="search-icon search-icon--small"
-             src="./images/Search.svg"
-             alt="Search logo"
-        >
-        <input
-          class="search-input search-input--small"
-          type="text"
-          name="search-input"
-          placeholder="Los Angeles"
-        >
+        <div class="search-icon search-icon--small">
+          <img
+            class="search-logo search-logo--small"
+            src="./images/Search.svg"
+            alt="Search logo"
+          >
+        </div>
+        <div class="div-input div-input--small">
+          <input
+            class="search-input search-input--small"
+            type="text"
+            name="search-input"
+            placeholder="Los Angeles"
+            data-qa="keypress"
+          >
+        </div>
       </div>
     </form>
   </body>

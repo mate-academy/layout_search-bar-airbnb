@@ -12,6 +12,10 @@
   font-weight: 800;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Avenir", sans-serif;
   font-weight: 300;
@@ -30,13 +34,12 @@ body {
 
 .search-box {
   position: relative;
-  box-sizing: border-box;
   height: 70px;
 
-  left: 0%;
+  /* left: 0%;
   right: 0%;
   top: 0%;
-  bottom: 0%;
+  bottom: 0%; */
 
   background: #fff;
   border: 1px solid #e1e7ed;
@@ -55,8 +58,6 @@ body {
 }
 
 .search-icon {
-  box-sizing: border-box;
-
   width: 19px;
   height: 19px;
 
@@ -76,16 +77,16 @@ body {
 }
 
 .search-input {
-  position: absolute;
+  /* position: absolute;
   left: 0%;
   right: 18.35%;
   top: 0%;
-  bottom: -15.79%;
+  bottom: -15.79%; */
 
   border-style: none;
   padding: 0;
 
-  font-family: "Avenir", sans-serif;
+  font-family: inherit;
   font-size: 16px;
   line-height: 22px;
   color: #3d4e61;
@@ -94,7 +95,7 @@ body {
 .search-input:focus {
   outline: none;
 
-  font-family: "Avenir", sans-serif;
+  font-family: inherit;
   font-size: 16px;
   line-height: 22px;
   color: #3d4e61;
@@ -102,13 +103,13 @@ body {
 }
 
 .search-input::placeholder {
-  position: relative;
+  /* position: relative;
   left: 0%;
   right: 18.35%;
   top: 0%;
-  bottom: -15.79%;
+  bottom: -15.79%; */
 
-  font-family: "Avenir", sans-serif;
+  font-family: inherit;
   font-size: 16px;
   line-height: 22px;
 
@@ -120,7 +121,7 @@ body {
 }
 
 .search-form--small {
-  width: 427px;
+  width: 100%;
   height: 42px;
 }
 
@@ -140,46 +141,44 @@ body {
   width: 11px;
   height: 11px;
 
-  position: absolute;
+  /* position: absolute;
   left: 3.04%;
   right: 94.38%;
   top: 35.71%;
-  bottom: 38.1%;
+  bottom: 38.1%; */
 }
 
 .search-logo--small {
-  box-sizing: border-box;
-
   width: 11px;
   height: 11px;
 
-  position: absolute;
+  /* position: absolute;
   left: 0%;
   right: 0%;
   top: 0%;
-  bottom: 0%;
+  bottom: 0%; */
 }
 
 .div-input--small {
   /* width: 158px; */
   /* height: 19px; */
 
-  position: relative;
+  /* position: relative;
   left: 7.73%;
   right: 55.27%;
   top: 28.57%;
-  bottom: 26.19%;
+  bottom: 26.19%; */
 
 }
 
 .search-input--small {
-  position: absolute;
+  /* position: absolute;
   left: 0%;
   right: -5.88%;
   top: 0%;
-  bottom: -5.26%;
+  bottom: -5.26%; */
 
-  font-family: "Avenir", sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-weight: 900;
   font-size: 14px;
@@ -188,8 +187,8 @@ body {
 }
 
 .search-input--small::placeholder {
-  right: -5.88%;
-  bottom: -5.26%;
+  /* right: -5.88%;
+  bottom: -5.26%; */
 
   font-style: normal;
   font-weight: 400;

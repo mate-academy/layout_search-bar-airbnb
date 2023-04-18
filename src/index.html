@@ -11,49 +11,44 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <label>
-      <div class="bigContainer">
-        <form
-          class="bigForm"
-          action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-          method="post"
-          name="test-form"
-          data-qa="big"
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+      class="container"
+      data-qa="big">
+      <label>
+        <img
+          src="./images/Search.svg"
+          alt="img-req-alt"
+          class="bigImg img"
         >
-          <img
-            class="img"
-            src="./images/Search.svg"
-            alt="img-req-alt"
-          >
-          <input
-            type="text"
-            placeholder="Try &quot;Los Angeles&quot;"
-            data-qa="keypress"
-          >
-        </form>
-      </div>
-    </label>
-
-    <label>
-      <div class="smallContainer">
-        <form
-          class="smallForm"
-          action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-          method="post"
-          name="test-form"
-          data-qa="small"
+        <input
+          type="text"
+          name="bSearch"
+          data-qa="keypress"
+          class="form big"
+          placeholder="Try &quot;Los Angeles&quot;"
         >
-          <img
-            class="img"
-            src="./images/Search.svg"
-            alt="img-req-alt"
-          >
-          <input
-            type="text"
-            placeholder="Try &quot;Los Angeles&quot;"
-          >
-        </form>
-      </div>
-    </label>
+      </label>
+    </form>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+      class="container"
+      data-qa="small">
+      <label>
+        <img
+          src="./images/Search.svg"
+          alt="img-req-alt"
+          class="smallImg img"
+        >
+        <input
+          type="text"
+          name="sSearch"
+          class="form small"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
+    </form>
   </body>
 </html>

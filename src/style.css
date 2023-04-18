@@ -1,5 +1,3 @@
-/* stylelint-disable string-quotes */
-/* stylelint-disable font-family-no-missing-generic-family-keyword */
 * {
   box-sizing: border-box;
 }
@@ -10,9 +8,13 @@
 }
 
 @font-face {
-  font-family: "Avenir-bold";
-  font-style: bold;
+  font-family: "Avenir";
+  font-weight: 700;
   src: url(fonts/Avenir-Heavy.ttf);
+}
+
+html {
+  font-family: inherit;
 }
 
 form {
@@ -20,7 +22,6 @@ form {
 }
 
 .searh-bar-big {
-  font-family: Avenir;
   width: 100%;
   height: 70px;
   font-weight: 300px;
@@ -32,7 +33,6 @@ form {
 }
 
 .searh-bar-big::placeholder {
-  font-family: Avenir;
   font-size: 16px;
   line-height: 22px;
   color: #3d4e61;
@@ -45,12 +45,10 @@ form {
 .searh-bar-big:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
-  font-family: Avenir-bold;
   font-weight: 300;
 }
 
 .searh-bar-small {
-  font-family: Avenir;
   width: 100%;
   height: 42px;
   background: #fff;
@@ -67,11 +65,9 @@ form {
 .searh-bar-small:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
-  font-family: Avenir-bold;
 }
 
 .searh-bar-small::placeholder {
-  font-family: Avenir;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -85,7 +81,7 @@ form {
 
 .label-class-big::before {
   content: "";
-  background-image: url('images/Search.svg');
+  background-image: url("images/Search.svg");
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -101,12 +97,12 @@ form {
 
 .label-class-small::before {
   content: "";
-  background-image: url('images/Search.svg');
+  background-image: url("images/Search.svg");
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
   width: 11px;
   height: 11px;
   left: 13px;
-  top: 5px;
+  top: 0;
 }

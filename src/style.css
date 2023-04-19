@@ -1,8 +1,10 @@
 :root {
   --padding-left-big-search: 62px;
   --padding-left-small-search: 33px;
-  --big-search-height: 72px;
+  --big-search-height: 70px;
   --small-search-height: 42px;
+  --size-big-icon: 19px;
+  --size-small-icon: 10px;
 }
 
 @font-face {
@@ -21,7 +23,7 @@
 
 .form {
   position: relative;
-  height: 70px;
+  height: var(--big-search-height);
   margin-bottom: 20px;
 }
 
@@ -31,15 +33,33 @@
 
 .label-search-icon {
   position: absolute;
-  top: calc(var(--big-search-height) / 2);
-  left: calc(var(--padding-left-big-search) / 2);
-  transform: translateY(-50%) translateX(-50%);
   cursor: text;
+
 }
 
-.icon {
-  width: 19px;
-  height: 19px;
+.label-search-icon,
+.small-icon {
+  left: calc(var(--padding-left-small-search) / 2);
+  top: 24%;
+  transform: translateY(-50%) translateX(-50%);
+
+}
+
+.label-search-icon,
+.big-icon {
+  top: 46%;
+  left: calc(var(--padding-left-big-search) / 2);
+  transform: translateY(-30%) translateX(-30%);
+}
+
+.icon--big {
+  width: var(--size-big-icon);
+  height: var(var(--size-big-icon));
+}
+
+.icon--small {
+  width: var(--size-small-icon);
+  height: var(--size-small-icon);
 }
 
 .search {
@@ -68,23 +88,9 @@
   background: linear-gradient(180deg, #fff, #f6f6f7);
 }
 
-.label-search-icon--small {
-  position: absolute;
-  left: calc(var(--padding-left-small-search) / 2);
-  top: calc(var(--small-search-height) / 2);
-  transform: translateY(-50%) translateX(-50%);
-  cursor: text;
-}
-
-.icon--small {
-  width: 10px;
-  height: 10px;
-}
-
 .search--small {
   padding-left: var(--padding-left-small-search);
   font-size: 14px;
-  background-size: 11px;
   height: var(--small-search-height);
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
 }

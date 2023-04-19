@@ -19,7 +19,7 @@
   font-weight: 900;
 }
 
-.searchform {
+.search-form {
   box-sizing: border-box;
   font-weight: 300px;
   margin-top: 20px;
@@ -48,12 +48,17 @@
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.input:focus-within {
+.input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
   font-weight: 900;
   color: #3d4e61;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.input::placeholder {
+  font-weight: 300px;
+  text-shadow: none;
 }
 
 .input-small {
@@ -65,9 +70,6 @@
 
 .icon {
   position: absolute;
-}
-
-.icon-big {
   width: 19px;
   height: 19px;
   left: 26px;

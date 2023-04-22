@@ -11,67 +11,66 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-
-    <div class="large_sb_container">
-      <form
-        data-qa="big"
-        class="large_sb_form"
-        action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-        method="get"
+    <form
+      data-qa="big"
+      class="large_sb_form large_sb_container"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="get"
+    >
+      <button
+        class="large_sb_button large_sb_content"
+        type="submit"
+        name="large_sb_search"
       >
-        <button
-          class="large_sb_button large_sb_content"
-          type="submit"
-          name="large_sb_search"
-        >
-          <label class="img_label">
-            <img
+        <label for="large_serch_img">
+          <img
+            class="large_sb_img"
             src="images/Search.svg"
             alt="magnifying_glass_large"
-            >
-          </label>
-        </button>
-        <label class="input_label">
-          <input
-            data-qa="keypress"
-            class="large_sb_input large_sb_content"
-            type="search"
-            placeholder="Try &quot;Los Angeles&quot;"
+            id="large_serch_img"
           >
         </label>
-      </form>
-    </div>
-
-    <div class="small_sb_container">
-      <form
-        data-qa="small"
-        class="small_sb_form"
-        action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-        method="get"
-      >
-        <button
-          class="small_sb_button small_sb_content"
-          type="submit"
-          name="small_sb_search"
+      </button>
+      <label for="large_input_label">
+        <input
+          data-qa="keypress"
+          class="large_sb_input large_sb_content"
+          type="search"
+          placeholder="Try &quot;Los Angeles&quot;"
+          id="large_input_label"
         >
-          <label class="img_label">
-            <img
-              class="small_sb_img"
-              src="images/Search.svg"
-              alt="magnifying_glass_small"
-            >
-          </label>
-        </button>
-        <label class="input_label">
-          <input
-            class="small_sb_input small_sb_content"
-            type="search"
-            placeholder="Try &quot;Los Angeles&quot;"
-            data-qa="keypress"
+      </label>
+    </form>
+
+    <form
+      data-qa="small"
+      class="small_sb_form small_sb_container"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="get"
+    >
+      <button
+        class="small_sb_button small_sb_content"
+        type="submit"
+        name="small_sb_search"
+      >
+        <label for="small_serch_img">
+          <img
+            class="small_sb_img"
+            src="images/Search.svg"
+            alt="magnifying_glass_small"
+            id="small_serch_img"
           >
         </label>
-      </form>
-    </div>
-
+      </button>
+      <label for="small_input_label">
+        <input
+          class="small_sb_input small_sb_content"
+          type="search"
+          placeholder="Try &quot;Los Angeles&quot;"
+          data-qa="keypress"
+          id="small_input_label"
+        >
+      </label>
+    </form>
   </body>
 </html>

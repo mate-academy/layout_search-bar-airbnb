@@ -6,7 +6,7 @@
 }
 
 @font-face {
-  font-family: "Avenir-Heavy";
+  font-family: "Avenir";
   src: url(./fonts/Avenir-Heavy.ttf);
   font-weight: 900;
 }
@@ -15,7 +15,11 @@
   box-sizing: border-box;
 }
 
-[data-qa] {
+html {
+  font-family: "Avenir", sans-serif;
+}
+
+.form {
   width: 100%;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -28,7 +32,7 @@
   padding-left: 62px;
   background: #fff;
   color: #3d4e61;
-  font-family: "Avenir", sans-serif;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 300;
   border: 1px solid #e1e7ed;
@@ -42,19 +46,20 @@
   font-size: 14px;
 }
 
-input::placeholder {
-  color: #3d4e61;
-}
-
-input:focus {
-  font-family: "Avenir-Heavy", sans-serif;
+.input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  font-family: inherit;
+  font-weight: 900;
   border: 1px solid #e1e7ed;
   border-radius: 3px;
   outline: none;
 }
 
-input:hover {
+.input::placeholder {
+  color: #3d4e61;
+}
+
+.input:hover {
   background: #fff;
   border: 1px solid #e1e7ed;
   border-radius: 4px;

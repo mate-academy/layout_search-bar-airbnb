@@ -33,6 +33,7 @@ body {
 }
 
 .search-box {
+  display: block;
   position: relative;
   width: 100%;
   height: 70px;
@@ -61,17 +62,11 @@ body {
   margin-top: 24px;
 }
 
-.div-input {
-  width: 158px;
-  height: 19px;
-
-  display: block;
-}
-
 .search-input {
   position: absolute;
   left: 62px;
   top: 23px;
+  width: calc(100% - 62px);
 
   border-style: none;
   padding: 0;
@@ -89,6 +84,8 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #3d4e61;
+  background-color: rgba(0, 0, 0, 0);
+
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -110,6 +107,7 @@ body {
 }
 
 .search-box--small {
+  display: block;
   position: relative;
   width: 100%;
   height: 42px;
@@ -129,14 +127,11 @@ body {
   margin-top: 14px;
 }
 
-.div-input--small {
-  display: block;
-}
-
 .search-input--small {
   position: absolute;
   left: 33px;
   top: 10px;
+  width: calc(100% - 33px);
 
   font-family: inherit;
   font-style: normal;

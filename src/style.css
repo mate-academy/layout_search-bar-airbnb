@@ -19,13 +19,16 @@ body {
 }
 
 .form {
-  font-family: "Avenir", sans-serif;
   color: #3d4e61;
   font-weight: 300;
   width: 100%;
   margin-top: 20px;
   position: relative;
   height: 70px;
+}
+
+.search-bar::placeholder {
+  color: #3d4e61;
 }
 
 .form-small {
@@ -41,7 +44,6 @@ body {
 }
 
 .search-bar {
-  color: #3d4e61;
   font-family: "Avenir", sans-serif;
   height: 70px;
   width: 100%;
@@ -50,7 +52,6 @@ body {
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   font-size: 16px;
   padding-left: 62px;
-  background-color: #fff;
 }
 
 .search-bar:hover {
@@ -68,20 +69,13 @@ body {
   height: 42px;
   padding-left: 33px;
   font-size: 14px;
-  font-weight: 400;
-  font-style: normal;
-  width: 100%;
-  line-height: 19px;
 }
 
 .search-bar-small:hover {
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
   text-shadow: none;
 }
 
 .search-bar-small:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  font-weight: bold;
   text-shadow: none;
 }
 

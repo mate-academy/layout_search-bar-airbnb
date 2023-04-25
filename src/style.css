@@ -13,6 +13,10 @@
   font-weight: 800;
 }
 
+* {
+  box-sizing: content-box;
+}
+
 body {
   margin: 0;
   font-family: "Avenir", sans-serif;
@@ -20,13 +24,12 @@ body {
 }
 
 input {
-  box-sizing: content-box;
   outline: none;
   border: none;
   padding: 0;
 }
 
-.big-image {
+.image {
   position: relative;
   top: 3px;
   left: 5px;
@@ -45,7 +48,7 @@ input {
 }
 
 .big-search-bar-input {
-  position: relative;
+  position: inherit;
   left: 16px;
   font-size: 16px;
   font-weight: 400;
@@ -66,7 +69,7 @@ input {
 }
 
 .big-search-bar-input:focus {
-  font-family: AvenirHeavy, sans-serif;
+  font-family: "AvenirHeavy", sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 22px;
@@ -78,9 +81,8 @@ input {
 .search-bar-small {
   position: relative;
   margin: 0 8px;
-  font-family: "Avenir", sans-serif;
   height: 40px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 19px;
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.1);
@@ -91,12 +93,13 @@ input {
 }
 
 .small-search-bar-input {
-  position: relative;
-  top: 1px;
+  position: inherit;
+  top: 2px;
   left: 18px;
   height: 36px;
   line-height: 19px;
-  font-weight: 300;
+  font-weight: 400;
+  font-family: "Avenir", sans-serif;
   width: calc(100% - 36px);
   outline: none;
   border: none;
@@ -105,16 +108,16 @@ input {
 .small-search-bar-input::placeholder {
   font-size: 14px;
   line-height: 19px;
-  font-weight: 300;
+  font-weight: 400;
   color: #3d4e61;
   outline: none;
   border: none;
 }
 
 .small-search-bar-input:hover {
-  position: relative;
+  position: inherit;
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.1);
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 19px;
   outline: none;
@@ -123,8 +126,8 @@ input {
 
 .small-search-bar-input:focus {
   font-family: "Avenir", sans-serif;
-  position: relative;
-  font-weight: 800;
+  position: inherit;
+  font-weight: 900;
   font-size: 14px;
   line-height: 19px;
   color: #3d4e61;
@@ -133,10 +136,10 @@ input {
   border: none;
 }
 
-.small-image {
+.image--small {
   height: 11px;
   width: 11px;
-  position: relative;
+  position: inherit;
   left: 12px;
-  top: 2px;
+  top: 3px;
 }

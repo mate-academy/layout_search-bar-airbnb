@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("./fonts/Avenir-Book.ttf") format("TrueType");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("./fonts/Avenir.ttc") format("TrueType");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("./fonts/Avenir-Heavy.ttf") format("TrueType");
+  font-weight: 900;
+}
+
+.search {
+  margin-top: 20px;
+  font-family: Avenir, Heavy, sans-serif;
+}
+
+.input {
+  width: 100%;
+
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+
+  font-family: inherit;
+}
+
+.input::placeholder {
+  color: #3d4e61;
+}
+
+.input--bg {
+  height: 70px;
+
+  background-position: 25px 24px;
+  background-size: 19;
+
+  padding-left: 62px;
+
+  font-weight: 300px;
+  font-size: 16px;
+}
+
+.input--bg:hover, .input--sm:hover  {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.input--bg:focus {
+  background: linear-gradient(180deg, #f6f6f7 100%);
+  border-radius: 3px;
+  outline: none;
+}
+
+.input--sm {
+  height: 42px;
+
+  background-position: 12px 14px;
+  background-size: 11px;
+
+  padding-left: 33px;
+
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.input--sm:focus {
+  background: linear-gradient(180deg, #f6f6f7 100%);
+  border-radius: 3px;
+  /* убрать рамку */
+  outline: none;
+}

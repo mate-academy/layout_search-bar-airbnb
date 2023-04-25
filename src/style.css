@@ -98,7 +98,7 @@ body {
 }
 
 .search-input:focus::placeholder {
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  text-shadow: none;
 }
 
 .search-form--small {
@@ -138,6 +138,12 @@ body {
   font-size: 14px;
   line-height: 19px;
   font-weight: 900;
+}
+
+.search-input--small:focus {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 19px;
 }
 
 .search-input--small::placeholder {

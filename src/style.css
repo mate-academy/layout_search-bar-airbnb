@@ -8,32 +8,49 @@
   src: url("/fonts/Avenir-Heavy.ttf");
 }
 
-.field__big {
+.form {
+  display: block;
+  box-sizing: border-box;
   width: 100%;
-  height: 68px;
   position: relative;
   background: #fff;
   border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  border-radius: 5px;
+  font-weight: 300;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-weight: 300;
 }
 
-.input__big {
+.form__big {
+  height: 70px;
+  border-radius: 5px;
+}
+
+.form__small {
+  height: 42px;
+  border-radius: 4px;
+}
+
+.search {
   box-sizing: border-box;
   position: absolute;
   left: 0%;
   right: 0%;
   top: 0%;
   bottom: 0%;
-  padding-left: 62px;
   border: none;
   outline: none;
 }
 
-.input__big::placeholder {
+.search__big {
+  padding-left: 62px;
+}
+
+.search__small {
+  padding-left: 33px;
+}
+
+.search__big::placeholder {
   width: 129px;
   height: 22px;
   font-family: Avenir-Book, sans-serif;
@@ -41,78 +58,17 @@
   line-height: 22px;
   position: absolute;
   left: 62px;
-  top: 35.71%;
-  bottom: 37.14%;
+  top: 36%;
+  bottom: 37%;
   color: #3d4e61;
 }
 
-.icon__big {
-  pointer-events: none;
+.search__small::placeholder {
   position: absolute;
-  z-index: 9;
-  width: 19px;
-  height: 19px;
-  top: 25px;
-  left: 26px;
-}
-
-.field__big :hover {
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-}
-
-.field__big :focus {
-  /* background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border-radius: 3px; */
-  background: #fff;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-  border-radius: 4px;
-}
-
-.field__small :focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border: 1px solid #e1e7ed;
-  border-radius: 3px;
-}
-
-.field__small :hover {
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-  border-radius: 4px;
-}
-
-.input__big::placeholder :focus {
-  font-family: Avenir-Heavy, sans-serif;
-}
-
-.field__small {
-  width: 100%;
-  height: 42px;
-  box-sizing: border-box;
-  position: relative;
-  background: #fff;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  border-radius: 4px;
-}
-
-.input__small {
-  box-sizing: border-box;
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-  padding-left: 33px;
-  border: none;
-  outline: none;
-}
-
-.input__small::placeholder {
-  position: absolute;
-  left: 7.73%;
-  right: 55.27%;
-  top: 28.57%;
-  bottom: 26.19%;
+  left: 33px;
+  right: 55%;
+  top: 29%;
+  bottom: 26%;
   font-family: Avenir-Book, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -122,12 +78,48 @@
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.icon__small {
+.icon {
   pointer-events: none;
   position: absolute;
   z-index: 9;
+}
+
+.icon__big {
+  width: 19px;
+  height: 19px;
+  top: 25px;
+  left: 26px;
+}
+
+.icon__small {
   width: 11px;
   height: 11px;
   top: 15px;
   left: 13px;
+}
+
+.form__big :hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.form__big :focus {
+  background: #fff;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  border-radius: 4px;
+}
+
+.form__small :focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+}
+
+.form__small :hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  border-radius: 4px;
+}
+
+.search__big::placeholder :focus {
+  font-family: Avenir-Heavy, sans-serif;
 }

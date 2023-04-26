@@ -5,6 +5,7 @@
 @font-face {
   font-family: "Avenir";
   src: url("./fonts/Avenir.ttc");
+  font-weight: 300;
 }
 
 @font-face {
@@ -52,6 +53,13 @@ body {
   font-family: "Avenir", sans-serif;
 }
 
+.search-bar:focus,
+.search-bar:focus::placeholder {
+  color: #3d4e61;
+  font-family: "Avenir-Heavy", sans-serif;
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .search-bar-big {
   background-size: 19px;
   background-position: 26px 25px;
@@ -69,4 +77,8 @@ body {
   height: 42px;
   line-height: 19px;
   padding-left: 33px;
+}
+
+.search-bar-small:focus {
+  box-shadow: none;
 }

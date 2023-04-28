@@ -1,0 +1,100 @@
+@font-face {
+  font-family: Avenir-Book;
+  src: url("/fonts/Avenir-Book.ttf");
+}
+
+@font-face {
+  font-family: Avenir-Heavy;
+  src: url("/fonts/Avenir-Heavy.ttf");
+}
+
+.form {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  background: #fff;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 70px;
+  border-radius: 4px;
+}
+
+.form--small {
+  height: 42px;
+}
+
+.country_search {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  border: none;
+  outline: none;
+  padding-left: 62px;
+  padding-top: 25px;
+  padding-bottom: 23px;
+  font-family: Avenir-Heavy, sans-serif;
+  font-weight: 900;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.country_search--small {
+  padding-left: 33px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  text-shadow: none;
+}
+
+.country_search::placeholder {
+  font-family: Avenir-Book, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  left: 62px;
+  top: 36%;
+  bottom: 37%;
+  color: #3d4e61;
+  text-shadow: none;
+}
+
+.country_search--small::placeholder {
+  left: 33px;
+  right: 55%;
+  top: 29%;
+  bottom: 26%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.icon {
+  pointer-events: none;
+  position: absolute;
+  z-index: 9;
+  width: 19px;
+  height: 19px;
+  top: 25px;
+  left: 26px;
+}
+
+.icon--small {
+  width: 11px;
+  height: 11px;
+  top: 15px;
+  left: 13px;
+}
+
+.form :hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.form :focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+}

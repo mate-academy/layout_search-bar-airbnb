@@ -13,62 +13,46 @@
   <body>
     <form
       data-qa="big"
-      class="large_sb_form large_sb_container"
+      class="form form--big"
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="get"
     >
-      <button
-        class="large_sb_button large_sb_content"
-        type="submit"
-        name="large_sb_search"
-      >
-        <label for="large_serch_img">
-          <img
-            class="large_sb_img"
-            src="images/Search.svg"
-            alt="magnifying_glass_large"
-            id="large_serch_img"
-          >
-        </label>
-      </button>
-      <label for="large_input_label">
+      <label>
+        <input
+          type="submit"
+          class="form__magnifying_glass form__magnifying_glass--big"
+          value=" "
+        >
+      </label>
+      <label>
         <input
           data-qa="keypress"
-          class="large_sb_input large_sb_content"
+          class="form__input form__input--big"
           type="search"
           placeholder="Try &quot;Los Angeles&quot;"
-          id="large_input_label"
         >
       </label>
     </form>
 
     <form
       data-qa="small"
-      class="small_sb_form small_sb_container"
+      class="form form--small"
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="get"
     >
-      <button
-        class="small_sb_button small_sb_content"
-        type="submit"
-        name="small_sb_search"
-      >
-        <label for="small_serch_img">
-          <img
-            class="small_sb_img"
-            src="images/Search.svg"
-            alt="magnifying_glass_small"
-            id="small_serch_img"
-          >
-        </label>
-      </button>
-      <label for="small_input_label">
+      <label>
         <input
-          class="small_sb_input small_sb_content"
+          type="submit"
+          class="form__magnifying_glass form__magnifying_glass--small"
+          value=" "
+        >
+      </label>
+      <label>
+        <input
+          class="form__input form__input--small"
           type="search"
           placeholder="Try &quot;Los Angeles&quot;"
           data-qa="keypress"
-          id="small_input_label"
         >
       </label>
     </form>

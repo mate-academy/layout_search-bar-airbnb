@@ -1,0 +1,137 @@
+html,
+body,
+div,
+a,
+ul,
+li,
+header,
+nav,
+form,
+img,
+label,
+button {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 900;
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+
+.form {
+  margin-top: 20px;
+  width: 100%;
+  background: hsl(0, 0%, 100%);
+  border: 1px solid hsl(210, 25%, 91%);
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+  position: relative;
+}
+
+.form--big {
+  height: 70px;
+}
+
+.form--small {
+  height: 42px;
+}
+
+.form__magnifying_glass {
+  position: absolute;
+  background-color: transparent;
+  padding: 0;
+  background-image: url(../src/images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  outline: none;
+  border: none;
+}
+
+.form__magnifying_glass--big {
+  top: 25px;
+  left: 26px;
+  height: 19px;
+  width: 19px;
+}
+
+.form__magnifying_glass--small {
+  top: 15px;
+  left: 13px;
+  height: 11px;
+  width: 11px;
+}
+
+.form__input {
+  position: absolute;
+  height: 100%;
+  padding: 0;
+  font-family: Avenir, Helvetica, sans-serif;
+  font-style: normal;
+  color: hsl(212, 23%, 31%);
+  font-weight: 900;
+  background: transparent;
+  border: none;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.form__input--big {
+  --left-biginput-indent: 62px;
+  left: var(--left-biginput-indent);
+  width: calc(100% - var(--left-biginput-indent) - 15px);
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.form__input--small {
+  --left-smallinput-indent: 33px;
+  left: var(--left-smallinput-indent);
+  width: calc(100% - var(--left-smallinput-indent) - 15px);
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.form:hover {
+  background: hsl(0, 0%, 100%);
+  border: 1px solid hsl(210, 25%, 91%);
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  border-radius: 4px;
+}
+
+.form:focus-within {
+  background: linear-gradient(
+    180deg,
+    hsl(0, 0%, 100%) 0%,
+    hsl(240, 6%, 97%) 100%);
+  border: 1px solid hsl(210, 25%, 91%);
+  border-radius: 3px;
+}
+
+.form__input:focus {
+  outline: 0;
+}
+
+.form__input::placeholder {
+  filter: none;
+  font-family: Avenir, Helvetica, sans-serif;
+  color: hsl(212, 23%, 31%);
+  font-weight: normal;
+}
+
+.form__input--big::placeholder {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.form__input--small::placeholder {
+  font-size: 14px;
+  line-height: 19px;
+}

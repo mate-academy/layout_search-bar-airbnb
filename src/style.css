@@ -7,9 +7,17 @@ html {
 }
   
 @font-face {
-  font-family: sans-serif;
-  src: url(fonts/Avenir-Heavy.ttf);
+  font-family: "Avenir";
+  src: url(fonts/Avenir-Book.ttf);
   font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: 900;
+  font-style: normal;
 }
 
 .searchForm {
@@ -27,7 +35,6 @@ html {
   border-radius: 4px;
   color: rgb(100, 100, 100);
   background-color: white;
-  box-shadow: 0 1px 8px #3d4e61;
 }
 
 .searchBar:hover {
@@ -38,10 +45,12 @@ html {
   border: 1px solid #e1e7ed;
   border-radius: 3px;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  color: #e1e7ed;
+  color: #3d4e61;
+  outline: none;
+  font-weight: 900;
 }
 
-.bar-2 {
+.barSmall {
   padding-left: 33px;
   height: 42px;
   font-size: 14px;
@@ -56,24 +65,21 @@ html {
   color: #3d4e61;
 }
 
-.bar-2::placeholder {
+.barSmall::placeholder {
   font-size: 14px;
-}
-
-.searchBar:focus::placeholder {
-  font-weight: 300;
+  color: #3d4e61;
 }
 
 .lens {
   position: absolute;
+  display: block;
   width: 19px;
   height: 19px;
   left: 26px;
   top: 25px;
 }
 
-.lens-small {
-  position: absolute;
+.lens--small {
   height: 11px;
   width: 11px;
   left: 13px;

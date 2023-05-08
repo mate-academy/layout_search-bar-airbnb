@@ -12,29 +12,37 @@
   </head>
   <body>
     <div class="container">
-      <form class="form-big" method="get" action="/">
-        <label for="bigSearch">
+      <form
+        class="formBig"
+        method="get"
+        action="/"
+        data-qa="big"
+      >
+        <label for="keypress">
           <input
-            class="keypress"
+            class="bigInput"
             type="text"
             name="search"
             id="bigSearch"
             placeholder="Try &quot;Los Angeles&quot;"
-            data-qa="big"
             data-qa="keypress"
           >
         </label>
       </form>
 
-      <form class="form-small" method="get" action="/">
+      <form
+        class="formSmall"
+        method="get"
+        action="/"
+        data-qa="small"
+      >
         <label for="smallSearch">
           <input
-            class="smallSearch"
+            class="smallInput"
             type="text"
             name="search"
             id="smallSearch"
             placeholder="Try &quot;Los Angeles&quot;"
-            data-qa="small"
           >
         </label>
       </form>

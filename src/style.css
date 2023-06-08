@@ -24,18 +24,19 @@ html {
 
 .search-bar {
   display: flex;
-  border: 2px solid rgb(225, 231, 237);
+  padding: 2px;
+  border: 1px solid rgb(225, 231, 237);
   margin-top: 20px;
   border-radius: 3px;
   align-items: center;
   justify-content: center;
-  box-shadow: 1px 2px 4px -1px rgba(225,231,237,1);
+  box-shadow: 1px 1px 5px -1px rgba(225,231,237,1);
   cursor: pointer;
 }
 
 .search {
   width: 100%;
-  font-family: Avenir-Book, sans-serif;
+  font-weight: 300;
   color: rgb(61, 78, 97);
   border: none;
   background-color: transparent;
@@ -56,21 +57,21 @@ html {
 
 .big-icn {
   height: 20px;
-  margin: 20px;
-  margin-left: 24px ;
+  margin: 20px 18px 20px 24px;
+
 }
 
 .small-icn {
-  height: 10px;
+  height: 11px;
   margin: 12px;
 }
 
 [data-qa="keypress"] {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .second {
-  font-size: 14px;
+  font-size: 13px;
   text-shadow: 1px 6px 2px rgba(234,234,234,0.92);
 }
 
@@ -87,7 +88,7 @@ html {
 }
 
 .search:focus {
-  font-family: Avenir-Heavy, sans-serif;
+  font-weight: 800;
 }
 
 [data-qa="keypress"]:focus {

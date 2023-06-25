@@ -1,6 +1,8 @@
 @font-face {
   font-family: "Avenir";
   src: url(fonts/Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 300;
 }
 
 @font-face {
@@ -9,13 +11,15 @@
   font-weight: 700;
 }
 
+:root {
+  --background-color: #fff;
+  --border-color: #e1e7ed;
+}
+
 html {
   font-family: "Avenir", sans-serif;
   font-size: 14px;
   box-sizing: border-box;
-
-  --background-color: #fff;
-  --border-color: #e1e7ed;
 }
 
 * {
@@ -24,105 +28,85 @@ html {
 
 .form {
   position: relative;
+  margin-top: 20px;
 }
 
 /* #region image */
 .image {
-  margin: 0;
   position: absolute;
   height: 19px;
-  color: #687c94;
-}
-
-.big__image {
   top: 25px;
   left: 26px;
 }
 
-.small__image {
+.image--small {
   top: 15px;
   left: 13px;
   height: 11px;
-  width: 11px;
 }
 /* #endregion */
 
-/* #region big__input */
-.input {
+/* #region input */
+.box {
   display: block;
   position: relative;
   margin-top: 20px;
-  width: 100%;
-  background-color: var(--background-color);
 }
 
-.big__input {
+.input {
+  width: 100%;
   height: 70px;
   line-height: 70px;
   padding-left: 62px;
-
-  font-family: inherit;
   background-color: var(--background-color);
   border: 1px solid var(--border-color);
-  border-radius: 4px;
   box-shadow: 0 1px 8px #3d4e611a;
+  font-family: inherit;
+  border-radius: 4px;
+  font-size: 16px;
 }
 
-.big__input::placeholder {
+.input::placeholder {
   font-size: 16px;
   font-family: inherit;
   height: 22px;
   line-height: 22px;
 }
 
-.big__input:hover {
+.input:hover {
   box-shadow: 0 3px 8px #3d4e6133;
 }
 
-.big__input:focus {
+.input:focus {
   font-family: inherit;
   font-weight: 700;
 
   background: linear-gradient(rgba(255, 255, 255, 1), rgba(246, 246, 247, 1));
-  border-radius: 3px;
   outline: none;
+  border-radius: 3px;
   border: 1px solid var(--border-color);
   text-shadow: 0 4px 4px #00000040;
 }
 /* #endregion */
 
 /* #region small_input */
-.small__input {
+.input--small {
   height: 42px;
   line-height: 42px;
   padding-left: 33px;
 
-  font-family: inherit;
   font-size: 14px;
-  background-color: var(--background-color);
-  border: 1px solid var(--border-color);
-  border-radius: 4px;
-  box-shadow: 0 1px 8px #3d4e611a;
 }
 
-.small__input::placeholder {
+.input--small::placeholder {
   font-size: 14px;
   font-family: inherit;
   height: 19px;
   line-height: 19px;
 }
 
-.small__input:hover {
+.input-small:hover {
   box-shadow: 0 1px 8px #3d4e6133;
 }
 
-.small__input:focus {
-  font-family: inherit;
-  font-weight: 700;
-
-  background: linear-gradient(rgba(255, 255, 255, 1), rgba(246, 246, 247, 1));
-  border-radius: 3px;
-  outline: none;
-  border: 1px solid var(--border-color);
-}
 /* #endregion */

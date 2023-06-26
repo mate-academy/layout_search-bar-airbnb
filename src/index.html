@@ -1,3 +1,4 @@
+<!-- #region HEAD -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -10,7 +11,38 @@
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
   </head>
+  <!-- #endregion -->
   <body>
-    <h1>Search bar airbnb</h1>
+    <form action="#" data-qa="big">
+      <label>
+        <div class="big-bar search-bar">
+          <div class="big-bar__icon icon-search"></div>
+          <input
+            type="text"
+            name="text"
+            placeholder="Try &quot;Los Angeles&quot;"
+            class="big-bar__input search-input"
+          >
+        </div>
+      </label>
+    </form>
+
+    <form
+      action="#"
+      data-qa="small"
+      method="post"
+    >
+      <label>
+        <div class="small-bar search-bar">
+          <div class="small-bar__icon icon-search"></div>
+          <input
+            type="text"
+            name="text"
+            placeholder="Try &quot;Los Angeles&quot;"
+            class="small-bar__input search-input"
+          >
+        </div>
+      </label>
+    </form>
   </body>
 </html>

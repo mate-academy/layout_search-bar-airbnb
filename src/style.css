@@ -7,7 +7,11 @@
 @font-face {
   font-family: Avenir-Heavy;
   src: url(./fonts/Avenir-Heavy.ttf);
-  font-weight: bold;
+  font-weight: 700;
+}
+
+html {
+  font-family: Avenir-Book, sans-serif;
 }
 
 .search-form {
@@ -28,14 +32,13 @@
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
 
   padding-left: 62px;
-  font-family: Avenir-Book, sans-serif;
   font-size: 16px;
+  font-family: var(--main-font);
 }
 
 .search-form__input--small {
   height: 42px;
   padding-left: 33px;
-  font-family: Avenir-Book, sans-serif;
   font-size: 14px;
 }
 
@@ -45,7 +48,6 @@
 
 .search-form__input:focus::placeholder {
   text-shadow: none;
-  font-family: Avenir-Book, sans-serif;
   box-shadow: none;
 }
 

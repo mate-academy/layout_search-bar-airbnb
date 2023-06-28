@@ -41,28 +41,24 @@ html {
   height: 42px;
 }
 
-.search-bar--big::after {
+.search-bar::after {
   position: absolute;
-  left: 26px;
   display: block;
   background-image: url(images/Search.svg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   content: "";
+}
+
+.search-bar--big::after {
+  left: 26px;
   width: 19px;
   height: 19px;
 }
 
 .search-bar--small::after {
-  position: absolute;
   left: 13px;
-  display: block;
-  background-image: url(images/Search.svg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  content: "";
   width: 11px;
   height: 11px;
 }

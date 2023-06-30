@@ -12,22 +12,26 @@
   </head>
 
   <body>
-    <form class ="search-form search-form_big" data-qa="big">
-      <label class ="search-form__label search-form__label_big">
+    <form class ="search-form" data-qa="big">
+      <label for="big" class ="search-form__label">
         <input
+          name="big"
+          id="big"
           data-qa ="keypress"
-          class= "search-form__input  search-form__input_big"
+          class= "search-form__input"
           type ="text"
           placeholder ="Try &quot;Los Angeles&quot;"
         >
       </label>
     </form>
 
-    <form class ="search-form search-form_small" data-qa="small">
-      <label class ="search-form__label search-form__label_small">
+    <form class ="search-form search-form--small" data-qa="small">
+      <label for="small" class ="search-form__label search-form__label--small">
         <input
-          data-qa ="hover"
-          class ="search-form__input search-form__input_small"
+          name="small"
+          id="small"
+          data-qa ="small"
+          class ="search-form__input search-form__input--small"
           type ="text"
           placeholder ="Try &quot;Los Angeles&quot;"
         >

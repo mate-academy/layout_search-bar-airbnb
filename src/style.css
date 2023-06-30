@@ -1,20 +1,19 @@
 @font-face {
   font-family: "Avenir";
   src: url(fonts/Avenir-Book.ttf);
-  font-weight: normal;
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "Avenir";
   src: url(fonts/Avenir-Heavy.ttf);
-  font-weight: bold;
+  font-weight: 900;
 }
 
 .page {
   font-family: "Avenir", Helvetica, sans-serif;
+  font-weight: 400;
   color: #3d4e61;
-  font-style: normal;
-  font-weight: 300;
   line-height: normal;
 }
 
@@ -25,6 +24,7 @@
 
 .search-bar {
   display: flex;
+  flex-direction: row;
   justify-content: left;
   align-items: center;
 
@@ -42,51 +42,49 @@
   box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
 }
 
+.search-bar--focus:focus-within {
+  font-weight: 900;
+
+  border-radius: 3px;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
 .search-bar--large {
-  height: 70px;
+  height: 68px;
 }
 
 .search-bar--small {
-  height: 42px;
-}
-
-.search-bar__form {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: center;
-}
-
-.search-bar__form--large {
-  gap: 17px;
-  margin-left: 26px;
-}
-
-.search-bar__form--small {
-  gap: 9px;
-  margin-left: 13px;
+  height: 40px;
 }
 
 .icon {
-  display: flex;
   background-image: url(images/search.svg);
   background-size: contain;
-  border: 1px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  margin: 0;
+  padding: 0;
 
 }
 
 .icon--large {
   width: 19px;
   height: 19px;
+
+  margin-left: 26px;
 }
 
 .icon--small {
   width: 11px;
   height: 11px;
+
+  margin-left: 13px;
 }
 
 .search-bar__input {
   display: flex;
+  justify-content: left;
   align-items: center;
 
   margin: 0;
@@ -96,21 +94,19 @@
   height: 19px;
 
   font-family: inherit;
-  font-weight: 400;
-
   border: none;
+  outline: none;
+
+  background-color: transparent;
 }
 
 .search-bar__input--large {
   font-size: 16px;
+  margin-left: 17px;
 }
 
 .search-bar__input--small {
   font-size: 14px;
-}
 
-.search-bar__input--focused:focus {
-  /* Doesn't work */
-  border-radius: 3px;
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  margin-left: 9px;
 }

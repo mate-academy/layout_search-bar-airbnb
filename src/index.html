@@ -13,48 +13,46 @@
   </head>
   <!-- #endregion -->
   <body class="page__body">
-    <div class="search-bar search-bar--large search-bar--hover">
-      <form
-        action="#"
-        class="search-bar__form search-bar__form--large"
-        method="post"
-        data-qa="big"
-      >
-        <span class="icon icon--large"></span>
-        <label for="search-input">
-          <input
-            class="search-bar__input
-              search-bar__input--large
-              search-bar__input--focused"
-            type="text"
-            name="search-input"
-            placeholder="Try &quot;Los Angeles&quot;"
-            data-qa="keypress"
-          >
-        </label>
-      </form>
-    </div>
+    <form
+      action="#"
+      class="search-bar search-bar--large search-bar--hover search-bar--focus"
+      method="post"
+      data-qa="big"
+    >
+      <div class="icon icon--large">
+      </div>
 
-    <div class="search-bar search-bar--small search-bar--hover">
-      <form
-        action="#"
-        class="search-bar__form search-bar__form--small"
-        method="post"
-        data-qa="small"
-      >
-        <span class="icon icon--small"></span>
-        <label for="search-input">
-          <input
-            class="search-bar__input
-              search-bar__input--small
-              search-bar__input--focused"
-            type="text"
-            name="search-input"
-            placeholder="Try &quot;Los Angeles&quot;"
-          >
-        </label>
-      </form>
-    </div>
+      <label>
+        <input
+          class="search-bar__input
+            search-bar__input--large"
+          type="text"
+          placeholder="Try &quot;Los Angeles&quot;"
+          data-qa="keypress"
+        >
+      </label>
+    </form>
 
+    <form
+      action="#"
+      class="search-bar search-bar--small search-bar--hover search-bar--focus"
+      method="post"
+      data-qa="small"
+    >
+      <div class="icon icon--small">
+      </div>
+
+      <label>
+        <input
+        id="search-input"
+        class="search-bar__input
+        search-bar__input--small"
+        type="text"
+        placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
+
+
+    </form>
   </body>
 </html>

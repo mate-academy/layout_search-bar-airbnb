@@ -1,0 +1,100 @@
+.input-box {
+  box-sizing: border-box;
+  height: 70px;
+  position: relative;
+  display: flex;
+  margin-top: 20px;
+
+  padding-left: 62px;
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  background-color: #fff;
+  box-shadow: 0 1px 8px rgba($color: #3d4e61, $alpha: 0.1);
+
+  &:has(&__input:hover) {
+    box-shadow: 0 4px 4px rgba($color: #000, $alpha: 0.25);
+  }
+
+  &:has(&__input:focus) {
+    box-shadow: 0 4px 4px rgba($color: #000, $alpha: 0.25);
+    background: linear-gradient(#fff, #f6f6f7);
+  }
+
+  &__input {
+    display: inline-block;
+    line-height: 70px;
+    width: 100%;
+    padding: 0;
+
+    outline: none;
+    border: none;
+    background: none;
+    font-family: "Avenir", monospace;
+    font-size: 16px;
+    color: #3d4e61;
+
+    &::placeholder {
+      color: #3d4e61;
+      opacity: 1;
+      font-weight: normal;
+      text-shadow: none;
+    }
+
+    &:focus {
+      text-shadow: 0 4px 4px rgba($color: #000, $alpha: 0.25);
+      font-weight: bold;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+
+    top: 25px;
+    left: 25px;
+    width: 19px;
+    height: 19px;
+
+    background-image: url(../images/Search.svg);
+    background-size: cover;
+  }
+
+  &--small {
+    padding-left: 33px;
+    height: 42px;
+
+    &:has(&__input:hover) {
+      box-shadow: 0 3px 8px rgba($color: #3d4e61, $alpha: 0.2);
+    }
+
+    &:has(&__input:focus) {
+      box-shadow: none;
+    }
+
+    &::after {
+      top: 15px;
+      left: 13px;
+      width: 11px;
+      height: 11px;
+    }
+
+    &__input {
+      line-height: 42px;
+      font-size: 14px;
+      text-shadow: 0 4px 4px rgba($color: #000, $alpha: 0.25);
+
+      &:hover {
+        text-shadow: none;
+      }
+
+      &:focus {
+        text-shadow: none;
+      }
+
+      &::placeholder {
+        text-shadow: inherit;
+      }
+    }
+  }
+}

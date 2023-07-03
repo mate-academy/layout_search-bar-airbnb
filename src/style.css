@@ -1,0 +1,122 @@
+:root {
+  --text-color: #3d4e61;
+  --border-color: #e1e7ed;
+  --box-shadow: #3d4e6110;
+  --box-shadow-focus-hover: #3d4d6120;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("./fonts/Avenir-Book.ttf");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("./fonts/Avenir.ttc");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("./fonts/Avenir-Heavy.ttf");
+  font-style: normal;
+  font-weight: 800;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.big {
+  display: block;
+  position: relative;
+  margin: 20px 0;
+}
+
+.big-input {
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 var(--box-shadow);
+  padding: 24px 25px 24px 62px;
+  width: 100%;
+  font-family: "AvenirHeavy", sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.3;
+  color: var(--text-color);
+}
+
+.big-input::placeholder {
+  font-family: "Avenir", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.big-img {
+  position: absolute;
+  left: 26px;
+  top: 25px;
+  width: 19px;
+}
+
+.small-input {
+  font-family: "Avenir", sans-serif;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 var(--box-shadow);
+  padding: 11px 15px 10px 33px;
+  font-size: 14px;
+  font-weight: 900;
+  color: var(--text-color);
+  width: 100%;
+}
+
+.big-input:hover {
+  border-color: var(--border-color);
+  box-shadow: 0 3px 8px 0 var(--box-shadow-focus-hover);
+}
+
+.big-input:focus {
+  box-shadow: 0 3px 8px 0 var(--box-shadow-focus-hover);
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  text-shadow: rgba(0, 0, 0, 0.25) 0 4px 4px;
+  border-color: var(--border-color);
+  border-radius: 3px;
+  outline: none;
+}
+
+.small {
+  display: block;
+  position: relative;
+  margin: 20px 0;
+}
+
+.small-input::placeholder {
+  font-family: "Avenir", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.small-img {
+  position: absolute;
+  left: 13px;
+  top: 15px;
+  width: 11px;
+}
+
+.small-input:hover {
+  box-shadow: 0 3px 8px 0 var(--box-shadow-focus-hover);
+  text-shadow: none;
+}
+
+.small-input:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+  outline: none;
+  text-shadow: none;
+}

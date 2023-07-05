@@ -11,38 +11,28 @@
           href="./style.css">
   </head>
   <body>
-    <section class="forms">
-      <form action="/"
-            class="forms__search forms__search--space"
-            method="get"
-            data-qa="big">
-        <label for="big-input">
-          <img src="images/Search.svg"
-               class="icon"
-               alt="search-icon">
-          <input type="text"
-                 data-qa="keypress"
-                 name="search"
-                 id="inputBig"
-                 class="input input--big"
-                 placeholder="Try &quot;Los Angeles&quot;">
-        </label>
-      </form>
-      <form action="/"
-            class="forms__search"
-            method="get"
-            data-qa="small">
-        <label for="small-input">
-          <img src="images/Search.svg"
-               class="icon icon--small"
-               alt="search-icon">
-          <input type="text"
-                 name="search"
-                 id="inputSmall"
-                 class="input input--small"
-                 placeholder="Try &quot;Los Angeles&quot;">
-        </label>
-      </form>
-    </section>
+    <form action="/"
+          class="form form--big"
+          method="get"
+          data-qa="big">
+      <label for="inputBig">
+        <input type="text"
+               data-qa="keypress"
+               id="inputBig"
+               class="form__input form__input--big"
+               placeholder="Try &quot;Los Angeles&quot;">
+      </label>
+    </form>
+    <form action="/"
+          class="form form--small"
+          method="get"
+          data-qa="small">
+      <label for="inputSmall">
+        <input type="text"
+               id="inputSmall"
+               class="form__input form__input--small"
+               placeholder="Try &quot;Los Angeles&quot;">
+      </label>
+    </form>
   </body>
 </html>

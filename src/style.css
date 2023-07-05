@@ -8,7 +8,7 @@
 @font-face {
   font-family: "Avenir";
   src: url("fonts/Avenir-Heavy.ttf");
-  font-weight: 900;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -16,25 +16,39 @@
   box-sizing: border-box;
 }
 
-body {
+.form {
+  position: relative;
+  display: block;
   margin-top: 20px;
   font-weight: 300;
 }
 
-.forms {
-  display: flex;
-  flex-direction: column;
+.form::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.forms__search {
-  position: relative;
+.form--big:before {
+  width: 19px;
+  height: 19px;
+  top: 25px;
+  left: 26px;
 }
 
-.forms__search--space {
-  margin-bottom: 20px;
+.form--small:before {
+  width: 11px;
+  height: 11px;
+  top: 15px;
+  left: 13px;
 }
 
-.input {
+.form__input {
+  font-family: "Avenir", Arial, sans-serif;
   width: 100%;
   border-radius: 4px;
   border: 1px solid #e1e7ed;
@@ -42,52 +56,30 @@ body {
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
   outline: none;
   color: #3d4e61;
-  line-height: normal;
-}
-
-.input--big {
   height: 70px;
-  padding: 26px 62px;
+  padding-left: 62px;
   font-size: 16px;
+  font-weight: 300;
 }
 
-.input:hover,
-.input:focus {
+.form__input:hover,
+.form__input:focus {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.input:focus {
+.form__input:focus {
   border-radius: 3px;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  font-weight: 800;
 }
 
-.input::placeholder {
-  font-family: "Avenir", Arial, sans-serif;
+.form__input:focus::placeholder {
+  font-weight: 300;
 }
 
-.input:focus::placeholder {
-  font-weight: 900;
-}
-
-.input--small {
+.form__input--small {
   height: 42px;
-  padding: 11px 33px 13px;
+  padding-left: 33px;
   font-size: 14px;
-}
-
-.input--small:hover {
-  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
-}
-
-.icon {
-  position: absolute;
-  width: 19px;
-  top: calc(50% - 9px);
-  left: 26px;
-}
-
-.icon--small {
-  width: 11px;
-  top: calc(50% - 6px);
-  left: 13px;
 }

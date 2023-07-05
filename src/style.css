@@ -20,7 +20,6 @@
   position: relative;
   display: block;
   margin-top: 20px;
-  font-weight: 300;
 }
 
 .form::before {
@@ -55,7 +54,6 @@
   background-color: #fff;
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
   outline: none;
-  color: #3d4e61;
   height: 70px;
   padding-left: 62px;
   font-size: 16px;
@@ -72,6 +70,10 @@
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   font-weight: 800;
+}
+
+.form__input::placeholder {
+  color: #3d4e61;
 }
 
 .form__input:focus::placeholder {

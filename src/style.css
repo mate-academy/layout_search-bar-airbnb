@@ -26,8 +26,11 @@ body {
   position: relative;
 }
 
-.searchBar__img--big {
+.searchBar__img {
   position: absolute;
+}
+
+.searchBar__img--big {
   width: 19px;
   height: 19px;
   top: 25px;
@@ -35,7 +38,6 @@ body {
 }
 
 .searchBar__img--small {
-  position: absolute;
   width: 11px;
   height: 11px;
   top: 15px;
@@ -52,29 +54,29 @@ body {
 
 .searchBar__input--big {
   height: 70px;
+  font-size: 16px;
   padding-left: 62px;
 }
 
 .searchBar__input--small {
   height: 42px;
+  font-size: 14px;
   padding-left: 33px;
 }
 
-.searchBar__input--big::placeholder {
+.searchBar__input::placeholder {
   color: #3d4e61;
-  font-size: 16px;
-  line-height: normal;
-  font-family: "Avenir-Book", sans-serif;
   font-weight: 400;
+  font-family: "Avenir-Book", sans-serif;
+}
+
+/* .searchBar__input--big::placeholder {
+  font-size: 16px;
 }
 
 .searchBar__input--small::placeholder {
-  color: #3d4e61;
   font-size: 14px;
-  line-height: normal;
-  font-family: "Avenir-Book", sans-serif;
-  font-weight: 400;
-}
+} */
 
 .searchBar__input:hover {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);

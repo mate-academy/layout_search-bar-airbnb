@@ -20,7 +20,7 @@ body {
   margin: 0 auto;
 }
 
-.forms-page__form-big {
+.forms-page__form {
   display: flex;
   margin: 20px 8px;
   height: 70px;
@@ -29,11 +29,11 @@ body {
   transition: box-shadow 0.3s ease 0s;
 }
 
-.forms-page__form-big:hover {
+.forms-page__form:hover {
   box-shadow: 0  3px 8px 0 rgba(61, 78, 97, 0.2);
 }
 
-.forms-page__input-big {
+.forms-page__input {
   width: 100%;
   background-color: transparent;
   padding-left: 62px;
@@ -46,48 +46,23 @@ body {
   color: inherit;
 }
 
-.forms-page__input-big:focus {
+.forms-page__input:focus {
   font-weight: 600;
   background-color: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
-.forms-page__input-big::placeholder {
+.forms-page__input::placeholder {
   color: #3d4e61;
 }
 
-.forms-page__form-small {
-  display: flex;
+.form--small {
   height: 42px;
   margin: 0 8px;
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
   background: url("./images/Search.svg") 13px 49% no-repeat;
   background-size: 11px 11px;
-  transition: box-shadow 0.3s ease 0s;
-
 }
 
-.forms-page__form-small:hover {
-  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
-}
-
-.forms-page__input-small {
-  width: 100%;
-  background-color: transparent;
+.input--small {
   padding-left: 33px;
-  outline: 0;
-  border-radius: 4px;
-  border: 1px solid #e1e7ed;
-
-  font-family: Avenir, sans-serif;
   font-size: 14px;
-  color: inherit;
-}
-
-.forms-page__input-small:focus {
-  font-weight: 600;
-  background-color: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-}
-
-.forms-page__input-small::placeholder {
-  color: inherit;
 }

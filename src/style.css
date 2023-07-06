@@ -1,8 +1,15 @@
 @font-face {
-  font-family: Avenir;
-  src: local("Avenir"), url("./fonts/Avenir-Heavy.ttf");
+  font-family: "Avenir";
   src: local("Avenir"), url("./fonts/Avenir-Book.ttf");
+  font-style: normal;
   font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: local("Avenir"), url("./fonts/Avenir-Heavy.ttf");
+  font-style: normal;
+  font-weight: 800;
 }
 
 * {
@@ -10,14 +17,8 @@
 }
 
 body {
-  color: #3d4e61;
   padding: 0;
   margin: 0;
-}
-
-.forms-page__container {
-  max-width: 1030px;
-  margin: 0 auto;
 }
 
 .forms-page__form {
@@ -43,7 +44,7 @@ body {
 
   font-family: Avenir, sans-serif;
   font-size: 16px;
-  color: inherit;
+  color: #3d4e61;
 }
 
 .forms-page__input:focus {

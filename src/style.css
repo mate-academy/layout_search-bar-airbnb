@@ -1,13 +1,29 @@
 @font-face {
-  font-family: Avenir;
-  src: local("Avenir"), url("./fonts/Avenir-Heavy.ttf");
-  src: local("Avenir"), url("./fonts/Avenir-Book.ttf");
+  font-family: "Avenir";
+  src: url("./fonts/Avenir-Book.ttf");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("./fonts/Avenir.ttc");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("./fonts/Avenir-Heavy.ttf");
+  font-style: normal;
+  font-weight: 800;
 }
 
 body {
   font-family: "Avenir", sans-serif;
   font-weight: 300;
   margin-top: 0;
+  font-style: normal;
 }
 
 .input {
@@ -22,6 +38,7 @@ body {
   background-color: linear-gradient(0deg, #e1e7ed, #e1e7ed),
     linear-gradient(0deg, #fff, #fff);
   color: #3d4e61;
+  font: inherit;
 }
 
 .input--big {
@@ -30,8 +47,9 @@ body {
   background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
   background-size: 19px;
-  background-position: 25px;
-  padding: 25px 62px 26px;
+  background-position-x: 26px;
+  background-position-y: 25px;
+  padding: 24px 25px 24px 62px;
 }
 
 .input--small {
@@ -43,7 +61,7 @@ body {
   background-size: 11px;
   background-position-x: 13px;
   background-position-y: 15px;
-  padding: 12px 33px 11px;
+  padding: 11px 15px 10px 33px;
 }
 
 .input:hover {

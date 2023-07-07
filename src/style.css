@@ -5,10 +5,6 @@
   --box-shadow-focus-hover: rgba(61,77,97,0.13);
 }
 
-html {
-  font-family: "Avenir", sans-serif;
-}
-
 @font-face {
   font-family: "Avenir";
   src: url(fonts/Avenir-Book.ttf);
@@ -40,7 +36,7 @@ html {
   margin: 20px 0;
 }
 
-.big-input {
+html .big-input {
   border: 1px solid var(--border-color);
   border-radius: 4px;
   box-shadow: 0 1px 8px 0 var(--box-shadow);
@@ -79,14 +75,15 @@ html {
   width: 100%;
 }
 
-.big-input:focus.big-input:hover {
+.big-input:focus,
+.big-input:hover {
   border-color: var(--border-color);
   box-shadow: 0 3px 8px 0 var(--box-shadow-focus-hover);
 }
 
 .big-input:focus {
-  background: linear-gradient(180deg,#fff,#f6f6f7);
-  text-shadow: rgba(0,0,0.25) 0 4px 4px;
+  background: linear-gradient(180deg, #fff, #f6f6f7);
+  text-shadow: rgba(0, 0, 0, 0.25) 0 4px 4px;
   border-radius: 3px;
   outline: none;
 }
@@ -117,7 +114,7 @@ html {
 }
 
 .small-input:focus {
-  background: linear-gradient(180deg,#fff,#f6f6f7);
+  background: linear-gradient(180deg, #fff, #f6f6f7);
   border-radius: 3px;
   outline: none;
   text-shadow: none;

@@ -4,6 +4,10 @@
   src: local("Avenir"), url("./fonts/Avenir-Book.ttf");
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .search-form {
   display: block;
   margin-top: 20px;
@@ -22,18 +26,20 @@
 }
 
 .search-form--large .search-form__search-icon {
-  background-size: 19px;
+  width: 19px;
+  height: 19px;
   left: 26px;
 }
 
 .search-form--small .search-form__search-icon {
-  background-size: 11px;
+  width: 11px;
+  height: 11px;
   left: 13px;
 }
 
 .search-form__search-field {
   outline: none;
-  box-sizing: border-box;
+  display: block;
   width: 100%;
   font-family: Avenir, sans-serif;
   font-weight: 900;

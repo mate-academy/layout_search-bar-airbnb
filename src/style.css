@@ -77,10 +77,11 @@ body {
   font-size: 14px;
 }
 
-.form:hover {
+.form:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   box-shadow: 0 4px 4px 0 var(--shadowHover);
 }
 
-.form:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+.form:hover {
+  box-shadow: 0 4px 4px 0 var(--shadowHover);
 }

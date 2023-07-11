@@ -17,6 +17,7 @@
 }
 
 body {
+  --textColor: #3d4e61;
   --shadowHover: rgba(0, 0, 0, 0.25);
   margin: 0 8px;
   font-family: "Avenir", sans-serif;
@@ -58,7 +59,7 @@ body {
   padding: 0;
   text-shadow: 0 2px 2px var(--shadowHover);
   font-size: 16px;
-  color: #3d4e61;
+  color: var(--textColor);
   font-family: inherit;
   font-weight: 900;
 }
@@ -68,6 +69,7 @@ body {
 }
 
 .search__input::placeholder {
+  color: var(--textColor);
   font-size: 16px;
   text-shadow: none;
   font-weight: 300;

@@ -11,23 +11,37 @@
     <title>Search bar airbnb</title>
   </head>
   <body>
-    <form class="form-search form-search-big" data-qa="big">
+    <form
+    action="#"
+    method="get"
+    class="form-search form-search-big"
+    data-qa="big"
+    >
       <label class="form-search__label form-search__label-big">
         <input
-        class="form-search__input form-search__input-big "
-         data-qa="keypress"
-         type="text"
+         id="search"
+         type="search"
+         name="search"
          placeholder="Try &quot;Los Angeles&quot;"
+         class="form-search__input form-search__input-big "
+         data-qa="keypress"
          >
       </label>
     </form>
-    <form class="form-search form-search-small" data-qa="small">
+    <form
+    action="#"
+    method="get"
+    class="form-search form-search-small"
+    data-qa="small"
+    >
       <label class="form-search__label form-search__label-small">
         <input
-        class="form-search__input form-search__input-small "
-         data-qa="hover"
-         type="text"
+         id="searchSmall"
+         type="search"
+         name="searchSmall"
          placeholder="Try &quot;Los Angeles&quot;"
+         class="form-search__input form-search__input-small "
+         data-qa="hover"
          >
       </label>
     </form>

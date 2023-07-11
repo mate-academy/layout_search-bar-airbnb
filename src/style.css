@@ -10,6 +10,30 @@
 
 .section {
   margin-top: 20px;
+  position: relative;
+}
+
+.section--big::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 60px;
+  height: 70px;
+  background-image: url("../src/images/Search.svg");
+  background-repeat: no-repeat;
+  background-position-x: 26px;
+  background-position-y: 25px;
+  z-index: 1;
+}
+
+.section--small::before {
+  width: 32px;
+  height: 40px;
+  background-image: url("../src/images/Search.svg");
+  background-repeat: no-repeat;
+  background-size: 11px 11px;
+  background-position-x: 13px;
+  background-position-y: 15px;
 }
 
 .input {
@@ -18,11 +42,6 @@
   border-radius: 4px;
   border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
-  background-image: url("../src/images/Search.svg");
-  background-size: 19px 19px;
-  background-repeat: no-repeat;
-  background-position-x: 26px;
-  background-position-y: 25px;
   padding-left: 62px;
   box-sizing: border-box;
   font-family: "Avenir", sans-serif;
@@ -44,11 +63,6 @@
   border-radius: 3px;
   outline: 1px solid #e1e7ed;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  background-image: url("../src/images/Search.svg");
-  background-size: 19px 19px;
-  background-repeat: no-repeat;
-  background-position-x: 26px;
-  background-position-y: 25px;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
   font-family: "AvenirHeavy", sans-serif;
   color: #3d4e61;
@@ -60,34 +74,8 @@
   opacity: 0;
 }
 
-.search-bar--small {
-  width: 100%;
-}
-
 .input--small {
   height: 42px;
-  background-size: 11px 11px;
-  background-position-x: 13px;
-  background-position-y: 15px;
   padding-left: 33px;
-  font-family: "Avenir", sans-serif;
-  font-weight: 300;
   font-size: 14px;
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
-}
-
-.input--small:focus {
-  border-radius: 3px;
-  outline: 1px solid #e1e7ed;
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-  color: #3d4e61;
-  font-weight: 900;
-  font-size: 14px;
-  font-family: "AvenirHeavy", sans-serif;
-  background-image: url("../src/images/Search.svg");
-  background-size: 11px 11px;
-  background-repeat: no-repeat;
-  background-position-x: 13px;
-  background-position-y: 15px;
 }

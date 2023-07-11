@@ -19,60 +19,57 @@
   box-sizing: border-box;
 }
 
-.box {
+.form {
   display: flex;
   margin-top: 20px;
+  width: 100%;
   border-radius: 4px;
   border: 1px solid #e1e7ed;
   background: #fff;
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
-  width: 100%;
   align-items: center;
   justify-content: center;
 }
 
-/* #region big */
-.big {
+.form--big {
   height: 68px;
 }
 
-.big-logo {
+.form__image--big {
   color: #687c94;
   margin-left: 25px;
   margin-bottom: 2px;
 }
 
-.search {
+.form__input {
   font-family: "Avenir", sans-serif;
   flex: 1;
-  font-style: normal;
-  line-height: normal;
   color: #3d4e61;
   border: none;
   outline: none;
 }
 
-.big-bar {
+.form__input--big {
   margin-left: 18px;
   font-size: 16px;
   padding: 0;
 }
 
-.box:hover {
+.form:hover {
   font-style: normal;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.box input[type="text"]:focus {
+.form input[type="text"]:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
-.search:focus {
+.form__input:focus {
   text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
-  font-weight: bold;
+  font-weight: 700;
 }
 
-.search::placeholder {
+.form__input::placeholder {
   font-family: "Avenir-Book", sans-serif;
   color: #687c94;
   font-style: normal;
@@ -80,34 +77,31 @@
   line-height: normal;
 }
 
-.search:focus::placeholder {
+.form__input:focus::placeholder {
   font-style: normal;
   color: #3d4e61;
   font-weight: 400;
   opacity: 1;
 }
-/* #endregion */
 
-/* #region small */
-.small {
+.form--small {
   height: 40px;
 }
 
-.small-logo {
+.form__image--small {
   margin-left: 12px;
   height: 11px;
   width: 11px;
   margin-bottom: 2px;
 }
 
-.small-bar {
+.form__input--small {
   margin-left: 10px;
   font-size: 14px;
   padding: 0;
 }
 
-.small-bar:focus {
+.form--small:focus {
   text-shadow: none;
   font-weight: 900;
 }
-/* #endregion */

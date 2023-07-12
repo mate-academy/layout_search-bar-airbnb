@@ -11,17 +11,20 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="#site" class="form form--01"
+    <form action="#site" class="form form--big"
      method="post">
-      <input type="text" class="form__textbox form--01__textbox"
-       placeholder="Try &quot;Los Angeles&quot;"
-      data-qa="big" >
+      <label for="big__textbox"></label>
+      <input type="text" class="form__textbox form--big__textbox"
+        placeholder="Try &quot;Los Angeles&quot;"
+       data-qa="big" id="big__textbox">
+
     </form>
 
-    <form action="#site" class="form form--02"
+    <form action="#site" class="form form--small"
      method="post">
-      <input type="text" class="form__textbox form--02__textbox"
-       placeholder="Try &quot;Los Angeles&quot;" data-qa="small">
+      <label for="small__textbox"></label>
+      <input type="text" class="form__textbox form--small__textbox"
+       placeholder="Try &quot;Los Angeles&quot;" data-qa="small" id="small__textbox">
     </form>
   </body>
 </html>

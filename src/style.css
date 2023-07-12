@@ -1,3 +1,5 @@
+/* #region FONTS & BODY */
+
 @font-face {
   font-family: Avenir;
   src: url(/fonts/Avenir-Heavy.ttf);
@@ -16,7 +18,8 @@ body {
   margin: 0;
 }
 
-/* #region BIG FORM */
+/* #endregion */
+/* #region STYLE ELEMENTS */
 
 .form {
   position: relative;
@@ -44,6 +47,15 @@ body {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
+.input:focus {
+  background-image: linear-gradient(#fff, #f6f6f7);
+  outline: none;
+}
+
+.input::placeholder {
+  color: inherit;
+}
+
 .icon--big {
   height: 19px;
   width: 19px;
@@ -51,31 +63,31 @@ body {
   top: 25px;
 }
 
-.input__big {
+.input--big {
   font-size: 16px;
   font-weight: 900;
   padding-left: 62px;
   height: 70px;
 }
 
-.input__big::placeholder {
-  color: inherit;
+/* #endregion */
+/* #region STYLE MODIFIER --BIG */
+
+.input--big::placeholder {
   font-size: 16px;
   font-weight: 400;
 }
 
-.input__big:focus {
+.input--big:focus {
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  background-image: linear-gradient(#fff, #f6f6f7);
-  outline: none;
 }
 
-.input__big:focus::placeholder {
+.input--big:focus::placeholder {
   text-shadow: none;
 }
 
 /* #endregion */
-/* #region SMALL FORM */
+/* #region STYLE MODIFIER --SMALL */
 
 .icon--small {
   height: 11px;
@@ -84,27 +96,22 @@ body {
   top: 15px;
 }
 
-.input__small {
+.input--small {
   font-size: 14px;
   padding-left: 33px;
   height: 42px;
 }
 
-.input__small::placeholder {
-  color: inherit;
+.input--small::placeholder {
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.input__small:focus {
+.input--small:focus {
   font-weight: 900;
-  background-image: linear-gradient(#fff, #f6f6f7);
-  background-repeat: no-repeat;
-  outline: none;
 }
 
-.input__small:focus::placeholder {
+.input--small:focus::placeholder {
   font-weight: 400;
-  color: inherit;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 

@@ -33,8 +33,6 @@ body {
 .search-form__lable::before {
   content: "";
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
 
   background-image: url("./images/Search.svg");
   background-size: contain;
@@ -79,6 +77,8 @@ body {
   width: 19px;
   height: 19px;
   left: 26px;
+  top: 26px;
+
 }
 
 .search-form__field--lg {
@@ -88,10 +88,11 @@ body {
 .search-form__lable--small::before {
   width: 11px;
   height: 11px;
+  top: 15px;
   left: 13px;
 }
 
 .search-form__field--sm {
-  padding: 10.2px 32.9px;
+  padding: 10.2px 33px;
   font-size: 14px;
 }

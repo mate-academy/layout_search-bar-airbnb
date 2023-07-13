@@ -1,73 +1,63 @@
 .search-bar {
   margin-top: 20px;
-  position: relative;
-
-  &__img {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    width: 19px;
-
-    &--small {
-      position: absolute;
-      top: 15px;
-      left: 13px;
-      width: 11px;
-    }
-  }
 
   &__input {
-    width: 100%;
-    height: 70px;
-    padding-left: 62px;
-    outline: none;
+    display: flex;
+    align-items: center;
+    align-content: center;
     font-family: "Avenir", sans-serif;
+    border: $border;
+    box-shadow: 0 1px 8px 0 #3d4e611a;
     border-radius: 4px;
-    border: 1px solid #e1e7ed;
-    box-shadow: 0 1px 8px rgba(61,78,97,0.1);
+    width: 100%;
+    margin-top: 20px;
+    background-color: linear-gradient(0deg, #e1e7ed, #e1e7ed),
+      linear-gradient(0deg, #fff, #fff);
+    color: $main-color;
 
-    &::placeholder {
-      font-family: inherit;
+    &--big {
+      height: 70px;
       font-size: 16px;
-      font-weight: 300;
-      color: #3d4e61;
-    }
+      background-image: url(../images/Search.svg);
+      background-repeat: no-repeat;
+      background-size: 19px;
+      background-position-x: 26px;
+      background-position-y: 25px;
+      padding: 24px 25px 24px 62px;
 
-    &:hover {
-      box-shadow: 0 3px 8px rgba(61,78,97, 0.2);
-    }
-
-    &:focus,
-    &:focus-visible {
-      font-size: 16px;
-      font-weight: 600;
-      text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
-      background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-
+      &:focus {
+        font-weight: 900;
+        outline: none;
+        border: $border;
+        background-color: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+        text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+      }
     }
 
     &--small {
       height: 42px;
-      padding-left: 33px;
-      font-family: "Avenir", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      background-image: url(../images/Search.svg);
+      background-repeat: no-repeat;
+      background-size: 11px;
+      background-position-x: 13px;
+      background-position-y: 15px;
+      padding: 11px 15px 10px 33px;
 
-      &::placeholder {
-        font-family: inherit;
-        font-size: 14px;
-        font-weight: 300;
-        color: #3d4e61;
-      }
-
-      &:hover {
-        box-shadow: 0 3px 8px rgba(61,78,97, 0.2);
-      }
-
-      &:focus,
-      &:focus-visible {
-        font-size: 14px;
-        font-weight: 600;
+      &:focus {
+        outline: none;
+        background-color: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+        font-weight: 900;
       }
     }
-  }
 
+    &::placeholder {
+      color: $main-color;
+    }
+
+    &:hover {
+      box-shadow: 0 3px 8px 0 #3d4e6133;
+    }
+  }
 }

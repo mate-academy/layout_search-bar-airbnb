@@ -1,0 +1,119 @@
+:root {
+  --main-color: #3d4e61;
+  --border-color: #e1e7ed;
+  --shadow-black: #00000040;
+  --shadow-light: #3d4e611a;
+  --white-color: #fff;
+  --light-color: #f6f6f7;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("fonts/Avenir-Book.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("fonts/Avenir-Heavy.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  font-family: "Avenir", sans-serif;
+  margin: 0;
+}
+
+input {
+  background: var(--white-color);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 1px 8px 0 var(--shadow-light);
+  border-radius: 4px;
+  outline: none;
+  line-height: 21.86px;
+  color: var(--main-color);
+  width: 100%;
+}
+
+input,
+input::placeholder {
+  font-family: inherit;
+  font-weight: 300;
+}
+
+input:focus {
+  outline: none;
+  font-weight: 600;
+  text-shadow: 0 4px 4px 0 var(--shadow-black);
+  background: linear-gradient(180deg,var(--white-color),var(--light-color));
+  box-shadow: 0 4px 4px 0 var(--shadow-black);
+}
+
+input:hover {
+  box-shadow: 0 4px 4px 0 var(--shadow-black);
+}
+
+label {
+  position: relative;
+  display: block;
+}
+
+label::before {
+  content: "";
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("./images/Search.svg");
+}
+
+.form__big {
+  margin: 20px 8px;
+}
+
+.form__big-input::placeholder {
+  font-size: 16px;
+}
+
+.form__small {
+  margin: 0 8px;
+}
+
+.form__big-input {
+  height: 70px;
+  font-size: 16px;
+  padding-left: 62px;
+}
+
+.form__small-input {
+  height: 42px;
+  font-size: 14px;
+  padding-left: 33px;
+}
+
+.form__small-input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--main-color);
+}
+
+.form__small-label::before {
+  width: 11px;
+  height: 11px;
+  left: 13px;
+  top: 15px;
+}
+
+.form__big-label::before {
+  width: 19px;
+  height: 19px;
+  left: 26px;
+  top: 25px;
+}

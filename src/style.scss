@@ -10,12 +10,18 @@
   font-weight: 700;
 }
 
-$shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+:root {
+  --placeholder-color: #3d4e61;
+  --shadow-color: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.container {
+  margin-top: 20px;
+}
 
 .search-bar {
   display: block;
   position: relative;
-  margin-top: 20px;
 
   &__input {
     box-sizing: border-box;
@@ -30,18 +36,20 @@ $shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     font-size: 16px;
 
     &::placeholder {
-      color: #3d4e61;
+      color: var(--placeholder-color);
     }
 
     &:focus ,
     &:hover {
-      box-shadow: $shadow;
+      box-shadow: var(--shadow-color);
     }
 
     &:focus {
-      background: linear-gradient(180deg, #fff, #f6f6f7);
+      background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+      border: 1px solid #e1e7ed;
       font-weight: 800;
-      text-shadow: $shadow;
+      text-shadow: var(--shadow-color);
+      outline: none;
 
       &::placeholder {
         font-weight: 300;

@@ -1,3 +1,4 @@
+/* #region fonts */
 @font-face {
   font-family: "Avenir";
   src: url("fonts/Avenir-Book.ttf");
@@ -12,14 +13,25 @@
   font-style: normal;
 }
 
+/* #endregion fonts */
+
+/* #region base-styles */
+
 * {
   box-sizing: border-box;
+}
+
+/* #endregion base-styles */
+
+/* #region form */
+
+.form-container {
+  margin-top: 20px;
 }
 
 .form {
   position: relative;
   display: block;
-  margin-top: 20px;
 }
 
 .form::before {
@@ -85,3 +97,5 @@
   padding-left: 33px;
   font-size: 14px;
 }
+
+/* #endregion form */

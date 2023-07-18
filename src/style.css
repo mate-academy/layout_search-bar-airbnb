@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: avenir;
+  src: url(fonts/Avenir-Book.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: avhev;
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: 300;
+}
+
+.search-form {
+  position: relative;
+  margin-top: 20px;
+}
+
+.search-input {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid rgba(225, 231, 237, 1);
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  font-weight: 300;
+  font-family: avenir, sans-serif;
+  color: rgba(61, 78, 97, 1);
+}
+
+.input--big {
+  height: 70px;
+  text-indent: 62px;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 26px;
+  background-size: 19px;
+  font-size: 16px;
+}
+
+.input--small {
+  height: 42px;
+  text-indent: 33px;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 13px;
+  background-size: 11px;
+  font-size: 14px;
+}
+
+.input--big:focus {
+  outline: none !important;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: avhev, sans-serif;
+  color: rgba(61, 78, 97, 1);
+  border-radius: 3px;
+  border: 1px solid rgba(225, 231, 237, 1);
+  background-image: url(images/Search.svg), linear-gradient(rgba(255, 255, 255, 1), rgba(246, 246, 247, 1));
+  background-repeat: no-repeat, no-repeat;
+  background-position: 26px, left;
+  background-size: 19px, 100%;
+}
+
+.input--small:focus {
+  outline: none !important;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: avhev, sans-serif;
+  color: rgba(61, 78, 97, 1);
+  border-radius: 3px;
+  border: 1px solid rgba(225, 231, 237, 1);
+  background-image: url(images/Search.svg), linear-gradient(rgba(255, 255, 255, 1), rgba(246, 246, 247, 1));
+  background-repeat: no-repeat, no-repeat;
+  background-position: 13px, left;
+  background-size: 11px, 100%;
+}
+
+.input--big:hover {
+  border: 1px solid rgb(202, 201, 201);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  align-items: center;
+}
+
+.input--small:hover {
+  border: 1px solid rgb(202, 201, 201);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  align-items: center;
+}
+
+.search-input::placeholder {
+  font-weight: 300;
+  font-family: avenir, sans-serif;
+  color: rgba(61, 78, 97, 1);
+  text-shadow: none;
+}

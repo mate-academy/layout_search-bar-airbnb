@@ -1,14 +1,23 @@
+@font-face {
+  font-family: Avenir_heavy;
+  src: url(fonts/Avenir-Heavy.ttf);
+}
+
+@font-face {
+  font-family: avenir_book;
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url(fonts/Avenir.ttc);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-@font-face {
-  font-family: Avenir;
-  src: url(fonts/Avenir-Book.ttf),
-    url(fonts/Avenir-Heavy.ttf),
-    url(fonts/Avenir.ttc);
+  font-family: "Avenir", sans-serif;
 }
 
 body {
@@ -42,7 +51,7 @@ body {
 
 .search::placeholder {
   color: #3d4e61;
-  font-family: Avenir;
+  font-family: "Avenir", sans-serif;
   font-size: 16px;
   font-style: normal;
   line-height: normal;
@@ -50,13 +59,13 @@ body {
 
 .search2::placeholder {
   color: #3d4e61;
-  font-family: Avenir;
+  font-family: "Avenir", sans-serif;
   font-size: 14px;
   font-style: normal;
   line-height: normal;
 }
 
-.box {
+.form1 {
   margin-top: 20px;
   height: 70px;
   width: 100%;
@@ -68,7 +77,7 @@ body {
   background: #fff;
 }
 
-.box2 {
+.form2 {
   margin-top: 20px;
   height: 42px;
   width: 100%;
@@ -80,31 +89,45 @@ body {
   background: #fff;
 }
 
-.box:hover {
+.form1:hover {
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
 }
 
-.box2:hover {
+.form2:hover {
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
 }
 
-.box:focus {
+.search[type="text"]:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.search2[type="text"]:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.search:focus {
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+}
+
+.search2:focus {
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+}
+
+.form1:focus::placeholder {
   color: #3d4e61;
-  font-family: Avenir;
+  font-family: "Avenir", sans-serif;
   font-size: 16px;
   font-style: normal;
   line-height: normal;
   border-radius: 3px;
   border: 1px solid #e1e7ed;
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
-.box2:focus {
+.form2:focus::placeholder {
   border-radius: 3px;
   border: 1px solid #e1e7ed;
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   color: #3d4e61;
-  font-family: Avenir;
+  font-family: "Avenir", sans-serif;
   font-size: 14px;
   font-style: normal;
   line-height: normal;

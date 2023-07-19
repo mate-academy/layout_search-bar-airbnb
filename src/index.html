@@ -12,39 +12,50 @@
   </head>
   <body>
     <form
-  action="/search"
-   method="get"
-   data-qa="big"
-   class="form"
+       action="/search"
+       method="get"
+       data-qa="big"
+       class="form"
+       >
+      <label for="big icon">
+        <img
+         src="./images/Search.svg"
+         class="icon--cursor icon-big"
+         alt="big Icon"
    >
-      <img
-   src="./images/Search.svg"
-   class="icon-big"
-   alt="big Icon"
-   >
+      </label>
+
       <input
-   type="text"
-   class="input-big input-big--appearance"
-   data-qa="keypress"
-   placeholder="Try &quot;Los Angeles&quot;">
+         type="text"
+         class="input-big input-big--appearance"
+         data-qa="keypress"
+         placeholder="Try &quot;Los Angeles&quot;"
+         id="big icon"
+           >
     </form>
 
     <form
-  action="/search"
-  method="get"
-  data-qa="small"
-  class="form"
+      action="/search"
+      method="get"
+      data-qa="small"
+      class="form"
   >
-      <img
-  src="./images/Search.svg"
-  class="icon-small"
-  alt="Small Icon">
+      <label
+        for="small icon"
+        >
+        <img
+          src="./images/Search.svg"
+          class="icon--cursor icon-small"
+          alt="Small Icon"
+         >
+      </label>
       <input
-  type="text"
-  class="input-small input-small-appearance"
-  data-qa="small"
-  placeholder="Try &quot;Los Angeles&quot;">
-
+         type="text"
+         class="input-small input-small--appearance"
+         data-qa="small"
+         placeholder="Try &quot;Los Angeles&quot;"
+         id="small icon"
+         >
     </form>
   </body>
 </html>

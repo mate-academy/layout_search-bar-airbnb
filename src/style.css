@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 300;
+  src: url("./fonts/Avenir-Book.ttf"),
+    url("./fonts/Avenir-Heavy.ttf");
+}
+
+html {
+  --big-input-height: 70px;
+  --small-input-height: 42px;
+  --big-placeholder-padding: 62px;
+  --small-placeholder-padding: 33px;
+  --big-input-fz: 16px;
+  --small-input-fz: 14px;
+  --big-btn-heiht: 19px;
+  --big-btn-width: 19px;
+  --small-btn-height: 11px;
+  --small-btn-width: 11px;
+}
+
+body {
+  margin: 0 8px;
+}
+
+.search__bar {
+  position: relative;
+  display: flex;
+  margin-top: 20px;
+
+}
+
+.search__input {
+  width: 100%;
+  height: var(--big-input-height);
+  font-family: Avenir, sans-serif;
+  font-size: var(--big-input-fz);
+  font-weight: bold;
+  padding-left: var(--big-placeholder-padding);
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  justify-content: center;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+}
+
+.search__input:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search__input:focus {
+  outline: none;
+  border: 1px solid #e1e7ed;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  filter: drop-shadow( 0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.search__input::placeholder {
+  font-family: Avenir, sans-serif;
+  font-size: var(--big-input-fz);
+  font-weight: normal;
+}
+
+.small-input {
+  height: var(--small-input-height);
+  font-size: var(--small-input-fz);
+  font-weight: bold;
+  padding-left: var(--small-placeholder-padding);
+}
+
+.small-input::placeholder {
+  font-size: var(--small-input-fz);
+}
+
+.small-input:focus {
+  box-shadow: none;
+  font-weight: normal;
+}
+
+.search__button {
+  align-self: center;
+  position: absolute;
+  z-index: 100;
+  border: none;
+  left: 26px;
+  height: var(--big-btn-heiht);
+  width: var(--big-btn-width);
+  background-color: transparent;
+  background-image: url(./images/Search.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.search__button:hover {
+  cursor: pointer;
+}
+
+.small-button {
+  left: 13px;
+  height: var(--small-btn-height);
+  width: var(--small-btn-width);
+}

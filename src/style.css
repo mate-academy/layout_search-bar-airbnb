@@ -20,7 +20,7 @@ html {
   --small-input-fz: 14px;
   --big-btn-heiht: 19px;
   --big-btn-width: 19px;
-  --small-btn-height: 11px;
+  --small-btn-height: 11.1px;
   --small-btn-width: 11px;
 }
 
@@ -82,6 +82,7 @@ body {
 }
 
 .search__button {
+  flex-shrink: 0;
   align-self: center;
   position: absolute;
   z-index: 100;
@@ -93,7 +94,6 @@ body {
   background-image: url(./images/Search.svg);
   background-size: contain;
   background-repeat: no-repeat;
-
 }
 
 .search__button:hover {

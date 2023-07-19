@@ -12,44 +12,49 @@
   </head>
   <body>
     <h1 class="visually-hidden">Search bar airbnb</h1>
-    <div class="form" data-qa="big keypress">
-      <label for="search-bar-big">
-        <img
-        src="images/Search.svg"
-        alt="search"
-        class="search__icon"
-      >
-      </label>
-
-      <input
-      action="/action/api"
-      method="post"
-      type="text"
-      data-qa="big"
+    <form
       class="search__bar"
-      id="search-bar-big"
-      placeholder="Try &quot;Los Angeles&quot;"
-      >
-    </div>
-
-    <div class="form">
-      <label for="search-bar-small">
+      data-qa="big"
+      action="/action/api"
+      method="post"
+    >
+      <label for="searchInputBig">
         <img
-        src="images/Search.svg"
-        alt="search"
-        class="search__icon search__icon__small"
-      >
+          src="images/Search.svg"
+          alt="search"
+          class="search__icon"
+        >
       </label>
 
       <input
+        type="text"
+        data-qa="keypress"
+        class="search__input"
+        id="searchInputBig"
+        placeholder="Try &quot;Los Angeles&quot;"
+      >
+    </form>
+
+    <form
+      class="search__bar"
+      data-qa="small"
       action="/action/api"
       method="post"
-      data-qa="small"
-      type="text"
-      class="search__bar small"
-      id="search-bar-small"
-      placeholder="Try &quot;Los Angeles&quot;"
+    >
+      <label for="searchInputSmall">
+        <img
+          src="images/Search.svg"
+          alt="search"
+          class="search__icon search__icon__small"
+        >
+      </label>
+
+      <input
+        type="text"
+        class="search__input small"
+        id="searchInputSmall"
+        placeholder="Try &quot;Los Angeles&quot;"
       >
-    </div>
+    </form>
   </body>
 </html>

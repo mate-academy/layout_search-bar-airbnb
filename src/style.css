@@ -8,25 +8,19 @@
 @font-face {
   font-family: Avenir;
   src: url(fonts/Avenir-Heavy.ttf);
-  font-weight: 600;
+  font-weight: 800;
   font-style: normal;
-}
-
-.container__item {
-  margin: 20px auto 0;
 }
 
 .search-form {
   box-sizing: border-box;
   width: 100%;
-  font-family: Avenir, sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  color: #3d4e61;
+  height: 70px;
+  margin: 20px auto 0;
 }
 
 .search-form--small {
-  font-size: 14px;
+  height: 42px;
 }
 
 .search-form__label {
@@ -61,32 +55,38 @@
   box-sizing: border-box;
   width: 100%;
   padding: 23px 23px 23px 62px;
-  color: inherit;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #3d4e61;
   border: 1px solid #e1e7ed;
   border-radius: 4px;
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
-  outline: none;
 }
 
 .search-form__input--small {
   padding: 10px 10px 10px 33px;
+  font-size: 14px;
 }
 
 .search-form__input::placeholder {
-  color: inherit;
+  color: #3d4e61;
   font-weight: 300;
 }
 
 .search-form__input:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search-form__input--small:hover {
   box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
 }
 
 .search-form__input:focus {
-  font-weight: 600;
+  outline: none;
+  font-weight: 800;
   border-radius: 3px;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }

@@ -10,10 +10,10 @@
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
   </head>
-  <body>
+  <body class="page">
     <h1 class="visually-hidden">Search bar airbnb</h1>
     <form
-      class="search__bar"
+      class="search"
       data-qa="big"
       action="/action/api"
       method="post"
@@ -36,7 +36,7 @@
     </form>
 
     <form
-      class="search__bar"
+      class="search"
       data-qa="small"
       action="/action/api"
       method="post"
@@ -45,13 +45,13 @@
         <img
           src="images/Search.svg"
           alt="search"
-          class="search__icon search__icon__small"
+          class="search__icon search__icon--small"
         >
       </label>
 
       <input
         type="text"
-        class="search__input small"
+        class="search__input search__input--small"
         id="searchInputSmall"
         placeholder="Try &quot;Los Angeles&quot;"
       >

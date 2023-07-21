@@ -7,6 +7,7 @@
   --color-search-bar--border: #e1e7ed;
   --color-input-and-placeholder: #3d4e61;
   --color-background-color: #fff;
+  --color-for-input: hsl(210, 25%, 91%);
 }
 
 @font-face {
@@ -21,13 +22,12 @@
   src: url(./fonts/Avenir-Heavy.ttf);
 }
 
-.form {
-  margin: 20px 0 0;
-  position: relative;
+.input {
+  margin: 12px 0 18px;
+  border-radius: 4px;
+  border: 1px solid var(--color-for-input);
+  background: var(--color-background-color);
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
-}
-
-.input-big {
   height: 70px;
   width: 100%;
   text-indent: 62px;
@@ -36,45 +36,40 @@
   color: var(--color-input-and-placeholder);
   font-family: Avenir-Book;
   outline: none;
+
 }
 
-.input-big--appearance {
-  border-radius: 4px;
-  border: 1px solid hsl(210, 25%, 91%);
-  background: var(--color-background-color);
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
-}
-
-.input-big:hover {
+.input:hover {
   border-radius: 4px;
   border: 1px solid var(--color-search-bar--border);
   background: var(--color-background-color);
   box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
 }
 
-.input-big:focus {
+.input:focus {
   border-radius: 3px;
   border: 1px solid var(--color-search-bar--border);
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
-.input-big::placeholder {
+.input::placeholder {
   font-family: Avenir-Book;
   font-weight: 400;
   font-size: 16px;
   color: var(--color-input-and-placeholder);
 }
 
-.icon-big {
+.icon {
   height: 19px;
   width: 19px;
   position: absolute;
   content: "";
-  top: 25px;
-  left: 26px;
+  top: 45px;
+  left: 33px;
+  cursor: text;
 }
 
-.input-small {
+.input--small {
   height: 40px;
   width: 100%;
   text-indent: 33px;
@@ -86,42 +81,14 @@
   outline: none;
 }
 
-.input-small--appearance {
-  border-radius: 4px;
-  border: 1px solid var(--color-search-bar--border);
-  background: var(--color-background-color);
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
-}
-
-.input-small:hover {
-  border-radius: 4px;
-  border: 1px solid var(--color-search-bar--border);
-  background: var(--color-background-color);
-  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
-}
-
-.input-small:focus {
-  border-radius: 3px;
-  border: 1px solid var(--color-search-bar--border);
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-}
-
-.input-small::placeholder {
-  color: var(--color-input-and-placeholder);
-  font-family: Avenir-Book;
+.input--small::placeholder {
   font-size: 14px;
   font-weight: 300;
 }
 
-.icon-small {
+.icon--small {
   height: 11px;
   width: 11px;
-  position: absolute;
-  content: "";
-  top: 15px;
-  left: 13px;
-}
-
-.icon--cursor {
-  cursor: text;
+  top: 129px;
+  left: 22px;
 }

@@ -1,5 +1,6 @@
+<!-- #region head -->
 <!doctype html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8">
     <meta
@@ -10,7 +11,38 @@
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
   </head>
-  <body>
-    <h1>Search bar airbnb</h1>
+  <!-- #endregion  -->
+  <body class="page__body">
+    <div class="forms page__forms">
+      <form
+        action="big"
+        method="get"
+        data-qa="big"
+        class="forms__content"
+      >
+        <label for="bigInput" class="hidden">bigHidden</label>
+        <input
+          id="bigInput"
+          class="forms__input forms__input--big"
+          type="text"
+          placeholder="Try &quot;Los Angeles&quot;"
+          data-qa="keypress"
+        >
+      </form>
+      <form
+        action="small"
+        method="get"
+        data-qa="small"
+        class="forms__content"
+      >
+        <label for="smallInput" class="hidden">smallHidden</label>
+        <input
+          id="smallInput"
+          class="forms__input forms__input--small"
+          type="text"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </form>
+    </div>
   </body>
 </html>

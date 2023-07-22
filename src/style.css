@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(fonts/Avenir-Book.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.form__wrapper {
+  width: 1009px;
+  margin: 20px auto;
+}
+
+.big__bar {
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  color: #3d4e61;
+  border-radius: 4px;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: 19px;
+  background-position: 26px 25px;
+  padding-left: 62px;
+  border: 1px solid rgba(100, 100, 100, 0.2);
+  width: 100%;
+  height: 70px;
+  font-family: "Avenir", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.small__bar {
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  color: #3d4e61;
+  border-radius: 4px;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: 11px;
+  background-position: 13px 15px;
+  padding-left: 33px;
+  border: 1px solid rgba(100, 100, 100, 0.2);
+  width: 100%;
+  height: 42px;
+  font-family: "Avenir", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.big__bar:hover,
+.small__bar:hover {
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+}
+
+.big__bar:focus,
+.small__bar:focus {
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+}
+
+.big__bar::placeholder,
+.small__bar::placeholder {
+  font-family: "Avenir", sans-serif;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 720px) {
+  .form__wrapper {
+    width: 704px;
+  }
+}

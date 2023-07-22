@@ -1,56 +1,84 @@
-.search__bar {
-  position: relative;
-  display: flex;
-  align-items: center;
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf);
+  font-weight: 300;
+  font-style: normal;
 }
 
-.search__bar--img {
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+}
+
+.form__container {
+  margin: 20px auto 0;
+}
+
+.search-form__label {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+}
+
+.search-form__label:after {
   width: 19px;
   height: 19px;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  display: block;
   position: absolute;
+  top: 25px;
   left: 26px;
 }
 
-.search__bar--field {
-  line-height: 70px;
-  color: #3d4e61;
-  font-family: Avenir, sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 350;
-  width: 900px;
-  height: 70px;
-  border-radius: 4px;
-  border: 1px solid #e1e7ed;
-  background: #fff;
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
-  display: flex;
-  align-items: center;
-  padding-left: 62px;
-}
-
-.search__bar--field:hover {
-  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
-}
-
-.search__bar--field:focus {
-  border-radius: 3px;
-  border: 1px solid #e1e7ed;
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  font-weight: 800;
-}
-
-.search__barSmall--img {
+.search-form__label--small:after {
   width: 11px;
   height: 11px;
-  position: absolute;
+  top: 15px;
   left: 13px;
 }
 
-.search__barSmall--field {
-  width: 427px;
+.search-form__input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 70px;
+  padding-left: 62px;
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.search-form__input--small {
   height: 42px;
-  line-height: 42;
-  font-size: 14px;
   padding-left: 33px;
+  font-size: 14px;
+}
+
+.search-form__input::placeholder {
+  color: #3d4e61;
+  font-weight: 300;
+}
+
+.search-form__input:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search-form__input:focus {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  outline: none;
+  font-weight: 800;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }

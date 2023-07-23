@@ -15,7 +15,7 @@ ___
 ![screenshot](./references/search-bar-example.png)
 
 ### Requirements:
-- use images from [src/images](src/images)
+- use images from [src/images](src/images) 
 - there must be two search bars
 - search bar must have width 100%
 - distance between two search bars must be 20px

@@ -16,7 +16,7 @@
   margin-top: 20px;
 }
 
-.search__bar-container {
+.search {
   position: relative;
 }
 
@@ -52,8 +52,11 @@
   font-weight: bold;
 }
 
-.search__icon {
-  background-image: url("/images/Search.svg");
+.search__bar-container::after {
+  content: "";
+  display: block;
+  visibility: visible;
+  background-image: url("./images/Search.svg");
   background-size: cover;
   height: 19px;
   width: 19px;
@@ -62,6 +65,7 @@
   top: 25px;
   left: 26px;
   pointer-events: none;
+  z-index: 2;
 }
 
 .search--small .search__bar {
@@ -70,7 +74,7 @@
   padding-left: 33px;
 }
 
-.search--small .search__icon {
+.search--small .search__bar-container::after {
   height: 11px;
   width: 11px;
   top: 15px;

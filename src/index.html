@@ -11,6 +11,36 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <form
+      action="http://localhost:3000/api"
+      method="post"
+      data-qa="big"
+      class="form form__interval"
+      >
+
+      <input
+          type="text"
+          name="text"
+          placeholder="Try &quot;Los Angeles&quot;"
+          class="big"
+          data-qa="keypress"
+      >
+    </form>
+
+    <div class="gap"></div>
+
+    <form
+    action="http://localhost:3000/api"
+    method="post"
+    data-qa="small"
+    class="form form__interval"
+    >
+      <input
+          type="text"
+          name="text"
+          placeholder="Try &quot;Los Angeles&quot;"
+          class="small"
+      >
+    </form>
   </body>
 </html>

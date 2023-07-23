@@ -1,0 +1,112 @@
+/* #region general */
+@font-face {
+  font-family: "Avenir-Book";
+  src: local("Avenir-Book.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Avenir-Heavy";
+  src: local("Avenir-Heavy.ttf");
+  font-weight: 300;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+}
+/* #endregion */
+
+/* #region search-bar */
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+  height: fit-content;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+
+.search-bar::before {
+  position: absolute;
+  content: "";
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+}
+
+.search-bar--size--b::before {
+  width: 19px;
+  height: 19px;
+  top: 25px;
+  left: 26px;
+}
+
+.search-bar--size--s::before {
+  height: 11px;
+  width: 11px;
+  top: 15px;
+  left: 13px;
+}
+/* #endregion */
+
+/* #region input */
+.search-bar__input {
+  box-sizing: border-box;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Avenir-Book", "Arial", sans-serif;
+  font-weight: 300;
+  color: #3d4e61;
+}
+
+/* #region input--b */
+.search-bar__input--size--b {
+  height: 70px;
+  font-size: 16px;
+  padding-left: 62px;
+}
+
+.search-bar__input--size--b:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.search-bar__input--size--b:focus {
+  outline: none;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+  font-family: "Avenir-Heavy", sans-serif;
+  /* I`ve added text-shadow here cos it`s from Figma view.
+  But that wasnt in layout proprties, just as view,
+  but I found correct stats in comments.
+  And also strange this property was only for big search bar under focus
+  but not for both: big and small*/
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.2);
+}
+/* #endregion */
+
+/* #region input--s */
+.search-bar__input--size--s {
+  height: 42px;
+  font-size: 14px;
+  padding-left: 33px;
+}
+
+.search-bar__input--size--s:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.search-bar__input--size--s:focus {
+  outline: none;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+  font-family: "Avenir-Heavy", sans-serif;
+}
+/* #endregion */
+/* #endregion */

@@ -1,0 +1,110 @@
+
+@font-face {
+  font-family: "Avenir";
+  src: url("fonts/Avenir-Book.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("fonts/Avenir-Heavy.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 800;
+}
+
+:root {
+  --font-color: #3d4e61;
+  --border-color: #e1e7ed;
+  --font-light: 300;
+  --font-heavy: 800;
+  --font-size-big-bar: 16px;
+  --line-height-big-bar: 22px;
+  --font-size-small-bar: 14px;
+  --line-height-small-bar: 19px;
+  --standard-text-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  --onhover-box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  --onfocus-background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.search-bar {
+  margin: 20px 0;
+}
+
+.search-bar__container {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding-left: 26px;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+}
+
+.search-bar__input {
+  border: none;
+  height: 68px;
+  width: 100%;
+  padding-left: 17px;
+  font-family: "Avenir", sans-serif;
+  font-size: var(--font-size-big-bar);
+  font-weight: var(--font-heavy);
+  color: var(--font-color);
+}
+
+.search-bar__input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.search-bar__icon {
+  width: 19px;
+  height: 19px;
+}
+
+.search-bar__input::placeholder {
+  font-weight: var(--font-light);
+}
+
+.search-bar__container:hover {
+  box-shadow: var(--onhover-box-shadow);
+}
+
+.search-bar__container:has(:focus) {
+  border-radius: 3px;
+  background: var(--onfocus-background);
+  box-shadow: var(--onhover-box-shadow);
+}
+
+.search-bar__input:focus {
+  outline: none;
+  background: var(--onfocus-background);
+  text-shadow: var(--standard-text-shadow);
+}
+
+.search-bar__container--small {
+  padding-left: 13px;
+}
+
+.search-bar__input--small {
+  height: 40px;
+  padding-left: 9px;
+  font-size: var(--font-size-small-bar);
+  text-shadow: var(--standard-text-shadow);
+}
+
+.search-bar__icon--small {
+  width: 11px;
+  height: 11px;
+}
+
+.search-bar__input--small:hover {
+  text-shadow: none;
+}
+
+.search-bar__input--small:focus {
+  text-shadow: none;
+}
+
+.search-bar__container:has(.search-bar__input--small:focus) {
+  box-shadow: none;
+}

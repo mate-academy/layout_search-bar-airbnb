@@ -1,0 +1,107 @@
+:root {
+  --big-input-height: 70px;
+  --small-input-height: 42px;
+  --big-placeholder-padding: 62px;
+  --small-placeholder-padding: 33px;
+  --big-input-fz: 16px;
+  --small-input-fz: 14px;
+  --big-btn-heiht: 19px;
+  --big-btn-width: 19px;
+  --small-btn-height: 11px;
+  --small-btn-width: 11px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 300, 400, 900;
+  src: url("./fonts/Avenir-Book.ttf"),
+    url("./fonts/Avenir-Heavy.ttf");
+}
+
+body {
+  margin: 0 8px;
+}
+
+.search__bar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search__input {
+  width: 100%;
+  height: var(--big-input-height);
+  font-family: Avenir, sans-serif;
+  font-size: var(--big-input-fz);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-left: var(--big-placeholder-padding);
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  justify-content: center;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+}
+
+.search__input:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search__input:focus {
+  outline: none;
+  border: 1px solid #e1e7ed;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 900;
+}
+
+.search__input::placeholder {
+  font-family: Avenir, sans-serif;
+  font-size: var(--big-input-fz);
+  font-weight: 300;
+}
+
+.small-input {
+  height: var(--small-input-height);
+  font-size: var(--small-input-fz);
+  padding-left: var(--small-placeholder-padding);
+  font-style: normal;
+  line-height: normal;
+}
+
+.small-input::placeholder {
+  font-size: var(--small-input-fz);
+}
+
+.small-input:focus {
+  box-shadow: none;
+}
+
+.search__button {
+  flex-shrink: 0;
+  position: absolute;
+  z-index: 100;
+  border: none;
+  left: 26px;
+  top: 25px;
+  height: var(--big-btn-heiht);
+  width: var(--big-btn-width);
+  background: url(./images/Search.svg) transparent no-repeat;
+  background-size: contain;
+}
+
+.search__button:hover {
+  cursor: pointer;
+}
+
+.small-button {
+  left: 13px;
+  top: 15px;
+  height: var(--small-btn-height);
+  width: var(--small-btn-width);
+}

@@ -17,7 +17,7 @@
 
 @font-face {
   font-family: Avenir;
-  font-weight: 300;
+  font-weight: 300, 400, 900;
   src: url("./fonts/Avenir-Book.ttf"),
     url("./fonts/Avenir-Heavy.ttf");
 }
@@ -30,7 +30,6 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-top: 20px;
 
 }
@@ -40,7 +39,9 @@ body {
   height: var(--big-input-height);
   font-family: Avenir, sans-serif;
   font-size: var(--big-input-fz);
-  font-weight: bold;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
   padding-left: var(--big-placeholder-padding);
   border-radius: 4px;
   border: 1px solid #e1e7ed;
@@ -57,19 +58,21 @@ body {
   border: 1px solid #e1e7ed;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 900;
 }
 
 .search__input::placeholder {
   font-family: Avenir, sans-serif;
   font-size: var(--big-input-fz);
-  font-weight: normal;
+  font-weight: 300;
 }
 
 .small-input {
   height: var(--small-input-height);
   font-size: var(--small-input-fz);
-  font-weight: bold;
   padding-left: var(--small-placeholder-padding);
+  font-style: normal;
+  line-height: normal;
 }
 
 .small-input::placeholder {
@@ -78,7 +81,6 @@ body {
 
 .small-input:focus {
   box-shadow: none;
-  font-weight: normal;
 }
 
 .search__button {
@@ -87,6 +89,7 @@ body {
   z-index: 100;
   border: none;
   left: 26px;
+  top: 25px;
   height: var(--big-btn-heiht);
   width: var(--big-btn-width);
   background: url(./images/Search.svg) transparent no-repeat;
@@ -99,6 +102,7 @@ body {
 
 .small-button {
   left: 13px;
+  top: 15px;
   height: var(--small-btn-height);
   width: var(--small-btn-width);
 }

@@ -1,7 +1,18 @@
+:root {
+  --big-input-height: 70px;
+  --small-input-height: 42px;
+  --big-placeholder-padding: 62px;
+  --small-placeholder-padding: 33px;
+  --big-input-fz: 16px;
+  --small-input-fz: 14px;
+  --big-btn-heiht: 19px;
+  --big-btn-width: 19px;
+  --small-btn-height: 11px;
+  --small-btn-width: 11px;
+}
+
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 @font-face {
@@ -11,19 +22,6 @@
     url("./fonts/Avenir-Heavy.ttf");
 }
 
-html {
-  --big-input-height: 70px;
-  --small-input-height: 42px;
-  --big-placeholder-padding: 62px;
-  --small-placeholder-padding: 33px;
-  --big-input-fz: 16px;
-  --small-input-fz: 14px;
-  --big-btn-heiht: 19px;
-  --big-btn-width: 19px;
-  --small-btn-height: 12px;
-  --small-btn-width: 11px;
-}
-
 body {
   margin: 0 8px;
 }
@@ -31,6 +29,8 @@ body {
 .search__bar {
   position: relative;
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 20px;
 
 }
@@ -83,17 +83,14 @@ body {
 
 .search__button {
   flex-shrink: 0;
-  align-self: center;
   position: absolute;
   z-index: 100;
   border: none;
   left: 26px;
   height: var(--big-btn-heiht);
   width: var(--big-btn-width);
-  background-color: transparent;
-  background-image: url(./images/Search.svg);
+  background: url(./images/Search.svg) transparent no-repeat;
   background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .search__button:hover {

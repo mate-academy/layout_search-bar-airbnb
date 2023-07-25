@@ -13,13 +13,13 @@
   <body>
     <header>
       <form
-        class="search-form"
+        class="search-form search__form"
         aria-label="search-form"
         method="get"
         action="/"
         data-qa="big"
       >
-        <div class="search-bar search-bar__content">
+        <label class="search-bar search-bar__content">
           <input
             aria-label="search-bar"
             class="input-search search-bar__input"
@@ -28,17 +28,17 @@
             placeholder="Try &quot;Los Angeles&quot;"
             data-qa="keypress"
           >
-        </div>
+        </label>
       </form>
 
       <form
-        class="search-form"
+        class="search-form search__form"
         aria-label="search-form-small"
         method="get"
         action="/"
         data-qa="small"
       >
-        <div class="search-bar search-bar__content">
+        <label class="search-bar search-bar__content--small">
           <input
             class="input-search search-bar__input--small"
             type="text"
@@ -46,7 +46,7 @@
             data-qa="keypress"
             placeholder="Try &quot;Los Angeles&quot;"
           >
-        </div>
+        </label>
       </form>
     </header>
   </body>

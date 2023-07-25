@@ -14,23 +14,29 @@
   font-style: normal;
   font-weight: 800;
 }
+
+* {
+  box-sizing: border-box;
+  font-family: "Avenir", sans-serif;
+}
 /* #endregion */
 
 /* #region search-form */
-.search-bar {
+.search-form {
   display: flex;
   flex-direction: column;
-  position: relative;
+  justify-content: center;
 }
 
-.search-bar__content {
+.search__form {
   margin: 20px auto;
 }
 
-.input-search {
-  box-sizing: border-box;
+.search-bar {
+  position: relative;
+}
 
-  font-family: "Avenir", sans-serif;
+.input-search {
   line-height: 22px;
   font-weight: 300;
   color: #3d4e61;
@@ -41,30 +47,26 @@
   background-color: #fff;
   border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px 0 #3d4e611a;
-
-  background-image: url(images/Search.svg);
-  background-repeat: no-repeat;
 }
 
 .search-bar__input {
-  font-size: 16px;
+  width: 100%;
   height: 70px;
-  padding-left: 62px;
 
-  background-size: 19px;
-  background-position: 26px center;
+  font-size: 16px;
+  padding-left: 62px;
 }
 
 .search-bar__input--small {
-  font-size: 14px;
+  width: 100%;
   height: 42px;
-  padding-left: 33px;
 
-  background-size: 11px;
-  background-position: 12px 14px;
+  font-size: 14px;
+  padding-left: 33px;
 }
 
 .input-search::placeholder {
+  color: inherit;
   font-weight: normal;
 }
 
@@ -74,23 +76,34 @@
 
 .input-search:focus {
   font-weight: 800;
-
-  background: url(images/Search.svg), linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  background-repeat: no-repeat;
-  background-size: 19px, cover;
-  background-position: 26px center, center;
-
   border-radius: 3px;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+/* #endregion */
+
+/* #region icon */
+.search-bar::before {
+  content: "";
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  position: absolute;
 }
 
-.search-bar__input--small:focus {
-  background: url(images/Search.svg), linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  background-repeat: no-repeat;
-  background-size: 11px, cover;
-  background-position: 12px 14px, center;
+.search-bar__content::before {
+  width: 19px;
+  height: 19px;
 
-  border-radius: 3px;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  top: 25px;
+  left: 25px;
+}
+
+.search-bar__content--small::before {
+  width: 11px;
+  height: 11px;
+
+  top: 15px;
+  left: 13px;
 }
 /* #endregion */

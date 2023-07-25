@@ -8,9 +8,43 @@
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar airbnb</title>
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <div class="search-bar">
+
+      <form class="search-bar__form search-bar__form--big"
+      action="#"
+      method="get"
+      data-qa="big">
+        <label>
+          <input
+          class="search-bar__input search-bar__input--big"
+          type="text"
+          name="input-big"
+          placeholder="Try &quot;Los Angeles&quot;"
+          data-qa="keypress"
+          >
+        </label>
+      </form>
+
+      <form class="search-bar__form search-bar__form--small"
+      action="#"
+      method="get"
+      data-qa="small"
+      >
+        <label>
+          <input class="search-bar__input search-bar__input--small"
+          type="text"
+          name="input-small"
+          placeholder="Try &quot;Los Angeles&quot;"
+          data-qa="keypress"
+        >
+        </label>
+
+      </form>
+
+    </div>
   </body>
 </html>

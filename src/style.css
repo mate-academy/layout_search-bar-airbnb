@@ -1,51 +1,54 @@
 @font-face {
   font-family: Avenir;
   src: url(./fonts/Avenir-Book.ttf);
+  font-weight: 400;
 }
 @font-face {
   font-family: Avenir-Heavy;
   src: url(./fonts/Avenir-Heavy.ttf);
+  font-weight: 900;
 }
 
 html {
   --heightInputBig: 70px;
   --heightInputSmall: 42px;
-  font-weight: 400;
+  --borderColor: #e1e7ed;
+  /* font-family: "Avenir", "Montserrat", sans-serif; */
 }
 
 body {
   padding: 0;
 }
 
+/* I have a problem with fonts.If i add in .search{} it is ok
+But if add in html tag the font doesn't change.
+So i left it in .search and commented in html */
 .search {
+  font-family: "Avenir", "Montserrat", sans-serif;
   width: 100%;
-  font-family: "Avenir", sans-serif;
   background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
   border-radius: 4px;
-  border: 1px solid #e1e7ed;
+  border: 1px solid var(--borderColor);
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
-  font-weight: 400;
   line-height: normal;
   box-sizing: border-box;
 }
 
-.search-big {
+.search--big {
   background-position: 25px;
   background-size: 19px 19px;
   padding-left: 62px;
   font-size: 16px;
   height: var(--heightInputBig);
-  font-weight: 400;
 }
 
-.search-small {
+.search--small {
   background-position: 12px 14px;
   background-size: 11px 11px;
   height: var(--heightInputSmall);
   padding-left: 33px;
   font-size: 14px;
-  font-weight: 400;
 }
 
 .searchForm {
@@ -55,15 +58,12 @@ body {
 .search:hover {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   border-radius: 4px;
-  border: 1px solid #e1e7ed;
 }
 
 .searchForm:focus-within .search {
-  border: 1px solid #e1e7ed;
   border-radius: 3px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   font-family: "Avenir-Heavy", sans-serif;
   text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
-  font-weight: 900px;
 }

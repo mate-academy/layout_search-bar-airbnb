@@ -55,11 +55,19 @@
     &--big {
       padding-left: 62px;
       font-size: $search-bar-font-size-big;
+
+      &::placeholder {
+        font-size: $search-bar-font-size-big;
+      }
     }
 
     &--small {
       padding-left: 33px;
       font-size: $search-bar-font-size-small;
+
+      &::placeholder {
+        font-size: $search-bar-font-size-small;
+      }
     }
 
     &:hover {
@@ -75,14 +83,6 @@
     &::placeholder {
       font-weight: $search-bar-font-weight-normal;
       color: $search-bar-color;
-    }
-
-    &--big::placeholder {
-      font-size: $search-bar-font-size-big;
-    }
-
-    &--small::placeholder {
-      font-size: $search-bar-font-size-small;
     }
   }
 }

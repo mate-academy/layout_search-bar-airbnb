@@ -22,6 +22,7 @@
   border: 1px solid #e1e7ed;
   background: #fff;
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0,10);
+  position: relative;
 }
 
 .search-bar__input:hover {
@@ -41,10 +42,29 @@
   line-height: normal;
 }
 
-.search-bar__input--big::before {
+.search-bar__form::before {
   content: "";
-  background-image: url("images/Search.svg");
+  position: absolute;
+  background-image: url(./images/Search.svg);
+  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.search-bar__form--big::before {
+  content: "";
+  height: 19px;
+  width: 19px;
+  top: 25px;
+  left: 26px;
+}
+
+.search-bar__form--small::before {
+  content: "";
+  height: 11px;
+  width: 11px;
+  top: 15px;
+  left: 13px;
 }
 
 .search-bar__input:focus {

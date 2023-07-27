@@ -1,0 +1,88 @@
+.search-bar {
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  &--big {
+    height: 70px;
+  }
+
+  &--small {
+    height: 42px;
+  }
+
+  &__label {
+    display: block;
+    width: 100%;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      background-image: url(images/Search.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &--big::after {
+      width: 19px;
+      height: 19px;
+      top: 25px;
+      left: 26px;
+    }
+
+    &--small::after {
+      width: 11px;
+      height: 11px;
+      top: 15px;
+      left: 13px;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    height: 100%;
+    border: $search-bar-border;
+    border-radius: 4px;
+    box-shadow: $search-bar-box-shadow-normal;
+    outline: none;
+    color: $search-bar-color;
+    font-family: inherit;
+    font-weight: $search-bar-font-weight-normal;
+
+    &--big {
+      padding-left: 62px;
+      font-size: $search-bar-font-size-big;
+
+      &::placeholder {
+        font-size: $search-bar-font-size-big;
+      }
+    }
+
+    &--small {
+      padding-left: 33px;
+      font-size: $search-bar-font-size-small;
+
+      &::placeholder {
+        font-size: $search-bar-font-size-small;
+      }
+    }
+
+    &:hover {
+      box-shadow: $search-bar-box-shadow-hover;
+    }
+
+    &:focus {
+      border-radius: 3px;
+      background: $search-bar-background;
+      font-weight: $search-bar-font-weight-bold;
+    }
+
+    &::placeholder {
+      font-weight: $search-bar-font-weight-normal;
+      color: $search-bar-color;
+    }
+  }
+}

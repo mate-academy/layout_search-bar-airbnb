@@ -4,16 +4,16 @@
   font-weight: 400;
 }
 @font-face {
-  font-family: Avenir-Heavy;
+  font-family: Avenir;
   src: url(./fonts/Avenir-Heavy.ttf);
   font-weight: 900;
 }
 
 html {
+  /* font-family: Avenir, Montserrat, sans-serif; */
   --heightInputBig: 70px;
   --heightInputSmall: 42px;
   --borderColor: #e1e7ed;
-  /* font-family: "Avenir", "Montserrat", sans-serif; */
 }
 
 body {
@@ -24,7 +24,8 @@ body {
 But if add in html tag the font doesn't change.
 So i left it in .search and commented in html */
 .search {
-  font-family: "Avenir", "Montserrat", sans-serif;
+  font-family: Avenir, Montserrat, sans-serif;
+  font-weight: 400;
   width: 100%;
   background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
@@ -33,9 +34,6 @@ So i left it in .search and commented in html */
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
   line-height: normal;
   box-sizing: border-box;
-}
-
-.search--big {
   background-position: 25px;
   background-size: 19px 19px;
   padding-left: 62px;
@@ -60,10 +58,10 @@ So i left it in .search and commented in html */
   border-radius: 4px;
 }
 
-.searchForm:focus-within .search {
+.search:focus {
   border-radius: 3px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  font-family: "Avenir-Heavy", sans-serif;
+  font-weight: 900;
   text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
 }

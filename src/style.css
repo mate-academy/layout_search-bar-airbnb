@@ -1,0 +1,105 @@
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir.ttc);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: 900;
+}
+
+html {
+  --form-field-search-border-color: #e1e7ed;
+  --form-field-search-bckgrd-color: #fff;
+  --form-field-search-font-color: #3d4e61;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.form-field-search {
+  margin-top: 20px;
+  position: relative;
+}
+
+.form-field-search::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-image: url("./images/Search.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form-field-search--big::before {
+  left: 26px;
+  width: 19px;
+  height: 19px;
+}
+
+.form-field-search--small::before {
+  left: 13px;
+  width: 11px;
+  height: 11px;
+}
+
+/* #region input */
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid var(--form-field-search-border-color);
+  background: var(--form-field-search-bckgrd-color);
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+}
+
+.input::placeholder {
+  font-weight: 400;
+  color: var(--form-field-search-font-color);
+}
+
+.input:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.input:focus {
+  color: var(--form-field-search-font-color);
+  border-radius: 3px;
+  border: 1px solid var(--form-field-search-border-color);
+  background: linear-gradient(
+    180deg, var(--form-field-search-bckgrd-color) 0%, #f6f6f7 100%);
+}
+
+.input--big {
+  font-family: Avenir, sans-serif;
+  font-weight: 400;
+  height: 70px;
+  padding-left: 62px;
+  font-size: 16px;
+
+}
+
+.input--small {
+  font-family: Avenir, sans-serif;
+  font-weight: 900;
+  height: 42px;
+  padding-left: 33px;
+  font-size: 14px;
+}
+
+/* #endregion */

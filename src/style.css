@@ -5,6 +5,13 @@
   font-weight: 300;
 }
 
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf);
+  font-style: inherit;
+  font-weight: 800;
+}
+
 body {
   padding: 0;
 }
@@ -14,27 +21,49 @@ body {
   display: flex;
 }
 
-.bar--big {
+.form-big {
   height: 70px;
 }
 
 .bar {
   display: flex;
+  align-items: center;
   width: 100%;
-  padding-left: 62px;
   background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
-  background-position-x: 26px;
   background-position-y: center;
   border-radius: 4px;
   border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
 }
 
+.bar-big {
+  padding-left: 62px;
+  background-position-x: 26px;
+  background-size: 18px;
+  max-height: 70px;
+}
+
+.bar-small {
+  padding-left: 33px;
+  height: 38px;
+  background-size: 11px;
+  background-position-x: 13px;
+}
+
 .bar::placeholder {
-  font-size: 16px;
   font-family: Avenir, sans-serif;
+  font-weight: 800;
+  font-style: inherit;
   color: #3d4e61;
+}
+
+.bar-small::placeholder {
+  font-size: 14px;
+}
+
+.bar-big::placeholder {
+  font-size: 16px;
 }
 
 .bar:hover {
@@ -49,8 +78,4 @@ body {
   color: #3d4e61;
   font-family: inherit;
   outline: none;
-}
-
-.bar--small {
-  height: 42px;
 }

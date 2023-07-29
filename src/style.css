@@ -1,14 +1,12 @@
 @font-face {
   font-family: Avenir;
   src: url(fonts/Avenir.ttc);
-  font-style: normal;
   font-weight: 300;
 }
 
 @font-face {
   font-family: Avenir;
   src: url(fonts/Avenir-Book.ttf);
-  font-style: inherit;
   font-weight: 800;
 }
 
@@ -26,6 +24,8 @@ body {
 }
 
 .bar {
+  font-weight: bold;
+  font-family: Avenir, sans-serif;
   display: flex;
   align-items: center;
   width: 100%;
@@ -53,8 +53,6 @@ body {
 
 .bar::placeholder {
   font-family: Avenir, sans-serif;
-  font-weight: 800;
-  font-style: inherit;
   color: #3d4e61;
 }
 

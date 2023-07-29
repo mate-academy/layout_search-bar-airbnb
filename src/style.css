@@ -1,0 +1,106 @@
+/* #region font-face */
+@font-face {
+  font-family: "Avenir";
+  src: url(fonts/Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-style: normal;
+  font-weight: 900;
+}
+/* #endregion */
+
+html {
+  --form-field-search-border-color: #e1e7ed;
+  --form-field-search-bckgrd-color: #fff;
+  --form-field-search-font-color: #3d4e61;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Avenir", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* #region form-field-search */
+.form-field-search {
+  position: relative;
+  margin-top: 20px;
+}
+
+.form-field-search::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translate(0, -50%);
+  width: 20px;
+  height: 20px;
+  background-image: url("./images/Search.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form-field-search--big::before {
+  left: 26px;
+  width: 19px;
+  height: 19px;
+}
+
+.form-field-search--small::before {
+  left: 13px;
+  width: 11px;
+  height: 11px;
+}
+/* #endregion */
+
+/* #region input */
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+  border: 1px solid var(--form-field-search-border-color);
+  background: var(--form-field-search-bckgrd-color);
+  font-family: "Avenir", sans-serif;
+  font-weight: 300;
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--form-field-search-font-color);
+  font-weight: 400;
+}
+
+.input:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.input:focus {
+  color: var(--form-field-search-font-color);
+  border-radius: 3px;
+  border: 1px solid var(--form-field-search-border-color);
+  background: linear-gradient(
+    180deg, var(--form-field-search-bckgrd-color) 0%, #f6f6f7 100%);
+}
+
+.input--big {
+  height: 70px;
+  padding-left: 62px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.input--small {
+  height: 42px;
+  padding-left: 33px;
+  font-size: 14px;
+  font-weight: 900;
+}
+/* #endregion */

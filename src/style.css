@@ -26,8 +26,7 @@ body {
   height: 40px;
 }
 
-.input__big,
-.input__small {
+.input {
   width: 100%;
   height: 90%;
   padding-right: 0;
@@ -35,30 +34,26 @@ body {
   border: 0 solid;
 }
 
-.input__big::placeholder {
+.input::placeholder {
   color: #3d4e61;
   font-size: 16px;
   font-family: Avenir , sans-serif;
 }
 
 .input__small::placeholder {
-  color: #3d4e61;
   font-size: 14px;
-  font-family: Avenir , sans-serif;
 }
 
-.form__big:hover,
-.form__small:hover {
+.form:hover {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.input__big:focus,
-.input__small:focus {
+.input:focus {
   outline: none;
   color: #3d4e61;
   font-size: 16px;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  font-weight: 400;
+  font-weight: bold;
   background-color: inherit;
 }
 

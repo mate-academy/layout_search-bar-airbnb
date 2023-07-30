@@ -14,25 +14,41 @@
     <h1></h1>
     <search>
 
-      <form action="#" method="get" data-qa="big">
-        <div class="search-bar big-search-bar"></div>
-        <label for="appartment"></label>
-        <input
-          type="search"
-          id="appartment"
-          name="q"
+      <form
+          class="search-form"
+          action="/"
+          method="get"
+          data-qa="big"
+      >
+
+        <label for="big search-input">
+          <span class="icon"></span>
+          <input
+          class="input"
+          type="text"
+          id="big search-input"
+          name="search"
           placeholder="Try &quot;Los Angeles&quot;"
           data-qa="keypress">
+        </label>
       </form>
 
-      <form action="#" method="get" data-qa="small">
-        <div class="search-bar small-search-bar"></div>
-        <label for="smallSearch"></label>
-        <input
-            type="search"
-            id="smallSearch"
-            name="smallSearch"
+      <form
+          class="search-form"
+          action="/"
+          method="get"
+          data-qa="small"
+      >
+
+        <label for="small search-input">
+          <span class="icon icon--small"></span>
+          <input
+            class="input input--small"
+            type="text"
+            id="small search-input"
+            name="search"
             placeholder="Try &quot;Los Angeles&quot;">
+        </label>
       </form>
 
     </search>

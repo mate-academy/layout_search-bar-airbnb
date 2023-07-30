@@ -1,11 +1,10 @@
 @font-face {
-  font-family: myFont;
+  font-family: Avenir;
   src: url(./fonts/Avenir.ttc);
-
 }
 
 body {
-  font-family: myFont, sans-serif;
+  font-family: Avenir, sans-serif;
   color: #3d4e61;
   font-size: 16px;
   font-style: normal;
@@ -15,11 +14,9 @@ body {
   padding: 0;
 }
 
-.search {
+.search__input {
   display: flex;
   justify-content: left;
-  align-items: center;
-  height: 68px;
   border-radius: 4px;
   border: 1px solid #e1e7ed;
   background: #fff;
@@ -27,54 +24,49 @@ body {
   margin: 20px auto 0;
 }
 
-.search:hover {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+.search_big {
+  height: 68px;
 }
 
-.search_big__line {
-  display: flex;
-  align-items: center;
+.search_big__input,
+.search_small__input {
+  border: none;
   width: 100%;
   height: 100%;
-  padding: 23px 0 24px 25px;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-indent: 62px;
+  outline: none;
+  background-color: transparent;
+  align-items: center;
+  margin-top: -1px;
+}
+
+.search_small__input {
+  text-indent: 33px;
 }
 
 .search_big__icon {
-  display: inline-block;
+  position: absolute;
   width: 19px;
   height: 19px;
-  padding-right: 18px;
+  left: 34px;
+  padding-top: 24px;
 }
 
-.search__input {
-  font-family: inherit;
-  color: inherit;
-  font-size: inherit;
-  font-style: inherit;
-  font-weight: inherit;
-  width: 100%;
-  height: 90%;
-  border: 0;
-  outline: 0;
-  background: none;
+.search__input:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.search:focus-within {
+.search__input:focus-within {
   border-radius: 3px;
   border: 1px solid #e1e7ed;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-}
-
-.search__input::placeholder {
-  font-family: inherit;
-  color: inherit;
-  font-size: inherit;
-  font-style: inherit;
-  font-weight: inherit;
-}
-
-.search__input:focus {
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  font-weight: 800;
 }
 
 .search_small {
@@ -82,17 +74,10 @@ body {
   height: 40px;
 }
 
-.search_small__line {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  padding: 14px 0 14px 12px;
-}
-
 .search_small__icon {
-  display: inline-block;
+  position: absolute;
   width: 11px;
   height: 11px;
-  padding-right: 10px;
+  left: 21px;
+  padding-top: 14px;
 }

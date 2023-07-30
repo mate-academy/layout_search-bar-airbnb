@@ -1,15 +1,20 @@
 @font-face {
-  font-family: Avenir-Book;
+  font-family: Avenir;
   src: url(fonts/Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 300;
 }
 
 @font-face {
-  font-family: Avenir-Heavy;
+  font-family: Avenir;
   src: url(fonts/Avenir-Heavy.ttf);
+  font-style: normal;
+  font-weight: 700;
 }
 
 .body {
   margin: 0;
+  padding: 0 8px;
 }
 
 .form {
@@ -30,12 +35,13 @@
 
 input {
   font-weight: 300;
-  font-family: Avenir-Book, sans-serif;
+  font-family: Avenir, sans-serif;
 }
 
 .search_bar::placeholder {
   color: rgba(61, 78, 97, 1);
-  font-family: Avenir-Book, sans-serif;
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
 }
 
 .search_bar-big {
@@ -57,7 +63,8 @@ input {
 .search_bar-big:focus {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   outline: none;
-  font-family: Avenir-Heavy, sans-serif;
+  font-family: Avenir, sans-serif;
+  font-weight: 700;
   font-size: 16px;
   text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   color: rgba(61, 78, 97, 1);
@@ -83,7 +90,8 @@ input {
 
 .search_bar-small:focus {
   outline: none;
-  font-family: Avenir-Heavy, sans-serif;
+  font-family: Avenir, sans-serif;
+  font-weight: 700;
   font-size: 14px;
   color: rgba(61, 78, 97, 1);
   background: url(images/Search.svg) no-repeat 13px, linear-gradient(rgba(255, 255, 255, 1), rgba(246, 246, 247, 1));

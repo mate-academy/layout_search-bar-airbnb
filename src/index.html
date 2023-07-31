@@ -1,16 +1,52 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
   </head>
+
   <body>
-    <h1>Search bar airbnb</h1>
+    <!-- big form start -->
+    <form
+      action="#" method="post"
+      class="form form__big" data-qa="big"
+    >
+
+      <label>
+        <img src="images/Search.svg" alt="search"
+        class="form__lable-img big--img"
+        >
+        <input type="search" name="input-big"
+        id="input-big" class="form__input form__input-big"
+        placeholder="Try &quot;Los Angeles&quot;" data-qa="keypress"
+        >
+      </label>
+
+    </form> <!-- big form end -->
+
+
+    <!-- small form start -->
+    <form
+      action="#" method="post"
+      class="form form__small" data-qa="small"
+    >
+
+      <label>
+        <img src="images/Search.svg" alt="search"
+        class="form__lable-img small--img"
+        >
+        <input type="search" name="input-small"
+        id="input-small" class="form__input form__input-small"
+        placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
+
+    </form> <!-- small form end -->
+
   </body>
 </html>

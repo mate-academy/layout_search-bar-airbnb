@@ -11,45 +11,44 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1></h1>
-    <search>
 
-      <form
+    <form
           class="search-form"
           action="/"
           method="get"
           data-qa="big"
       >
 
-        <label for="big search-input">
-          <span class="icon"></span>
-          <input
+      <label for="big search-input" class="label">
+        <span class="icon"></span>
+        <input
           class="input"
           type="text"
           id="big search-input"
           name="search"
           placeholder="Try &quot;Los Angeles&quot;"
           data-qa="keypress">
-        </label>
-      </form>
+      </label>
+    </form>
 
-      <form
+    <form
           class="search-form"
           action="/"
           method="get"
           data-qa="small"
       >
 
-        <label for="small search-input">
-          <span class="icon icon--small"></span>
-          <input
+      <label for="small search-input" class="label">
+        <span class="icon-small"></span>
+        <input
             class="input input--small"
             type="text"
             id="small search-input"
             name="search"
-            placeholder="Try &quot;Los Angeles&quot;">
-        </label>
-      </form>
+            placeholder="Try &quot;Los Angeles&quot;"
+            data-qa="keypress small">
+      </label>
+    </form>
 
     </search>
     </form>

@@ -39,7 +39,7 @@
   background-position-y: 24px;
 }
 
-input {
+.input {
   font-weight: 300;
   font-family: Avenir, sans-serif;
 }
@@ -49,17 +49,18 @@ input {
   font-family: Avenir, sans-serif;
   font-weight: 300;
   font-size: 16px;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.search_bar-big:hover {
+.search_bar:hover {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   outline: none;
 }
 
-.search_bar-big:focus {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+.search_bar:focus {
   outline: none;
   font-family: Avenir, sans-serif;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   font-weight: 700;
   font-size: 16px;
   text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -77,20 +78,10 @@ input {
 
 .search_bar-small::placeholder {
   font-size: 14px;
-  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
-
-.search_bar-small:hover {
-  box-shadow: 0 2px 8px 0 rgba(61, 78, 97, 0.2);
-  outline: none;
 }
 
 .search_bar-small:focus {
-  outline: none;
-  font-family: Avenir, sans-serif;
-  font-weight: 700;
   font-size: 14px;
-  color: rgba(61, 78, 97, 1);
   background: url(images/Search.svg) no-repeat 13px, linear-gradient(rgba(255, 255, 255, 1), rgba(246, 246, 247, 1));
   background-size: 11px;
 }

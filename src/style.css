@@ -26,7 +26,7 @@ body {
 
 .search-form {
   width: 100%;
-  max-width: calc(100% - 20px);
+  max-width: calc(100% - 15px);
   margin: 0 auto;
   position: relative;
 }
@@ -42,6 +42,7 @@ body {
   background: hsl(0, 0%, 100%);
   box-shadow: 0 1px 8px 0 #3d4e611a;
   box-sizing: border-box;
+  padding-left: 62px;
 }
 
 .search-form[data-qa="small"] input[type="text"] {
@@ -53,6 +54,7 @@ body {
   background: hsl(0, 0%, 100%);
   box-shadow: 0 1px 8px 0 #3d4e611a;
   box-sizing: border-box;
+  padding-left: 33px;
 }
 
 .input[data-qa="keypress"]::placeholder {
@@ -61,7 +63,6 @@ body {
   font-weight: 300;
   color: #3d4e61;
   line-height: normal;
-  padding-left: 62px;
 }
 
 .input--small[data-qa="keypress small"]::placeholder {
@@ -70,7 +71,6 @@ body {
   font-weight: 300;
   color: #3d4e61;
   line-height: normal;
-  padding-left: 33px;
 }
 
 .label {
@@ -92,7 +92,8 @@ body {
   background: url("./images/Search.svg") no-repeat;
   width: 11px;
   height: 11px;
-  top: 19px;
+  background-size: 11px;
+  top: 15px;
   left: 13px;
 }
 

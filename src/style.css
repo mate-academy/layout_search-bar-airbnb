@@ -1,0 +1,91 @@
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Heavy.ttf);
+  font-style: normal;
+  font-weight: 900;
+}
+
+html {
+  margin: 0;
+  font-family: Avenir, sans-serif;
+  --big-search-height: 70px;
+  --small-search-height: 42px;
+}
+
+.search-form {
+  margin-top: 20px;
+}
+
+.input__search-form {
+  width: 100%;
+  height: var(--big-search-height);
+  padding-left: 62px;
+  font-family: Avenir, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #3d4e61;
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 25px;
+  background-size: 19px;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+}
+
+.input__search-form::placeholder {
+  color: #3d4e61;
+  text-shadow: none;
+  font-weight: normal;
+}
+
+.input__search-form::-ms-clear {
+  display: none;
+}
+
+.input__search-form:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.input__search-form:focus {
+  height: var(--big-search-height);
+  line-height: var(--big-search-height);
+  font-weight: 900;
+  border-radius: 3px;
+  color: #3d4e61;
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+  background: url(./images/Search.svg) no-repeat 25px, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  outline: none;
+}
+
+.input__search-form:focus::placeholder {
+  color: #3d4e61;
+}
+
+.input__small-form {
+  height: var(--small-search-height);
+  padding-left: 33px;
+  font-size: 14px;
+  background-position-x: 13px;
+  background-size: 11px;
+}
+
+.input__small-form:focus {
+  height: var(--small-search-height);
+  line-height: var(--small-search-height);
+  background: url(./images/Search.svg) no-repeat 13px center, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background-size: 11px;
+  text-shadow: none;
+}
+
+.input__small-form:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+  text-shadow: none;
+}

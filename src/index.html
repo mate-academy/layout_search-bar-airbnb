@@ -1,16 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" >
     <meta
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     >
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" >
     <title>Search bar airbnb</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" >
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <form
+      action="#"
+      class="form"
+      method="post"
+    >
+      <div
+        data-qa="big"
+        class="form__line"
+      >
+        <input
+          data-qa="keypress"
+          type="text"
+          class="form__input" placeholder="Try &quot Los Angeles &quot "
+        >
+        <div class="form__search">
+          <img src="images/Search.svg" alt="search icon">
+        </div>
+      </div>
+      <div
+        data-qa="small"
+        class="form__line form__line--small"
+      >
+        <input
+          type="text"
+          placeholder="Try &quot Los Angeles &quot "
+          class="form__input form__input--small"
+        >
+        <div class="form__search form__search--small"
+        >
+          <img src="images/Search.svg" alt="search icon">
+        </div>
+      </div>
+    </form>
   </body>
 </html>
+

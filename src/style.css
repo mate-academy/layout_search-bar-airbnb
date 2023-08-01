@@ -23,10 +23,9 @@ body {
 }
 
 .form-field {
-  display: flexbox;
+  display: flex;
   margin-top: 20px;
   width: 100%;
-
 }
 
 .form-field__big-bar {
@@ -37,6 +36,38 @@ body {
 .form-field__small-bar {
   width: 100%;
   height: 42px;
+}
+
+.form-field__lable {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.form-field__lable:after {
+  position: absolute;
+  content: "";
+  display: block;
+}
+
+.form-field__lable-small:after {
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  width: 11px;
+  height: 11px;
+  top: 15px;
+  left: 13px;
+  background-size: contain;
+}
+
+.form-field__lable-big:after {
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 19px;
+  top: 25px;
+  left: 26px;
+  background-size: contain;
 }
 
 .form-field__typing {
@@ -51,6 +82,7 @@ body {
   font-family: inherit;
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
   line-height: 19px;
+  position: relative;
 }
 
 .form-field__typing::placeholder {

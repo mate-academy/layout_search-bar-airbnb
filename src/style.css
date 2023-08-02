@@ -20,16 +20,18 @@ html {
   display: flex;
 }
 
+.search__form-big {
+  margin-top: 20px;
+}
+
 .search__form-small {
   margin-top: 20px;
 }
 
 .input {
-  display: c;
+  display: flex;
   outline: 0;
   padding: 0;
-
-  color: #3d4e61;
 
   width: 100vw;
 
@@ -40,14 +42,14 @@ html {
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
 
-  height: 70px;
+  height: 68px;
   background-size: 19px;
   background-position: 26px;
   padding-left: 62px;
 }
 
 .input--small {
-  height: 42px;
+  height: 40px;
   background-size: 11px;
   background-position: 13px;
   padding-left: 33px;
@@ -57,16 +59,10 @@ html {
   box-shadow: 0 3px 8px 0 #3d4e6133;
 }
 
-.input:focus {
-  box-shadow: 0 4px 4px 0 #00000040;
-  background: url(images/Search.svg) linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-
-  font-weight: 900;
-}
-
 .input::placeholder {
   font-family: Avenir, Helvetica, sans-serif;
-  position: absolute;
+  font-weight: 300;
+  color: #3d4e61;
 }
 
 .input--big::placeholder {
@@ -75,4 +71,11 @@ html {
 
 .input--small::placeholder {
   font-size: 14px;
+}
+
+.input:focus {
+  box-shadow: 0 4px 4px 0 #00000040;
+  background: url(images/Search.svg) linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+
+  font-weight: 900;
 }

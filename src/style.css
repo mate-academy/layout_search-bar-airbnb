@@ -1,11 +1,14 @@
 @font-face {
-  font-family: Avenir-Book;
+  font-family: "Avenir";
   src: url("./fonts/Avenir-Book.ttf");
+  font-style: normal;
+  font-weight: 300;
 }
 
 @font-face {
-  font-family: Avenir-Heavy;
+  font-family: "Avenir";
   src: url("./fonts/Avenir-Heavy.ttf");
+  font-style: normal;
   font-weight: 900;
 }
 
@@ -17,28 +20,22 @@
   box-shadow: 0 1px 8px 0 #3d4e611a;
   border-radius: 4px;
   width: 100%;
-}
 
-.search-bar__position {
-  margin-bottom: 20px;
-  margin-top: 20px;
+  padding: 15px 0 16px 13px;
+  height: 42px;
 }
 
 .search-bar--big {
   padding: 25px 0 25px 26px;
   height: 70px;
-}
 
-.search-bar--small {
-  padding: 15px 0 16px 13px;
-  height: 42px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .search-bar__img {
   display: flex;
-}
 
-.search-bar__img--big {
   height: 19px;
   width: 19px;
   margin-right: 17px;
@@ -58,12 +55,10 @@
 }
 
 .search-bar__input::placeholder {
-  font-family: Avenir-Book, sans-serif;
+  font-family: Avenir, sans-serif;
   color: #3d4e61;
-}
-
-.search-bar__input--big::placeholder {
   font-size: 16px;
+  font-weight: 300;
 }
 
 .search-bar__input--small::placeholder {
@@ -75,5 +70,6 @@
 }
 
 .search-bar:focus-within .search-bar__input::placeholder {
-  font-family: Avenir-Heavy, sans-serif;
+  font-family: Avenir, sans-serif;
+  font-weight: 900;
 }

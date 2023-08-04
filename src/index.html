@@ -14,23 +14,24 @@
     <form
       action="http://localhost:8080/"
       method="post"
-      class="search-form search-form__big"
+      class="search-form"
       data-qa="big"
     >
       <img
         src="images/Search.svg"
         alt="Search"
-        class="image--big"
+        class="image__big"
       >
 
-      <label for="search-form__input">
+      <label for="input">
         <input
+          name="first-input"
           type="text"
           placeholder="Try &quot;Los Angeles&quot;"
-          class="search-form__input search-form__input--big"
+          class="input input--big"
           data-qa="keypress"
           required
-        ></input>
+        >
       </label>
     </form>
 
@@ -43,16 +44,17 @@
       <img
         src="images/Search.svg"
         alt="Search"
-        class="image--small"
+        class="image__small"
       >
-      <label for="seach-form__input">
+      <label for="input">
         <input
-        type="text"
-        placeholder="Try &quot;Los Angeles&quot;"
-        class="search-form__input search-form__input--small"
-        data-qa="keypress"
-        required
-      ></input>
+          name="second-input"
+          type="text"
+          placeholder="Try &quot;Los Angeles&quot;"
+          class="input input--small"
+          data-qa="keypress"
+          required
+        >
       </label>
     </form>
   </body>

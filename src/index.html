@@ -15,14 +15,15 @@
       method="post"
       action="index.html"
       class="form"
+      name="search"
+      id="search"
+      data-qa="big"
     >
       <input
-        class="input"
+        class="form__input"
         type="text"
-        name="search"
-        id="search"
+        data-qa="keypress"
         placeholder="Try&quot;Los Angeles&quot;"
-        data-qa="big"
       >
       <label class="label__big" for="search"></label>
     </form>
@@ -31,14 +32,14 @@
       method="post"
       action="index.html"
       class="form"
+      name="search__small"
+      id="search-second"
+      data-qa="small"
     >
       <input
-        class="input input--small"
+        class="form__input form__input--small"
         type="text"
-        name="search__small"
-        id="search-second"
         placeholder="Try&quot;Los Angeles&quot;"
-        data-qa="small"
       >
       <label for="search-second"></label>
     </form>

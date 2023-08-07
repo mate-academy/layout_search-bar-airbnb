@@ -15,7 +15,7 @@
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 form {
@@ -24,7 +24,6 @@ form {
 
 .fieldset {
   margin-top: 20px;
-  width: 100%;
   height: 70px;
   border-color: white;
   display: flex;
@@ -41,7 +40,7 @@ form {
 ::placeholder {
   font-family: "Avenir", sans-serif;
   color: #3d4e61;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
 }
 
@@ -68,11 +67,13 @@ form {
 }
 
 .input {
+  outline: 0;
   flex: 1;
   height: 19px;
   border: none;
   font-size: 16px;
   padding: 0;
+
   margin-left: 17px;
 }
 
@@ -91,5 +92,5 @@ form {
 }
 
 .input:focus {
-  font-weight: 800;
+  font-weight: 900;
 }

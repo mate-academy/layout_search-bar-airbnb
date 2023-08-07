@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: bold;
+}
+
+html {
+  font-family: "Avenir", sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.search-bar {
+  margin-top: 20px;
+}
+
+.search-bar__loupe {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  margin-top: 25px;
+  margin-left: 26px;
+}
+
+.search-bar__loupe--small {
+  width: 11px;
+  height: 11px;
+  margin-top: 15px;
+  margin-left: 13px;
+}
+
+.search-bar__input {
+  font: inherit;
+  height: 70px;
+  text-indent: 62px;
+  font-size: 16px;
+  line-height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  background: #fff;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+}
+
+.search-bar__input--small {
+  height: 42px;
+  text-indent: 33px;
+  font-size: 14px;
+}
+
+.search-bar:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.search-bar:focus {
+  border-radius: 3px;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  font-weight: 900;
+}
+
+::placeholder {
+  color: #3d4e61;
+}

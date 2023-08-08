@@ -60,14 +60,18 @@ form {
   color: #3d4e61;
 }
 
+.input:focus::placeholder {
+  text-shadow: none;
+}
+
 .input-small::placeholder {
   color: #3d4e61;
   font-size: 14px;
-  /* text-shadow: 0 2px 2px rgba(61,78,97,0.2); */
+  text-shadow: 0 2px 2px rgba(61,78,97,0.2);
 }
 
 .input-small:focus,
 .input-small:hover::placeholder,
 .input-small:focus::placeholder {
-  text-shadow: unset;
+  text-shadow: none;
 }

@@ -30,7 +30,9 @@ body {
 
 .input {
   box-sizing: border-box;
+  padding-left: 62px;
   width: 100%;
+  height: 70px;
   margin: 0;
   outline: none;
   color: #3d4e61;
@@ -38,11 +40,6 @@ body {
   border: 1px solid #e1e7ed;
   background: #fff;
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
-}
-
-.input--big {
-  height: 70px;
-  padding-left: 62px;
   font-family: "Avenir", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -51,38 +48,31 @@ body {
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.input--big:hover {
+.input:hover {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.input--big::placeholder,
-.input--big:hover::placeholder {
+.input::placeholder,
+.input:hover::placeholder {
   font-weight: 400;
   line-height: normal;
   text-shadow: none;
 }
 
-.input--big:focus {
+.input:focus {
   border-radius: 3px;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-}
-
-.input--big:focus::placeholder {
-  color: transparent;
 }
 
 .icon {
   position: absolute;
   top: 0;
-  bottom: 0;
-  display: block;
-  background-color: transparent;
-}
-
-.icon--big {
   left: 26px;
   width: 19px;
   height: 19px;
+  bottom: 0;
+  display: block;
+  background-color: transparent;
 }
 
 .icon--small {
@@ -93,18 +83,15 @@ body {
 }
 
 .input--small {
-  height: 42px;
   padding-left: 33px;
-  font-family: "Avenir", sans-serif;
+  height: 42px;
   font-size: 14px;
-  font-style: normal;
   font-weight: 900;
   line-height: normal;
 }
 
 .input--small::placeholder {
   font-weight: 400;
-  /* text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); */
 }
 
 .input--small:hover {
@@ -119,8 +106,4 @@ body {
 .input--small:focus {
   border-radius: 3px;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-}
-
-.input--small:focus::placeholder {
-  color: transparent;
 }

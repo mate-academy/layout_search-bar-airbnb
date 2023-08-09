@@ -11,28 +11,34 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form class="form"
+    <form
+      class="search-form"
       action="#"
       method="get"
       data-qa="big"
     >
+      <label class="search-form__icon"></label>
+
       <input
         type="search"
-        placeholder="Try &quot;Los Angeles &quot;"
-        class="input"
+        placeholder="Try &quot;Los Angeles&quot;"
+        class="search-form__search"
         data-qa="keypress"
       >
     </form>
 
-    <form class="form"
+    <form
+      class="search-form"
       action="#"
       method="get"
       data-qa="small"
     >
+      <label class="search-form__icon search-form__icon--small"></label>
+
       <input
         type="search"
-        placeholder="Try &quot;Los Angeles &quot;"
-        class="input input-small"
+        placeholder="Try &quot;Los Angeles&quot;"
+        class="search-form__search search-form__search--small"
       >
     </form>
   </body>

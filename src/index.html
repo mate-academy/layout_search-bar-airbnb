@@ -17,9 +17,10 @@
       method="get"
       data-qa="big"
     >
-      <label class="search-form__icon"></label>
+      <label for="search-form__input" class="search-form__icon"></label>
 
       <input
+        id="search-form__input"
         type="search"
         placeholder="Try &quot;Los Angeles&quot;"
         class="search-form__search"
@@ -33,9 +34,14 @@
       method="get"
       data-qa="small"
     >
-      <label class="search-form__icon search-form__icon--small"></label>
+      <label
+        for="search-form__input--small"
+        class="search-form__icon search-form__icon--small"
+      >
+      </label>
 
       <input
+        id="search-form__input--small"
         type="search"
         placeholder="Try &quot;Los Angeles&quot;"
         class="search-form__search search-form__search--small"

@@ -4,7 +4,7 @@
 }
 
 @font-face {
-  font-family: "Avenir";
+  font-family: "Avenir-Bold";
   src: url(fonts/Avenir-Heavy.ttf);
   font-weight: bold;
 }
@@ -53,6 +53,14 @@ body {
   border: 1px solid #e1e7ed;
   background: #fff;
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  outline: none;
+}
+
+.search-bar__input:focus {
+  color: #687c94;
+  font-family: "Avenir-Bold", sans-serif;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
 .search-bar__input--small {

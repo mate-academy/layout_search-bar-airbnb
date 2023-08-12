@@ -1,9 +1,16 @@
 @font-face {
   font-family: Avenir;
   src: url(fonts/Avenir-Book.ttf);
+  font-weight: 300;
 }
 
-.image__search--big {
+@font-face {
+  font-family: AvenirBig;
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: 800;
+}
+
+.image {
   display: flex;
   width: 19px;
   height: 19px;
@@ -15,7 +22,7 @@
   padding: 1px;
 }
 
-.form__big {
+.form {
   box-sizing: border-box;
   box-shadow: 0 1px 8px 0 #3d4e611a;
   margin-top: 20px;
@@ -29,7 +36,7 @@
   align-items: center;
 }
 
-.input__big {
+.input {
   font-size: 16px;
   /* stylelint-disable-next-line max-line-length */
   /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
@@ -44,55 +51,33 @@
   padding-left: 1px;
 }
 
-.form__mini {
-  box-sizing: border-box;
-  box-shadow: 0 1px 8px 0 #3d4e611a;
-  margin-top: 20px;
-  display: flex;
-  width: 100%;
+.form--mini {
   height: 42px;
-  border-radius: 4px;
-  background-color: white;
-  border: 1px solid #e1e7ed;
-  align-items: center;
 }
 
-.image__search--mini {
-  display: flex;
+.image--mini {
   width: 11px;
   height: 11px;
   background-image: url(images/Vector.png);
-  background-repeat: no-repeat;
-  position: absolute;
   margin-left: 13px;
-
-  padding: 1px;
 }
 
-.input__mini {
+.input--mini {
   font-size: 14px;
+  margin-left: 33px;
+}
+
+.form:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+}
+
+.input:focus {
   /* stylelint-disable-next-line max-line-length */
   /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
-  font-family: "Avenir";
-  font-weight: 300;
-  height: 30px;
-  width: 100%;
-  border: none;
-  margin-left: 33px;
-  outline: none;
+  font-family: "AvenirBig";
+  background: linear-gradient(#00000010);
 }
 
-.form__big:hover {
-  box-shadow: 0 3px 8px 0 #3d4e6133;
+:focus::placeholder {
+  color: transparent;
 }
-
-.form__mini:hover {
-  box-shadow: 0 3px 8px 0 #3d4e6133;
-}
-
-/*
-.big__form:focus .big__input {
-  box-shadow: 0 4px 4px 0 #00000040;
-  background-color: #e1e7ed;
-}
-*/

@@ -12,31 +12,34 @@
   </head>
   <body>
     <form
-     class="form__big"
-     data-qa="big"
-     action="URL"
-     method="post">
+      class="form"
+      data-qa="big"
+      action="URL"
+      method="post"
+    >
       <input
         type="text"
-        class="input__big"
+        class="input"
         placeholder= "Try &quot;Los Angeles&quot;"
         data-qa="keypress"
+        name="BigInput"
       >
-      <div class="image__search--big"></div>
+      <div class="image"></div>
     </form>
 
     <form
-      class="form__mini"
+      class="form form--mini"
       data-qa="small"
       action="URL"
       method="post"
     >
       <input
-      type="text"
-      class="input__mini"
-      placeholder = "Try &quot;Los Angeles&quot;"
+        type="text"
+        class="input input--mini"
+        placeholder = "Try &quot;Los Angeles&quot;"
+        name="MiniInput"
       >
-      <div class="image__search--mini"></div>
+      <div class="image image--mini"></div>
     </form>
   </body>
 </html>

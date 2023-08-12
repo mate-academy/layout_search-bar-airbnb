@@ -15,19 +15,23 @@
       <form
         class="form"
         action="#"
-        mathod="post"
+        method="post"
+        data-qa="big"
       >
-        <label for="search-input">
-          <input
-            class="input"
-            type="search"
-            name="query"
-            id="query-big"
-            data-qa="keypress"
-            placeholder="Try &quot;Los Angeles&quot;"
-            required
-          >
+        <label
+          class="label"
+          for="search-input"
+          data-qa="big"
+        >
+          "Try &quot;Los Angeles&quot;
         </label>
+        <input
+          class="input"
+          type="search"
+          name="query-big"
+          data-qa="keypress"
+          required
+        >
       </form>
     </div>
 
@@ -35,18 +39,15 @@
       <form
         class="form"
         action="#"
-        mathod="post"
+        method="post"
       >
-        <label for="search-input">
-          <input
-            class="input input--small"
-            type="text"
-            name="query"
-            id="query-small"
-            placeholder="Try &quot;Los Angeles&quot;"
-            required
-          >
-        </label>
+        <label class="label label--small" for="search-input">"Try &quot;Los Angeles&quot;</label>
+        <input
+          class="input input--small"
+          type="text"
+          name="query-small"
+          required
+        >
       </form>
     </div>
   </body>

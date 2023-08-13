@@ -11,44 +11,35 @@
     <link rel="stylesheet" href="../src/style.css">
   </head>
   <body>
-    <div class="big__block" data-qa="big">
-      <form
-        class="form"
+    <form
+      class="form"
         action="#"
         method="post"
         data-qa="big"
       >
-        <label
-          class="label"
-          for="search-input"
-          data-qa="big"
-        >
-          "Try &quot;Los Angeles&quot;
-        </label>
-        <input
-          class="input"
-          type="search"
-          name="query-big"
-          data-qa="keypress"
-          required
-        >
-      </form>
-    </div>
-
-    <div class="small__block" data-qa="small">
-      <form
-        class="form"
-        action="#"
-        method="post"
+      <input
+        class="input"
+        type="search"
+        name="query-big"
+        data-qa="keypress"
+        placeholder="Try &quot;Los Angeles&quot;"
+        required
       >
-        <label class="label label--small" for="search-input">"Try &quot;Los Angeles&quot;</label>
-        <input
-          class="input input--small"
-          type="text"
-          name="query-small"
-          required
-        >
-      </form>
-    </div>
+    </form>
+
+    <form
+      class="form"
+      action="#"
+      method="post"
+      data-qa="small"
+    >
+      <input
+        class="input input--small"
+        type="text"
+        name="query-small"
+        placeholder="Try &quot;Los Angeles&quot;"
+        required
+      >
+    </form>
   </body>
 </html>

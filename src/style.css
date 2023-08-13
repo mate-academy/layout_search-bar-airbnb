@@ -11,14 +11,14 @@
   font-family: "Avenir", serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   line-height: normal;
 }
 
 .form {
   width: 100%;
   margin-top: 20px;
-  padding: 0 10px;
+  padding: 0 8px;
 }
 
 .input,
@@ -52,7 +52,7 @@
 }
 
 .input:focus-visible::placeholder {
-  font-weight: 300;
+  font-weight: 400;
   text-shadow: none;
 }
 
@@ -65,7 +65,7 @@
   display: inline-block;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-45%);
   background: url("./images/Search.svg") no-repeat center center;
   background-size: cover;
 }
@@ -73,20 +73,22 @@
 .form--big .label--search:after {
   width: 19px;
   height: 19px;
-  left: 24px;
+  left: 26px;
 }
 
 .form--small .label--search:after {
   width: 11px;
   height: 11px;
-  left: 11px;
+  left: 13px;
 }
 
 .input--big {
-  padding: 23px 60px;
+  padding: 23px 62px 24px;
+  line-height: 21px;
 }
 
 .input--small {
-  padding: 10px 31px;
+  padding: 11px 33px 10px;
   font-size: 14px;
+  line-height: 19.3px;
 }

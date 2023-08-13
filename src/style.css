@@ -1,0 +1,98 @@
+/*connect fonts*/
+@font-face {
+  font-family: "Avenir";
+  src: url(./fonts/Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url(./fonts/Avenir-Heavy.ttf);
+  font-style: normal;
+  font-weight: 900;
+}
+
+/*set font styles as root*/
+* {
+  font-family: "Avenir", sans-serif;
+}
+
+/*reset default margins and paddings*/
+body,
+form,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+/*define variables*/
+body {
+  --big-icon-size: 19px;
+  --small-icon-size: 11px;
+}
+
+/*form styles*/
+.search-form {
+  position: relative;
+}
+
+/*create BEM mix for positioning form on page*/
+.mainsearch {
+  margin: 20px 8px;
+}
+
+/*it is a lot of problem with rewriting background when input is on focus
+so i moved icon from background and set it as content icon*/
+.search-form__icon {
+  position: absolute;
+  width: var(--big-icon-size);
+  height: var(--big-icon-size);
+  top: 25px;
+  left: 26px;
+}
+
+.search-form__icon--small-icon {
+  width: var(--small-icon-size);
+  height: var(--small-icon-size);
+  top: 15px;
+  left: 13px;
+}
+
+/*compatible and big input styles*/
+.search-form__input {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  font-size: 16px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  height: 70px;
+  line-height: 70px;
+  padding-left: 62px;
+  outline: none;
+}
+
+.search-form__input::placeholder {
+  font-weight: 300;
+  color: #3d4e61;
+}
+
+/*modify small form styles*/
+.search-form--small-input {
+  font-size: 14px;
+  font-weight: 400;
+  height: 42px;
+  line-height: 42px;
+  padding-left: 33px;
+}
+
+/*behaviors styles*/
+.search-form__input:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.4);
+}
+
+.search-form__input:focus {
+  font-weight: 900;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  /*background-image: url("images/Search.svg");*/
+}

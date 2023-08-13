@@ -12,9 +12,10 @@
   </head>
   <body>
     <form
-    action="#"
-    class="search-form mainsearch"
-    data-qa="big"
+      action="/search"
+      class="search-form mainsearch"
+      data-qa="big"
+      method="post"
     >
       <img
       src="images/Search.svg"
@@ -26,13 +27,15 @@
         name="searchQuery"
         class="search-form__input search-form--big-input"
         placeholder="Try &#34;Los Angeles&#34;"
+        data-qa="keypress"
       >
     </form>
 
     <form
-    action="#"
-    class="search-form mainsearch"
-    data-qa="small"
+      action="/search"
+      class="search-form mainsearch"
+      data-qa="small"
+      method="post"
     >
       <img
       src="images/Search.svg"
@@ -44,24 +47,7 @@
         name="searchQuerySmall"
         class="search-form__input search-form--small-input"
         placeholder="Try &#34;Los Angeles&#34;"
-      >
-    </form>
-
-    <form
-    action="#"
-    class="search-form mainsearch"
-    data-qa="keypress"
-    >
-      <img
-      src="images/Search.svg"
-      alt="search icon"
-      class="search-form__icon search-form__icon--small-icon"
-      >
-      <input
-        type="text"
-        name="searchQuerySmallKeypress"
-        class="search-form__input search-form--small-input"
-        placeholder="Try &#34;Los Angeles&#34;"
+        data-qa="keypress"
       >
     </form>
   </body>

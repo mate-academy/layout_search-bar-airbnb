@@ -59,12 +59,12 @@
   width: 11px;
   height: 11px;
   background-image: url(images/Vector.png);
-  margin-left: 13px;
+  margin-left: 12px;
 }
 
 .input--mini {
   font-size: 14px;
-  margin-left: 33px;
+  margin-left: 32px;
 }
 
 .form:hover {
@@ -75,9 +75,13 @@
   /* stylelint-disable-next-line max-line-length */
   /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: "AvenirBig";
-  background: linear-gradient(#00000010);
+  background: linear-gradient(#e1e7ed);
 }
 
-:focus::placeholder {
+.input--mini::placeholder {
+  list-style: none;
+}
+
+.input:focus::placeholder {
   color: transparent;
 }

@@ -1,3 +1,10 @@
+html {
+  font-family: "Avenir", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #3d4e61;
+}
+
 @font-face {
   font-family: Avenir;
   src: url(fonts/Avenir-Book.ttf);
@@ -5,9 +12,9 @@
 }
 
 @font-face {
-  font-family: AvenirBig;
+  font-family: Avenir;
   src: url(fonts/Avenir-Heavy.ttf);
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .image {
@@ -37,11 +44,12 @@
 }
 
 .input {
-  font-size: 16px;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
   /* stylelint-disable-next-line max-line-length */
   /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
-  font-family: "Avenir";
-  font-weight: 300;
   height: 30px;
   width: 100%;
   border: none;
@@ -58,7 +66,8 @@
 .image--mini {
   width: 11px;
   height: 11px;
-  background-image: url(images/Vector.png);
+  background-size: 11px;
+  background-image: url(images/Search.svg);
   margin-left: 12px;
 }
 
@@ -72,14 +81,11 @@
 }
 
 .input:focus {
-  /* stylelint-disable-next-line max-line-length */
-  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
-  font-family: "AvenirBig";
-  background: linear-gradient(#e1e7ed);
-}
-
-.input--mini::placeholder {
-  list-style: none;
+  font-weight: 900;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+  border: 1px solid #e1e7ed;
+  outline: none;
 }
 
 .input:focus::placeholder {

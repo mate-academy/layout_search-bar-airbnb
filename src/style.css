@@ -31,7 +31,6 @@ body {
   border-radius: 4px;
   border: 1px solid var(--light-color);
   background: var(--white--color);
-  box-shadow: 0 1px 8px var(--input-color);
   margin: 20px 0;
   background-image: url(../src/images/Search.svg);
   background-size: 19px;
@@ -39,10 +38,11 @@ body {
   background-position: 26px;
   font-size: 16px;
   font-weight: 900;
+  padding: 0;
 }
 
 .input:hover {
-  box-shadow: inherit;
+  box-shadow: 0 1px 8px var(--input-color);
 }
 
 .input:focus {

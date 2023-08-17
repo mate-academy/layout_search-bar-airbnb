@@ -24,7 +24,7 @@ body {
   box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
 }
 
-.search--box.small {
+.search--box--small {
   height: var(--small--search-size);
   padding-left: 13px;
 }
@@ -40,7 +40,7 @@ body {
   width: 100vw;
 }
 
-.search--bar.small {
+.search--bar--small {
   font-size: 14px;
   margin-left: 9px;
 }
@@ -49,31 +49,31 @@ body {
   color: #3d4e61;
 }
 
-.search--bar.small::placeholder {
+.search--bar--small::placeholder {
   text-shadow: var(--text-shadow);
 }
 
 .search--bar:focus {
   outline: none;
-  font-family: "AvenirHeavy", serif;
+  font-weight: 900;
   /*Because of gradient applying transparent when it's focused*/
   background: transparent;
   border-radius: 3px;
 }
 
-/*Havy font when focused*/
+/*Reset havy font when focused for placeholder*/
 .search--bar:focus::placeholder {
-  font-family: "Avenir", serif;
+  font-weight: normal;
 }
 
 /*Remove placeholders' text shadow of big search when focused
 (shadow style sets to whole input when focused including placeholder) */
-.search--bar.big:focus::placeholder {
+.search--bar--big:focus::placeholder {
   text-shadow: none;
 }
 
 /*Remove box shadow of small search when focused */
-.search--bar.small:focus {
+.search--bar--small:focus {
   box-shadow: none;
 }
 
@@ -83,11 +83,11 @@ body {
 }
 
 /*Add shadow to input text in big container when input focused*/
-.search--bar.big:focus.search--bar.big {
+.search--bar--big:focus.search--bar--big {
   text-shadow: var(--text-shadow);
 }
 
-.big--search--logo {
+.search--logo {
   width: var(--logo-big-size);
   height: var(--logo-big-size);
 
@@ -100,14 +100,14 @@ body {
 
 @font-face {
   font-family: "Avenir";
-  src: url(fonts/Avenir-Book.ttf);
+  src: url(./fonts/Avenir-Book.ttf);
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "AvenirHeavy";
-  src: url(fonts/Avenir-Heavy.ttf);
+  font-family: "Avenir";
+  src: url(./fonts/Avenir-Heavy.ttf);
   font-style: normal;
   font-weight: 900;
 }

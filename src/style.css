@@ -15,16 +15,11 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  padding: 0 8px;
-}
-
 .form {
   margin-top: 20px;
 }
 
-.form__lable-img {
+.form__label-img {
   position: absolute;
   margin-top: 25px;
   margin-left: 26px;
@@ -40,18 +35,17 @@ body {
 }
 
 .form__input {
-  outline: none;
   font: inherit;
-  width: 100%;
-  border-radius: 4px;
-  border: 1px solid rgba(225, 231, 237, 1);
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
-}
-
-.form__input-big {
   height: 70px;
   font-size: 16px;
   text-indent: 61px;
+
+  outline: none;
+  width: 100%;
+  color: #3d4e61;
+  border-radius: 4px;
+  border: 1px solid rgba(225, 231, 237, 1);
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
 }
 
 .form__input-small {
@@ -73,4 +67,5 @@ body {
 
 ::placeholder {
   color: #3d4e61;
+  font-weight: 300;
 }

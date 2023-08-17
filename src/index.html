@@ -8,9 +8,50 @@
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar airbnb</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <form
+      action="http://localhost:8000"
+      method="get"
+      class="search--box big"
+      data-qa="big"
+    >
+      <img
+        src="images/Search.svg"
+        alt="Search"
+        class="big--search--logo"
+      >
+      <label for="searchBoxBig"></label>
+      <input
+        type="text"
+        class="search--bar big"
+        name="searchBoxBig"
+        id="searchBoxBig"
+        placeholder="Try &quot;Los Angeles&quot;"
+        data-qa="keypress"
+      >
+    </form>
+
+    <form
+      action="http://localhost:8000"
+      method="get"
+      class="search--box small"
+      data-qa="small"
+      >
+      <img
+        src="images/Search.svg"
+        alt="Search"
+        class="small--search--logo"
+      >
+      <label for="searchBoxSmall"></label>
+      <input
+        type="text"
+        class="search--bar small"
+        name="searchBoxSmall"
+        id="searchBoxSmall"
+        placeholder="Try &quot;Los Angeles&quot;"
+      >
+    </form>
   </body>
 </html>

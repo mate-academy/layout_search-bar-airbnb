@@ -66,12 +66,6 @@ body {
   font-weight: normal;
 }
 
-/*Remove placeholders' text shadow of big search when focused
-(shadow style sets to whole input when focused including placeholder) */
-.search--bar--big:focus::placeholder {
-  text-shadow: none;
-}
-
 /*Remove box shadow of small search when focused */
 .search--bar--small:focus {
   box-shadow: none;
@@ -83,8 +77,14 @@ body {
 }
 
 /*Add shadow to input text in big container when input focused*/
-.search--bar--big:focus.search--bar--big {
+.search--bar--big:focus {
   text-shadow: var(--text-shadow);
+}
+
+/*Remove placeholders' text shadow of big search when focused
+(shadow style sets to whole input when focused including placeholder) */
+.search--bar--big:focus::placeholder {
+  text-shadow: none;
 }
 
 .search--logo {

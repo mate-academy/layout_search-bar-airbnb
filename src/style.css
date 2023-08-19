@@ -1,0 +1,117 @@
+@font-face {
+  font-family: Avenir;
+  src: url("./fonts/Avenir-Book.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url("./fonts/Avenir-Heavy.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 800;
+}
+
+.searchbar {
+  background: hsl(0, 0%, 100%);
+  border: 1px solid hsl(210, 25%, 91%); /* percentages don't work for borders */
+  border-radius: 4px;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  box-sizing: border-box; /* Includes padding and border. Only top margin set */
+  height: 70px;
+  margin-top: 20px; /* If set in percentage, indicates  % from parent element */
+  position: relative; /* Relative to its normal position */
+  width: 100%;
+}
+
+.searchbar-small {
+  margin-top: 20px;
+  height: 42px;
+
+}
+
+.icon {
+  border: 1px;
+  color: rgba(104, 124, 148, 1);
+  height: 19px;
+  left: 26px;
+  position: relative;
+  top: 25px;
+  width: 19px;
+}
+
+.icon-small {
+  height: 11px;
+  left: 13px;
+  top: 15px;
+  width: 11px;
+  position: absolute;
+}
+
+.input-text {
+  border: none;
+  color: rgba(61, 78, 97, 1);
+  display: flex;
+  height: 19px;
+  left: 62px;
+  outline: none;
+  position: absolute;
+  top: 25px;
+  width: 158px;
+  padding: 0 29px 0 0;
+}
+
+.text-small {
+  font-size: 14px;
+  left: 33px;
+  top: 10px;
+  width: 158px;
+  height: 19px;
+  align-items: center;
+
+}
+
+::placeholder {
+  width: 129px;
+  height: 22px;
+  color: rgba(61, 78, 97, 1);
+  font-size: 16px;
+  left: 0%;
+  line-height: 21.86px;
+  position: relative;
+  top: 0%;
+  font-family: "Avenir-book", sans-serif;
+}
+
+.text-small::placeholder {
+  font-size: 14px;
+  height: 20px;
+  position: relative;
+  line-height: 19.12px;
+  margin-left: 20px;
+  width: 167.29px;
+  font-weight: 400px;
+}
+
+.searchbar:hover {
+  border-radius: 4px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.searchbar:focus {
+  background: linear-gradient(180deg, hsl(0, 0%, 100%) 0%,
+  hsl(240, 6%, 97%) 100%);
+  border-radius: 3px;
+}
+
+.input-text:hover {
+  height: 19px;
+  width: 158px;
+}
+
+.input-text:focus {
+  color: rgba(61, 78, 97, 1);
+  font-family: "Avenir-heavy", sans-serif;
+  width: 160.98px;
+  height: 22px;
+}

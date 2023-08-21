@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -9,8 +9,39 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+
+    <form
+      class="default"
+      action="/"
+      method="post"
+    >
+
+      <input
+        data-qa="big"
+        class="input__search search--big"
+        type="search"
+        placeholder="Try &quot Los Angeles &quot"
+      >
+    </form>
+
+    <form
+      class="hover"
+      action="/"
+      method="post"
+      >
+
+      <input
+        data-qa="small"
+        class="input__search search--small"
+        type="search"
+        placeholder="Try &quot Los Angeles &quot"
+      >
+    </form>
+
   </body>
 </html>

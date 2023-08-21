@@ -17,15 +17,17 @@
     class="search-bar"
     data-qa="big"
     >
-      <img
-        class="icon"
-        src="images/Search.svg"
-        alt="company logo"
-      >
-
+      <label for="input">
+        <img
+          class="icon"
+          src="images/Search.svg"
+          alt="company logo"
+        >
+      </label>
       <input
         type="search"
         class="input"
+        id="input"
         placeholder="Try &quot;Los Angeles&quot;"
         data-qa="keypress"
       >
@@ -36,15 +38,18 @@
     class="search-bar search-bar--small"
     data-qa="small"
     >
-      <img
-        class="icon icon--small"
-        src="images/Search.svg"
-        alt="company small logo"
-      >
+      <label for="input--small">
+        <img
+          class="icon icon--small"
+          src="images/Search.svg"
+          alt="company small logo"
+        >
+      </label>
 
       <input
         type="search"
         class="input input--small"
+        id="input--small"
         placeholder="Try &quot;Los Angeles&quot;"
       >
     </form>

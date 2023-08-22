@@ -1,0 +1,116 @@
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir.ttc);
+}
+
+@font-face {
+  font-family: Avenir-Book;
+  src: url(./fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: Avenir-Heavy;
+  src: url(./fonts/Avenir-Heavy.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  --border-color: #e1e7ed;
+  --main-color-text: #3d4e61;
+  --background-gradient: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+body {
+  font-family: Avenir-Book, sans-serif;
+}
+
+.form {
+  position: relative;
+  margin-top: 20px;
+}
+
+.form__input {
+  font-family: Avenir, sans-serif;
+  color: var(--main-color-text);
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  outline: none;
+}
+
+.form__input::placeholder {
+  font-family: Avenir, sans-serif;
+  font-weight: 400;
+}
+
+.form__input--big {
+  height: 70px;
+  padding-left: 62px;
+}
+
+.form__input--big:hover {
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+}
+
+.form__input--big:focus {
+  font-family: Avenir-Heavy, sans-serif;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: var(--background-gradient);
+  color: var(--main-color-text);
+}
+
+.form__input--small {
+  font-family: Avenir-Book, sans-serif;
+  font-size: 14px;
+  height: 42px;
+  padding-left: 33px;
+}
+
+.form__input--small:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.form__input--small:focus {
+  font-family: Avenir-Heavy, sans-serif;
+  border: 1px solid var(--border-color);
+  background: var(--background-gradient);
+  color: var(--main-color-text);
+}
+
+.form__submit {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -53%);
+  cursor: pointer;
+}
+
+.form__submit:before {
+  content: "";
+  display: block;
+  color: #687c94;
+  background-image: url(./images/Search.svg);
+  background-size: contain;
+}
+
+.form__submit--big {
+  left: 26px;
+}
+
+.form__submit--small {
+  left: 7px;
+}
+
+.form__submit--big:before {
+  width: 19px;
+  height: 19px;
+}
+
+.form__submit--small:before {
+  width: 11px;
+  height: 11px;
+}

@@ -15,6 +15,9 @@
 
 * {
   box-sizing: border-box;
+  --border-color: #e1e7ed;
+  --main-color-text: #3d4e61;
+  --background-gradient: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
 body {
@@ -28,12 +31,12 @@ body {
 
 .form__input {
   font-family: Avenir, sans-serif;
-  color: #3d4e61;
+  color: var(--main-color-text);
   font-size: 16px;
   font-weight: 400;
   width: 100%;
   border-radius: 4px;
-  border: 1px solid #e1e7ed;
+  border: 1px solid var(--border-color);
   outline: none;
 }
 
@@ -53,10 +56,10 @@ body {
 
 .form__input--big:focus {
   font-family: Avenir-Heavy, sans-serif;
-  border: 1px solid #e1e7ed;
+  border: 1px solid var(--border-color);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  color: #3d4e61;
+  background: var(--background-gradient);
+  color: var(--main-color-text);
 }
 
 .form__input--small {
@@ -72,9 +75,9 @@ body {
 
 .form__input--small:focus {
   font-family: Avenir-Heavy, sans-serif;
-  border: 1px solid #e1e7ed;
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  color: #3d4e61;
+  border: 1px solid var(--border-color);
+  background: var(--background-gradient);
+  color: var(--main-color-text);
 }
 
 .form__submit {

@@ -14,6 +14,8 @@
   --light-shadow: rgba(61, 78, 97, 0.1);
   --dark-shadow: rgba(61, 78, 97, 0.2);
   --gradient: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  --big-form-height: 70px;
+
 }
 
 * {
@@ -27,7 +29,7 @@ body {
 .form {
   display: flex;
   width: 100%;
-  height: 70px;
+  height: var(--big-form-height);
   margin: 20px 0;
 }
 
@@ -50,12 +52,14 @@ body {
   border-radius: 4px;
   box-shadow: 0 1px 8px 0 var(--light-shadow);
   font-size: 16px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .form__input::placeholder {
   color: inherit;
   font-weight: 300;
   font-size: 16px;
+  text-shadow: none;
 }
 
 .form__input--small {
@@ -72,8 +76,11 @@ body {
   width: 19px;
   height: 19px;
   position: absolute;
-  top: 25px;
-  left: 26px;
+  /* top: 25px; */
+  top: calc(var(--big-form-height) / 2);
+  /* left: 26px; */
+  left: calc(var(--big-form-height) / 2);
+  transform: translate(-50%, -50%);
 }
 
 .form__icon--small {

@@ -14,6 +14,10 @@
   --placeholder-color: #3d4e61;
 }
 
+html {
+  font-family: "Avenir", sans-serif;
+}
+
 body {
   font-weight: 300;
   margin: 0;
@@ -33,6 +37,8 @@ body {
   width: 100%;
   border-radius: 4px;
   border: 1px solid #e1e7ed;
+  font-weight: 300;
+  font-family: inherit;
   background-image: url("./images/Search.svg");
   background-repeat: no-repeat;
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
@@ -65,9 +71,9 @@ body {
 
 .search--small {
   height: 42px;
-  text-indent: 33px;
+  text-indent: 32px;
   font-size: 14px;
-  background-position: 13px center;
+  background-position: 12px 14px;
   background-size: 11px;
 }
 
@@ -76,7 +82,7 @@ body {
 }
 
 .search--small:focus {
-  background: url("./images/Search.svg") 13px center/11px no-repeat, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background: url("./images/Search.svg") 12px 14px/11px no-repeat, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
 }
 

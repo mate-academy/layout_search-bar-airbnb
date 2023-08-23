@@ -1,9 +1,14 @@
 @font-face {
   font-family: "Avenir";
-  src: url(/fonts/Avenir-Book.ttf),
-    url(/fonts/Avenir-Heavy.ttf),
-    url(/fonts/Avenir.ttc);
+  src: url(../src/fonts/Avenir-Book.ttf);
+  font-style: normal;
   font-weight: 300;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url(../src/fonts/Avenir-Heavy.ttf);
+  font-style: normal;
+  font-weight: 800;
 }
 
 body {
@@ -27,36 +32,28 @@ input::placeholder {
 input {
   border: none;
   outline: none;
+  width: 100%;
 }
 
 .input-big {
   padding: 24px 0 24px 62px;
   font-size: 16px;
-}
-
-.block-big {
   position: relative;
   &::before {
     content: "";
     position: absolute;
     background-image: url(images/Search.svg);
     background-repeat: no-repeat;
+    background-position: center;
     display: inline-block;
     block-size: cover;
     background-size: 19px 19px;
-    top: 25px;
-    right: 17px;
-    left: 26px;
-    bottom: 25px;
   }
 }
 
 .input-small {
   padding: 11px 0 11px 33px;
   font-size: 14px;
-}
-
-.block-small {
   position: relative;
   &::before {
     content: "";
@@ -65,16 +62,13 @@ input {
     background-repeat: no-repeat;
     display: inline-block;
     block-size: cover;
+    background-position: center;
     background-size: 11px 11px;
-    top: 14px;
-    right: 9px;
-    left: 13px;
-    bottom: 14px;
   }
 }
 
-.search-form:hover,
-.search-form:focus {
+*:hover,
+*:focus {
   box-shadow: 0 4px 4px 0 #00000040;
   box-sizing: border-box;
 }

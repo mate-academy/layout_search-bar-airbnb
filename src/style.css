@@ -38,33 +38,22 @@ input {
 .input-big {
   padding: 24px 0 24px 62px;
   font-size: 16px;
-  position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    background-image: url(images/Search.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block;
-    block-size: cover;
-    background-size: 19px 19px;
-  }
+  content: "";
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 33px;
+  background-size: 19px 19px;
+  left: 33px;
 }
 
 .input-small {
   padding: 11px 0 11px 33px;
   font-size: 14px;
-  position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    background-image: url(images/Search.svg);
-    background-repeat: no-repeat;
-    display: inline-block;
-    block-size: cover;
-    background-position: center;
-    background-size: 11px 11px;
-  }
+  content: "";
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 13px;
+  background-size: 11px 11px;
 }
 
 *:hover,

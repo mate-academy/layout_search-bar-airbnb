@@ -11,7 +11,6 @@
 }
 
 html {
-  font-family: "Avenir", sans-serif;
   color: #3d4e61;
   font-weight: 300;
 }
@@ -21,61 +20,59 @@ body {
 }
 
 .form {
+  position: relative;
   margin: 20px 8px 0;
 }
 
-.form__field {
+.form__field-input {
   box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  border: 1px solid #e1e7ed;
-  border-radius: 4px;
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
-}
-
-.form__field--big {
-  height: 70px;
-}
-
-.form__field--small {
-  height: 42px;
-}
-
-.field-input {
-  font-family: inherit;
   width: 100%;
+  font-family: "Avenir", sans-serif;
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
   outline: none;
-  background: transparent;
-  border: none;
 }
 
 .field-input--big {
-  padding-left: 17px;
+  padding-left: 62px;
+  height: 70px;
   font-size: 16px;
 }
 
 .field-input--small {
-  padding-left: 9px;
+  padding-left: 33px;
+  height: 42px;
   font-size: 14px;
 }
 
-.magnified-glass-icon-big {
-  padding-left: 26px;
+.magnified-glass-icon {
+  position: absolute;
+}
+
+.icon--big {
+  top: 25px;
+  left: 26px;
   height: 19px;
   width: 19px;
 }
 
-.magnified-glass-icon-small {
-  padding-left: 13px;
+.icon--small {
+  top: 15px;
+  left: 13px;
   height: 11px;
   width: 11px;
 }
 
-.form__field:hover {
+.form__field-input:hover {
+  border: 1px solid #e1e7ed;
   box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
 }
 
-.form__field:focus {
-  font-family: inherit;
+.form__field-input:focus {
+  font-weight: 800;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  border: 1px solid #e1e7ed;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }

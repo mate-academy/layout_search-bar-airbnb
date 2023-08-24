@@ -1,25 +1,21 @@
 @font-face {
   font-family: "Avenir";
-  src: url("fonts/Avenir.ttc") format("ttc"),
-    url("fonts/Avenir-Book.ttf") format("ttf");
+  src: url(./fonts/Avenir-Book.ttf);
   font-style: normal;
-  font-weight: normal;
+  font-weight: 300;
 }
 
 @font-face {
   font-family: "Avenir";
-  src: url("fonts/Avenir-Heavy.ttf") format("ttf");
-  font-weight: bold;
+  src: url(./fonts/Avenir-Heavy.ttf);
+  font-style: normal;
+  font-weight: 800;
 }
 
 body {
   font-family: "Avenir", Arial, sans-serif;
   margin: 0;
   font-weight: 300;
-}
-
-.container {
-  padding-top: 20px;
 }
 
 .input {
@@ -34,7 +30,10 @@ body {
   border-radius: 4px;
 }
 
-.big-icon {
+.icon {
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
   width: 19px;
   height: 19px;
   position: absolute;
@@ -42,16 +41,23 @@ body {
   margin-left: 26px;
 }
 
-svg {
-  color: rgba(104, 124, 148, 1);
+.icon--small {
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  margin-top: 15.5px;
+  margin-left: 13px;
+  background-image: url(./images/Search.svg);
+  background-position: center;
+  background-size: cover;
 }
 
 .input::placeholder {
   position: absolute;
   left: 62px;
   font-family: "Avenir", Arial, sans-serif;
-  font-weight: 300;
   font-size: 16px;
+  text-align: center;
 }
 
 .input--small::placeholder {
@@ -59,33 +65,24 @@ svg {
   font-size: 14px;
 }
 
-.big-bar {
-  margin-bottom: 20px;
-}
-
 .bar {
+  margin-top: 20px;
   background: linear-gradient(0deg, #e1e7ed, #e1e7ed),
     linear-gradient(0deg, #fff, #fff);
   border: 1px solid rgba(225, 231, 237, 1);
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  justify-content: start;
+  display: flex;
 }
 
-.small-bar {
-  width: 427px;
+.bar--small {
   height: 42px;
+  width: 427px;
   border-radius: 4px;
   background: linear-gradient(0deg, #e1e7ed, #e1e7ed),
     linear-gradient(0deg, #fff, #fff);
   border: 1px solid rgba(225, 231, 237, 1);
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
-}
-
-.small-icon {
-  width: 11px;
-  height: 11px;
-  position: absolute;
-  margin-top: 15px;
-  margin-left: 13px;
 }
 
 .bar:hover {
@@ -95,16 +92,7 @@ svg {
   border: 1px solid rgba(225, 231, 237, 1);
 }
 
-#big-city-search:focus {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  background: linear-gradient(0deg, #e1e7ed, #e1e7ed),
-    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border: 1px solid rgba(225, 231, 237, 1);
-  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
-  font-weight: bold;
-}
-
-#small-city-search:focus {
+.input:focus {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background: linear-gradient(0deg, #e1e7ed, #e1e7ed),
     linear-gradient(180deg, #fff 0%, #f6f6f7 100%);

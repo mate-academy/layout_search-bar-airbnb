@@ -32,16 +32,6 @@ body {
   margin: 20px auto 0;
 }
 
-.form__container-big {
-  display: flex;
-  height: 70px;
-}
-
-.form__container-small {
-  display: flex;
-  height: 42px;
-}
-
 .form__big-icon,
 .form__small-icon {
   position: relative;
@@ -66,7 +56,7 @@ body {
   line-height: 22px;
   outline: none;
   padding-left: 62px;
-
+  display: flex;
 }
 
 .small__input {
@@ -81,16 +71,25 @@ body {
   font-size: 14px;
   line-height: 19px;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  display: flex;
 }
 
-.big__input:focus,
-.small__input:focus {
+.big__input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  font-weight: 600;
+  font-weight: 400;
   color: rgba(61, 78, 97, 1);
 }
 
-.big__input:hover,
+.small__input:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  font-weight: 900;
+  color: rgba(61, 78, 97, 1);
+}
+
+.big__input:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
 .small__input:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }

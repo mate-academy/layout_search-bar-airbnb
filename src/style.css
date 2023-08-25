@@ -9,7 +9,11 @@
   font-family: "Avenir-Heavy";
   font-weight: bold;
   src: url(fonts/Avenir-Heavy.ttf);
+}
 
+:root {
+  --main-color: #3d4e61;
+  --border-color: #e1e7ed;
 }
 
 * {
@@ -17,29 +21,28 @@
 }
 
 body {
-  font-family: "Avenir", sans-serif;
   font-size: 16px;
-  font-weight: 300;
   line-height: normal;
-  color: #3d4e61;
+  font-family: "Avenir", sans-serif;
+  font-weight: 300;
+  color: var(--main-color);
 }
 
-.wrap-big {
+.wrap_form {
   height: 70px;
 }
 
-.wrap-small {
+.wrap_form--small {
   height: 42px;
 }
 
 .search {
-  height: 100%;
   position: relative;
-  box-sizing: border-box;
   display: flex;
   align-items: center;
-  font-family: "Avenir", sans-serif;
   margin-top: 20px;
+  height: 100%;
+  font-family: "Avenir", sans-serif;
   font-weight: 600;
 }
 
@@ -63,16 +66,15 @@ body {
 }
 
 .search__input {
-  color: #3d4e61;
-  font-family: "Avenir", sans-serif;
-  box-sizing: border-box;
+  outline: none;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
   width: 100%;
   height: 70px;
-  border-radius: 4px;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
   background: #fff;
-  outline: none;
+  font-family: "Avenir", sans-serif;
+  color: var(--main-color);
 }
 
 .search__input:hover {
@@ -80,18 +82,18 @@ body {
 }
 
 .search__input::placeholder {
-  color: #3d4e61;
-  font-family: "Avenir", sans-serif;
   font-style: normal;
-  font-weight: 300;
   line-height: normal;
+  font-family: "Avenir", sans-serif;
+  font-weight: 300;
+  color: var(--main-color);
 }
 
 .search__input:focus {
-  font-family: "Avenir", sans-serif;
+  border: 1px solid var(--border-color);
   border-radius: 3px;
-  border: 1px solid #e1e7ed;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  font-family: "Avenir", sans-serif;
   font-weight: 600;
 }
 
@@ -102,7 +104,7 @@ body {
 
 .search__input--small {
   height: 42px;
+  padding: 12px 33px;
   font-size: 14px;
   line-height: 19px;
-  padding: 12px 33px;
 }

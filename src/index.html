@@ -11,13 +11,14 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form class="search-bar search-bar--big" data-qa="big">
-      <label class="search-bar__label search-bar__label--big">
+    <form class="search-bar" data-qa="big">
+      <label class="search-bar__label">
         <input
           type="text"
+          name="search"
           placeholder="Try &quot;Los Angeles&quot;"
           data-qa="keypress"
-          class="search-bar__input search-bar__input--big"
+          class="search-bar__input"
         >
       </label>
     </form>
@@ -26,6 +27,7 @@
       <label class="search-bar__label search-bar__label--small">
         <input
           type="text"
+          name="search"
           placeholder="Try &quot;Los Angeles&quot;"
           data-qa="hover"
           class="search-bar__input search-bar__input--small"

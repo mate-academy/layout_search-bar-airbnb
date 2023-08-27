@@ -1,0 +1,100 @@
+/* Font Definitions */
+@font-face {
+  font-family: "Avenir";
+  src: url(./fonts/Avenir-Book.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url(./fonts/Avenir-Heavy.ttf);
+  font-weight: 600;
+}
+
+/* Global Styles */
+:root {
+  --box-shadow-default: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  --box-shadow-hover: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+  --box-shadow-focus: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  --font-color: #3d4e61;
+  --input-border: 1px solid #e1e7ed;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* Body Styles */
+body {
+  font-family: "Avenir", sans-serif;
+}
+
+/* Search Form Styles */
+.search-form {
+  margin-top: 20px;
+}
+
+.search-form__input {
+  width: 100%;
+  font-family: inherit;
+  outline: none;
+  border-radius: 4px;
+  border: var(--input-border);
+  box-shadow: var(--box-shadow-default);
+}
+
+/* Input Variants */
+.search-form__input-big {
+  height: 70px;
+  background: url(images/Search.svg) 26px 50% no-repeat;
+  padding-left: 62px;
+  font-size: 16px;
+}
+
+.search-form__input-small {
+  height: 42px;
+  background: url(images/Search.svg) 13px 50% no-repeat;
+  background-size: 11px;
+  padding-left: 33px;
+  font-size: 14px;
+}
+
+/* Input Placeholder Styles */
+.search-form__input::placeholder {
+  font-family: inherit;
+  color: var(--font-color);
+  font-weight: 300;
+}
+
+.search-form__input-small::placeholder {
+  font-size: 14px;
+}
+
+.search-form__input-big::placeholder {
+  font-size: 16px;
+}
+
+/* Input Interaction Styles */
+.search-form__input:hover {
+  box-shadow: var(--box-shadow-hover);
+}
+
+.search-form__input:focus {
+  font-weight: 600;
+  box-shadow: var(--box-shadow-focus);
+  color: var(--font-color);
+  border-radius: 3px;
+}
+
+/* Input Focus Styles */
+.search-form__input-big:focus {
+  background: url(images/Search.svg) 26px 25px no-repeat,
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.search-form__input-small:focus {
+  background: url(images/Search.svg) 13px 15px no-repeat,
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background-size: 11px;
+}

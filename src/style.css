@@ -1,13 +1,11 @@
 @font-face {
   font-family: "Avenir";
   src: url(../src/fonts/Avenir-Book.ttf);
-  font-style: normal;
   font-weight: 300;
 }
 @font-face {
   font-family: "Avenir";
   src: url(../src/fonts/Avenir-Heavy.ttf);
-  font-style: normal;
   font-weight: 800;
 }
 
@@ -17,6 +15,7 @@
   border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px 0 #3d4e611a;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .input::placeholder {
@@ -46,12 +45,12 @@
   background-position: 13px;
   background-size: 11px 11px;
   height: 40px;
+  box-sizing: border-box;
 }
 
 #big:hover,
 #small:hover {
   box-shadow: 0 4px 4px 0 #00000040;
-  box-sizing: border-box;
 }
 
 #big:focus,

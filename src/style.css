@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(./fonts/Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url(./fonts/Avenir-Heavy.ttf);
+  font-style: normal;
+  font-weight: 800;
+}
+
+body {
+  font-family: "Avenir", Arial, sans-serif;
+  margin: 0;
+  font-weight: 300;
+}
+
+.input {
+  font-family: "Avenir", Arial, sans-serif;
+  width: 100%;
+  height: 70px;
+  border: 1px solid rgba(104, 124, 148, 1);
+  padding-left: 62px;
+  border-radius: 4px;
+}
+
+.input::placeholder {
+  position: absolute;
+  left: 62px;
+  font-family: "Avenir", Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.input--small {
+  height: 42px;
+}
+
+.input--small::placeholder {
+  left: 33px;
+  font-size: 14px;
+}
+
+.input:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+  outline: none;
+}
+
+.icon {
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 26px;
+}
+
+.icon--small {
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  margin-top: 15.5px;
+  margin-left: 13px;
+  background-image: url(./images/Search.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+.bar {
+  margin-top: 20px;
+  background: linear-gradient(0deg, #e1e7ed, #e1e7ed),
+    linear-gradient(0deg, #fff, #fff);
+  border: 1px solid rgba(225, 231, 237, 1);
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  justify-content: start;
+  display: flex;
+}
+
+.bar--small {
+  height: 42px;
+  border-radius: 4px;
+  background: linear-gradient(0deg, #e1e7ed, #e1e7ed),
+    linear-gradient(0deg, #fff, #fff);
+  border: 1px solid rgba(225, 231, 237, 1);
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+}
+
+.bar:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+  background: linear-gradient(0deg, #e1e7ed, #e1e7ed),
+    linear-gradient(0deg, #fff, #fff);
+  border: 1px solid rgba(225, 231, 237, 1);
+}

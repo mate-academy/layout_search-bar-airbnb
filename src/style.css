@@ -1,0 +1,115 @@
+/* stylelint-disable function-linear-gradient-no-nonstandard-direction */
+@font-face {
+  font-family: "Avenir";
+  src: url("fonts/Avenir-Book.ttf");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("fonts/Avenir-Heavy.ttf");
+  font-style: normal;
+  font-weight: 600;
+}
+
+:root {
+  --textColor: #3d4e61;
+  --boxShadowColor: rgb(61, 78, 97, 0.1);
+  --boxShadowColorHover: rgba(61, 78, 97, 0.4);
+  --borderColor: #e1e7ed;
+  --linearGradientTopColor: #fff;
+  --linearGradientBottomColor: #f6f6f7;
+  --radius: 4px;
+}
+
+.page {
+  margin: 0;
+}
+
+.form--relative-position {
+  position: relative;
+  margin: 20px 8px 0;
+}
+
+.form__label {
+  display: flex;
+  box-sizing: border-box;
+  border: 1px solid var(--borderColor);
+  border-radius: var(--radius);
+  height: 70px;
+}
+
+.form__search {
+  outline: none;
+  box-shadow: 0 1px 8px 0 var(--boxShadowColor);
+  border-radius: var(--radius);
+  border-style: none;
+  height: 100%;
+  width: 100%;
+  padding-left: 62px;
+  font-family: "Avenir", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.form__search::-ms-clear {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+.form__search::-ms-reveal {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+.form__search::-webkit-search-decoration,
+.form__search::-webkit-search-cancel-button,
+.form__search::-webkit-search-results-button,
+.form__search::-webkit-search-results-decoration {
+  display: none;
+}
+
+.form__search::placeholder {
+  font-weight: 300;
+  color: var(--textColor);
+}
+
+.form__search:hover {
+  box-shadow: 0 3px 8px 0 var(--boxShadowColorHover);
+}
+
+.form__search:focus {
+  border-radius: calc(var(--radius) - 1);
+  background-image: linear-gradient(
+    var(--linearGradientTopColor),
+    var(--linearGradientBottomColor)
+  );
+  font-weight: 600;
+  color: var(--textColor);
+}
+
+.form__label--small {
+  height: 42px;
+}
+
+.form__search--small {
+  padding-left: 33px;
+  font-size: 14px;
+}
+
+.icon {
+  position: absolute;
+  display: block;
+  top: 25px;
+  left: 26px;
+}
+
+.icon--small {
+  top: 15px;
+  left: 13px;
+  width: 11px;
+  height: 11px;
+}

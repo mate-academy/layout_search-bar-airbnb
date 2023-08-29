@@ -1,63 +1,71 @@
 @font-face {
   font-family: "Avenir";
   src: url(fonts/Avenir.ttc);
-
-  font-style: normal;
-  font-weight: 300;
 }
 
 @font-face {
-  font-family: "Avenir";
+  font-family: "Avenir-Book";
   src: url(fonts/Avenir-Book.ttf);
-
-  font-style: normal;
-  font-weight: 300;
 }
 
 @font-face {
-  font-family: "Avenir";
+  font-family: "Avenir-Heavy";
   src: url(fonts/Avenir-Heavy.ttf);
+}
 
-  font-style: normal;
-  font-weight: 300;
+html {
+  --box-shawdow: 0 1px 8px 0 #3d4e611a;
+  --border: 1px solid #e1e7ed;
+  --box-shawdow-hover: 0 4px 4px 0 #00000040;
+  --background: linear-gradient(0deg, #e1e7ed, #e1e7ed),
+    linear-gradient(180deg, #fff 0%, #f6f 100%);
+}
+
+::-webkit-input-placeholder {
+  color: #3d4e61;
 }
 
 .body {
+
   margin: 0;
+
 }
 
 .big__bar {
   display: flex;
   align-items: center;
+  box-sizing: border-box;
 
   height: 70px;
 
-  border: 1px solid rgba(225, 231, 237, 1);
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  border: var(--border);
+  box-shadow: var(--box-shawdow);
 }
 
 .big_search {
-  margin-left: 26px;
+  padding-left: 26px;
 }
 
 .input_big {
-
   font-family: "Avenir", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #3d4e61;
+
   width: 90%;
   height: 90%;
 
-  margin-left: 62px;
+  padding-left: 62px;
   outline: none;
   border: none;
 }
 
 .big__bar:hover {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: var(--box-shawdow-hover);
 }
 
 .big__bar:focus {
-  background: linear-gradient(0deg, #e1e7ed, #e1e7ed),
-    linear-gradient(180deg, #fff 0%, #f6f 100%);
+  background: var(--background);
 }
 
 .input_big:focus {
@@ -67,12 +75,13 @@
 .small__bar {
   display: flex;
   align-items: center;
+  box-sizing: border-box;
 
   height: 42px;
   margin-top: 20px;
 
-  border: 1px solid rgba(225, 231, 237, 1);
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  border: var(--border);
+  box-shadow: var(--box-shawdow);
 }
 
 .small_search {
@@ -82,22 +91,22 @@
 }
 
 .input_small {
-
   font-family: "Avenir", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
   width: 90%;
   height: 90%;
 
+  color: #3d4e61;
   margin-left: 33px;
   outline: none;
   border: none;
 }
 
 .small__bar:hover {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: var(--box-shawdow-hover);
 }
 
 .small__bar:focus {
-  background: linear-gradient(0deg, #e1e7ed, #e1e7ed),
-    linear-gradient(180deg, #fff 0%, #f6f 100%);
-
+  background: var(--background);
 }

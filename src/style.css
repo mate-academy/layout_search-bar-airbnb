@@ -22,7 +22,6 @@
 
 * {
   box-sizing: border-box;
-  padding: 0;
 }
 
 /* Body Styles */
@@ -42,10 +41,6 @@ body {
   border-radius: 4px;
   border: var(--input-border);
   box-shadow: var(--box-shadow-default);
-}
-
-/* Input Variants */
-.search-form__input-big {
   height: 70px;
   background: url(images/Search.svg) 26px 50% no-repeat;
   padding-left: 62px;
@@ -65,14 +60,11 @@ body {
   font-family: inherit;
   color: var(--font-color);
   font-weight: 300;
+  font-size: 16px;
 }
 
 .search-form__input-small::placeholder {
   font-size: 14px;
-}
-
-.search-form__input-big::placeholder {
-  font-size: 16px;
 }
 
 /* Input Interaction Styles */
@@ -85,10 +77,6 @@ body {
   box-shadow: var(--box-shadow-focus);
   color: var(--font-color);
   border-radius: 3px;
-}
-
-/* Input Focus Styles */
-.search-form__input-big:focus {
   background: url(images/Search.svg) 26px 25px no-repeat,
     linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }

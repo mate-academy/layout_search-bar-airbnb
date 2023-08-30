@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: "Avenir";
   src: url(fonts/Avenir-Book.ttf);
@@ -9,12 +13,26 @@
   font-weight: 800;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   font-family: "Avenir", sans-serif;
+}
+
+.form {
+  position: relative;
+  margin: 20px 0 0;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+}
+
+.input {
+  font-family: inherit;
+  height: 70px;
+  width: 100%;
+  border: 1px #e1e7ed solid;
+  padding: 0 20px 0 62px;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 4px;
+  outline: none;
 }
 
 input::placeholder {
@@ -22,31 +40,11 @@ input::placeholder {
   font-weight: 300;
 }
 
-.form {
-  position: relative;
-  margin-top: 20px;
-}
-
-.input {
-  font-family: inherit;
-  height: 70px;
-  width: 100%;
-  border: 0.5px #e1e7ed solid;
-  line-height: 70px;
-  padding: 25px 0 26px 62px;
-  font-size: 16px;
-  font-weight: 300;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  border-radius: 4px;
-  outline: none;
-}
-
 .icon {
   position: absolute;
-  top: 25px;
   left: 26px;
   width: 19px;
-  height: 19px;
+  height: 100%;
 }
 
 .input:hover {
@@ -61,14 +59,12 @@ input::placeholder {
 
 .input-small {
   height: 42px;
-  line-height: 42px;
-  padding: 12px 0 10px 33px;
+  padding: 0 10px 0 33px;
   font-size: 14px;
 }
 
 .icon-small {
   width: 11px;
-  height: 11px;
-  top: 15px;
+  height: 100%;
   left: 13px;
 }

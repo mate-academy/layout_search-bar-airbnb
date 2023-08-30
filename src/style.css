@@ -1,53 +1,51 @@
-
 @font-face {
-  font-family: "Avenir", sans-serif;
+  font-family: "Avenir-Book", sans-serif;
   font-weight: 300;
   src: url(./fonts/Avenir-Book.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: "Avenir", sans-serif;
+  font-family: "Avenir-Heavy", sans-serif;
   font-weight: 800;
   src: url(./fonts/Avenir-Heavy.ttf) format("truetype");
 }
 
 body {
-  font-family: "Avenir", sans-serif;
+  font-family: "Avenir-Book", "Avenir-Heavy", sans-serif;
+  box-sizing: border-box;
 }
 
 .bold-text {
-  font-family: "Avenir", sans-serif;
-  font-weight: 300;
+  font-family: "Avenir-Book", "Avenir-Heavy", sans-serif;
 }
 
-.form-big {
+.form {
   position: relative;
+  margin-top: 20px;
 }
 
 .image-big {
-  margin-top: 11px;
-  position: absolute ;
+  top: 26px;
+  left: 26px;
   width: 19px;
   height: 19px;
-  padding: 26px;
+  position: absolute;
 }
 
 .search-input-big {
-  margin-top: 12px;
   width: 100%;
   height: 66px;
 
-  border-radius: 3px;
+  border-radius: 4px;
   border: 1px solid #e1e7ed;
   background: #fff;
-
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
 }
 
 .search-input-big:hover {
   width: 100%;
   height: 66px;
-  border-radius: 3px;
+  border-radius: 4px;
   border: 1px solid #e1e7ed;
   background: #fff;
   box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
@@ -56,7 +54,7 @@ body {
 .search-input-big:focus {
   width: 100%;
   height: 66px;
-  border-radius: 0;
+  border-radius: 3px;
   border: 1px solid #e1e7ed;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
@@ -73,25 +71,19 @@ body {
   line-height: normal;
 }
 
-.form-small {
-  position: relative;
-}
-
 .image-small {
-  margin-top: 22px;
+  top: 16px;
+  left: 13px;
   position: absolute;
   width: 11px;
   height: 11px;
-  padding: 13px;
-  
 }
 
 .search-input-small {
-  margin-top: 20px;
   width: 100%;
   height: 38px;
   
-  border-radius: 3px;
+  border-radius: 4px;
   border: 1px solid #e1e7ed;
   background: #fff;
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
@@ -101,7 +93,7 @@ body {
   width: 100%;
   height: 38px;
   
-  border-radius: 3px;
+  border-radius: 4px;
   border: 1px solid #e1e7ed;
   background: #fff;
   box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
@@ -110,6 +102,7 @@ body {
 .search-input-small:focus {
   width: 100%;
   height: 38px;
+
   border-radius: 3px;
   border: 1px solid #e1e7ed;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);

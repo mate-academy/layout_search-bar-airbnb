@@ -21,6 +21,10 @@ html {
 
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   box-sizing: border-box;
   font-family: "Avenir", sans-serif;
@@ -28,7 +32,7 @@ body {
 }
 
 .search--form {
-  margin-top: 20px;
+  margin: 20px 8px;
 }
 
 .search--form--input {
@@ -72,6 +76,10 @@ body {
   padding-left: 33px;
   font-size: 14px;
   border-radius: 4px;
+}
+
+.search--form--input--small::placeholder {
+  font-size: 14px;
 }
 
 .search--form--input--small:focus {

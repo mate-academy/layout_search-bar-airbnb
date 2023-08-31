@@ -12,43 +12,36 @@
   </head>
   <body>
     <form
-      action="index.html"
-      method="post"
-      class="big__bar"
+      action="submit"
+      method="submit"
       data-qa="big"
+      class="search--form"
     >
-      <img
-        src="images/Search.svg"
-        alt="search"
-        class="big_search"
-      >
-      <label for="big_search_input"></label>
-      <input
-        data-qa="keypress"
-        type="text"
-        class="input_big"
-        placeholder="Try &quot;Los Angeles&quot;"
-        id="big_search_input"
-      >
+      <label for="search--form">
+        <input
+          data-qa="keypress"
+          type="text"
+          class="search--form--input"
+          placeholder="Try &quot;Los Angeles&quot;"
+          id="search--form-big"
+        >
+      </label>
     </form>
+
     <form
-      action="index.html"
-      method="post"
+      action="submit"
+      method="submit"
       data-qa="small"
-      class="small__bar"
+      class="search--form"
     >
-      <img
-        src="images/Search.svg"
-        alt="..."
-        class="small_search"
-      >
-      <label for="small_search_input"></label>
-      <input
-        type="text"
-        class="input_small"
-        placeholder="Try &quot;Los Angeles&quot;"
-        id="small_search_input"
-      >
+      <label for="search--form">
+        <input
+          type="text"
+          class="search--form--input search--form--input--small"
+          placeholder="Try &quot;Los Angeles&quot;"
+          id="search--form-small"
+        >
+      </label>
     </form>
   </body>
 </html>

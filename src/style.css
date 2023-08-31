@@ -5,6 +5,9 @@
   --placeholder-color: #3d4e61;
 }
 
+* {
+  box-sizing: border-box;
+}
 @font-face {
   font-family: "Avenir Default";
   src: url(fonts/Avenir-Book.ttf);
@@ -15,21 +18,26 @@
   src: url(fonts/Avenir-Heavy.ttf);
 }
 
-.body {
-  margin: 0;
-}
 /* #region big_input */
 .search__form {
   margin-top: 20px;
   font-weight: 300;
 }
 
-.search__bar-big {
+.search__bar {
   width: 100%;
-  height: 70px;
   color: #3d4e61;
-  padding-left: 62px;
+  outline: none;
   font-family: "Avenir Default" , sans-serif;
+  border-radius: 4px;
+  font-size: 16px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  border: 1px solid #e1e7ed;
+}
+
+.search__bar-big {
+  height: 70px;
+  padding-left: 62px;
 }
 
 .search__logo {
@@ -45,6 +53,7 @@
   background: no-repeat;
   background-image: url(images/Search.svg);
   background-position: center;
+  background-size: cover;
 }
 
 .search__logo-big::before {
@@ -58,30 +67,27 @@
 }
 
 .search__bar-big:focus {
-  border-radius: 3px;
-  border: var(--border);
   background: var(--bg_gradient);
   font-family: "Avenir Bold", sans-serif;
   text-shadow: var(--shadow);
+  box-shadow: var(--shadow);
 }
 
 .search__bar::placeholder [text] {
   color: var(--placeholder-color);
-  font-family: "Avenir Default" , sans-serif;
 }
 /* #endregion */
 /* #region small_input */
 .search__bar-small {
-  width: 100%;
   height: 42px;
   padding-left: 33px;
+  font-size: 14px;
 }
 
 .search__logo-small::before {
   height: 11px;
   width: 11px;
   left: 13px;
-  background-size: cover;
 }
 
 .search__bar-small:hover {

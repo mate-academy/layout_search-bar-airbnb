@@ -1,0 +1,110 @@
+:root {
+  --shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  --bg_gradient: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  --border: 1px solid #e1e7ed;
+  --placeholder-color: #3d4e61;
+}
+
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Avenir Default";
+  src: url(fonts/Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir Bold";
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-style: normal;
+  font-weight: 800;
+}
+
+/* #region big_input */
+.search__form {
+  margin-top: 20px;
+}
+
+.search__bar {
+  width: 100%;
+  color: var(--placeholder-color);
+  outline: none;
+  font-family: "Avenir Default" , sans-serif;
+  border-radius: 4px;
+  font-size: 16px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  border: 1px solid #e1e7ed;
+}
+
+.search__bar-big {
+  height: 70px;
+  padding-left: 62px;
+}
+
+.search__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.search__logo::before {
+  content: "";
+  position: absolute;
+  background: no-repeat;
+  background-image: url(images/Search.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+.search__logo-big::before {
+  top: 25px;
+  bottom: 26px;
+  height: 19px;
+  width: 19px;
+  left: 26px;
+}
+
+.search__bar-big:hover {
+  box-shadow: var(--shadow);
+}
+
+.search__bar-big:focus {
+  background: var(--bg_gradient);
+  font-family: "Avenir Bold", sans-serif;
+  text-shadow: var(--shadow);
+  box-shadow: var(--shadow);
+}
+
+.search__bar::placeholder [text] {
+  color: var(--placeholder-color);
+}
+/* #endregion */
+/* #region small_input */
+.search__bar-small {
+  height: 42px;
+  padding-left: 33px;
+  font-size: 14px;
+}
+
+.search__logo-small::before {
+  top: 15px;
+  bottom: 16px;
+  height: 11px;
+  width: 11px;
+  left: 13px;
+}
+
+.search__bar-small:hover {
+  box-shadow: var(--shadow);
+}
+
+.search__bar-small:focus {
+  border-radius: 3px;
+  border: var(--border);
+  background: var(--bg_gradient);
+  font-family: "Avenir Bold", sans-serif;
+}
+/* #endregion */

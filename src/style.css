@@ -11,22 +11,25 @@
 @font-face {
   font-family: "Avenir Default";
   src: url(fonts/Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 300;
 }
 
 @font-face {
   font-family: "Avenir Bold";
   src: url(fonts/Avenir-Heavy.ttf);
+  font-style: normal;
+  font-weight: 800;
 }
 
 /* #region big_input */
 .search__form {
   margin-top: 20px;
-  font-weight: 300;
 }
 
 .search__bar {
   width: 100%;
-  color: #3d4e61;
+  color: var(--placeholder-color);
   outline: none;
   font-family: "Avenir Default" , sans-serif;
   border-radius: 4px;

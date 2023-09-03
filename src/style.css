@@ -16,19 +16,22 @@ body {
   font-family: "Avenir", sans-serif;
 }
 
-.form {
+* {
   box-sizing: border-box;
+}
+
+.form {
   position: relative;
   height: 70px;
   margin-top: 20px;
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  box-shadow: 0 1px 8px 0 #3d4e611a;
   background-color: #fff;
   border: 1px solid #e1e7ed;
   border-radius: 4px;
 }
 
 .form:hover {
-  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+  box-shadow: 0 3px 8px 0 #3d4e6133;
 
 }
 
@@ -40,31 +43,19 @@ body {
   height: 42px;
 }
 
-.icon {
-  display: block;
-  position: absolute;
-  width: 19px;
-  height: 19px;
-  top: 24px;
-  left: 25px;
-}
-
-.icon--small {
-  width: 11px;
-  height: 11px;
-  top: 14px;
-  left: 12px;
-}
-
 .input {
   position: absolute;
-  padding: 0;
+  background-image: url(./images/Icon.svg);
+  background-repeat: no-repeat;
+  background-position: left 26px center;
+  background-size: 19px;
+  padding-left: 62px;
   border: none;
   height: 22px;
+  width: 100%;
   font-family: "Avenir", sans-serif;
   font-size: 16px;
   top: 23px;
-  left: 62px;
 }
 
 .input::placeholder {
@@ -77,8 +68,10 @@ body {
 }
 
 .input--small {
+  background-position: left 13px center;
+  background-size: 11px;
   font-size: 14px;
   height: 19px;
   top: 10px;
-  left: 33px;
+  padding-left: 33px;
 }

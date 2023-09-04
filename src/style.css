@@ -2,12 +2,14 @@
   font-family: Avenir;
   src: url(fonts/Avenir-Book.ttf);
   font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
   font-family: Avenir;
   src: url(fonts/Avenir-Heavy.ttf);
-  font-weight: bold;
+  font-weight: 800;
+  font-style: normal;
 }
 
 :root {
@@ -46,7 +48,7 @@ form {
   transform: translateY(-50%);
 }
 
-.big-form__field {
+.big-form__input {
   box-sizing: border-box;
   height: 70px;
   width: 100%;
@@ -56,12 +58,12 @@ form {
   padding: 0 0 0 62px;
   color: var(--text-color);
   font-family: Avenir, sans-serif;
-  font-weight: bold;
+  font-weight: 800;
   font-size: 16px;
 }
 
-.big-form__field::placeholder {
-  font-weight: normal;
+.big-form__input::placeholder {
+  font-weight: 300;
   color: var(--text-color);
 }
 
@@ -69,12 +71,12 @@ form {
   box-shadow: 0 3px 8px var(--shadow-color-action);
 }
 
-.big-form__field:focus {
+.big-form__input:focus {
   box-shadow: 0 3px 8px var(--shadow-color-action);
   background: linear-gradient(var(--white), var(--gray));
 }
 
-.big-form__field:focus-visible {
+.big-form__input:focus-visible {
   outline: none;
 }
 
@@ -87,7 +89,7 @@ form {
   transform: translateY(-50%);
 }
 
-.small-form__field {
+.small-form__input {
   box-sizing: border-box;
   height: 42px;
   width: 100%;
@@ -97,20 +99,20 @@ form {
   padding: 0 0 0 33px;
   color: var(--text-color);
   font-family: Avenir, sans-serif;
-  font-weight: bold;
+  font-weight: 800;
   font-size: 14px;
 }
 
-.small-form__field::placeholder {
-  font-weight: normal;
+.small-form__input::placeholder {
+  font-weight: 300;
   color: var(--text-color);
 }
 
-.small-form__field:focus {
+.small-form__input:focus {
   box-shadow: 0 3px 8px var(--shadow-color-action);
   background: linear-gradient(var(--white), var(--gray));
 }
 
-.small-form__field:focus-visible {
+.small-form__input:focus-visible {
   outline: none;
 }

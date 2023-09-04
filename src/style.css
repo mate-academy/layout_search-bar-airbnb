@@ -1,0 +1,116 @@
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: bold;
+}
+
+:root {
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+  --border-color: #e1e7ed;
+  --shadow-color: rgba(61, 78, 97, 0.1);
+  --shadow-color-action: rgba(0, 0, 0, 0.25);
+  --text-color: #3d4e61;
+  --white: #fff;
+  --gray: #f6f6f7;
+}
+
+body {
+  margin: 0;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.search-bar {
+  padding: 0 8px;
+}
+
+.label {
+  position: relative;
+}
+
+.big-form__icon {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: 26px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.big-form__field {
+  box-sizing: border-box;
+  height: 70px;
+  width: 100%;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  box-shadow: 0 1px 8px var(--shadow-color);
+  padding: 0 0 0 62px;
+  color: var(--text-color);
+  font-family: Avenir, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.big-form__field::placeholder {
+  font-weight: normal;
+  color: var(--text-color);
+}
+
+.form-hover:hover {
+  box-shadow: 0 3px 8px var(--shadow-color-action);
+}
+
+.big-form__field:focus {
+  box-shadow: 0 3px 8px var(--shadow-color-action);
+  background: linear-gradient(var(--white), var(--gray));
+}
+
+.big-form__field:focus-visible {
+  outline: none;
+}
+
+.small-form__icon {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  left: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.small-form__field {
+  box-sizing: border-box;
+  height: 42px;
+  width: 100%;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  box-shadow: 0 1px 8px var(--shadow-color);
+  padding: 0 0 0 33px;
+  color: var(--text-color);
+  font-family: Avenir, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.small-form__field::placeholder {
+  font-weight: normal;
+  color: var(--text-color);
+}
+
+.small-form__field:focus {
+  box-shadow: 0 3px 8px var(--shadow-color-action);
+  background: linear-gradient(var(--white), var(--gray));
+}
+
+.small-form__field:focus-visible {
+  outline: none;
+}

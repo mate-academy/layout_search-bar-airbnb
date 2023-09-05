@@ -21,6 +21,7 @@
   --text-color: #3d4e61;
   --white: #fff;
   --gray: #f6f6f7;
+  justify-content: space-between;
 }
 
 body {
@@ -39,80 +40,55 @@ form {
   position: relative;
 }
 
-.big-form__icon {
-  position: absolute;
-  width: 19px;
-  height: 19px;
-  left: 26px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.big-form__input {
+.input {
   box-sizing: border-box;
-  height: 70px;
   width: 100%;
   border: 1px solid var(--border-color);
   border-radius: 4px;
   box-shadow: 0 1px 8px var(--shadow-color);
-  padding: 0 0 0 62px;
   color: var(--text-color);
   font-family: Avenir, sans-serif;
   font-weight: 800;
+  height: 70px;
+  padding: 0 0 0 62px;
   font-size: 16px;
 }
 
-.big-form__input::placeholder {
-  font-weight: 300;
-  color: var(--text-color);
-}
-
-.form-hover:hover {
-  box-shadow: 0 3px 8px var(--shadow-color-action);
-}
-
-.big-form__input:focus {
-  box-shadow: 0 3px 8px var(--shadow-color-action);
-  background: linear-gradient(var(--white), var(--gray));
-}
-
-.big-form__input:focus-visible {
-  outline: none;
-}
-
-.small-form__icon {
-  position: absolute;
-  width: 11px;
-  height: 11px;
-  left: 13px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.small-form__input {
-  box-sizing: border-box;
-  height: 42px;
-  width: 100%;
-  border: 1px solid var(--border-color);
-  border-radius: 4px;
-  box-shadow: 0 1px 8px var(--shadow-color);
+.input--small {
   padding: 0 0 0 33px;
-  color: var(--text-color);
-  font-family: Avenir, sans-serif;
-  font-weight: 800;
+  height: 42px;
   font-size: 14px;
 }
 
-.small-form__input::placeholder {
+.input::placeholder {
   font-weight: 300;
   color: var(--text-color);
 }
 
-.small-form__input:focus {
+.input:focus {
   box-shadow: 0 3px 8px var(--shadow-color-action);
   background: linear-gradient(var(--white), var(--gray));
 }
 
-.small-form__input:focus-visible {
+.input:focus-visible {
   outline: none;
+}
+
+.input:hover {
+  box-shadow: 0 3px 8px var(--shadow-color-action);
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 26px;
+  width: 19px;
+  height: 19px;
+}
+
+.icon--small {
+  width: 11px;
+  height: 11px;
+  left: 13px;
 }

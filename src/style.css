@@ -27,14 +27,13 @@ html {
   position: relative;
 }
 
-.search_icon--1 {
+.search_icon {
   position: absolute;
   top: 25px;
   left: 26px;
 }
 
-.search_icon--2 {
-  position: absolute;
+.search_icon--small {
   height: 11px;
   top: 15px;
   left: 13px;
@@ -42,14 +41,21 @@ html {
 
 .search_bar {
   width: 100%;
-  color: var(--font-color);
-  font-family: "Avenir_bold", sans-serif;
   font-weight: 400;
   border-radius: 4px;
   border: 1px solid var(--border-color);
   background: var(--background-color);
   box-shadow: 0 1px 8px 0 var(--box-shadow-color);
+  color: var(--font-color);
+  font-family: "Avenir_bold", sans-serif;
 
+  font-size: 16px;
+  padding: var(--big-search-bar) 0 var(--big-search-bar) 62px;
+}
+
+.search_bar--small {
+  font-size: 14px;
+  padding: var(--small-search-bar) 0 var(--small-search-bar) 33px;
 }
 
 .search_bar::placeholder {
@@ -66,14 +72,4 @@ html {
   border-radius: 3px;
   border: 1px solid var(--border-color);
   background: linear-gradient(var(--linear-gradient-settings));
-}
-
-.search--1 {
-  font-size: 16px;
-  padding: var(--big-search-bar) 0 var(--big-search-bar) 62px ;
-}
-
-.search--2 {
-  font-size: 14px;
-  padding: var(--small-search-bar) 0 var(--small-search-bar) 33px;
 }

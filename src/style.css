@@ -50,9 +50,10 @@ body * {
   font-weight: 400;
 }
 
-.search-input.small {
+.search-input--small {
   padding-left: 32px;
-  background: 13px center no-repeat url(images/search.svg);
+  background: no-repeat url(images/search.svg);
+  background-position: top 15px left 13px;
   background-size: 11px;
   height: 42px;
   color: #3d4e61;
@@ -60,6 +61,6 @@ body * {
   font-weight: 900;
 }
 
-.search-input.small[type="text"]::placeholder {
+.search-input--small[type="text"]::placeholder {
   font-size: 14px;
 }

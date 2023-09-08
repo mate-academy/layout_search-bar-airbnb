@@ -4,12 +4,14 @@ $border--color: #e1e7ed;
 
 @font-face {
   font-family: "Avenir-Book";
+  font-weight: 300;
   src: local("Avenir-Book"),
     url("./fonts/Avenir-Book.ttf") format("ttf");
 }
 
 @font-face {
   font-family: "Avenir-Heavy";
+  font-weight: 700;
   src: local("Avenir-Heavy"),
     url("./fonts/Avenir-Heavy.ttf") format("ttf");
 }
@@ -50,7 +52,6 @@ $border--color: #e1e7ed;
   border: 1px solid $border--color;
   border-radius: 3px;
   font-family: "Avenir-Heavy", "Arial", sans-serif;
-  font-weight: 700;
   font-size: 16px;
   line-height: 21.86px;
   transition: filter 0.3s ease;
@@ -70,7 +71,6 @@ $border--color: #e1e7ed;
 
   &::placeholder {
     font-family: "Avenir-Book", "Arial", sans-serif;
-    font-weight: 300;
   }
 
   &:hover,

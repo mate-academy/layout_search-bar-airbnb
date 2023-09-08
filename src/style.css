@@ -41,6 +41,7 @@ body * {
 
 .search-input:focus {
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  background: 25px no-repeat url('images/Search.svg') #e1e7ed;
   outline: none;
 }
 
@@ -59,6 +60,14 @@ body * {
   color: #3d4e61;
   font-size: 14px;
   font-weight: 900;
+}
+
+.search-input--small:focus {
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  background: no-repeat url('images/Search.svg') #e1e7ed;
+  background-position: top 15px left 13px;
+  background-size: 11px;
+  outline: none;
 }
 
 .search-input--small[type="text"]::placeholder {

@@ -1,4 +1,7 @@
-
+html {
+  --focus-color: #e1e7ed;
+  --shadow-color-text: rgba(0, 0, 0, 0.25);
+}
 @font-face {
   font-family: "Avenir";
   src: url(fonts/Avenir-Book.ttf);
@@ -40,8 +43,8 @@ body * {
 }
 
 .search-input:focus {
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  background: 25px no-repeat url("images/Search.svg") #e1e7ed;
+  text-shadow: 4px 4px 4px var(--shadow-color-text);
+  background: 25px no-repeat url("images/Search.svg") var(--focus-color);
   outline: none;
 }
 
@@ -63,8 +66,8 @@ body * {
 }
 
 .search-input--small:focus {
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  background: no-repeat url("images/Search.svg") #e1e7ed;
+  text-shadow: 4px 4px 4px var(--shadow-color-text);
+  background: no-repeat url("images/Search.svg") var(--focus-color);
   background-position: top 15px left 13px;
   background-size: 11px;
   outline: none;

@@ -1,19 +1,18 @@
-@import "./reset.scss";
-
-$border--color: #e1e7ed;
+@import "reset";
+@import "vars";
 
 @font-face {
   font-family: "Avenir-Book";
+  src: url("../fonts/Avenir-Book.ttf");
+  font-style: normal;
   font-weight: 300;
-  src: local("Avenir-Book"),
-    url("./fonts/Avenir-Book.ttf") format("ttf");
 }
 
 @font-face {
   font-family: "Avenir-Heavy";
+  src: url("../fonts/Avenir-Heavy.ttf");
+  font-style: normal;
   font-weight: 700;
-  src: local("Avenir-Heavy"),
-    url("./fonts/Avenir-Heavy.ttf") format("ttf");
 }
 
 .form {
@@ -23,7 +22,7 @@ $border--color: #e1e7ed;
   &::before {
     content: "";
     position: absolute;
-    background: url("./images/Search.svg") no-repeat;
+    background: url("../images/Search.svg") no-repeat;
     background-size: cover;
     top: 50%;
     transform: translateY(-50%);

@@ -28,7 +28,6 @@ body {
 }
 
 .smallform {
-  width: 100%;
   height: 42px;
 }
 
@@ -54,14 +53,14 @@ body {
   top: 15px;
   left: 13px;
   background-image: url(./images/Icon.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .barcontainer::after {
   content: "";
   position: absolute;
   display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .bar {
@@ -87,7 +86,6 @@ body {
 }
 
 .bigbar {
-  font-family: "Avenir", sans-serif;
   font-size: 16px;
   letter-spacing: 0;
   padding-left: 62px;
@@ -100,6 +98,6 @@ body {
   line-height: 19px;
 }
 
-.bigbar::placeholder {
+.bar::placeholder {
   font-weight: 300;
 }

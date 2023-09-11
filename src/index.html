@@ -18,7 +18,6 @@
       data-qa="big"
       action="/action_page.php"
       method="get"
-      class="form-big"
     >
       <div class="search-container search-container-big">
         <div class="search-icon-big">
@@ -43,22 +42,23 @@
       data-qa="small"
       action="/action_page.php"
       method="get"
-      class="search-container search-container-small"
     >
-      <div class="search-icon-small">
-        <img
-          src="images/Search.svg"
-          alt="Search icon"
-          class="search-icon-small-image"
-        >
+      <div class="search-container search-container-small">
+        <div class="search-icon-small">
+          <img
+            src="images/Search.svg"
+            alt="Search icon"
+            class="search-icon-small-image"
+          >
+        </div>
+
+        <input
+            type="text"
+            class="input-bar input-bar-small"
+            placeholder="Try &quot;Los Angeles&quot;"
+          >
       </div>
 
-      <input
-          type="text"
-          class="input-bar input-bar-small"
-          placeholder="Try &quot;Los Angeles&quot;"
-        >
-      </div>
     </form>
   </body>
 </html>

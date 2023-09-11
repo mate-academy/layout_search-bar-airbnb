@@ -16,24 +16,24 @@ html {
 }
 
 @font-face {
-  font-family: Avenir;
-  src: url(fonts/Avenir-Heavy.ttf);
-  font-weight: 800;
+  font-family: "Avenir";
+  src: url(fonts/Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 300;
 }
 
 @font-face {
-  font-family: Avenir;
-  src: url(fonts/Avenir-Book.ttf);
-  font-weight: 300;
+  font-family: "Avenir";
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-style: normal;
+  font-weight: 800;
 }
 
 .search-bar {
   margin-top: 20px;
 }
 
-/*---------------------------*/
-
-.search-bar__input {
+.search {
   box-sizing: border-box;
   width: 100%;
   border-radius: 4px;
@@ -43,16 +43,14 @@ html {
   color: var(--font-color);
 }
 
-/*---------------------------*/
-
-.big {
+.search--big {
   height: 70px;
   background: var(--search-icon-big);
   padding-left: 62px;
   font-size: var(--font-size-big);
 }
 
-.small {
+.search--small {
   height: 42px;
   background: var(--search-icon-small);
   padding-left: 33px;
@@ -60,29 +58,27 @@ html {
   background-size: var(--background-size-small);
 }
 
-/*---------------------------*/
-
-.search-bar__input:hover {
+.search:hover {
   box-shadow: var(--shadow-input-hovered);
 }
 
-.search-bar__input::placeholder {
+.search::placeholder {
   font-family: inherit;
   color: var(--font-color);
   font-weight: 300;
 }
 
-.small::placeholder {
-  font-size: var(--font-size-small);
-}
-
-.search-bar__input:focus {
+.search:focus {
   border-radius: 3px;
   outline: none;
   font-weight: 800;
 }
 
-.big:focus {
+.search--small::placeholder {
+  font-size: var(--font-size-small);
+}
+
+.search--big:focus {
   background: var(--search-icon-big), var(--linear-gradient-focus);
 }
 

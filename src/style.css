@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Avenir";
+  font-weight: 300;
+  src: url(./fonts/Avenir-Book.ttf) format("truetype");
+}
+
+:root {
+  --main-font: "Avenir", "Roboto", sans-serif;
+  --main-color: #3d4e61;
+  --border-color: #e1e7ed;
+  --shadow-color: #3d4e611a;
+  --hover-color: #3d4e6133;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--main-font);
+}
+
+.form {
+  margin: 20px 8px;
+}
+
+.form__input-wrapper {
+  position: relative;
+}
+
+.form__input {
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: 300;
+
+  width: 100%;
+  height: 70px;
+  padding: 0 20px 0 62px;
+
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  box-shadow: 0 1px 8px var(--shadow-color);
+  outline: none;
+}
+
+.form__input:hover {
+  box-shadow: 0 3px 8px var(--hover-color);
+}
+
+.form__input:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+}
+
+.form__input::placeholder {
+  color: var(--main-color);
+}
+
+.form__input--small {
+  height: 42px;
+  padding-left: 33px;
+}
+
+.form__input--small::placeholder {
+  font-size: 14px;
+}
+
+.form__image {
+  position: absolute;
+  left: 26px;
+  top: 25px;
+  width: 19px;
+  height: 19px;
+}
+
+.form__image--small {
+  left: 13px;
+  top: 17px;
+  width: 11px;
+  height: 11px;
+}

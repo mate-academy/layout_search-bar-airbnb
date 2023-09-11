@@ -39,7 +39,6 @@ html {
 
 .search-bar:focus {
   font-weight: 800;
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
   border: 1px solid #e1e7ed;
   outline: none;
@@ -59,21 +58,6 @@ html {
   color: var(--font-color);
 }
 
-.search--big {
-  height: 70px;
-  background: var(--search-icon-big);
-  padding-left: 62px;
-  font-size: var(--font-size-big);
-}
-
-.search--small {
-  height: 42px;
-  background: var(--search-icon-small);
-  padding-left: 33px;
-  font-size: var(--font-size-small);
-  background-size: var(--background-size-small);
-}
-
 .search:hover {
   box-shadow: var(--shadow-input-hovered);
 }
@@ -88,4 +72,19 @@ html {
   border-radius: 3px;
   outline: none;
   font-weight: 800;
+}
+
+.search--big {
+  height: 70px;
+  background-image: var(--search-icon-big);
+  padding-left: 62px;
+  font-size: var(--font-size-big);
+}
+
+.search--small {
+  height: 42px;
+  background-image: var(--search-icon-small);
+  padding-left: 33px;
+  font-size: var(--font-size-small);
+  background-size: var(--background-size-small);
 }

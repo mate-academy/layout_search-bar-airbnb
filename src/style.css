@@ -83,22 +83,22 @@ body {
 }
 
 .input-bar {
-  position: absolute;
-  width: fit-content;
+  width: 100%;
+  box-sizing: border-box;
   outline: none;
   border: none;
-  font-family: Avenir, sans-serif;
+  font-family: inherit;
   color: var( --font-color);
 }
 
 .input-bar::placeholder {
   color: var( --font-color);
-  font-family: Avenir, sans-serif;
+  font-family: inherit;
 }
 
 .input-bar-big {
   font-size: 16px;
-  left: 62px;
+  padding-left: 62px;
 }
 
 .input-bar-big:focus {
@@ -109,7 +109,7 @@ body {
 
 .input-bar-small {
   font-size: 14px;
-  left: 33px;
+  padding-left: 33px;
   font-weight: 400;
 }
 

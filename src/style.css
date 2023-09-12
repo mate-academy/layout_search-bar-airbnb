@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(./fonts/Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url(./fonts/Avenir-Heavy.ttf);
+  font-style: normal;
+  font-weight: 800;
+}
+
+html {
+  font-weight: 300;
+}
+
+.search__large {
+  margin-top: 20px;
+  width: 100%;
+  height: 70px;
+  box-sizing: border-box;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.search__large:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.search__large:focus-within {
+  border-radius: 3px;
+  border: 1px solid #e1e7ed;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.search__large--image {
+  margin-left: 26px;
+  width: 19px;
+  height: 19px;
+  flex-shrink: 0;
+
+}
+
+.search__large--text {
+  font-family: Avenir, sans-serif;
+  margin-left: 17px;
+  border: none;
+  padding: 0;
+  line-height: 21px;
+}
+
+.search__large--text::placeholder {
+  color: #3d4e61;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.search__large--text:focus {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: normal;
+  outline: none;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search__small {
+  margin-top: 20px;
+  height: 42px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  background: #fff;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.search__small--image {
+  margin-left: 13px;
+  height: 11px;
+  width: 11px;
+}
+
+.search__small--text {
+  font-family: Avenir, sans-serif;
+  margin-left: 9px;
+  line-height: 18px;
+  border: none;
+}
+
+.search__small--text:focus {
+  outline: none;
+  color: #3d4e61;
+  font-family: Avenir, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.search__small--text::placeholder {
+  color: #3d4e61;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.search__small:focus-within {
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: 1px solid #e1e7ed;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}

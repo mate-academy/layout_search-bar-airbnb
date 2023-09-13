@@ -12,49 +12,47 @@
   </head>
   <body>
     <form
+      class="form"
       method="get"
       action="#"
       data-qa="big"
     >
       <label class="label" for="searchLarge">
-        <div class="label__wrapper">
-          <img
-          class="image--large"
+        <img
+          class="label__image"
           src="images/Search.svg"
           alt="search"
         >
-          <input
-            class="label__input label__input--large"
-            type="text"
-            placeholder="Try &quot;Los Angeles&quot;"
-            name="searchLarge"
-            id="searchLarge"
-            data-qa="keypress"
-          >
-        </div>
+        <input
+          class="label__input"
+          type="text"
+          placeholder="Try &quot;Los Angeles&quot;"
+          name="searchLarge"
+          id="searchLarge"
+          data-qa="keypress"
+        >
       </label>
     </form>
 
     <form
+      class="form form--small"
       action="#"
       method="get"
       data-qa="small"
     >
       <label class="label" for="searchSmall">
-        <div class="label__wrapper">
-          <img
-          class="image--small"
+        <img
+          class="label__image label__image--small"
           src="images/Search.svg"
           alt="search"
         >
-          <input
+        <input
           class="label__input label__input--small"
           type="text"
           placeholder="Try &quot;Los Angeles&quot;"
           id="searchSmall"
           name="searchSmall"
         >
-        </div>
       </label>
     </form>
     </div>

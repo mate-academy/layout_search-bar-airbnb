@@ -11,14 +11,13 @@
 }
 
 .form {
-  display: flex;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 
   &__input {
-    box-sizing: border-box;
     width: 100%;
 
     color: $steel-blue-color;
+    font-family: "Avenir", sans-serif;
     font-size: 16px;
     font-weight: 800;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -27,7 +26,10 @@
     border: 1px solid $misty-blue-color;
     box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
 
-    padding: 25px calc(20px + #{$icon-size} + 17px);
+    padding-top: 23px;
+    padding-bottom: 23px;
+    padding-left: calc(18px + #{$icon-size} + 20px);
+
     background: url("../images/Search.svg") 25px center / $icon-size no-repeat;
 
     &::placeholder {
@@ -43,7 +45,11 @@
 
     &--small {
       font-size: 14px;
-      padding: 12px calc(13px + #{$icon-size--small} + 9px);
+
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: calc(12px + #{$icon-size--small} + 10px);
+
       background: url("../images/Search.svg") 13px center / $icon-size--small no-repeat;
 
       &::placeholder {

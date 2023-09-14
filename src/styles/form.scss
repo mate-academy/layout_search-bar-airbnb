@@ -1,0 +1,71 @@
+@mixin focus() {
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid $misty-blue-color;
+}
+
+@mixin placeholder() {
+  font-weight: 300;
+  color: $steel-blue-color;
+  text-shadow: none;
+}
+
+.form {
+  margin-bottom: 20px;
+
+  &__input {
+    width: 100%;
+
+    color: $steel-blue-color;
+    font-family: "Avenir", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    border-radius: 4px;
+    border: 1px solid $misty-blue-color;
+    box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+
+    padding-top: 23px;
+    padding-bottom: 23px;
+    padding-left: calc(18px + #{$icon-size} + 20px);
+
+    background: url("../images/Search.svg") 25px center / $icon-size no-repeat;
+
+    &::placeholder {
+      @include placeholder();
+      font-size: 16px;
+    }
+
+    &:focus {
+      @include focus();
+      background: url("../images/Search.svg") 25px center / $icon-size no-repeat,
+        linear-gradient(180deg, $white-color 0%, $gradient-end-color 100%);
+    }
+
+    &--small {
+      font-size: 14px;
+
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: calc(12px + #{$icon-size--small} + 10px);
+
+      background: url("../images/Search.svg") 13px center / $icon-size--small no-repeat;
+
+      &::placeholder {
+        @include placeholder();
+        font-size: 14px;
+      }
+
+      &:focus {
+        @include focus();
+        background: url("../images/Search.svg") 13px center / $icon-size--small no-repeat,
+          linear-gradient(180deg, $white-color 0%, $gradient-end-color 100%);
+      }
+    }
+
+    &:hover {
+      box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+    }
+  }
+}

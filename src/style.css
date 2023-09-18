@@ -22,10 +22,9 @@ html {
   --text-color: #3d4e61;
 }
 
-.search__large {
+.search {
   display: flex;
   align-items: center;
-  width: 100%;
   height: 70px;
   margin-top: 20px;
   background: var(--bgcolor);
@@ -34,31 +33,30 @@ html {
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
 }
 
-.search__large:hover {
+.search:hover {
   box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
 }
 
-.search__large:focus-within {
+.search:focus-within {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid var(--border-color);
   border-radius: 3px;
 }
 
-.search__large--image {
+.image {
   width: 19px;
   height: 19px;
   margin-left: 26px;
 }
 
-.search__large--text {
+.text {
   margin-left: 17px;
-  padding: 0;
   font-family: Avenir, sans-serif;
   line-height: 21px;
   border: none;
 }
 
-.search__large--text::placeholder {
+.text::placeholder {
   font-style: normal;
   font-size: 16px;
   font-weight: 300;
@@ -66,52 +64,42 @@ html {
   color: var(--text-color);
 }
 
-.search__large--text:focus {
+.text:focus {
+  font-family: Avenir, sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: normal;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  color: var(--text-color);
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+  filter: drop-shadow(0 4px 4px 0 rgba(0, 0, 0, 0.25));
+  border: none;
   outline: none;
 }
 
-.search__small {
-  display: flex;
-  align-items: center;
+.search--small {
   height: 42px;
   margin-top: 20px;
-  border: 1px solid var(--border-color);
-  border-radius: 4px;
-  background: var(--bgcolor);
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
 }
 
-.search__small--image {
+.small--image {
   width: 11px;
   height: 11px;
   margin-left: 13px;
 }
 
-.search__small--text {
+.small--text {
   margin-left: 9px;
-  font-family: Avenir, sans-serif;
   line-height: 18px;
-  border: none;
 }
 
-.search__small--text:focus {
-  font-family: Avenir, sans-serif;
+.small--text:focus {
   font-size: 14px;
-  font-style: normal;
   font-weight: 900;
-  line-height: normal;
-  color: var(--text-color);
-  outline: none;
 }
 
-.search__small--text::placeholder {
+.small--text::placeholder {
   font-size: 14px;
   font-weight: 300;
-  color: var(--text-color);
 }
 
 .search__small:focus-within {

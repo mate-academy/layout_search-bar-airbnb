@@ -22,16 +22,14 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Avenir", sans-serif;
   font-weight: 400;
-  line-height: normal;
 }
 
 .top__bar {
   display: flex;
   flex-direction: column;
   max-width: 1022px;
-  min-width: 420px;
+  min-width: 425px;
   margin: 0 8px;
 }
 
@@ -50,6 +48,7 @@ body {
 }
 
 .search {
+  display: flex;
   border: none;
   background: none;
   outline: none;
@@ -61,27 +60,29 @@ body {
   border-radius: 3px;
   text-shadow: 1px 4px 4px var(--color-shadow-hover);
   color: var(--color-text);
-  font-weight: bold;
 }
 
 .search::placeholder {
   text-shadow: none;
   font-weight: 400;
-  font-style: normal;
-  line-height: normal;
   color: var(--color-text);
+}
+
+.search__glass {
+  display: flex;
+  margin-bottom: 1px;
 }
 
 .search__img-big {
   width: 19px;
   height: 19px;
-  margin-left: 26px;
+  margin-left: 25px;
 }
 
 .search__img-small {
   width: 11px;
   height: 11px;
-  margin-left: 13px;
+  margin-left: 12px;
 }
 
 .search--big {

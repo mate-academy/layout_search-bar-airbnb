@@ -1,8 +1,12 @@
 @font-face {
   font-family: "avenir";
   src: url(fonts/Avenir-Book.ttf) format("woff2"), url(fonts/Avenir-Heavy.ttf) format("woff");
-  font-weight: 300px;
+  font-weight: 300;
   font-style: normal;
+}
+
+html {
+  --text-color: #3d4e61;
 }
 
 body {
@@ -34,7 +38,7 @@ body {
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
   font-family: "avenir", sans-serif;
   font-weight: 400;
-  color: #3d4e61;
+  color: var(--text-color);
 }
 
 .search-bar__input--big {
@@ -58,7 +62,7 @@ body {
 }
 
 .search-bar__input::placeholder {
-  color: #3d4e61;
+  color: var(--text-color);
 }
 
 .search-bar__icon {

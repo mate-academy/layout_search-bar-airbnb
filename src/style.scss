@@ -3,6 +3,11 @@
   src: url(./fonts/Avenir-Book.ttf), url(./fonts/Avenir-Heavy.ttf);
 }
 
+$border-color: #e1e7ed;
+$bg-color: #fff;
+$placeholder-color: #3d4e61;
+$gradient-color: #f6f6f7;
+
 .form {
   margin: 0;
   margin-top: 20px;
@@ -10,22 +15,19 @@
 
 .cell {
   border-radius: 4px;
-  border: 1px solid #e1e7ed;
-  background: #fff;
+  border: 1px solid $border-color;
+  background: $bg-color;
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
   transition: all 0.5s;
   width: 100%;
 
   &--big {
     height: 70px;
-    background-image: url(./images/Search.svg);
-    background-repeat: no-repeat;
-    background-position: left 26px top 25px;
-    background-size: 19px;
+    background: url(./images/Search.svg) no-repeat left 26px top 25px;
     padding-left: 62px;
 
     &::placeholder {
-      color: #3d4e61;
+      color: $placeholder-color;
       font-family: "Avenir", sans-serif;
       font-size: 16px;
       font-weight: 300;
@@ -38,11 +40,9 @@
     &:focus {
       font-weight: 900;
       border-radius: 3px;
-      background: url(./images/Search.svg) left 26px top 25px,
-        linear-gradient(180deg, #fff 0%, #f6f6f7 100%)
+      background: url(./images/Search.svg) no-repeat 26px top 25px,
+        linear-gradient(180deg, $bg-color 0%, $gradient-color 100%)
       ;
-      background-size: 19px, 100%;
-      background-repeat: no-repeat;
       box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
       outline: none;
     }
@@ -50,15 +50,13 @@
 
   &--small {
     height: 42px;
-    background-image: url(./images/Search.svg);
-    background-repeat: no-repeat;
-    background-position: left 12px top 14px;
+    background: url(./images/Search.svg) no-repeat left 12px top 14px ;
     background-size: 11px;
     padding-left: 33px;
     padding-bottom: 2px;
 
     &::placeholder {
-      color: #3d4e61;
+      color: $placeholder-color;
       font-family: "Avenir", sans-serif;
       font-size: 14px;
       font-weight: 300;
@@ -75,11 +73,10 @@
     &:focus {
       outline: none;
       border-radius: 3px;
-      background: url(./images/Search.svg) left 13px top 15px,
-        linear-gradient(180deg, #fff 0%, #f6f6f7 100%)
+      background: url(./images/Search.svg) no-repeat left 13px top 15px,
+        linear-gradient(180deg, $bg-color 0%, $gradient-color 100%)
       ;
       background-size: 11px, 100%;
-      background-repeat: no-repeat;
       font-weight: 900;
     }
   }

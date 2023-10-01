@@ -22,15 +22,13 @@
 body {
   margin: 0;
   padding: 0;
-  font-weight: 400;
 }
 
 .top__bar {
   display: flex;
   flex-direction: column;
-  max-width: 1022px;
-  min-width: 425px;
   margin: 0 8px;
+  margin-top: 20px;
 }
 
 .search__box {
@@ -40,7 +38,6 @@ body {
   border: 1px solid var(--color-border);
   background: #fff;
   box-shadow: 0 1px 8px 0 var(--color-shadow);
-  margin-top: 20px;
 }
 
 .search__box:hover {
@@ -48,6 +45,7 @@ body {
 }
 
 .search {
+  font-family: "Avenir", sans-serif;
   display: flex;
   border: none;
   background: none;
@@ -63,8 +61,10 @@ body {
 }
 
 .search::placeholder {
+  font-family: "Avenir", sans-serif;
   text-shadow: none;
-  font-weight: 400;
+  font-weight: 300;
+  line-height: normal;
   color: var(--color-text);
 }
 
@@ -82,13 +82,13 @@ body {
 .search__img-small {
   width: 11px;
   height: 11px;
-  margin-left: 12px;
+  margin-left: 13px;
 }
 
 .search--big {
   height: 68px;
   font-size: 16px;
-  margin-left: 17px;
+  margin-left: 18px;
 }
 
 .search--small {

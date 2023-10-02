@@ -15,25 +15,25 @@ ___
 ![screenshot](./references/search-bar-example.png)
 
 ### Requirements:
-- use images from [src/images](src/images) +++
-- there must be two search bars +++
-- search bar must have width 100% +++
-- distance between two search bars must be 20px +++
+- use images from [src/images](src/images)
+- there must be two search bars
+- search bar must have width 100%
+- distance between two search bars must be 20px
 - the big search bar must have top indent 20px
-- follow styles from the mock +++
-- default `font-weight` must be 300 +++
+- follow styles from the mock
+- default `font-weight` must be 300
 - a search bar has 3 state default, `hover` and `focus`
 - don't use JavaScript
-- use `@font-face` for fonts +++
-- add attribute `data-qa="big"` for big search form, and `data-qa="small"` for small +++
-- add attribute `data-qa="keypress"` to input in big search form +++
+- use `@font-face` for fonts
+- add attribute `data-qa="big"` for big search form, and `data-qa="small"` for small
+- add attribute `data-qa="keypress"` to input in big search form
 ---
 --> [CHECKLIST](https://github.com/mate-academy/layout_search-bar-airbnb/blob/master/checklist.md)
 
 ### Tips & Hints
 - Add **ALL** `data-qa` attributes required in the task
-- Text `Try "Los Angeles"` is a placeholder. +++
-- Use `&quot;` instead of `"` in the placeholder. +++
+- Text `Try "Los Angeles"` is a placeholder.
+- Use `&quot;` instead of `"` in the placeholder.
 - Pay close attention to font styles. Use fonts from `fonts` folder.
 - You have to put `input` inside the `form` for correct data processing. Form should have `action` and `method`
 attributes.

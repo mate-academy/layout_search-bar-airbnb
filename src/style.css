@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(./fonts/Avenir.ttc);
+}
+
+@font-face {
+  font-family: "Avenir-Heavy";
+  src: url(./fonts/Avenir-Heavy.ttf);
+}
+
+.search-bar {
+  margin-top: 20px;
+}
+
+.search-bar--big {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 70px;
+  padding-inline: 26px;
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  background: #fff;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+}
+
+.search-bar--big:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search-bar--big:focus {
+  border-radius: 3px;
+  border: 1px solid #e1e7ed;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.search-bar--small {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-inline: 13px;
+  height: 42px;
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  background: #fff;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+}
+
+.search-bar--small:focus {
+  border-radius: 3px;
+  border: 1px solid #e1e7ed;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.search-bar--small:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+
+}
+
+.icon--big {
+  display: block;
+  background-image: url("./images/Search.svg");
+  width: 19px;
+  height: 19px;
+}
+
+.icon--small {
+  display: block;
+  background-image: url("./images/Search.svg") ;
+  background-position: center;
+  background-size: cover;
+  width: 11px;
+  height: 11px;
+}
+
+.form--big {
+  margin-left: 17px;
+}
+
+.form--small {
+  margin-left: 9px;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  display: none;
+}
+
+.input--big {
+  border: none;
+  color: #3d4e61;
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.input--big:focus {
+  outline: none;
+  color: #3d4e61;
+  font-family: Avenir-Heavy, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.input--small {
+  border: none;
+  color: #3d4e61;
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Avenir, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.input--small:hover {
+  text-shadow: none;
+}
+
+.input--small:focus {
+  outline: none;
+  color: #3d4e61;
+  font-family: Avenir-Heavy, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}

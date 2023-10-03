@@ -1,14 +1,12 @@
 /*Basic styling*/
 
-html {
-  font-family: "Avenir", sans-serif;
-  font-size: 16px;
+* {
   box-sizing: border-box;
 }
 
-body,
-input {
-  box-sizing: border-box;
+html {
+  font-family: "Avenir", sans-serif;
+  font-size: 16px;
 }
 
 /*Fonts*/
@@ -34,9 +32,6 @@ input {
   display: flex;
   justify-content: center;
   margin: 20px auto 0;
-}
-
-.form_big {
   height: 70px;
 }
 
@@ -56,23 +51,16 @@ input {
   position: absolute;
   content: "";
   display: block;
-}
-
-/*Search label big and small*/
-
-.search_label_big:after,
-.search_label_small:after {
   background-image: url("./images/Search.svg");
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-.search_label_big:after {
   width: 19px;
   height: 19px;
   top: 25px;
   left: 26px;
 }
+
+/*Search label small*/
 
 .search_label_small:after {
   width: 11px;

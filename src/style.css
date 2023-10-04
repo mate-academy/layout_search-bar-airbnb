@@ -16,6 +16,8 @@
 html {
   font-weight: 300;
   --background-color: #fff;
+  --text-color: #3d4e61;
+  --gradient: linear-gradient(180deg, var(--background-color) 0%, #f6f6f7 100%);
 }
 
 .search-bar {
@@ -26,9 +28,6 @@ html {
   background: var(--background-color);
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
   margin-top: 20px;
-}
-
-.search-bar__big {
   height: 70px;
 }
 
@@ -36,7 +35,7 @@ html {
   height: 42px;
 }
 
-.search-bar__logo--big {
+.search-bar__logo {
   width: 19px;
   height: 19px;
   padding-left: 26px;
@@ -51,8 +50,7 @@ html {
 }
 
 .search-bar__input {
-  height: 19px;
-  border: 0;
+  border: none;
 }
 
 .search-bar,
@@ -62,7 +60,7 @@ html {
 
 .search-bar__input::placeholder {
   font-family: Avenir, serif;
-  color: #3d4e61;
+  color: var(--text-color);
   font-weight: 400;
 }
 
@@ -82,12 +80,19 @@ html {
 
 .search-bar:has(.search-bar__input:focus) {
   border-radius: 3px;
-  background: linear-gradient(180deg, var(--background-color) 0%, #f6f6f7 100%);
+  background: var(--gradient);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .search-bar__input:focus {
   font-family: Avenir-Heavy, serif;
+  color: var(--text-color);
   font-weight: 900;
   width: 100%;
+  outline: none;
+  background-color: var(--gradient);
+}
+
+.search-bar:has(.search-bar__input--small:focus) {
+  box-shadow: none;
 }

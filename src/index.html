@@ -11,6 +11,42 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <form
+      class="searh-form"
+      action="#"
+      method="get"
+      data-qa="big"
+    >
+      <div class="search-form__container">
+        <input
+          class="searh-form__input"
+          type="text"
+          name="big-search"
+          placeholder="Try &quot;Los Angeles&quot;"
+          autocomplete="off"
+          data-qa="keypress"
+        >
+        <button class="searh-form__button" type="submit"></button>
+      </div>
+    </form>
+
+    <form
+      class="searh-form searh-form--small"
+      action="#"
+      method="get"
+      data-qa="small"
+    >
+      <div class="search-form__container">
+        <input
+          class="searh-form__input"
+          type="text"
+          name="small-search"
+          placeholder="Try &#34;Los Angeles&#34;"
+          autocomplete="off"
+          data-qa="keypress"
+        >
+        <button class="searh-form__button" type="submit"></button>
+      </div>
+    </form>
   </body>
 </html>

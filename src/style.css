@@ -13,10 +13,12 @@
   src: url(./fonts/Avenir-Heavy.ttf);
 }
 
-html {
+.root {
+  font-family: Avenir, serif;
+  font-size: 16px;
+  color: #3d4e61;
   font-weight: 300;
   --background-color: #fff;
-  --text-color: #3d4e61;
   --gradient: linear-gradient(180deg, var(--background-color) 0%, #f6f6f7 100%);
 }
 
@@ -31,26 +33,22 @@ html {
   height: 70px;
 }
 
-.search-bar__small {
+.search-bar--small {
   height: 42px;
 }
 
-.search-bar__logo {
+.logo {
   width: 19px;
   height: 19px;
   padding-left: 26px;
   padding-right: 17px;
 }
 
-.search-bar__logo--small {
+.logo--small {
   width: 11px;
   height: 11px;
   padding-left: 13px;
   padding-right: 9px;
-}
-
-.search-bar__input {
-  border: none;
 }
 
 .search-bar,
@@ -58,17 +56,16 @@ html {
   box-sizing: border-box;
 }
 
+.search-bar__input,
 .search-bar__input::placeholder {
-  font-family: Avenir, serif;
-  color: var(--text-color);
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
   font-weight: 400;
+  border: none;
 }
 
-.search-bar__input--big::placeholder,
-.search-bar__input--big:focus {
-  font-size: 16px;
-}
-
+.search-bar__input--small,
 .search-bar__input--small::placeholder,
 .search-bar__input--small:focus {
   font-size: 14px;
@@ -85,12 +82,10 @@ html {
 }
 
 .search-bar__input:focus {
-  font-family: Avenir-Heavy, serif;
-  color: var(--text-color);
-  font-weight: 900;
   width: 100%;
   outline: none;
   background-color: var(--gradient);
+  font-weight: 900;
 }
 
 .search-bar:has(.search-bar__input--small:focus) {

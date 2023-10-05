@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "Avenir";
+  font-weight: 300;
+  src: url(./fonts/Avenir-Book.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir-Heavy";
+  font-weight: 800;
+  src: url(./fonts/Avenir-Heavy.ttf) format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  --font-color: #3d4e61;
+  --white-color: #fff;
+  --border-color: #e1e7ed;
+  --search-icon-color: #687c94;
+}
+
+body {
+  margin-top: 0;
+  padding-top: 0;
+  font-family: "Avenir", sans-serif;
+  color: var(--font-color);
+  font-weight: 300;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+  color: var(--search-icon-color);
+}
+
+.search-container:hover {
+  box-shadow: 0 4px 4px 0 #00000040;
+}
+
+.search-container:focus {
+  background: linear-gradient(0deg, #e1e7ed, #e1e7ed),
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.search-container-big {
+  margin: 20px 0;
+  padding-left: 26px;
+}
+
+.search-container-small {
+  padding-left: 13px;
+}
+
+.search-icon-big {
+  padding: 24px 0 25px;
+}
+
+.search-icon-small {
+  padding: 14px 0 15px;
+}
+
+.search-icon-big-image,
+.search-icon-small-image {
+  display: flex;
+}
+
+.search-icon-big-image {
+  width: 19px;
+  height: 19px;
+}
+
+.search-icon-small-image {
+  width: 11px;
+  height: 11px;
+}
+
+.input-bar {
+  width: 100%;
+  outline: none;
+  border: none;
+  font-family: inherit;
+  color: var( --font-color);
+}
+
+.input-bar::placeholder {
+  color: var( --font-color);
+  font-family: inherit;
+}
+
+.input-bar-big {
+  font-size: 16px;
+  padding-left: 17px;
+}
+
+.input-bar-big:focus {
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Avenir-Heavy, sans-serif;
+  color: var( --font-color);
+}
+
+.input-bar-small {
+  font-size: 14px;
+  padding-left: 9px;
+  font-weight: 400;
+}
+
+.input-bar-small::placeholder {
+  font-weight: 400;
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.input-bar-small:hover::placeholder {
+  text-shadow: none;
+}
+
+.input-bar-small:focus {
+  font-weight: 900;
+}

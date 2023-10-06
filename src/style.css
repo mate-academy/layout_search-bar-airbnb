@@ -81,11 +81,11 @@
 .input--small {
   margin-left: 9px;
   font-size: 14px;
-
 }
 
 .input--small::placeholder {
   font-size: 14px;
+  font-weight: 400;
 }
 
 .input--small:hover {
@@ -105,11 +105,13 @@ input[type="search"]::-webkit-search-cancel-button {
   display: block;
   background-image: url("./images/Search.svg");
   background-size: cover;
+  flex-shrink: 0;
   width: 19px;
   height: 19px;
 }
 
 .icon--small {
+  background-image: url("./images/Search-small.svg");
   width: 11px;
   height: 11px;
 }

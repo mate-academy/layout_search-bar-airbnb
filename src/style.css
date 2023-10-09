@@ -1,0 +1,108 @@
+:root {
+  --text-color: rgba(61, 78, 97, 1);
+  --color-shadow-dark-blue: rgba(61, 78, 97, 0.2);
+  --color-shadow-black: rgba(0, 0, 0, 0.25);
+  --color-border-white-blue: rgba(225, 231, 237, 1);
+  --linear-gradient: linear-gradient(#fff, #f6f6f7);
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-style: normal;
+  font-weight: 800;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.search {
+  font-family: Avenir, serif;
+}
+
+.search__form {
+  position: relative;
+  margin: 0 8px;
+}
+
+.search__input {
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  font-weight: bold;
+  width: 100%;
+  color: var(--text-color);
+
+  border: 1px solid var(--color-border-white-blue);
+  border-radius: 4px;
+}
+
+.search__input--big {
+  height: 70px;
+  padding-left: 62px;
+  font-size: 16px;
+
+  text-shadow: 0 4px 4px 0 var(--color-shadow-black);
+  box-shadow: 0 1px 8px var(--color-shadow-dark-blue);
+}
+
+.search__input--small {
+  height: 42px;
+  padding-left: 33px;
+  font-size: 14px;
+}
+
+.search__input::placeholder {
+  font-family: inherit;
+  color: var(--text-color);
+  font-weight: 300;
+}
+
+.search__input--small::placeholder {
+  text-shadow: 0 4px 4px 0 var(--color-shadow-black);
+}
+
+.search__input:hover,
+.search__input--big:focus {
+  box-shadow: 0 4px 4px var(--color-shadow-black);
+}
+
+.search__input--big:focus {
+  border-radius: 3px;
+  outline: 1px solid var(--color-border-white-blue);
+  text-shadow: 0 4px 4px 0 var(--color-shadow-black);
+  background: var(--linear-gradient);
+}
+
+.search__input--small:focus {
+  border-radius: 3px;
+  outline: 1px solid var(--color-border-white-blue);
+  background: var(--linear-gradient);
+}
+
+.search__icon {
+  position: absolute;
+  top: 25px;
+  left: 26px;
+  width: 19px;
+  pointer-events: none;
+}
+
+.search__icon--small {
+  top: 15px;
+  left: 13px;
+  width: 11px;
+}

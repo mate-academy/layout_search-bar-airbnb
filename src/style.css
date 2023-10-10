@@ -1,0 +1,52 @@
+/* @font-face {
+  font-family: Avenir;
+  src: url(/fonts/Avenir-Book.ttf);
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-right: 71px;
+  margin-left: 10px;
+}
+
+input {
+  width: 100%;
+  margin-top: 20px;
+  font-family: "Avenir", sans-serif;
+}
+
+.big-input {
+  height: 66px;
+  font-size: 16px;
+  background: url(./images/Search.svg) no-repeat 26px 25px;
+  background-size: 19px 19px;
+  background-origin: inherit;
+  padding-left: 62px;
+  border: 1px solid rgba(225, 231, 237, 1);
+}
+
+input.small-input {
+  padding-right: 31px;
+}
+
+.small-input {
+  height: 38px;
+  font-size: 14px;
+  background: url(./images/Search.svg) no-repeat 13px 15px;
+  background-size: 11px 11px;
+  padding-left: 33px;
+  border: 1px solid rgba(225, 231, 237, 1);
+}
+
+input:hover {
+  box-shadow: 3px 3px 3px rgba(214, 221, 228, 0.5);
+}
+
+input:focus {
+  box-shadow: 3px 3px 3px rgba(225, 231, 237, 0.5);
+  background-color: rgba(246, 246, 247, 0.5);
+}

@@ -3,9 +3,19 @@
   src: url("./fonts/Avenir.ttc");
 }
 
+:root {
+  --icon-size-big: 19px;
+  --icon-size-small: 11px;
+  --input-width: 100%;
+  --input--border-radius: 4px;
+  --input-border: 1px solid #e1e7ed;
+  --input-box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  --input-highlighted: 1px solid #000;
+}
+
 body {
   font-family: "Avenir", sans-serif;
-  font-weight: 900;
+  font-weight: 300;
   font-size: 1rem;
 }
 
@@ -21,29 +31,26 @@ form[data-qa="big"] {
 .icon {
   left: 34px;
   top: 45px;
-  width: 19px;
-  height: 19px;
+  width: var(--icon-size-big);
+  height: var(--icon-size-big);
   position: absolute;
 }
 
 .icon-small {
   left: 20px;
   top: 125px;
-  width: 11px;
-  height: 11px;
+  width: var(--icon-size-small);
+  height: var(--icon-size-small);
   position: absolute;
 }
 
 .form__input {
-  width: 100%;
+  width: var(--input-width);
   height: 66px;
-  border-radius: 4px;
-  border: 1px solid #e1e7ed;
-  background: #fff;
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
-  font-family: "Avenir", sans-serif;
+  border-radius: var(--input--border-radius);
+  border: var(--input-border);
+  box-shadow: var(--input-box-shadow);
   font-size: 16px;
-  font-weight: 300;
 }
 
 .form__input::placeholder {
@@ -52,13 +59,18 @@ form[data-qa="big"] {
   color: #3d4e61;
 }
 
+.form__input:hover,
+.form__input:focus {
+  border: var(--input-highlighted);
+}
+
 form[data-qa="small"] > .form__input {
-  width: 100%;
-  border: 1px solid #e1e7ed;
-  border-radius: 4px;
+  width: var(--input-width);
+  border: var(--input-border);
+  border-radius: var(--input--border-radius);
   padding: 0;
   height: 40px;
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  box-shadow: var(--input-box-shadow);
   font-size: 14px;
 }
 
@@ -66,4 +78,9 @@ form[data-qa="small"] > .form__input::placeholder {
   position: relative;
   padding-left: 33px;
   color: #3d4e61;
+}
+
+form[data-qa="small"] > .form__input:hover,
+form[data-qa="small"] > .form__input:focus {
+  border: var(--input-highlighted);
 }

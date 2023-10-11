@@ -18,6 +18,7 @@ html {
   --gradient-color: linear-gradient(#fff, #f6f6f7);
   --background-image: url(images/Search.svg) no-repeat;
   --imgsmall-size: 11px;
+  --font-family: "Avenir", sans-serif;
 }
 
 .search {
@@ -29,12 +30,9 @@ html {
   border-radius: 4px;
   box-shadow: var(--shadow-color);
   width: 100%;
-  background: var(--background-image);
+  background: var(--background-image) 26px 23px;
   background-size: 19px;
-  background-position: 26px 23px;
-  padding-left: 62px;
-  padding-top: 26px;
-  padding-bottom: 26px;
+  padding: 27px 62px 28px;
 }
 
 .input:hover {
@@ -49,7 +47,7 @@ html {
 }
 
 .input::placeholder {
-  font-family: Avenir, sans-serif;
+  font-family: var(--font-family);
   font-size: 16px;
   color: var(--placeholder-color);
 }
@@ -57,9 +55,7 @@ html {
 .input--small {
   background-size: var(--imgsmall-size);
   background-position: 13px 13px;
-  padding-left: 33px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding: 13px 32px 14px;
   box-shadow: var(--shadow-color);
 }
 

@@ -14,69 +14,61 @@ html {
   --border-color: #e1e7ed;
   --placeholder-color: #3d4e61;
   --shadow-color: 0 2px 4px rgba(0, 0, 0, 0.05);
-  --hovershadow-color: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
-  --background-color: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  --hover-color: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+  --gradient-color: linear-gradient(#fff, #f6f6f7);
+  --background-image: url(images/Search.svg) no-repeat;
+  --imgsmall-size: 11px;
 }
 
 .search {
   margin-top: 20px;
 }
 
-.input__big {
+.input {
   border: 1px solid var(--border-color);
   border-radius: 4px;
   box-shadow: var(--shadow-color);
   width: 100%;
-  background: url(images/Search.svg) no-repeat;
+  background: var(--background-image);
+  background-size: 19px;
   background-position: 26px 23px;
   padding-left: 62px;
   padding-top: 26px;
   padding-bottom: 26px;
 }
 
-.input__big:hover {
-  box-shadow: var(--hovershadow-color);
+.input:hover {
+  box-shadow: var(--hover-color);
 }
 
-.input__big:focus {
+.input:focus {
   outline-width: 0;
   font-weight: 800;
   box-shadow: var(--shadow-color);
-  background: var(--background-color);
+  background: url(images/Search.svg) no-repeat 26px 23px, var(--gradient-color);
 }
 
-.input__big::placeholder {
+.input::placeholder {
   font-family: Avenir, sans-serif;
   font-size: 16px;
   color: var(--placeholder-color);
 }
 
-.input__small {
-  border: 1px solid var(--border-color);
-  border-radius: 4px;
-  box-shadow: var(--shadow-color);
-  width: 100%;
-  background: url(images/Search.svg) no-repeat;
-  background-size: 11px;
+.input--small {
+  background-size: var(--imgsmall-size);
   background-position: 13px 13px;
   padding-left: 33px;
   padding-top: 12px;
   padding-bottom: 12px;
+  box-shadow: var(--shadow-color);
 }
 
-.input__small:hover {
-  box-shadow: var(--hovershadow-color);
-}
-
-.input__small:focus {
-  outline-width: 0;
-  font-weight: 800;
+.input--small:focus {
   box-shadow: none;
-  background: var(--background-color);
+  background: var(--background-image) 13px 13px, var(--gradient-color);
+  background-size: var(--imgsmall-size);
 }
 
-.input__small::placeholder {
-  font-family: Avenir, sans-serif;
+.input--small::placeholder {
   font-size: 14px;
-  color: var(--placeholder-color);
 }

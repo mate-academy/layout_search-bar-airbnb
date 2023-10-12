@@ -24,12 +24,9 @@
 
 .search__label {
   flex-basis: 19px;
+  flex-shrink: 0;
   margin-left: 26px;
-  background: url("images/Search.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  /* stylelint-disable-next-line property-no-unknown */
-  aspect-ratio: 1;
+  background: url("images/Search.svg") no-repeat center/contain;
 }
 
 .search__input::placeholder {
@@ -70,8 +67,8 @@
 }
 
 .search__input-small {
-  font-size: 14px;
   padding-left: 9px;
+  font-size: 14px;
 }
 
 .search__label-small {

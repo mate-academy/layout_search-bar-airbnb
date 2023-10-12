@@ -1,21 +1,22 @@
 @font-face {
-  font-family: Avenir;
+  font-family: "Avenir";
   font-weight: 300;
-  src: url(fonts/Avenir-Book.ttf);
+  src: url(./fonts/Avenir-Book.ttf);
 }
 
 @font-face {
-  font-family: Avenir;
+  font-family: "Avenir";
   font-weight: 800;
-  src: url(fonts/Avenir-Heavy.ttf);
+  src: url(./fonts/Avenir-Heavy.ttf);
 }
 
 :root {
-  --grey: var(#3d4e61);
-  --white: var(#e1e7ed);
+  --grey: #3d4e61;
+  --white: #e1e7ed;
 }
 
 * {
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -57,10 +58,18 @@ body {
 
 .search__input:focus {
   outline: none;
-  font-weight: bold;
+  font-weight: 800;
   color: #000;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.search__input::placeholder {
+  color: var(--grey);
+}
+
+.search__input:focus::placeholder {
+  visibility: hidden;
 }
 
 .image {
@@ -71,12 +80,14 @@ body {
   height: 19px;
   width: 19px;
   left: 26px;
+  top: 25px;
 }
 
 .image__small {
   height: 11px;
   width: 11px;
   left: 13px;
+  top: 15px;
 }
 
 .input-big {
@@ -86,7 +97,7 @@ body {
 }
 
 .input-small {
-  height: 41px;
+  height: 42px;
   padding-left: 33px;
   font-size: 14px;
 }

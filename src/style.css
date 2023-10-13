@@ -21,6 +21,33 @@
 
 .form {
   margin-top: 20px;
+  position: relative;
+}
+
+.form:after {
+  position: absolute;
+  content: "";
+  display: block;
+}
+
+.form_big:after {
+  background-image: url("./images/Search.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 19px;
+  height: 19px;
+  top: 25px;
+  left: 26px;
+}
+
+.form_small:after {
+  background-image: url("./images/Search.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 11px;
+  height: 11px;
+  top: 15px;
+  left: 13px;
 }
 
 .form__input {
@@ -39,15 +66,12 @@
 
 .form__input_big {
   height: 70px;
-  background: url(images/Search.svg) 25px 24px no-repeat;
   padding-left: 62px;
   font-size: 16px;
 }
 
 .form__input_small {
   height: 42px;
-  background: url(images/Search.svg) 12px 14px no-repeat;
-  background-size: 11px;
   padding-left: 33px;
   font-size: 14px;
 }

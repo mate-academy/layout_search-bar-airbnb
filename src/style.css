@@ -7,15 +7,17 @@
   --icon-size-big: 19px;
   --icon-size-small: 11px;
   --input-width: 100%;
-  --input--border-radius: 4px;
+  --input-border-radius: 4px;
   --input-border: 1px solid #e1e7ed;
   --input-box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
   --input-highlighted: 1px solid #000;
+  --input-box-style: 0 4px 4px 0 #00000040;
+  --input-color-style: #3d4e61;
 }
 
 body {
   font-family: "Avenir", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1rem;
 }
 
@@ -37,7 +39,7 @@ form[data-qa="big"] {
 }
 
 .icon-small {
-  left: 20px;
+  left: 21px;
   top: 125px;
   width: var(--icon-size-small);
   height: var(--icon-size-small);
@@ -47,40 +49,40 @@ form[data-qa="big"] {
 .form__input {
   width: var(--input-width);
   height: 66px;
-  border-radius: var(--input--border-radius);
+  padding-left: 62px;
+  border-radius: var(--input-border-radius);
   border: var(--input-border);
   box-shadow: var(--input-box-shadow);
   font-size: 16px;
+  color: var(--input-color-style);
 }
 
-.form__input::placeholder {
-  position: relative;
-  padding-left: 62px;
-  color: #3d4e61;
-}
-
-.form__input:hover,
 .form__input:focus {
-  border: var(--input-highlighted);
+  border-radius: 3px;
+  border: 1px solid #e1e7ed;
+  background-color: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  box-shadow: var(--input-box-style);
+  font-weight: 600;
+  text-shadow: var(--input-box-style);
+}
+
+.form__input:hover {
+  box-shadow: var(--input-box-style);
 }
 
 form[data-qa="small"] > .form__input {
   width: var(--input-width);
   border: var(--input-border);
-  border-radius: var(--input--border-radius);
-  padding: 0;
+  border-radius: var(--input-border-radius);
   height: 40px;
+  padding: 0 0 0 33px;
+  box-sizing: border-box;
   box-shadow: var(--input-box-shadow);
+  text-shadow: var(--input-box-style);
   font-size: 14px;
-}
-
-form[data-qa="small"] > .form__input::placeholder {
-  position: relative;
-  padding-left: 33px;
-  color: #3d4e61;
 }
 
 form[data-qa="small"] > .form__input:hover,
 form[data-qa="small"] > .form__input:focus {
-  border: var(--input-highlighted);
+  box-shadow: var(--input-box-style);
 }

@@ -1,6 +1,6 @@
-- [ ] Code style follows rules, described in the [Code Style Rules](https://mate-academy.github.io/layout_task-guideline/html-css-code-style-rules)
-- [ ] All the requirements described in the [Readme](readme.md) are implemented in the code
-- [ ] All the Tips & Hints described in the [Readme](readme.md) are taken into account
-- [ ] All BEM typical mistakes are checked (from BEM lesson)
-- [ ] Icon implemented using background-image CSS property
-- [ ] Inputs are written inside of 'form' tag with correctly passed attributes
+- [x] Code style follows rules, described in the [Code Style Rules](https://mate-academy.github.io/layout_task-guideline/html-css-code-style-rules)
+- [x] All the requirements described in the [Readme](readme.md) are implemented in the code
+- [x] All the Tips & Hints described in the [Readme](readme.md) are taken into account
+- [x] All BEM typical mistakes are checked (from BEM lesson)
+- [x] Icon implemented using background-image CSS property
+- [x] Inputs are written inside of 'form' tag with correctly passed attributes

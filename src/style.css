@@ -1,16 +1,24 @@
 /* stylelint-disable font-family-no-missing-generic-family-keyword */
+:root {
+  --main-color: #e1e7ed;
+  --bg-color: #fff;
+  --text-color: #3d4e61;
+  --box-shadow-first: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  --box-shadow-second: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
 body {
   margin: 0;
   padding: 0 10px 0 8px;
 }
 
 @font-face {
-  font-family: Avenir;
+  font-family: Avenir-Book;
   src: url(./fonts/Avenir-book.ttf);
 }
 
 @font-face {
-  font-family: Heavy;
+  font-family: Avenir-Heavy;
   src: url(./fonts/Avenir-Heavy.ttf);
 }
 
@@ -19,9 +27,10 @@ body {
   margin-bottom: 20px;
   width: 100%;
   height: 68px;
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
-  border: 1px solid #e1e7ed;
-  background: #fff;
+  box-shadow: var(--box-shadow-first);
+  border: 1px solid var(--main-color);
+
+  background: var(--bg-color);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -29,7 +38,7 @@ body {
 }
 
 .search-line-large:hover {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: var(--box-shadow-second);
 }
 
 .search-line-large:focus {
@@ -40,14 +49,14 @@ body {
 
 input::placeholder {
   color: #3d4e61;
-  font-family: Avenir;
+  font-family: Avenir-Book;
   font-style: normal;
   line-height: normal;
 }
 
 .text-search-line-large {
-  font-family: Avenir;
-  color: #3d4e61;
+  font-family: Avenir-Book;
+  color: var(--text-color);
   border: none;
   font-size: 16px;
   height: 19px;
@@ -57,7 +66,7 @@ input::placeholder {
 }
 
 .text-search-line-large:focus {
-  font-family: Heavy;
+  font-family: Avenir-Heavy;
   outline: none;
   border: none;
 }
@@ -73,9 +82,9 @@ input::placeholder {
 /* small-form */
 .search-line-small {
   width: 100%;
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
-  border: 1px solid #e1e7ed;
-  background: #fff;
+  box-shadow: var(--box-shadow-first);
+  border: 1px solid var(--main-color);
+  background: var(--bg-color);
   display: flex;
   flex-direction: row;
   border-radius: 4px;
@@ -84,7 +93,7 @@ input::placeholder {
 }
 
 .search-line-small:hover {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: var(--box-shadow-second);
 }
 
 .search-line-small:focus {
@@ -95,8 +104,8 @@ input::placeholder {
 }
 
 .text-search-line-small {
-  font-family: Avenir;
-  color: #3d4e61;
+  font-family: Avenir-Book;
+  color: var(--text-color);
   font-size: 14px;
   width: 100%;
   font-weight: 300;
@@ -107,7 +116,7 @@ input::placeholder {
 }
 
 .text-search-line-small:focus {
-  font-family: Heavy;
+  font-family: Avenir-Heavy;
 }
 
 .img-search-line-small {

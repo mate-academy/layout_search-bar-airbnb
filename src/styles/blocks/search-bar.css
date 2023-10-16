@@ -31,7 +31,6 @@
 
 .search-bar__search-button {
   display: flex;
-  align-self: center;
   background-image: url(../../images/Search.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -43,12 +42,12 @@
 
 .search-bar--small .search-bar__rectangle {
   height: 42px;
-  width: 100%;
+  max-width: 100%;
 }
 
 .search-bar--large .search-bar__rectangle {
   height: 70px;
-  width: 100%;
+  max-width: 100%;
 }
 
 .search-bar--small .search-bar__search-button {
@@ -65,13 +64,12 @@
 
 .search-bar__input {
   display: flex;
-  align-self: center;
+  flex-grow: 1;
   border: none;
   background-color: transparent;
   padding: 0;
   font-family: "Avenir", sans-serif;
   font-weight: 900;
-  width: 100%;
 }
 
 .search-bar__input::placeholder {

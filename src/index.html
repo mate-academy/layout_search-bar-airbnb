@@ -11,43 +11,49 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="index.html" method="get">
-      <div class="form-big" data-qa="big">
-        <label class="
-          form__loop
-          form__loop--size_big
-          form-big__big-loop"
-          for="big-loop"
+
+    <form
+      class="search-bar"
+      action="#"
+      method="get"
+      data-qa="big"
+    >
+      <label for="icon-big" class="icon-big">
+        <img
+        class="icon"
+        src="./images/Search.svg"
+        alt="icon"
         >
-        </label>
-        <input
-          class="form form--input_big form-big__form"
-          type="text"
-          name="big-loop"
-          id="big-loop"
-          placeholder="Try &quot;Los Angeles&quot;"
-          data-qa="keypress"
-        >
-      </div>
+      </label>
+      <input
+        class="input input--big_size"
+        id="icon-big"
+        type="text"
+        name="big-input"
+        placeholder="Try &quot;Los Angeles&quot;"
+        data-qa="keypress"
+      >
     </form>
 
-    <form action="index.html" method="get">
-      <div class="form-small" data-qa="small">
-        <label class="
-          form__loop
-          form__loop--size_small
-          form-small__small-loop"
-          for="small-loop"
+    <form
+      class="search-bar"
+      action="#"
+      method="get"
+      data-qa="small"
+    >
+      <label for="icon-small" class="icon-small">
+        <img
+        class="icon-small__size"
+        src="./images/Search.svg"
+        alt="icon"
         >
-        </label>
-        <input
-          class="form form--input_small form-small__form"
-          type="text"
-          name="small-loop"
-          id="small-loop"
-          placeholder="Try &quot;Los Angeles&quot;"
-        >
-      </div>
+      </label>
+      <input
+        class="input input--small_size"
+        type="text"
+        name="search-bar-small"
+        placeholder="Try &quot;Los Angeles&quot;"
+      >
     </form>
   </body>
 </html>

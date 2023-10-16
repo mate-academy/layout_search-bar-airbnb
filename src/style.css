@@ -14,6 +14,10 @@
   padding: 0;
   box-sizing: border-box;
   font-weight: 300;
+  --background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  --box-shadow1: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  --box-shadow2: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  --color-gray: #3d4e61;
 }
 
 .searchbar {
@@ -23,15 +27,15 @@
   border-radius: 4px;
   border: 1px solid #e1e7ed;
   margin: 20px 8px;
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  box-shadow: var(--box-shadow1);
   overflow: hidden;
   &:hover {
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: var(--box-shadow2);
   }
 
   &:focus-within {
     border: none;
-    background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+    background: var(--background);
   }
 
 }
@@ -51,12 +55,12 @@
   width: 100%;
   border: none;
   font-family: "Avenir", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   padding-left: 18px;
 
   &:focus {
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    color: #3d4e61;
+    text-shadow: var(--box-shadow2);
+    color: var(--color-gray);
     font-family: "Avenir", sans-serif;
     font-size: 1rem;
     font-style: bold;
@@ -68,8 +72,8 @@
   &:focus-within {
     border: none;
     text-shadow: #3d4e6155 1px 3px 3px;
-    background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-    color: #3d4e61;
+    background: var(--background);
+    color: var(--color-gray);
     font-weight: bold;
   }
 
@@ -81,14 +85,14 @@
 
 .searchbar__input-small {
   padding-left: 10px;
-  font-size: 14px;
+  font-size: 0.88rem;
 
   &:focus {
-    font-size: 14px;
+    font-size: 0.88rem;
   }
 
   &:focus-within {
-    font-size: 14px;
+    font-size: 0.88rem;
     font-weight: 300;
   }
 }
@@ -98,4 +102,5 @@
   margin-left: 12px;
   padding: 5.5px;
   margin-bottom: 1px;
+
 }

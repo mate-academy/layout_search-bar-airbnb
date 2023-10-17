@@ -5,13 +5,14 @@ body {
 
 * {
   box-sizing: border-box;
-  font-family: (Avenir);
+  font-family: "Avenir", sans-serif;
 }
 
 @font-face {
   font-family: "Avenir";
   src: url(fonts/Avenir-Book.ttf), url(fonts/Avenir-Heavy.ttf), url(fonts/Avenir.ttc);
 }
+
 /* #region Big-Bar */
 .search-form {
   width: 100%;
@@ -21,39 +22,35 @@ body {
 .input__container {
   height: 70px;
   font-size: 16px;
-
   line-height: 22px;
   font-weight: 300;
 
-  text-align: left;
+  resize: none;
+  outline: none;
+  border: none;
 
-  border-color: 1px solid rgba(225, 231, 237, 1);
   border-radius: 4px;
 
   position: relative;
   width: 100%;
 
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+
 }
 
 .input__container:focus {
-  font-size: 14px;
-  line-height: 19px;
-  color: rgba(61, 78, 97, 1);
   outline: none;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .input__container:hover {
   font-size: 16px;
   line-height: 22px;
-  text-align: left;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 /* Additional styles for the big search bar */
 .big-form {
-  max-width: 900px;
+  width: 100%;
 }
 
 .big-bar .search-button {
@@ -75,7 +72,6 @@ body {
   font-size: 16px;
   line-height: 22px;
   text-align: left;
-  border: 1px solid;
   border-radius: 4px;
   font-weight: 300;
   padding-left: 62px;
@@ -87,7 +83,7 @@ body {
 
 /* Additional styles for the small search bar */
 .small-form {
-  max-width: 435px;
+  width: 100%;
 }
 
 .small-bar .search-button {
@@ -110,7 +106,6 @@ body {
   font-size: 16px;
   line-height: 22px;
   text-align: left;
-  border: 1px solid;
   border-radius: 4px;
   padding-left: 33px;
 }

@@ -1,11 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: (Avenir);
 }
 
 * {
   box-sizing: border-box;
+  font-family: (Avenir);
 }
 
 @font-face {
@@ -15,40 +15,40 @@ body {
 /* #region Big-Bar */
 .search-form {
   width: 100%;
-  display: flex;
   margin-top: 20px;
 }
 
-.search-button {
-  width: 19px;
-  height: 19px;
-  background-image: url(images/Search.svg);
-  background-size: cover;
-  background-position: center;
-  border: none;
-  background-color: #fff;
-}
-
 .input__container {
-  width: 100%;
   height: 70px;
   font-size: 16px;
+
   line-height: 22px;
-  text-align: left;
-  border: 1px solid;
-  border-radius: 4px;
   font-weight: 300;
+
+  text-align: left;
+
+  border-color: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 4px;
+
   position: relative;
-  display: inline-block;
-  padding-right: 30px;
+  width: 100%;
+
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
 }
 
 .input__container:focus {
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(61, 78, 97, 1);
+  outline: none;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.input__container:hover {
   font-size: 16px;
   line-height: 22px;
   text-align: left;
-  color: #3d4e61;
-  outline: none;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 /* Additional styles for the big search bar */
@@ -59,29 +59,26 @@ body {
 .big-bar .search-button {
   width: 19px;
   height: 19px;
+  margin: 25px 17px 26px 26px;
+  position: absolute;
   background-image: url(images/Search.svg);
   background-size: cover;
   background-position: center;
+  background-color: transparent;
   border: none;
-  background-color: #fff;
+  z-index: 1;
+  cursor: pointer;
 }
 
 .big-bar .input__container {
-  flex: 1;
   height: 70px;
   font-size: 16px;
   line-height: 22px;
   text-align: left;
-  border: 1px solid #e1e7ed;
-  border-radius: 4px 0 0 4px;
-  font-weight: 300;
-  padding-left: 10px;
-}
-
-.search-big input[type="text"] {
-  width: 100%;
+  border: 1px solid;
   border-radius: 4px;
-  padding: 25px 0 26px ;
+  font-weight: 300;
+  padding-left: 62px;
 }
 
 .big-bar .input__container::placeholder {
@@ -94,25 +91,28 @@ body {
 }
 
 .small-bar .search-button {
-  width: 19px;
-  height: 19px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
   background-image: url(images/Search.svg);
   background-size: cover;
   background-position: center;
+  background-color: transparent;
   border: none;
-  background-color: #fff;
+  z-index: 1;
+  cursor: pointer;
+  margin: 15px 5px 16px 13px;
 }
 
 .small-bar .input__container {
-  flex: 1;
-  height: 25px;
+  position: relative;
+  height: 42px;
   font-size: 16px;
   line-height: 22px;
   text-align: left;
-  border: 1px solid #e1e7ed;
-  border-radius: 4px 0 0 4px;
-  font-weight: 300;
-  padding-left: 10px;
+  border: 1px solid;
+  border-radius: 4px;
+  padding-left: 33px;
 }
 
 .small-bar .input__container::placeholder {

@@ -1,3 +1,4 @@
+<!-- #region HEAD -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -10,24 +11,21 @@
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
   </head>
+  <!-- #endregion -->
   <body>
-    <form class="form"
+    <form
       action="/search"
       method="get"
       data-qa="big"
+      class="search"
     >
-      <img
-        class="search-icon"
-        src="images/Search.svg"
-        alt="Search-bar"
-      >
-
-      <label for="input">
+      <label class="search__label">
         <input
+          class="search__input"
+          name="input"
           type="text"
-          data-qa="keypress"
-          class="search-input"
           placeholder="Try &quot;Los Angeles&quot;"
+          data-qa="keypress"
         >
       </label>
     </form>
@@ -35,19 +33,15 @@
     <form
       action="/search"
       method="get"
-      class="form"
       data-qa="small"
+      class="search search--small"
     >
-      <img
-        src="./images/Search.svg"
-        alt="search image"
-        class="search-icon search-icon--small"
-      >
-      <label for="input">
+      <label class="search__label search__label--small">
         <input
+          class="search__input search__input--small"
+          name="input__small"
           type="text"
           placeholder="Try &quot;Los Angeles&quot;"
-          class="search-input search-input--small"
         >
       </label>
     </form>

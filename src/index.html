@@ -11,16 +11,39 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div class="big-bar">
-      <button type="submit" class="searchButton"></button>
-      <input type="text" class="big-bar__style"
-      placeholder="Try &quot;Los Angeles&quot;">
-    </div>
+    <form
+      class="search-form"
+      data-qa="big"
+      action="search.php"
+      method="get"
+    >
+      <div class="big-bar">
+        <button type="submit" class="search-button"></button>
+        <input
+          type="text"
+          class="input__container"
+          data-qa="keypress"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </div>
+    </form>
 
-    <div class="small-bar">
-      <button type="submit" class="small-searchButton"></button>
-      <input type="text" class= "small-bar__style"
-      placeholder="Los Angeles">
-    </div>
+    <form
+      class="search-form small-form"
+      data-qa="small"
+      action="search.php"
+      method="get"
+    >
+
+      <div class="small-bar">
+        <button type="submit" class="search-button"></button>
+        <input
+          type="text"
+          class="input__container"
+          data-qa="keypress"
+          placeholder="Los Angeles"
+        >
+      </div>
+    </form>
   </body>
 </html>

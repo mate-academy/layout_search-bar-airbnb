@@ -1,0 +1,123 @@
+html,
+body,
+form,
+img,
+div {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "AvenirBook";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./fonts/Avenir-Book.ttf");
+}
+
+@font-face {
+  font-family: "AvenirBold";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/Avenir-Heavy.ttf");
+}
+
+.search--bars--container {
+  margin: 20px 81px 0 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.lg--search--bar__form,
+.sm--search--bar__form {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.lg--search--bar__icon {
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  position: absolute;
+  left: 0;
+  width: 19px;
+  height: 19px;
+  z-index: 1;
+  margin: 25px 17px 26px 26px;
+}
+
+.lg--search--bar__input,
+.sm--search--bar__input {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+
+  font-family: "AvenirBook", serif;
+  color: #3d4e61;
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  background: #fff;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+}
+
+.lg--search--bar__input {
+  max-width: 900px;
+  padding: 25px 0 25px 60px;
+  /*padding: 12px 0 11px 33px;*/
+  /*padding: 12px 25px 10px 30px;*/
+
+  font-size: 16px;
+  line-height: 21.86px;
+}
+
+.lg--search--bar__input:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.lg--search--bar__input:focus {
+  border-radius: 3px;
+  border: 1px solid #e1e7ed;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  font-family: "AvenirBold", serif;
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*small form*/
+
+.sm--search--bar__form {
+  position: relative;
+  width: 100%;
+}
+
+.sm--search--bar--icon {
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  position: absolute;
+  left: 0;
+  width: 11px;
+  height: 11px;
+  z-index: 1;
+  margin: 15px 9px 16px 13px;
+}
+
+.sm--search--bar__input {
+  max-width: 427px;
+  padding: 12px 25px 10px 30px;
+  font-size: 14px;
+  line-height: 19.12px;
+}
+
+.sm--search--bar__input:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.sm--search--bar__input:focus {
+  border-radius: 3px;
+  border: 1px solid #e1e7ed;
+  font-family: "AvenirBold", serif;
+}

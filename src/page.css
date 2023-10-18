@@ -1,0 +1,91 @@
+:root {
+  --search-text-color: #3d4e61;
+}
+
+.page {
+  padding: 0 8px;
+  margin: 0;
+
+  font-family: "Avenir", sans-serif;
+}
+
+.page__form {
+  position: relative;
+  margin-top: 20px;
+}
+
+.page__form::after {
+  position: absolute;
+  content: "";
+
+  background-image: url("images/Search.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.page__form--big::after {
+  top: 25px;
+  left: 26px;
+
+  width: 19px;
+  height: 19px;
+}
+
+.page__form--small::after {
+  top: 15px;
+  left: 13px;
+
+  width: 11px;
+  height: 11px;
+}
+
+.page__input {
+  box-sizing: border-box;
+  width: 100%;
+
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  background: #fff;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+
+  transition: 0.2s;
+
+  color: var(--search-text-color);
+}
+
+.page__input:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  outline: none;
+
+  font-weight: bold;
+}
+
+.page__input::placeholder {
+  font-family: "Avenir", sans-serif;
+  font-weight: 300;
+  color: var(--search-text-color);
+}
+
+.page__input--big {
+  height: 70px;
+
+  padding: 0 62px;
+
+  font-size: 16px;
+}
+
+.page__input--big:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.page__input--small {
+  height: 42px;
+
+  padding: 0 33px;
+
+  font-size: 14px;
+}
+
+.page__input--small:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}

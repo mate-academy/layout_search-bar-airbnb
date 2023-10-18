@@ -11,37 +11,35 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div class="search--bars--container">
-      <form
-        action="#"
-        class="lg--search--bar__form"
-        data-qa="big"
+    <form
+      action="#"
+      class="lg-search-bar__form"
+      data-qa="big"
+    >
+      <span class="lg-search-bar__icon"></span>
+
+      <input
+        type="text"
+        name="text"
+        class="lg-search-bar__input"
+        placeholder="Try “Los Angeles”"
+        data-qa="keypress"
       >
-        <span class="lg--search--bar__icon"></span>
+    </form>
 
-        <input
-          type="text"
-          name="text"
-          class="lg--search--bar__input"
-          placeholder="Try “Los Angeles”"
-          data-qa="keypress"
-        >
-      </form>
+    <form
+      action="#"
+      class="sm-search-bar__form"
+      data-qa="small"
+    >
+      <span class="sm-search-bar__icon"></span>
 
-      <form
-        action="#"
-        class="sm--search--bar__form"
-        data-qa="small"
+      <input
+        type="text"
+        name="text"
+        class="sm-search-bar__input"
+        placeholder="Try “Los Angeles”"
       >
-        <span class="sm--search--bar--icon"></span>
-
-        <input
-          type="text"
-          name="text"
-          class="sm--search--bar__input"
-          placeholder="Try “Los Angeles”"
-        >
-      </form>
-    </div>
+    </form>
   </body>
 </html>

@@ -16,7 +16,6 @@
 }
 
 body {
-  font-family: "Avenir", sans-serif;
   font-weight: 500;
   font-size: 1rem;
 }
@@ -47,6 +46,7 @@ form[data-qa="big"] {
 }
 
 .form__input {
+  font-family: "Avenir", sans-serif;
   width: var(--input-width);
   height: 66px;
   padding-left: 62px;
@@ -60,10 +60,12 @@ form[data-qa="big"] {
 .form__input:focus {
   border-radius: 3px;
   border: 1px solid #e1e7ed;
-  background-color: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  color: #3d4e61;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   box-shadow: var(--input-box-style);
   font-weight: 600;
   text-shadow: var(--input-box-style);
+  outline: none;
 }
 
 .form__input:hover {
@@ -74,7 +76,7 @@ form[data-qa="small"] > .form__input {
   width: var(--input-width);
   border: var(--input-border);
   border-radius: var(--input-border-radius);
-  height: 40px;
+  height: 42px;
   padding: 0 0 0 33px;
   box-sizing: border-box;
   box-shadow: var(--input-box-shadow);
@@ -85,4 +87,5 @@ form[data-qa="small"] > .form__input {
 form[data-qa="small"] > .form__input:hover,
 form[data-qa="small"] > .form__input:focus {
   box-shadow: var(--input-box-style);
+  outline: none;
 }

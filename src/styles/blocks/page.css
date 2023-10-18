@@ -5,15 +5,25 @@
     url(../../fonts/Avenir-Heavy.ttf);
 }
 
+body {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .page {
   font-family: "Avenir", sans-serif;
   font-weight: 300;
 }
 
 .page__body {
-  padding-top: 12px;
+  padding-top: 20px;
 }
 
-.page__search-bar:nth-of-type(2) {
+.page__search-bar {
+  display: flex;
+  flex-direction: column;
+}
+
+.page__search-bar > :nth-child(2) {
   margin-top: 20px;
 }

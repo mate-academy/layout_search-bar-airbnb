@@ -1,3 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+fieldset {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
 @font-face {
   font-family: "Avenir";
   src: url("fonts/Avenir-Book.ttf") format("truetype");
@@ -19,6 +33,22 @@ body {
 
 .search {
   margin: 20px 8px;
+}
+
+.search-form {
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  height: 70px;
+  display: flex;
+}
+
+.search-form:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.search-form:focus-within {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
 .search__input {

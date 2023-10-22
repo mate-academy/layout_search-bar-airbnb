@@ -16,8 +16,8 @@
 }
 
 :root {
-  --color-defult: #3d4e61;
   --color-box__shadow: #5c5c5c5b;
+  --color-text: #3d4e61;
 }
 
 body {
@@ -29,7 +29,6 @@ body {
   border: none;
   background: none;
   outline: none;
-  padding: 0;
   width: 100%;
   font-size: 16px;
   font-family: inherit;
@@ -47,7 +46,7 @@ body {
 
 .search--form:focus-within {
   box-shadow: 0 5px 10px var(--color-box__shadow);
-  color: #3d4e61;
+  color: var(--color-text);
   font-weight: 700;
 }
 
@@ -64,7 +63,7 @@ body {
 }
 
 .search:focus {
-  color: #3d4e61;
+  color: var(--color-text);
   font-weight: 700;
 }
 

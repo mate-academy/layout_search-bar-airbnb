@@ -1,0 +1,95 @@
+:root {
+  --fullWidth: 100%;
+  --shadowDefault: 0 1px 8px 0 #3d4e611a;
+  --borderDefault: 1px solid #e1e7ed;
+  --radius: 4px;
+  --searchLogo: url(images/Search.svg) no-repeat 25px 24px;
+  --searchLogoSmall: url(images/Search.svg) no-repeat 12px 14px;
+  --defaultFount: 16px avenir, serif;
+  --defaultFountSmall: 14px avenir, serif;
+  --heavyFont: 16px avenir-heavy, serif;
+  --heavyFontSmall: 14px avenir-heavy, serif;
+  --filterTextShadow: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  --hoverBoxShadow: 0 4px 4px 0 #00000040;
+  --fontColor: #3d4e61;
+  --noneOutline: none;
+}
+
+@font-face {
+  font-family: "avenir";
+  src: url(fonts/Avenir.ttc);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "avenir-heavy";
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: 900;
+}
+
+.bigBar {
+  margin: 20px 0;
+}
+
+.bigBar__input {
+  height: 70px;
+  padding: 0 62px;
+  background: var(--searchLogo);
+  width: var(--fullWidth);
+  border-radius: var(--radius);
+  border: var(--borderDefault);
+  box-shadow: var(--shadowDefault);
+}
+
+.bigBar__input::placeholder {
+  font: var(--defaultFount);
+  color: var(--fontColor);
+}
+
+.bigBar__input:hover {
+  box-shadow: var(--hoverBoxShadow);
+}
+
+.bigBar__input[type="search"]:focus {
+  outline: var(--noneOutline);
+  font: var(--heavyFont);
+  color: var(--fontColor);
+  filter: var(--filterTextShadow);
+}
+
+.bigBar__input:focus::placeholder {
+  font: var(--heavyFont);
+  filter: var(--filterTextShadow);
+}
+
+.smallBar__input {
+  width: var(--fullWidth);
+  height: 42px;
+  padding: 0 33px 2px;
+  background: var(--searchLogoSmall);
+  background-size: 11px 11px;
+  border-radius: var(--radius);
+  border: var(--borderDefault);
+  box-shadow: var(--shadowDefault);
+}
+
+.smallBar__input::placeholder {
+  font: var(--defaultFountSmall);
+  color: var(--fontColor);
+}
+
+.smallBar__input:hover {
+  box-shadow: var(--hoverBoxShadow);
+}
+
+.smallBar__input[type="search"]:focus {
+  outline: var(--noneOutline);
+  font: var(--heavyFontSmall);
+  color: var(--fontColor);
+  filter: var(--filterTextShadow);
+}
+
+.smallBar__input:focus::placeholder {
+  font: var(--heavyFontSmall);
+  filter: var(--filterTextShadow);
+}

@@ -1,0 +1,52 @@
+@import url("./fonts.css");
+@import url("./vars.css");
+@import url("./normalize.css");
+
+.searchbar {
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 100%;
+  border: 1px solid #e1e7ed;
+  box-shadow: var(--input-shadow);
+  background-image: var(--search-image);
+  background-repeat: no-repeat;
+}
+
+.searchbar-big {
+  height: var(--big-input-size);
+  padding-left: var(--big-input-padding);
+  background-position: 26px;
+  background-size: 19px;
+}
+
+.searchbar:hover {
+  box-shadow: var(--hover-box-shadow);
+  color: #3d4e61;
+}
+
+.searchbar:focus {
+  outline: none;
+  border-radius: 3px;
+  font-family: "Avenir-Heavy", sans-serif;
+}
+
+.searchbar::placeholder {
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.searchbar-small {
+  height: var(--small-input-size);
+  padding-left: var(--small-input-padding);
+  padding-bottom: 3px;
+  background-position: 12px 14px;
+  background-size: 11px;
+  font-size: var(--small-font-size);
+}
+
+.searchbar-small::placeholder {
+  font-size: 14px;
+}

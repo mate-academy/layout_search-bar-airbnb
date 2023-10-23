@@ -11,6 +11,8 @@
   font-family: "Avenir-Book";
   src: url("fonts/Avenir-Book.ttf")
     format("truetype");
+  font-weight: 300;
+  letter-spacing: 0;
 }
 
 body {
@@ -24,7 +26,6 @@ body {
   position: absolute;
   margin-top: 20px;
   width: 100%;
-  font-weight: 300;
 }
 
 .search-bar__big {
@@ -36,7 +37,7 @@ body {
   border: 1px solid var(--secondery-color);
   box-shadow: 0 1px 8px 0 var(--shadow-color);
   border-radius: 3px;
-  background-color: #fff;
+  background-color: var(--background-color);
   color: var(----primary-color);
 }
 
@@ -57,10 +58,9 @@ body {
 .search-bar__big input[type="text"] {
   height: 19px;
   line-height: 19px;
-  width: 129px;
+  width: 158px;
   margin-left: 18px;
   font-size: 16px;
-  letter-spacing: 0;
   color: var(--primary-color);
   border-color: transparent;
   font-family: "Avenir-Book",
@@ -77,7 +77,6 @@ body {
   margin-left: 8px;
   font-size: 14px;
   line-height: 19px;
-  letter-spacing: 0;
   color: var(--primary-color);
   border-color: transparent;
   font-family: "Avenir-Book",

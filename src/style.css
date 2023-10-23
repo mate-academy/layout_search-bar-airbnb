@@ -1,3 +1,12 @@
+:root {
+  --primary-color: #3d4e61;
+  --secondery-color: #e1e7ed;
+  --shadow-color: #3d4e611a;
+  --background-color: #fff;
+  --icon-color: #687c94;
+  --box-shadow-color-one: #00000040;
+  --box-shadow-color-two: #3d4e6133;
+}
 @font-face {
   font-family: "Avenir-Book";
   src: url("fonts/Avenir-Book.ttf")
@@ -15,6 +24,7 @@ body {
   position: absolute;
   margin-top: 20px;
   width: 100%;
+  font-weight: 300;
 }
 
 .search-bar__big {
@@ -23,11 +33,11 @@ body {
   position: relative;
   width: calc(100% - 18px);
   height: 68px;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px 0 #3d4e611a;
+  border: 1px solid var(--secondery-color);
+  box-shadow: 0 1px 8px 0 var(--shadow-color);
   border-radius: 3px;
   background-color: #fff;
-  color: #3d4e61;
+  color: var(----primary-color);
 }
 
 .search-bar__small {
@@ -37,11 +47,11 @@ body {
   width: calc(100% - 18px);
   margin-top: 20px;
   height: 40px;
-  box-shadow: 0 1px 8px 0 #3d4e611a;
+  box-shadow: 0 1px 8px 0 var(--shadow-color);
   border-radius: 3px;
-  border: 1px solid #e1e7ed;
+  border: 1px solid var(--secondery-color);
   margin-bottom: 10px;
-  color: #3d4e61;
+  color: var(----primary-color);
 }
 
 .search-bar__big input[type="text"] {
@@ -51,7 +61,7 @@ body {
   margin-left: 18px;
   font-size: 16px;
   letter-spacing: 0;
-  color: #3d4e61;
+  color: var(--primary-color);
   border-color: transparent;
   font-family: "Avenir-Book",
     sans-serif;
@@ -62,11 +72,13 @@ body {
 .search-bar__small input[type="text"] {
   width: 158px;
   height: 19px;
-  margin-left: 7px;
+  top: 25px;
+  left: 62px;
+  margin-left: 8px;
   font-size: 14px;
   line-height: 19px;
   letter-spacing: 0;
-  color: #3d4e61;
+  color: var(--primary-color);
   border-color: transparent;
   font-family: "Avenir-Book",
     sans-serif;
@@ -75,22 +87,22 @@ body {
 }
 
 .search-bar__big input[type="text"]:hover {
-  border-color: #e1e7ed;
-  box-shadow: 0 4px 4px 0 #00000040;
+  border-color: var(--secondery-color);
+  box-shadow: 0 4px 4px 0 var(--box-shadow-color-one);
 }
 
 .search-bar__big input[type="text"]:focus {
-  border-color: #e1e7ed;
-  border: 1px solid #e1e7ed;
+  border: 1px solid var(--secondery-color);
 }
 
 .search-bar__small input[type="text"]:hover {
-  border-color: #e1e7ed;
-  box-shadow: 0 3px 8px 0 #3d4e6133;
+  border: 1px solid var(--secondery-color);
+  border-color: var(--secondery-color);
+  box-shadow: 0 3px 8px 0 var(--box-shadow-color-two);
 }
 
 .search-bar__small input[type="text"]:focus {
-  border-color: #3d4e61;
+  color: var(--primary-color);
   font-size: 14px;
   font-weight: 900;
   line-height: 19px;
@@ -102,11 +114,11 @@ body {
   left: 0;
   margin-top: 6px;
   margin-left: 23px;
-  color: #687c94;
+  color: var(--icon-color);
 }
 
 .search-bar__small .icon {
   left: 0;
-  margin-left: 13px;
-  color: #687c94;
+  margin-left: 12px;
+  color: var(--icon-color);
 }

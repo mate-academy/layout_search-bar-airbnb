@@ -67,52 +67,47 @@ body {
   margin-bottom: 10px;
 }
 
-.search-bar__big input[type="text"] {
+.input {
   height: 19px;
   line-height: 19px;
   width: 158px;
-  margin-left: 60px;
-  font-size: 16px;
+  text-align: left;
+  margin-bottom: 2px;
   color: var(--primary-color);
-  border-color: transparent;
   font-family: "Avenir-Book",
     sans-serif;
-  text-align: left;
+  border-color: transparent;
+}
+
+.big__input {
+  margin-left: 60px;
+  font-size: 16px;
   margin-bottom: 2px;
 }
 
-.search-bar__small input[type="text"] {
-  width: 158px;
-  height: 19px;
+.small__input {
   top: 25px;
   left: 62px;
   margin-left: 31px;
   font-size: 14px;
-  line-height: 19px;
-  color: var(--primary-color);
-  border-color: transparent;
-  font-family: "Avenir-Book",
-    sans-serif;
-  text-align: left;
-  margin-bottom: 2px;
 }
 
-.search-bar__big input[type="text"]:hover {
+.big__input:hover {
   border-color: var(--secondery-color);
   box-shadow: 0 4px 4px 0 var(--box-shadow-color-one);
 }
 
-.search-bar__big input[type="text"]:focus {
+.big__input:focus {
   border: 1px solid var(--secondery-color);
 }
 
-.search-bar__small input[type="text"]:hover {
+.small__input:hover {
   border: 1px solid var(--secondery-color);
   border-color: var(--secondery-color);
   box-shadow: 0 3px 8px 0 var(--box-shadow-color-two);
 }
 
-.search-bar__small input[type="text"]:focus {
+.small__input:focus {
   font-family: "Avenir-Heavy",
     sans-serif;
   color: var(--primary-color);

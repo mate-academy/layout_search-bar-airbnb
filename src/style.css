@@ -14,6 +14,13 @@
   font-weight: 300;
   letter-spacing: 0;
 }
+@font-face {
+  font-family: "Avenir-Heavy";
+  src: url("fonts/Avenir-Heavy.ttf")
+    format("truetype");
+  font-weight: 300;
+  letter-spacing: 0;
+}
 
 body {
   margin: 0;
@@ -28,31 +35,27 @@ body {
   width: 100%;
 }
 
-.search-bar__big {
+.search-bar {
   display: flex;
   align-items: center;
   position: relative;
   width: calc(100% - 18px);
-  height: 68px;
-  border: 1px solid var(--secondery-color);
   box-shadow: 0 1px 8px 0 var(--shadow-color);
   border-radius: 3px;
-  background-color: var(--background-color);
+  border: 1px solid var(--secondery-color);
   color: var(----primary-color);
 }
 
+.search-bar__big {
+  height: 68px;
+  background-color: var(--background-color);
+}
+
 .search-bar__small {
-  display: flex;
-  align-items: center;
-  position: relative;
-  width: calc(100% - 18px);
   margin-top: 20px;
   height: 40px;
-  box-shadow: 0 1px 8px 0 var(--shadow-color);
-  border-radius: 3px;
   border: 1px solid var(--secondery-color);
   margin-bottom: 10px;
-  color: var(----primary-color);
 }
 
 .search-bar__big input[type="text"] {
@@ -101,6 +104,8 @@ body {
 }
 
 .search-bar__small input[type="text"]:focus {
+  font-family: "Avenir-Heavy",
+    sans-serif;
   color: var(--primary-color);
   font-size: 14px;
   font-weight: 900;

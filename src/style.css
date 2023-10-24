@@ -29,7 +29,7 @@ body {
   margin-top: 0;
 }
 
-.search {
+.search-bar {
   width: 100%;
   outline: none;
   background: url(images/Search.svg) no-repeat;
@@ -40,16 +40,16 @@ body {
   font-family: Avenir-Heavy, sans-serif;
 }
 
-.search:not(:last-child) {
+.search-bar:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.search::placeholder {
+.search-bar::placeholder {
   font-family: Avenir-Book, sans-serif;
 
 }
 
-.search--big {
+.search-bar--big {
   height: 70px;
   background-position: 26px;
   background-size: 19px;
@@ -58,7 +58,7 @@ body {
   margin-top: 20px;
 }
 
-.search--small {
+.search-bar--small {
   height: 42px;
   background-position: 12px 14px;
   background-size: 11px;
@@ -66,15 +66,15 @@ body {
   font-size: 14px;
 }
 
-.search:hover {
+.search-bar:hover {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.search:focus {
+.search-bar:focus {
   background-image: url(images/Search.svg), linear-gradient(180deg, rgb(255,255,255) 0%, rgb(246, 246, 247) 100%);
   background-repeat: no-repeat, repeat;
 }
 
-.search--small:focus {
+.search-bar--small:focus {
   background-position: 12px 14px, center;
 }

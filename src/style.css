@@ -49,7 +49,7 @@ body {
 
 }
 
-[data-qa="big"] {
+.search--big {
   height: 70px;
   background-position: 26px;
   background-size: 19px;
@@ -58,10 +58,9 @@ body {
   margin-top: 20px;
 }
 
-[data-qa="small"] {
+.search--small {
   height: 42px;
-  background-position-x: 12px;
-  background-position-y: 14px;
+  background-position: 12px 14px;
   background-size: 11px;
   padding-left: 33px;
   font-size: 14px;
@@ -74,4 +73,8 @@ body {
 .search:focus {
   background-image: url(images/Search.svg), linear-gradient(180deg, rgb(255,255,255) 0%, rgb(246, 246, 247) 100%);
   background-repeat: no-repeat, repeat;
+}
+
+.search--small:focus {
+  background-position: 12px 14px, center;
 }

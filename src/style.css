@@ -1,0 +1,110 @@
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir.ttc);
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: bold;
+}
+
+body {
+  --bigIconSize: 19px;
+  --smallIconSize: 11px;
+}
+
+.search {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search--big {
+  height: 70px;
+  margin-top: 20px;
+}
+
+.search--small {
+  height: 42px;
+  margin-top: 20px;
+}
+
+.search--big .search__icon {
+  display: flex;
+  background-image: url(images/Search.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat no-repeat;
+  width: 19px;
+  height: 19px;
+  min-width: var(--bigIconSize);
+  min-height: var(--bigIconSize);
+  position: relative;
+  top: 25px;
+  left: 26px;
+  margin-right: -19px;
+}
+
+.search--small .search__icon {
+  background-image: url(images/Search.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 11px;
+  height: 11px;
+  min-width: 11px;
+  min-height: 19px;
+  position: relative;
+  top: 15px;
+  left: 13px;
+  margin-right: -11px;
+}
+
+.search input {
+  width: 100%;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.2);
+  font-family: Avenir, sans-serif;
+}
+
+.search input::placeholder {
+  color: #3d4e61;
+}
+
+.search--big input {
+  padding-left: 62px;
+  color: #3d4e61;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.search--small input {
+  padding-left: 33px;
+  color: #3d4e61;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.search input:hover {
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  background: #fff;
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.search input:focus {
+  border-radius: 3px;
+  border: 1px solid #e1e7ed;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  outline: none;
+  font-weight: bold;
+}
+
+.search--big input:focus {
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}

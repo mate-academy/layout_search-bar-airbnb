@@ -11,21 +11,36 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div class="container">
-      <div class="search-bar search-bar__big" data-qa="big">
-        <input class="input big__input"
-         type="text"
-         data-qa="keypress"
-         value="Try “Los Angeles”"
-        >
-      </div>
-      <div class="search-bar search-bar__small" data-qa="small">
-        <input class="input small__input"
+    <form
+      class="form form_big"
+      action="#"
+      method="post"
+      data-qa="big"
+    >
+      <label class="form__label">
+        <input
+          class="form__input form__input_big"
           type="text"
+          placeholder="Try &quot;Los Angeles&quot;"
           data-qa="keypress"
-          value= "Try “Los Angeles”"
         >
-      </div>
-    </div>
+      </label>
+    </form>
+
+    <form
+      class="form form_small"
+      action="#"
+      method="post"
+      data-qa="small"
+    >
+      <label class="form__label">
+        <input
+          class="form__input form__input_small"
+          type="text"
+          placeholder="Try &quot;Los Angeles&quot;"
+          data-qa="hover"
+        >
+      </label>
+    </form>
   </body>
 </html>

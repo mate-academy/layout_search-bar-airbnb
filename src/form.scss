@@ -1,0 +1,61 @@
+.form {
+
+  margin-top: 20px;
+  position: relative;
+
+  &--big::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 26px;
+    background-image: url(./images/Search.svg);
+    width: 19px;
+    height: 19px;
+  }
+
+  &--small::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 13px;
+    background-image: url(./images/Search.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 11px;
+    height: 11px;
+  }
+
+  &__input {
+    width: 100%;
+    border: 1px solid $borderColor;
+    border-radius: 4px;
+    box-shadow: 0 1px 8px 0 #3d4e611a;
+    outline: 0;
+    color: $mainColor;
+    font-family: "Avenir", sans-serif;
+
+    &--big {
+      height: 70px;
+      padding-left: 62px;
+      font-size: 16px;
+    }
+
+    &--small {
+      height: 42px;
+      padding-left: 33px;
+      font-size: 14px;
+    }
+
+    &:hover {
+      box-shadow: 0 3px 8px 0 #3d4e6133;
+    }
+
+    &:focus {
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+      border-radius: 3px;
+      font-weight: 600;
+    }
+  }
+}

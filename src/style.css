@@ -62,30 +62,24 @@ body {
   height: 19px;
   background-image: url("./images/Search.svg");
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /* ------------data-qa="small"----------- */
 
-.search-form[data-qa="small"] {
+.search-bar--small {
   font-size: 14px;
 }
 
-.search-form[data-qa="small"] .search-bar {
+.search-bar--small .search-bar {
   max-height: 42px;
   padding-left: 33px;
   line-height: 42px;
   font-weight: 400;
 }
 
-.search-form[data-qa="small"] .search-form__icon::after {
-  content: "";
-  position: absolute;
+.search-bar--small .search-form__icon::after {
   left: 13px;
-  top: -2px;
-  bottom: 0;
   width: 11px;
   height: 12px;
-  background-image: url("./images/Search.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
 }

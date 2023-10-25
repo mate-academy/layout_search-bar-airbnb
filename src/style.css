@@ -1,0 +1,146 @@
+/* #region fonts */
+@font-face {
+  font-family: "Avenir";
+  font-weight: lighter, normal, bold;
+  src: url("./fonts/Avenir-Book.ttf"),
+    url("./fonts/Avenir-Heavy.ttf");
+}
+
+/* #endregion */
+
+/* #region settings */
+html,
+body,
+section,
+div,
+input,
+label,
+form {
+  padding: 0;
+  margin: 0;
+}
+
+.search-container {
+  margin: 8px;
+}
+/* #endregion */
+
+/* #region variables */
+:root {
+  --avenir: "Avenir";
+  --main-color: rgba(61, 78, 97, 1);
+  --focus-first: rgb(225, 231, 237);
+  --focus-second: rgb(255, 255, 255);
+  --big-input-height: 22px;
+  --small-input-height: 19px;
+}
+/* #endregion */
+
+/* #region form */
+.search-form {
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 4px;
+  margin: 20px auto 0;
+  font-family: var(--avenir);
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+
+  transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+}
+
+.search-form:focus-within {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 247, 1) 100%
+  );
+}
+
+.search-form:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.search-form-big {
+  width: 100%;
+  height: 70px;
+  padding-inline: 62px;
+}
+
+.search-form-small {
+  width: 100%;
+  height: 42px;
+  padding-inline: 33px;
+}
+/* #endregion */
+
+/* #region label */
+.search-form__label {
+  width: 100%;
+}
+
+.search-form__label-big::before {
+  content: "";
+  height: 19px;
+  width: 19px;
+  position: absolute;
+  left: 25px;
+  top: 23px;
+  background-image: url("./images/Search.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.search-form__label-small::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  top: 14px;
+  left: 12px;
+  background-image: url("./images/Search.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/* #endregion */
+
+/* #region input */
+.search-form__input {
+  font-family: var(--avenir);
+  width: 100%;
+  border: none;
+  color: var(--main-color);
+  background-color: inherit;
+  outline: 0;
+  font-weight: bold;
+}
+
+.search-form__input:focus {
+  color: var(--main-color);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+
+.search-form__input::placeholder {
+  color: var(--main-color);
+  font-weight: lighter;
+}
+
+.search-form__input-big {
+  height: var(--big-input-height);
+  line-height: var(--big-input-height);
+  font-size: 16px;
+  margin-top: 23px;
+}
+
+.search-form__input-small {
+  height: var(--small-input-height);
+  line-height: var(--small-input-height);
+  font-size: 14px;
+  margin-top: 11px;
+}
+
+/* #endregion */

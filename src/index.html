@@ -12,42 +12,34 @@
   </head>
   <body>
     <form
-      class="form"
       action="#"
       method="post"
+      class="form"
       data-qa="big"
     >
-      <button 
-        type="submit"
-        class="button bigButton"
-      >
-      </button>
-      <input
-        type="text" 
-        name="text"
-        class="input inputBig"
-        placeholder="Try &quot;Los Angeles&quot;"
-        data-qa="keypress"
-      >
+      <label class="search__bar search__element">
+        <div class="search__image"></div>
+
+        <input
+          class="search__item"
+          type="text"
+          placeholder="Try &quot;Los Angeles&quot;"
+          data-qa="keypress"
+        ></input>
+      </label>
     </form>
 
-    <form 
+    <form
       action="#"
       method="post"
+      class="form"
       data-qa="small"
-      class="form smallForm"
     >
-      <button 
-        type="submit"
-        class="button smallButton"
-      >
-      </button>
-      <input 
-        type="text" 
-        name="text"
-        class="input inputSmall"
-        placeholder="Try &quot;Los Angeles&quot;"
-      >
+      <label class="search__bar search__element search__bar--s">
+        <div class="search__image search__image--s"></div>
+        
+        <input class="search__item search__item--s" placeholder="Try &quot;Los Angeles&quot;"></input>
+      </label>
     </form>
   </body>
 </html>

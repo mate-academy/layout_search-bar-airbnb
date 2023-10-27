@@ -27,38 +27,37 @@ html {
 .form__input {
   box-sizing: border-box;
   width: 100%;
+  height: 70px;
   font-family: inherit;
   font-weight: inherit;
-  border: 1 solid var(--border-color);
+  font-size: 16px;
+  padding: 24px 62px 25px;
+
+  background: var(--background-color) url(images/search.svg) no-repeat;
+  background-size: 19px 19px;
+  background-position: 26px 24px;
+  border: 1px solid var(--border-color);
   border-radius: 4px;
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
-  background: var(--background-color) url(images/search.svg) no-repeat;
-}
-
-.form__input--big {
-  height: 70px;
-  font-size: 16px;
-  padding: 24px 63px 25px;
-  background-position: 26px 25px;
-  background-size: 19px 19px;
 }
 
 .form__input--small {
   height: 42px;
   font-size: 14px;
-  padding: 14px 34px 15px;
-  background-position: 13px 15px;
+  padding: 14px 33px 15px;
   background-size: 11px 11px;
+  background-position: 13px 14px;
 }
 
-.form__input--active:hover {
+.form__input:hover {
   box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
 }
 
-.form__input--active:focus {
+.form__input:focus {
   font-weight: 800;
+  border: 1px solid var(--border-color);
   border-radius: 3px;
-  outline-color: var(--border-color);
+  outline: none;
   text-shadow: 0 5px 3px var(--border-color);
 }
 

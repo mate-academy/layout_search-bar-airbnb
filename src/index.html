@@ -11,26 +11,28 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div>
-      <input
-        class="search__barBig search"
-        type="text"
-        id="searchB"
-        name="searchBig"
-        data-qa="big"
-        placeholder="Try &quot;Los Angeles&quot;"
+    <form class="form form__big" data-qa="big">
+      <label class="form__label form__label_big">
+        <input
+          data-qa="keypress"
+          type="text-big"
+          name="text"
+          class="form__input form__input_big"
+          placeholder="Try &quot;Los Angeles&quot;"
         >
-    </div>
+      </label>
+    </form>
 
-    <div>
-      <input
-        class="search__barSmall search"
-        type="text"
-        id="searchS"
-        name="searchBig"
-        data-qa="small"
-        placeholder="Try &quot;Los Angeles&quot;"
+    <form class="form form__small" data-qa="small">
+      <label class="form__label form__label_small">
+        <input
+          data-qa="hover"
+          type="text"
+          name="text-small"
+          class="form__input form__input_small"
+          placeholder="Try &quot;Los Angeles&quot;"
         >
-    </div>
+      </label>
+    </form>
   </body>
 </html>

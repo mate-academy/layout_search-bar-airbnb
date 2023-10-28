@@ -1,30 +1,32 @@
 /*Common*/
+
 body {
   padding: 0;
 }
 
 :root {
   --border: 1px solid #e1e7ed;
-  --font-weight: 400px;
+  --font-weight: 300px;
   --font-size: 16px;
+  --color: #3d4e61;
 }
 
 @font-face {
-  font-family: Averin;
+  font-family: Avenir;
   src: url(fonts/Avenir-Book.ttf);
   font-weight: var(--font-weight);
   font-size: var(--font-size);
 }
 
 @font-face {
-  font-family: Averin__heavy;
+  font-family: Avenir__heavy;
   src: url(fonts/Avenir-Heavy.ttf);
   font-weight: var(--font-weight);
   font-size: var(--font-size);
 }
 
 .search {
-  font-family: Averin, sans-serif;
+  font-family: Avenir, sans-serif;
   border-radius: 4px;
   border: var(--border);
   background-color: #fff;
@@ -34,6 +36,13 @@ body {
 
 .search__barBig {
   display: flex;
+  text-indent: 62px;
+  color: var(--color);
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: var(--font-weight);
+  line-height: normal;
   padding: 0;
   width: 100%;
   height: 70px;
@@ -43,36 +52,35 @@ body {
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
 }
 
-#searchB {
-  text-indent: 62px;
-}
-
 .search__barBig:hover {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .search__barBig:focus {
-  font-family: Averin__heavy, sans-serif;
+  font-family: Avenir__heavy, sans-serif;
   border-radius: 3px;
   border: 1px solid #e1e7ed;
   background-color: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
-/* Small Sewarch Bar */
+/* Small Search Bar */
 
 .search__barSmall {
   display: flex;
+  text-indent: 33px;
+  color: var(--color);
+  font-family: Avenir, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: var(--font-weight);
+  line-height: normal;
   margin-top: 20px;
   padding: 0;
   width: 100%;
   height: 42px;
-  background: url(images/Search.svg) no-repeat 1.5%;
+  background: url(images/Search.svg) no-repeat 1.35%;
   background-size: 11px 11px;
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
-}
-
-#searchS {
-  text-indent: 33px;
 }
 
 .search__barSmall:hover {
@@ -80,7 +88,7 @@ body {
 }
 
 .search__barSmall:focus {
-  font-family: Averin__heavy, sans-serif;
+  font-family: Avenir__heavy, sans-serif;
   border-radius: 3px;
   border: var(--border);
   background-color: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);

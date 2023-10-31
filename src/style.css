@@ -25,15 +25,15 @@
 }
 
 .form:after {
+  display: block;
   position: absolute;
   content: "";
-  display: block;
-}
-
-.form_big:after {
   background-image: url("./images/Search.svg");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.form_big:after {
   width: 19px;
   height: 19px;
   top: 25px;
@@ -41,9 +41,6 @@
 }
 
 .form_small:after {
-  background-image: url("./images/Search.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
   width: 11px;
   height: 11px;
   top: 15px;

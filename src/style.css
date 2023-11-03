@@ -1,6 +1,7 @@
 :root {
   --large_input_height: 70px;
   --small_input_height: 42px;
+  --main-color: #3d4e61;
 }
 
 * {
@@ -55,29 +56,23 @@ body {
   font-size: 16px;
   outline: none;
   flex-shrink: 0;
-  color: #3d4e61;
+  color: var(--main-color);
 }
 
 .search-form__input::placeholder {
-  color: #3d4e61;
+  color: var(--main-color);
 }
 
 .search-form__input_big {
   padding-left: 62px;
-  color: #3d4e61;
+  color: var(--main-color);
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .search-form__input_small {
   padding-left: 33px;
-  color: #3d4e61;
+  color: var(--main-color);
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .search-form__input:hover {

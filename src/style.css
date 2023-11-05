@@ -1,0 +1,42 @@
+@import url("https://fonts.cdnfonts.com/css/avenir");
+
+* {
+  margin: 0;
+  font-weight: 300;
+  font-family: ("Avenir");
+  font-size: 16px;
+}
+
+.search--big,
+.search--small {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.search--big {
+  margin: 20px 0;
+}
+
+.search-icon {
+  margin-right: 5px; /* Відстань між іконкою та полем для вводу */
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  flex: 1;
+
+  color: #3d4e61;
+  font-weight: 400;
+}
+
+.search:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search:focus {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  font-weight: 900;
+}

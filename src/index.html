@@ -11,26 +11,29 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div class="search search--big">
-      <div class="search-icon">
-        <img src="./images/Search.svg" alt="search_icon">
-      </div>
+    <form
+      class="search search--big"
+      data-qa="big"
+    >
+      <label  class="search__icon search__icon--big" for="search--big"></label>
       <input
-        class="search-input"
         type="text"
+        class="search__input search__input--big"
         placeholder="Try &quot;Los Angeles&quot;"
+        data-qa="keypres"
       >
-    </div>
+    </form>
 
-    <div class="search search--small">
-      <div class="search-icon">
-        <img src="./images/Search.svg" alt="search_icon">
-      </div>
+    <form
+      class="search search--small"
+      data-qa="small"
+    >
+      <label  class="search__icon search__icon--small" for="search--small"></label>
       <input
-        class="search-input"
         type="text"
+        class="search__input search__input--small"
         placeholder="Try &quot;Los Angeles&quot;"
       >
-    </div>
+    </form>
   </body>
 </html>

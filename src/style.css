@@ -8,12 +8,17 @@
   src: url("fonts/Avenir-Heavy.ttf");
 }
 
+html {
+  --text-color: #3d4e61;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   font-weight: 300;
+  font-family: "Avenir Book", sans-serif;
 }
 
 .search-bar {
@@ -48,8 +53,8 @@ body {
 }
 
 .input-field {
-  font-family: "Avenir Book", sans-serif;
-  color: #3d4e61;
+  font-family: inherit;
+  color: var(--text-color);
   border: none;
   outline: none;
   padding: 0;
@@ -69,7 +74,7 @@ body {
 }
 
 ::placeholder {
-  color: #3d4e61;
+  color: var(--text-color);
 }
 
 .input-field--focused:focus {

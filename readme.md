@@ -31,13 +31,8 @@ ___
 
 ## Checklist
 
-❗️ Replace `<your_account>` with your Github username and copy the links to `Pull Request` description:
-
-- [DEMO LINK](https://<your_account>.github.io/layout_search-bar-airbnb/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_search-bar-airbnb/report/html_report/)
-
-❗️ Copy this `Checklist` to the `Pull Request` description after links, and put `- [x]` before each point after you
-checked it.
+- [DEMO LINK](https://AndrewEdgers.github.io/layout_search-bar-airbnb/)
+- [TEST REPORT LINK](https://AndrewEdgers.github.io/layout_search-bar-airbnb/report/html_report/)
 
 - [ ] Icon implemented using background-image CSS property
 - [ ] Inputs are written inside of 'form' tag with correctly passed attributes

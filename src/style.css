@@ -23,11 +23,20 @@
 
 html {
   font-family: "Avenir", sans-serif;
+  font-weight: 400;
 }
 
 .search--bar {
   width: 100%;
   margin-top: 20px;
+}
+
+.bars--big {
+  height: 70px;
+}
+
+.bars--small {
+  height: 42px;
 }
 
 .search--bars {
@@ -65,20 +74,24 @@ html {
 }
 
 .search__input {
-  padding: 25px 0 26px 62px;
+  font-family: inherit;
+  border-radius: 4px;
+  padding-left: 62px;
   width: 100%;
+  height: 100%;
   font-size: 16px;
   border: none;
+  line-height: normal;
 }
 
 .search__input:focus {
-  font-family: inherit;
-  font-weight: 600;
+
+  font-weight: 900;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   outline: none;
 }
 
 .input--small {
-  padding: 12px 0 11px 33px;
+  padding-left: 33px;
   font-size: 14px;
 }

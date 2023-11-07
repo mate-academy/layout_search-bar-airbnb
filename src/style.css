@@ -6,13 +6,18 @@
   font-weight: 900;
 }
 
-body {
-  margin: 0;
+:root {
+  --box-shadow-color: rgba(0, 0, 0, 0.25);
+  --hover-box-shadow-color: rgba(61, 78, 97, 0.2);
+  --placeholder-color: rgba(61, 78, 97, 1);
 }
 
 * {
   box-sizing: border-box;
-  padding: 0;
+}
+
+body {
+  margin: 0;
 }
 
 .form {
@@ -26,7 +31,7 @@ body {
 }
 
 .form__search--big:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0, 0.25);
+  box-shadow: 0 4px 4px 0 var(--box-shadow-color);
 }
 
 .form__input--big::placeholder {
@@ -44,12 +49,11 @@ body {
 }
 
 .form__search--small:hover {
-  box-shadow: 0 3px 8px 0 rgba(61,78,97, 0.2);
+  box-shadow: 0 3px 8px 0 var(--hover-box-shadow-color);
 }
 
 .form__input--small::placeholder {
-  color: rgba(61, 78, 97, 1);
-  font-weight: 300;
+  color: var(--placeholder-color);
 }
 
 .form__search {
@@ -69,15 +73,16 @@ body {
 }
 
 .form___icon {
-  background-image: url(images/Search.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
   display: inline-block;
   width: 19px;
   height: 19px;
   margin-left: 26px;
   margin-right: 17px;
   flex-shrink: 0;
+
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .form__icon--small {
@@ -90,6 +95,8 @@ body {
 .form__input {
   font-family: "Avenir", sans-serif;
   font-size: 16px;
+  font-weight: 300;
+  padding: 0;
   border: 0;
   outline: none;
 }

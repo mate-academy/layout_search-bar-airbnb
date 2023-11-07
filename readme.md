@@ -34,7 +34,7 @@ ___
 - [DEMO LINK](https://AndrewEdgers.github.io/layout_search-bar-airbnb/)
 - [TEST REPORT LINK](https://AndrewEdgers.github.io/layout_search-bar-airbnb/report/html_report/)
 
-- [ ] Icon implemented using background-image CSS property
-- [ ] Inputs are written inside of 'form' tag with correctly passed attributes
-- [ ] All `Typical Mistakes` from `BEM` lesson theory are checked.
-- [ ] Code follows all the [Code Style Rules ❗️](./checklist.md)
+- [X] Icon implemented using background-image CSS property
+- [X] Inputs are written inside of 'form' tag with correctly passed attributes
+- [X] All `Typical Mistakes` from `BEM` lesson theory are checked.
+- [X] Code follows all the [Code Style Rules ❗️](./checklist.md)

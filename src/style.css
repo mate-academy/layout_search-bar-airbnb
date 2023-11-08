@@ -5,6 +5,7 @@
   --secondary-shadow: #3d4e611a;
   --top-color: #fff;
   --bottom-color: #f6f6f7;
+  --input-shadow-fix: 4px;
 }
 
 @font-face {
@@ -34,6 +35,8 @@
   font-weight: bold;
   color: var(--text-color);
   text-shadow: 0 4px 4px var(--primary-shadow);
+  line-height: 70px;
+  text-indent: var(--input-shadow-fix);
 }
 
 ::placeholder {
@@ -69,6 +72,7 @@
   padding-left: calc(
     var(--background-position-big)
     + var(--background-size-big)
+    - var(--input-shadow-fix)
     + 17px
   );
 }
@@ -83,6 +87,7 @@
   padding-left: calc(
     var(--background-position-small)
     + var(--background-size-small)
+    - var(--input-shadow-fix)
     + 9px
   );
 }

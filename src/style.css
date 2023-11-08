@@ -78,16 +78,17 @@ body {
 
 /*#region icons*/
 
-#iconBig {
-  background: url(./images/Search.svg);
+.bar__icon {
+  background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
+}
+
+#iconBig {
   background-size: 19px;
   background-position: left 26px top 25px;
 }
 
 #iconSmall {
-  background: url(./images/Search.svg);
-  background-repeat: no-repeat;
   background-size: 11px;
   background-position: left 12px top 14px;
 }
@@ -96,23 +97,21 @@ body {
 
 /*#region placeholder, input */
 
-.big-bar__search[placeholder] {
+input[placeholder] {
   color: var(--text-color);
   font-family: Avenir-book, sans-serif;
   font-weight: 300;
-  font-size: 16px;
   font-style: normal;
   line-height: normal;
+}
+
+.big-bar__search[placeholder] {
+  font-size: 16px;
   padding: 25px 0 26px 62px;
 }
 
 .small-bar__search[placeholder] {
-  color: var(--text-color);
-  font-family: Avenir-book, sans-serif;
-  font-weight: 300;
   font-size: 14px;
-  font-style: normal;
-  line-height: normal;
   padding: 11px 0 12px 33px;
 }
 

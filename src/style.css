@@ -1,0 +1,93 @@
+:root {
+  --border-color: #e1e7ed;
+  --text-color: #3d4e61;
+  --primary-shadow: #00000040;
+  --secondary-shadow: #3d4e611a;
+  --top-color: #fff;
+  --bottom-color: #f6f6f7;
+  --input-shadow-fix: 4px;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("./fonts/Avenir-Book.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("./fonts/Avenir-Heavy.ttf");
+  font-weight: bold;
+}
+
+* {
+  font-family: "Avenir", sans-serif;
+  font-weight: 300;
+}
+
+.search__input {
+  width: 100%;
+  background-image: url("images/Search.svg");
+  background-repeat: no-repeat;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 var(--secondary-shadow);
+  font-weight: bold;
+  color: var(--text-color);
+  text-shadow: 0 4px 4px var(--primary-shadow);
+  line-height: 70px;
+  text-indent: var(--input-shadow-fix);
+}
+
+::placeholder {
+  font-weight: normal;
+  color: var(--text-color);
+  text-shadow: none;
+}
+
+.search__input:hover {
+  box-shadow: 0 4px 4px 0 var(--primary-shadow);
+}
+
+.search__input:focus {
+  outline: none;
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  box-shadow: 0 4px 4px 0 var(--primary-shadow);
+  background-image: url("images/Search.svg"), linear-gradient(to bottom, var(--top-color), var(--bottom-color));
+  background-repeat: no-repeat, repeat;
+}
+
+.search--big {
+  margin: 20px 0;
+}
+
+.search__input--big {
+  --background-position-big: 26px;
+  --background-size-big: 19px;
+  height: 70px;
+  font-size: 16px;
+  background-size: var(--background-size-big);
+  background-position: var(--background-position-big) center;
+  padding-left: calc(
+    var(--background-position-big)
+    + var(--background-size-big)
+    - var(--input-shadow-fix)
+    + 17px
+  );
+}
+
+.search__input--small {
+  --background-position-small: 13px;
+  --background-size-small: 11px;
+  height: 42px;
+  font-size: 14px;
+  background-size: var(--background-size-small);
+  background-position: var(--background-position-small) center;
+  padding-left: calc(
+    var(--background-position-small)
+    + var(--background-size-small)
+    - var(--input-shadow-fix)
+    + 9px
+  );
+}

@@ -1,0 +1,126 @@
+/* #region variables */
+
+body {
+  --search-bar-border: 1px solid #e1e7ed;
+  --text-color: #3d4e61;
+  --box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  --box-shadow-hover: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+  --box-shadow-focus: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+/* #endregion variables */
+
+/* #region body */
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Avenir-book;
+  src: url(./fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: "Avenir-heavy";
+  src: url(./fonts/Avenir-Heavy.ttf);
+}
+
+.container form {
+  margin-top: 20px;
+}
+
+/* #endregion body */
+
+/* #region search-bar */
+
+.big-bar__search {
+  width: 100%;
+  height: 70px;
+  border-radius: 4px;
+  border: var(--search-bar-border);
+  background: #fff;
+  box-shadow: var(--box-shadow);
+}
+
+.big-bar__search:hover {
+  box-shadow: var(--box-shadow-hover);
+}
+
+.big-bar__search:focus {
+  border-radius: 3px;
+  border: var(--search-bar-border);
+  outline: 0;
+  background: var(--box-shadow-focus);
+}
+
+.small-bar__search {
+  width: 100%;
+  height: 42px;
+  border-radius: 4px;
+  border: var(--search-bar-border);
+  background: #fff;
+  box-shadow: var(--box-shadow);
+}
+
+.small-bar__search:hover {
+  box-shadow: var(--box-shadow-hover);
+}
+
+.small-bar__search:focus {
+  border-radius: 3px;
+  border: var(--search-bar-border);
+  outline: 0;
+  background: var(--box-shadow-focus);
+}
+
+/* #endregion search-bar */
+
+/*#region icons*/
+
+.bar__icon {
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+}
+
+#iconBig {
+  background-size: 19px;
+  background-position: left 26px top 25px;
+}
+
+#iconSmall {
+  background-size: 11px;
+  background-position: left 12px top 14px;
+}
+
+/*#endregion icons*/
+
+/*#region placeholder, input */
+
+input[placeholder] {
+  color: var(--text-color);
+  font-family: Avenir-book, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  line-height: normal;
+}
+
+.big-bar__search[placeholder] {
+  font-size: 16px;
+  padding: 25px 0 26px 62px;
+}
+
+.small-bar__search[placeholder] {
+  font-size: 14px;
+  padding: 11px 0 12px 33px;
+}
+
+input[type="search"]:focus {
+  font-family: Avenir-heavy, serif;
+}
+
+input[placeholder]:focus {
+  font-weight: 400;
+}
+
+/* #endregion placeholder, input*/

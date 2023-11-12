@@ -12,30 +12,32 @@
   </head>
   <body>
     <div class="container">
-      <div class="search-bar search-bar--big" data-qa="big">
+      <form action="#" class="form form--big" data-qa="big">
         <a href="#" class="search-bar__logo search-bar__logo--big"></a>
-        <form action="#" class="search-bar__form form">
-          <label for="big-input"></label>
+        <label for="big-input">
           <input
+          name="big-input"
           data-qa="keypress"
           type="search"
           id="big-input"
           class="form__input form__input--big"
-          placeholder="Try &quot;Los Angeles&quot;">
-        </form>
-      </div>
-  
-      <div class="search-bar search-bar--small" data-qa="small">
+          placeholder="Try &quot;Los Angeles&quot;"
+          >
+        </label>
+      </form>
+
+      <form action="#" class="form" data-qa="small">
         <a href="#" class="search-bar__logo"></a>
-        <form action="#" class="search-bar__form form">
-          <label for="small-input"></label>
+        <label for="small-input">
           <input
+          name="small-input"
           id="small-input"
           type="search"
           class="form__input"
-          placeholder="Try &quot;Los Angeles&quot;">
-        </form>
-      </div>
+          placeholder="Try &quot;Los Angeles&quot;"
+          >
+        </label>
+      </form>
     </div> 
   </body>
 </html>

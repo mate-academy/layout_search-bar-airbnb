@@ -25,10 +25,11 @@
   font-family: "Avenir", sans-serif;
   font-weight: 300;
   margin: 0;
+  max-width: 1029px;
 }
 
 .search-bar {
-  margin-top: 20px;
+  margin: 20px 10px 0;
 }
 
 .search-bar__input {
@@ -53,7 +54,8 @@
 }
 
 .search-bar--big .search-bar__input {
-  padding: 24px 0 22px 62px;
+  display: flex;
+  padding: 23px 0 23px 62px;
   font-size: 16px;
   box-sizing: border-box;
 
@@ -62,7 +64,7 @@
 }
 
 .search-bar--small .search-bar__input {
-  padding: 11px 0 10px 33px;
+  padding: 10px 0 10px 33px;
   font-size: 14px;
   box-sizing: border-box;
 
@@ -73,13 +75,13 @@
 .search-bar--big .search-bar__input:focus {
   background-image: url(images/Search.svg),
     linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  background-position: 26px 50%, 0 0;
+  background-position: 24px 0 25px 25px, 0 0;
 }
 
 .search-bar--small .search-bar__input:focus {
   background-image: url(images/Search-small.svg),
     linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  background-position: 13px 50%, 0 0;
+  background-position: 14px 0 15px 12px, 0 0;
 }
 
 .search-bar__input:focus:not(:placeholder-shown) {

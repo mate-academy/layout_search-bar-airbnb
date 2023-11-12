@@ -12,30 +12,32 @@
   </head>
   <body class="container">
 
-    <form class="search-form">
+    <form class="search-bar search-bar--big" data-qa="big">
       
-      <div class="search-bar search-bar--big" data-qa="big">
-        <label for="bigSearch" class="search-bar__label"></label>
-        <input 
-          type="text" 
-          id="bigSearch" 
-          class="search-bar__input" 
-          data-qa="keypress" 
-          placeholder="Try “Los Angeles”"
-          >
-      </div>
-
-      <div class="search-bar search-bar--small" data-qa="small">
-        <label for="smallSearch" class="search-bar__label"></label>
-        <input 
-          type="text" 
-          id="smallSearch" 
-          class="search-bar__input" 
-          placeholder="Los Angeles"
-          >
-      </div>
+      <label for="bigSearch" class="search-bar__label"></label>
+      <input 
+        type="text" 
+        id="bigSearch" 
+        class="search-bar__input" 
+        data-qa="keypress" 
+        placeholder="Try “Los Angeles”"
+      >
 
     </form>
+
+    <form class="search-bar search-bar--small" data-qa="small">
+
+      <label for="smallSearch" class="search-bar__label"></label>
+      <input 
+        type="text" 
+        id="smallSearch" 
+        class="search-bar__input" 
+        placeholder="Los Angeles"
+      >
+
+    </form>
+
+  
 
   </body>
 </html>

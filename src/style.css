@@ -1,5 +1,6 @@
 :root {
   --border-color: #e1e7ed;
+  --gradient-color: #f6f6f7;
   --bg-color: #fff;
   --text-color: #3d4e61;
   --search-icon-big: url(./images/Search.svg) 26px 50% no-repeat;
@@ -45,7 +46,6 @@
 .search-bar__input::placeholder {
   font-family: inherit;
   color: var(--text-color);
-  font-weight: 300;
 }
 
 .search-bar__input:hover {
@@ -76,12 +76,14 @@
 }
 
 .search-bar--big .search-bar__input:focus {
-  background: var(--search-icon-big), linear-gradient(180deg, #fff, #f6f6f7);
+  background: var(--search-icon-big),
+    linear-gradient(180deg, var(--bg-color), var(--gradient-color));
 }
 
 .search-bar--small .search-bar__input:focus {
   color: var(--text-color);
-  background: var(--search-icon-small), linear-gradient(180deg, #fff, #f6f6f7);
+  background: var(--search-icon-small),
+    linear-gradient(180deg, var(--bg-color), var(--gradient-color));
   background-size: 11px;
 }
 

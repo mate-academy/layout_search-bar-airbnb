@@ -10,14 +10,7 @@
   font-weight: 400;
 }
 
-body {
-  margin: 8px;
-  padding: 0;
-}
-
-* {
-  padding: 0;
-  margin: 0;
+html {
   font-weight: 300;
   font-family: Avenir, sans-serif;
   color: #3d4e61;
@@ -28,6 +21,7 @@ body {
   background: #fff;
   margin-top: 20px;
   box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .search-form:hover {
@@ -39,12 +33,10 @@ body {
 }
 
 .form-size-big {
-  border-radius: 4px;
   height: 70px;
 }
 
 .form-size-small {
-  border-radius: 4px;
   height: 42px;
 }
 
@@ -58,13 +50,11 @@ body {
 }
 
 .search-container-big {
-  background-position: 26px 25px;
+  background-position: 25px 24px;
   background-size: 19px 19px;
 }
 
 .search-container-small {
-/* if I set here 13px and 15px as makeup says,
-npm test fail at test #6 */
   background-position: 12px 14px;
   background-size: 11px 11px;
 }
@@ -77,6 +67,8 @@ npm test fail at test #6 */
   border-left: 0;
   border-right: 0;
   border-radius: 4px;
+  padding: 0;
+  font-family: inherit;
 }
 
 .search-bar__big-form {

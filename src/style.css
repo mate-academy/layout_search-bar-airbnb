@@ -7,7 +7,7 @@
 @font-face {
   font-family: Avenir;
   src: url(./fonts/Avenir-Heavy.ttf);
-  font-weight: 400;
+  font-weight: 900;
 }
 
 html {
@@ -33,8 +33,9 @@ html {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.search-form:target {
+.search-form:focus {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
 .form-size-big {
@@ -64,23 +65,23 @@ html {
 .search-bar__big-form {
   margin-left: 62px;
   font-size: 16px;
-  font-style: normal;
+  /* font-style: normal;
   font-weight: 300;
-  line-height: normal;
+  line-height: normal; */
 }
 
 .search-bar__big-form:focus {
-  font-weight: 400;
+  font-weight: 900;
 }
 
 .search-bar__small-form {
   margin-left: 33px;
   font-size: 14px;
-  font-style: normal;
+  /* font-style: normal;
   font-weight: 300;
-  line-height: normal;
+  line-height: normal; */
 }
 
 .search-bar__small-form:focus {
-  font-weight: 400;
+  font-weight: 900;
 }

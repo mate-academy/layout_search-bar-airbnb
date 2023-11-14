@@ -11,7 +11,6 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
 }
 
 :root {
@@ -21,9 +20,7 @@
 }
 
 .form-search {
-  width: calc(100% - 16px);
   margin-top: 20px;
-  margin-left: 8px;
   margin-bottom: 20px;
 }
 
@@ -32,6 +29,7 @@
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
   border-radius: 4px;
   width: 100%;
+  outline: 0;
 
   font-family: Avenir-Heavy, sans-serif;
   text-indent: 5px;
@@ -80,8 +78,6 @@
 }
 
 .search-bar--l__input:focus {
-  outline: 0;
-
   color: var(--text-color);
 
   border-radius: 3px;
@@ -91,7 +87,6 @@
 }
 
 .search-bar--s__input:focus {
-  outline: 0;
   border-radius: 3px;
   border: 1px solid var(--border-color);
   background-color: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);

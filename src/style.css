@@ -1,7 +1,7 @@
 @font-face {
   font-family: Avenir;
   src: url(fonts/Avenir-Book.ttf);
-  font-weight: 400px;
+  font-weight: normal;
 }
 @font-face {
   font-family: Avenir-Heavy;
@@ -9,8 +9,15 @@
   font-weight: bold;
 }
 
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
+}
+
+:root {
+  --box-shadow-color-default: rgba(0, 0, 0, 0.25);
+  --text-color: rgba(61, 78, 97, 1);
+  --border-color: #e1e7ed;
 }
 
 .form-search {
@@ -21,16 +28,14 @@ body {
 }
 
 .search-bar {
-  box-sizing: border-box;
-  border: 1px solid #e1e7ed;
+  border: 1px solid var(--border-color);
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
   border-radius: 4px;
   width: 100%;
 
   font-family: Avenir-Heavy, sans-serif;
-  font-weight: 400;
   text-indent: 5px;
-  color: rgba(61, 78, 97, 1);
+  color: var(--text-color);
 
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
@@ -45,7 +50,7 @@ body {
 
   font-size: 16px;
 
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px var(--box-shadow-color-default);
   line-height: 1000%;
 }
 
@@ -57,7 +62,6 @@ body {
   background-size: 11px;
 
   font-size: 14px;
-  line-height: 15px;
 }
 
 .search-bar--l__input::placeholder,
@@ -67,8 +71,8 @@ body {
 }
 
 .search-bar--l__input:hover {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  color: rgba(61, 78, 97, 1);
+  box-shadow: 0 4px 4px 0 var(--box-shadow-color-default);
+  color: var(--text-color);
 }
 
 .search-bar--s__input:hover {
@@ -78,17 +82,17 @@ body {
 .search-bar--l__input:focus {
   outline: 0;
 
-  color: rgba(61, 78, 97, 1);
+  color: var(--text-color);
 
   border-radius: 3px;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 4px 0 var(--box-shadow-color-default);
   background-color: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
 .search-bar--s__input:focus {
   outline: 0;
   border-radius: 3px;
-  border: 1px solid #e1e7ed;
+  border: 1px solid var(--border-color);
   background-color: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }

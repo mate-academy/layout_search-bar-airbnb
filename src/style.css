@@ -12,7 +12,7 @@
 
 body {
   margin: 0;
-  padding: 0 10px 0 8px;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -27,10 +27,10 @@ body {
 .big input {
   margin: 20px 0;
   height: 68px;
+  padding-left: 62px;
 }
 
 .big input::placeholder {
-  padding-left: 62px;
   font-size: 15px;
   font-weight: 400;
 }
@@ -42,18 +42,18 @@ body {
 
 .big img {
   position: absolute;
-  top: 41%;
+  top: 3%;
   left: 26px;
 }
 
 .small input {
+  padding-left: 33px;
   height: 40px;
 }
 
 .small input::placeholder {
   font-size: 13px;
   font-weight: 400;
-  padding-left: 33px;
 }
 
 .small img {
@@ -71,6 +71,7 @@ body {
 
 .big input:focus,
 .small input:focus {
+  outline: none;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   font-weight: 900;
   background: linear-gradient(to bottom, #fff, #f6f6f7);

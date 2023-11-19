@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8">
     <meta
@@ -13,23 +13,26 @@
   <body>
 
     <form
-      class="search__form search__form--big"
+      class="search__form"
       method="post"
       data-qa="big"
     >
+      <img
+        src="./images/Search.svg"
+        alt="search"
+        class="icon">
       <label
         for="biginput"
-        class="search__label"
-      ></label>
-
-      <input
-        class="search__input"
-        type="text"
-        id="biginput"
-        name="biginput"
-        data-qa="keypress"
-        placeholder="Try &quot;Los Angeles&quot;"
       >
+        <input
+          class="search__input"
+          type="text"
+          id="biginput"
+          name="biginput"
+          data-qa="keypress"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
     </form>
 
     <form
@@ -37,19 +40,21 @@
       method="post"
       data-qa="small"
     >
+      <img
+        src="./images/Search.svg"
+        alt="search"
+        class="icon icon--small">
       <label
         for="smallinput"
-        class="search__label search__label--small"
-      ></label>
-
-      <input
-        class="search__input search__input--small"
-        type="text"
-        id="smallinput"
-        name="smallinput"
-        placeholder="Try &quot;Los Angeles&quot;"
       >
+        <input
+          class="search__input search__input--small"
+          type="text"
+          id="smallinput"
+          name="smallinput"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
     </form>
-
   </body>
 </html>

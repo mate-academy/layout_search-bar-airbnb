@@ -9,12 +9,16 @@
   src: url(./fonts/Avenir-Book.ttf);
 }
 
+:root {
+  --grey-color: #3d4e61;
+}
+
 .search-form {
   display: flex;
   width: 100%;
   margin-top: 20px;
   font-family: "Avenir", sans-serif;
-  color: #3d4e61;
+  color: var(--grey-color);
 }
 
 .search-label {
@@ -43,7 +47,7 @@
   height: 70px;
   font-family: inherit;
   padding-left: 62px;
-  color: #3d4e61;
+  color: var(--grey-color);
   font-size: 16px;
   border: 1px solid #e1e7ed;
   background: #fff;
@@ -57,7 +61,7 @@
   padding-left: 33px;
   font-family: inherit;
   font-size: 14px;
-  color: #3d4e61;
+  color: var(--grey-color);
   border: 1px solid #e1e7ed;
   background: #fff;
   border-radius: 4px;
@@ -65,7 +69,7 @@
 
 .search-form__input::placeholder,
 .search-form__input__small::placeholder {
-  color: #3d4e61;
+  color: var(--grey-color);
 }
 
 .search-form__input:focus::placeholder {
@@ -80,7 +84,6 @@
 .search-form__input:focus {
   font-weight: 900;
   border-radius: 3px;
-  font-style: normal;
   text-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
@@ -100,7 +103,7 @@
 }
 
 .search-form__input__small:hover {
-  color: #3d4e61;
+  color: var(--grey-color);
   box-shadow: 0 1px 8px gray;
   text-shadow: none;
 }

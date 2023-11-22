@@ -1,9 +1,14 @@
 @font-face {
   font-family: "Avenir";
-  src: local("Avenir"),
-    url("fonts/Avenir-Book.ttf") format("ttf"),
-    url("fonts/Avenir-Heavy.ttf") format("ttf"),
-    url("fonts/Avenir.ttc") format("ttc");
+  font-weight: 300;
+  font-style: normal;
+  src: url("./fonts/Avenir-Book.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Avenir";
+  font-weight: 600;
+  font-style: normal;
+  src: url("./fonts/Avenir-Heavy.ttf") format("truetype");
 }
 
 :root {
@@ -66,6 +71,7 @@ form {
 }
 
 .big-bar__search[type="search"]:focus {
+  outline: none;
   border-radius: 3px;
   border: var(--main-border);
   font-weight: 400;
@@ -106,9 +112,10 @@ form {
   text-shadow: none;
 }
 
-.small-bar__search[type="search"]:focus {
+.small-bar__search:focus {
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   text-shadow: none;
   color: #3d4e61;
   font-weight: 900;
+  outline: none;
 }

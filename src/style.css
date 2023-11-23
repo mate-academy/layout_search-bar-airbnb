@@ -1,14 +1,20 @@
 @font-face {
-  font-family: "Avenir";
+  font-family: "Avenir", sans-serif;
   font-weight: 300;
   font-style: normal;
   src: url("./fonts/Avenir-Book.ttf") format("truetype");
 }
+
 @font-face {
-  font-family: "Avenir";
+  font-family: "Avenir", sans-serif;
   font-weight: 600;
   font-style: normal;
   src: url("./fonts/Avenir-Heavy.ttf") format("truetype");
+}
+
+html {
+  font-family: "Avenir", sans-serif;
+  font-weight: 300;
 }
 
 :root {
@@ -24,18 +30,9 @@
   margin: 0;
 }
 
-html {
-  font-family: "Avenir-Book", sans-serif;
-  font-weight: 300;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-}
-
 form {
   margin-left: 15px;
+  font-family: "Avenir", sans-serif;
 }
 
 .big-bar[data-qa] {
@@ -50,31 +47,32 @@ form {
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
 }
 
-.big-bar__search[type="search"][data-qa] {
+.big-bar__search[data-qa] {
+  font-family: "Avenir", sans-serif;
+  font-weight: 300;
   border: none;
   box-shadow: none;
   height: 100%;
   font-size: 16px;
-  font-weight: 400;
   width: var(--main-width);
   padding-left: 62px;
   background: transparent url("images/Search.svg") no-repeat 26px center;
 }
 
-.big-bar__search[type="search"]::placeholder {
+.big-bar__search::placeholder {
   background: transparent;
   color: #3d4e61;
 }
 
-.big-bar__search[type="search"]:hover {
+.big-bar__search:hover {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.big-bar__search[type="search"]:focus {
+.big-bar__search:focus {
   outline: none;
   border-radius: 3px;
   border: var(--main-border);
-  font-weight: 400;
+  font-weight: 600;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
@@ -90,24 +88,25 @@ form {
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.small-bar__search[type="search"] {
+.small-bar__search {
+  font-family: "Avenir", sans-serif;
+  font-weight: 300;
   border: none;
   box-shadow: none;
   height: 100%;
   font-size: 14px;
-  font-weight: 400;
   width: var(--main-width);
   padding-left: 33px;
   background: transparent url("images/Search.svg") no-repeat 13px center;
   background-size: 11px;
 }
 
-.small-bar__search[type="search"]::placeholder {
+.small-bar__search::placeholder {
   background: transparent;
   color: #3d4e61;
 }
 
-.small-bar__search[type="search"]:hover {
+.small-bar__search:hover {
   box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
   text-shadow: none;
 }
@@ -116,6 +115,6 @@ form {
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   text-shadow: none;
   color: #3d4e61;
-  font-weight: 900;
+  font-weight: 600;
   outline: none;
 }

@@ -5,6 +5,9 @@
 :root {
   --color: #3d4e61;
   --border-color: #e1e7ed;
+  --main-bg-color: #fff;
+  --main-bs-color: #3d4e611a;
+  --main-bsh--color: #3d4e6133;
 }
 
 html {
@@ -30,16 +33,16 @@ html {
   height: 70px;
   border-radius: 4px;
   border: 1px solid var(--border-color);
-  background-color: #fff;
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  background-color: var(--main-bg-color);
+  box-shadow: 0 1px 8px 0 var(--main-bs-color);
 }
 
 .form-small {
   height: 42px;
   border-radius: 3px;
   border: 1px solid var(--border-color);
-  background-color: #fff;
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  background-color: var(--main-bg-color);
+  box-shadow: 0 1px 8px 0 var(--main-bs-color);
 }
 
 .input::placeholder {
@@ -100,7 +103,7 @@ html {
 }
 
 .label:hover {
-  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+  box-shadow: 0 3px 8px 0 var(--main-bsh-color);
 }
 
 .input-big:focus,

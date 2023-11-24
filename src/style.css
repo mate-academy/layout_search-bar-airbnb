@@ -1,1 +1,129 @@
-/* add styles here */
+:root {
+  --text-color:  #3d4e61;
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 300;
+  font-style: normal;
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 600;
+  font-style: normal;
+  src: url(fonts/Avenir-Heavy.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Avenir, sans-serif;
+}
+
+body {
+  margin-top: 0;
+}
+
+.form{
+  display: flex;
+  justify-content: center;
+}
+
+.form,
+.search--bar {
+  width: 100%;
+}
+
+.label {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.label::after {
+ background-image: url(images/Search.svg);
+ background-repeat: no-repeat;
+ background-size: contain;
+ content: "";
+ display: block;
+ position: absolute;
+
+}
+
+.label__big::after {
+  width: 19px;
+  height: 19px;
+  top: 25px;
+  left: 26px;
+}
+
+.form:first-child {
+  margin: 20px auto 0;
+}
+
+
+.big {
+  border-radius: 4px;
+  border: 1px solid #e1E7ed;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  padding-left: 62px;
+  color: var(--text-color);
+  font-weight: 300;
+  font-size: 16px;
+  height: 70px;
+}
+
+.big::placeholder {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.big:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.big:focus {
+  font-weight: 600;
+  border-radius: 3px;
+  border: 1px solid #e1e7ed;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+
+.small {
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  padding-left: 33px;
+  font-size: 14px;
+  font-weight: 300;
+  height: 42px;
+  color: var(--text-color);
+}
+
+.form:nth-child(2) {
+  margin-top: 20px;
+}
+
+.label__small::after {
+  width: 11px;
+  height: 11px;
+  top: 15px;
+  left: 13px;
+}
+
+.small::placeholder {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.small:focus {
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 19px;
+  border-radius: 3px;
+  border: 1px solid #e1e7ed;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+

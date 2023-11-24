@@ -1,3 +1,4 @@
+<!-- #region page -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -10,7 +11,27 @@
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
   </head>
+  <!-- #endregion -->
   <body>
-    <h1>Search bar airbnb</h1>
+    <form data-qa="big" class="form form--big">
+      <label class="label label__big">
+        <input
+          type="text"
+          class="search--bar big"
+          placeholder="Try &#34Los Angeles&#34"
+          data-qa="keypress"
+        >
+      </label>
+    </form>
+
+    <form data-qa="small" class="form form--small">
+      <label class="label label__small">
+        <input
+          type="text"
+          class="search--bar small"
+          placeholder="Try &#34Los Angeles&#34"
+        >
+      </label>
+    </form>
   </body>
 </html>

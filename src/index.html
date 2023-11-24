@@ -9,8 +9,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+
+
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <div class="search">
+      <div class="search-bar" data-qa="big">
+        <img class="search-logo__big" src="./images/Search.svg"
+        alt="Search">
+        <input type="text" placeholder="Try “Los Angeles”"
+        class="bar big-bar">
+      </div>
+
+      <div class="search-bar" data-qa="small">
+        <img class="search-logo__small" src="./images/Search.svg"
+         alt="Search">
+        <input class="bar small-bar"
+         type="text" placeholder="Try “Los Angeles”" >
+      </div>
+    </div>
   </body>
 </html>

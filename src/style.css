@@ -1,5 +1,5 @@
 @font-face {
-  font-family: Avenir;
+  font-family: Avenir, sans-serif;
   src: url(fonts/Avenir.ttc);
 }
 
@@ -42,16 +42,18 @@
 }
 
 .search__input {
+  font-family: "Avenir", sans-serif;
   width: 100%;
   padding-left: 62px;
   border: none;
   height: 100%;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
+  color: #3d4e61;
 }
 
 .search__input:hover {
-  border-radius: 3px;
+  border-radius: 4px;
   border: 1px solid #e1e7ed;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
@@ -59,7 +61,7 @@
 .search__input:focus {
   width: 100%;
   outline: none;
-  border-radius: 3px;
+  border-radius: 4px;
   border: 1px solid #e1e7ed;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
@@ -77,4 +79,6 @@
 
 .small__input {
   padding-left: 33px;
+  font-size: 14px;
+  font-weight: 900;
 }

@@ -17,12 +17,16 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Avenir", sans-serif;
+}
+
 :root {
   --border-sol-col: 1px solid #e1e7ed;
+  --bg-color-form: #fff;
 }
 
 .form {
-  font-family: "Avenir", sans-serif;
   display: flex;
   align-items: center;
   margin-top: 20px;
@@ -31,7 +35,7 @@
   font-size: 16px;
   border-radius: 4px;
   border: var(--border-sol-col);
-  background: #fff;
+  background: var(--bg-color-form);
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
 }
 
@@ -66,7 +70,6 @@
   border: none;
   height: 100%;
   font-size: 16px;
-  font-weight: 400;
   color: #3d4e61;
 }
 

@@ -15,6 +15,13 @@ body {
   src: url(fonts/Avenir-Book.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "AvenirS";
+  font-weight: 300;
+  font-style: normal;
+  src: url(fonts/Avenir-Heavy.ttf) format("truetype");
+}
+
 .search-form {
   display: flex;
   justify-content: center;
@@ -76,8 +83,13 @@ body {
 
 .search-form__input-big:focus,
 .search-form__input_small:focus {
+  font-family: "AvenirS", serif;
   border-radius: 3px;
   font-weight: 900;
   outline: none;
   border: 1px solid hsl(210, 25%, 91%);
+}
+
+::placeholder {
+  color: hsl(212, 23%, 31%);
 }

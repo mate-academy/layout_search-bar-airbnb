@@ -1,17 +1,19 @@
 /* add styles here */
 @font-face {
   font-family: Avenir;
-  src: url(fonts/Avenir.ttc);
+  src: url(fonts/Avenir.ttc)
 }
 
 @font-face {
-  font-family: Avenir-Book;
-  src: url(fonts/Avenir-Book.ttf)
+  font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf);
+  font-weight: 400;
 }
 
 @font-face {
-  font-family: Avenir-Heavy;
+  font-family: Avenir;
   src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: 600;
 }
 
 html {
@@ -22,7 +24,6 @@ html {
   --text-color: #3D4E61;
 
   padding: 0;
-  font-weight: 300;
   color: var(--text-color);
   font-family: Avenir, sans-serif;
 }
@@ -42,15 +43,17 @@ html {
   outline: none;
   border: none;
   padding: 0;
+  font-family: inherit;
+  font-weight: 400;
 }
 
 .key::placeholder {
   color: var(--text-color);
-  font-family: Avenir-Book, sans-serif;
+  font-weight: 400;
 }
 
 .key:focus {
-  font-family: Avenir-Heavy, sans-serif;
+  font-weight: 600;
 }
 
 .search:hover {
@@ -82,6 +85,7 @@ html {
 
 .key--big::placeholder {
   font-size: 16px;
+  font-weight: 400;
 }
 
 .search--small-image {

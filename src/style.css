@@ -13,7 +13,6 @@
   border: 1px solid #E1E7ED;
   background: #FFF;
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
-  box-sizing: border-box;
   align-items: center;
   transition: box-shadow 0.3s ease;
 }
@@ -23,11 +22,9 @@
   border: none;
   padding: 0;
   font-weight: 300;
-  color: #3D4E61;
-  font-family: Avenir, sans-serif;
 }
 
-.key::placeholder {
+.key, .key::placeholder {
   color: #3D4E61;
   font-family: Avenir, sans-serif;
 }
@@ -97,4 +94,8 @@ figure {
 
 .key--small::placeholder {
   font-size: 14px;
+}
+
+* {
+  box-sizing: border-box;
 }

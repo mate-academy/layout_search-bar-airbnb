@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
     <meta
@@ -9,17 +10,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fonts.css">
   </head>
+
   <body>
-
-    <form class="search search--big" data-qa="big">
-      <input placeholder="Try “Los Angeles”" data-qa="keypress">
+    <form class="search search-big" data-qa="big">
+      <input
+        class="search__search-bar"
+        placeholder="Try “Los Angeles”"
+        data-qa="keypress"
+      >
     </form>
-
-    <form class="search search--small" data-qa="small">
-
-      <input placeholder="Try “Los Angeles”">
+    <form class="search search-small" data-qa="small">
+      <input placeholder="Try “Los Angeles”" class="search__search-bar">
     </form>
-
   </body>
+
 </html>

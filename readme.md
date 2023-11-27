@@ -10,7 +10,7 @@ ___
 ### Requirements:
 - use images from [src/images](src/images)
 - there must be two search bars
-- search bar must have width 100%
+- search bar must stretch the full width
 - distance between two search bars must be 20px
 - the big search bar must have top indent 20px
 - follow styles from the mock

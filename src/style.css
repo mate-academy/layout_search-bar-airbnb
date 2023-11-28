@@ -21,7 +21,8 @@ html {
   font-size: 16px;
 }
 
-input {
+.input-big input,
+.input-small input {
   width: 100%;
   height: 70px;
   display: flex;
@@ -37,29 +38,14 @@ input {
   color: inherit;
 }
 
-input:hover {
-  border-radius: 4px;
-  border: 1px solid #e1e7ed;
-  background: #fff;
-  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
-}
-
-input:focus {
-  font-weight: 800;
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border-radius: 3px;
-  border: 1px solid #e1e7ed;
-  outline: none;
-}
-
-.search-form-big input {
+.input-big input {
   background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
   object-position: center;
   background-position: 26px;
 }
 
-.search-form-small input {
+.input-small input {
   height: 42px;
   background-size: 14px;
   background-image: url(./images/Search.svg);
@@ -67,9 +53,28 @@ input:focus {
   background-position: 13px 15px;
   padding-left: 33px;
   font-size: 14px;
+  color: #3d4e61;
 }
 
-input::placeholder {
+.input-big input:hover,
+.input-small input:hover {
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  background: #fff;
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.input-big input:focus,
+.input-small input:focus {
+  font-weight: 800;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+  border: 1px solid #e1e7ed;
+  outline: none;
+}
+
+.input-big input::placeholder,
+.input-small input::placeholder {
   font-weight: 300;
   color: #3d4e61;
 }

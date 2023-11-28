@@ -1,14 +1,20 @@
+@font-face {
+  font-family: Avenir;
+  font-weight: 300;
+  src: url("./fonts/Avenir-Book.ttf");
+}
+
 .search {
   width: 100%;
 }
 
 .search-bar {
   display: flex;
-  margin: 20px 0;
+  box-sizing: border-box;
   position: relative;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 20px;
+  margin: 20px 0;
   border-radius: 4px;
   border: 1px solid #E1E7ED;
   background: #FFF;
@@ -22,11 +28,9 @@
   border-radius: 5px;
 }
 
-
 .bar::placeholder {
-  font-family: "Roboto ", sans-serif;
+  font-family: Avenir, sans-serif;
   color: #3D4E61;
-  font-weight: 400;
 }
 
  .big-bar::placeholder {
@@ -38,7 +42,7 @@
 }
 
 .big-bar {
-  height: 70px;
+  height: 68px;
   margin-left: 17px;
   margin-top: 25px;
   margin-bottom: 26px;
@@ -54,7 +58,7 @@
 }
 
 .small-bar {
-  height: 37px;
+  height: 38px;
   margin-left: 9px;
   margin-top: 12px;
   margin-bottom: 11px;
@@ -83,5 +87,5 @@
 
 [data-qa="small"] {
   width: 100%;
-  height: 38px;
+  height: 42px;
 }

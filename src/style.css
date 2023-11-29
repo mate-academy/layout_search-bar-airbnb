@@ -30,6 +30,7 @@ body {
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.10);
   border: 1px #E1E7ED solid;
   border-radius: 4px;
+  background: #fff;
   background-image: url("./images/Search.svg");
   background-repeat: no-repeat;
   background-position: 26px;
@@ -51,6 +52,15 @@ body {
 .search-form__input:focus {
   border-radius: 3px;
   font-weight: 700;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: url("./images/Search.svg") no-repeat 26px,
+    linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
   outline: none;
+}
+
+.search-form__input--small:focus {
+  background: url("./images/Search.svg") no-repeat 12px 14px / 11px,
+    linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+  text-shadow: none;
 }
 

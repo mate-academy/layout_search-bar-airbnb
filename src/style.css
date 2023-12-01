@@ -1,1 +1,64 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir.ttc);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.search-bar {
+  margin-top: 20px;
+}
+
+.search-bar__input {
+  width: 100%;
+  padding: 27px 62px 26px;
+
+  border-radius: 3px;
+  border: 1px solid #E1E7ED;
+
+  background-position: 25px center;
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-color: #FFF;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
+}
+
+.search-bar__input:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search-bar__input:focus {
+  outline: none;
+
+  font-family: Avenir, serif;
+  font-weight: 900;
+  font-size: 16px;
+
+  background-color: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.search-bar__input::placeholder {
+  font-family: Avenir, serif;
+  font-weight: 400;
+  font-size: 16px;
+
+  color: #3D4E61;
+}
+
+.search-bar__input--small {
+  padding: 12px 33px 13px;
+  background-size: 11px;
+  background-position: 12px center;
+}
+
+.search-bar__input--small::placeholder {
+  font-size: 14px;
+}
+
+.search-bar__input--small:focus {
+  font-size: 14px;
+}

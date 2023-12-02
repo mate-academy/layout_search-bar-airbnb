@@ -1,1 +1,74 @@
-/* add styles here */
+@font-face {
+  font-family: Roboto;
+  src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+}
+
+.search-form {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.search-label {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.search-form__input__big,
+.search-form__input__small {
+ width: 100%;
+ font-weight: 300;
+ border: 1px solid #e1e7ed;
+ border-radius: 4px;
+ outline: none;
+}
+
+.search-form__input__big {
+  padding-left: 62px;
+  height: 70px;
+}
+
+.search-form__input__small {
+  display: flex;
+  padding-left: 33px;
+  height: 42px;
+}
+
+.search-label::before {
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  position: absolute;
+}
+
+.search-label__big::before {
+  top: 25px;
+  left: 26px;
+  width: 19px;
+  height: 19px;
+}
+
+.search-label__small::before {
+  width: 11px;
+  height: 11px;
+  top: 15px;
+  left: 13px;
+}
+
+.search-form:hover {
+  box-shadow: 0 3px 8px  rgba(61, 78, 97, 0.2);
+}
+
+.search-form__input__big:focus {
+  background: linear-gradient(#fff, #f6f6f7);
+}
+
+.search-form__input__big:focus:not(:placeholder-shown) {
+  font-weight: bold;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.search-form__input__small:focus:not(:placeholder-shown) {
+  font-weight: bold;
+}

@@ -1,1 +1,78 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir.ttc);
+}
+
+@font-face {
+  font-family: Avenir-heavy;
+  src: url(fonts/Avenir-Heavy.ttf);
+}
+
+body {
+  margin: 0;
+  font-family: Avenir, serif;
+  font-weight: 300;
+}
+
+.search {
+  font-family: Avenir, serif;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #E1E7ED;
+  color: #3D4E61;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
+}
+
+.search:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search:active {
+  font-family: Avenir-heavy, serif;
+}
+
+.search--big {
+  height: 70px;
+  padding: 0 26px;
+  gap: 17px;
+  margin-top: 20px;
+}
+
+.search--small {
+  height: 42px;
+  gap: 9px;
+  margin-top: 20px;
+  padding: 0 13px;
+}
+
+.search__lupe {
+  background-image: url(images/Search.svg);
+}
+
+.search__lupe-big {
+  width: 19px;
+  height: 19px;
+}
+
+.search__lupe-small {
+  width: 11px;
+  height: 11px;
+  background-size: contain;
+}
+
+.search__input {
+  outline: none;
+  border: none;
+  font-weight: 400;
+}
+
+.search__input-big {
+  font-size: 16px;
+}
+
+.search__input-small {
+  font-size: 14px;
+}

@@ -1,1 +1,109 @@
 /* add styles here */
+@font-face {
+  font-family: Avenir;
+  src:
+    url(./fonts/Avenir-Book.ttf),
+    url(./fonts/Avenir-Heavy.ttf);
+  font-style: normal;
+  font-weight: 300, 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+
+  --text-placholder-color: #3D4E61;
+  --border-color: #E1E7ED;
+  --bg-color: #fff;
+}
+
+input {
+  padding: 0;
+  border: transparent;
+}
+
+.page__search {
+  margin-top: 20px;
+}
+
+.search-bar {
+  position: relative;
+}
+
+.search-bar__text-input {
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-color);
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
+
+  font-family: Avenir, sans-serif;
+  color: var(--text-placholder-color);
+  font-weight: normal;
+  line-height: 19px;
+  font-size: 14px;
+}
+
+.search-bar__text-input::placeholder {
+  font-weight: normal;
+}
+
+.search-bar__text-input--big {
+  padding-top: 24px;
+  padding-left: 61px;
+  padding-bottom: 25px;
+  width: 100%;
+}
+
+.search-bar__text-input--small {
+  padding-top: 10px;
+  padding-bottom: 11px;
+  padding-left: 32px;
+  width: 100%;
+
+  font-weight: normal;
+}
+
+.search-bar__text-input:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.20);
+}
+
+.search-bar__text-input:focus {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+}
+
+
+.search-bar--big::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 26px;
+  top: 25px;
+
+  background-image: url('./images/Search.svg');
+  width: 19px;
+  height: 19px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.search-bar--small::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 13px;
+  top: 15px;
+
+  background-image: url('./images/Search.svg');
+  width: 11px;
+  height: 11px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

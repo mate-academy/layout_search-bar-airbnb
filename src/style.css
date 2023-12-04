@@ -1,7 +1,6 @@
 @font-face {
   font-family: Avenir;
   src: url(./fonts/Avenir-Book.ttf);
-  font-weight: 300;
 }
 
 @font-face {
@@ -11,7 +10,7 @@
 }
 
 html, body {
-  font-family: Avenir, serif;
+  font-family: Avenir, sans-serif;
 }
 
 .search {
@@ -23,13 +22,14 @@ html, body {
   border: 1px solid #E1E7ED;
   background: #FFF;
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
-  color: #3D4E61;
 }
 
 .search__input {
   width: 100%;
   border: none;
   outline: none;
+  font-weight: 300;
+  color: #3D4E61;
 }
 
 .search__icon {
@@ -53,9 +53,15 @@ html, body {
 }
 
 [data-qa="big"]
+.search {
+  height: 70px;
+}
+
+[data-qa="big"]
 .search__input {
-  padding: 25px 0 25px 62px;
-  font-size: 16px;
+  padding: 25px 0 26px 63px;
+  font-size: 15px;
+  letter-spacing: 0.50px;
 }
 
 [data-qa="big"]
@@ -66,10 +72,15 @@ html, body {
   top: 24px;
 }
 
+[data-qa="small"]
+.search {
+  height: 42px;
+}
+
 
 [data-qa="small"]
 .search__input {
-  padding: 12px 12px 12px 33px;
+  padding: 11px 12px 13px 33px;
   font-size: 14px;
 }
 

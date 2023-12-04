@@ -11,52 +11,33 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-
     <form
-      class="search search--big"
-      method="post"
+      action="#"
+      class="search-form search-form--big"
       data-qa="big"
     >
-
-      <label for="big-input"></label>
-
-      <img
-        src="images/Search.svg"
-        alt="search-image-big"
-        class="search__image search__image--big"
-      >
-      </img>
-
-      <input
-        type="text"
-        class="search__input search__input--big"
-        placeholder="Try &quot;Los Angeles&quot;"
-        data-qa="keypress"
-        id="big-input"
-      >
+      <label class="search-form__label">
+        <input
+          type="text"
+          class="search-form__input"
+          placeholder="Try &quot;Los Angeles&quot;"
+          data-qa="keypress"
+        >
+      </label>
     </form>
 
     <form
-      class="search search--small"
-      method="post"
+      action="#"
+      class="search-form search-form--small"
       data-qa="small"
     >
-
-      <label for="small-input"></label>
-
-      <img
-        src="images/Search.svg"
-        alt="search-image-small"
-        class="search__image search__image--small"
-      >
-    </img>
-
-      <input
-        type="text"
-        class="search__input search__input--small"
-        placeholder="Try &quot;Los Angeles&quot"
-        id="small-input"
-      >
+      <label class="search-form__label search-form__label--small">
+        <input
+          type="text"
+          class="search-form__input search-form__input--small"
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
     </form>
   </body>
 </html>

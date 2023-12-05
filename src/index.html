@@ -11,33 +11,21 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form class="search search--big" data-qa="big">
-      <img
-        class="search__lupe search__lupe-big"
-        src="images/Search.svg"
-        alt="lupe"
-      >
+    <form class="search-form" data-qa="big">
       <input
-        class="search__input search__input-big"
         type="text"
+        class="search-form__input"
+        placeholder="Try “Los Angeles”"
         data-qa="keypress"
-        placeholder="Try &#34;Los Angeles&#34;"
       >
     </form>
 
-    <form class="search search--small" data-qa="small">
-      <img
-        class="search__lupe search__lupe-small"
-        src="images/Search.svg"
-        alt="lupe"
-      >
+    <form class="search-form search-form--small" data-qa="small">
       <input
         type="text"
-        class="search__input search__input-small"
-        data-qa="keypress"
-        placeholder="Try &#34;Los Angeles&#34;"
+        class="search-form__input search-form__input--small"
+        placeholder="Try “Los Angeles”"
       >
     </form>
   </body>
 </html>
-

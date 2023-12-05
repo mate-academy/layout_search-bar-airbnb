@@ -13,11 +13,12 @@
 html {
   --place-holder-color: #3D4E61;
   --border-color: #E1E7ED;
+  --white-color: #FFF;
 
+
+  font-family: Avenir, Helvetica, sans-serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 300;
-  line-height: normal;
 }
 
 .search-bar {
@@ -27,7 +28,7 @@ html {
 
 .search-bar:hover {
   border-radius: 4px;
-  background: #FFF;
+  background: var(--white-color);
   box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.20);
 }
 
@@ -58,17 +59,20 @@ html {
   height: 70px;
   padding-left: 62px;
   color: var(--place-holder-color);
-  font-family: Avenir, Helvetica, sans-serif;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 400;
 }
 
 .search-bar::before {
   z-index: 1;
+
   content: '';
+
+  position: absolute;
+  
   background-size: contain;
   background-image: url(images/Search.svg);
-  position: absolute;
 }
 
 .search-bar--small input{

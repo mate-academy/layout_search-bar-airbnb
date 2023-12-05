@@ -1,1 +1,100 @@
-/* add styles here */
+@font-face {
+  font-family: AvenirBook;
+  src: url(./fonts/Avenir-Book.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: 300;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: Avenir, Helvetica, sans-serif;
+}
+
+.sch-bar {
+  position: relative;
+  margin-top: 20px;
+}
+
+.sch-bar:hover {
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.20);;
+}
+
+.sch-bar__input {
+  width: 100%;
+  position: relative;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: Avenir, Helvetica, sans-serif;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+  color: #3d4e61;
+  font-size: 14px;
+}
+
+.sch-bar__input:focus {
+  border-radius: 3px;
+  outline: none;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.sch-bar__input::placeholder{
+  color: #3d4e61;
+  font-weight: 300;
+  font-family: AvenirBook, Helvetica, sans-serif;
+}
+
+.sch-bar--big input{
+  height: 70px;
+  font-size: 16px;
+  font-family: inherit;
+  padding-left: 62px;
+  font-weight: 400;
+  color: #3d4e61;
+}
+
+.sch-bar--small input{
+  height: 42px;
+  font-size: 14px;
+  padding-left: 33px;
+}
+
+.sch-bar--small::before{
+  background: url(/src/images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  display: inline-block;
+  z-index: 1;
+  content: "";
+  width: 11px;
+  height: 11px;
+  top: 15px;
+  left: 13px;
+}
+
+.sch-bar--big::before{
+  background: url(/src/images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  display: inline-block;
+  z-index: 1;
+  content: "";
+  width: 19px;
+  height: 19px;
+  top: 25px;
+  left: 26px;
+}
+

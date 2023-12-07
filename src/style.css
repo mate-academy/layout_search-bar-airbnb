@@ -67,6 +67,10 @@ html {
   background-color: var(--wite);
 }
 
+.search__button:active {
+  background-color: linear-gradient(180deg, var(--wite) 0%, var(--bg-color) 100%);
+}
+
 .search__button--big {
   margin-right: 18.5px;
   width: 19px;
@@ -93,22 +97,22 @@ html {
   width: 100%;
 }
 
-.search__input:focus, .search__input:active {
+.search__input:focus {
   outline: 0;
+}
+
+.search__input:active {
+  background: linear-gradient(180deg, var(--wite) 0%, var(--bg-color) 100%);
 }
 
 .search__input--big {
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .search__input--small {
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .search__input::placeholder {

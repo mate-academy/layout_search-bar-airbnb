@@ -42,14 +42,6 @@ html {
   box-shadow: 0 4px 4px 0 #00000040;
 }
 
-.search-form:focus {
-  background: linear-gradient(0deg, #E1E7ED, #E1E7ED),
-  linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
-  font-weight: 800;
-  border: 1px solid #E1E7ED;
-  outline: none;
-}
-
 .image {
   position: absolute;
   width: 19px;
@@ -73,10 +65,18 @@ html {
   color: inherit;
   margin-left: 62px;
   padding: 0;
+  width: 100%;
+}
+
+.searchBar:focus, .search-form:focus-within {
+  outline: none;
+  background: linear-gradient(0deg, #E1E7ED, #E1E7ED),
+  linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+  font-weight: 800;
+  border: 1px solid #E1E7ED;
 }
 
 .searchBar__small {
   margin-left: 33px;
   font-size: 14px;
-  border: none;
 }

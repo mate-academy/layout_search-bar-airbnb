@@ -1,5 +1,3 @@
-/* add styles here */
-
 @font-face {
   font-family: Avenir;
   font-style: normal;
@@ -16,6 +14,11 @@
 
 html {
   font-weight: 300;
+
+  --lite-gray: #e1e7ed;
+  --wite: #fff;
+  --bg-color: #f6f6f7;
+  --text-color: #3D4E61;
 }
 
 .main {
@@ -29,19 +32,19 @@ html {
   display: flex;
   align-items: center;
   border-radius: 4px;
-  border: 1px solid #E1E7ED;
-  background-color: #FFF;
+  border: 1px solid var(--lite-gray);
+  background-color: var(--wite);
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
 }
 
 .search--big {
   height: 68px;
-  padding-inline: 25px;
+  padding-left: 25px;
 }
 
 .search--small {
   height: 40px;
-  padding-inline: 11px;
+  padding-left: 11px;
 }
 
 .search:hover {
@@ -50,7 +53,7 @@ html {
 
 .search:active {
   border-radius: 3px;
-  background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+  background: linear-gradient(180deg, var(--wite) 0%, var(--bg-color) 100%);
 }
 
 .search__button {
@@ -60,13 +63,15 @@ html {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-color: #FFF;
+  background-color: var(--wite);
 }
 
 .search__button--big {
   margin-right: 18px;
   width: 19px;
   height: 19px;
+  position: relative;
+  top: -1px;
 }
 
 .search__button--small {
@@ -80,9 +85,11 @@ html {
 .search__input {
   display: inline-block;
   border: none;
-  color: #3D4E61;
+  color: var(--text-color);
   font-family: Avenir, serif;
   padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .search__input:focus, .search__input:active {
@@ -91,7 +98,9 @@ html {
 
 .search__input--big {
   font-size: 16px;
+  font-style: normal;
   font-weight: 400;
+  line-height: normal;
 }
 
 .search__input--small {

@@ -13,36 +13,38 @@
   <body>
     <div class="form">
       <form
-        class="form__form-big form__form-big--icon"
+        class="form__form-big"
         action="/search"
         method="GET"
-        data-qa="big"
-      >
-        <input
-          class="form__form-big__input form__form-big--size"
-          type="search"
-          id="search-input"
-          name="search"
-          placeholder="Try &quot;Los Angeles&quot;"
-          data-qa="keypress"
-        >
+        data-qa="big">
+        <div class="form__form-big--icon">
+          <input
+            class="form__form-big__input form__form-big--size form__form-focus form__form-hover
+            form__form--placeholder"
+            type="search"
+            id="search-input"
+            name="search"
+            placeholder="Try &quot;Los Angeles&quot;"
+            data-qa="keypress"
+          >
+        </div>
       </form>
 
       <form
-        class="form__form-sm
-        form__form-sm--icon"
+        class="form__form-sm"
         action="/search"
         method="GET"
-        data-qa="small"
-      >
-        <input
-          class="form__form-sm__input
-          form__form-sm--size"
-          type="search"
-          id="search-input-sm"
-          name="search"
-          placeholder="Try &quot;Los Angeles&quot;"
-        >
+        data-qa="small">
+        <div class="form__form-sm--icon">
+          <input
+            class="form__form-sm__input form__form-sm--size form__form-focus form__form-hover
+            form__form--placeholder"
+            type="search"
+            id="search-input-sm"
+            name="search"
+            placeholder="Try &quot;Los Angeles&quot;"
+          >
+        </div>
       </form>
     </div>
   </body>

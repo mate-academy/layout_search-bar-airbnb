@@ -11,6 +11,26 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <!-- <h1>Search bar airbnb</h1> -->
+    <form class="form-big" action="#"
+      data-qa="big" method="GET">
+      <fieldset class="fieldset fieldset-big">
+        <input class="i-search i-search-big" name="search"
+          type="search" data-qa="keypress"
+          placeholder="Try “Los Angeles”">
+        <button type="submit" class="btn-search btn-big"></button>
+      </fieldset>
+    </form>
+
+    <form class="form-small" action="#"
+      data-qa="small" method="GET">
+      <fieldset class="fieldset fieldset-small">
+        <input class="i-search i-search-small" name="search"
+          type="search"
+          placeholder="Try “Los Angeles”">
+        <button type="submit" class="btn-search btn-small"></button>
+      </fieldset>
+    </form>
+
   </body>
 </html>

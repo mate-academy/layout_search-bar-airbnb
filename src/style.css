@@ -1,1 +1,126 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  font-weight: 300;
+  src: url(./fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 800;
+  src: url(./fonts/Avenir-Heavy.ttf);
+}
+
+:root {
+  --lite-gray: #e1e7ed;
+  --wite: #fff;
+  --bg-color: #f6f6f7;
+  --text-color: #3D4E61;
+}
+
+html {
+  font-weight: 300;
+}
+
+.main {
+  padding: 12px 0;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.search {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid var(--lite-gray);
+  background-color: var(--wite);
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
+}
+
+.search:focus-within {
+  background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+}
+
+.search--big {
+  height: 70px;
+  padding-left: 25.5px;
+}
+
+.search--small {
+  height: 42px;
+  padding-left: 12px;
+}
+
+.search:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search:active {
+  border-radius: 3px;
+}
+
+.search__button {
+  display: inline-block;
+  border: none;
+  background-image: url(images/Search.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: inherit;
+}
+
+.search__button--big {
+  margin-right: 18.5px;
+  width: 19px;
+  height: 19px;
+  position: relative;
+  top: -1px;
+}
+
+.search__button--small {
+  margin-right: 10.2px;
+  width: 11px;
+  height: 11px;
+  position: relative;
+  top: -1px;
+}
+
+.search__input {
+  display: inline-block;
+  border: none;
+  color: var(--text-color);
+  font-family: Avenir, serif;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-weight: 400;
+  background: inherit;
+}
+
+.search__input:focus {
+  outline: 0;
+  font-weight: 700;
+}
+
+.search__input--big {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.search__input--big:focus {
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search__input--small {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.search__input--small:hover, .search__input--small:focus {
+  text-shadow: none;
+}
+
+.search__input::placeholder {
+  color: var(--text-color);
+}

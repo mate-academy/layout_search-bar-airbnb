@@ -1,1 +1,78 @@
 /* add styles here */
+@font-face {
+  font-family: Avenir;
+  font-weight: 300;
+  src:
+    local("Avenir"),
+    url("fonts/Avenir-Book.ttf") format("truetype"),
+    url("fonts/Avenir-Heavy.ttf") format("truetype"),
+    url("fonts/Avenir.ttc") format("collection");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bars {
+  border-radius: 4px;
+  border: 1px solid #E1E7ED;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-image: url("images/Search.svg");
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-position-y: center;
+  font-family: Avenir, sans-serif;
+}
+
+
+.bar__big {
+  margin-top: 20px;
+  background-position-x: 26px;
+  height: 70px;
+  background-size: 19px;
+}
+
+.bar__small {
+  background-size: 11px;
+  background-position-x: 13px;
+  height: 42px;
+  margin-top: 20px;
+}
+
+.bar__inputs {
+  font-family: Avenir-Book, Arial, Helvetica, sans-serif;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  color: #3D4E61;
+}
+
+.bar__input__big {
+  padding-left: 62px;
+  font-size: 16px;
+}
+
+.bar__input__small {
+  padding-left: 33px;
+  font-size: 14px;
+}
+
+::placeholder {
+  color: #3D4E61;
+}
+
+.bar__imputs:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.bar__inputs:focus {
+  font-family: Avenir-Heavy, sans-serif;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+}

@@ -6,11 +6,56 @@
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     >
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="ie=edge"
+    >
     <title>Search bar airbnb</title>
-    <link rel="stylesheet" href="./style.css">
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    >
   </head>
   <body>
     <h1>Search bar airbnb</h1>
+    <form
+      class="form-big"
+      action="#"
+      data-qa="big"
+      method="GET"
+    >
+      <fieldset class="fieldset fieldset-big">
+        <input
+          class="i-search i-search-big"
+          name="search"
+          type="search"
+          data-qa="keypress"
+          placeholder="Try “Los Angeles”"
+        >
+        <button
+          type="submit"
+          class="btn-search btn-big"
+        ></button>
+      </fieldset>
+    </form>
+    <form
+      class="form-small"
+      action="#"
+      data-qa="small"
+      method="GET"
+    >
+      <fieldset class="fieldset fieldset-small">
+        <input
+          class="i-search i-search-small"
+          name="search"
+          type="search"
+          placeholder="Try “Los Angeles”"
+        >
+        <button
+          type="submit"
+          class="btn-search btn-small"
+        ></button>
+      </fieldset>
+    </form>
   </body>
 </html>

@@ -33,14 +33,14 @@ input {
 }
 
 .form {
-  padding: 0 10px;
+  padding: 0 8px;
 }
 
 .form__form-big {
   margin: 20px 0;
 }
 
-.form__form-big, .form__form-sm {
+.form__form-big--icon, .form__form-sm--icon {
   position: relative;
 }
 
@@ -59,7 +59,7 @@ input {
 
 .form__form-sm__input {
   height: 42px;
-  padding-left: 31px;
+  padding-left: 32px;
   font-size: 14px;
 }
 
@@ -81,7 +81,8 @@ input {
 .form__form-big--icon::before {
   position: absolute;
   content: '';
-  background: url('images/Search.svg') no-repeat;
+  display: block;
+  background: url('images/Search.svg') center no-repeat;
   background-size: contain;
   width: 19px;
   height: 19px;
@@ -93,7 +94,8 @@ input {
 .form__form-sm--icon::before {
   position: absolute;
   content: '';
-  background: url('images/Search.svg') no-repeat;
+  display: block;
+  background: url('images/Search.svg') center no-repeat;
   background-size: contain;
   width: 11px;
   height: 11px;

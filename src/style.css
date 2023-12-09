@@ -8,9 +8,9 @@
   --main-bs-color: rgba(61, 78, 97, 0.1);
 }
 
-body {
-  margin: 0;
-  font-family: Avenir, Arials, sans-serif;
+html {
+  padding: 0;
+  font-family: Avenir, sans-serif;
 }
 
 @font-face {
@@ -29,15 +29,14 @@ body {
   display: flex;
   align-items: center;
 
-  box-shadow: 0 1px 8px var(--main-bs-color);
+  background-color: #FFF;
   border: 1px solid var(--border-color);
   border-radius: 4px;
-  color: var(--color);
 }
 
     .search-bar--larger {
-      margin: 20px 8px;
-      min-height: 70px;
+      margin: 20px 0;
+      height: 70px;
     }
 
   .icon {
@@ -50,18 +49,18 @@ body {
     .icon--search {
       width: 19px;
       height: 19px;
-      margin: 0 17px 0 26px;
+      margin: 0 16px 0 25px;
     }
 
     .input {
     font-family: inherit;
     font-weight: 300;
-    width: 100%;
+    width: 85%;
     height: 100%;
     outline: none;
-    margin-right: 10px;
     border: 0;
     background: none;
+    color: var(--color);
   }
 
     .input--larger {
@@ -69,7 +68,7 @@ body {
     }
 
     .input::placeholder {
-      color: inherit;
+      color: var(--color);
     }
 
 /* #endregion */
@@ -84,7 +83,7 @@ body {
   .icon--search-mini {
     width: 11px;
     height: 11px;
-    margin: 0 9px 0 13px;
+    margin: 0 7px 0 13px;
   }
 
     .input--mini {

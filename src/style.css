@@ -1,1 +1,95 @@
 /* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir.ttc);
+  font-weight: 300;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.search-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.search-bar {
+  margin-top: 20px;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-weight: 300;
+  transition: border-color 0.3s;
+}
+
+.big__search-bar {
+  width: 100%;
+  padding: 25px 10px 26px 62px;
+  height: 70px;
+  color: #3D4E61;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 26px center;
+}
+
+
+.small__search-bar {
+  width: 100%;
+  height: 42px;
+  color: #3D61;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  padding: 12px 10px 11px 33px;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 13px center;
+}
+
+
+.big__search-bar:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.big__search-bar:focus {
+  border-radius: 3px;
+  border: 1px solid #E1E7ED;
+  background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 26px center;
+}
+
+.small__search-bar:hover {
+  border-radius: 4px;
+  border: 1px solid #E1E7ED;
+  background: #FFF;
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.20);
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 13px center;
+}
+
+.small__search-bar:focus {
+  border-radius: 3px;
+  border: 1px solid #E1E7ED;
+  background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 13px center;
+}
+

@@ -1,1 +1,107 @@
 /* add styles here */
+@font-face {
+  font-family: Avenir-Book;
+  src: url("fonts/Avenir-Book.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir-Heavy;
+  src: url("fonts/Avenir-Heavy.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+:root {
+  --border: 1px solid #e1e7ed;
+  --box-shadow-input: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
+  --box-shadow-input-efect: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+body {
+  margin: 0;
+}
+
+input {
+  box-sizing: border-box;
+  font-family: Avenir-Book, sans-serif;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+}
+
+.form {
+  padding: 0 8px;
+}
+
+.form__form-big {
+  margin: 20px 0;
+}
+
+.form__form-big--icon, .form__form-sm--icon {
+  position: relative;
+}
+
+.form__form-big__input, .form__form-sm__input {
+  width: 100%;
+  border: var(--border);
+  box-shadow: var(--box-shadow-input);
+  border-radius: 4px;
+}
+
+.form__form-big__input {
+  height: 70px;
+  padding-left: 62px;
+  font-size: 16px;
+}
+
+.form__form-sm__input {
+  height: 42px;
+  padding-left: 32px;
+  font-size: 14px;
+}
+
+.form__form-focus:focus {
+  font-family: Avenir-Heavy, sans-serif;
+  outline: none;
+  border: var(--border);
+  box-shadow: var(--box-shadow-input-efect);
+}
+
+.form__form-hover:hover {
+  box-shadow: var(--box-shadow-input-efect);
+}
+
+.form__form--placeholder::placeholder {
+  color: #3d4e61;
+}
+
+.form__form-big--icon::before {
+  position: absolute;
+  content: '';
+  display: block;
+  background: url('images/Search.svg') center no-repeat;
+  background-size: contain;
+  width: 19px;
+  height: 19px;
+  top: 50%;
+  left: 26px;
+  transform: translateY(-50%);
+}
+
+.form__form-sm--icon::before {
+  position: absolute;
+  content: '';
+  display: block;
+  background: url('images/Search.svg') center no-repeat;
+  background-size: contain;
+  width: 11px;
+  height: 11px;
+  top: 50%;
+  left: 13px;
+  transform: translateY(-50%);
+}
+
+/* finish */

@@ -9,15 +9,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script>
   </head>
   <body>
     <form action="#" class="search__form"
     data-qa="big">
-      <label class="search__form--label"></label>
+      <label class="search__form--label">
+        <span class="search__form--image"></span>
+        <input type="text" class="search__form--input"
+        placeholder="Try &quot;Los Angeles&quot;"
+        data-qa="keypress">
+      </label>
     </form>
-    <form action="#" class="search__form"
+    <form action="#" class="search__form search__form--small"
     data-qa="small">
-      <label class="search__form--label"></label>
+      <label class="search__form--label">
+        <span class="search__form--image search__form--image-small"></span>
+        <input type="text" class="search__form--input search__form--input-small"
+        placeholder="Try &quot;Los Angeles&quot;">
+      </label>
     </form>
   </body>
 </html>

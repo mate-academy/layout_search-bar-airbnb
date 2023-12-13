@@ -1,20 +1,28 @@
 /* add styles here */
 @font-face {
   font-family: Avenir;
-  src: url('./Avenir-Book.ttf') format('truetype'),
-       url('./Avenir-Heavy.ttf') format('truetype'),
-       url('./Avenir.ttc') format('opentype'),
+  src: url('/src/fonts/Avenir-Book.ttf') format('truetype'),
+       url('/src/fonts/Avenir-Heavy.ttf') format('truetype'),
+       url('/src/fonts/Avenir.ttc') format('opentype'),
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
 }
 
 .search {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 .search__search-bar {
-  font-family: Avenir, sans-serif;
-  font-weight: 300;
+  font-family: inherit;
+  font-size: inherit;
   border: 1px solid #E1E7ED;
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
   background-image: url(images/Search.svg);
@@ -31,41 +39,41 @@
 }
 
 .search__search-bar--large {
-  padding: 25px 0 23px 62px;
+  padding-left: 62px;
+  box-sizing: border-box;
+  height: 70px;
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
-  background-position-y: 50%;
-  background-position-x: 26px;
-  background-size: 19px 19px;
+  background-position: 26px;
+  background-size: 19px;
 }
 
 .search__search-bar--large:focus {
   background: url(images/Search.svg), linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
   background-repeat: no-repeat;
-  background-position-y: 50%, 0;
-  background-position-x: 26px, 0;
-  background-size: 19px 19px, auto;
+  background-position: 26px;
+  background-size: 19px, auto;
   outline-width: 0;
   font-family: Avenir-Heavy, sans-serif;
   color: #3D4E61;
 }
 
 .search__search-bar--small {
-  width: 50%;
-  padding: 12px 0 11px 33px;
+  font-size: 14px;
+  padding-left: 33px;
+  height: 42px;
+  box-sizing: border-box;
   border-radius: 4px;
   background-repeat: no-repeat;
-  background-position-y: 50%;
-  background-position-x: 13px;
-  background-size: 11px 11px;
+  background-position: 13px;
+  background-size: 11px;
 }
 
 .search__search-bar--small:focus {
   background: url(images/Search.svg), linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
   background-repeat: no-repeat;
-  background-position-y: 50%, 0;
-  background-position-x: 13px, 0;
-  background-size: 11px 11px, auto;
+  background-position: 13px;
+  background-size: 11px, auto;
   outline-width: 0;
   font-family: Avenir-Heavy, sans-serif;
 }

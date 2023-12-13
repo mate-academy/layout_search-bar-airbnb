@@ -6,6 +6,16 @@
        url('/src/fonts/Avenir.ttc') format('opentype'),
 }
 
+:root {
+  --search-font-color: #3D4E61;
+  --search-border-color: #E1E7ED;
+  --search-bg-gradient: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
 .body {
   display: flex;
   flex-direction: column;
@@ -23,15 +33,17 @@
 .search__search-bar {
   font-family: inherit;
   font-size: inherit;
-  border: 1px solid #E1E7ED;
+  border: 1px solid var(--search-border-color);
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
   background-image: url(images/Search.svg);
-  color: #3D4E61;
+  color: var(--search-font-color);
   border-radius: 4px;
+  background-repeat: no-repeat;
+  outline: 0;
 }
 
 ::placeholder {
-  color: #3D4E61;
+  color: var(--search-font-color);
 }
 
 .search__search-bar:hover {
@@ -40,41 +52,33 @@
 
 .search__search-bar--large {
   padding-left: 62px;
-  box-sizing: border-box;
   height: 70px;
   background-image: url(images/Search.svg);
-  background-repeat: no-repeat;
   background-position: 26px;
   background-size: 19px;
 }
 
 .search__search-bar--large:focus {
-  background: url(images/Search.svg), linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+  background: url(images/Search.svg), var(--search-bg-gradient);
   background-repeat: no-repeat;
-  background-position: 26px;
+  background-position: 26px, 0;
   background-size: 19px, auto;
-  outline-width: 0;
   font-family: Avenir-Heavy, sans-serif;
-  color: #3D4E61;
 }
 
 .search__search-bar--small {
   font-size: 14px;
   padding-left: 33px;
   height: 42px;
-  box-sizing: border-box;
-  border-radius: 4px;
-  background-repeat: no-repeat;
   background-position: 13px;
   background-size: 11px;
 }
 
 .search__search-bar--small:focus {
-  background: url(images/Search.svg), linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+  background: url(images/Search.svg), var(--search-bg-gradient);
   background-repeat: no-repeat;
-  background-position: 13px;
+  background-position: 13px, 0;
   background-size: 11px, auto;
-  outline-width: 0;
   font-family: Avenir-Heavy, sans-serif;
 }
 

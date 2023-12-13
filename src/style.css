@@ -1,6 +1,8 @@
 :root {
   --color-light: #e1e7ed;
   --color-dark: #3d4e61;
+  --color-default-shadow: rgba(61, 78, 97, 0.1);
+  --color-hover-shadow: rgba(61, 78, 97, 0.2);
 }
 
 @font-face {
@@ -56,12 +58,12 @@
   border-radius: 4px;
   color: var(--color-dark);
   font-family: Avenir, sans-serif;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  box-shadow: 0 1px 8px var(--color-default-shadow);
   outline: none;
 }
 
 .form__input:hover {
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  box-shadow: 0 3px 8px var(--color-hover-shadow);
 }
 
 .form__input_big {

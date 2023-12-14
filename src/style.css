@@ -1,4 +1,4 @@
-/* add styles here  */
+/* add styles here */
 @font-face {
   font-family: Avenir;
   src: url("./fonts/Avenir-Book.ttf") format("truetype");
@@ -37,12 +37,33 @@ body {
   width: 1024px;
 }
 
+.search-bar::after {
+  background-image: url(./images/Search.svg);
+  flex-shrink: 0;
+}
+
 .search-bar__big {
   height: 70px;
 }
 
+.search-bar__icon-big::after {
+  width: 19px;
+  height: 19px;
+  margin: 26px;
+  margin-right: 17px;
+}
+
 .search-bar__small {
   height: 42px;
+}
+
+.search-bar__icon-small::after {
+  width: 11px;
+  height: 11px;
+  margin: 9px;
+  margin-top: 15px;
+  margin-bottom: 16px;
+  margin-left: 13px;
 }
 
 .search-bar:hover {
@@ -53,26 +74,6 @@ body {
 .search-bar:focus {
   border-radius: 3px;
   background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
-}
-
-.search-bar__icon {
-  flex-shrink: 0;
-}
-
-.search-bar__icon-big {
-  width: 19px;
-  height: 19px;
-  margin: 26px;
-  margin-right: 17px;
-}
-
-.search-bar__icon-small {
-  width: 11px;
-  height: 11px;
-  margin: 9px;
-  margin-top: 15px;
-  margin-bottom: 16px;
-  margin-left: 13px;
 }
 
 .search-bar__text {
@@ -110,5 +111,5 @@ body {
 }
 
 input::placeholder {
-  color: #687c94;
+  color: inherit;
 }

@@ -1,1 +1,89 @@
-/* add styles here */
+:root {
+  --color: #3D4E61;
+  --background: #FFF;
+  --border: 1px solid #E1E7ED;
+  --box-sizing: border-box;
+  --border-radius: 4px;
+  --box-shadow: 0 1px 8px 0 #3d4e611a;
+  --box-shadow-hover: 0 3px 8px 0 rgba(61, 78, 97, 0.20);
+  --outline: none;
+}
+
+html {
+  font-weight: 300;
+  font-family: Avenir, sans-serif;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+.search-form__input--big,
+.search-form__input--small {
+  border-radius: var(--border-radius);
+  border: var(--border);
+  background: var(--background);
+  box-sizing: var(--box-sizing);
+  color: var(--color);
+}
+
+.search-form__input--big {
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  height: 70px;
+  margin: 20px auto;
+  align-items: center;
+  display: flex;
+  padding-left: 62px;
+  font-size: 16px;
+}
+
+.search-form__input--small {
+  height: 42px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 33px;
+  font-size: 14px;
+  box-shadow: var(--box-shadow);
+}
+
+.search-form__label--small,
+.search-form__label--big {
+  position: relative;
+}
+
+.Icon__small {
+  position: absolute;
+  left: 13px;
+  top: 15px;
+  width: 11px;
+  height: 11px;
+}
+
+.Icon__big {
+  position: absolute;
+  left: 26px;
+  top: 25px;
+  width: 19px;
+  height: 19px;
+}
+
+.search-form__input--big:hover,
+.search-form__input--small:hover {
+  border-radius: var(--border-radius);
+  border: var(--border);
+  background: var(--background);
+  box-shadow: var(--box-shadow-hover);
+  color: var(--color);
+}
+
+.search-form__input--big:focus,
+.search-form__input--small:focus {
+  border-radius: 3px;
+  border: var(--border);
+  color: var(--color);
+  background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+  outline: var(--outline);
+}

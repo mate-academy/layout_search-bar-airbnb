@@ -1,9 +1,9 @@
 /* add styles here */
 @font-face {
   font-family: Avenir;
-  src: url('/src/fonts/Avenir-Book.ttf') format('truetype'),
-       url('/src/fonts/Avenir-Heavy.ttf') format('truetype'),
-       url('/src/fonts/Avenir.ttc') format('opentype'),
+  src: url('./fonts/Avenir-Book.ttf') format('truetype'),
+       url('./fonts/Avenir-Heavy.ttf') format('truetype'),
+       url('./fonts/Avenir.ttc') format('opentype'),
 }
 
 :root {
@@ -35,7 +35,7 @@
   font-size: inherit;
   border: 1px solid var(--search-border-color);
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
-  background-image: url(images/Search.svg);
+  background-image: url(./images/Search.svg);
   color: var(--search-font-color);
   border-radius: 4px;
   background-repeat: no-repeat;
@@ -53,13 +53,13 @@
 .search__search-bar--large {
   padding-left: 62px;
   height: 70px;
-  background-image: url(images/Search.svg);
+  background-image: url(./images/Search.svg);
   background-position: 26px;
   background-size: 19px;
 }
 
 .search__search-bar--large:focus {
-  background: url(images/Search.svg), var(--search-bg-gradient);
+  background: url(./images/Search.svg), var(--search-bg-gradient);
   background-repeat: no-repeat;
   background-position: 26px, 0;
   background-size: 19px, auto;
@@ -75,7 +75,7 @@
 }
 
 .search__search-bar--small:focus {
-  background: url(images/Search.svg), var(--search-bg-gradient);
+  background: url(./images/Search.svg), var(--search-bg-gradient);
   background-repeat: no-repeat;
   background-position: 13px, 0;
   background-size: 11px, auto;

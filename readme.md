@@ -34,3 +34,5 @@ ___
 - [ ] Inputs are written inside of 'form' tag with correctly passed attributes
 - [ ] All `Typical Mistakes` from `BEM` lesson theory are checked.
 - [ ] Code follows all the [Code Style Rules ❗️](./checklist.md)
+
+tests should be fine

@@ -4,9 +4,8 @@
 --border-color: #E1E7ED;
 }
 
-body {
-  margin: 8px;
-  display: block;
+html {
+  font-family: Avenir , sans-serif;
 }
 
 @font-face {
@@ -14,10 +13,19 @@ body {
   src: url(./fonts/Avenir.ttc);
 }
 
+body {
+  margin: 8px;
+  display: block;
+}
+
 .search-form__input::placeholder {
+  box-sizing: border-box;
   color: #3D4E61;
-  font-family: Avenir , sans-serif;
   font-size: 16px;
+}
+
+input {
+  font-family: inherit;
 }
 
 .search-form__input_small::placeholder {
@@ -49,6 +57,7 @@ body {
 }
 
 .search-form {
+  box-sizing: border-box;
   margin: 20px 0;
 }
 
@@ -103,6 +112,5 @@ label {
 }
 
 .search-form__input:focus {
-  border: 2px solid blue;
   outline: none;
 }

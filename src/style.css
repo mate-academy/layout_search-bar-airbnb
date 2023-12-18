@@ -1,1 +1,104 @@
-/* add styles here */
+:root {
+  --background: #FFF;
+  --color: #3D4E61;
+  --box-sizing: border-box;
+  --border: 1px solid #E1E7ED;
+  --border-radius: 4px;
+  --box-shadow-hover: 0 3px 8px 0 rgba(61, 78, 97, 0.20);
+  --box-shadow: 0 1px 8px 0 #3d4e611a;
+  --outline: none;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: bold;
+  src: url("fonts/Avenir-Heavy.ttf");
+}
+
+html {
+  font-weight: 300;
+  font-family: Avenir, sans-serif;
+  color: var(--color);
+  font-style: normal;
+}
+
+
+.search-form__input--big,
+.search-form__input--small {
+  border-radius: var(--border-radius);
+  border: var(--border);
+  background: var(--background);
+  box-sizing: var(--box-sizing);
+  color: var(--color);
+  font-family: inherit;
+}
+
+.search-form__input--big {
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+  box-shadow: var(--box-shadow);
+  font-size: 16px;
+  height: 70px;
+  width: 100%;
+  padding-left: 62px;
+  font-weight: 400;
+}
+
+.search-form__input--small {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  height: 42px;
+  width: 100%;
+  padding-left: 33px;
+  box-shadow: var(--box-shadow);
+  font-weight: 400;
+}
+
+.search-form__label--small,
+.search-form__label--big {
+  position: relative;
+}
+
+.Icon__small {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  top: 15px;
+  left: 13px;
+}
+
+.Icon__big {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  top: 25px;
+  left: 26px;
+}
+
+.search-form__input--big:hover,
+.search-form__input--small:hover {
+  color: var(--color);
+  box-shadow: var(--box-shadow-hover);
+  background: var(--background);
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
+
+.search-form__input--big:focus,
+.search-form__input--small:focus {
+  background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+  border: var(--border);
+  border-radius: 3px;
+  outline: var(--outline);
+  color: var(--color);
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+}

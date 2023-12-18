@@ -12,6 +12,13 @@
 @font-face {
   font-family: Avenir;
   src: url(fonts/Avenir-Book.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: bold;
+  src: url("fonts/Avenir-Heavy.ttf");
 }
 
 html {
@@ -29,6 +36,7 @@ html {
   background: var(--background);
   box-sizing: var(--box-sizing);
   color: var(--color);
+  font-family: inherit;
 }
 
 .search-form__input--big {
@@ -91,4 +99,6 @@ html {
   border-radius: 3px;
   outline: var(--outline);
   color: var(--color);
+  font-weight: bold;
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
 }

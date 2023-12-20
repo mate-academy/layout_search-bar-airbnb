@@ -1,105 +1,68 @@
-/* add styles here */
 @font-face {
-  font-family:Avenir;
+  font-family: Avenir;
+  font-style: normal;
   font-weight: 300;
   src: url(./fonts/Avenir-Book.ttf);
 }
 
 @font-face {
-  font-family:Avenir;
-  font-weight: 400;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
   src: url(./fonts/Avenir-Heavy.ttf);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 html {
-  width: 100vw;
-  font-family:Avenir,sans-serif;
+  font-family: Avenir, sans-serif;
   font-weight: 300;
+  font-size: 16px;
+  color: #3d4e61;
 }
 
-body {
-  margin: 0;
-  width: 100%;
-}
-
-.form-big,.form-small {
-  width: 100%;
-  display: block;
+.form-big, .form-small {
   margin-top: 20px;
+  position: relative;
 }
 
-
-
-.input-form-big {
+.input {
   background-image:url(/src/images/Search.svg);
   background-repeat:no-repeat;
   background-size: 19px 19px;
-  background-position:top 25px left 26px;
-  width: 100%;
-  border-radius: 4px;
-  border: 1px solid #E1E7ED;
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
-  padding:25px 0 25px 65px;
-  flex-shrink: 0;
-  position: relative;
-  color: #3D4E61;
-  font-family: Avenir,sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: normal;
-}
-
-.input-form-big:hover {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25)
-
-}
-
-.input-form-big:focus {
-  border-radius: 3px;
-  border: 1px solid #E1E7ED;
-  background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
-  font-family: Avenir,sans-serif;
-  font-weight: 300;
-  font-style: normal;
+  background-position: 26px 23px;
   box-sizing: border-box;
+  width: 100%;
+  height: 70px;
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  line-height: 22px;
+  padding: 24px 62px;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
 }
 
-.form-small {
-  margin-top: 20px;
-}
-
-.input-form-small {
+.input--small {
+  box-sizing: border-box;
   background-image:url(/src/images/Search.svg);
   background-repeat:no-repeat;
   background-size: 11px 11px;
-  background-position: 10px;
-  padding:12px 0 11px 33px;
-  width: 100%;
-  border-radius: 4px;
-  border: 1px solid #E1E7ED;
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
-  flex-shrink: 0;
+  background-position: 12px 14px;
+  height: 42px;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 11px 33px;
 }
 
-.input-form-small:hover {
-  border-radius: 4px;
-  border: 1px solid #E1E7ED;
-  background: #FFF;
-  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.20);
-  font-weight: 400;
+.input:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.input-form-small:focus {
+.input:focus {
+  font-weight: 800;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
-  border: 1px solid #E1E7ED;
-  background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
-  font-family: Avenir,sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  box-sizing: border-box;
+  border: 1px solid #e1e7ed;
+  outline: none;
 }

@@ -3,9 +3,8 @@
 }
 
 body {
-  font-family: Avenir, sans-serif;
-  src: url(fonts/Avenir.ttc);
-  font-weight: 300;
+  padding: 0;
+  margin: 0;
 }
 
 @font-face {
@@ -15,29 +14,47 @@ body {
 }
 
 .form {
+  position: relative;
   margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  gap: 20px;
+  width: 100%;
+margin-top: 20px;
 }
 
 .form__input--big {
-  position: relative;
+  margin: 0;
   display: block;
-  padding: 26px 26px 26px 62px;
-  width: 100%;
-  border: 1px solid #e1e7ed;
-  border-radius: 3px;
+  padding: 62px  25px  680px 26px ;
+ width: 100%;
+ border-radius: 4px;
+border: 1px solid #E1E7ED;
+background: #FFF;
+box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
+
+}
+
+.form__input--small {
+  margin: 0;
+  display: block;
+ width: 100%;
+ border-radius: 4px;
+border: 1px solid #E1E7ED;
+background: #FFF;
+box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
+
+  padding: 33px 12px 236px 11px ;
 }
 
 .form__input--big:hover {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .form__input--small:hover {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
+
 
 .form__input--big:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
@@ -47,21 +64,13 @@ body {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
-.form__input--small {
-  position: relative;
-  display: block;
-  width: 50%;
-  border: 1px solid #e1e7ed;
-  border-radius: 3%;
-  padding: 13px 15px 13px 33px;
-}
 
 .form__icon--big {
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
   position: absolute;
-  left: 58px;
-  top: 51px;
+  left: 36px;
+  top: 22px;
   width: 19px;
   height: 19px;
 }
@@ -70,20 +79,28 @@ body {
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
   position: absolute;
-  left: 42px;
-  top: 132px;
+  left: 17px;
+  top: 14px;
   width: 11px;
   height: 11px;
 }
 
-input::placeholder {
+.form__input--big::placeholder {
   font-family: Avenir, sans-serif;
   src: url(fonts/Avenir.ttc);
-  font-weight: 300;
   color: #3d4e61;
-  font-family: Avenir;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: normal;
+}
+
+.form__input--small::placeholder {
+  color: #3d4e61;
+  font-family: Avenir, sans-serif;
+  src: url(fonts/Avenir.ttc);
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
 }

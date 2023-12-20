@@ -41,23 +41,23 @@ html {
 }
 
 .search__icon {
+  background: url("images/Search.svg") no-repeat 50% 50%;
   background-size: contain;
-  background-image: url("images/Search.svg");
   position: absolute;
 }
 
 .search__icon--big {
   width: 19px;
   height: 19px;
-  left: 29px;
-  top: 25px;
+  left: 26px;
+  top: 26px;
 }
 
 .search__icon--small {
   width: 11px;
   height: 11px;
-  left: 16px;
-  top: 15px;
+  left: 12px;
+  top: 14px;
 }
 
 .search__input {
@@ -65,6 +65,11 @@ html {
   font-family: Avenir-Book, sans-serif;
   color: #3D4E61;
   border: none;
+}
+
+.search__input::placeholder {
+  font-family: Avenir-Book, sans-serif;
+  color: #3D4E61;
 }
 
 .search__input--big{

@@ -1,1 +1,90 @@
-/* add styles here */
+:root {
+  --color-light: #e1e7ed;
+  --color-dark: #3d4e61;
+  --color-default-shadow: rgba(61, 78, 97, 0.1);
+  --color-hover-shadow: rgba(61, 78, 97, 0.2);
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 300;
+  src: url("fonts/Avenir-Book.ttf");
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: bold;
+  src: url("fonts/Avenir-Heavy.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.form {
+  margin-top: 20px;
+  position: relative;
+}
+
+.form::after {
+  position: absolute;
+  content: "";
+  display: block;
+}
+
+.form_big::after {
+  background-image: url("./images/Search.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 19px;
+  height: 19px;
+  top: 25px;
+  left: 26px;
+}
+
+.form_small::after {
+  background-image: url("./images/Search.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 11px;
+  height: 11px;
+  top: 15px;
+  left: 13px;
+}
+
+.form__input {
+  width: 100%;
+  border: 1px solid var(--color-light);
+  border-radius: 4px;
+  color: var(--color-dark);
+  font-family: Avenir, sans-serif;
+  box-shadow: 0 1px 8px var(--color-default-shadow);
+  outline: none;
+}
+
+.form__input:hover {
+  box-shadow: 0 3px 8px var(--color-hover-shadow);
+}
+
+.form__input_big {
+  height: 70px;
+  padding-left: 62px;
+  font-size: 16px;
+}
+
+.form__input_small {
+  height: 42px;
+  padding-left: 33px;
+  font-size: 14px;
+}
+
+.form__input::placeholder {
+  color: inherit;
+}
+
+.form__input:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+  font-weight: 600;
+}
+

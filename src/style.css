@@ -1,3 +1,8 @@
+:root {
+  --main-color: #3D4E61;
+  --border-color:#E1E7ED;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -11,35 +16,38 @@ body {
   font-family:  Avenir, sans-serif;
   src: url(./fonts/Avenir-Book.ttf);
   font-weight: 300;
-  color: #3D4E61;
+  color: var(--main-color);
 }
 
 .form {
   position: relative;
-margin: 20px 8px 10px;
-padding: 0;
+  margin: 20px 8px 0;
+  padding: 0;
+}
+
+.form:last-child(){
+  margin-bottom: 20px;
 }
 
 .form__input {
   display: block;
   width: 100%;
   border-radius: 4px;
-  border: 1px solid #E1E7ED;
+  border: 1px solid var(--border-color);
   background: #FFF;
   box-shadow: 0 1px 7px 0 rgba(61, 78, 97, 0.10);
 }
 
 .form__input--big {
-  padding: 27px 63px;
+  padding: 27px 62px;
 }
 
 .form__input--small {
-  padding:12px 32px;
+  padding: 12px 32px;
 }
 
 .form__icon {
-  background-image: url(images/Search.svg);
-  background-repeat: no-repeat;
+  background: url(images/Search.svg) no-repeat;
   position: absolute;
 }
 
@@ -48,7 +56,6 @@ padding: 0;
   top: 24px;
   width: 19px;
   height: 19px;
-
 }
 
 .form__icon--small {
@@ -59,11 +66,10 @@ padding: 0;
 }
 
 .form__input::placeholder {
-  color: #3D4E61;
+  color: var(--main-color);
   font-family: Avenir, sans-serif;
-  src: url(../src/fonts/Avenir.ttc);
+  src: url(./src/fonts/Avenir.ttc);
   font-size: 14px;
-  font-style: normal;
   font-weight: 300;
   line-height: normal;
 

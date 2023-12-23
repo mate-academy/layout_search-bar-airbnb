@@ -11,21 +11,25 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div class="search-container">
-      <form class="search-bar">
+    <form action="search">
+      <div class="search-bar search-bar--big" data-qa="big">
+        <div class="search-bar__icon-big" data-qa="keypress"></div>
         <input
-        class="big__search-bar"
-        type="text"
-        data-qa="keypress"
-        placeholder="Try “Los Angeles”">
-      </form>
+          class="search-bar__input-big"
+          type="text"
+          data-qa="keypress"
+          placeholder="Try “Los Angeles”"
+          >
+      </div>
 
-      <form class="search-bar">
+      <div class="search-bar search-bar--small" data-qa="small">
+        <div class="search-bar__icon-small" data-qa="keypress"></div>
         <input
-        class="small__search-bar"
-        type="text"
-        placeholder="Try “Los Angeles”">
-      </form>
-    </div>
+          class="search-bar__input-small"
+          type="text"
+          placeholder="Try “Los Angeles”"
+          >
+      </div>
+    </form>
   </body>
 </html>

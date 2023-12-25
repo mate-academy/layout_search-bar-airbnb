@@ -1,4 +1,8 @@
 
+/* add styles here */
+
+
+
 
 * {
   outline: none;
@@ -34,15 +38,13 @@ form {
   display: flex;
   width: 100%;
   height: 70px;
+  background-image: url(images/Search.svg);
+  background-position:25px;
+  background-repeat: no-repeat;
+  background-size: 19px;
 }
 
-.big__icon {
-  margin: 26px 25px 0 27px;
-  position: absolute;
-  color: var(--color);
-  width: 19px;
-  height: 19px;
-}
+
 
 .search__input--small {
   padding-left: 33px;
@@ -56,28 +58,24 @@ form {
   border-radius: 4px;
   border: 1px solid #e1e7ed;
   background-color: #fff;
+  background-image: url(images/Search.svg);
+  background-position:15px;
+  background-repeat: no-repeat;
+  background-size: 11px;
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
   width: 100%;
   height: 42px;
   flex-shrink: 0;
+
 }
 
-.small__icon {
-  display: flex;
-  align-items: center;
-  margin-left: 13px;
-  margin-top: 15px;
-  color: var(--color);
-  position: absolute;
-  width: 11px;
-  height: 11px;
-  flex-shrink: 0;
-}
+
 
 .search__input::placeholder {
   font-family: Avenir, sans-serif;
   color: var(--text-color);
   font-weight: 300;
+  
 }
 
 .search__input--small:focus {
@@ -95,5 +93,3 @@ form {
 .search__input:hover {
   box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
 }
-
-

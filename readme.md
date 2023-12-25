@@ -23,7 +23,7 @@ ___
 ---
 ## Checklist
 
-❗️ Replace `<your_account>` with your Github username and copy the links to `Pull Request` description:
+❗️ Replace `<Kateryna199420>` with your Github username and copy the links to `Pull Request` description:
 
 - [DEMO LINK](https://<Kateryna199420>.github.io/layout_search-bar-airbnb/)
 - [TEST REPORT LINK](https://<Kateryna199420>.github.io/layout_search-bar-airbnb/report/html_report/)

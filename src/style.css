@@ -1,1 +1,86 @@
-/* add styles here */
+  
+@font-face {
+    font-family: Avenir;
+    src: url('./fonts/Avenir.ttc');
+}
+
+* {
+    box-sizing: border-box; 
+ }
+  
+body {
+    font-weight: 300;
+    font-size: 16px;
+    font-family: Avenir, sans-serif;
+}
+
+.container > *:nth-child(n) {
+    margin-top: 20px;
+}
+
+.form--bigBar,.form--smallBar {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #E1E7ED;
+    box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
+}
+
+
+.bigBar--image,.smallBar--image {
+    background-image: url('./images/Search.svg'); 
+    background-size: cover;
+}
+
+.smallBar--image {
+    width: 11px;
+    height: 11px;
+
+}
+
+.bigBar--image {
+    width: 19px;
+    height: 19px;
+}
+
+.bigBar--input,.smallBar--input {
+    border: 0;
+    height: 19px;
+    padding: 0;
+    font-family: Avenir, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.smallBar--input {
+    font-family: Avenir, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form--bigBar {
+    height: 70px;
+    padding-left: 26px;
+    gap: 17px;
+}
+
+.form--smallBar {
+    gap: 9px;
+    height: 42px;
+    padding-left: 13px;
+}
+
+.form--bigBar:hover {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.form--smallBar:hover {
+    box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.20);
+}
+
+.form--smallBar:focus , .form--bigBar:focus {
+    font-weight: 900;
+}

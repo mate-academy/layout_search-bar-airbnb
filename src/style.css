@@ -3,6 +3,10 @@
     font-family: Avenir;
     src: url('./fonts/Avenir.ttc');
 }
+
+* {
+    box-sizing: border-box; 
+ }
   
 body {
     font-weight: 300;
@@ -14,8 +18,7 @@ body {
     margin-top: 20px;
 }
 
-.bigBar,.smallBar {
-    box-sizing: border-box;
+.form--bigBar,.form--smallBar {
     min-width: 100%;
     display: flex;
     align-items: center;
@@ -41,7 +44,7 @@ body {
     height: 19px;
 }
 
-.bigBar > input,.smallBar > input {
+.bigBar--input,.smallBar--input {
     border: 0;
     height: 19px;
     padding: 0;
@@ -50,7 +53,7 @@ body {
     font-weight: 400;
 }
 
-.smallBar > input {
+.smallBar--input {
     font-family: Avenir, sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -58,26 +61,26 @@ body {
     line-height: normal;
 }
 
-.bigBar {
+.form--bigBar {
     height: 70px;
     padding-left: 26px;
     gap: 17px;
 }
 
-.smallBar {
+.form--smallBar {
     gap: 9px;
     height: 42px;
     padding-left: 13px;
 }
 
-.bigBar:hover {
+.form--bigBar:hover {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.smallBar:hover {
+.form--smallBar:hover {
     box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.20);
 }
 
-.smallBar:focus , .bigBar:focus {
+.form--smallBar:focus , .form--bigBar:focus {
     font-weight: 900;
 }

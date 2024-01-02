@@ -1,53 +1,67 @@
 @font-face {
-  color: #3D4E61;
-  font-family: Avenir-Book, Arial, Helvetica, sans-serif;
-  src: url('fonts/Avenir-Book.ttf') format('ttf');
-  font-weight: 300;
-  font-style: normal;
+  font-family: Avenir;
+  font-weight: 400;
+  src: url("fonts/Avenir-Book.ttf");
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: bold;
+  src: url("fonts/Avenir-Heavy.ttf");
 }
 
 body {
   margin: 0;
-  padding: 10px;
-  font-family: Avenir-Book, Arial, sans-serif;
+  padding: 10px 0;
+  font-family: Avenir, Arial, sans-serif;
 }
 
 .search-container {
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 10px 8px;
   align-items: center;
 }
 
 .search-bar {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  height: 70px;
-  padding: 8px;
+  height: 100%;
+  font-family: inherit;
   box-sizing: border-box;
-  background-image: url('images/Search.svg');
-  background-position: 26px center;
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  padding-left: 40px;
+  background: #FFF;
   border-radius: 4px;
   border: 1px solid #E1E7ED;
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
 }
 
+.searchBar1 {
+  background-image: url('images/Search.svg');
+  background-position: left 25px bottom 25px;
+  background-repeat: no-repeat;
+  background-size: 19px 19px;
+  padding-bottom: 0;
+  padding-left: 62px;
+}
+
+.searchBar2 {
+  background-image: url('images/Search.svg');
+  background-position: left 12px bottom 15px;
+  background-repeat: no-repeat;
+  background-size: 11px 11px;
+  padding: 0 0 0 33px;
+}
+
 .big-form {
   width: 100%;
+  height: 70px;
+  z-index: 1;
 }
 
 .small-form {
   width: 100%;
-}
-
-.sidebar-text {
-  color: #3D4E61;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  height: 42px;
 }
 
 .search-bar:hover {
@@ -62,7 +76,18 @@ body {
 
 .search-bar::placeholder {
   color: #3D4E61;
-  font-family: Avenir-Book, Arial, sans-serif;
-  font-weight: 300;
-  padding: 29px;
+  font-family: Avenir, Arial, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.searchBar2::placeholder {
+  color: #3D4E61;
+  font-family: Avenir, Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }

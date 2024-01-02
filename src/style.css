@@ -1,1 +1,134 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  font-weight: 300;
+  src: url("./fonts/Avenir-Book.ttf");
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 600;
+  src: url("./fonts/Avenir-Heavy.ttf");
+}
+
+:root {
+  --text-color: #3d4e61;
+  --border-color: #E1E7ED;
+}
+
+body {
+  font-family: Avenir, sans-serif;
+}
+
+.form-big {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  height: 70px;
+}
+
+.label__form-big {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.label__form-big::after {
+  position: absolute;
+  display: block;
+  content: "";
+  background-image: url("./images/Search.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 19px;
+  height: 19px;
+  top: 25px;
+  left: 26px;
+}
+
+.input__form-big {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  color: var(--text-color);
+  font-family: inherit;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding-left: 62px;
+}
+
+.input__form-big::placeholder {
+  color: var(--text-color);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.input__form-big:hover {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.input__form-big:focus {
+  font-weight: 600;
+  text-shadow: 1px 2px 4px #969696;
+  border-radius: 3px;
+  outline: none;
+}
+
+.form-small {
+  display: flex;
+  width: 100%;
+  height: 42px;
+  margin-top: 20px;
+}
+
+.label__form-small {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.label__form-small::after {
+  display: block;
+  position: absolute;
+  content: "";
+  background-image: url("./images/Search.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 11px;
+  height: 11px;
+  top: 15px;
+  left: 13px;
+}
+
+.input__form-small {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 19px;
+  color: var(--text-color);
+  font-family: inherit;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding-left: 33px;
+}
+
+.input__form-small:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.input__form-small::placeholder {
+  color: var(--text-color);
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.input__form-small:focus {
+  font-weight: 600;
+  text-shadow: 1px 2px 4px #969696;
+  border-radius: 3px;
+  outline: none;
+}

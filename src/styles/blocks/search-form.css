@@ -29,10 +29,9 @@
 .search-form__label::before {
   content: "";
   position: absolute;
+  background-image: url("../../images/Search.svg");
   top: 50%;
   transform: translateY(-50%);
-  display: block;
-  background-image: url("../../images/Search.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -44,7 +43,8 @@
 }
 
 .search-form__label--small::before {
-  transform: translateY(-46%);
+  top: 55%;
+  transform: translateY(-55%);
   left: 13px;
   width: 11px;
   height: 11px;
@@ -52,7 +52,6 @@
 
 .search-form__input:focus {
   font-weight: 900;
-  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .search-form__input--small {

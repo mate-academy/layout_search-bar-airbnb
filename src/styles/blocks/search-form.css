@@ -1,6 +1,4 @@
 .search-form {
-  display: flex;
-  justify-content: center;
   margin: 20px auto 0;
 }
 
@@ -14,14 +12,13 @@
 
 .search-form__label {
   position: relative;
-  display: block;
-
-  width: 100%;
 }
 
 .search-form__label::before {
   content: "";
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   background-image: url("../../images/Search.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -31,14 +28,13 @@
   left: 26px;
   width: 19px;
   height: 19px;
-  top: 25px;
 }
 
 .search-form__label--small::before {
+  transform: translateY(-45%);
   left: 13px;
   width: 11px;
   height: 11px;
-  top: 15px;
 }
 
 .search-form__input {

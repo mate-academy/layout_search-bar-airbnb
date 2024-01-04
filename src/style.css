@@ -1,1 +1,87 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 300;
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  src: url(fonts/Avenir-Heavy.ttf);
+}
+
+:root {
+  --font-color: #3D4E61;
+  --border-color: #E1E7ED;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Avenir, sans-serif;
+}
+
+.form {
+  margin-top: 20px;
+}
+
+.form__label {
+  display: flex;
+  width: 100%;
+}
+
+.form__input {
+  width: 100%;
+  color: var(--font-color);
+  font-weight: 400;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
+  outline: none;
+}
+
+.form__input--big {
+  height: 70px;
+  font-size: 16px;
+  line-height: 22px;
+  background: url(images/Search.svg) 26px 50% no-repeat;
+  background-size: 19px;
+  padding-left: 62px;
+}
+
+.form__input--small {
+  height: 42px;
+  font-size: 14px;
+  line-height: 19px;
+  background: url(images/Search.svg) 13px 50% no-repeat;
+  background-size: 11px;
+  padding-left: 33px;
+}
+
+.form__input:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.form__input:focus {
+  border-radius: 3px;
+  background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+  font-weight: 600;
+}
+
+.form__input--big:focus {
+  background: url(images/Search.svg) 26px 50% no-repeat, linear-gradient(180deg, white 0%, #F6F6F7 100%);
+}
+
+.form__input--small:focus {
+  background: url(images/Search.svg) 13px 50% no-repeat, linear-gradient(180deg, white 0%, #F6F6F7 100%);
+  background-size: 11px;
+  font-weight: 900;
+}
+
+.form__input::placeholder {
+  color: inherit;
+}

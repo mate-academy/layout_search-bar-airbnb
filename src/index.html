@@ -15,23 +15,36 @@
     <form
       action="#"
       method="get"
-      class="form"
+      class="form form__form-1"
+      data-qa="big"
     >
-      <input
-        type="text"
-        name="field-1"
-        placeholder="Try “Los Angeles”"
-        class="input input--big"
-        data-qa="big"
-      >
-      <input
-        type="text"
-        name="field-2"
-        placeholder="Los Angeles"
-        class="input input--small"
-        data-qa="keypress"
-      >
+      <label class="input input__big">
+        <input
+          type="text"
+          name="field-1"
+          placeholder="Try “Los Angeles”"
+          data-qa="keypress"
+          class="input__field input__field--big"
+        >
+      </label>
     </form>
+    <form
+      action="#"
+      method="get"
+      class="form form__form-2"
+      data-qa="small"
+    >
+      <label class="input input__small">
+        <input
+          type="text"
+          name="field-2"
+          placeholder="Try “Los Angeles”"
+          class="input__field input__field--small"
+        >
+      </label>
+    </form>
+
+
     <!-- <h1>Search bar airbnb</h1> -->
   </body>
 

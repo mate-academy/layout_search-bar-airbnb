@@ -1,1 +1,84 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url(/src/fonts/Avenir-Book.ttf),
+   url(/src/fonts/Avenir-Heavy.ttf),
+    url(/src/fonts/Avenir.ttc);
+}
+
+body {
+  height: 100vh;
+}
+
+.big, .small {
+  margin-top: 20px;
+}
+
+.big__section {
+  height: 70px;
+}
+
+.small__section {
+  height: 42px;
+}
+
+.big__section, .small__section {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.big__section__icon, .small__section__icon {
+  position: absolute;
+  background-image: url(/src/images/Search.svg);
+  margin: auto 0;
+}
+
+.big__section__icon {
+  height: 19px;
+  width: 19px;
+  left: 25px;
+}
+
+.small__section__icon {
+  object-fit: cover;
+  background-size: cover;
+  height: 11px;
+  width: 11px;
+  left: 13px;
+}
+
+input {
+  width: 100%;
+  padding: 0;
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+  color: #3D4E61;
+  border-radius: 4px;
+  border: 1px solid #E1E7ED;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
+}
+
+.big__section__input {
+  line-height: 68px;
+  font-size: 16px;
+  padding-left: 62px;
+}
+
+.small__section__input {
+  line-height: 40px;
+  font-size: 14px;
+  padding-left: 33px;
+}
+
+input:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.20);
+}
+
+input:focus {
+  font-weight: 700;
+  border-radius: 3px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+}
+

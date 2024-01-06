@@ -28,6 +28,7 @@ ___
 - [DEMO LINK](https://<Kateryna199420>.github.io/layout_search-bar-airbnb/)
 - [TEST REPORT LINK](https://<Kateryna199420>.github.io/layout_search-bar-airbnb/report/html_report/)
 
+
 ❗️ Copy this `Checklist` to the `Pull Request` description after links, and put `- [x]` before each point after you checked it.
 
 - [ ] Icon implemented using background-image CSS property

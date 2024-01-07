@@ -1,1 +1,80 @@
-/* add styles here */
+:root {
+  --main-background: #fff;
+  --secondary-background: #f6f6f7;
+  --border-color: #e1e7ed;
+  --box-shadow-color: rgba(61, 78, 97, 0.1);
+  --hover-box-shadow-color: rgba(0, 0, 0, 0.25);
+  --placeholder-color: #3d4e61;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+
+body {
+  margin: 0;
+  padding-top: 20px;
+}
+
+.searchbar {
+  margin: 0 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.searchbar__big input {
+  background: url("./images/Search.svg") no-repeat 26px center;
+  padding-left: 62px;
+  background-size: 19px;
+  box-sizing: border-box;
+  height: 70px;
+
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.searchbar__small input {
+  box-sizing: border-box;
+  background: url("./images/Search.svg") no-repeat 13px center;
+  background-size: 11px;
+  padding-left: 33px;
+  height: 42px;
+
+  font-family: Avenir, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.searchbar input {
+  line-height: 22px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 1px 8px 0 var(--box-shadow-color);
+
+  &:hover {
+    box-shadow: 0 4px 4px 0 var(--hover-box-shadow-color);
+  }
+
+  &:focus {
+    border-radius: 3px;
+    border: 1px solid var(--border-color);
+    background: linear-gradient(
+      180deg,
+      var(--main-background) 0%,
+      var(--secondary-background) 100%
+    );
+    font-weight: 900;
+    outline: none;
+  }
+
+  &::placeholder {
+    font-weight: 300;
+    color: var(--placeholder-color);
+    font-family: inherit;
+  }
+}

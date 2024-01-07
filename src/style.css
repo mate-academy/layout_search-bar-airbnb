@@ -23,17 +23,19 @@ body {
   box-shadow: 0 1px 8px 0 #3d4e611a;
   padding: 0;
   box-sizing: border-box;
+  color: #3d4e61;
 }
 
-.big input {
-  margin: 20px 0;
-  height: 68px;
-  padding-left: 62px;
-}
-
-.big input::placeholder {
+.big-input,
+.big-input::placeholder {
   font-size: 15px;
   font-weight: 400;
+}
+
+.big-input {
+  margin: 20px 0;
+  height: 70px;
+  padding-left: 62px;
 }
 
 .big,
@@ -47,14 +49,15 @@ body {
   left: 26px;
 }
 
-.small input {
-  height: 40px;
-  padding-left: 33px;
+.small-input,
+.small-input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
 }
 
-.small input::placeholder {
-  font-size: 13px;
-  font-weight: 400;
+.small-input {
+  height: 40px;
+  padding-left: 33px;
 }
 
 .small img {

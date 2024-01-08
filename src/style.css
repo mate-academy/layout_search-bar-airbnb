@@ -1,1 +1,125 @@
-/* add styles here */
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 300;
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: bold;
+  src: url(fonts/Avenir-Heavy.ttf);
+}
+
+body {
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+}
+
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto 0;
+}
+
+.form__big {
+  width: 100%;
+  height: 70px;
+}
+
+.form__label {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.form__label::after{
+  position: absolute;
+  display: block;
+  content: '';
+}
+
+.form__label_big::after {
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 19px;
+  height: 19px;
+  top: 25px;
+  left: 26px;
+}
+
+.form__input_big {
+  padding-left: 62px;
+  line-height: 22px;
+
+  font-size: 16px;
+}
+
+.form__input_big:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+  transition: 777ms ease;
+}
+
+.form__input_big:focus {
+  border-radius: 3px;
+  background: rgba(246, 246, 247, 1);
+  transition: all 777ms ease;
+  box-shadow: none;
+  font-weight: bold;
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.form__input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  font-family: Avenir, sans-serif;
+  color: #3d4e61;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  font-weight: 300;
+}
+
+.form__small {
+  width: 100%;
+  height: 42px;
+}
+
+.form__label_small::after {
+  height: 11px;
+  width: 11px;
+
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  top: 15px;
+  left: 13px;
+}
+
+.form__input_small {
+  padding-left: 33px;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.form__input_small:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+  transition: all 777ms ease;
+}
+
+.form__input_small:focus {
+  border-radius: 3px;
+  background: rgba(246, 246, 247, 1);
+  box-shadow: none;
+  font-weight: bold;
+  transition: all 777ms ease;
+}

@@ -1,5 +1,6 @@
 .input {
   position: relative;
+  color: #3D4E61;
 }
 
 .input::before {
@@ -36,14 +37,8 @@
   box-shadow: 0 1px 8 rgba(61, 78, 97, 0.1);
 }
 
-.input__field:hover {
-  border: 1px solid #E1E7ED;
-  border-radius: 4px;
-}
-
 .input__field:focus {
   font-weight: bold;
-  color: #3D4E61;
   background: linear-gradient(#FFF, #F6F6F7);
   outline: none;
   border-radius: 3px;
@@ -55,24 +50,17 @@
   line-height: 22px;
 }
 
-.input__field--big:hover {
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
-}
-
-.input__field--big:focus {
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
-}
-
 .input__field--small {
   padding: 12px 12px 11px 33px;
   font-size: 14px;
   line-height: 19px;
 }
 
-.input__field--small:hover {
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+.input__field--small:hover,
+.input__field--big:hover,
+.input__field--big:focus {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
 }
-
 
 .input__field--small:focus {
   box-shadow: 0;

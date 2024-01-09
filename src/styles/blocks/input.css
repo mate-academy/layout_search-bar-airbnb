@@ -7,21 +7,21 @@
   position: absolute;
   content: '';
   display: block;
-  background-image: url(../../images/Search.svg);
+  background-image: url(../../images/search.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .input--big::before {
-  top: 25px;
+  top: 26px;
   left: 26px;
   width: 19px;
   height: 19px;
 }
 
 .input--small::before {
-  top: 13px;
+  top: 16px;
   left: 13px;
   width: 11px;
   height: 11px;
@@ -55,14 +55,17 @@
   padding: 12px 12px 11px 33px;
   font-size: 14px;
   line-height: 19px;
+  text-shadow: 0 4px 4px var(--shadow-color);
 }
 
 .input__field--small:hover,
 .input__field--big:hover,
 .input__field--big:focus {
-  box-shadow: 0 3px 8px var(--box-shadow-color);
+  box-shadow: 0 3px 8px var(--shadow-color);
+  text-shadow: unset;
 }
 
 .input__field--small:focus {
   box-shadow: 0;
+  text-shadow: unset;
 }

@@ -1,6 +1,6 @@
 .input {
   position: relative;
-  color: #3D4E61;
+  color: var(--main-font-color);
 }
 
 .input::before {
@@ -28,19 +28,19 @@
 }
 
 .input__field {
-  font-family: Avenir, sans-serif;
+  font-family: inherit;
   font-weight: 300;
   display: block;
   width: 100%;
   color: inherit;
-  border: 1px solid #E1E7ED;
+  border: 1px solid var(--border-color);
   border-radius: 4px;
   box-shadow: 0 1px 8 rgba(61, 78, 97, 0.1);
 }
 
 .input__field:focus {
   font-weight: bold;
-  background: linear-gradient(#FFF, #F6F6F7);
+  background: var(--bg-focus-gradient);
   outline: none;
   border-radius: 3px;
 }
@@ -60,7 +60,7 @@
 .input__field--small:hover,
 .input__field--big:hover,
 .input__field--big:focus {
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 3px 8px var(--box-shadow-color);
 }
 
 .input__field--small:focus {

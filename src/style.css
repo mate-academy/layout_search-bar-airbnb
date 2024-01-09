@@ -47,15 +47,18 @@ input {
   background-position: 12px 14px;
 }
 
-.big-search-bar__input:hover,
-.small-search-bar__input:hover {
+.big-search-bar__input:hover, .big-search-bar__input:focus {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.small-search-bar__input:hover {
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.20);
 }
 
 .big-search-bar__input:focus,
 .small-search-bar__input:focus {
   background-color: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   color: #3d4e61;
   font-weight: 700;
 }
+

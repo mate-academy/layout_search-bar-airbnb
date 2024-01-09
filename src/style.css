@@ -1,4 +1,3 @@
-/* #region font */
 @font-face {
   font-family: Avenir;
   font-weight: 300;
@@ -11,10 +10,6 @@
   src: url(fonts/Avenir-Heavy.ttf);
   }
 
-/* #endregion */
-
-/* #region general */
-
 :root {
   font-family: Avenir,sans-serif;
 
@@ -23,8 +18,6 @@
   
   margin: 8px;
 }
-
-/* #endregion */
 
 .bar {
   width: 100%;
@@ -40,8 +33,6 @@
   height: 42px;
 }
 
-/* #region input */
-
 .bar__input--big {
   border: 1px solid var(--border-color);
   border-radius: 4px;
@@ -55,7 +46,6 @@
   width: 100%;
   height: 100%;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-
 }
 
 .bar__input--small {
@@ -74,7 +64,6 @@
 
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
 	padding-left: 33px;
-
 }
 
 .label {
@@ -83,36 +72,29 @@
   width: 100%;
 }
 
-
-.label__big-bar::after {
+.label::after {
   content: "";
   background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 19px;
-  height: 19px;
-  top: 25px;
-  left: 26px;
   position: absolute;
   display: block;
 }
 
+.label__big-bar::after {
+  width: 19px;
+  height: 19px;
+  top: 25px;
+  left: 26px;
+}
+
 .label__small-bar::after {
-  display: block;
-  position: absolute;
-  content: "";
-  background-image: url("./images/Search.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
   width: 11px;
   height: 11px;
   top: 15px;
   left: 13px;
 }
 
-/* #endregion */
-
-/* #region Focus */
 .bar__input--big:focus {
   background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
   font-weight: 800;
@@ -125,10 +107,6 @@
   font-weight: 600;
   outline: none;
 }
-
-/* #endregion */
-
-
 
 .bar__input--small::placeholder {
   font-size: 14px;

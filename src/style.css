@@ -1,1 +1,93 @@
-/* add styles here */
+html {
+  font-family: Avenir, sans-serif;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir.ttc) format('truetype');
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 20px 0;
+}
+
+.search__container {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.search__container:last-child {
+  padding-bottom: 0;
+}
+
+.large-search {
+  width: 100%;
+  color: #3D4E61;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 300;
+  border-radius: 4px;
+  border: 1px solid #E1E7ED;
+  background: #FFF;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
+  padding: 25px 0 25px 62px;
+  height: 70px;
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 25px center;
+}
+
+.large-search:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.large-search:focus {
+  outline: none;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+  font-weight: 900;
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 25px center;
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25)
+}
+
+.small-search {
+  width: 100%;
+  font-family: Avenir, sans-serif;
+  color: #3D4E61;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 12px 0 12px 33px;
+  border-radius: 4px;
+  border: 1px solid #E1E7ED;
+  background: #FFF;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
+  height: 42px;
+  background-image: url(./images/Search.svg);
+  background-size: 11px 11px;
+  background-repeat: no-repeat;
+  background-position: 13px center;
+}
+
+.small-search:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.20);
+}
+
+.small-search:focus {
+  outline: none;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+  font-weight: 900;
+  background-image: url(./images/Search.svg);
+  background-size: 11px 11px;
+  background-repeat: no-repeat;
+  background-position: 13px center;
+}

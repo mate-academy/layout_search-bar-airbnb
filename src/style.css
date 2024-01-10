@@ -21,11 +21,6 @@ body {
   margin-bottom: 7px;
 }
 
-.container {
-  display: flex;
-  align-items: center;
-}
-
 .box-shadow {
   border-radius: 4px;
   border: 1px solid var(--border-color);
@@ -33,28 +28,9 @@ body {
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
 }
 
-.search-icon {
-  background-image: url(images/Search.svg);
-  background-position: center;
-  width: 19px;
-  height: 19px;
-}
-
-.small-icon {
-  background-size: contain;
-  background-position: center;
-  width: 11px;
-  height: 11px;
-  margin-bottom: 1px;
-}
-
 .search-form {
   display: flex;
   align-items: center;
-}
-
-.search-label {
-  display: flex;
   margin: 20px 8px;
 }
 
@@ -67,48 +43,55 @@ body {
 }
 
 .input-modifier {
-  padding: 0;
+  padding: 0 0 0 36px;
   border: none;
   font-family: inherit;
   color: var(--main-color);
-  background-color: transparent;
   outline: none;
+  width: 100%;
+
+  background-image: url(images/Search.svg);
+  background-color: transparent;
+  background-size: 19px 19px;
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  background-position: left;
 }
 
 .search-big__input {
-  margin-left: 18px;
   font-size: 16px;
 }
 
 .search-small__input {
-  margin-left: 10px;
+  padding-left: 20px;
   font-size: 14px;
-  text-shadow: 0 4px 4px 0 var(--shadow-color);
+  background-size: 11px 11px;
+  text-shadow: 0 4px 4px var(--shadow-color);
 }
 
-.search-label:hover {
+.search-form:hover {
   box-shadow: 0 4px 4px 0 var(--shadow-color);
 }
 
-.search-label:hover .search-small__input {
+.search-form:hover .search-small__input {
   text-shadow: none;
 }
 
-.search-label:focus-within {
-  box-shadow: 0 4px 4px 0 var(--shadow-color);
+.search-form:focus-within {
   background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+  box-shadow: 0 4px 4px 0 var(--shadow-color);
 }
 
-.search-label:focus-within .search-big__input {
+.search-form:focus-within .search-big__input {
   font-weight: bold;
-  text-shadow: 0 4px 4px 0 var(--shadow-color);
+  text-shadow: 0 4px 4px var(--shadow-color);
 }
 
-.search-label:has(.search-small__input) :focus-within {
+.search-form:has(.search-small__input) :focus-within {
   font-weight: bold;
   text-shadow: none;
 }
 
-.search-label:has(.search-small__input):focus-within {
+.search-form:has(.search-small__input):focus-within {
   box-shadow: none;
 }

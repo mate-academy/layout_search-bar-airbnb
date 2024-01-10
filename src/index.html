@@ -11,36 +11,26 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <label
-      class="search-label box-shadow"
+    <form
+      class="search-big search-form box-shadow"
       data-qa="big">
-      <div class="search-big container">
-        <form class="search-form">
-          <div class="search-icon"></div>
-          <input
-            data-qa="keypress"
-            class="search-big__input input-modifier"
-            type="text"
-            placeholder="Try “Los Angeles”"
-          >
-        </form>
-      </div>
-    </label>
+      <input
+        data-qa="keypress"
+        class="search-big__input input-modifier"
+        type="text"
+        placeholder="Try “Los Angeles”"
+      >
+    </form>
 
-    <label
-      class="search-label box-shadow"
+    <form
+      class="search-small search-form box-shadow"
       data-qa="small">
-      <div class="search-small container">
-        <form class="search-form">
-          <div class="search-icon small-icon"></div>
-          <input
-            class="search-small__input input-modifier"
-            type="text"
-            id="search-small__input"
-            placeholder="Try “Los Angeles”"
-          >
-        </form>
-      </div>
-    </label>
+      <input
+        class="search-small__input input-modifier"
+        type="text"
+        id="search-small__input"
+        placeholder="Los Angeles"
+      >
+    </form>
   </body>
 </html>

@@ -1,7 +1,15 @@
+html {
+  font-family: Avenir, sans-serif;
+}
+
 @font-face {
   font-family: Avenir;
   src: url(./fonts/Avenir.ttc) format('truetype');
   font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -12,7 +20,6 @@ body {
 
 .search__container {
   width: 100%;
-  box-sizing: border-box;
   padding-bottom: 20px;
 }
 
@@ -21,11 +28,10 @@ body {
 }
 
 .large-search {
-  box-sizing: border-box;
   width: 100%;
   color: #3D4E61;
   font-size: 16px;
-  font-family: Avenir, sans-serif;
+  font-family: inherit;
   font-weight: 300;
   border-radius: 4px;
   border: 1px solid #E1E7ED;
@@ -54,7 +60,6 @@ body {
 }
 
 .small-search {
-  box-sizing: border-box;
   width: 100%;
   font-family: Avenir, sans-serif;
   color: #3D4E61;

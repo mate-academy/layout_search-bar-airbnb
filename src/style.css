@@ -1,1 +1,97 @@
-/* add styles here */
+:root {
+  --border-color: #E1E7ED;
+  --main-color: #3D4E61;
+  --shadow-color: rgba(0, 0, 0, 0.25);
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir.ttc') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+}
+
+html {
+  font-family: Avenir, sans-serif;
+}
+
+body {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 7px;
+}
+
+.box-shadow {
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  background: #FFF;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  margin: 20px 8px;
+}
+
+.search-big {
+  padding: 23px 25px;
+}
+
+.search-small {
+  padding: 10px 12px;
+}
+
+.input-modifier {
+  padding: 0 0 0 36px;
+  border: none;
+  font-family: inherit;
+  color: var(--main-color);
+  outline: none;
+  width: 100%;
+
+  background-image: url(images/Search.svg);
+  background-color: transparent;
+  background-size: 19px 19px;
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  background-position: left;
+}
+
+.search-big__input {
+  font-size: 16px;
+}
+
+.search-small__input {
+  padding-left: 20px;
+  font-size: 14px;
+  background-size: 11px 11px;
+  text-shadow: 0 4px 4px var(--shadow-color);
+}
+
+.search-form:hover {
+  box-shadow: 0 4px 4px 0 var(--shadow-color);
+}
+
+.search-form:hover .search-small__input {
+  text-shadow: none;
+}
+
+.search-form:focus-within {
+  background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+  box-shadow: 0 4px 4px 0 var(--shadow-color);
+}
+
+.search-form:focus-within .search-big__input {
+  font-weight: bold;
+  text-shadow: 0 4px 4px var(--shadow-color);
+}
+
+.search-form:has(.search-small__input) :focus-within {
+  font-weight: bold;
+  text-shadow: none;
+}
+
+.search-form:has(.search-small__input):focus-within {
+  box-shadow: none;
+}

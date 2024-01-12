@@ -1,87 +1,74 @@
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Heavy.ttf) format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  height: 100vh;
-  width: 100%;
-  background: #07051a;
+  font-family: Avenir, sans-serif;
+
+  --text-color: #3d4e61;
+  --border-color: #e1e7ed;
 }
 
-form{
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  transition: all 1s;
-  width: 50px;
-  height: 50px;
-  background: white;
-  box-sizing: border-box;
-  border-radius: 25px;
-  border: 4px solid white;
-  padding: 5px;
+.search__container {
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
-input{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;;
-  height: 42.5px;
-  line-height: 30px;
-  outline: 0;
-  border: 0;
-  display: none;
-  font-size: 1em;
-  border-radius: 20px;
-  padding: 0 20px;
-}
-
-.fa{
-  box-sizing: border-box;
-  padding: 10px;
-  width: 42.5px;
-  height: 42.5px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  border-radius: 50%;
-  color: #07051a;
-  text-align: center;
-  font-size: 1.2em;
-  transition: all 1s;
-}
-
-form:hover,
-form:valid{
-  width: 200px;
-  cursor: pointer;
-}
-
-form:hover input,
-form:valid input{
+.search_item {
   display: block;
+  width: 100%;
+  position: relative;
+  background: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 1px 8px var(--border-color);
+  border-radius: 4px;
+  color: var(--text-color);
+  font-family: inherit;
 }
 
-form:hover .fa,
-form:valid .fa{
-  background: #07051a;
-  color: white;
+.search_item.search_block_big {
+  height: 70px;
+  padding-left: 62px;
+  background-size: 19px;
+  background-position-x: 26px;
+  font-size: 16px;
 }
 
-
-a {
-display: none;
-position: absolute;
-top: 70px;
-bottom:0;
-left: 0;
-right: 0;
-font-size: 20px;
-color: white;
-text-align: center;
-width: 100%;
+.search_item.search_block_small {
+  height: 42px;
+  font-size: 14px;
+  padding-left: 33px;
+  background-size: 11px;
+  background-position-x: 12px;
 }
 
-form:valid a {
-display: block;
+.search_item:hover {
+  box-shadow: 0 3px 8px #aaadb0;
+}
+
+.search_item:focus {
+  border-radius: 3px;
+  background-color: #f9f9fa;
+  font-weight: 800;
+  outline: none;
+  text-shadow: 0 4px 4px #dfdfdf;
 }

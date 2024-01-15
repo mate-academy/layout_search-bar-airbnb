@@ -1,1 +1,109 @@
 /* add styles here */
+
+/* VARIABLES */
+html {
+  --general-bg: #fff;
+  --color-border: #e1e7ed;
+  --general-font-family: "Avenir";
+  --general-color: #3d4e61;
+  --large-spacing-left: 26px;
+  --small-spacing-left: 13px;
+  --large-grid-gap: 17px;
+  --small-grid-gap: 16px;
+}
+
+/* FONTS */
+@font-face {
+  font-family: var(--general-font-family);
+  src: url(fonts/Avenir.ttc) format("ttc"),
+    url(fonts/Avenir-Book.ttf) format("truetype"),
+    url(fonts/Avenir-Heavy.ttf) format("truetype");
+}
+
+/* BODY STYLES */
+body {
+  font-family: var(--general-font-family);
+  font-style: normal;
+  line-height: normal;
+  margin-top: 0;
+}
+
+/* Content in search-bar */
+.search-bar__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.search-bar {
+  position: relative;
+}
+
+/* DEFAULT */
+.search-bar__input {
+  width: 100%;
+  border: 1px solid var(--color-border);
+  outline: transparent;
+  border-radius: 4px;
+  background: var(--general-bg);
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  transition: 0.2s;
+  box-sizing: border-box;
+  font-weight: 300;
+}
+
+/* Default placeholder */
+.search-bar__input::placeholder {
+  color: var(--general-color);
+}
+
+.search-bar__input:focus {
+  border: 1px solid #e1e7ed;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  font-weight: 800;
+}
+
+.search-bar__input:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* DIFFERENT SIZE INPUTS (SMALL AND LARGE) */
+.search-bar__input--size--large {
+  height: 70px;
+  font-size: 16px;
+  padding-left: calc(
+    var(--large-spacing-left) + var(--large-grid-gap) + var(--large-grid-gap)
+  );
+}
+
+.search-bar__input--size--small {
+  height: 42px;
+  font-size: 14px;
+  padding-left: calc(var(--small-grid-gap) + var(--small-grid-gap));
+}
+
+/* ICONS (LARGE AND SMALL) */
+.search-bar__icon::before {
+  display: block;
+  content: "";
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: var(--spacing-large-icon);
+}
+
+.search-bar__icon--large::before {
+  width: 19px;
+  height: 19px;
+  left: var(--large-spacing-left);
+  top: 25px;
+}
+
+.search-bar__icon--small::before {
+  width: 11px;
+  height: 11px;
+  left: var(--small-spacing-left);
+  top: 15px;
+}

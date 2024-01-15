@@ -1,1 +1,96 @@
 /* add styles here */
+@font-face {
+  font-family: Avenir, sans-serif;
+  src: url(./fonts/Avenir.ttc) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+html {
+  font-family: Avenir, sans-serif;
+}
+
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+
+.search {
+  display: flex;
+  position: relative;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #E1E7ED;
+  background: #FFF;
+  font-family: Avenir, sans-serif;
+}
+
+.search__bar {
+  color: #3D4E61;
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  height: 100%;
+  background: transparent;
+}
+
+
+.search-big {
+  font-size: 16px;
+  padding: 0;
+}
+
+.search-small {
+  font-size: 14px;
+}
+
+.search-field--big {
+  padding-left: 62px;
+  height: 70px;
+  margin: 20px 0;
+}
+
+.search-field--small {
+  padding-left: 33px;
+  height: 42px;
+}
+
+.search::before {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.search-field--big::before {
+  background-image: url(/src/images/Search.svg);
+  width: 19px;
+  height: 19px;
+  top: 25px;
+  left: 26px;
+
+}
+
+.search-field--small::before {
+  background-image: url(/src/images/Search.svg);
+  width: 11px;
+  height: 11px;
+  top: 15px;
+  left: 13px;
+}
+
+.search:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search__bar:focus {
+  border-radius: 3px;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  font-weight: 700;
+  outline: none;
+}
+

@@ -10,7 +10,7 @@
   font-weight: 300;
 }
 
-input{
+.input{
   width: 100%;
   height: 70px;
   border-radius: 4px;
@@ -19,6 +19,7 @@ input{
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
   color: #3D4E61;
   font-size: 14px;
+  font-family: AvenirBook, sans-serif;
 }
 
 .input::placeholder {
@@ -26,31 +27,32 @@ input{
   color: inherit;
 }
 
-.input_one input {
-  /* padding: 24px 0 23px 62px; */
-  font-family: AvenirBook, sans-serif;
-  padding-left: 62px;
-  font-size: 16px;
-}
-
 .input_two, .input_one {
   margin-top: 20px;
   position: relative;
 }
 
-.input_two input{
-  /* padding: 12px 0 8px 33px; */
+.input_one input {
+  padding-left: 62px;
+  font-size: 16px;
+}
+
+.input_two input {
   font-size: 14px;
   height: 42px;
   padding-left: 33px;
-  font-family: AvenirBook, sans-serif;
 }
 
-.input_one::before {
+
+.input_one::before,
+.input_two::before {
   content: '';
   background-size: contain;
   background-image: url(./images/Search.svg);
   position: absolute;
+}
+
+.input_one::before {
   height: 19px;
   width: 19px;
   top: 25px;
@@ -58,27 +60,21 @@ input{
 }
 
 .input_two::before {
-  content: '';
-  background-size: contain;
-  background-image: url(./images/Search.svg);
-  position: absolute;
   top: 15px;
   left: 13px;
   width: 11px;
   height: 11px;
 }
 
-
-input:hover {
+.input:hover {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   border: 0.2px solid rgb(152, 148, 148);
 }
 
-input:focus{
+.input:focus{
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   border: 0.2px solid rgb(152, 148, 148);
   text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   font-weight: 400;
-
   outline: none;
 }

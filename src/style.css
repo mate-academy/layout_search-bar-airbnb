@@ -1,17 +1,16 @@
 /* add styles here */
 @font-face {
   font-family: Avenir;
-  src: url(/src/fonts/Avenir-Book.ttf);
-}
-
-@font-face {
-  font-family: Avenir-heavy;
-  src: url(/src/fonts/Avenir-Heavy.ttf);
+  src: url(./fonts/Avenir-Book.ttf);
 }
 
 body {
   margin: 0;
   box-sizing: border-box;
+
+  --border-color: #e1e7ed;
+  --small-shadow-color: rgba(0, 0, 0, 0.25);
+  --big-shadow-color: rgba(61, 78, 97, 0.10);
 }
 
 .form {
@@ -19,13 +18,13 @@ body {
   display: flex;
   align-items: center;
   border-radius: 3px;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 1px 8px 0 var(--big-shadow-color);
   box-sizing: border-box;
 }
 
 .form:hover {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px 0 var(--small-shadow-color);
 }
 
 .form__icon {
@@ -34,7 +33,7 @@ body {
   width: 19px;
   height: 19px;
   pointer-events: none;
-  background-image: url(/src/images/Search.svg);
+  background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
 }
 
@@ -47,15 +46,13 @@ body {
   font-family: Avenir, Arial, sans-serif;
   font-size: 16px;
   font-weight: 300;
-  font-style: normal;
 }
 
 .form__input:focus {
   outline: none;
-  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  font-weight: 400;
-  font-family: Avenir-heavy, Arial, sans-serif;;
-  background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+  text-shadow: 0 4px 4px 0 var(--small-shadow-color);
+  font-weight: 900;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
 .small-form {
@@ -63,7 +60,7 @@ body {
 }
 
 .small-form:hover {
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
+  box-shadow: 0 3px 8px 0 var(--big-shadow-color);
 }
 
 .form__small-input {
@@ -73,12 +70,11 @@ body {
 }
 
 .form__small-input:hover {
-  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.20);
+  text-shadow: 0 4px 4px 0 var(--small-shadow-color);
 }
 
 .form__small-input:focus {
-  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.20);
+  box-shadow: 0 3px 8px 0 var(--big-shadow-color);
   font-weight: 900;
   text-shadow: none;
 }

@@ -1,0 +1,58 @@
+.search-bar {
+  display: flex;
+}
+
+.search-bar__input {
+  box-sizing: border-box;
+  flex-grow: 1;
+  padding: 0;
+  border: 1px solid #E1E7ED;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px rgb(61, 78, 97, 10%);
+  background-image: url(./../../images/Search.svg);
+  background-repeat: no-repeat;
+  font-family: Avenir, serif;
+  font-weight: 300;
+  color: #3D4E61;
+
+}
+
+[data-qa="big"]>.search-bar__input {
+  height: var(--big-search-bar-height);
+  background-size: var(--big-search-bar-loupe-size);
+  background-position:
+    26px
+    calc((var(--big-search-bar-height) - var(--big-search-bar-loupe-size)) / 2 - 2px),
+    0;
+  text-indent: 62px;
+  font-size: 16px;
+}
+
+[data-qa="small"]>.search-bar__input {
+  height: var(--small-search-bar-height);
+  background-size: var(--small-search-bar-loupe-size);
+  background-position:
+    12px
+    calc((var(--small-search-bar-height) - var(--small-search-bar-loupe-size)) / 2 - 2px),
+    0;
+  text-indent: 33px;
+  font-size: 14px;
+}
+
+.search-bar__input:hover {
+  box-shadow: 0 3px 8px rgb(61, 78, 97, 20%);
+}
+
+.search-bar__input:focus {
+  border-radius: 3px;
+  box-shadow: 0 3px 8px rgb(61, 78, 97, 20%);
+  outline: none;
+  background-image:
+    url(./../../images/Search.svg),
+    linear-gradient(#FFF, #F6F6F7);
+  background-repeat: no-repeat, repeat;
+  font-weight: 900;
+  text-shadow: 0 4px 4px rgb(0, 0, 0, 25%);
+}
+
+

@@ -1,1 +1,87 @@
 /* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Book.ttf);
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+
+  --border-color: #e1e7ed;
+  --small-shadow-color: rgba(0, 0, 0, 0.25);
+  --big-shadow-color: rgba(61, 78, 97, 0.10);
+}
+
+.form {
+  margin: 20px 8px;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 1px 8px 0 var(--big-shadow-color);
+  box-sizing: border-box;
+}
+
+.form:hover {
+  box-shadow: 0 4px 4px 0 var(--small-shadow-color);
+}
+
+.form__icon {
+  position: absolute;
+  margin-left: 25px;
+  width: 19px;
+  height: 19px;
+  pointer-events: none;
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+}
+
+.form__input {
+  padding: 23px 0 23px 62px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  color: #000;
+  font-family: Avenir, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.form__input:focus {
+  outline: none;
+  text-shadow: 0 4px 4px 0 var(--small-shadow-color);
+  font-weight: 900;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.small-form {
+  border-radius: 5px;
+}
+
+.small-form:hover {
+  box-shadow: 0 3px 8px 0 var(--big-shadow-color);
+}
+
+.form__small-input {
+  padding: 10px 0 10px 33px;
+  font-size: 14px;
+  text-shadow: none;
+}
+
+.form__small-input:hover {
+  text-shadow: 0 4px 4px 0 var(--small-shadow-color);
+}
+
+.form__small-input:focus {
+  box-shadow: 0 3px 8px 0 var(--big-shadow-color);
+  font-weight: 900;
+  text-shadow: none;
+}
+
+.small-icon {
+  margin: 0 0 1px 12px;
+  width: 11px;
+  height: 11px;
+  background-size: cover;
+}

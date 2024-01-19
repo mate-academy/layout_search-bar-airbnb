@@ -2,7 +2,6 @@
   font-family: Avenir;
   src: url(./fonts/Avenir-Book.ttf);
   font-weight: 300;
-  font-style: normal;
 }
 
 body {
@@ -16,6 +15,7 @@ form {
 
 input {
   width: 100%;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
 }
 
 .big-form__input {
@@ -23,19 +23,13 @@ input {
   box-sizing: border-box;
   border-radius: 4px;
   border: 1px solid #E1E7ED;
-  background: #FFF;
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
+  background: #FFF url(./images/Search.svg) no-repeat 26px;
   height: 70px;
-  background-image: url(./images/Search.svg);
-  background-repeat: no-repeat;
   background-size: 19px;
-  background-position: 26px;
   text-indent: 62px;
   font-family: Avenir, sans-serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .big-form__input:hover {
@@ -44,15 +38,7 @@ input {
 
 .big-form__input:focus {
   border-radius: 3px;
-  border: 1px solid #E1E7ED;
-  background-image: url(./images/Search.svg), linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
-  background-repeat: no-repeat, repeat;
-  background-size: 19px;
-  background-position: 26px;
-  text-indent: 62px;
-  font-size: 16px;
-  font-family: Avenir, sans-serif;
-  font-weight: 400;
+  background: (180deg, #FFF 0%, #F6F6F7 100%) repeat;
   text-shadow: 0 4px 4px rgb(0, 0, 0, 25%);
   box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.20);
   outline: none;
@@ -63,13 +49,9 @@ input {
   box-sizing: border-box;
   border-radius: 4px;
   border: 1px solid #E1E7ED;
-  background: #FFF;
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
+  background: #FFF url(./images/Search.svg) no-repeat top 14px left 12px;
   height: 42px;
-  background-image: url(./images/Search.svg);
-  background-repeat: no-repeat;
   background-size: 11px;
-  background-position: top 14px left 12px;
   text-indent: 33px;
   font-size: 14px;
   font-family: Avenir, sans-serif;
@@ -82,13 +64,7 @@ input {
 .small-form__input:focus {
   border-radius: 3px;
   border: 1px solid #E1E7ED;
-  background-image: url(./images/Search.svg), linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
-  background-repeat: no-repeat, repeat;
-  background-size: 11px;
-  background-position: top 14px left 12px;
-  text-indent: 33px;
-  font-size: 14px;
-  font-family: Avenir, sans-serif;
+  background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%) repeat;
   text-shadow: 0 4px 4px rgb(0, 0, 0, 25%);
   box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.20);
   outline: none;

@@ -57,7 +57,6 @@
   background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
 }
 
-
 .form__input::placeholder {
   font-family: Avenir, sans-serif;
   font-weight: 300;
@@ -71,17 +70,22 @@
 .big-form__input {
   font-size: 16px;
   padding: 24px 0 25px 62px;
-
-  background-image: url(./images/Search.svg);
-  background-repeat: no-repeat;
-  background-position: 26px 24px;
 }
 
+.big-form__input::after {
+  content: " ";
+  position: absolute;
+  top: 138px;
+  background-image: url(./images/Search.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 19px;
+}
 
 .small-form__input {
   font-size: 14px;
   padding: 11px 0 10px 33px;
-
 }
 
 /* .big-form__icon {

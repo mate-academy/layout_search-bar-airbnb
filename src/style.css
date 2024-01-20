@@ -9,8 +9,7 @@
   src: url(fonts/Avenir-Heavy.ttf);
 }
 
-form[data-qa="big"],
-form[data-qa="small"] {
+.search {
   margin-top: 20px;
 }
 
@@ -59,16 +58,12 @@ form[data-qa="small"] {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.input--big:focus {
+.search__input:focus {
   border-radius: 3px;
   background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+  outline: none;
 }
 
 .input--small:hover {
   box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.20);
-}
-
-.input--small:focus {
-  border-radius: 3px;
-  background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
 }

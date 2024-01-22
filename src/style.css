@@ -1,1 +1,102 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Book.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Heavy.ttf);
+  font-weight: 900;
+}
+
+body {
+  margin-top: 0;
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form__input {
+  border-radius: 4px;
+  border: 1px solid #E1E7ED;
+  background: #FFF;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+}
+
+.form__input:active,
+.form__input:hover,
+.form__input:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.form__input::placeholder {
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+}
+
+.form__input:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.20);
+}
+
+.form__input:focus {
+  border-radius: 3px;
+  background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+  font-family: Avenir, sans-serif;
+  font-weight: 900;
+}
+
+.form__input--big {
+  width: 100%;
+  height: 70px;
+  padding-left: 62px;
+  padding-right: 26px;
+  margin-top: 20px;
+  background-image: url(./images/Search.svg);
+  background-size: 19px 19px;
+  background-position: 25px 25px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+}
+
+.form__input--big::placeholder {
+  font-size: 16px;
+}
+
+.form__input--big:focus {
+  background-image: url(./images/Search.svg);
+  background-size: 19px 19px;
+  background-position: 25px 25px;
+  background-repeat: no-repeat;
+}
+
+.form__input--small {
+  width: 100%;
+  height: 42px;
+  padding-left: 33px;
+  padding-right: 13px;
+  background-image: url(./images/Search.svg);
+  background-size: 11px 11px;
+  background-position: 12px 14px;
+  background-repeat: no-repeat;
+  font-size: 14px;
+}
+
+.form__input--small::placeholder {
+  font-size: 14px;
+}
+
+.form__input--small:focus {
+  background-image: url(./images/Search.svg);
+  background-size: 11px 11px;
+  background-position: 12px 14px;
+  background-repeat: no-repeat;
+}

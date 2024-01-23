@@ -51,25 +51,10 @@ body {
   font-size: 14px;
 }
 
-.input::placeholder {
-  color: inherit;
-  font-weight: 300;
-}
-
-.input_big::placeholder {
-  font-size: 16px;
-  line-height: 22px;
-}
-
-.input_small::placeholder {
-  font-size: 14px;
-  line-height: 22px;
-}
-
 .label::after {
   position: absolute;
   content: "";
-  background-image: url(../src/images/Search.svg);
+  background-image: url(./images/Search.svg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -86,6 +71,21 @@ body {
   height: 11px;
   left: 13px;
   top: 15px;
+}
+
+.input::placeholder {
+  color: inherit;
+  font-weight: 300;
+}
+
+.input_big::placeholder {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.input_small::placeholder {
+  font-size: 14px;
+  line-height: 22px;
 }
 
 .input_big:hover {

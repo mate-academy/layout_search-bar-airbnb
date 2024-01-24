@@ -1,1 +1,110 @@
 /* add styles here */
+
+:root {
+  --grey: #e1e7ed;
+}
+
+@font-face {
+  font-family: "Avenir Book";
+  src: url("fonts/Avenir-Book.woff2") format("woff2"),
+    url("fonts/Avenir-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 8px;
+}
+
+/* Global form class */
+
+.form {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form .form__label {
+  position: relative;
+  display: block;
+}
+
+.form .form__label::after {
+  content: "";
+  position: absolute;
+  background-image: url("images/Search.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.form .form__label input {
+  border-radius: 4px;
+  border: 1px solid var(--grey);
+  background: #fff;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  color: #3d4e61;
+  font-weight: 400;
+  font-family: "Avenir Book", sans-serif;
+}
+
+.form .form__label input::placeholder {
+  font-weight: 400;
+}
+
+/* Big form styles */
+
+.big-form {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.big-form .big-form__wrap input {
+  width: 100%;
+  height: 70px;
+  padding-left: 62px;
+  font-size: 16px;
+}
+
+.big-form .big-form__wrap::after {
+  width: 19px;
+  height: 19px;
+  left: 26px;
+  top: 25px;
+}
+
+/* Small form styles */
+
+.small-form .small-form__wrap::after {
+  width: 11px;
+  height: 11px;
+  left: 13px;
+  top: 15px;
+}
+
+.small-form .small-form__wrap input {
+  width: 100%;
+  height: 42px;
+  padding-left: 33px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form .form__label input:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.form .form__label input:focus {
+  border-radius: 3px;
+  border: 1px solid var(--grey);
+  outline: none;
+  font-weight: 600;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}

@@ -12,6 +12,7 @@
 
 html {
   font-family: Avenir, sans-serif;
+  font-weight: 300;
 }
 
 .form {
@@ -32,6 +33,7 @@ html {
 }
 
 .input:focus {
+  font-weight: 800;
   background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
 }
 
@@ -42,22 +44,23 @@ html {
   font-family: inherit;
 }
 
-.form--big::before {
+.form--big::before,
+.form--small::before {
   content: "";
   position: absolute;
+  background-image: url(./images/Search.svg);
+}
+
+.form--big::before {
   top: 25px;
   left: 26px;
-  background-image: url(./images/Search.svg);
   width: 19px;
   height: 19px;
 }
 
 .form--small::before {
-  content: "";
-  position: absolute;
   top: 15px;
   left: 13px;
-  background-image: url(./images/Search.svg);
   background-size: 11px;
   width: 11px;
   height: 11px;

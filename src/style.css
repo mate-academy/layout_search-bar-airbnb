@@ -1,4 +1,11 @@
 /* add styles here */
+html {
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -7,16 +14,13 @@ body {
 
 * {
   box-sizing: border-box;
-  color: #3D4E61;
-  font-family: Avenir, sans-serif;
-  font-size: 16px;
-  font-style: normal;
   font-weight: 300;
-  line-height: normal;
 }
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-clear-button {
+.search__big::-webkit-search-cancel-button,
+.search__big::-webkit-search-clear-button,
+.search__small::-webkit-search-cancel-button,
+.search__small::-webkit-search-clear-button {
   -webkit-appearance: none;
   appearance: none;
 }
@@ -31,6 +35,7 @@ input {
 }
 
 .search__big {
+  color: #3D4E61;
   padding-left: 62px;
   margin: 20px 0;
   width: 100%;
@@ -53,6 +58,7 @@ input {
 }
 
 .search__small {
+  color: #3D4E61;
   padding-left: 33px;
   width: 100%;
   height: 42px;

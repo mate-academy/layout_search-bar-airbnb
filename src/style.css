@@ -1,1 +1,185 @@
-/* add styles here */
+@charset "UTF-8";
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+
+
+a,
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+@font-face{
+  font-family: Avenir;
+  src:url(./fonts/Avenir-Book.ttf);
+  font-weight: 300;
+}
+
+@font-face{
+  font-family: Avenir;
+  src:url(./fonts/Avenir-Heavy.ttf);
+  font-weight: 900;
+}
+
+
+body{
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+  display: block;
+  font-size: 16px;
+  width: 100%;
+}
+
+input {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form{
+  margin-left: 8px;
+  margin-right: 8px;
+  position: relative;
+}
+
+.form-big{
+  margin: 20px 8px;
+}
+
+.label{
+  position: relative;
+}
+
+.label::before{
+  content: '';
+  position: absolute;
+  background-image: url(./images/Search.svg);
+  z-index: 10;
+}
+
+.label__big::before{
+  width: 19px;
+  height: 19px;
+  top: 1px;
+  left: 26px;
+}
+
+.label__small::before{
+  width: 11px;
+  height: 11px;
+  background-size: cover;
+  top: 6px;
+  left: 13px;
+}
+
+.item__input{
+  width: 100%;
+  position: relative;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-left: 62px;
+  border: 1px solid #E1E7ED;
+  box-shadow: 0 1px 8px 0 #3D4E611A;
+  font-size: 16px;
+  border-radius: 3px;
+  color: #3D4E61;
+}
+
+.item__input::placeholder {
+  color: inherit;
+  font-weight: 300;
+}
+
+.item__input:focus{
+  font-weight: 900;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.item__input:hover{
+  box-shadow: 0 3px 8px 0 #3D4E6133;
+
+}
+
+.small-input{
+  padding-top:10px;
+  padding-bottom: 10px;
+  padding-left: 33px;
+  font-size: 14px;
+  position: relative;
+  color: #3D4E61;
+}
+
+

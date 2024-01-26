@@ -35,6 +35,25 @@ body {
   position: relative;
 }
 
+.searchbar__conainer::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: 26px;
+  top: 25px;
+
+  background: url(./images/Search.svg) no-repeat center/contain;
+}
+
+.searchbar__conainer--small::after {
+  width: 11px;
+  height: 11px;
+  left: 13px;
+  top: 15px;
+}
+
 .searchbar__large {
   height: 70px;
 }
@@ -77,22 +96,4 @@ body {
   font-size: 14px;
   font-weight: 900;
   line-height: 19px;
-}
-
-.searchbar__logo {
-  position: absolute;
-  display: block;
-  width: 19px;
-  height: 19px;
-  left: 26px;
-  top: 25px;
-
-  background: url(./images/Search.svg) no-repeat center/contain;
-}
-
-.searchbar__logo--small {
-  width: 11px;
-  height: 11px;
-  left: 13px;
-  top: 15px;
 }

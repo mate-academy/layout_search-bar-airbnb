@@ -27,8 +27,6 @@ html {
 body {
 margin: 0;
 padding: 0;
-
---bar-width: 100%;
 }
 
 .search-bar-large {
@@ -40,11 +38,13 @@ padding: 0;
 }
 
 .large-search-bar {
+  display: block;
+  width: 100%;
   text-indent: 60px;
-  width: var(--bar-width);
   height: 70px;
   font-family: Avenir, sans-serif;
   font-size: 16px;
+  font-style: normal;
   background-image: url(/src/images/Search.svg);
   background-repeat: no-repeat;
   background-position: left 25px top 24px;
@@ -64,11 +64,13 @@ padding: 0;
 }
 
 .small-search-bar {
+  display: block;
+  width: 100%;
   text-indent: 31px;
-  width: var(--bar-width);
   height: 42px;
   font-family: Avenir, sans-serif;
   font-size: 14px;
+  font-style: normal;
   background-image: url(/src/images/Search.svg);
   background-repeat: no-repeat;
   background-size: 11px;

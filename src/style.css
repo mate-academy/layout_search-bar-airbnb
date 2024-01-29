@@ -1,1 +1,103 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  font-weight: 300;
+  src: url("./fonts/Avenir-Book.ttf");
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 800;
+  src: url("./fonts/Avenir-Heavy.ttf");
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url("./fonts/Avenir.ttc");
+}
+
+:root {
+  --main-text-color: #3d4e61;
+  --border-color: #e1e7ed;
+  --main-white: #fff;
+}
+
+body {
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+}
+
+.search-form__input {
+  font-family: inherit;
+  display: block;
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  background: var(--main-white);
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  color: var(--main-text-color);
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+}
+
+.search-form__input::placeholder {
+  text-shadow: none;
+  color: var(--main-text-color);
+}
+
+.search-form__input:hover {
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  background: var(--main-white);
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.search-form__input:focus {
+  font-weight: 800;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid var(--border-color);
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.search-form_big .search-form__input {
+  height: 70px;
+  padding-left: 62px;
+  font-size: 16px;
+}
+
+.search-form_small .search-form__input {
+  height: 42px;
+  padding-left: 33px;
+  font-size: 14px;
+}
+
+.search-form_big .search-form__input:focus {
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.search-form_big::before, .search-form_small::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("./images/Search.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.search-form_big::before {
+  width: 19px;
+  height: 19px;
+  left: 26px;
+}
+
+.search-form_small::before {
+  width: 11px;
+  height: 11px;
+  left: 13px;
+}
+
+.search-form_big, .search-form_small {
+  position: relative;
+}

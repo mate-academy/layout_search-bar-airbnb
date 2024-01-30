@@ -1,1 +1,98 @@
 /* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Book.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Heavy.ttf);
+  font-weight: 800;
+}
+
+html {
+  font-weight: 300;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.search__big::-webkit-search-cancel-button,
+.search__big::-webkit-search-clear-button,
+.search__small::-webkit-search-cancel-button,
+.search__small::-webkit-search-clear-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input {
+  padding: 0;
+  outline: none;
+}
+
+.search {
+  width: 100%;
+}
+
+.search__big {
+  align-items: center;
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+  color: #3D4E61;
+  padding-left: 62px;
+  margin: 12px 0 20px;
+  width: 100%;
+  height: 70px;
+  border-radius: 4px;
+  border: 1px solid #E1E7ED;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
+  background: #FFF no-repeat url(images/Search.svg) 25px 24px;
+  font-weight: 400;
+}
+
+.search__big::placeholder {
+  color: #3D4E61;
+}
+
+.search__big:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search__big:focus {
+  border-radius: 3px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: url(images/Search.svg) left 25px top 24px no-repeat, linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 900;
+}
+
+.search__small {
+  font-family: Avenir, sans-serif;
+  font-size: 14px;
+  color: #3D4E61;
+  padding-left: 33px;
+  width: 100%;
+  height: 42px;
+  border-radius: 4px;
+  border: 1px solid #E1E7ED;
+  background: #FFF url(images/Search.svg) left 12px top 14px / 11px 11px no-repeat;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
+}
+
+.search__small::placeholder {
+  color: #3D4E61;
+}
+
+.search__small:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.20);
+  text-shadow: none;
+}
+
+.search__small:focus {
+  border-radius: 3px;
+  background: left 12 top 14 / 11px 11px no-repeat url(images/Search.svg), linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+  text-shadow: none;
+  font-weight: 900;
+}

@@ -1,16 +1,62 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8">
     <meta
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     >
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+    http-equiv="X-UA-Compatible"
+    content="ie=edge">
     <title>Search bar airbnb</title>
-    <link rel="stylesheet" href="./style.css">
+    <link
+    rel="stylesheet"
+    href="./style.css">
   </head>
-  <body>
-    <h1>Search bar airbnb</h1>
+
+  <body class="page__body">
+
+    <div class="container">
+      <!-- #region formbig-->
+      <form
+      action="post"
+      class="form"
+      data-qa="big">
+        <input
+        id="icon-search-big"
+        class="icon-search icon-search--size--big form__search-button-big"
+        type="submit"
+        name="buttom search"
+        value=" ">
+
+        <input
+        id="input-search"
+        class="input-search input-search--size--big form__search-input-big"
+        data-qa="keypress"
+        type="text"
+        placeholder="Try &quot;Los Angeles&quot;">
+      </form>
+      <!-- #endregion formsmall -->
+
+      <form
+      action="post"
+      class="form"
+      data-qa="small">
+        <input
+        id="icon-search-small"
+        class="icon-search icon-search--size--small form__search-button-small"
+        type="submit"
+        name="buttom search"
+        value=" ">
+
+        <input
+        id="small-search"
+        class="input-search input-search--size--small form__search-input-small"
+        type="text"
+        placeholder="Try &quot;Los Angeles&quot;">
+      </form>
+      <!-- #endregion formbig-->
+    </div>
   </body>
 </html>

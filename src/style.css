@@ -43,14 +43,19 @@ input {
   font-size: 16px;
   font-style: normal;
   color: #3D4E61;
-  padding-left: 61px;
+  padding-left: 62px;
   margin: 12px 0 20px;
   width: 100%;
   height: 70px;
   border-radius: 4px;
   border: 1px solid #E1E7ED;
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
-  background: #FFF left 25 top 24 no-repeat url(images/Search.svg);
+  background: #FFF no-repeat url(images/Search.svg) 25px 24px;
+  font-weight: 400;
+}
+
+.search__big::placeholder {
+  color: #3D4E61;
 }
 
 .search__big:hover {
@@ -60,8 +65,9 @@ input {
 .search__big:focus {
   border-radius: 3px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  background: left 25 top 24 no-repeat url(images/Search.svg), linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+  background: url(images/Search.svg) left 25px top 24px no-repeat, linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 900;
 }
 
 .search__small {
@@ -69,15 +75,17 @@ input {
   font-size: 14px;
   font-style: normal;
   color: #3D4E61;
-  padding-left: 32px;
+  padding-left: 33px;
   width: 100%;
   height: 42px;
   border-radius: 4px;
   border: 1px solid #E1E7ED;
-  background: #FFF left 12 top 14 / 11px 11px no-repeat url(images/Search.svg);
+  background: #FFF url(images/Search.svg) left 12px top 14px / 11px 11px no-repeat;
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  font-weight: 400;
+}
+
+.search__small::placeholder {
+  color: #3D4E61;
 }
 
 .search__small:hover {
@@ -89,4 +97,5 @@ input {
   border-radius: 3px;
   background: left 12 top 14 / 11px 11px no-repeat url(images/Search.svg), linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
   text-shadow: none;
+  font-weight: 900;
 }

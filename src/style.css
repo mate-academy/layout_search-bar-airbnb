@@ -15,150 +15,126 @@
 /* #endregion normalize */
 
 /* #region page */
-html {
-  font-family: Avenir, sans-serif;
-  font-weight: 300;
-}
-
 .page {
-  font-family: Avenir, sans-serif;
   font-weight: 300;
 }
 
 .page__body {
-  margin: 0 8px;
-}
-
-.page__content {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  padding: 20px 0;
-  gap: 20px;
-}
-
-.page__form {
-  margin: 0;
-  padding: 0;
-}
-
-.page__inputs-container-large {
-  padding: 0;
-  position: relative;
-}
-
-.page__inputs-container-small {
-  padding: 0;
-  position: relative;
-}
-
-.page__form-big{
-  position: relative;
-  top: 20px;
+  padding: 20px 8px 0;
 }
 
 /* #endregion page */
 
-/* #region form */
-.form {
-  margin: 0;
+/* #region container */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
   padding: 0;
 }
 
-.form__button-large {
-  position: absolute; /* relative to .page__inputs-container-large */
-  top: 25px;
-  left: 26px;
-  z-index: 3;
+/* #endregion container */
+
+/* #region form */
+.form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
-.form__button-small {
-  position: absolute; /* relative to .page__inputs-container-small */
+.form__search-button-big {
+  position: absolute;
+  top: 25px;
+  left: 26px;
+}
+
+.form__search-button-small {
+  position: absolute;
   top: 15px;
   left: 13px;
-  z-index: 3;
 }
 
 /* #endregion form */
 
-/* #region button-search */
-.button-search {
-  background-image: url(images/Search.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: transparent;
-  border: none;
-  color: #687C94;
-  padding: 0;
+/* #region icon-search */
+.icon-search {
   margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 1;
 }
 
-
-.button-search--size--l {
+.icon-search--size--big {
   width: 19px;
   height: 19px;
 }
 
-.button-search--size--s {
+.icon-search--size--small {
   width: 11px;
   height: 11px;
 }
 
-/* #endregion button-search */
+/* #endregion icon-search */
 
-/* #region inputs */
+/* #region input-search */
 .input-search {
-  box-sizing: border-box;
-  border: 1px solid #E1E7ED;
-  border-radius: 4px;
-  box-shadow: 0 1px 8px #3D4E611A;
-  font-family: inherit;
-  letter-spacing: 0;
-  color: #3D4E61;
-  text-align: left;
-  padding: 0;
-  margin: 0;
   width: 100%;
+  border: 1px solid #E1E7ED;
+  border-radius: 3px;
+  box-shadow: 0 1px 8px #3D4E611A;
+  box-sizing: border-box;
+  font-family: Avenir, sans-serif;
 }
 
-.input-search--size--l {
-  text-indent: 62px;
-  line-height: 22px;
-  font-size: 16px;
-  height: 70px;
+.input-search:hover {
+  box-shadow: 0 3px 8px #3D4E6133;
 }
 
-.input-search--size--l:hover {
-  box-shadow: 0 4px 4px #00000040;
-}
-
-.input-search--size--l:focus {
-  background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
-  outline: none;
-  text-shadow: 0 4px 4px #00000040;
-  font-weight: 600;
+.input-search:focus {
+  background: linear-gradient(180deg, #fff 0%, #F6F6F7 100%);
+  border: 1px solid #E1E7ED;
   letter-spacing: 0;
   text-align: left;
 }
 
-.input-search--size--s {
+.input-search--size--big {
+  height: 70px;
+  text-indent: 62px;
+  font-size: 16px;
+}
+
+.input-search--size--big::placeholder {
+  font-weight: 300;
+  color: #3D4E61;
+}
+
+.input-search--size--big:focus {
+  color: #3D4E61;
+  text-shadow: 0 4px 4px #00000040;
+}
+
+.input-search--size--small {
+  height: 42px;
   padding-left: 33px;
-  line-height: 19px;
   font-size: 14px;
   font-weight: 400;
-  height: 42px;
+  line-height: 19px;
 }
 
-.input-search--size--s:hover {
-  text-shadow: none;
-  box-shadow: 0 4px 4px #00000040;
+.input-search--size--small::placeholder {
+  font-weight: 300;
+  color:#3D4E61;
 }
 
-.input-search--size--s:focus {
-  font-weight: 900;
-  background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
-  outline: none;
+.input-search--size--small:focus {
+    font-weight: 900;
 }
 
-/* #endregion inputs */
+/* #endregion input-search */

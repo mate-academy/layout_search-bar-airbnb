@@ -1,6 +1,10 @@
 body {
-  font-family: "Avenir", serif;
-  font-weight: 300;
+  @font-face {
+    font-family: Avenir;
+    src: url(./fonts/Avenir-Book.ttf);
+    font-style: normal;
+    font-weight: 300;
+  }
 }
 
 .container {
@@ -39,18 +43,14 @@ body {
 }
 
 .searchBar__input--small {
-  height: 20px;
   font-size: 14px;
-  line-height: 19px;
   background-size: 11px 11px;
   background-position-x: 13px;
   background-position-y: 15px;
   padding-left: 43px;
   padding-right: 43px;
-  padding-top: 40px;
-  margin-top: 20px;
-  margin-bottom: 20px;
   font-weight: 400;
+  height: 42px;
 }
 
 .searchBar__input::placeholder {

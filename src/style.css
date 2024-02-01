@@ -6,22 +6,21 @@
 input {
   margin: 0;
   box-sizing: border-box;
+  font-family: inherit;
 }
 
 body {
-  margin: 0;
-  padding: 20px 8px 0;
+  font-family: Avenir-Book, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.form {
+  margin-top: 20px;
 }
 
 .form__input {
-  font-family: Avenir-Book, Arial, Helvetica, sans-serif;
-  font-weight: 300;
   width: 100%;
   color: #3D4E61;
   border-radius: 4px;
@@ -32,6 +31,8 @@ body {
   background-position: 26px center;
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.10);
   outline: none;
+  font-size: 16px;
+  margin: 0;
 }
 
 .form__input::placeholder {
@@ -58,9 +59,8 @@ body {
 }
 
 .form__input--big {
-  padding: 23px 25px 23px 62px;
-  line-height: 1;
-  font-size: 16px;
+  padding-left: 62px;
+  height: 70px;
   background-size: 19px;
 }
 
@@ -70,9 +70,10 @@ body {
 
 .form__input--small {
   background-position: 13px center;
-  padding: 10px 12px 10px 33px;
-  line-height: 1;
+  padding-left: 33px;
+  height: 42px;
   font-size: 14px;
+  line-height: 1.2;
   background-size: 11px;
 }
 

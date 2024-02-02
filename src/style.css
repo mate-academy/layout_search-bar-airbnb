@@ -52,6 +52,21 @@ body {
   color: var(--text-color);
 }
 
+.searchbar__input:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.searchbar__input:focus {
+  font-weight: 900;
+  border-radius: 3px;
+  outline: none;
+  background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: 19px;
+  background-position: 25px center;
+}
+
 .searchbar__input--big {
   height: 70px;
 }

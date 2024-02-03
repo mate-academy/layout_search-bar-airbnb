@@ -1,21 +1,21 @@
 /* add styles here */
 @font-face {
   font-family: Avenir;
-    src: url('./fonts/Avenir-Book.ttf');
-    font-weight: 300;
-    font-style: normal;
+  src: url('./fonts/Avenir-Book.ttf');
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
-  margin: 0;
+  margin: 0 8px;
   box-sizing: border-box;
   font-family: Avenir, sans-serif;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 .form {
@@ -24,25 +24,41 @@ body {
   flex-direction: row;
   background-color: #FFF;
   border: 1px solid #E1E7ED;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
   border-radius: 3px;
   min-width: 100%;
-  height: 100%;
+  box-sizing: border-box;
 }
 
 .form:hover {
-  box-shadow: 0 4px 8px 0 #3D4E6133;
+  box-shadow: 0 4px 8px 0 rgba(61, 78, 97, 0.2);
 }
 
 .form:focus-within {
-  background: linear-gradient( #FFF, #F6F6F7);
+  background: linear-gradient(#FFF, #F6F6F7);
 }
 
 .form__input {
   border: none;
   font-family: inherit;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.input--big::placeholder{
+color: #3D4E61;
+font-size: 16px;
+line-height: 21px;
+}
+
+.input--small::placeholder {
+  color: #3D4E61;
+  font-size: 14px;
+  line-height: 19px;
 }
 
 .form__input:focus {
+  color: #3D4E61;
   outline: none;
   border: 0 solid #ccc;
   background: linear-gradient(#FFF, #F6F6F7);
@@ -51,7 +67,7 @@ body {
 .form__image--big {
   width: 19px;
   height: 19px;
-  padding: 25px 17px 25px 25px;
+  padding: 25px 17px 26px 26px;
 }
 
 .form__image--small {
@@ -61,13 +77,14 @@ body {
 }
 
 .form--big {
+  height: 70px;
   margin: 20px 0;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 22px;
 }
 
 .form--small {
+  height: 42px;
   font-size: 14px;
   line-height: 19px;
 }
-

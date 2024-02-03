@@ -1,20 +1,12 @@
 @font-face {
-  font-family:Avenir, sans-serif;
-  src:url('/src/fonts/Avenir.ttc') format('truetype');
-  font-weight: normal;
- }
+  font-family: Avenir-Book;
+  src: url("./fonts/Avenir-Book.ttf") format("truetype");
+}
 
- @font-face {
-  font-family:Avenir-Book, sans-serif;
-  src: url('/src/fonts/Avenir-Book.ttf') format('truetype');
-  font-weight: normal;
- }
-
- @font-face {
-  font-family:Avenir-Heavy, sans-serif;
-  src: url('/src/fonts/Avenir-Heavy.ttf') format('truetype');
-  font-weight: normal;
- }
+@font-face {
+  font-family: Avenir-Heavy;
+  src: url("./fonts/Avenir-Heavy.ttf") format("truetype");
+}
 
 .form {
   display: flex;
@@ -33,6 +25,7 @@
   text-indent: 60px;
   background-position: 25px 24px;
   background-size: 19px;
+  font-family: Avenir-Book, sans-serif;
  }
 
 
@@ -48,4 +41,16 @@
   border-radius: 4px;
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
   border: 1px solid  rgba(225, 231, 237, 1);
+  font-family: Avenir-Book, sans-serif;
+}
+
+.form__big:focus::placeholder,
+.form__small:focus::placeholder {
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  font-family: Avenir-Heavy, sans-serif;
+}
+
+.form__big:hover,
+.form__small:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
 }

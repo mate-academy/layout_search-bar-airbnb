@@ -19,11 +19,54 @@ body {
   font-weight: 300;
  }
 
+ .search-form--big, .search-form--small {
+  position: relative;
+ }
+
+ .search-form--big::before {
+  top: 45px;
+  left: 26px;
+  height: 19px;
+  width: 19px;
+}
+
+.search-form--small::before {
+  top: 15px ;
+  left: 13px;
+  height: 11px;
+  width: 11px;
+}
+
+ .search-form--big::before,
+ .search-form--small::before {
+   position: absolute;
+   background-image: url("./images/Search.svg");
+   background-size: contain;
+   background-repeat: no-repeat;
+   content: "";
+}
+
 .search-form__input {
   width: 100%;
   font-family: Avenir-Heavy, sans-serif;
   border: 1px solid #E1E7ED;
+  background-repeat:no-repeat;
+  background-position-y: center;
  }
+
+.search-form__input::placeholder {
+  font-family: Avenir-Book, sans-serif;
+  color: #3D4E61;
+}
+
+.search-form__input:hover {
+  box-shadow: 0 4px 4px 0 rgba(61, 78, 97, 20%);
+}
+
+.search-form__input:focus {
+  background: linear-gradient(rgba(255, 255, 255, 0%), rgba(0, 0, 0, 5%));
+  outline: none;
+}
 
 .search-form--big__input {
   margin: 20px 0;
@@ -31,12 +74,13 @@ body {
   font-size: 16px;
   padding-left: 62px;
   border-radius: 4px;
-
-  background-image: url(./images/Search.svg);
-  background-repeat: no-repeat;
-  background-position-y: center;
   background-size: 19px;
   background-position-x: 26px;
+}
+
+.search-form--big__input:focus {
+  box-shadow: 0 4px 4px 0 rgba(61, 78, 97, 20%);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .search-form--small__input {
@@ -44,34 +88,6 @@ body {
   font-size: 14px;
   padding-left: 33px;
   border-radius: 3px;
-
-  background-image: url(./images/Search.svg);
-  background-repeat: no-repeat;
-  background-position-y: center;
   background-size: 12px;
   background-position-x: 13px;
-}
-
-.search-form--small__input::placeholder,
-.search-form--big__input::placeholder {
-  font-family: Avenir-Book, sans-serif;
-  color: #3D4E61;
-}
-
-.search-form--big__input:hover {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
-
-.search-form--small__input:hover {
-  box-shadow: 0 3px 8px  rgba(61, 78, 97, 20%);
-}
-
-.search-form--big__input:focus,
-.search-form--small__input:focus {
-  background: linear-gradient(#fff, #F6F6F7);
-}
-
-.search-form--big__input:focus {
-  box-shadow: 0 4px 4px 0 rgba(61, 78, 97, 20%);
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }

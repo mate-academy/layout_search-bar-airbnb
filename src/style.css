@@ -83,6 +83,11 @@
 }
 
 .form__input:focus {
+  text-shadow: 2px 2px 4px #0000003d;
+  background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+}
+
+.form__input:not(:placeholder-shown):focus {
   font-weight: 600;
   text-shadow: 2px 2px 4px #0000003d;
   background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);

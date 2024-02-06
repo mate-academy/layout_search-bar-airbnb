@@ -1,1 +1,114 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir-Book;
+  src: local('Avenir-Book'), url('fonts/Avenir-Book.ttf') format('ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Avenir-Heavy;
+  src: local('Avenir-Heavy'), url('fonts/Avenir-Heavy.ttf') format('ttf');
+  font-weight: 900;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+input[type="text" i] {
+  padding-block: 0;
+  padding-inline: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Avenir-Book, sans-serif;
+  font-size: 18px;
+  color: #3D4E61;
+}
+
+form[data-qa="big"] {
+  height: 70px;
+  margin: 20px 8px;
+  font-size: 20px;
+  padding-left: 25px;
+}
+
+form[data-qa="small"] {
+  height: 42px;
+  font-size: 14px;
+  margin: 0 8px;
+  padding-left: 13px;
+}
+
+form[data-qa="big"],
+form[data-qa="small"] {
+  width: calc(100% - 16px);
+  display: flex;
+  align-items: center;
+
+  /* box-shadow: 0 1px 8px 0 #3D4E611A; */
+  border-radius: 4px;
+
+  border: 1px solid #E1E7ED;
+  color: #E1E7ED;
+}
+
+form[data-qa="big"]:focus,
+form[data-qa="small"]:focus {
+  font-weight: 900;
+}
+
+form[data-qa="big"]:hover,
+form[data-qa="small"]:hover {
+  box-shadow: 0 3px 8px 0 #3D4E6133;
+
+}
+
+form[data-qa="small"] img {
+  width: 11px;
+  height: 11px;
+}
+
+input[name="search1"] {
+  margin-left: 18px;
+  margin-top: -1px;
+  font-size: 15px;
+  line-height: 22px;
+  color: #3D4E61;
+  letter-spacing: 0.55;
+  height: 68px;
+  width: 100%;
+}
+
+input[name="search2"] {
+  margin-left: 10px;
+  margin-top: -1px;
+  font-size: 13px;
+  line-height: 22px;
+  color: #3D4E61;
+  letter-spacing: 0.55;
+  height: 40px;
+  width: 100%;
+  font-weight: 400;
+}
+
+input[name="search1"]:focus,
+input[name="search2"]:focus {
+  font-weight: 900;
+}
+
+@media screen and (min-width: 720px) {
+  form[data-qa="big"] img {
+    margin-top: -1px;
+  }
+
+  form[data-qa="small"] img {
+    margin-top: -1px;
+    margin-left: -1px;
+  }
+}

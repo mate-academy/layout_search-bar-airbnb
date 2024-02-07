@@ -1,1 +1,103 @@
-/* add styles here */
+/* Good day! Can you tell me how to fix the problem with fonts in input? */
+
+@font-face {
+  font-family: Avenir-Book;
+  src: local('Avenir-Book'), url('fonts/Avenir-Book.ttf') format('ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Avenir-Heavy;
+  src: local('Avenir-Heavy'), url('fonts/Avenir-Heavy.ttf') format('ttf');
+  font-weight: 900;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+input[type="text" i] {
+  padding-block: 0;
+  padding-inline: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Avenir-Book, sans-serif;
+  font-size: 18px;
+  color: #3D4E61;
+}
+
+.form-first,
+.form-second {
+  width: calc(100% - 16px);
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid #E1E7ED;
+  color: #E1E7ED;
+}
+
+.form-first {
+  height: 70px;
+  margin: 20px 8px;
+  font-size: 20px;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: 19px 19px;
+  background-position: top 24px left 25px;
+}
+
+.form-second {
+  height: 42px;
+  font-size: 14px;
+  margin: 0 8px;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: 11px 11px;
+  background-position: top 14px left 12px;
+}
+
+.form-first:focus,
+.form-second {
+  font-weight: 900;
+}
+
+.form-first:hover,
+.form-second:hover {
+  box-shadow: 0 3px 8px 0 #3D4E6133;
+
+}
+
+.input-form__first {
+  margin-left: 62px;
+  margin-top: -1px;
+  font-size: 15px;
+  line-height: 22px;
+  color: #3D4E61;
+  letter-spacing: 0.55px;
+  height: 68px;
+  width: 100%;
+
+}
+
+.input-form__second {
+  margin-left: 33px;
+  margin-top: -1px;
+  font-size: 13px;
+  line-height: 22px;
+  color: #3D4E61;
+  letter-spacing: 0.55px;
+  height: 40px;
+  width: 100%;
+}
+
+.input-form__first:focus,
+.input-form__second:focus {
+  font-weight: 900;
+}

@@ -11,7 +11,7 @@ ___
 - use images from [src/images](src/images)
 - there must be two search bars
 - search bar must stretch the full width
-- distance between two search bars must be 20px
+- distance between two search bars musrun deployt be 20px
 - the big search bar must have top indent 20px
 - follow styles from the mock
 - default `font-weight` must be 300
@@ -33,4 +33,4 @@ ___
 - [x] Icon implemented using background-image CSS property
 - [x] Inputs are written inside of 'form' tag with correctly passed attributes
 - [x] All `Typical Mistakes` from `BEM` lesson theory are checked.
-- [xnpm] Code follows all the [Code Style Rules ❗️](./checklist.md)
+- [x] Code follows all the [Code Style Rules ❗️](./checklist.md)

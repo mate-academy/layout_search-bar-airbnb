@@ -9,8 +9,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script>
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+    <form action="#" class="form"
+       data-qa="big"
+       >
+      <label class="label">
+        <input type="text" class="search"
+        placeholder="Try &quot;Los Angeles&quot;"
+        data-qa="keypress"
+        >
+      </label>
+    </form>
+    <form action="#" class=" form"
+       data-qa="small"
+       >
+      <label class="label label-small">
+        <input type="text" class="search search-small"
+        placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
+    </form>
   </body>
 </html>

@@ -1,3 +1,4 @@
+  <!-- #region head -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,8 +10,38 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search bar airbnb</title>
     <link rel="stylesheet" href="./style.css">
+
   </head>
+  <!-- #endregion -->
   <body>
-    <h1>Search bar airbnb</h1>
+
+    <div class="search-bars">
+
+      <form
+        action="#"
+        class="big-form"
+        data-qa="big"
+      >
+
+        <input
+        data-qa="big"
+        class="search-bar search-bar__big"
+        type="search"
+        placeholder="Try &quot;Los Angeles&quot;"
+        >
+
+      </form>
+
+      <form action="#" class="small-form">
+        <input
+        data-qa="small"
+        class="search-bar search-bar__small"
+        type="search"
+        placeholder="Try &quot;Los Angeles&quot;"
+      >
+      </form>
+
+    </div>
+
   </body>
 </html>

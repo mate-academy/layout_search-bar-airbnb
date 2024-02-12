@@ -1,5 +1,4 @@
 * {
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -21,18 +20,17 @@ html {
 }
 
 .search-form {
+  width: 100%;
   display: flex;
   justify-content: center;
   margin: 20px auto 0;
 }
 
 .search-form_big {
-  width: 100%;
   height: 70px;
 }
 
 .search-form_small {
-  width: 100%;
   height: 42px;
 }
 
@@ -46,12 +44,12 @@ html {
   position: absolute;
   content:"";
   display: block;
-}
-
-.search-form__label_big::after {
   background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.search-form__label_big::after {
   width: 19px;
   height: 19px;
   top: 25px;
@@ -59,9 +57,6 @@ html {
 }
 
 .search-form__label_small::after {
-  background-image: url(./images/Search.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
   width: 11px;
   height: 11px;
   top: 15px;

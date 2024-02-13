@@ -1,1 +1,127 @@
-/* add styles here */
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 400;
+  src: url('fonts/Avenir-Book.ttf');
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: bold;
+  src: url('fonts/Avenir-Heavy.ttf');
+}
+
+body {
+  padding: 0;
+
+}
+
+.form {
+  font-family: Avenir, sans-serif;
+  display: flex;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #E1E7ED;
+  background: #FFF;
+  box-shadow: 0 1 8px 0 rgba(61, 78, 97, 0.10);
+}
+
+.form__big {
+  height: 70px;
+  margin: 20px 0;
+}
+
+.form__label {
+  position: relative;
+  width: 100%;
+}
+
+.form__label::after {
+  position: absolute;
+  content: '';
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.form__label--big::after {
+  width: 19px;
+  height: 19px;
+  flex-shrink: 0;
+  top: 25px;
+  left: 26px;
+}
+
+.form__input {
+  color: #3D4E61;
+  border: none;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  position: absolute;
+}
+
+.form__input--big {
+  line-height: 22px;
+  font-size: 16px;
+  top: 25px;
+  left: 62px;
+
+}
+
+.form__label--big:hover {
+  border-radius: 4px;
+  border: 1px solid #E1E7ED;
+  background: #FFF;
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.20);
+  font-weight: 400;
+}
+
+.form__label--big:focus {
+  border-radius: 3px;
+  border: 1px solid #E1E7ED;
+  background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+  font-weight: 400;
+}
+
+
+.form__input--big:focus {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+}
+
+.form__small {
+  height: 42px;
+}
+
+.form__label--small::after {
+  width: 11px;
+  height: 11px;
+  top: 15px;
+  left: 13px;
+}
+
+.form__input--small {
+  font-size: 14px;
+  line-height: 20px;
+  top: 12px;
+  left: 33px;
+}
+
+.form__label--small:hover {
+  border-radius: 4px;
+  border: 1px solid #E1E7ED;
+  background: #FFF;
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.20);
+  font-weight: 400;
+}
+
+.form__label--small:focus {
+  border-radius: 3px;
+  border: 1px solid #E1E7ED;
+  background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+}
+
+.form__input--small:focus {
+  font-weight: bold;
+}

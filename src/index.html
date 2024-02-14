@@ -12,39 +12,42 @@
   </head>
 
   <body>
-    <div class="form form--big">
-      <form class="search-bar"
-        data-qa="big"
-        action="/"
-        method="post"
-        ></form>
-
-      <input
-        name="big-frame"
-        data-qa="keypress"
-        class="search-bar__input search-bar--big"
-        type="text"
-        placeholder="Try “Los Angeles”"
-        >
-      </form>
-    </div>
-
-    <div class="form form--small">
-      <form
-      class="search-bar"
-      data-qa="small"
+    <form
+    class="form form--big"
       action="/"
       method="post"
+      data-qa="big"
       >
 
+      <div class="search-bar search-bar--big">
         <input
-          name="small-frame"
-          class="search-bar__input search-bar--small"
+          name="big-frame"
+          data-qa="keypress"
+          class="search-bar__input search-bar__input--big"
           type="text"
           placeholder="Try “Los Angeles”"
+          >
+      </div>
+    </form>
+
+
+
+    <form
+    class="form form--small"
+    action="/"
+    data-qa="small"
+    method="post"
+    >
+
+      <div class="search-bar search-bar--small">
+        <input
+          name="small-frame"
+          class="search-bar__input search-bar__input--small"
+          type="text"
+          placeholder="Try &quot;Los Angeles&quot;"
         >
-      </form>
-    </div>
+      </div>
+    </form>
 
   </body>
 </html>

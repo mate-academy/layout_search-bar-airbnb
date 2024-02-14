@@ -1,0 +1,47 @@
+.form {
+  width: 100%;
+  border: 1px solid #E1E7ED;
+  box-shadow: 0 1px 8px 0 #3D4E611A;
+  border-radius: 4px;
+  margin-top: 20px;
+  display: flex;
+}
+
+.form--big {
+  height: 70px;
+}
+
+.form--small {
+  height: 42px;
+}
+
+.form--big::after {
+  position: absolute;
+  content: url(../../images/Search.svg);
+
+  height: 19px;
+  width: 19px;
+
+  margin-left: 26px;
+  margin-top: 25px;
+}
+
+.form--small::after {
+  position: absolute;
+  content: "";
+
+  background-image: url(../../images/Search.svg);
+  background-size: 11px 11px;
+  background-repeat: no-repeat;
+
+  height: 11px;
+  width: 11px;
+
+  margin-top: 14px;
+  margin-left: 12px;
+}
+
+.form:hover {
+  box-shadow: 0 4px 4px 0 #00000040;
+}
+

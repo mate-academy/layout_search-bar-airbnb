@@ -14,19 +14,13 @@
   src: url('fonts/Avenir-Heavy.ttf')
 }
 
-
-/* #endregion */
-
 body {
   padding: 0 10px;
 }
 
-
-/* #region search-bar */
-
 .search-bar {
+  height: 70px;
   margin-top: 20px;
-  box-sizing: border-box;
   border: solid #E1E7ED 1px;
   border-radius: 4px;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
@@ -43,8 +37,7 @@ body {
 
 .search-bar__fieldset {
   display: flex;
-  box-sizing: border-box;
-  height: 70px;
+  height: inherit;
   cursor: text;
   align-items: center;
   padding: 0 26px;
@@ -79,10 +72,9 @@ body {
   text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-/* #endregion */
-
 .search-bar--small {
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  height: 42px;
 }
 
 .search-bar--small:hover {
@@ -94,7 +86,6 @@ body {
 }
 
 .search-bar__fieldset--small {
-  height: 42px;
   padding: 0 12px;
 }
 
@@ -120,6 +111,4 @@ body {
   font-family: Avenir-Heavy, sans-serif;
 }
 
-
-/* #region search-bar--small */
 

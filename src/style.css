@@ -50,10 +50,20 @@
   border-radius: 3px;
   border: 1px solid #E1E7ED;
   background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+  outline: none;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
 }
 
-.form-small:focus, .form-small:hover,
 .form-big:focus, .form-big:hover {
+  background-position: 26px 25px;
+  background-size: 19px;
   font-weight: bold;
-  border: none;
 }
+
+.form-small:focus, .form-small:hover {
+  background-position: 12px 14px;
+  background-size: 11px;
+  font-weight: bold;
+}
+

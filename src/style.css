@@ -1,1 +1,130 @@
-/* add styles here */
+:root {
+  --border-color: #E1E7ED;
+}
+
+@font-face {
+  font-family: MyWebFont;
+  src: url(./fonts/Avenir-Book.ttf) format('truetype');
+}
+
+body {
+  margin: 0;
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font-family: AvenirBook;
+  font-weight: 300;
+}
+
+.bigSearchForm {
+  box-sizing: border-box;
+}
+
+.bigSearchForm__bigFieldset {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  margin: 20px 0;
+  width: 900px;
+  height: 70px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 #3D4E611A;
+  transition: 1s;
+}
+
+.bigSearchForm__bigFieldset:hover {
+  box-shadow: 0 4px 4px 0 #00000040;
+}
+
+.bigSearchForm__bigFieldset:focus-within {
+  background: linear-gradient(#F6F6F7, #F6F6F7);
+}
+
+.bigFieldset__button {
+  padding: 0;
+  margin: 25px 17px 26px 26px;
+  height: 19px;
+  width: 19px;
+  background-color: #fff;
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.bigFieldset__input {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 300;
+  border: none;
+  transition: 1s;
+}
+
+.bigFieldset__input:focus {
+  outline: none;
+  text-shadow: 0 4px 4px 0 #00000040;
+  background: linear-gradient(#F6F6F7, #F6F6F7);
+}
+
+.bigFieldset__input::placeholder{
+  color: #3D4E61;
+}
+
+.smallSearchForm {
+  box-sizing: border-box;
+}
+
+.smallSearchForm__smallFieldset {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  width: 427px;
+  height: 42px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 #3D4E611A;
+  transition: 1s;
+}
+
+.smallSearchForm__smallFieldset:hover {
+  box-shadow: 0 4px 4px 0 #00000040
+}
+
+.smallSearchForm__smallFieldset:focus-within {
+  background: linear-gradient(#F6F6F7, #F6F6F7);
+}
+
+.smallFieldset__button {
+  padding: 0;
+  margin: 15px 9px 16px 13px;
+  height: 11px;
+  width: 11px;
+  background-color: #fff;
+  background-image: url(./images/Search.svg);
+  background-size: 11px 11px;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.smallFieldset__input {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 300;
+  border: none;
+  text-shadow: 0 4px 4px 0 #00000040;
+  transition: 1s;
+}
+
+.smallFieldset__input:focus {
+  outline: none;
+  text-shadow: none;
+  background: linear-gradient(#F6F6F7, #F6F6F7);
+}
+
+.smallSearchForm__smallFieldset:hover .smallFieldset__input {
+  text-shadow: none;
+}
+
+.smallFieldset__input::placeholder{
+  color: #3D4E61;
+}

@@ -11,6 +11,40 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Search bar airbnb</h1>
+
+    <form
+      action="/CityDataBase"
+      method="post"
+      class="bigSearchForm"
+      data-qa="big"
+    >
+      <fieldset title="bigFieldset" class="bigSearchForm__bigFieldset">
+        <button type="submit" class="bigFieldset__button"></button>
+        <input
+          type="search"
+          placeholder= "Try Los Angeles"
+          class="bigFieldset__input"
+          data-qa="keypress"
+        >
+      </fieldset>
+    </form>
+
+    <form
+      action="/CityDataBase"
+      method="post"
+      class="smallSearchForm"
+      data-qa="small"
+    >
+      <fieldset title="smallFieldset" class="smallSearchForm__smallFieldset">
+        <button type="submit" class="smallFieldset__button"></button>
+        <input
+          type="search"
+          placeholder= "Try Los Angeles"
+          class="smallFieldset__input"
+          data-qa="keypress"
+        >
+      </fieldset>
+    </form>
+
   </body>
 </html>

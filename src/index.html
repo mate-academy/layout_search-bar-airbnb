@@ -15,35 +15,32 @@
     <form
       action="/CityDataBase"
       method="post"
-      class="bigSearchForm"
+      class="searchForm"
       data-qa="big"
     >
-      <fieldset title="bigFieldset" class="bigSearchForm__bigFieldset">
-        <button type="submit" class="bigFieldset__button"></button>
-        <input
-          type="search"
-          placeholder= "Try &quot;Los Angeles&quot;"
-          class="bigFieldset__input"
-          data-qa="keypress"
-        >
-      </fieldset>
+      <label class="searchForm__label" for="searchForm__input"></label>
+      <input
+        type="search"
+        placeholder= "Try &quot;Los Angeles&quot;"
+        class="searchForm__input"
+        id="searchForm__input"
+        data-qa="keypress"
+      >
     </form>
 
     <form
       action="/CityDataBase"
       method="post"
-      class="smallSearchForm"
+      class="searchForm"
       data-qa="small"
     >
-      <fieldset title="smallFieldset" class="smallSearchForm__smallFieldset">
-        <button type="submit" class="smallFieldset__button"></button>
-        <input
+      <label class="searchForm__label searchForm__label--small" for="searchForm__input--small"></label>
+      <input
           type="search"
           placeholder= "Try &quot;Los Angeles&quot;"
-          class="smallFieldset__input"
+          class="searchForm__input searchForm__input--small"
           data-qa="keypress"
         >
-      </fieldset>
     </form>
 
   </body>

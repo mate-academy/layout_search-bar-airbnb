@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  --font-color: #3d4e61;
+}
+
 @font-face {
   font-family: Avenir;
   src: url(fonts/Avenir-Heavy.ttf);
@@ -24,6 +28,10 @@
   align-items: center;
   box-shadow: 0 1px 8px #3D4E611A;
   background: #fff;
+}
+
+input::placeholder {
+  opacity: 100%;
 }
 
 .search-bar__small {
@@ -52,7 +60,7 @@
   height: 100%;
   width: 100%;
   align-items: center;
-  color: #3d4e61;
+  color: var(--font-color);
   font-family: Avenir, sans-serif;
   font-weight: 400;
   padding-left: 62px;

@@ -11,17 +11,23 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form data-qa="keypress">
-      <input type="text" 
-              name="search" 
-              data-qa="big" 
-              placeholder="Try “Los Angeles”" 
-          >
+    <form data-qa="keypress" class="form">
+      <input 
+        id="big-search"
+        class="form__big-search-bar"
+        type="text"  
+        name="search" 
+        data-qa="big" 
+        placeholder="Try “Los Angeles”" 
+      >
 
-      <input type="text" 
-            name="search" 
-            data-qa="small" 
-            placeholder="Try “Los Angeles”"
+      <input 
+        id="small-search"
+        class="form__small-search-bar"
+        type="text" 
+        name="search" 
+        data-qa="small" 
+        placeholder="Try “Los Angeles”"
       >
     </form>
   </body>

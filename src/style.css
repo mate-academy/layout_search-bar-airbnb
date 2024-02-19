@@ -1,1 +1,81 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir-Book;
+  src: url(./fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: Avenir-Heavy;
+  src: url(./fonts/Avenir-Heavy.ttf);
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input[data-qa="big"] {
+  font-family: Avenir-Book, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 21.86px;
+  color: rgba(61, 78, 97, 1);
+  padding: 25px 0 26px 62px;
+  margin: 12px 0 20px;
+  outline: none;
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 26px center; 
+  background-size: 19px;
+  width: 100%;
+  height: 70px;
+}
+
+input[data-qa="big"]:hover  {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+input[data-qa="big"]:hover::placeholder {
+  font-weight: 400;
+}
+
+input[data-qa="big"]:focus  {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background:  linear-gradient(rgba(255, 255, 255, 1)
+                              rgba(246, 246, 247, 1));
+  font-family: Avenir-Heavy, sans-serif;
+  font-weight: 500;
+}
+
+input[data-qa="small"] {
+  font-family: Avenir-Book, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 19px;
+  padding: 12px 0 12px 33px;
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 12px 14px;
+  background-size: 11px;
+  width: 100%;
+  height: 42px;
+  outline: none;
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+}
+
+input[data-qa="small"]:hover  {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+input[data-qa="small"]:focus  {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background:  linear-gradient(rgba(255, 255, 255, 1)
+                              rgba(246, 246, 247, 1));
+  font-family: Avenir-Heavy, sans-serif;
+  font-weight: 900;
+  line-height: 19px;
+}

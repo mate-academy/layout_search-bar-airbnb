@@ -11,29 +11,33 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form class="search-bar__big"
+    <form class="search search-bar__big"
       method="get"
       action="https://github.com/mate-academy/layout_search-bar-airbnb/blob/master/checklist.md"
       data-qa="big"
     >
-      <input class="searchbar "
-        type="search"
-        name="search-big"
-        placeholder="Try &quot;Los Angeles&quot;"
-        data-qa="keypress"
+      <label class="search-label label-big">
+        <input class="search-input search-input-big"
+          type="search"
+          name="search-big"
+          placeholder="Try &quot;Los Angeles&quot;"
+          data-qa="keypress"
       >
+      </label>
     </form>
-    <form class="search-bar__smalle"
+    <form class="search search-bar__small"
       method="get"
       action="https://github.com/mate-academy/layout_search-bar-airbnb/blob/master/checklist.md"
       data-qa="small"
     >
-      <input class="searchbar search-bar__small"
-        type="search"
-        name="search-small"
-        placeholder="Try &quot;Los Angeles&quot;"
-        data-qa="keypress"
+      <label class="search-label label-small">
+        <input class="search-input search-input-small"
+          type="search"
+          name="search-small"
+          placeholder="Try &quot;Los Angeles&quot;"
+          data-qa="keypress"
       >
+      </label>
     </form>
   </body>
 </html>

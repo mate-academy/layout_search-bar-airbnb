@@ -1,105 +1,243 @@
-1. [STYLES] - Get used to style all elements using classes. And don't increase selectors specificity unless completely
-necessary
-       <details>
-         <summary>HTML example</summary>
-           ![css-classes-html-example-1](https://mate-academy.github.io/fe-program/css/checklists/css-classes/example-html-1.png)
-       </details>
-       <details>
-         <summary>BAD CSS examples</summary>
-           ![css-classes-bad-example-1](https://mate-academy.github.io/fe-program/css/checklists/css-classes/example-bad-1.png)
-           ![css-classes-bad-example-2](https://mate-academy.github.io/fe-program/css/checklists/css-classes/example-bad-2.png)
-           ![css-classes-bad-example-3](https://mate-academy.github.io/fe-program/css/checklists/css-classes/example-bad-3.png)
-       </details>
-       <details>
-         <summary>GOOD CSS example</summary>
-           ![css-classes-good-example-1](https://mate-academy.github.io/fe-program/css/checklists/css-classes/example-good-1.png)
-       </details>
+## HTML Formatting
+<details>
+  <summary>Use <b>2 spaces</b> for indentation in your file (not a <code>tab</code> character)</summary>
+
+  > to make sure your formatting will look the same everiwhere
+</details>
+
+<details>
+  <summary>Remember about correct indentation between parent and child elements</summary>
+
+  > Each level of nesting, including text, contained inside the element, requires 2-space offset.
+  Also blank line shouldn't be between parent and child elements.
+
+  GOOD example
+  ```html
+  <body>
+    <div>
+      <p>
+        Awesome text
+      </p>
+    </div>
+  </body>
+  ```
+
+  BAD example
+  ```html
+  <body>
+  <div>
+  <p>
+  Awesome text
+  </p>
+  </div>
+  </body>
+  ```
+</details>
+
+<details>
+  <summary>Add empty lines between multiline sibling blocks of HTML</summary>
+
+  > To add some "air" and simplify reading. But don't add them between parent and child elements.
+
+  GOOD Example
+  ```html
+  <ul>
+    <li class="nav__item">
+      <a href="#home">Home</a>
+    </li>
+
+    <li class="nav__item">
+      <a href="#shop">Shop</a>
+    </li>
+
+    <li class="nav__item">
+      <a href="#contacts">Contacts</a>
+    </li>
+  </ul>
+  ```
+
+  BAD Example
+  ```html
+  <ul>
+
+    <li class="nav__item">
+      <a href="#home">Home</a>
+    </li>
+    <li class="nav__item">
+      <a href="#shop">Shop</a>
+    </li>
+    <li class="nav__item">
+      <a href="#contacts">Contacts</a>
+    </li>
+
+  </ul>
+  ```
+</details>
+
+<details>
+  <summary>Keep your attributes correctly formatted</summary>
+
+  > If the HTML-element has long attribute values or number of attributes is more than 2 - start each one,
+  including the first, on the new line with 2-space indentation related to tag.
+  Tag’s closing bracket should be on the same level as opening one.
+
+  GOOD Example
+  ```html
+  <input
+    type="text"
+    name="surname"
+    id="surname"
+    required
+  >
+  ```
+
+  BAD Examples
+  ```html
+  <input type="text" name="surname"
+         id="surname" required>
+
+  <input type="text"
+         name="surname"
+         id="surname"
+         required>
+
+  <input
+  type="text"
+  name="surname"
+  id="surname"
+  required>
+
+  <input
+    type="text"
+    name="surname"
+    id="surname"
+    required>
+  ```
+</details>
+
+<details>
+  <summary>Lines of code have <code>80</code> chars max</summary>
+
+  > It is just easier to read such lines
+</details>
+
+## HTML Content
+
+<details>
+  <summary>Use semantic tags where possible</summary>
+
+  > Like `header`, `section`, `article`, `p`. It improves your page SEO and helps screen readers. `div` and `span` does not have any meaning
+</details>
+
+<details>
+  <summary> <code>alt</code> attribute should describe the image content</summary>
 
 
-2. [STYLES] - if you have two or more similar elements with portions of similar styles with different values - use one
-of the elements as the basic case, and override necessary styles for other cases.
-Explanation: The point is not in the names of the classes, the point is: when there are several similar elements, ex., 2 inputs, for one we can give a class `input`, for example, and for the second - `input input--small`. We write all the styles for `.input`, but for `.input-small` we write only those styles that differ in design, and we need this second input to look a little different.
-Element with class `.input` without extra classes should also look like a full-fledged styled element.
-       <details>
-         <summary>BAD example</summary>
-           ![css-variations-bad-example-html-1](https://mate-academy.github.io/fe-program/css/checklists/css-variations/example-bad-html-1.png)
-           ![css-variations-bad-example-css-1](https://mate-academy.github.io/fe-program/css/checklists/css-variations/example-bad-css-1.png)
-       </details>
-       <details>
-         <summary>GOOD example</summary>
-           ![css-variations-good-example-html-1](https://mate-academy.github.io/fe-program/css/checklists/css-variations/example-good-html-1.png)
-           ![css-variations-good-example-css-1](https://mate-academy.github.io/fe-program/css/checklists/css-variations/example-good-css-1.png)
-       </details>
+  GOOD example
+  ```html
+  <img alt="Samsung Galaxy S22 2022 8/128GB Green" />
+  ```
 
+  REALLY BAD example
+  ```html
+  <img alt="image" />
+  ```
 
-3. [CODE STYLE] - Keep your code line length below 80. It’s not only historical
-tradition, but also allows your code to fit into one standard screen without
-horizontal scroll. But do not break the line if it cannot be broken (ex., long links).
+  STILL BAD example
+  ```html
+  <img alt="phone" />
+  ```
+</details>
 
+<details>
+  <summary>Class names represent the meaning of the content (not the styles or tag names)</summary>
 
-4. [CODE STYLE] - Remember about correct indentation between parent and child
-      elements. Each level of nesting, including text, contained inside the element,
-      requires 2-space offset.
-          <details>
-            <summary>BAD examples</summary>
-              ![html-indentations-bad-example-1](https://mate-academy.github.io/fe-program/css/checklists/html-indentations/example-bad-1.png)
-          </details>
-          <details>
-          <summary>GOOD example</summary>
-              ![html-indentations-good-example-1](https://mate-academy.github.io/fe-program/css/checklists/html-indentations/example-good-1.png)
-          </details>
+  GOOD example
+  ```html
+  <nav class="nav">
+    <ul class="nav__list">
+      ...
+      <li class="nav__item">
+        <a href="#apple" class="nav__link">Apple</a>
+      </li>
+    </ul>
+  </nav>
+  ```
 
+  BAD example
+  ```html
+  <nav class="no-padding">
+    <ul>
+      ...
+      <li class="li">
+        <a href="#apple" class="a-last-no-decoration">Apple</a>
+      </li>
+    </ul>
+  </nav>
+  ```
+</details>
 
-5. [CODE STYLE] - If the HTML-element has long attribute values or number of
-   attributes is more than 3 - start each one, including the first, on the new
-   line with 2-space indentation related to tag. Tag’s closing bracket should be
-   on the same level as opening one.
-       <details>
-         <summary>BAD examples</summary>
-           ![html-attributes-bad-example-1](https://mate-academy.github.io/fe-program/css/checklists/html-attributes/example-bad-1.png)
-           ![html-attributes-bad-example-2](https://mate-academy.github.io/fe-program/css/checklists/html-attributes/example-bad-2.png)
-           ![html-attributes-bad-example-3](https://mate-academy.github.io/fe-program/css/checklists/html-attributes/example-bad-3.png)
-           ![html-attributes-bad-example-4](https://mate-academy.github.io/fe-program/css/checklists/html-attributes/example-bad-4.png)
-       </details>
-       <details>
-         <summary>GOOD example</summary>
-           ![html-attributes-good-example-1](https://mate-academy.github.io/fe-program/css/checklists/html-attributes/example-good-1.png)
-       </details>
+<details>
+  <summary>Don't use spaces in links</summary>
 
+  > Have you seen any link with literal space in it on the Internet? Remember, anchor links start with `#`
+</details>
 
-6. [CODE STYLE] - Use camelCase for values of name attribute - they should be
-   valid as JavaScript object keys. It should not contain spaces, “-” or other
-   special characters.
-       <details>
-         <summary>BAD example</summary>
-           ![html-name-attribute-bad-example-1](https://mate-academy.github.io/fe-program/css/checklists/html-name-attribute/example-bad-1.png)
-       </details>
-       <details>
-         <summary>GOOD example</summary>
-           ![html-name-attribute-good-example-1](https://mate-academy.github.io/fe-program/css/checklists/html-name-attribute/example-good-1.png)
-       </details>
+## CSS
+<details>
+  <summary>Don't use <code>*</code> selector (it impacts performance)</summary>
 
-7. [CODE STYLE] - You can use same font-family for both @font-faces but 
-different font-weight. Then changing only the font-weight on your elements will do the job.
-        <details>
-          <summary>BAD example</summary>
-             <img width="310" alt="image" src="https://user-images.githubusercontent.com/90685701/166898320-9a7dc250-ec4f-4b86-aa4a-5ca8eec5ede2.png">
-        </details>
-        <details>
-          <summary>GOOD example</summary>
-            <img width="375" alt="image" src="https://user-images.githubusercontent.com/90685701/166899860-0738debe-3a64-42ff-bb3b-b0dd64b1a45b.png">
-        </details>
+  > Set styles only for elements that require them.
+  > Zeroing out your margins, paddings or other styles with '*' is still inefficient for browser.
+</details>
 
-8. [TESTS] - Remember to style input placeholders correctly
+<details>
+  <summary>Don't use tag names for styling (except <code>html</code> and <code>body</code>)</summary>
 
+  > Style all elements using `.classes` and if needed with `:pseudo-classes`, `pseudo-elements` and `[attributes]`
 
-9. [TESTS] - Remember that the search-bar should have width: 100% on any screen.
+  HTML Example
+  ```html
+  <nav class="nav">
+    <ul class="nav__list">
+      ...
+    <ul>
+  </nav>
+  ```
 
+  GOOD CSS Example
+  ```css
+  .nav__list {
+    list-style: none
+  }
+  ```
 
-10. [TESTS] - Remember, each search bar should be located in separate
-form element.
+  BAD CSS Examples
+  ```css
+  ul {
+    list-style: none
+  }
 
-11. [DESIGN] - After you added custom focus styles (border and shadow),
-and there is still default outline - you should remove it.
+  nav ul {
+    list-style: none
+  }
+  ```
+</details>
 
-11. [DESIGN] - Placeholder shoudn't change style on focus
+<details>
+  <summary>Remember to use fallback fonts - alternative font-family in case the main one doesn't work</summary>
+
+  > [Explanation](https://www.w3schools.com/cssref/pr_font_font-family.asp)
+</details>
+
+<details>
+  <summary>Be consistent with your margins (Add only top or bottom, but not both)</summary>
+
+  > To avoid potential margin collapse
+</details>
+
+<details>
+  <summary>Don't fix container size (if there is no such a requirement)</summary>
+
+  > Let the content size dictate it. To avoid overflow or accidental scroll bar
+</details>

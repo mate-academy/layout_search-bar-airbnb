@@ -1,11 +1,4 @@
 
-/* @font-face {
-  font-family: Avenir;
-  src: url(fonts/Avenir-Heavy.ttf);
-  font-style: normal;
-  font-weight: 300;
-} */
-
 @font-face {
   font-family: Avenir;
   src: url(fonts/Avenir-Book.ttf);
@@ -18,7 +11,6 @@ html {
   font-family: Avenir, sans-serif;
   font-size: 16px;
   line-height: 22px;
-  color: #3d4e61;
 }
 
 body {
@@ -26,6 +18,8 @@ body {
   --smallsearch-height: 42px;
   --smalllogo-height: 11px;
   --biglogo-height: 19px;
+  --field-color: #fff;
+  --font-color: #3d4e61;
 }
 
 .container {
@@ -33,27 +27,26 @@ body {
   margin-top: 20px;
 }
 
-#big_form,
-#small_form {
+.big_form,
+.small_form {
   font-family: Avenir, sans-serif;
-  color: #3d4e61;
+  color: var(--font-color);
   box-sizing: border-box;
   border: 1px solid #e1e7ed;
   border-radius: 3px;
-  /* display: block; */
   width: 100%;
   margin: 0;
   padding: 0;
   box-shadow: 0 1px 8px 0 #3d4e611a;
 }
 
-#big_form {
+.big_form {
   height: var(--bigsearch-height);
   padding-left: 62px;
   font-size: 16px;
 }
 
-#small_form {
+.small_form {
   height: var(--smallsearch-height);
   padding-left: 33px;
   font-size: 14px;
@@ -78,40 +71,40 @@ body {
 }
 
 .visually-hidden {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  margin: -1px !important;
-  border: 0 !important;
-  padding: 0 !important;
-  overflow: hidden !important;
-  clip: rect(0,0,0,0) !important;
-  white-space: nowrap !important;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
 }
 
-#big_form::placeholder,
-#small_form::placeholder {
-  color: #3d4e61;
+.big_form::placeholder,
+.small_form::placeholder {
+  color: var(--font-color);
 }
 
-#big_form:hover {
+.big_form:hover {
   box-shadow: 0 4px 4px 0 #00000040;
-  background: #fff;
+  background: var(--field-color);
 }
 
-#small_form:hover {
+.small_form:hover {
   box-shadow: 0 3px 8px 0 #3d4e6133;
-  background: #fff;
+  background: var(--field-color);
 }
 
-#big_form:focus,
-#small_form:focus {
+.big_form:focus,
+.small_form:focus {
   outline: none;
   box-shadow: 0 3px 8px 0 #3d4e6133;
   font-weight: 900;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
-#small_form:focus {
+.small_form:focus {
   box-shadow: none;
 }

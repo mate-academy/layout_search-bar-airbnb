@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="page">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -8,29 +8,30 @@
     <link rel="stylesheet" href="./style.css">
   </head>
 
-  <body class="page__body">
-
+  <body class="page">
     <div class="container">
       <!-- #region formbig-->
       <form
         action="post"
         class="form"
         data-qa="big"
-        >
+      >
         <button
-          id="icon-search-big"
-          class="icon-search icon-search--size-big form__search-button-big"
+          id="button-search-big"
+          class="search-button search-button--size--big form__search-button--big"
           type="submit"
           name="buttom search"
-        ></button>
+        >
+        </button>
 
         <input
           id="input-search"
-          class="input-search input-search--size-big form__search-input-big"
+          class="input-search input-search--size--big form__search-input--big"
           data-qa="keypress"
           type="text"
           placeholder="Try &quot;Los Angeles&quot;"
         >
+        </input>
       </form>
       <!-- #endregion formsmall -->
 
@@ -40,18 +41,20 @@
         data-qa="small"
       >
         <button
-          id="icon-search-small"
-          class="icon-search icon-search--size-small form__search-button-small"
+          id="button-search-small"
+          class="search-button search-button--size--small form__search-button--small"
           type="submit"
           name="buttom search"
-        ></button>
+        >
+        </button>
 
         <input
           id="small-search"
-          class="input-search input-search--size-small form__search-input-small"
+          class="input-search input-search--size--small form__search-input--small"
           type="text"
           placeholder="Try &quot;Los Angeles&quot;"
         >
+        </input>
       </form>
       <!-- #endregion formbig-->
     </div>

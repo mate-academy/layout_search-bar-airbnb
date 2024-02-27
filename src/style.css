@@ -16,16 +16,14 @@
 
 /* #region page */
 .page {
+  font-style: Avenir;
   font-weight: 300;
-}
-
-.page__body {
   padding: 20px 8px 0;
 }
 
 /* #endregion page */
 
-/* #region container */
+/* #region container (Is used as a DOM element) */
 .container {
   display: flex;
   flex-direction: column;
@@ -44,13 +42,13 @@
   position: relative;
 }
 
-.form__search-button-big {
+.form__search-button--big {
   position: absolute;
   top: 25px;
   left: 26px;
 }
 
-.form__search-button-small {
+.form__search-button--small {
   position: absolute;
   top: 15px;
   left: 13px;
@@ -59,7 +57,7 @@
 /* #endregion form */
 
 /* #region icon-search */
-.icon-search {
+.search-button {
   margin: 0;
   padding: 0;
   border: none;
@@ -71,12 +69,12 @@
   z-index: 1;
 }
 
-.icon-search--size-big {
+.search-button--size--big {
   width: 19px;
   height: 19px;
 }
 
-.icon-search--size-small {
+.search-button--size-small {
   width: 11px;
   height: 11px;
 }
@@ -104,23 +102,23 @@
   text-align: left;
 }
 
-.input-search--size-big {
+.input-search--size--big {
   height: 70px;
   text-indent: 62px;
   font-size: 16px;
 }
 
-.input-search--size-big::placeholder {
+.input-search--size--big::placeholder {
   font-weight: 300;
   color: #3D4E61;
 }
 
-.input-search--size-big:focus {
+.input-search--size--big:focus {
   color: #3D4E61;
   text-shadow: 0 4px 4px #00000040;
 }
 
-.input-search--size-small {
+.input-search--size--small {
   height: 42px;
   padding-left: 33px;
   font-size: 14px;
@@ -128,7 +126,7 @@
   line-height: 19px;
 }
 
-.input-search--size-small::placeholder {
+.input-search--size--small::placeholder {
   font-weight: 300;
   color:#3D4E61;
 }

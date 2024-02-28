@@ -3,17 +3,24 @@
   src: url(./fonts/Avenir-Book.ttf);
 }
 
-html {
-  margin: 0;
+* {
+  box-sizing: border-box;
+}
+
+body {
   font-family: Avenir, sans-serif;
-  font-size: 300;
+  font-weight: 300;
 }
 
 .search-bar {
-  box-sizing: border-box;
   margin-top: 20px;
   border: 1px solid #E1E7ED;
   border-radius: 4px;
+  height: 70px;
+}
+
+.search-bar--small {
+  height: 42px;
 }
 
 .search-bar__field {
@@ -24,15 +31,17 @@ html {
   border: none;
   box-shadow: 0 1px 8px 0 #3D4E611A;
 
-  height: 70px;
+  height: 100%;
   padding-left: 62px;
+  background-image: url(images/Search.svg);
   background-position: 26px center;
   background-size: 19px;
+  background-repeat: no-repeat;
   font-size: 16px;
 }
 
 .search-bar__field--small {
-  height: 42px;
+  height: 100%;
   padding-left: 33px;
   background-position: 13px center;
   background-size: 11px;
@@ -56,22 +65,4 @@ html {
 
 .search-bar__field--small:hover {
   box-shadow: 0 3px 8px 0 #3D4E6133;
-}
-
-.icon {
-  position: absolute;
-}
-
-.icon--big {
-  height: 19px;
-  width: 19px;
-  margin-top: 25px;
-  margin-left: 26px;
-}
-
-.icon--small {
-  height: 11px;
-  width: 11px;
-  margin-top: 15px;
-  margin-left: 13px;
 }

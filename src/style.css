@@ -7,11 +7,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Avenir, sans-serif;
-  font-weight: 300;
-}
-
 .search-bar {
   margin-top: 20px;
   border: 1px solid #E1E7ED;
@@ -37,7 +32,18 @@ body {
   background-position: 26px center;
   background-size: 19px;
   background-repeat: no-repeat;
-  font-size: 16px;
+}
+
+.search-bar__field::placeholder {
+  font-family: Avenir, sans-serif;
+font-size: 16px;
+line-height: 22px;
+letter-spacing: 0;
+text-align: left;
+  height: 19px;
+  top: 25px;
+  left: 62px;
+  padding: 0, 29px, 0, 0;
 }
 
 .search-bar__field--small {
@@ -45,7 +51,16 @@ body {
   padding-left: 33px;
   background-position: 13px center;
   background-size: 11px;
-  font-size: 12px;
+  font-size: 14px;
+}
+
+.search-bar__field--small::placeholder {
+  font-family: Avenir, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.12px;
+  letter-spacing: 0;
+  text-align: left;
 }
 
 .search-bar__field:focus {

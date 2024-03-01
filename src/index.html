@@ -1,5 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html
+  lang="en"
+  class="page"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -16,32 +19,32 @@
       href="./style.css"
     />
   </head>
-  <body class="body">
+
+  <body class="page__body">
     <form
+      action="#"
+      class="form form-big"
       data-qa="big"
-      action="http://localhost:3000/api"
-      class="form"
-      method="post"
     >
       <input
-        data-qa="keypress"
-        class="bar bar__big"
         type="search"
-        name="top"
-        placeholder="Try 'Los Angeles'"
+        name="input__search"
+        class="input__search input__search-big"
+        data-qa="keypress"
+        placeholder="Try &#34;Los Angeles&#34;"
       />
     </form>
+
     <form
+      action="#"
+      class="form form-small"
       data-qa="small"
-      action="http://localhost:3000/api"
-      class="form"
-      method="post"
     >
       <input
-        class="bar bar__small"
         type="search"
-        name="base"
-        placeholder="Try 'Los Angeles'"
+        name="input__search"
+        class="input__search input__search-small"
+        placeholder="Try &#34;Los Angeles&#34;"
       />
     </form>
   </body>

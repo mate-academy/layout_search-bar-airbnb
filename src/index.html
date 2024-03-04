@@ -18,13 +18,13 @@
   </head>
   <body>
     <form
-      class="big-searchbar"
+      class="search-form search-form--large"
       action="http://localhost:8080/"
       method="post"
       data-qa="big"
     >
       <input
-        class="input input--big"
+        class="search-form__input search-form__input--large"
         type="search"
         placeholder="Try “Los Angeles“"
         pattern="\w+"
@@ -33,12 +33,13 @@
     </form>
 
     <form
+      class="search-form search-form--small"
       action="http://localhost:8080/"
       method="post"
       data-qa="small"
     >
       <input
-        class="input input--small"
+        class="search-form__input search-form__input--small"
         type="search"
         placeholder="Try “Los Angeles“"
         pattern="\w+"

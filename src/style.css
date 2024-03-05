@@ -1,5 +1,6 @@
 :root {
   --custom-color: rgba(61, 78, 97, 1);
+  font-family: Avenir, sans-serif;
 }
 
 @font-face {
@@ -20,6 +21,10 @@
 .big-search {
   margin-bottom: 20px;
   margin-top: 20px;
+}
+
+.small-search {
+  margin: 0;
 }
 
 .input {
@@ -51,6 +56,10 @@
   font-size: 16px;
 }
 
+.input__big:focus {
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
 .input__small {
   height: 42px;
 
@@ -59,6 +68,15 @@
   background-size: 11px 11px;
   background-position: 13px center;
   font-size: 14px;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.input__small:focus {
+  text-shadow: none;
+}
+
+.input__small:hover {
+  text-shadow: none;
 }
 
 .input__big:hover,
@@ -72,3 +90,4 @@
   font-family: Avenir-Heavy, sans-serif;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
+

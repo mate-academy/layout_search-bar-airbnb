@@ -1,5 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html
+  lang="en"
+  class="page"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -15,18 +18,39 @@
       rel="stylesheet"
       href="style.css"
     />
-  </head>
-  <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
+
+    <link href="https://fonts.cdnfonts.com/css/avenir"
+    rel="stylesheet"
     />
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+  </head>
+  <body>
+    <div class="big">
+      <img
+        src="/src/images/Search.svg" alt="Img"
+        class="img"
+      />
+
+      <input
+        class="search-bar__big"
+        type="text"
+        data-qa="keypress"
+        placeholder="Try “Los Angeles“"
+      />
+    </div>
+
+    <div class="small">
+      <img
+        src="/src/images/Search.svg" alt="Img"
+        class="img"
+      />
+
+      <input
+        class="search-bar__small"
+        type="text"
+        data-qa="hover"
+        placeholder="Try “Los Angeles“"
+      />
+    </div>
   </body>
 </html>

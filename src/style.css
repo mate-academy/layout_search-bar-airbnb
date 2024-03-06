@@ -1,1 +1,105 @@
-/* add styles here */
+.page {
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0;
+  color: #3D4E61;
+  ;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('https://fonts.cdnfonts.com/css/avenir');
+}
+
+.img {
+  width: 19px;
+  height: 19px;
+  margin-top: 25px;
+  margin-bottom: 26px;
+  margin-left: 26px;
+}
+
+.search-bar__big {
+  height: 19px;
+  margin-top: 25px;
+  margin-bottom: 26px;
+  margin-left: 17px;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  color: #3D4E61;
+}
+
+.search-bar__small {
+  height: 19px;
+  margin-top: 12px;
+  margin-bottom: 11px;
+  margin-left: 9px;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  color: #3D4E61;
+}
+
+.big {
+  width: 900px;
+  height: 70px;
+  display: flex;
+  margin-top: 20px;
+
+  border: 1px solid #E1E7ED;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+}
+
+.small {
+  height: 42px;
+  width: 427px;
+  display: flex;
+  margin-top: 20px;
+
+  border: 1px solid #E1E7ED;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+}
+
+.big:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  color: #3d4e61;
+
+}
+
+.big:focus {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+  border-radius: 3px;
+}
+
+.search-bar__big:focus::placeholder {
+  content: "Los An|";
+  color: #3D4E61;
+}
+
+.search-bar__big:focus {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.small:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.small:focus {
+  box-shadow: none;
+  background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+  border-radius: 3px;
+
+}
+
+.search-bar__small:focus::placeholder {
+  content: "Los Ang|";
+  font-weight: 900;
+  font-size: 14px;
+}

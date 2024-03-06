@@ -1,9 +1,3 @@
-:root {
-  --custom-color: rgba(61, 78, 97, 1);
-
-  font-family: Avenir, sans-serif;
-}
-
 @font-face {
   font-family: Avenir;
   src: url(./fonts/Avenir-Book.ttf);
@@ -17,6 +11,12 @@
 @font-face {
   font-family: Avenir-Heavy;
   src: url(./fonts/Avenir-Heavy.ttf);
+}
+
+body {
+  --custom-color: rgba(61, 78, 97, 1);
+
+  font-family: Avenir-Book, sans-serif;
 }
 
 .big-search {
@@ -33,60 +33,61 @@
   border: 1px solid rgba(225, 231, 237, 1);
   border-radius: 4px;
   outline: none;
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
 
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
 
-  font-family: Avenir, sans-serif;
   font-weight: 300;
   color: var(--custom-color);
-}
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
 
-.input::placeholder {
-  color: var(--custom-color);
-}
+  &.input--big {
+    height: 70px;
+    font-family: Avenir, sans-serif;
 
-.input__big {
-  height: 70px;
+    padding-left: 62px;
 
-  padding-left: 62px;
+    background-size: 19px 19px;
+    background-position: 26px center;
+    font-size: 16px;
 
-  background-size: 19px 19px;
-  background-position: 26px center;
-  font-size: 16px;
-}
+    &:hover {
+      font-family: Avenir-Book, sans-serif;
+      box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+    }
 
-.input__big:focus {
-  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
+    &:focus {
+      font-family: Avenir-Heavy, sans-serif;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+      text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    }
+  }
 
-.input__small {
-  height: 42px;
+  &.input--small {
+    height: 42px;
 
-  padding-left: 33px;
+    padding-left: 33px;
+    font-family: Avenir, sans-serif;
 
-  background-size: 11px 11px;
-  background-position: 13px center;
-  font-size: 14px;
-}
+    background-size: 11px 11px;
+    background-position: 13px center;
+    font-size: 14px;
 
-.input__small:focus {
-  text-shadow: none;
-}
+    &:hover {
+      font-family: Avenir-Book, sans-serif;
+      box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+      text-shadow: none;
+      font-size: 14px;
+    }
 
-.input__small:hover {
-  text-shadow: none;
-}
+    &:focus {
+      font-family: Avenir-Heavy, sans-serif;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+      text-shadow: none;
+    }
+  }
 
-.input__big:hover,
-.input__small:hover {
-  font-family: Avenir-Book, sans-serif;
-  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
-}
-
-.input__big:focus,
-.input__small:focus {
-  font-family: Avenir-Heavy, sans-serif;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  &::placeholder {
+    color: var(--custom-color);
+  }
 }

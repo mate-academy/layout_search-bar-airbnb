@@ -19,6 +19,10 @@
   --fontcolor: #3d4e61;
 }
 
+body {
+  font-family: Avenir, sans-serif;
+}
+
 .search {
   margin-top: 20px;
 }
@@ -33,12 +37,7 @@
   border-radius: 4px;
   outline: none;
   box-shadow: 0 1px 8px #3d4e611a;
-  font-family: Avenir, sans-serif;
   font-weight: 300;
-}
-
-.search__input::placeholder {
-  color: var(--fontcolor);
 }
 
 .search__input--big {
@@ -57,14 +56,16 @@
   font-size: 14px;
 }
 
-.search__input--small:hover,
-.search__input--big:hover {
+.search__input:hover {
   box-shadow: 0 3px 8px 0 var(--dropcolor);
   font-family: Avenir-Book, sans-serif;
 }
 
-.search__input--big:focus,
-.search__input--small:focus {
+.search__input:focus {
   box-shadow: 0 4px 4px var(--dropcolor);
   font-family: Avenir-Heavy, sans-serif;
+}
+
+.search__input::placeholder {
+  color: var(--fontcolor);
 }

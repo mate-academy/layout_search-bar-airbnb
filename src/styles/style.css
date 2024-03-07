@@ -1,9 +1,13 @@
 @import './libs/fonts.css';
 
-/* #region global */
-
-* {
+html {
   box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
 }
 
 body {
@@ -16,14 +20,12 @@ input {
   font-weight: inherit;
 }
 
-/* #endregion */
-
 .search-bar {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin-top: 20px;
   gap: 20px;
-  justify-content: space-between;
   width: 100%;
 }
 
@@ -35,7 +37,7 @@ input {
 .search-bar__input {
   width: 100%;
   border: 1px solid #e1e7ed;
-  border-radius: 5px;
+  border-radius: 3px;
   box-shadow:
     0 1px 5px #e1e7ed,
     0 -1px 5px #e1e7ed;
@@ -73,8 +75,8 @@ input {
   position: absolute;
   content: '';
   z-index: 1;
-  top: 49%;
-  transform: translateY(-50%);
+  top: 50%;
+  transform: translateY(-52%);
   left: 25px;
   border: 1px solid transparent;
   width: 19px;
@@ -89,6 +91,7 @@ input {
   width: 11px;
   height: 11px;
   left: 12px;
-  top: 49%;
+  top: 50%;
+  font-size: 14.5px;
   transform: translateY(-54%);
 }

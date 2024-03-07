@@ -2,6 +2,13 @@
   --custom-color: rgba(61, 78, 97, 1);
 }
 
+/* @font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 300;
+} */
+
 @font-face {
   font-family: Avenir;
   src: url(fonts/Avenir-Book.ttf);
@@ -9,7 +16,22 @@
   font-weight: 300;
 }
 
-* {
+@font-face {
+  font-family: Avenir-Book;
+  src: url(fonts/Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Avenir-Heavy;
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+
+
+body {
   box-sizing: border-box;
   font-family: Avenir, sans-serif;
   color: var(--custom-color);
@@ -69,6 +91,7 @@
 
 .search-form__input:focus {
   font-family: Avenir-Heavy, sans-serif;
+  color: var(--custom-color);
 
   outline: 0;
   border-radius: 3px;

@@ -1,11 +1,12 @@
-.page {
+html {
   font-family: Avenir, sans-serif;
   font-weight: 300;
   margin: 0;
   color: #3d4e61;
+  box-sizing: border-box;
 }
 
-.page__body {
+body {
   margin: 0;
 }
 
@@ -32,67 +33,33 @@
   position: absolute;
 }
 
-.search-bar__big {
+.search-bar {
   height: 19px;
+  border: none;
+  width: 100%;
+  color: #3d4e61;
+  font-size: 16px;
+  justify-content: center;
+  display: flex;
+}
+
+.search-bar__big {
   padding-top: 25px;
   padding-bottom: 26px;
   padding-left: 62px;
-  border: none;
-  width: 100%;
-  color: #3d4e61;
 }
 
 .search-bar__small {
-  height: 19px;
   padding-top: 12px;
   padding-bottom: 11px;
   padding-left: 33px;
-  border: none;
-  width: 100%;
-  color: #3d4e61;
-}
-
-.big {
-  width: 100%;
-  height: 70px;
-  display: flex;
-  margin-top: 20px;
-  border: 1px solid #e1e7ed;
-  border-radius: 4px;
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
-}
-
-.small {
-  height: 42px;
-  width: 100%;
-  display: flex;
-  margin-top: 20px;
-  border: 1px solid #e1e7ed;
-  border-radius: 4px;
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
-}
-
-.big:hover {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
-
-.search-bar__big:hover {
-  color: #3d4e61;
-  font-size: 16px;
-}
-
-.big:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border-radius: 3px;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .search-bar__big:focus {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   font-size: 16px;
-}
-
-.small:hover {
-  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
 }
 
 .search-bar__small:hover {
@@ -100,14 +67,44 @@
   font-size: 14px;
 }
 
-.small:focus {
-  box-shadow: none;
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border-radius: 3px;
-}
-
 .search-bar__small:focus {
   font-weight: 900;
   font-size: 14px;
   border: none;
+}
+
+.search-form {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+}
+
+.big-form {
+  height: 70px;
+}
+
+.big-form:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.big-form:focus {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+
+.small-form {
+  height: 42px;
+}
+
+.small-form:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.small-form:focus {
+  box-shadow: none;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
 }

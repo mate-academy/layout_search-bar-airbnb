@@ -1,3 +1,5 @@
+@import "page.css";
+
 @font-face {
   font-family: Avenir;
   src: url(../fonts/Avenir-Book.ttf);
@@ -19,26 +21,25 @@
   padding: 25px 0 23px 62px;
   background: url(../images/Search.svg) no-repeat 25px center;
 
-  border: 1px solid #e1e7ed;
+  border: 1px solid var(--border-color);
   border-radius: 3px;
 
-  box-shadow: 0 1px 8px #3d4e611a;
+  box-shadow: 0 1px 8px var(--shadow-color-1);
 
   font-family: Avenir, sans-serif;
-  color: #3d4e61;
+  color: var(--text-color);
   font-size: 16px;
-  line-height: 21.86px;
 }
 
 .form__large-searchbar::placeholder,
 .form__small-searchbar::placeholder {
-  color: #3d4e61;
+  color: var(--text-color);
 }
 
 .form__large-searchbar:hover {
   box-shadow:
-    0 4px 4px #00000040,
-    0 3px 8px #3d4e6133;
+    0 4px 4px var(--text-shadow-color),
+    0 3px 8px var(--shadow-color-2);
 }
 
 .form__large-searchbar:focus {
@@ -48,8 +49,8 @@
   background-position: 25px center;
   outline: none;
 
-  box-shadow: 0 4px 4px #00000040;
-  text-shadow: 0 4px 4px #00000040;
+  box-shadow: 0 4px 4px var(--text-shadow-color);
+  text-shadow: 0 4px 4px var(--text-shadow-color);
 
   font-weight: bold;
 }
@@ -64,21 +65,20 @@
   background: url(../images/Search.svg) no-repeat 13px center;
   background-size: 11px;
 
-  border: 1px solid #e1e7ed;
+  border: 1px solid var(--border-color);
   border-radius: 3px;
 
-  box-shadow: 0 1px 8px #3d4e611a;
-  text-shadow: 0 4px 4px #00000040;
+  box-shadow: 0 1px 8px var(--shadow-color-1);
+  text-shadow: 0 4px 4px var(--text-shadow-color);
 
   font-family: Avenir, sans-serif;
-  color: #3d4e61;
+  color: var(--text-color);
   font-size: 14px;
-  line-height: 19.12px;
 }
 
 .form__small-searchbar:hover {
   text-shadow: none;
-  box-shadow: 0 3px 8px 0 #3d4e6133;
+  box-shadow: 0 3px 8px 0 var(--shadow-color-2);
 }
 
 .form__small-searchbar:focus {

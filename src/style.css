@@ -1,49 +1,59 @@
 @font-face {
-  font-family: MyCustomFont;
-  src:
-    url('fonts/Avenir-Book.ttf') format('ttf'),
-    url('fonts/Avenir-Heavy.ttf') format('ttf');
+  /* stylelint-disable-next-line font-family-name-quotes */
+  font-family: 'FontBook';
+  src: url('fonts/Avenir-Book.ttf') format('truetype');
+}
+
+@font-face {
+  /* stylelint-disable-next-line font-family-name-quotes */
+  font-family: 'FontHeavy';
+  src: url(./fonts/Avenir-Heavy.ttf) format('truetype');
 }
 
 body {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #3d4e61;
+}
+
+form {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 20px;
-  margin: 0;
-  box-sizing: border-box;
 }
 
 .input {
-  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
-  font-family: MyCustomFont;
-  font-weight: 300;
-  font-size: 16px;
   background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
   border: 1px solid #e1e7ed;
   border-radius: 4px;
   box-shadow: 0 1px 8px 0 #3d4e611a;
+  /* stylelint-disable-next-line font-family-name-quotes */
+  font-family: 'FontBook', sans-serif;
   color: #3d4e61;
 }
 
 .input__tablet {
-  max-width: 900px;
   background-size: 19px 19px;
   height: 70px;
   background-position: 26px 50%;
   padding-left: 62px;
   line-height: 22px;
+  font-weight: 300;
+  transition: font-weight 0.3s ease;
 }
 
 .input__mobile {
   background-size: 11px 11px;
-  max-width: 427px;
   height: 42px;
   background-position: 13px 50%;
   padding-left: 33px;
   font-size: 14px;
   line-height: 20px;
+  font-weight: 300;
+  transition: font-weight 0.3s ease;
 }
 
 .input__tablet:hover,
@@ -54,6 +64,8 @@ body {
 .input__tablet:focus,
 .input__mobile:focus {
   box-shadow: 0 4px 4px 0 #00000040;
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  font-weight: 700;
+  background-color: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  /* stylelint-disable-next-line font-family-name-quotes */
+  font-family: 'FontHeavy', sans-serif;
+  outline: none;
 }

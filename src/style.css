@@ -1,11 +1,13 @@
 @font-face {
   font-family: Avenir;
   src: url('fonts/Avenir.ttc');
+  font-weight: 300;
 }
 
 @font-face {
   font-family: Avenir-Heavy;
   src: url('fonts/Avenir-Heavy.ttf');
+  font-weight: 900;
 }
 
 * {
@@ -14,7 +16,6 @@
 
 body {
   font-family: Avenir, Helvetica, sans-serif;
-  font-weight: 300;
 }
 
 .search-bar {
@@ -22,6 +23,7 @@ body {
 }
 
 .search-bar__input {
+  font-family: inherit;
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
 

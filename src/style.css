@@ -19,7 +19,7 @@
   box-sizing: border-box;
 }
 
-body {
+html {
   font-family: Avenir, sans-serif;
   font-size: 16px;
 }
@@ -85,10 +85,6 @@ body {
 .search-form__label_big::after {
   content: '';
   display: block;
-  background-image: url(./images/Search.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
   width: 19px;
   height: 19px;
   top: 25px;
@@ -97,12 +93,14 @@ body {
 
 .search-form__label_small::after {
   content: '';
-  background-image: url(./images/Search.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
   width: 11px;
   height: 11px;
   top: 15px;
   left: 13px;
+}
+
+::after {
+  background: url(./images/Search.svg) no-repeat;
+  background-size: contain;
+  position: absolute;
 }

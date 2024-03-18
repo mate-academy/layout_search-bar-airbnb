@@ -42,36 +42,32 @@ body {
   height: 45px;
 }
 
-.form--large::before {
-  content: '';
-  display: block;
-
-  width: 19px;
-  height: 19px;
-
-  background: url(images/Search.svg);
-  background-size: 100%;
-
-  position: absolute;
-  top: 26px;
-  left: 26px;
-  z-index: 99;
-}
-
+.form--large::before,
 .form--small::before {
   content: '';
   display: block;
 
-  width: 11px;
-  height: 11px;
-
   background: url(images/Search.svg);
   background-size: 100%;
 
   position: absolute;
+  z-index: 99;
+}
+
+.form--large::before {
+  width: 19px;
+  height: 19px;
+
+  top: 26px;
+  left: 26px;
+}
+
+.form--small::before {
+  width: 11px;
+  height: 11px;
+
   top: 15px;
   left: 13px;
-  z-index: 99;
 }
 
 .search-bar--large,
@@ -112,15 +108,7 @@ body {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   outline: none;
   border: 1px solid rgba(225, 231, 237, 1);
-}
 
-.search-bar--large:hover,
-.search-bar--small:hover {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
-
-.search-bar--large[type='text']:focus,
-.search-bar--small[type='text']:focus {
   color: #3d4e61;
   font-family: Avenir, sans-serif;
   font-size: 16px;
@@ -131,7 +119,12 @@ body {
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.search-bar--small[type='text']:focus {
+.search-bar--large:hover,
+.search-bar--small:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search-bar--small:focus {
   text-shadow: none;
   font-size: 14px;
   font-weight: 900;

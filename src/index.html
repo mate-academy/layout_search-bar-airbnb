@@ -23,12 +23,18 @@
       data-qa="big"
       class="search-bar search-bar--big"
     >
-      <input
-        type="text"
-        data-qa="keypress"
-        placeholder="Try “Los Angeles“"
-        class="search-bar__input"
-      />
+      <label
+        for="big-input-text"
+        class="search-bar__label search-bar__label--big"
+      >
+        <input
+          id="big-input-text"
+          type="text"
+          data-qa="keypress"
+          placeholder="Try “Los Angeles“"
+          class="search-bar__input search-bar__input--big"
+        />
+      </label>
     </form>
     <form
       action="/"
@@ -36,11 +42,17 @@
       data-qa="small"
       class="search-bar search-bar--small"
     >
-      <input
-        type="text"
-        placeholder="Try “Los Angeles“"
-        class="search-bar__input"
-      />
+      <label
+        for="small-input-text"
+        class="search-bar__label search-bar__label--small"
+      >
+        <input
+          id="small-input-text"
+          type="text"
+          placeholder="Try “Los Angeles“"
+          class="search-bar__input search-bar__input--small"
+        />
+      </label>
     </form>
   </body>
 </html>

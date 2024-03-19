@@ -1,3 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --border-color: #e1e7ed;
+  --box-shadow-color: #00000040;
+}
+
 @font-face {
   font-family: Avenir-Book;
   src: url('fonts/Avenir-Book.ttf');
@@ -15,7 +24,7 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
-  border: 1px solid #e1e7ed;
+  border: 1px solid var(--border-color);
   box-shadow: 0 1px 8px 0 #3d4e611a;
 }
 
@@ -24,24 +33,21 @@
 }
 
 .search__bar:hover {
-  box-shadow: 0 4px 4px 0 #00000040;
+  box-shadow: 0 4px 4px 0 var(--box-shadow-color);
 }
 
 .search__bar:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  text-shadow: 0 4px 4px 0 #00000040;
+  text-shadow: 0 4px 4px 0 var(--box-shadow-color);
 }
 
 .search__bar--large,
 .search__bar--small {
-  box-sizing: border-box;
   width: 100%;
   padding: 0 0 0 62px;
   height: 70px;
   outline: none;
-  border: 1px solid #e1e7ed;
   border-radius: 5px;
-  box-shadow: 0 1px 8px 0 #3d4e611a;
 }
 
 .form--large::before {

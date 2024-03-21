@@ -1,6 +1,4 @@
 * {
-  margin: 0;
-  padding: 0;
   font-weight: 300;
 }
 
@@ -10,13 +8,14 @@
   font-weight: 300;
 }
 
-.form {
-  margin: 20px 25px;
-}
+/* .form {
+
+} */
 
 .form--big,
 .form--small {
   position: relative;
+  margin-top: 20px;
 }
 
 .input {
@@ -48,7 +47,6 @@
   height: 19px;
   top: 25px;
   left: 26px;
-  border-top: 1px;
 }
 
 .form--small::before {
@@ -74,4 +72,25 @@
   font-weight: 700;
   line-height: 22px;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.input--small:focus {
+  text-shadow: none;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 19px;
+}
+
+.input--big::placeholder,
+.input--small::placeholder {
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+  color: #3d4e61;
+}
+
+.input--small::placeholder {
+  font-size: 14px;
+  line-height: 19px;
 }

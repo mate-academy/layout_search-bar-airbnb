@@ -10,9 +10,11 @@
   src: url('fonts/Avenir-Heavy.ttf');
 }
 
-html {
+* {
   box-sizing: border-box;
+}
 
+html {
   --search-bar-input-box-color: 0 1px 8px 0 #3d4e611a;
   --search-bar-input-box-color-hover: 0 3px 8px 0 #3d4e6133;
   --search-bar-input-gradient: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
@@ -29,6 +31,7 @@ html {
   font-family: Avenir, sans-serif;
   background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
+  border-radius: 5px;
   background-position-y: 50%;
   border: var(--search-bar-input-border);
   width: 100%;

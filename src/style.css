@@ -29,12 +29,13 @@ html {
 
 .search-bar__input {
   font-family: Avenir, sans-serif;
-  background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
+  background-image: url(./images/Search.svg);
   border-radius: 5px;
   background-position-y: 50%;
   border: var(--search-bar-input-border);
   width: 100%;
+  outline: none;
 }
 
 .search-bar__input-big {
@@ -54,7 +55,11 @@ html {
 }
 
 .search-bar__input-big:focus {
-  background: var(--search-bar-input-gradient);
+  background:
+    url(./images/Search.svg) no-repeat,
+    var(--search-bar-input-gradient);
+  background-position-y: 50%;
+  background-position-x: 26px;
   box-shadow: 0 4px 4px 0 #00000040;
   font-weight: bold;
   text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
@@ -80,7 +85,12 @@ html {
 }
 
 .search-bar__input-small:focus {
-  background: var(--search-bar-input-gradient);
+  background:
+    url(./images/Search.svg) no-repeat,
+    var(--search-bar-input-gradient);
+  background-size: 11px;
+  background-position-x: 13px;
+  background-position-y: 50%;
   border: var(--search-bar-input-border);
   font-weight: bold;
 }

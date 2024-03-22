@@ -10,6 +10,10 @@
   font-weight: bold;
 }
 
+.html {
+  --black: #00000040;
+}
+
 .page__body {
   margin-top: 0;
 }
@@ -24,7 +28,7 @@
   color: #3d4e61;
   font-family: Avenir, Arial, sans-serif;
   font-size: 16px;
-  line-height: 21.86px;
+  line-height: 21px;
 
   border: 1px solid #e1e7ed;
   border-radius: 4px;
@@ -37,13 +41,13 @@
 }
 
 .search__input:hover {
-  box-shadow: 0 4px 4px 0 #00000040;
+  box-shadow: 0 4px 4px 0 var(--black);
 }
 
 .search__input:focus {
   font-weight: bold;
-  text-shadow: 0 4px 4px 0 #00000040;
-  box-shadow: 0 4px 4px 0 #00000040;
+  text-shadow: 0 4px 4px 0 var(--black);
+  box-shadow: 0 4px 4px 0 var(--black);
 }
 
 .search__input--small {

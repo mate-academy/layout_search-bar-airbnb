@@ -19,70 +19,71 @@ html {
   margin-top: 20px;
 }
 
-.search {
+.search__label {
   position: relative;
-  box-shadow: 0 1px 8px #3d4e611a;
-  box-sizing: border-box;
-  border: 1px solid #e1e7ed;
-  border-radius: 4px;
-
-  display: flex;
-  align-items: center;
-}
-
-.search:focus-within {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-}
-
-.search--big {
-  height: 70px;
-  padding-left: 62px;
-  font-size: 16px;
-}
-
-.search--big:hover {
-  box-shadow: 0 4px 4px #00000040;
-}
-
-.search--small {
-  height: 42px;
-  padding-left: 33px;
-  font-size: 14px;
-}
-
-.search--small:hover {
-  box-shadow: 0 3px 8px #3d4e6133;
-}
-
-.search__icon {
-  position: absolute;
-  background: no-repeat url(./images/Search.svg) center/contain;
-}
-
-.search__icon--big {
-  top: 24.2px;
-  left: 25.2px;
-  height: 19px;
-  width: 19px;
-}
-
-.search__icon--small {
-  top: 14.2px;
-  left: 12.2px;
-  height: 11px;
-  width: 11px;
+  display: block;
 }
 
 .search__input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  box-shadow: 0 1px 8px #3d4e611a;
   outline: none;
-  border: none;
-  padding: 0;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
   font: inherit;
   color: #3d4e61;
 }
 
+.search__input--big {
+  height: 70px;
+  font-size: 16px;
+  padding-left: 62px;
+}
+
+.search__input--small {
+  height: 42px;
+  font-size: 14px;
+  padding-left: 33px;
+}
+
+.search__label--big::after,
+.search__label--small::after {
+  position: absolute;
+  background: no-repeat url(./images/Search.svg) center/contain;
+  content: '';
+}
+
+.search__label--big::after {
+  top: 25px;
+  left: 26px;
+  height: 19px;
+  width: 19px;
+}
+
+.search__label--small::after {
+  top: 15px;
+  left: 13px;
+  height: 11px;
+  width: 11px;
+}
+
+.search__input--big:hover {
+  box-shadow: 0 4px 4px #00000040;
+}
+
+.search__input--small:hover {
+  box-shadow: 0 3px 8px #3d4e6133;
+}
+
 .search__input:focus {
+  border-radius: 3px;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   font-weight: 900;
-  text-shadow: 0 4px 4px #00000040;
-  background: transparent;
+}
+
+.search__input::placeholder {
+  color: inherit;
+  font-weight: 300;
 }

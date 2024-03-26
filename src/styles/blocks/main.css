@@ -1,5 +1,20 @@
+@font-face {
+  font-family: Avenir;
+  src: url('../../fonts/Avenir-Heavy.ttf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Avenir, sans-serif;
+  font-weight: 400;
+}
+
 body {
   margin-left: 8px;
+  margin-top: 20px;
   padding: 0;
 }
 
@@ -10,29 +25,23 @@ body {
 
 .main__form {
   width: 100%;
+  display: flex;
   outline: none;
   border-radius: 4px;
   border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px #3d4e611a;
   color: #3d4f61ff;
-  font-family: Avenir, sans-serif;
   align-items: center;
 }
 
-[data-qa='small'] {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  box-sizing: border-box;
+.main__form--small {
+  height: 42px;
   position: relative;
 }
 
-[data-qa='big'] {
-  display: flex;
-  height: 68px;
-  width: 100%;
-  box-sizing: border-box;
-  margin: 20px 0;
+.main__form--big {
+  height: 70px;
+  margin-bottom: 20px;
   position: relative;
 }
 

@@ -7,19 +7,12 @@
 form {
   width: 100%;
   margin: 20px 0;
-}
-
-.search-bar {
   border: 1px solid #e1e7ed;
   border-radius: 4px;
   box-shadow: 0 1px 8px 0 #3d4e611a;
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  width: 100%;
-}
-
-.search-bar--big {
   height: 70px;
 }
 
@@ -27,47 +20,21 @@ form {
   height: 42px;
 }
 
-.search-bar:hover {
-  box-shadow: 0 4px 4px 0 #00000040;
-  border-radius: 3px;
-}
-
 .search-bar:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border-radius: 3px;
 }
 
-.search-bar_big:focus {
+.form:focus,
+.form:hover {
   box-shadow: 0 4px 4px 0 #00000040;
-}
-
-.vector {
-  background-image: url(images/Search.svg);
-  background-color: white;
-  cursor: pointer;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  padding: 0;
-  border: none;
-}
-
-.vector--big {
-  width: 19px;
-  height: 19px;
-  margin-left: 25px;
-}
-
-.vector--small {
-  width: 11px;
-  height: 11px;
-  margin-left: 12px;
-  margin-bottom: 1px;
 }
 
 .input {
   border: none;
   padding: 0;
   margin-bottom: 1px;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
 }
 
 .input::placeholder {
@@ -78,14 +45,18 @@ form {
 
 .input--big {
   font-size: 16px;
-  margin-left: 18px;
+  padding-left: 62px;
   line-height: 22px;
+  background-size: 19px 19px;
+  background-position: left 25px center;
 }
 
 .input--small {
   font-size: 14px;
-  margin-left: 10px;
+  padding-left: 33px;
   line-height: 19px;
+  background-size: 11px 11px;
+  background-position: left 12px center;
 }
 
 .input:focus {

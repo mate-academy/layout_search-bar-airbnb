@@ -21,15 +21,18 @@
 }
 
 body {
+  margin-left: 48px;
   width: 100%;
   font-family: Avenir, sans-serif;
   color: var(--placeholder);
   display: block;
+  border: var(--border);
 }
 
 .search {
   display: block;
   margin-top: 20px;
+  margin-right: 81px;
 }
 
 .search__input {
@@ -42,7 +45,7 @@ body {
 }
 
 .search__input--big {
-  height: 70px; /* Высота большой формы */
+  height: 70px;
   margin-bottom: 20px;
   background-size: 19px 19px;
   background-position: 26px center;
@@ -52,16 +55,23 @@ body {
 }
 
 .search__input--small {
-  height: 42px; /* Высота маленькой формы */
+  height: 42px;
   margin-bottom: 0;
   background-size: 11px 11px;
   background-position: 13px center;
   padding-left: 33px;
   font-size: 14px;
   font-weight: 400;
+  color: var(--placeholder);
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .search__input--big:focus {
+  color: var(--placeholder), linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.search__input--small:focus {
+  font-weight: 900;
   color: var(--placeholder);
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }

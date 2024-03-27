@@ -21,26 +21,24 @@
   width: 100%;
 }
 
-.main__form--big::after {
+.main__form::after {
   content: ' ';
-  left: 25px;
-  margin-bottom: 2px;
   background-image: url(./../../images/Search.svg);
   background-size: cover;
-  width: 19px;
-  height: 19px;
+  margin-bottom: 2px;
   position: absolute;
 }
 
+.main__form--big::after {
+  left: 25px;
+  width: 19px;
+  height: 19px;
+}
+
 .main__form--small::after {
-  content: ' ';
   left: 12px;
-  margin-bottom: 2px;
-  background-image: url(./../../images/Search.svg);
-  background-size: cover;
   height: 11px;
   width: 11px;
-  position: absolute;
 }
 
 input:focus {

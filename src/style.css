@@ -1,3 +1,4 @@
+/* stylelint-disable comment-empty-line-before */
 /* add styles here */
 * {
   font-weight: 300;
@@ -9,17 +10,17 @@
   font-weight: 300;
 }
 
-.form--big,
-.form--small {
+.form {
   position: relative;
   margin-top: 20px;
   transition: all 0.3s ease;
 }
 
 .input {
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
   width: 100%;
   box-sizing: border-box;
-  border: 1px solid #e1e7ed;
 }
 
 .input--small {
@@ -32,8 +33,7 @@
   padding-left: 62px;
 }
 
-.form--big::before,
-.form--small::before {
+.form::before {
   position: absolute;
   content: '';
   background-image: url(images/Search.svg);
@@ -54,13 +54,11 @@
   left: 13px;
 }
 
-.form--big:hover,
-.form--small:hover {
+.form:hover {
   box-shadow: 0 4px 10px rgb(201, 199, 199);
 }
 
-.input--big:focus,
-.input--small:focus {
+.input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid rgba(225, 231, 237, 1);
   outline: none;
@@ -79,13 +77,15 @@
   line-height: 19px;
 }
 
-.input--big::placeholder,
-.input--small::placeholder {
+.input::placeholder {
   font-family: Avenir, sans-serif;
-  font-size: 16px;
-  line-height: 22px;
   text-align: left;
   color: #3d4e61;
+}
+
+.input--big::placeholder {
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .input--small::placeholder {

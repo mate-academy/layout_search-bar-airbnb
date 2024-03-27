@@ -1,0 +1,47 @@
+.main__form--big > input {
+  border: none;
+  color: #3d4e61;
+}
+
+.main__form--small > input {
+  border: none;
+  color: #3d4e61;
+}
+
+.big--input {
+  padding: 22px 0 22px 62px;
+  font-size: 16px;
+  width: 100%;
+  line-height: 22px;
+}
+
+.small--input {
+  padding: 9px 0 9px 33px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.main__form::after {
+  content: ' ';
+  background-image: url(./../../images/Search.svg);
+  background-size: cover;
+  margin-bottom: 2px;
+  position: absolute;
+}
+
+.main__form--big::after {
+  left: 25px;
+  width: 19px;
+  height: 19px;
+}
+
+.main__form--small::after {
+  left: 12px;
+  height: 11px;
+  width: 11px;
+}
+
+input:focus {
+  outline: none;
+  background: linear-gradient(#fff 0%, #f6f6f7 100%);
+}

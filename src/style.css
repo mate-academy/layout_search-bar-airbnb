@@ -1,1 +1,124 @@
-/* add styles here */
+/* #region import fonts  */
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Heavy.ttf);
+}
+
+/* #endregion */
+
+/* #region page */
+
+body {
+  font-family: Avenir, serif;
+  font-style: normal;
+  font-weight: 300;
+  margin: 0 8px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* #endregion */
+
+/* #region conteiner__search-bar */
+.conteiner__search-bar {
+  display: flex;
+  flex-direction: column;
+}
+
+/* #endregion */
+
+/* #region icons */
+
+.search__bar-icon {
+  background-image: url(images/Search.svg);
+  position: absolute;
+}
+
+.search__bar-icon.--search__bar-icon-big {
+  width: 19px;
+  height: 19px;
+  margin: 25px 17px 26px 26px;
+}
+
+.search__bar-icon.--search__bar-icon-small {
+  width: 11px;
+  height: 11px;
+  background-size: cover;
+  margin: 15px 9px 16px 13px;
+}
+
+/* #endregion */
+
+/* #region search__bar */
+
+.search__bar {
+  display: flex;
+  width: 100%;
+}
+
+/* #region search__bar-big */
+
+.search__bar.--search__bar-big {
+  height: 70px;
+  margin: 20px 0;
+}
+
+.search__bar.--search__bar-big:hover {
+  box-shadow: 0 4px 4px 0 #00000040;
+}
+
+/* #endregion */
+
+/* #region search__bar-small */
+
+.search__bar.--search__bar-small {
+  height: 42px;
+}
+
+.search__bar.--search__bar-small:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+}
+
+/* #endregion */
+
+/* #region search__line  */
+
+.search__line {
+  font-family: Avenir-Book, sans-serif;
+  font-weight: 300;
+  width: 100%;
+  outline: none;
+  color: #3d4e61;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+  border: 1px solid #e1e7ed;
+}
+
+.search__line:focus {
+  box-shadow: 0 4px 4px 0 #00000040;
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 900;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.search__line.--search__line-big {
+  padding-left: 62px;
+  font-size: 16px;
+  line-height: 21.86px;
+}
+
+.search__line.--search__line-small {
+  padding-left: 33px;
+  font-size: 14px;
+  line-height: 19.12px;
+}
+
+/* #endregion */
+
+/* #endregion */

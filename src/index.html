@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+  <head class="page">
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -16,17 +16,31 @@
       href="style.css"
     />
   </head>
-  <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+  <body class="page__body">
+    <form
+      class="search"
+      action="#"
+      method="get"
+    >
+      <input
+        type="text"
+        data-qa="big"
+        placeholder="Try “Los Angeles“"
+        class="search__input search__big search__img--big"
+      />
+    </form>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      class="search"
+      action="#"
+      method="get"
+    >
+      <input
+        type="text"
+        data-qa="small"
+        placeholder="Try “Los Angeles“"
+        class="search__input search__small search__img--small"
+      />
+    </form>
   </body>
 </html>

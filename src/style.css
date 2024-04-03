@@ -1,15 +1,26 @@
 @font-face {
   font-family: Avenir-Book;
   src: url('../src/fonts/Avenir-Book.ttf') format('truetype');
+  src:
+    url('../src/fonts/Avenir-Book.eot') format('embedded-opentype'),
+    url('../src/fonts/Avenir-Book.woff') format('woff'),
+    url('../src/fonts/Avenir-Book.woff2') format('woff2'),
+    url('../src/fonts/Avenir-Book.svg') format('svg');
 }
 
 @font-face {
   font-family: Avenir-Heavy;
   src: url('../src/fonts/Avenir-Heavy.ttf') format('truetype');
+  src:
+    url('../src/fonts/Avenir-Heavy.eot') format('embedded-opentype'),
+    url('../src/fonts/Avenir-Heavy.woff') format('woff'),
+    url('../src/fonts/Avenir-Heavy.woff2') format('woff2'),
+    url('../src/fonts/Avenir-Heavy.svg') format('svg');
 }
 
 @font-face {
   font-family: Avenir;
+  font-weight: 300;
   src: url('../src/fonts/Avenir.ttc') format('truetype');
 }
 
@@ -60,6 +71,25 @@
 
 .input_line {
   border: none;
+  color: #3d4e61;
+  font-family: inherit;
+  flex: 1;
+}
+
+.input_line:focus {
+  outline: none;
+  font-family: Avenir-Heavy, sans-serif;
+  color: #3d4e61;
+}
+
+.input_line-big {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.input_line-small {
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .search--img__big {

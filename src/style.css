@@ -24,7 +24,8 @@ body {
 .wrapper {
   max-width: 100%;
   display: flex;
-  margin: 20 7px;
+  position: relative;
+  margin: 20 8px;
   align-items: center;
   box-sizing: border-box;
   border-radius: 4px;
@@ -51,6 +52,7 @@ body {
   height: 19px;
   top: 25px;
   left: 26px;
+  padding-left: 6px;
   padding-right: 17px;
 }
 
@@ -69,8 +71,12 @@ body {
   width: 100%;
   font-size: 16px;
   height: 22px;
-  line-height: 21.86px;
   outline: 0;
+  color: #3d4e61;
+}
+
+::placeholder {
+  font-family: Avenir, sans-serif;
   color: #3d4e61;
 }
 
@@ -84,7 +90,10 @@ body {
 }
 
 .search_input_small {
+  font-family: Avenir, sans-serif;
   font-size: 14px;
+  height: 20px;
+  font-weight: 400;
   border: none;
   width: 100%;
   outline: 0;
@@ -94,7 +103,6 @@ body {
 .search_input_small:focus {
   font-family: Avenir, sans-serif;
   font-weight: 900;
-  line-height: 19.12px;
   text-align: left;
   color: #3d4e61;
 }

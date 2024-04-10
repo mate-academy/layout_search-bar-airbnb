@@ -29,6 +29,7 @@ html {
 }
 
 .searchBar {
+  position: relative;
   margin: 0;
   padding: 0;
   display: flex;
@@ -37,26 +38,29 @@ html {
   align-items: left;
   width: 100%;
   margin-top: 20px;
-  border-radius: 3px;
-  box-shadow: 0 1px 8px 0 #3d4e611a;
   margin-left: 15px;
   border: none;
 }
 
 .searchBar__big {
   padding: 0;
+  margin: 0;
   position: relative;
   display: block;
   height: 70px;
+
   line-height: 70px;
   overflow: hidden;
+  border: 1px solid rgba(225, 231, 237, 1);
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
   border-radius: 3px;
 }
 
 .searchBar__big img {
-  position: absolute;
-  margin-left: 26px;
-  margin-top: 25px;
+  margin: auto 0;
+  padding: 0;
+  position: relative;
+  margin-left: 25px;
   width: 19px;
   border: 1px #687c94;
   color: #687c94;
@@ -68,7 +72,8 @@ html {
 
 .searchBar__big input,
 .searchBar__small input {
-  position: relative;
+  position: absolute;
+  margin: auto 0;
   font-family: Avenir, sans-serif;
   font-weight: 400;
   border: none;
@@ -77,12 +82,12 @@ html {
 
 .searchBar__big input {
   font-size: 16px;
-  margin-left: 62px;
-  line-height: 70px;
+  margin-left: 17px;
+  line-height: 68px;
 }
 
 .searchBar__small input {
-  margin-left: 33px;
+  margin-left: 9px;
   font-size: 14px;
   line-height: 40px;
 }
@@ -108,17 +113,18 @@ html {
   height: 42px;
   margin-top: 20px;
   overflow: hidden;
-  line-height: 42px;
-  background: linear-gradient(180deg, white 0%, #f6f6f7 100%);
+  line-height: 40px;
+
+  /* background: linear-gradient(180deg, white 0%, #f6f6f7 100%); */
   border: 1px solid #e1e7ed;
   border-radius: 3px;
 }
 
 .searchBar__small img {
-  position: absolute;
+  margin: auto 0;
   height: 11px;
   width: 11px;
-  margin-top: 15px;
+
   margin-left: 13px;
   border: 1px #687c94;
   color: #687c94;
@@ -133,7 +139,7 @@ html {
   font-family: Avenir, sans-serif;
   font-size: 14px;
   font-weight: 600;
-  line-height: 42px;
+  line-height: 40px;
   text-align: left;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }

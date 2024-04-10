@@ -1,0 +1,141 @@
+/* @font-face{
+  font-family: Roboto;
+  src: url(fonts/Roboto-Light.ttf);
+} */
+
+@font-face {
+  font-family: Avenir;
+  src: url(/src/fonts/Avenir-Book.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(/src/fonts/Avenir-Heavy.ttf);
+  font-style: normal;
+  font-weight: 600;
+}
+
+html {
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.search {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 3px;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+  margin-left: 15px;
+  overflow: hidden;
+}
+
+.big {
+  padding: 0;
+  position: relative;
+  display: block;
+  height: 70px;
+  line-height: 70px;
+  margin-top: 20px;
+
+  border-radius: 3px;
+}
+
+.big img {
+  position: absolute;
+  margin-left: 26px;
+  margin-top: 25px;
+  width: 19px;
+  border: 1px #687c94;
+  color: #687c94;
+}
+
+.big:hover {
+  box-shadow: 0 4px 4px 0 #00000040;
+}
+
+.big input,
+.small input {
+  position: relative;
+  font-family: Avenir, sans-serif;
+  font-weight: 400;
+  border: none;
+  color: #3d4e61;
+}
+
+.big input {
+  font-size: 16px;
+  margin-left: 62px;
+  line-height: 70px;
+}
+
+.small input {
+  margin-left: 33px;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.big input:focus {
+  /* box-shadow: 0 4px 4px 0 #00000040; */
+  background: linear-gradient(180deg, white 0%, #f6f6f7 100%);
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 70px;
+  font-style: bold;
+  text-align: left;
+  outline: none;
+  text-shadow: 0 4px 4px #00000040;
+  background-color: #3d4e61;
+}
+
+.small {
+  position: relative;
+  padding: 0;
+  display: block;
+  height: 42px;
+  margin-top: 20px;
+
+  /* margin-left: 20px; */
+  line-height: 42px;
+  background: linear-gradient(180deg, white 0%, #f6f6f7 100%);
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+}
+
+.small img {
+  position: absolute;
+  height: 11px;
+  width: 11px;
+  margin-top: 15px;
+  margin-left: 13px;
+  border: 1px #687c94;
+  color: #687c94;
+}
+
+.small:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+}
+
+.small input:focus {
+  outline: none;
+  font-family: Avenir, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 42px;
+  text-align: left;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}

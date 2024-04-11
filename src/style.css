@@ -1,1 +1,59 @@
-/* add styles here */
+.search-bar {
+  display: flex;
+  width: 100%;
+  border-spacing: 20px;
+}
+
+label {
+  background: url(images/Search.svg);
+}
+
+.search-bar[data-qa='big'] :default {
+  margin-top: 20px;
+  font-weight: 300;
+  height: 70;
+}
+
+.search-bar[data-qa='big'] :hover {
+  box-shadow: 0 4px 4px 0 #00000040;
+}
+
+.search-bar[data-qa='big'] :focus {
+  box-shadow: 0 4px 4px 0 #00000040;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  font-weight: bold;
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+id-сity {
+  height: 19px;
+  width: 19px;
+  margin-left: 26px;
+}
+
+id-try {
+  height: 11px;
+  width: 11px;
+  margin-left: 13px;
+}
+
+.search-bar[data-qa='small'] :default {
+  font-weight: 300;
+  height: 42;
+  text-shadow: 0 4px 4px 0 #00000040;
+}
+
+.search-bar[data-qa='small'] :hover {
+  box-shadow: 0 4px 4px 0 #00000040;
+}
+
+.search-bar[data-qa='small'] :focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: bold;
+}

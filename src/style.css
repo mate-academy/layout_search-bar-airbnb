@@ -20,17 +20,15 @@ html {
   display: flex;
   position: relative;
   width: 100%;
-  margin: 20px 0;
-  border-radius: 4px;
-  border: 1px solid #e1e7ed;
+  margin-top: 20px;
   box-shadow: 0 1px 8px 0 #3d4e611a;
 }
 
 .form_input {
-  display: flex;
-  position: relative;
-  border: none;
+  box-sizing: border-box;
   color: #3d4e61;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
   outline: 0;
   width: 100%;
 }
@@ -49,7 +47,7 @@ html {
 
 .form_input--big::placeholder,
 .form_input--small::placeholder {
-  font-family: inherit;
+  font-family: Avenir, sans-serif;
   color: #3d4e61;
   justify-content: center;
 }

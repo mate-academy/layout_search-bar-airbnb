@@ -1,48 +1,87 @@
-/* add styles here */
-
 @font-face {
-  font-family:Avenir;
+  font-family: Avenir;
   src: url(./fonts/Avenir-Book.ttf);
   font-weight: 300;
 }
 
-html{
-  font-family:Avenir, sans-serif;
+@font-face {
+  font-family: Avenir-Heavy;
+  src: url(./fonts/Avenir-Heavy.ttf);
 }
 
-body{
+body {
   display: flex;
   flex-direction: column;
 }
 
-body :last-child{
+form:last-of-type {
   margin-top: 20px;
 }
 
-input{
+form:first-of-type {
+  margin-top: 12px;
+}
+
+input {
+  font-family: Avenir, sans-serif;
   width: 100%;
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
-  border: #E1E7ED solid 1px;
+  border: #e1e7ed solid 1px;
   background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
   border-radius: 4px;
+  text-indent: 62px;
+  font-size: 14px;
+  box-sizing: border-box;
+  padding: 0;
 }
 
-input:first-child{
-  height: 70px;
-  width: 100%;
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
-  border: #E1E7ED solid 1px;
-  background-image: url(./images/Search.svg);
+input:hover {
+  box-shadow:
+    0 3px 8px 0 rgba(61, 78, 97, 0.2),
+    0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+input:focus {
+  background: url(./images/Search.svg),
+    linear-gradient(to bottom, #fff 0%, #f6f6f7 100%);
   background-repeat: no-repeat;
-  background-position: 26px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color: #3d4e61;
 }
 
-
-input:hover{
-
+input:focus-visible {
+  outline: none;
 }
 
-/* input:focus{
- */
-/* } */
+form:first-of-type input {
+  background-position: 26px, center;
+  background-size:
+    19px 19px,
+    cover;
+  text-indent: 62px;
+  height: 70px;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+form:last-of-type input {
+  background-size:
+    11px 11px,
+    cover;
+    background-position: 12px;
+  height: 42px;
+  text-indent: 33px;
+  font-size: 14px;
+}
+
+form:first-of-type input:focus {
+  background: url(./images/Search.svg),
+    linear-gradient(to bottom, #fff 0%, #f6f6f7 100%);
+  background-position: 26px, center;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color: #3d4e61;
+}

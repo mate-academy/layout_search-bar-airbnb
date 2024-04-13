@@ -1,1 +1,66 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  src: url(fonts/Avenir-Book.ttf);
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-display: swap;
+  font-weight: 900;
+}
+
+.form {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form__input {
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  padding-left: 62px;
+  height: 70px;
+}
+
+.form__input--small {
+  height: 42px;
+  padding-left: 33px;
+}
+
+.form__input:hover,
+.form__input--small:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.form__input:focus {
+  border-radius: 3px;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.form__input::placeholder {
+  color: #3d4e61;
+  font-weight: 400;
+}
+
+.form__search {
+  position: absolute;
+  top: 26px;
+  left: 26px;
+}
+
+.form__search--small {
+  width: 11px;
+  left: 13px;
+  top: 15px;
+}
+
+.form__input--small:focus {
+  font-weight: 900;
+}
+
+.form__input--small::placeholder {
+  font-size: 14px;
+}

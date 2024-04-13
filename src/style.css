@@ -28,13 +28,7 @@ body {
   border-radius: 4px;
   width: 100%;
   box-shadow: 0 3px 8px #3d4e611a;
-}
 
-.search-bar__input:hover {
-  box-shadow: 0 3px 8px #3d4e6133;
-}
-
-.search-bar__input--big {
   background-image: url(/src/images/Search.svg);
   background-repeat: no-repeat;
   background-position-x: 26px;
@@ -42,6 +36,22 @@ body {
   height: 70px;
   font-size: 16px;
   padding-left: 62px;
+}
+
+.search-bar__input:focus {
+  text-shadow: 0 4px 4px #00000040;
+  font-weight: 900;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.search-bar__input:hover {
+  box-shadow: 0 3px 8px #3d4e6133;
+}
+
+.search-bar__input--big::placeholder,
+.search-bar__input::placeholder {
+  font-family: Avenir, sans-serif;
+  color: #3d4e61;
 }
 
 .search-bar__input--small {

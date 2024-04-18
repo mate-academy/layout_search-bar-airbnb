@@ -1,12 +1,11 @@
 .search-bar {
   display: flex;
   margin-top: 20px;
-  margin-bottom: 20px;
   font-weight: 300;
   position: relative;
 }
 
-.big-city::before {
+.label::before {
   content: '';
   background: url(images/Search.svg);
   background-repeat: no-repeat;
@@ -19,17 +18,11 @@
   background-size: cover;
 }
 
-.small-try::before {
-  content: '';
-  background: url(images/Search.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
+.label--small-try::before {
   height: 11px;
   width: 11px;
   margin-left: 13px;
   top: 15px;
-  background-size: cover;
 }
 
 .search-bar--big {
@@ -48,7 +41,7 @@
 }
 
 .search-bar--small {
-  height: 42;
+  height: 42px;
 }
 
 .search-bar--small :hover {
@@ -75,11 +68,11 @@ input {
 }
 
 .input__big {
-  padding-left: 62px;
   font-size: 16px;
+  padding-left: 62px;
 }
 
 .input__small {
-  padding-left: 33px;
   font-size: 14px;
+  padding-left: 33px;
 }

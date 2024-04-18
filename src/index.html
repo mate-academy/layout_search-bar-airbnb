@@ -10,23 +10,53 @@
       http-equiv="X-UA-Compatible"
       content="ie=edge"
     />
-    <title>Document</title>
+    <title>Search</title>
     <link
       rel="stylesheet"
       href="style.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Avenir&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <div class="forms">
+      <div class="forms">
+        <form
+          class="forms__form forms__form--big"
+          method="post"
+        >
+          <label
+            for="big__search"
+            class="forms__label"
+          ></label>
+          <input
+            type="text"
+            class="forms__input forms__input--big"
+            name="inputbig"
+            data-qa="keypress"
+            placeholder="Try “Los Angeles“"
+          />
+        </form>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+        <form
+          class="forms__form forms__form--small"
+          method="post"
+        >
+          <label
+            for="small__search"
+            class="forms__label"
+          ></label>
+          <input
+            type="text"
+            class="forms__input forms__input--small"
+            name="inputsmall"
+            data-qa="keypress"
+            placeholder="Try “Los Angeles“"
+          />
+        </form>
+      </div>
+    </div>
   </body>
 </html>

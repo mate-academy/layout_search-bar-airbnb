@@ -5,11 +5,13 @@
 @font-face {
   font-family: Avenir-Book;
   src: url(fonts/Avenir-Book.ttf);
+  font-weight: 300;
 }
 
 @font-face {
-  font-family: Avenir-Heavy;
+  font-family: Avenir;
   src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: 700;
 }
 
 html {
@@ -28,6 +30,7 @@ html {
   display: flex;
   align-items: center;
   margin: 20px 8px 0;
+  outline: 0;
 }
 
 .small-form__input,
@@ -35,11 +38,13 @@ html {
   border: 1px solid #e1e7ed;
   border-radius: 4px;
   box-shadow: 0 1px 8px 0 #3d4e611a;
+  outline: 0;
 }
 
 .big-form__input {
   height: 70px;
   width: 100%;
+  padding-left: 62px;
 }
 
 .small-form__input {
@@ -47,6 +52,7 @@ html {
   width: 100%;
   font-size: 14px;
   font-weight: 400;
+  padding-left: 33px;
 }
 
 .big-form::after {
@@ -74,7 +80,6 @@ html {
   font-size: 16px;
   font-weight: 300;
   color: #3d4e61;
-  padding-left: 60px;
 }
 
 .small-form__input::placeholder {
@@ -82,7 +87,6 @@ html {
   font-size: 14px;
   font-weight: 400;
   color: #3d4e61;
-  padding-left: 31px;
 }
 
 .big-form:hover {
@@ -94,7 +98,7 @@ html {
 }
 
 .big-form__input:focus {
-  font-family: Aveniar-Heavy, sans-serif;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 800;
   color: rgba(61, 78, 97, 1);
@@ -103,7 +107,7 @@ html {
 }
 
 .small-form__input:focus {
-  font-family: Aveniar-Heavy, sans-serif;
+  font-family: inherit;
   font-size: 14px;
   font-weight: 900;
   color: rgba(61, 78, 97, 1);

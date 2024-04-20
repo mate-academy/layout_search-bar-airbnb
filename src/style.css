@@ -1,1 +1,102 @@
 /* add styles here */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Avenir-Book;
+  font-weight: 300;
+  src: url(fonts/Avenir-Book.ttf) format(ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Avenir-Heavy;
+  src: url(fonts/Avenir-Heavy.ttf) format(ttf);
+  font-weight: 800;
+  font-display: swap;
+}
+
+html {
+  font-family: Avenir-Book, sans-serif;
+}
+
+.search_panel {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 25px 680px 26px 62px;
+}
+
+.big {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  color: (255, 255, 255, 1);
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 4px;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  background-image: url(./images/Search.svg);
+  background-position: left 26px center;
+  background-repeat: no-repeat;
+}
+
+.big:hover {
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 4px;
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.big:focus {
+  font-family: Avenir-Heavy, sans-serif;
+  src: url(fonts/Avenir-Heavy.ttf) format(ttf);
+  font-weight: 800;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1),
+    rgba(246, 246, 247, 1)
+  );
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 4px;
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.small {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 4px;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  background-image: url(./images/Search.svg);
+  background-position: left 26px center;
+  background-repeat: no-repeat;
+}
+
+.small:hover {
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 4px;
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.small:focus {
+  font-family: Avenir-Heavy, sans-serif;
+  font-weight: 800;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1),
+    rgba(246, 246, 247, 1)
+  );
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 4px;
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}

@@ -1,4 +1,4 @@
-/* add styles here */
+/* scc */
 * {
   box-sizing: border-box;
   outline: none;
@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: Avenir;
-  src: url('./fonts/Avenir-Book.ttf');
+  src: url('fonts/Avenir-Book.ttf');
 }
 
 body {
@@ -18,9 +18,9 @@ body {
 }
 
 .form--input {
-  width: 100%;
   border: 1px solid #e1e7ed;
   border-radius: 4px;
+  width: 100%;
   box-shadow: 0 1px 8px #3d4e611a;
 }
 
@@ -29,20 +29,23 @@ body {
 }
 
 .form--input:focus {
-  text-shadow: 0 4px 4px #00000040;
-  box-shadow: 0 4px 4px #00000040;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+  font-weight: 600;
 }
 
 .form--input__big::placeholder {
   color: #3d4e61;
   font-family: Avenir, sans-serif;
   font-size: 16px;
+  line-height: 22px;
 }
 
 .form--input__small::placeholder {
   color: #3d4e61;
   font-family: Avenir, sans-serif;
   font-size: 14px;
+  line-height: 22px;
 }
 
 .form--input__big {

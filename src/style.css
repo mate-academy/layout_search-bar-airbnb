@@ -21,35 +21,29 @@ body {
   --border-radius: 5px;
   --text-ident: 20px;
   --border: 1px solid #e1e7ed;
-  --shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.big-input-cont__big-input,
+.small-input-cont__small-input {
+  text-indent: var(--text-ident);
+  border-radius: var(--border-radius);
+  border: var(--border);
+  font-family: Avenir-Book, serif;
 }
 
 .big-input-cont__big-input {
   width: 100%;
   height: 70px;
-
   box-sizing: border-box;
-  border-radius: var(--border-radius);
-
-  text-indent: var(--text-ident);
   padding-left: 42px;
-  border: var(--border);
   font-size: 16px;
-  font-family: Avenir-Book, serif;
 }
 
 .small-input-cont__small-input {
   width: 98.3%;
   height: 38px;
-
-  border: var(--border);
-  border-radius: var(--border-radius);
-
-  text-indent: var(--text-ident);
   font-size: 14px;
-
   padding-left: 13px;
-  font-family: Avenir-Book, serif;
 }
 
 .big-input-cont__big-input:hover {
@@ -64,13 +58,10 @@ body {
 .small-input-cont__small-input:focus {
   background: linear-gradient(to bottom, #fff, #f6f6f7 100%);
   font-family: Avenir-Heavy, serif;
+  outline: none;
 }
 
-.big-input-cont__big-input::placeholder {
-  text-indent: var(--text-ident);
-  color: #3d4e61;
-}
-
+.big-input-cont__big-input::placeholder,
 .small-input-cont__small-input::placeholder {
   text-indent: var(--text-ident);
   color: #3d4e61;

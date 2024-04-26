@@ -8,8 +8,13 @@
   src: url(fonts/Avenir-Heavy.ttf);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  font-family: Avenir, Arial, serif;
 }
 
 .search-container {
@@ -22,7 +27,7 @@ body {
 .search-bar {
   margin-top: 20px;
   margin-left: 8px;
-  font-family: Avenir, Arial, serif;
+  font-family: Avenir, Arial, Helvetica, sans-serif;
   font-weight: 300;
   color: #3d4e61;
   background: url(images/Search.svg);
@@ -34,7 +39,7 @@ body {
 }
 
 .big-search-bar {
-  height: 66px;
+  height: 70px;
   padding-left: 62px;
   font-size: 16px;
   background-size: 19px;
@@ -42,7 +47,7 @@ body {
 }
 
 .small-search-bar {
-  height: 38px;
+  height: 42px;
   padding-left: 33px;
   font-size: 14px;
   background-size: 11px;

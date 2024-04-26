@@ -14,22 +14,24 @@
   font-weight: bold;
 }
 
-body {
-  margin: 0;
-  padding-inline: 8px;
+html {
   font-family: Avenir, sans-serif;
+}
 
+:root {
   --text-normal: #3d4e61;
   --border-line: #e1e7ed;
   --border-shadow: #3d4e611a;
   --border-shadow-hover: #3d4e6133;
 }
 
-.form-search {
-  margin-top: 20px;
+body {
+  margin: 0;
+  padding-inline: 8px;
 }
 
 .search {
+  margin-top: 20px;
   background-image: url('./images/Search.svg');
   background-repeat: no-repeat;
 }
@@ -44,7 +46,6 @@ body {
   background-position: 13px 15px;
 }
 
-/* #region search input */
 .search__input {
   width: 100%;
   outline: none;
@@ -89,8 +90,6 @@ body {
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0),
-    rgb(246, 246, 247, 1)
+    rgba(246, 246, 247, 1)
   );
 }
-
-/* #endregion */

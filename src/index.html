@@ -10,7 +10,7 @@
       http-equiv="X-UA-Compatible"
       content="ie=edge"
     />
-    <title>search-bar-airbnb</title>
+    <title>Search bar airbnb</title>
     <link
       rel="stylesheet"
       href="style.css"
@@ -18,30 +18,28 @@
   </head>
   <body>
     <form
-      class="form form__big"
       data-qa="big"
+      class="search-bar"
     >
-      <label class="form__label form__label_big">
-        <input
-          class="form__input form__input_big"
-          type="text"
-          data-qa="keypress"
-          placeholder="Try “Los Angeles“"
-        />
-      </label>
+      <input
+        class="search-bar__input search-bar__input--big"
+        name="search-big"
+        type="text"
+        data-qa="keypress"
+        placeholder="Try “Los Angeles“"
+      />
     </form>
     <form
-      class="form form_small"
+      class="search-bar"
       data-qa="small"
     >
-      <label class="form__label form__label_small">
-        <input
-          class="form__input form__input_small"
-          type="text"
-          data-qa="hover"
-          placeholder="Try “Los Angeles“"
-        />
-      </label>
+      <input
+        class="search-bar__input search-bar__input--small"
+        name="search-small"
+        type="text"
+        data-qa="hover"
+        placeholder="Try “Los Angeles“"
+      />
     </form>
   </body>
 </html>

@@ -10,23 +10,31 @@
       http-equiv="X-UA-Compatible"
       content="ie=edge"
     />
-    <title>Document</title>
+    <title>Airbnb</title>
     <link
       rel="stylesheet"
       href="style.css"
     />
   </head>
-  <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+  <body>
+    <form
+      class="search"
+      data-qa="big"
+    >
+      <input
+        data-qa="keypress"
+        type="search"
+        placeholder="Try “Los Angeles“"
+      />
+    </form>
+
+    <form data-qa="small">
+      <input
+        data-qa="hover"
+        type="search"
+        placeholder="Try “Los Angeles“"
+      />
+    </form>
   </body>
 </html>

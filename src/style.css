@@ -1,9 +1,13 @@
 @font-face {
   font-family: Avenir;
-  src:
-    url(fonts/Avenir-Book.ttf) format(truetype),
-    url(fonts/Avenir-Heavy.ttf) format(truetype),
-    url(fonts/Avenir.ttc) format(truetypecollection);
+  font-weight: 300;
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 900;
+  src: url(fonts/Avenir-Heavy.ttf);
 }
 
 :root {
@@ -32,6 +36,7 @@
   font-weight: 900;
   line-height: 21.86px;
   color: var(--form-txt-color);
+  text-shadow: 0 4px 4px 0 var(--form-txt-shadow-color);
   height: 70px;
   width: 100%;
 

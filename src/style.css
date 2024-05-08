@@ -87,34 +87,29 @@ body {
 
 /* #region search */
 
-.search2 {
+.forms__search--big::after {
+  content: '';
+  display: inline-block;
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
   position: absolute;
-}
-
-.search__big {
+  width: 19px;
+  height: 19px;
   top: 25px;
   left: 24px;
 }
 
-.search__small {
-  bottom: 16px;
-  left: 14px;
-  width: 11px;
-  height: 11px;
-}
-
-/* .search {
+.forms__search--small::after {
+  content: '';
+  display: inline-block;
+  background-size: contain;
   background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  bottom: 16px;
+  left: 13px;
 }
-
-.search-big {
-  background-position: 25px 24px;
-}
-
-.search-small {
-  background-position: 12px 14px;
-  background-size: 11px;
-} */
 
 /* #endregion */

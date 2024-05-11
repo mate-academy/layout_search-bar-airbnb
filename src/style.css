@@ -10,15 +10,10 @@
   font-weight: 800;
 }
 
-.body {
-  margin: 0;
-}
-
 .search-bar {
   position: relative;
   display: flex;
   align-items: center;
-  margin-inline: 8px;
 }
 
 .search-bar:hover {
@@ -69,15 +64,20 @@
 
 .search-bar__icon {
   position: absolute;
-  object-fit: contain;
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
 }
 
 .search-bar__icon--big {
   width: 19px;
+  height: 19px;
   left: 25px;
+  background-size: 19px;
 }
 
 .search-bar__icon--small {
   width: 11px;
+  height: 11px;
   left: 12px;
+  background-size: 11px;
 }

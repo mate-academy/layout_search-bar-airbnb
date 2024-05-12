@@ -10,18 +10,24 @@
   font-weight: 900;
 }
 
-body {
-  margin: 0;
+html {
+  --search-icon-big: url(/src/images/Search.svg) 26px 50% no-repeat;
+  --search-icon-size-big: 19px;
+  --search-icon-small: url(/src/images/Search.svg) 13px 50% no-repeat;
+  --search-icon-size-small: 11px;
+  --font-color: #3d4e61;
+  --font-size-big: 16px;
+  --font-size-small: 14px;
 }
 
-.search-bars {
-  width: 100%;
+body {
+  margin: 0;
+
+  font-family: Avenir, sans-serif;
 }
 
 .search-bar {
-  display: flex;
-  margin-inline: 8px;
-  align-items: center;
+  margin: 20px 8px 0;
 }
 
 .search-bar__input {
@@ -31,9 +37,10 @@ body {
   border: 1px solid #e1e7ed;
   border-radius: 4px;
 
-  font-family: Avenir, sans-serif;
+  font-family: inherit;
   font-weight: 300;
-  color: #3d4e61;
+  color: var(--font-color);
+  font-size: var(--font-size-big);
 }
 
 .search-bar__input:hover {
@@ -47,46 +54,43 @@ body {
   outline: none;
 }
 
-.search-bar--big {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
 .search-bar__input--big {
   height: 70px;
-  line-height: 21.86px;
-  font-size: 16px;
-
   padding-left: 62px;
+
+  background: var(--search-icon-big);
+  background-size: var(--search-icon-size-big);
+}
+
+.search-bar__input--big:focus {
+  background: var(--search-icon-big);
+  background-size: var(--search-icon-size-big);
 }
 
 .search-bar__input--small {
   height: 42px;
-  line-height: 19.12px;
-  font-size: 14px;
-
+  font-size: var(--font-size-small);
   padding-left: 33px;
+
+  background: var(--search-icon-small);
+  background-size: var(--search-icon-size-small);
 }
 
-.search-bar__icon {
-  position: absolute;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../images/Search.svg);
+.search-bar__input--small:focus {
+  background: var(--search-icon-small);
+  background-size: var(--search-icon-size-small);
 }
 
-.search-bar__icon--big {
-  height: 19px;
-  width: 19px;
-
-  top: 45px;
-  left: 34px;
+.search-bar__input::placeholder {
+  font-family: inherit;
+  color: var(--font-color);
+  font-weight: 300;
+  font-size: var(--font-size-big);
 }
 
-.search-bar__icon--small {
-  height: 11px;
-  width: 11px;
-
-  top: 125px;
-  left: 21px;
+.search-bar__input--small::placeholder {
+  font-size: var(--font-size-small);
+  font-family: inherit;
+  color: var(--font-color);
+  font-weight: 300;
 }

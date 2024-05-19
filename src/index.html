@@ -17,16 +17,41 @@
     />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
-
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      data-qa="big"
+      class="form large-form"
+      action="/"
+      method="post"
+    >
+      <img
+        class="img"
+        src="./images/Search.svg"
+        alt="Search"
+      />
+      <input
+        class="input large-input"
+        type="text"
+        data-qa="keypress"
+        placeholder="Try “Los Angeles”"
+      />
+    </form>
+    <form
+      data-qa="small"
+      class="form small-form"
+      action="/"
+      method="post"
+    >
+      <img
+        class="img small-img"
+        src="./images/Search.svg"
+        alt="Search"
+      />
+      <input
+        class="input small-input"
+        type="text"
+        data-qa="keypress"
+        placeholder="Try “Los Angeles”"
+      />
+    </form>
   </body>
 </html>

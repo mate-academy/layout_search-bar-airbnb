@@ -1,1 +1,60 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  font-weight: 300;
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 800;
+  src: url(fonts/Avenir-Heavy.ttf);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  font-family: Avenir, sans-serif;
+  margin-top: 20px;
+}
+
+.inp {
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  font-family: inherit;
+  font-weight: 300;
+  color: #3d4e61;
+  box-sizing: border-box;
+}
+
+.inp__big {
+  height: 70px;
+  background-size: 19px;
+  background-position: 26px;
+  padding-left: 62px;
+  font-size: 16px;
+}
+
+.inp__small {
+  height: 42px;
+  background-size: 11px;
+  background-position-x: 12px;
+  background-position-y: 14px;
+  padding-left: 33px;
+  font-size: 14px;
+}
+
+.inp:hover {
+  box-shadow: 0 4px 4px 0 #00000040;
+}
+
+.inp:focus {
+  font-weight: 800;
+  outline: none;
+  box-shadow: 0 4px 4px 0 #00000040;
+}
+
+.inp::placeholder {
+  font-weight: 300;
+}

@@ -27,65 +27,66 @@ html {
   width: 100%;
 }
 
-[data-qa='big'] {
-  height: 70px;
+[data-qa='big'] input[type='text'] {
+  width: 100%;
+  box-sizing: border-box;
   border: 1px solid #e1e7ed;
+  height: 70px;
   border-radius: 4px;
   box-shadow: 0 1px 8px 0 #3d4e611a;
-
-  background-image: url('./images/Search.svg');
+  background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
   background-position: left 26px top 25px;
   background-size: 19px 19px;
 }
 
-[data-qa='big']:hover {
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 3px 8px 0 #3d4e6133;
-}
-
-[data-qa='big']:focus {
-  border: 1px solid #e1e7ed;
-  color: #3d4e61;
-  font-weight: 900;
-}
-
 [data-qa='keypress'] {
-  font-family: Avenir, sans-serif;
-  font-size: 16px;
-  border: none;
   height: 19px;
-  margin: 25px 29px 26px 62px;
+  padding-top: 25px;
+  padding-left: 62px;
+  padding-bottom: 26px;
+
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #3d4e61;
 }
 
 [data-qa='small'] {
   margin-top: 20px;
-  height: 42px;
+}
+
+[data-qa='small'] input[type='text'] {
+  width: 100%;
+  box-sizing: border-box;
   border: 1px solid #e1e7ed;
+  height: 42px;
   border-radius: 4px;
   box-shadow: 0 1px 8px 0 #3d4e611a;
-
-  background-image: url('./images/Search.svg');
+  background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
   background-position: left 13px top 15px;
   background-size: 11px 11px;
 }
 
-[data-qa='small']:hover {
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 3px 8px 0 #3d4e6133;
-}
-
-[data-qa='small']:focus {
-  border: 1px solid #e1e7ed;
-  color: #3d4e61;
-  font-weight: 900;
-}
-
 [data-qa='default'] {
+  height: 19px;
+  padding-top: 12px;
+  padding-left: 33px;
+  padding-bottom: 11px;
+
   font-family: Avenir, sans-serif;
+  font-weight: 300;
   font-size: 14px;
-  margin: 12px 236px 11px 33px;
-  height: 20px;
-  border: none;
+  color: #3d4e61;
+}
+
+input[type='text']:hover {
+  box-shadow: 0 4px 4px 0 #00000040;
+}
+
+input[type='text']:focus {
+  border: 1px solid #e1e7ed;
+  font-family: Avenir, sans-serif;
+  font-weight: bold;
 }

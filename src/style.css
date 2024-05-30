@@ -4,15 +4,15 @@
 }
 
 @font-face {
-  font-family: Avenir-Book, sans-serif;
-  src: url(fonts/Avenir-Book.ttf);
+  font-family: Avenir;
+  font-weight: var(--default-font-weight);
+  src: url(./fonts/Avenir-Book.ttf);
 }
 
 @font-face {
-  font-family: Avenir-Heavy, sans-serif;
-  src: url(fonts/Avenir-Heavy.ttf);
-  font-style: bold;
-  font-weight: bold;
+  font-family: Avenir;
+  font-weight: 800;
+  src: url(./fonts/Avenir-Heavy.ttf);
 }
 
 .form {
@@ -21,63 +21,52 @@
 
 .form-input {
   display: block;
-  margin: o;
   width: 100%;
-  font-family: Avenir-Book, sans-serif;
-  font-weight: 300;
+  font-family: Avenir, sans-serif;
+  font-weight: var(--default-font-weight);
   font-size: 16px; /* розмір шрифтк */
+  background-image: url('./images/Search.svg');
+  background-repeat: no-repeat;
+  outline: none; /* прибераємо обводку */
   color: rgba(255, 255, 255, 1);
   border: 1px solid rgba(225, 231, 237, 1);
   border-radius: 4px;
-  box-shadow: rgba(61, 78, 97, 0.1);
+  box-shadow: 0 1px 8px 0 #3d4e611a;
 }
 
 .form__input--large {
   margin-top: 20px;
   height: 70px;
+  background-position: left 26px top 25px;
+  background-size: 19px 19px;
   padding-left: 62px; /* додаємо відступ, щоб текст не накладався на іконку */
 }
 
 .form__input--small {
-  height: 42px;
   margin-top: 20px;
+  height: 42px;
+  background-position: left 13px top 15px;
+  background-size: 11px 11px;
   padding-left: 33px; /* додаємо відступ, щоб текст не накладався на іконку */
-  size: 14px;
+  font-size: 14px;
 }
 
-.form__img {
-  margin-right: 100px;
-}
-
-.form__img--large {
-  width: 19px;
-  height: 19px;
-  position: absolute;
-  top: 45px;
-  left: 34px;
-}
-
-.form__img--small {
-  width: 11px;
-  height: 11px;
-  position: relative;
-  bottom: 30px;
-  left: 13px;
+.form-input::placeholder {
+  font-weight: 300;
+  color: #3d4e61;
 }
 
 .form-input:hover {
-  border: 1px solid rgba(225, 231, 237, 1);
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.2);
+  outline-width: 0;
 }
 
 .form-input:focus {
   font-family: Avenir-Heavy, sans-serif;
+  font-weight: 600;
   background: rgba(246, 246, 247, 1);
   border-radius: 3px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   color: rgba(61, 78, 97, 1);
-  border-color: rgba(225, 231, 237, 1);
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
-  font-weight: bold;
-  font-style: bold;
 }

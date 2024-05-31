@@ -2,6 +2,8 @@
   display: flex;
   justify-content: center;
   margin: 20px auto 0;
+  position: relative;
+  width: 100%;
 }
 
 .search-bar_big {
@@ -14,19 +16,13 @@
   height: 42px;
 }
 
-.search-bar__conteiner {
-  position: relative;
-  display: block;
-  width: 100%;
-}
-
-.search-bar__conteiner::after {
+.search-bar::after {
   position: absolute;
   content: '';
   display: block;
 }
 
-.search-bar__conteiner_big::after {
+.search-bar_big::after {
   background-image: url('../../images/Search.svg');
   background-repeat: no-repeat;
   background-size: contain;
@@ -36,7 +32,7 @@
   left: 26px;
 }
 
-.search-bar__conteiner_small::after {
+.search-bar_small::after {
   background-image: url('../../images/Search.svg');
   background-repeat: no-repeat;
   background-size: contain;

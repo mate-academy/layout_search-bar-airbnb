@@ -1,0 +1,67 @@
+/* Common text field styles */
+.text-field {
+  position: relative;
+}
+
+.text-field__input {
+  font-family: Avenir, sans-serif;
+  width: 100%;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  color: var(--text-primary-color);
+  box-shadow: var(--field-light-box-shadow);
+  font-weight: 900;
+}
+
+.text-field__input:hover {
+  box-shadow: var(--field-bold-box-shadow);
+}
+
+.text-field__input:focus {
+  box-shadow: var(--field-bold-box-shadow);
+  border-radius: 3px;
+  background: var(--field-light-linear-gradient);
+}
+
+.text-field__input::placeholder {
+  color: var(--text-primary-color);
+  font-family: Avenir, sans-serif;
+  font-weight: normal;
+  text-shadow: none;
+}
+
+.text-field__search-icon {
+  position: absolute;
+  cursor: text;
+}
+
+/* Large text field styles */
+.text-field__input--large {
+  padding: 26px 25px 24px 62px;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.text-field__input--large::placeholder {
+  font-size: 1rem;
+}
+
+.text-field__search-icon--large {
+  left: 26px;
+  top: 50%;
+  margin-top: -10px;
+}
+
+/* Small text field styles */
+.text-field__input--small {
+  padding: 12px 12px 10px 33px;
+}
+
+.text-field__input--small::placeholder {
+  font-size: 0.88rem;
+}
+
+.text-field__search-icon--small {
+  left: 13px;
+  top: 50%;
+  margin-top: -6px;
+}

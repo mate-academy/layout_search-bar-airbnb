@@ -8,6 +8,7 @@
 * {
   font-family: Avenir, Arial, Helvetica, sans-serif;
   font-weight: 300px;
+  box-sizing: border-box;
 }
 
 body {
@@ -31,11 +32,14 @@ body {
 .large__text {
   width: 100%;
   height: 70px;
-  box-sizing: border-box;
   font-size: 16px;
   color: #3d4e61;
   margin-top: 20px;
   padding-left: 62px;
+
+}
+
+.search__text{
   border: 1px solid #e1e7ed;
   border-radius: 4px;
 }
@@ -45,16 +49,17 @@ body {
   position: relative;
 }
 
-.serch__text {
+::placeholder {
+  color: #3d4e61;
+}
+
+.small__text {
   width: 100%;
   height: 42px;
-  box-sizing: border-box;
   font-size: 14px;
   color: #3d4e61;
   margin-top: 20px;
   padding-left: 33px;
-  border: 1px solid #e1e7ed;
-  border-radius: 4px;
 }
 
 .serch__images {

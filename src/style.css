@@ -1,1 +1,83 @@
 /* add styles here */
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Avenir-Book, sans-serif;
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: Avenir-Heavy, sans-serif;
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-style: bold;
+  font-weight: bold;
+}
+
+.form {
+  margin-top: auto;
+}
+
+.form-input {
+  display: block;
+  margin: o;
+  width: 100%;
+  font-family: Avenir-Book, sans-serif;
+  font-weight: 300;
+  font-size: 16px; /* розмір шрифтк */
+  color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 4px;
+  box-shadow: rgba(61, 78, 97, 0.1);
+}
+
+.form__input--large {
+  margin-top: 20px;
+  height: 70px;
+  padding-left: 62px; /* додаємо відступ, щоб текст не накладався на іконку */
+}
+
+.form__input--small {
+  height: 42px;
+  margin-top: 20px;
+  padding-left: 33px; /* додаємо відступ, щоб текст не накладався на іконку */
+  size: 14px;
+}
+
+.form__img {
+  margin-right: 100px;
+}
+
+.form__img--large {
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  top: 45px;
+  left: 34px;
+}
+
+.form__img--small {
+  width: 11px;
+  height: 11px;
+  position: relative;
+  bottom: 30px;
+  left: 13px;
+}
+
+.form-input:hover {
+  border: 1px solid rgba(225, 231, 237, 1);
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.form-input:focus {
+  font-family: Avenir-Heavy, sans-serif;
+  background: rgba(246, 246, 247, 1);
+  border-radius: 3px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  color: rgba(61, 78, 97, 1);
+  border-color: rgba(225, 231, 237, 1);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+  font-style: bold;
+}

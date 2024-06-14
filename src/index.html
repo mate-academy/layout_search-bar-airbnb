@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+  <head class="page">
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -10,23 +10,41 @@
       http-equiv="X-UA-Compatible"
       content="ie=edge"
     />
-    <title>Document</title>
+    <title>Search bar</title>
     <link
       rel="stylesheet"
-      href="style.css"
+      href="styles/main.css"
     />
   </head>
-  <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+  <body class="page__body">
+    <form
+      action="/src/index.html"
+      method="get"
+      class="page__form search-bar search-bar--big"
+      data-qa="big"
+    >
+      <input
+        type="text"
+        data-qa="keypress"
+        placeholder="Try “Los Angeles“"
+        class="search-bar__input"
+        name="big-search"
+      />
+    </form>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      action="/src/index.html"
+      method="get"
+      class="page__form search-bar search-bar--small"
+      data-qa="small"
+    >
+      <input
+        type="text"
+        data-qa="hover"
+        placeholder="Try “Los Angeles“"
+        class="search-bar__input"
+        name="small-search"
+      />
+    </form>
   </body>
 </html>

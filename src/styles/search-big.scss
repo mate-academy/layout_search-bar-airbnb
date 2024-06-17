@@ -1,0 +1,26 @@
+.search[data-qa~='big'] {
+  height: 70px;
+  padding-left: 62px;
+  background-position: 26px 25px;
+  background-size: 19px;
+  font-size: 16px;
+  text-shadow: 0 4 4 0 rgba($color: #000, $alpha: 0.25);
+  border-radius: 3px;
+
+  &::placeholder {
+    text-shadow: none;
+  }
+
+  &:hover {
+    box-shadow: 0 3 8 0 rgba($color: #3d4e61, $alpha: 0.2);
+  }
+
+  &:focus {
+    background-image: url(./images/Search.svg), linear-gradient(#fff, #f6f6f7);
+    background-position:
+      26px 25px,
+      0 100%;
+    background-size: 19px, contain;
+    background-repeat: no-repeat, no-repeat;
+  }
+}

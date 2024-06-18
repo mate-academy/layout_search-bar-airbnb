@@ -1,1 +1,52 @@
-/* add styles here */
+/* Importing the font */
+@font-face {
+  font-family: '';
+  src: url('/src/fonts/Avenir.ttc') format('normal');
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.search-bar big {
+  width: 900px;
+  height: 70px;
+}
+
+.search-bar img {
+  margin-right: 17px;
+}
+
+.search-bar input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-family: Avenir, sans-serif;
+}
+
+.search-bar:hover {
+  color: rgba(61, 78, 97, 1);
+}
+
+.search-bar big:focus {
+  border-radius: 30px;
+}

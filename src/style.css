@@ -1,14 +1,8 @@
-/* Importing the font */
 @font-face {
-  font-family: '';
+  font-family: Avenir;
   src: url('/src/fonts/Avenir.ttc') format('normal');
   font-weight: 300;
   font-style: normal;
-}
-
-* {
-  margin: 0;
-  padding: 0;
 }
 
 body {
@@ -19,34 +13,39 @@ body {
 .search-bar {
   display: flex;
   align-items: center;
-  padding: 25px;
-  font-size: 16px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 1px;
   margin-bottom: 20px;
 }
 
-.search-bar big {
-  width: 900px;
-  height: 70px;
+.search-bar.big img {
+  margin: 25px 17px 26px 26px;
 }
 
-.search-bar img {
-  margin-right: 17px;
+.search-bar.small img {
+  margin: 15px 9px 16px 13px;
 }
 
 .search-bar input {
-  width: 100%;
   border: none;
   outline: none;
-  font-size: 16px;
   font-family: Avenir, sans-serif;
 }
 
-.search-bar:hover {
-  color: rgba(61, 78, 97, 1);
+.search-bar.small input {
+  height: 42px;
+  font-size: 14px;
 }
 
-.search-bar big:focus {
-  border-radius: 30px;
+.search-bar.big input {
+  height: 70px;
+  font-size: 16px;
+}
+
+.search-bar:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search-bar:focus {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }

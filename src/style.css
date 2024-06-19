@@ -34,12 +34,10 @@
   --color-white: #fff;
 }
 
-.app {
+body {
   font-weight: 300;
-}
 
-.app__wrapper {
-  padding: 20px 8.5px 20px 8px;
+  padding: 20px 8px;
 
   display: flex;
   flex-direction: column;
@@ -65,7 +63,7 @@
   width: 19px;
   height: 19px;
   flex-shrink: 0;
-  background: url('images/Search.svg') center center no-repeat;
+  background: url('images/Search.svg') center center/contain no-repeat;
 }
 
 .search-input:hover {
@@ -82,7 +80,7 @@
   height: 42px;
 
   border-radius: 3px;
-  padding: 15px 13px;
+  padding: 13px;
 }
 
 .search-input--small::before {

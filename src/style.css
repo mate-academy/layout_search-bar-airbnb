@@ -12,15 +12,21 @@
   font-weight: 900;
 }
 
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+}
+
 body {
-  display: block;
   font-family: Avenir, sans-serif;
 }
 
 .search-bar {
   display: flex;
   align-items: center;
-  box-sizing: border-box;
   width: 100%;
   margin-top: 20px;
   border: 1px solid #e1e7ed;

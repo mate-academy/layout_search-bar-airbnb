@@ -44,6 +44,8 @@
   outline: none;
   font-weight: 900;
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
 }
 
 .search-bar__input--big {
@@ -56,11 +58,20 @@
   background-size: 19px 19px;
 }
 
+.search-bar__input--big:focus {
+  background-position: 26px center;
+}
+
 .search-bar__input--small {
   padding-left: 33px;
 
   height: 42px;
   font-size: 14px;
+  background-position: 12px 14px;
+  background-size: 11px 11px;
+}
+
+.search-bar__input--small:focus {
   background-position: 12px 14px;
   background-size: 11px 11px;
 }

@@ -14,32 +14,43 @@ body {
   display: flex;
   align-items: center;
   border: 1px solid #ccc;
-  border-radius: 1px;
+  border-radius: 4px;
   margin-bottom: 20px;
+  border-color: rgba(225, 231, 237, 1);
+}
+
+.search-bar.big {
+  margin-top: 20px;
 }
 
 .search-bar.big img {
   margin: 25px 17px 26px 26px;
+  height: 19px;
+  width: 19px;
 }
 
 .search-bar.small img {
   margin: 15px 9px 16px 13px;
+  width: 11px;
+  height: 11px;
 }
 
 .search-bar input {
   border: none;
   outline: none;
-  font-family: Avenir, sans-serif;
+  color: rgba(61, 78, 97, 1);
 }
 
 .search-bar.small input {
   height: 42px;
   font-size: 14px;
+  line-height: 19.12px;
 }
 
 .search-bar.big input {
   height: 70px;
   font-size: 16px;
+  line-height: 21.86px;
 }
 
 .search-bar:hover {
@@ -48,4 +59,5 @@ body {
 
 .search-bar:focus {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  color: rgba(61, 78, 97, 1);
 }

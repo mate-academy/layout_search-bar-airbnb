@@ -23,41 +23,39 @@ body {
   margin-top: 20px;
 }
 
-.search-bar.big img {
-  margin: 25px 17px 26px 26px;
-  height: 19px;
-  width: 19px;
-}
-
-.search-bar.small img {
-  margin: 15px 9px 16px 13px;
-  width: 11px;
-  height: 11px;
-}
-
 .search-bar input {
   border: none;
   outline: none;
   color: rgba(61, 78, 97, 1);
+  box-sizing: border-box;
+  width: 100%;
+  background-image: url('/src/images/Search.svg');
+  background-repeat: no-repeat;
 }
 
 .search-bar.small input {
   height: 42px;
   font-size: 14px;
   line-height: 19.12px;
+  padding-left: 33px;
+  background-size: 11px 11px;
+  background-position: 13px center;
 }
 
 .search-bar.big input {
   height: 70px;
   font-size: 16px;
   line-height: 21.86px;
+  padding-left: 62px;
+  background-size: 19px 19px;
+  background-position: 26px center;
 }
 
 .search-bar:hover {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.search-bar:focus {
+.search-bar:focus-within {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   color: rgba(61, 78, 97, 1);
 }

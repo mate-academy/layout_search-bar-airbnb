@@ -30,7 +30,7 @@ ___
 
 ❗️ Copy this `Checklist` to the `Pull Request` description after links, and put `- [x]` before each point after you checked it.
 
-- [ ] Icon implemented using background-image CSS property
-- [ ] Inputs are written inside of 'form' tag with correctly passed attributes
-- [ ] All `Typical Mistakes` from `BEM` lesson theory are checked.
-- [ ] Code follows all the [Code Style Rules ❗️](./checklist.md)
+- [х] Icon implemented using background-image CSS property
+- [х] Inputs are written inside of 'form' tag with correctly passed attributes
+- [х] All `Typical Mistakes` from `BEM` lesson theory are checked.
+- [х] Code follows all the [Code Style Rules ❗️](./checklist.md)

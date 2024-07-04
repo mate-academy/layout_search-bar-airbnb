@@ -22,19 +22,28 @@
       method="post"
       class="search-form"
     >
-      <div class="search">
-        <input
-          type="text"
-          class="search__bar search__bar--top"
-          data-qa="keypress big"
-          placeholder="Try “Los Angeles“"
-        />
-        <input
-          type="text"
-          class="search__bar search__bar--bottom"
-          data-qa="hover small"
-          placeholder="Try “Los Angeles“"
-        />
+      <div class="search-group">
+        <div
+          class="search"
+          data-qa="big"
+        >
+          <input
+            type="text"
+            class="search__bar search__bar--top"
+            data-qa="keypress"
+            placeholder="Try “Los Angeles“"
+          />
+        </div>
+        <div
+          class="search"
+          data-qa="small"
+        >
+          <input
+            type="text"
+            class="search__bar search__bar--bottom"
+            placeholder="Try “Los Angeles“"
+          />
+        </div>
       </div>
     </form>
   </body>

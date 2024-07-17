@@ -1,0 +1,68 @@
+.input {
+  box-sizing: border-box;
+  background-image: url(../images/Search.svg);
+  background-color: #fff;
+  background-repeat: no-repeat;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  flex-grow: 1;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  font-family: Avenir, serif;
+  font-weight: 300;
+  color: #3d4e61;
+}
+
+.input::placeholder {
+  color: #3d4e61;
+}
+
+.input:hover {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.input:focus {
+  background-repeat: no-repeat;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  outline: none;
+}
+
+.input:focus::placeholder {
+  opacity: 0;
+}
+
+.input--big {
+  height: 70px;
+  padding-left: 62px;
+  font-size: 16px;
+  line-height: 22px;
+  background-size: 19px;
+  background-position: 25px 26px;
+}
+
+.input--big:focus {
+  background-image: url(../images/Search.svg), linear-gradient(#fff, #f6f6f7);
+  background-position:
+    25px 26px,
+    0;
+  background-size: 19px, auto;
+}
+
+.input--small {
+  height: 42px;
+  padding-left: 33px;
+  font-size: 14px;
+  line-height: 20px;
+  background-size: 11px;
+  background-position: 13px 15px;
+}
+
+.input--small:focus {
+  background-image: url(../images/Search.svg), linear-gradient(#fff, #f6f6f7);
+  background-size: 11px, auto;
+  background-position:
+    13px 15px,
+    0;
+}

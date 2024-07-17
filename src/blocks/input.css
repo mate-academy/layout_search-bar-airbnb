@@ -1,4 +1,5 @@
 .input {
+  box-sizing: border-box;
   background-image: url(../images/Search.svg);
   background-color: #fff;
   background-repeat: no-repeat;
@@ -33,33 +34,35 @@
 }
 
 .input--big {
+  height: 70px;
+  padding-left: 62px;
   font-size: 16px;
   line-height: 22px;
   background-size: 19px;
-  background-position: 24.5px 24px;
-  padding: 23px 0 23px 62px;
+  background-position: 25px 26px;
 }
 
 .input--big:focus {
   background-image: url(../images/Search.svg), linear-gradient(#fff, #f6f6f7);
   background-position:
-    24.5px 24px,
+    25px 26px,
     0;
   background-size: 19px, auto;
 }
 
 .input--small {
+  height: 42px;
+  padding-left: 33px;
   font-size: 14px;
   line-height: 20px;
-  background-size: 11px 11px;
-  background-position: 13px center;
-  padding: 10px 0 10px 33px;
+  background-size: 11px;
+  background-position: 13px 15px;
 }
 
 .input--small:focus {
   background-image: url(../images/Search.svg), linear-gradient(#fff, #f6f6f7);
   background-size: 11px, auto;
   background-position:
-    13px center,
+    13px 15px,
     0;
 }

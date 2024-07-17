@@ -1,1 +1,97 @@
 /* add styles here */
+
+/* #region font-face */
+@font-face {
+  font-family: Avenir-book;
+  src: url(./fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: Avenir-heavy;
+  src: url(./fonts/Avenir-Heavy.ttf);
+}
+
+/* #endregion */
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  margin-top: 0;
+}
+
+.big__serch-bar,
+.small__serch-bar {
+  margin-top: 20px;
+}
+
+.big__serch-bar__serch-line {
+  height: 70px;
+  width: 100%;
+  font-size: 16px;
+  color: #3d4e61;
+  padding-left: 62px;
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 26px 23px;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+}
+
+.big__serch-bar__serch-line::placeholder {
+  font-size: 16px;
+  font-weight: normal;
+  color: #3d4e61;
+  font-family: Avenir-book, sans-serif;
+}
+
+.big__serch-bar__serch-line:hover {
+  box-shadow: 0 4px 4px 0 #00000040;
+}
+
+.big__serch-bar__serch-line:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  font-family: Avenir-heavy, sans-serif;
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 26px 23px;
+  outline: none;
+}
+
+.small__serch-bar__serch-line {
+  height: 42px;
+  width: 100%;
+  font-size: 14px;
+  color: #3d4e61;
+  padding: 10px 0 13px 33px;
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 12px 14px;
+  background-size: 11px;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+}
+
+.small__serch-bar__serch-line::placeholder {
+  font-size: 14px;
+  font-weight: normal;
+  color: #3d4e61;
+  font-family: Avenir-book, sans-serif;
+  line-height: 22px;
+}
+
+.small__serch-bar__serch-line:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+}
+
+.small__serch-bar__serch-line:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  font-family: Avenir-heavy, sans-serif;
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 12px 14px;
+  background-size: 11px;
+  outline: none;
+}

@@ -17,16 +17,32 @@
     />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      class="form first--form"
+      action="http://localhost:8080/"
+      method="post"
+      data-qa="big"
+    >
+      <input
+        class="input input--first"
+        type="text"
+        data-qa="keypress"
+        placeholder="Try “Los Angeles“"
+      />
+    </form>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      class="form second--form"
+      action="http://localhost:8080/"
+      method="post"
+      data-qa="small"
+    >
+      <input
+        class="input input--second"
+        type="text"
+        data-qa="hover"
+        placeholder="Try “Los Angeles“"
+      />
+    </form>
   </body>
 </html>

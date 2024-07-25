@@ -18,19 +18,19 @@ ___
 - a search bar has 3 state default, `hover` and `focus`
 - don't use JavaScript
 - use `@font-face` for fonts
-- add attribute `data-qa="big"` for big search form, and `data-qa="small"` for small
+- add attribute `data-qa="big"` for big search form, and `data-qa="big"` for small
 - add attribute `data-qa="keypress"` to input in big search form
 ---
 ## Checklist
 
 ❗️ Replace `<your_account>` with your Github username and copy the links to `Pull Request` description:
 
-- [DEMO LINK](https://<your_account>.github.io/layout_search-bar-airbnb/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_search-bar-airbnb/report/html_report/)
+- [DEMO LINK](https://CNegruzzi.github.io/layout_search-bar-airbnb/)
+- [TEST REPORT LINK](https://CNegruzzi.github.io/layout_search-bar-airbnb/report/html_report/)
 
 ❗️ Copy this `Checklist` to the `Pull Request` description after links, and put `- [x]` before each point after you checked it.
 
-- [ ] Icon implemented using background-image CSS property
-- [ ] Inputs are written inside of 'form' tag with correctly passed attributes
-- [ ] All `Typical Mistakes` from `BEM` lesson theory are checked.
-- [ ] Code follows all the [Code Style Rules ❗️](./checklist.md)
+- [X] Icon implemented using background-image CSS property
+- [X] Inputs are written inside of 'form' tag with correctly passed attributes
+- [X] All `Typical Mistakes` from `BEM` lesson theory are checked.
+- [x] Code follows all the [Code Style Rules ❗️](./checklist.md)

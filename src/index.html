@@ -17,28 +17,22 @@
     />
     <link
       rel="stylesheet"
-      href="big-search-bar.css"
-    />
-    <link
-      rel="stylesheet"
-      href="small-search-bar.css"
+      href="search-bar.css"
     />
   </head>
   <body class="page">
     <form
-      class="form_big page__form_big"
+      class="form page__form form--big"
       action="GET"
       data-qa="big"
     >
       <label
-        for="big-bar"
-        class="label form_big__label"
+        class="label label--big"
         data-qa="big-bar"
       >
         <input
-          class="label__input"
+          class="label__input input--big"
           name="big-bar"
-          id="big-bar"
           type="text"
           data-qa="keypress"
           placeholder="Try “Los Angeles“"
@@ -47,18 +41,14 @@
     </form>
 
     <form
-      class="form_small page__form_small"
+      class="form page__form form--small"
       action="GET"
       data-qa="small"
     >
-      <label
-        class="label form_small__label"
-        for="small-bar"
-      >
+      <label class="label label--small">
         <input
-          class="label__input"
+          class="label__input input--small"
           name="small-bar"
-          id="small-bar"
           type="text"
           placeholder="Try “Los Angeles“"
         />

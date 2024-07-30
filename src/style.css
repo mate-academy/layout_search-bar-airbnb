@@ -1,1 +1,66 @@
 /* add styles here */
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(/src/fonts/Avenir.ttc);
+}
+
+input {
+  font-family: Avenir, sans-serif;
+  width: 100%;
+}
+
+.bar--big {
+  line-height: 21.86px;
+  font-size: 16px;
+  font-weight: 300;
+  height: 70px;
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  padding-left: 62px;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 25px 24px;
+  background-size: 19px;
+  margin-top: 12px;
+}
+
+.bar--big:hover {
+  box-shadow: 0 4px 4px 0 #00000040;
+}
+
+.bar--big:focus {
+  color: #3d4e61;
+}
+
+.bar--small {
+  line-height: 19.12px;
+  text-align: left;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  height: 42px;
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  padding-left: 33px;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 12px 14px;
+  background-size: 11px;
+}
+
+.bar--small:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+}
+
+.bar--small:focus {
+  color: #3d4e61;
+}
+
+.bar--small::placeholder {
+  font-weight: 300;
+  color: #3d4e61;
+}

@@ -1,190 +1,243 @@
-1. [STYLES] - Get used to style all elements using classes. And don't increase selectors specificity unless completely
-necessary
+## HTML Formatting
+<details>
+  <summary>Use <b>2 spaces</b> for indentation in your file (not a <code>tab</code> character)</summary>
 
-```html
-<!--index.html:-->
-<form
-  class="search-form"
-  method="get"
-  action="/"
->
-  <input
-    class="input"
-    type="text"
-    name="search"
-    id="search-input"
-  >
-</form>
-```
-GOOD example:
-```css
-/* style.css */
-.input {
-  width: 100%;
-  height: 36px;
-}
-```
+  > to make sure your formatting will look the same everiwhere
+</details>
 
-BAD example:
-```css
-/* style.css */
-input {
-  width: 100%;
-  height: 36px;
-}
-```
+<details>
+  <summary>Remember about correct indentation between parent and child elements</summary>
 
-BAD example:
-```css
-/* style.css */
-#search-input {
-  width: 100%;
-  height: 36px;
-}
-```
+  > Each level of nesting, including text, contained inside the element, requires 2-space offset.
+  Also blank line shouldn't be between parent and child elements.
 
-BAD example:
-```css
-/* style.css */
-.search-form > .input {
-  width: 100%;
-  height: 36px;
-}
-```
+  GOOD example
+  ```html
+  <body>
+    <div>
+      <p>
+        Awesome text
+      </p>
+    </div>
+  </body>
+  ```
 
-2. [STYLES] - if you have two or more similar elements with portions of similar styles with different values - use one
-of the elements as the basic case, and override necessary styles for other cases.
-```html
-<!--index.html:-->
-<img
-  class="icon"
-  src="url(...)"
-  alt="Company logo"
->
-
-<img
-  class="icon icon--small"
-  src="url(...)"
-  alt="Company logo"
->
-```
-GOOD example:
-```css
-/* style.css */
-.icon {
-  position: absolute;
-  top: 24px;
-  left: 24px;
-  display: block;
-  width: 40px;
-  height: 40px;
-}
-
-.icon--small {
-  top: 16px;
-  left: 16px;
-  width: 32px;
-  height: 32px;
-}
-```
-
-3. [CODE STYLE] - Keep your code line length below 80. It’s not only historical
-tradition, but also allows your code to fit into one standard screen without
-horizontal scroll.
-4. [CODE STYLE] - Remember about correct indentation between parent and child
-elements. Each level of nesting, including text, contained inside the element,
-requires 2-space offset.
-
-GOOD example:
-```html
-<!--index.html:-->
-<div>
+  BAD example
+  ```html
+  <body>
+  <div>
   <p>
-    some text
+  Awesome text
   </p>
-</div>
-```
+  </div>
+  </body>
+  ```
+</details>
 
-BAD example:
-```html
-<!--index.html:-->
-<div>
-<p>
-some text
-</p>
-</div>
-```
+<details>
+  <summary>Add empty lines between multiline sibling blocks of HTML</summary>
 
-5. [CODE STYLE] - If the HTML-element has long attribute values or number of
-attributes is more than 3 - start each one, including the first, on the new
-line with 2-space indentation related to tag. Tag’s closing bracket should be
-on the same level as opening one.
+  > To add some "air" and simplify reading. But don't add them between parent and child elements.
 
-GOOD example:
-```html
-<input
+  GOOD Example
+  ```html
+  <ul>
+    <li class="nav__item">
+      <a href="#home">Home</a>
+    </li>
+
+    <li class="nav__item">
+      <a href="#shop">Shop</a>
+    </li>
+
+    <li class="nav__item">
+      <a href="#contacts">Contacts</a>
+    </li>
+  </ul>
+  ```
+
+  BAD Example
+  ```html
+  <ul>
+
+    <li class="nav__item">
+      <a href="#home">Home</a>
+    </li>
+    <li class="nav__item">
+      <a href="#shop">Shop</a>
+    </li>
+    <li class="nav__item">
+      <a href="#contacts">Contacts</a>
+    </li>
+
+  </ul>
+  ```
+</details>
+
+<details>
+  <summary>Keep your attributes correctly formatted</summary>
+
+  > If the HTML-element has long attribute values or number of attributes is more than 2 - start each one,
+  including the first, on the new line with 2-space indentation related to tag.
+  Tag’s closing bracket should be on the same level as opening one.
+
+  GOOD Example
+  ```html
+  <input
+    type="text"
+    name="surname"
+    id="surname"
+    required
+  >
+  ```
+
+  BAD Examples
+  ```html
+  <input type="text" name="surname"
+         id="surname" required>
+
+  <input type="text"
+         name="surname"
+         id="surname"
+         required>
+
+  <input
   type="text"
   name="surname"
   id="surname"
-  required
->
-```
-BAD example:
-```html
-<input type="text" name="surname"
-id="surname" required>
-```
-BAD example:
-```html
-<input type="text"
-  name="surname"
-  id="surname"
   required>
-```
-BAD example:
-```html
-<input
-type="text"
-name="surname"
-id="surname"
-required>
-```
-Still BAD example:
-```html
-<input
-  type="text"
-  name="surname"
-  id="surname"
-  required>
-```
 
-6. [CODE STYLE] - Use camelCase for values of name attribute - they should be
-   valid as JavaScript object keys. It should not contain spaces, “-” or other
-   special characters.
+  <input
+    type="text"
+    name="surname"
+    id="surname"
+    required>
+  ```
+</details>
 
-GOOD example:
-```html
-<input
-  type="date"
-  name="dateOfBirth"
-  id="dateOfBirth"
-  required
->
-```
-BAD example:
-```html
-<input
-  type="date"
-  name="date of birth"
-  id="dateOfBirth"
-  required
->
-```
+<details>
+  <summary>Lines of code have <code>80</code> chars max</summary>
 
-7. [FUNCTIONALITY] - You need to use a label tag for each input, so that every
-input could be activated by clicking on the corresponding label.
-8. [TESTS] - Remember to style input placeholders correctly
-9. [TESTS] - Remember that the search-bar should have width: 100% on any screen.
-10. [TESTS] - Remember, each search bar should be located in separate
-form element.
+  > It is just easier to read such lines
+</details>
 
+## HTML Content
+
+<details>
+  <summary>Use semantic tags where possible</summary>
+
+  > Like `header`, `section`, `article`, `p`. It improves your page SEO and helps screen readers. `div` and `span` does not have any meaning
+</details>
+
+<details>
+  <summary> <code>alt</code> attribute should describe the image content</summary>
+
+
+  GOOD example
+  ```html
+  <img alt="Samsung Galaxy S22 2022 8/128GB Green" />
+  ```
+
+  REALLY BAD example
+  ```html
+  <img alt="image" />
+  ```
+
+  STILL BAD example
+  ```html
+  <img alt="phone" />
+  ```
+</details>
+
+<details>
+  <summary>Class names represent the meaning of the content (not the styles or tag names)</summary>
+
+  GOOD example
+  ```html
+  <nav class="nav">
+    <ul class="nav__list">
+      ...
+      <li class="nav__item">
+        <a href="#apple" class="nav__link">Apple</a>
+      </li>
+    </ul>
+  </nav>
+  ```
+
+  BAD example
+  ```html
+  <nav class="no-padding">
+    <ul>
+      ...
+      <li class="li">
+        <a href="#apple" class="a-last-no-decoration">Apple</a>
+      </li>
+    </ul>
+  </nav>
+  ```
+</details>
+
+<details>
+  <summary>Don't use spaces in links</summary>
+
+  > Have you seen any link with literal space in it on the Internet? Remember, anchor links start with `#`
+</details>
+
+## CSS
+<details>
+  <summary>Don't use <code>*</code> selector (it impacts performance)</summary>
+
+  > Set styles only for elements that require them.
+  > Zeroing out your margins, paddings or other styles with '*' is still inefficient for browser.
+</details>
+
+<details>
+  <summary>Don't use tag names for styling (except <code>html</code> and <code>body</code>)</summary>
+
+  > Style all elements using `.classes` and if needed with `:pseudo-classes`, `pseudo-elements` and `[attributes]`
+
+  HTML Example
+  ```html
+  <nav class="nav">
+    <ul class="nav__list">
+      ...
+    <ul>
+  </nav>
+  ```
+
+  GOOD CSS Example
+  ```css
+  .nav__list {
+    list-style: none
+  }
+  ```
+
+  BAD CSS Examples
+  ```css
+  ul {
+    list-style: none
+  }
+
+  nav ul {
+    list-style: none
+  }
+  ```
+</details>
+
+<details>
+  <summary>Remember to use fallback fonts - alternative font-family in case the main one doesn't work</summary>
+
+  > [Explanation](https://www.w3schools.com/cssref/pr_font_font-family.asp)
+</details>
+
+<details>
+  <summary>Be consistent with your margins (Add only top or bottom, but not both)</summary>
+
+  > To avoid potential margin collapse
+</details>
+
+<details>
+  <summary>Don't fix container size (if there is no such a requirement)</summary>
+
+  > Let the content size dictate it. To avoid overflow or accidental scroll bar
+</details>

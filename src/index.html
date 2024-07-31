@@ -17,21 +17,21 @@
     />
     <link
       rel="stylesheet"
-      href="search-bar.css"
+      href="search-form/search-form.css"
     />
   </head>
   <body class="page">
     <form
-      class="form page__form form--big"
+      class="form page__form form_big"
       action="GET"
       data-qa="big"
     >
       <label
-        class="label label--big"
+        class="form__item1"
         data-qa="big-bar"
       >
         <input
-          class="label__input input--big"
+          class="form__item2 form__item2_big"
           name="big-bar"
           type="text"
           data-qa="keypress"
@@ -41,13 +41,13 @@
     </form>
 
     <form
-      class="form page__form form--small"
+      class="form page__form form_small"
       action="GET"
       data-qa="small"
     >
-      <label class="label label--small">
+      <label class="form__item1 form__item1_small">
         <input
-          class="label__input input--small"
+          class="form__item2 form__item2_small"
           name="small-bar"
           type="text"
           placeholder="Try “Los Angeles“"

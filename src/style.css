@@ -1,83 +1,69 @@
+/* add styles here */
 @font-face {
   font-family: Avenir;
-  src: url(fonts/Avenir-Book.ttf);
-  font-weight: 300;
+  src: url(./fonts/Avenir-Book.ttf);
 }
 
 @font-face {
   font-family: Avenir;
-  src: url(fonts/Avenir-Heavy.ttf);
-  font-weight: 800;
+  src: url(./fonts/Avenir-Heavy.ttf);
+  font-weight: 900;
+}
+
+* {
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: rgba(61, 78, 97, 1);
+  box-sizing: border-box;
 }
 
 .search-bar {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.search-bar:hover {
-  box-shadow: 0 3px 8px #3d4e6133;
-}
-
-.search-bar--big {
+  background-color: #fff;
   margin-top: 20px;
-  margin-bottom: 20px;
 }
 
-.search-bar__input {
-  font-family: Avenir, sans-serif;
-  font-weight: 300;
-  color: #3d4e61;
-  border: none;
-  box-sizing: border-box;
-  box-shadow: 0 1px 8px #3d4e611a;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-.search-bar__input:focus {
-  font-weight: 800;
-  outline: none;
-  text-shadow: rgb(0, 0, 0, 0.25) 0 4px 4px;
-  background: linear-gradient(#fff, #f6f6f7);
-}
-
-.search-bar__input::placeholder {
-  font-family: Avenir, sans-serif;
-  font-weight: 300;
-  color: #3d4e61;
-}
-
-.search-bar__input--big {
-  font-size: 16px;
+.top-search-bar {
   height: 70px;
-  padding-left: 62px;
 }
 
-.search-bar__input--small {
-  font-size: 14px;
+.bottom-search-bar {
   height: 42px;
-  padding-left: 33px;
 }
 
-.search-bar__icon {
-  position: absolute;
-  background-image: url(./images/Search.svg);
+.search-bar-input {
+  width: 100%;
+  height: 100%;
   background-repeat: no-repeat;
+  background-image: url(./images/Search.svg);
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
 }
 
-.search-bar__icon--big {
-  width: 19px;
-  height: 19px;
-  left: 25px;
-  background-size: 19px;
+.search-bar-input--top {
+  background-size: 19px 19px;
+  background-position: 26px center;
+  padding-left: 62px;
+  font-size: 16px;
 }
 
-.search-bar__icon--small {
-  width: 11px;
-  height: 11px;
-  left: 12px;
-  background-size: 11px;
+.search-bar-input--bottom {
+  background-size: 11px 11px;
+  background-position: 13px center;
+  padding-left: 33px;
+  font-size: 14px;
+}
+
+.search-bar-input::placeholder {
+  color: #3d4e61;
+}
+
+.search-bar-input:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search-bar-input:focus {
+  outline: none;
+  font-family: Avenir-Heavy, sans-serif;
 }

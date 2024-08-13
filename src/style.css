@@ -37,13 +37,15 @@ html {
 
 .form__search-bar {
   width: 100%;
+  padding: 0;
   display: block;
   border-radius: 4px;
   border: 1px solid var(--border-color);
   box-shadow: 0 1px 8px 0 var(--box-shadow-color);
   font-family: inherit;
   outline: none;
-  font-weight: 400;
+
+  /* font-weight: 400; */
   color: var(--main-color);
   line-height: normal;
 }
@@ -54,8 +56,12 @@ html {
 
 .form__search-bar--big {
   font-size: 16px;
+
   height: 70px;
+
   padding-left: 62px;
+
+  /* padding: 25px 62px 23px; */
 }
 
 .form__search-bar--small {
@@ -80,8 +86,11 @@ html {
 }
 
 .form__icon {
-  position: absolute;
   background-image: url(./images/Search.svg);
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .form__icon--big {
@@ -94,7 +103,6 @@ html {
 .form__icon--small {
   width: 11px;
   height: 11px;
-  background-size: 11px;
   top: 15px;
   left: 13px;
 }

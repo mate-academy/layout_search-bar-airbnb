@@ -1,17 +1,21 @@
+@import '../variables.css';
+
 @font-face {
   font-family: Avenir;
   src: url(../../fonts/Avenir.ttc);
 }
 
 html,
-input {
+.search-form__input {
   font-family: Avenir, Arial, Helvetica, sans-serif;
-  color: #3d4e61;
+  color: var(--text-color);
   font-weight: 300;
 }
 
-body,
-input {
+body {
   margin: 0;
+}
+
+.search-form__input {
   padding: 0;
 }

@@ -1,4 +1,5 @@
-/* #region default */
+@import '../variables.css';
+
 .search-form__input {
   height: 100%;
   width: 100%;
@@ -6,7 +7,7 @@
 }
 
 .search-form__input::placeholder {
-  color: #3d4e61;
+  color: var(--text-color);
 }
 
 .search-form--large .search-form__input {
@@ -18,18 +19,18 @@
   font-weight: 400;
 }
 
-/* #endregion */
-
-/* #region focus */
 .search-form__input:focus {
   outline: none;
   font-weight: 900;
 
-  background: linear-gradient(#fff, #f6f6f7);
+  background: linear-gradient(
+    var(--first-gradient-form-color),
+    var(--second-gradient-form-color)
+  );
 }
 
 .search-form--large .search-form__input:focus {
-  text-shadow: 0 4px 4px #00000040;
+  text-shadow: 0 4px 4px var(--box-shadow-dark-color);
 }
 
 .search-form__input--small:focus {
@@ -40,11 +41,6 @@
   text-shadow: none;
 }
 
-/* #endregion */
-
-/* #region hover */
 .search-form--small .search-form__input:hover {
   text-shadow: none;
 }
-
-/* #endregion */

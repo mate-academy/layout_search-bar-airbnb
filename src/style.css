@@ -19,6 +19,8 @@ html {
   --border-color: #e1e7ed;
   --main-color: #3d4e61;
   --background-color: #fff;
+  --gradient-color-start: #fff;
+  --gradient-color-end: #f6f6f7;
   --box-shadow-color: rgba(61, 78, 97, 0.1);
 }
 
@@ -45,7 +47,6 @@ html {
   font-family: inherit;
   outline: none;
 
-  /* font-weight: 400; */
   color: var(--main-color);
   line-height: normal;
 }
@@ -56,12 +57,8 @@ html {
 
 .form__search-bar--big {
   font-size: 16px;
-
   height: 70px;
-
   padding-left: 62px;
-
-  /* padding: 25px 62px 23px; */
 }
 
 .form__search-bar--small {
@@ -82,15 +79,16 @@ html {
 .form__search-bar:focus {
   border-radius: 3px;
   font-weight: 900;
-  background: linear-gradient(180deg, var(--background-color) 0%, #f6f6f7 100%);
+  background: linear-gradient(
+    180deg,
+    var(--gradient-color-start) 0%,
+    var(--gradient-color-end) 100%
+  );
 }
 
 .form__icon {
-  background-image: url(./images/Search.svg);
+  background: center/contain url(./images/Search.svg) no-repeat;
   position: absolute;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .form__icon--big {

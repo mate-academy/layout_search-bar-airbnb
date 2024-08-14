@@ -2,31 +2,64 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
+
     <meta
       http-equiv="X-UA-Compatible"
       content="ie=edge"
     />
+
     <title>Document</title>
+
     <link
       rel="stylesheet"
-      href="style.css"
+      href="style/style.css"
     />
   </head>
-  <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+  <body>
+    <main class="main">
+      <div class="main__form">
+        <form
+          class="search-form search-form--large"
+          data-qa="big"
+        >
+          <a
+            href="#"
+            class="search-form__search-icon search-form__search-icon--large"
+          ></a>
+
+          <input
+            type="text"
+            data-qa="keypress"
+            placeholder="Try “Los Angeles“"
+            class="search-form__input search-form__input--large"
+          />
+        </form>
+      </div>
+
+      <div class="main__form">
+        <form
+          class="search-form search-form--small"
+          data-qa="small"
+        >
+          <a
+            href="#"
+            class="search-form__search-icon search-form__search-icon--small"
+          ></a>
+
+          <input
+            type="text"
+            data-qa="hover"
+            placeholder="Try “Los Angeles“"
+            class="search-form__input search-form__input--small"
+          />
+        </form>
+      </div>
+    </main>
   </body>
 </html>

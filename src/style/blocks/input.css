@@ -1,0 +1,50 @@
+/* #region default */
+.search-form__input {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+.search-form__input::placeholder {
+  color: #3d4e61;
+}
+
+.search-form--large .search-form__input {
+  font-size: 16px;
+}
+
+.search-form--small .search-form__input {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* #endregion */
+
+/* #region focus */
+.search-form__input:focus {
+  outline: none;
+  font-weight: 900;
+
+  background: linear-gradient(#fff, #f6f6f7);
+}
+
+.search-form--large .search-form__input:focus {
+  text-shadow: 0 4px 4px #00000040;
+}
+
+.search-form__input--small:focus {
+  text-shadow: none;
+}
+
+.search-form--small .search-form__input:active {
+  text-shadow: none;
+}
+
+/* #endregion */
+
+/* #region hover */
+.search-form--small .search-form__input:hover {
+  text-shadow: none;
+}
+
+/* #endregion */

@@ -2,6 +2,7 @@
   font-family: Avenir;
   src: url(./fonts/Avenir-Book.ttf);
   font-weight: 300;
+  color: rgba(61, 78, 97, 1);
 }
 
 .search {
@@ -13,13 +14,8 @@
   height: 70px;
 
   display: flex;
-  align-items: center;
   position: relative;
   box-sizing: border-box;
-
-  border: 1px solid rgba(225, 231, 237, 1);
-  box-shadow: 0 1px 8px 0 #3d4e611a;
-  border-radius: 4px;
 }
 
 .search_big:hover {
@@ -35,41 +31,39 @@
   position: absolute;
   height: 19px;
   width: 19px;
-  top: 24px;
-  left: 25px;
+  top: 25px;
+  left: 26px;
 }
 
 .search__input_big {
-  position: relative;
-  left: 60px;
+  padding-left: 62px;
+  height: 100%;
+  width: 100%;
   line-height: 21px;
-  border: none;
+  outline: none;
+  box-sizing: border-box;
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
 
   font-family: Avenir, sans-serif;
   font-size: 16px;
 }
 
 .search__input_big:focus {
-  margin-top: 25px;
-  max-height: 22px;
-
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 
   font-weight: bold;
-  outline: none;
 }
 
 .search__small {
-  height: 40px;
-  margin-top: 8px;
+  height: 42px;
+  margin-top: 20px;
 
   display: flex;
   position: relative;
-
-  border: 1px solid rgba(225, 231, 237, 1);
-  border-radius: 4px;
-  box-shadow: 0 1px 8px 0 #3d4e611a;
+  box-sizing: border-box;
 }
 
 .search__small:hover {
@@ -85,31 +79,28 @@
   width: 11px;
   height: 11px;
   position: absolute;
-  top: 14px;
-  left: 12px;
+  top: 15px;
+  left: 13px;
 }
 
 .search__input_small {
-  position: relative;
-  left: 31px;
+  padding-left: 33px;
+  height: 100%;
+  width: 100%;
   line-height: 19px;
-  border: none;
+  outline: none;
+  box-sizing: border-box;
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+
   font-family: Avenir, sans-serif;
   font-size: 14px;
 }
 
 .search__input_small:focus {
-  margin-top: 8px;
-  max-height: 22px;
-
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+
   font-weight: bold;
-
-  outline: none;
-}
-
-input.search__input_small {
-  font-weight: 500;
-  margin-bottom: 2px;
 }

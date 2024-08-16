@@ -39,7 +39,10 @@ input {
   height: 70px;
   line-height: 22px;
   padding-left: 62px;
-  background: url('images/Search.svg') no-repeat 19px/19px 26px 25px;
+  background-image: url('images/Search.svg');
+  background-repeat: no-repeat;
+  background-size: 19px 19px;
+  background-position: 26px 25px;
 }
 
 .big__searchbar::placeholder {
@@ -60,10 +63,14 @@ input {
 
 .small__searchbar {
   height: 42px;
+  width: 100%;
   line-height: 20px;
-  padding-left: 33px;
-  background: url('images/Search.svg') no-repeat 11px/11px 13px 15px;
   font-size: 14px;
+  padding-left: 33px;
+  background-image: url('images/Search.svg');
+  background-repeat: no-repeat;
+  background-size: 11px 11px;
+  background-position: 13px 15px;
 }
 
 .small__searchbar::placeholder {

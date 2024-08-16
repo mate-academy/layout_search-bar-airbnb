@@ -1,1 +1,242 @@
 /* add styles here */
+
+/* #region Reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* #endregion */
+
+/* #region Embeded Fonts */
+
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Book.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Heavy.ttf);
+  font-weight: 700;
+}
+
+/* #endregion */
+
+/* #region Page */
+
+.page__body {
+  margin: 8px;
+}
+
+/* #endregion */
+
+/* #region Page Content */
+
+.page-content {
+  font-family: Avenir, sans-serif;
+}
+
+.page-content__form {
+  margin-top: 20px;
+}
+
+/* #endregion */
+
+/* #region Search Form */
+
+.search-form {
+  display: flex;
+}
+
+.search-form__input {
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  outline: none;
+
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: var(--sf-bg-size);
+  background-position: var(--sf-bg-pos);
+
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+
+  color: #3d4e61;
+  font-family: inherit;
+  font-weight: 300;
+
+  width: 100%;
+}
+
+.search-form__input--big {
+  --sf-bg-size: 19px;
+  --sf-bg-pos: 25px 24px;
+
+  font-size: 16px;
+  text-indent: 60px;
+
+  height: 66px;
+}
+
+.search-form__input--small {
+  --sf-bg-size: 11px;
+  --sf-bg-pos: 12px 14px;
+
+  font-size: 14px;
+  text-indent: 31px;
+
+  height: 38px;
+}
+
+.search-form__input::placeholder {
+  color: #3d4e61;
+  font-weight: 300;
+}
+
+.search-form__input:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.search-form__input:focus {
+  background-image: url(./images/Search.svg),
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background-repeat: no-repeat, no-repeat;
+  background-size: var(--sf-bg-size), auto;
+  background-position:
+    var(--sf-bg-pos),
+    left top;
+  border-radius: 3px;
+
+  color: #3d4e61;
+  font-weight: 700;
+}
+
+/* #endregion */

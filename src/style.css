@@ -1,1 +1,61 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src:
+    url('./fonts/Avenir-Book.ttf') format('truetype'),
+    url('./fonts/Avenir-Heavy.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+.body {
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-bar {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.big-input {
+  flex: 1;
+  padding: 10px;
+  padding-left: 26px;
+  height: 70px;
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  box-sizing: border-box;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  background: #fff url('./images/Search.svg') no-repeat left center;
+}
+
+.small-input {
+  flex: 1;
+  padding: 10px;
+  padding-left: 13px;
+  height: 42px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  box-sizing: border-box;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  background: #fff url('./images/Search.svg') no-repeat left center;
+}
+
+input:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+input:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  outline: none;
+}

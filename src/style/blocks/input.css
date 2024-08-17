@@ -1,22 +1,19 @@
-@import '../variables.css';
-
 .search-form__input {
   height: 100%;
   width: 100%;
+  padding: 0;
+
+  font-size: 16px;
+
   border: none;
 }
 
 .search-form__input::placeholder {
-  color: var(--text-color);
+  color: inherit;
 }
 
-.search-form--large .search-form__input {
-  font-size: 16px;
-}
-
-.search-form--small .search-form__input {
+.search-form__input--small {
   font-size: 14px;
-  font-weight: 400;
 }
 
 .search-form__input:focus {
@@ -29,18 +26,6 @@
   );
 }
 
-.search-form--large .search-form__input:focus {
+.search-form__input--large:focus {
   text-shadow: 0 4px 4px var(--box-shadow-dark-color);
-}
-
-.search-form__input--small:focus {
-  text-shadow: none;
-}
-
-.search-form--small .search-form__input:active {
-  text-shadow: none;
-}
-
-.search-form--small .search-form__input:hover {
-  text-shadow: none;
 }

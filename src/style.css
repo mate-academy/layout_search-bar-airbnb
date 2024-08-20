@@ -3,13 +3,12 @@
   src:
     url('./fonts/Avenir-Book.ttf') format('truetype'),
     url('./fonts/Avenir-Heavy.ttf') format('truetype');
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
 }
 
 .body {
   font-family: Avenir, sans-serif;
-  font-weight: 300;
   font-size: 16px;
   box-sizing: border-box;
 }
@@ -52,6 +51,9 @@ input:hover {
 }
 
 input:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%)
+    url('./images/Search.svg') no-repeat left center;
+  background-size: 19px 19px;
   outline: none;
+  color: inherit;
 }

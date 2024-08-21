@@ -1,5 +1,4 @@
 .form {
-  position: relative;
   font-family: var(--form-font-family);
   color: var(--form-text-color);
   display: flex;
@@ -10,27 +9,6 @@
 
 .form:not(:last-of-type) {
   margin-bottom: 20px;
-}
-
-.form__input + .search-icon {
-  position: absolute;
-  top: 50%;
-
-  z-index: 0;
-}
-
-.form__input--big + .search-icon {
-  transform: translateY(-50%);
-  left: 26px;
-  width: 19px;
-  height: 19px;
-}
-
-.form__input--small + .search-icon {
-  left: 13px;
-  top: 15px;
-  width: 11px;
-  height: 11px;
 }
 
 .form__input {
@@ -57,8 +35,6 @@
 .form__input:focus {
   color: currentColor;
   font-weight: 700;
-
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
 .form__input:not(:last-of-type) {
@@ -69,6 +45,8 @@
   line-height: 22px;
   padding: 23px 62px;
   font-size: 16px;
+
+  background: url('./../../images/Search.svg') no-repeat 26px center/19px 19px;
 }
 
 .form__input--big:hover {
@@ -79,6 +57,10 @@
   font-weight: 700;
   text-shadow: 0 4px 4px 0 #00000040;
   box-shadow: 0 4px 4px 0 #00000040;
+
+  background:
+    url('./../../images/Search.svg') no-repeat 26px center/19px 19px,
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
 .form__input--small {
@@ -87,7 +69,8 @@
   font-weight: 400;
 
   box-shadow: 0 1px 8px 0 #3d4e611a;
-  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); /* There is a text-shadow in figma mock */
+  background: url('./../../images/Search.svg') no-repeat 12px 49%/11px 11px;
 }
 
 /* reset text-shadow for qa-test */
@@ -96,7 +79,7 @@
   text-shadow: none;
 }
 
-/* reset box-shadow for qa-test */
+/* reset text-shadow for qa-test */
 
 .form__input--small:hover {
   text-shadow: none;
@@ -106,4 +89,7 @@
 
 .form__input--small:focus {
   text-shadow: none;
+  background:
+    url('./../../images/Search.svg') no-repeat 13px center/11px 11px,
+    linear-gradient(180deg, transparent, #f6f6f7);
 }

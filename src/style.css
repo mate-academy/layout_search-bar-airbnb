@@ -16,18 +16,24 @@ body {
   line-height: 21.86px;
 }
 
-.search-container {
+.search-bar {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
 }
 
-.big-search-bar {
+/* #region big-bar */
+
+.search-bar__big {
   display: flex;
-  flex-direction: row-reverse;
   align-items: center;
   box-sizing: border-box;
   width: 100%;
+
+  background-image: url(./images/Search.svg);
+  background-position: 25px 24px;
+  background-size: 19px;
+  background-repeat: no-repeat;
 
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   background-color: rgba(255, 255, 255, 1);
@@ -36,27 +42,20 @@ body {
 
   font-family: CustomFont, sans-serif;
   height: 70px;
-  padding: 0 25px;
+  padding: 0 62px;
   color: #3d4e61;
 
   border: 1px solid rgba(225, 231, 237, 1);
   border-radius: 4px;
 }
 
-.big-search-bar:hover {
+.search-bar__big:hover {
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
 }
 
-.big-search-bar:focus-within {
+.search-bar__big:focus-within {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.search-img-big {
-  margin-top: 1px;
-  height: 19px;
-  width: 19px;
-  margin-right: 19px;
 }
 
 .search-input-big {
@@ -68,18 +67,26 @@ body {
   color: #000;
 }
 
-.small-search-bar {
+/* #endregion */
+
+/* #region small-bar */
+
+.search-bar__small {
   display: flex;
-  flex-direction: row-reverse;
   align-items: center;
   box-sizing: border-box;
+
+  background-image: url(./images/Search.svg);
+  background-size: 11px;
+  background-position: 12px 14px;
+  background-repeat: no-repeat;
 
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   background-color: rgba(255, 255, 255, 1);
 
   width: 100%;
   height: 42px;
-  padding: 0 12px;
+  padding: 0 33px;
 
   font-family: CustomFont, sans-serif;
   color: #3d4e61;
@@ -88,20 +95,13 @@ body {
   border: 1px solid rgba(225, 231, 237, 1);
 }
 
-.small-search-bar:hover {
+.search-bar__small:hover {
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
 }
 
-.small-search-bar:focus-within {
+.search-bar__small:focus-within {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.search-img-small {
-  margin-top: 1px;
-  height: 11px;
-  width: 11px;
-  margin-right: 9px;
 }
 
 .search-input-small {
@@ -114,10 +114,4 @@ body {
   color: #000;
 }
 
-.search-button {
-  margin: 0;
-  padding: 0;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
+/* #endregion */

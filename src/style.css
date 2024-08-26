@@ -1,43 +1,42 @@
 /* add styles here */
+
 @font-face {
-  font-family: Avenir, sans-serif;
-  src: url(/src/fonts/Avenir.ttc);
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Book.ttf);
+  font-weight: 300;
 }
 
-/* @font-face {
-  font-family: Avenir, sans-serif;
-  src: url(/src/fonts/Avenir-Book.ttf);
-} */
-
 @font-face {
-  font-family: Avenir, sans-serif;
-  src: url(/src/fonts/Avenir-Heavy.ttf);
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Heavy.ttf);
   font-weight: bold;
 }
 
+/* styling first line */
+
 .input {
-  margin: 10px;
+  margin: 0;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
 .input__one {
-  margin-top: 20px;
+  display: flex;
   position: relative;
-  font-family: Avenir, sans-serif;
+  margin-top: 20px;
 }
 
 .input__one--big {
-  border: 1px solid #E1E7ED;
+  width: 100%;
+  border: 1px solid #e1e7ed;
   border-radius: 4px;
-  box-shadow: 0 1px 8px 0 #3D4E611A;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
   height: 70px;
   padding-left: 62px;
+  font-family: Avenir, sans-serif;
   font-size: 16px;
-  color: #3D4E61;
-
-  /* font-family: Avenir, sans-serif; */
+  color: #3d4e61;
 }
 
 .input__one--search-icon {
@@ -45,4 +44,69 @@
   height: 19px;
   position: absolute;
   padding: 25px 17px 26px 26px;
+}
+
+.input__one--big:hover {
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+}
+
+.input__one--big:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+  box-shadow: 0 4px 4px 0 #00000040;
+  outline: inherit;
+  font-family: Avenir, sans-serif;
+  font-weight: bold;
+}
+
+.input__one--big:focus::placeholder {
+  color: transparent;
+}
+
+/* styling second line */
+
+.input__two {
+  display: flex;
+  position: relative;
+}
+
+.input__two--small {
+  width: 100%;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+  height: 42px;
+  padding-left: 33px;
+  font-family: Avenir, sans-serif;
+  font-size: 14px;
+  color: #3d4e61;
+}
+
+.input__two--search-icon {
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  padding: 15px 9px 16px 13px;
+}
+
+.input__two--small:hover {
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+}
+
+.input__two--small:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+  outline: inherit;
+  font-family: Avenir, sans-serif;
+  font-weight: bold;
+}
+
+.input__two--small:focus::placeholder {
+  color: transparent;
 }

@@ -17,18 +17,23 @@
     />
   </head>
   <body>
-    <input
+    <div
       class="input__one input__one--big"
-      type="text"
-      data-qa="keypress big"
-      placeholder="Try “Los Angeles“"
-    />
+      data-qa="big"
+    >
+      <input
+        type="text"
+        data-qa="keypress"
+        placeholder="Try “Los Angeles“"
+      />
+    </div>
 
-    <input
-      class="input__two input__two--small"
-      type="text"
-      data-qa="small"
-      placeholder="Try “Los Angeles“"
-    />
+    <div class="input__two input__two--small">
+      <input
+        type="text"
+        data-qa="small"
+        placeholder="Try “Los Angeles“"
+      />
+    </div>
   </body>
 </html>

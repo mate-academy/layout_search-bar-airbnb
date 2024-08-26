@@ -14,21 +14,21 @@
 
 /* styling first line */
 
-.input {
+body {
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  padding: 0;
 }
 
 .input__one {
-  display: flex;
-  position: relative;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 19px center;
   margin-top: 20px;
 }
 
 .input__one--big {
   width: 100%;
+  box-sizing: border-box;
   border: 1px solid #e1e7ed;
   border-radius: 4px;
   box-shadow: 0 1px 8px 0 #3d4e611a;
@@ -37,13 +37,6 @@
   font-family: Avenir, sans-serif;
   font-size: 16px;
   color: #3d4e61;
-}
-
-.input__one--search-icon {
-  width: 19px;
-  height: 19px;
-  position: absolute;
-  padding: 25px 17px 26px 26px;
 }
 
 .input__one--big:hover {
@@ -62,39 +55,47 @@
   font-weight: bold;
 }
 
-.input__one--big:focus::placeholder {
-  color: transparent;
-}
+/* .input__one--big:focus::placeholder {
+  opacity: 1;
+} */
 
 /* styling second line */
 
 .input__two {
-  display: flex;
   position: relative;
+  display: block;
+  margin-top: 20px;
+}
+
+.input__two::before {
+  content: "";
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 15px;
+  left: 13px;
+  width: 11px;
+  height: 11px;
+  z-index: 2;
 }
 
 .input__two--small {
   width: 100%;
+  box-sizing: border-box;
   border: 1px solid #e1e7ed;
   border-radius: 4px;
-  box-shadow: 0 1px 8px 0 #3d4e611a;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
   height: 42px;
   padding-left: 33px;
   font-family: Avenir, sans-serif;
   font-size: 14px;
   color: #3d4e61;
-}
-
-.input__two--search-icon {
-  width: 11px;
-  height: 11px;
-  position: absolute;
-  padding: 15px 9px 16px 13px;
+  background-color: #FFF;
+  z-index: 1;
 }
 
 .input__two--small:hover {
-  border: 1px solid #e1e7ed;
-  border-radius: 4px;
   box-shadow: 0 3px 8px 0 #3d4e6133;
 }
 
@@ -102,11 +103,11 @@
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border: 1px solid #e1e7ed;
   border-radius: 3px;
-  outline: inherit;
+  outline: none;
   font-family: Avenir, sans-serif;
   font-weight: bold;
 }
 
-.input__two--small:focus::placeholder {
+/* .input__two--small:focus::placeholder {
   color: transparent;
-}
+} */

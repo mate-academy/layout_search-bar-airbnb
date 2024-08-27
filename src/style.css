@@ -8,13 +8,7 @@
 @font-face {
   font-family: Avenir;
   src: url(fonts/Avenir-Heavy.ttf);
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: Avenir;
-  src: url(fonts/Avenir-Heavy.ttf);
-  font-weight: bold;
+  font-weight: 600;
 }
 
 :root {
@@ -27,12 +21,14 @@
 }
 
 .search-bar {
-  display: flex;
-  align-items: center;
+  display: block;
   width: 100%;
   border: var(--border-height) solid #e1e7ed;
   border-radius: 4px;
   box-shadow: 0 1px 8px 0 #3d4e611a;
+
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
 }
 
 .search-bar:hover {
@@ -47,12 +43,14 @@
 .search-bar--big {
   margin: 20px 0;
   height: calc(70px - var(--border-height) * 2);
-  gap: 16px;
+  background-position: left 25px top 24px;
+  background-size: 19px;
 }
 
 .search-bar--small {
   height: calc(42px - var(--border-height) * 2);
-  gap: 8px;
+  background-position: left 12px top 14px;
+  background-size: 11px;
 }
 
 .search-bar__search-icon {
@@ -60,34 +58,27 @@
   color: #687c94;
 }
 
-.search-bar__search-icon--big {
-  height: 19px;
-  width: 19px;
-  margin-left: 25px;
-}
-
-.search-bar__search-icon--small {
-  height: 11px;
-  width: 11px;
-  margin-left: 12px;
-}
-
 .search-input {
   border: 0;
   font-family: Avenir, sans-serif;
+  font-weight: 300;
   color: var(--main-font-color);
 }
 
 .search-input--big {
   line-height: 21.86px;
   font-size: 16px;
-  font-weight: 300;
+  margin-top: 22px;
+  margin-left: 60px;
 }
 
 .search-input--small {
   line-height: 19.12px;
   font-size: 14px;
   font-weight: 400;
+  margin-top: 10px;
+  margin-left: 31px;
+  text-align: left;
 }
 
 .search-input:focus {

@@ -16,10 +16,6 @@
   --main-font-color: #3d4e61;
 }
 
-.page {
-  font-weight: 300;
-}
-
 .search-bar {
   display: block;
   width: 100%;
@@ -59,10 +55,15 @@
 }
 
 .search-input {
-  border: 0;
+  border: none;
+  outline: none;
   font-family: Avenir, sans-serif;
   font-weight: 300;
   color: var(--main-font-color);
+}
+
+.search-input::placeholder {
+  color: #3d4e61;
 }
 
 .search-input--big {
@@ -78,7 +79,6 @@
   font-weight: 400;
   margin-top: 10px;
   margin-left: 31px;
-  text-align: left;
 }
 
 .search-input:focus {

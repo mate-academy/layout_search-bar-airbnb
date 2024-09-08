@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: Avenir;
   src: url(./fonts/Avenir.ttc);
@@ -23,9 +27,6 @@ body {
   --shadow: rgba(61, 78, 97, 0.1);
 
   font-family: Avenir, sans-serif;
-
-  box-sizing: border-box;
-  margin: 0;
 }
 
 /* form big start */
@@ -42,7 +43,8 @@ body {
 }
 
 .form__searchBar::placeholder {
-  color: var(--icon-color);
+  color: var(--text-color);
+  font-family: Avenir, sans-serif;
 }
 
 .form__searchBar--big {

@@ -20,10 +20,10 @@ body {
 
 .search:hover,
 .search:focus-within {
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px #3d4e611a;
 }
 
-.search_txt {
+.search__txt {
   padding: 0;
   border: none;
   outline: none;
@@ -32,7 +32,7 @@ body {
   font-size: 16px;
 }
 
-.search_txt:focus {
+.search__txt:focus {
   font-weight: bold;
 }
 
@@ -42,7 +42,7 @@ body {
 
 .search--big::placeholder,
 .search--small::placeholder {
-  font-family: Avenir, serif;
+  font-family: Avenir, Arial, Helvetica, sans-serif;
   color: #3d4e61;
 }
 
@@ -56,26 +56,28 @@ body {
   font-size: 14px;
 }
 
-.search--button {
+.search__button {
   border: none;
   background-color: #fff;
   padding: 0;
 }
 
-.search_img {
+.search__img {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.search--img--big {
+.search__img--big {
   width: 19px;
   height: 19px;
-  margin: 0 17px 0 26px;
+  margin-right: 17px;
+  margin-left: 26px;
 }
 
-.search--img--small {
+.search__img--small {
   width: 11px;
   height: 11px;
-  margin: 0 9px 0 13px;
+  margin-right: 9px;
+  margin-left: 13px;
 }

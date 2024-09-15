@@ -1,0 +1,32 @@
+.search__label {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.search__label::after {
+  position: absolute;
+  content: '';
+  display: block;
+}
+
+.search__label_big::after {
+  background-image: url(../images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 19px;
+  height: 19px;
+  top: 25px;
+  left: 26px;
+}
+
+.search__label_small::after {
+  background-image: url(../images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 11px;
+  height: 11px;
+  top: 15px;
+  left: 13px;
+}

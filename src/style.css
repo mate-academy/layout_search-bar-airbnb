@@ -1,1 +1,105 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Heavy.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir.ttc') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: Avenir, Arial, sans-serif;
+}
+
+.form {
+  font-family: Avenir, sans-serif;
+  display: block;
+  margin-top: 20px;
+  outline: none;
+  color: #3d4e61;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+  width: 100%; /* Розтягує форму на всю ширину контейнера */
+  box-sizing: border-box; /* Включає відступи та межі в ширину */
+}
+
+.big {
+  font-size: 16px;
+  background: url('./images/loop.svg') no-repeat;
+  background-size: 19px;
+  box-sizing: border-box;
+  background-position: 26px center;
+  height: 70px;
+  padding-left: 62px;
+  background-color: #ffff;
+}
+
+.small {
+  font-size: 14px;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+  background: url('./images/loop.svg') no-repeat 13px center/11px 11px;
+  height: 42px;
+  padding-left: 33px;
+
+  /* Відступ для тексту у меншій формі */
+
+  /* text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); */
+}
+
+.form::placeholder {
+  color: #3d4e61;
+}
+
+.form:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background-image: url('./images/loop.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-shadow: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.form:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+  background-image: url('./images/loop.svg');
+  background-repeat: no-repeat;
+  background-position: 26px center;
+}
+
+.big:focus {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  background:
+    url('./images/loop.svg') no-repeat 26px 25px/19px 19px,
+    linear-gradient(180deg, transparent, #f6f6f7);
+}
+
+.big:hover {
+  background-color: #ffff;
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+}
+
+.small:focus {
+  border: 1px solid #e1e7ed;
+  text-shadow: none;
+  background:
+    url('./images/loop.svg') no-repeat 13px center/11px 11px,
+    linear-gradient(180deg, transparent, #f6f6f7);
+}
+
+.small:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+  text-shadow: none;
+  background-position: 13px;
+}

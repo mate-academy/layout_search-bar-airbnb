@@ -17,28 +17,38 @@
     />
   </head>
   <body>
-    <div class="search-container">
+    <div class="search__container">
       <form
         action="/"
         method="get"
         class="search-bar"
+        data-qa="big"
       >
         <div class="icon">
           <input
             type="text"
             data-qa="keypress"
             placeholder="Try “Los Angeles“"
-            class="search-input big"
+            class="search__input big"
           />
         </div>
       </form>
 
-      <input
-        type="text"
-        data-qa="hover"
-        placeholder="Los Angeles"
-        class="search-input small"
-      />
+      <form
+        action="/"
+        method="get"
+        class="search-bar"
+        data-qa="small"
+      >
+        <div class="icon-small">
+          <input
+            type="text"
+            data-qa="hover"
+            placeholder="Los Angeles"
+            class="search__input small"
+          />
+        </div>
+      </form>
     </div>
   </body>
 </html>

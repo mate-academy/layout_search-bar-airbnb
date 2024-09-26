@@ -1,1 +1,132 @@
 /* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Book.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Book.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Heavy.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Heavy.ttf);
+  font-weight: 900;
+}
+
+body {
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+}
+
+.form--large,
+.form--small {
+  height: 70px;
+  width: 100%;
+
+  margin: 20px 0;
+
+  position: relative;
+}
+
+.form--small {
+  height: 45px;
+}
+
+.form--large::before,
+.form--small::before {
+  content: '';
+  display: block;
+
+  background: url(images/Search.svg);
+  background-size: 100%;
+
+  position: absolute;
+  z-index: 99;
+}
+
+.form--large::before {
+  width: 19px;
+  height: 19px;
+
+  top: 26px;
+  left: 26px;
+}
+
+.form--small::before {
+  width: 11px;
+  height: 11px;
+
+  top: 15px;
+  left: 13px;
+}
+
+.search-bar--large,
+.search-bar--small {
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  box-sizing: border-box;
+
+  padding: 0 0 0 62px;
+
+  height: 70px;
+  width: 100%;
+}
+
+.search-bar--small {
+  height: 42px;
+  padding: 0 0 0 33px;
+}
+
+.search-bar--large::placeholder,
+.search-bar--small::placeholder {
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #3d4e61;
+}
+
+.search-bar--small::placeholder {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.search-bar--large:focus,
+.search-bar--small:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  outline: none;
+  border: 1px solid rgba(225, 231, 237, 1);
+
+  color: #3d4e61;
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0;
+  text-align: left;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.search-bar--large:hover,
+.search-bar--small:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search-bar--small:focus {
+  text-shadow: none;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 19px;
+}

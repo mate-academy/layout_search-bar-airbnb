@@ -16,17 +16,33 @@
       href="style.css"
     />
   </head>
-  <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+  <body class="body">
+    <form
+      class="search_form"
+      action="#"
+      method="post"
+      data-qa="big"
+    >
+      <input
+        class="search_form__input search_form__input--big"
+        type="text"
+        data-qa="keypress"
+        placeholder="Try “Los Angeles“"
+      />
+    </form>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      class="search_form"
+      action="#"
+      method="post"
+      data-qa="small"
+    >
+      <input
+        class="search_form__input search_form__input--small"
+        type="text"
+        data-qa="hover"
+        placeholder="Try “Los Angeles“"
+      />
+    </form>
   </body>
 </html>

@@ -13,20 +13,35 @@
     <title>Document</title>
     <link
       rel="stylesheet"
-      href="style.css"
+      href="css/style.css"
     />
   </head>
-  <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+  <body class="body-page">
+    <form
+      action="#"
+      class="search-form boyd-page__form--margin"
+      data-qa="big"
+    >
+      <input
+        type="text"
+        name="big-input"
+        placeholder="Try &#34;Los Angeles&#34;"
+        class="search-form__input"
+        data-qa="keypress"
+      />
+    </form>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      action="#"
+      class="search-form search-form--small boyd-page__form--margin"
+      data-qa="small"
+    >
+      <input
+        type="text"
+        name="small-input"
+        placeholder="Try &#34;Los Angeles&#34;"
+        class="search-form__input"
+      />
+    </form>
   </body>
 </html>

@@ -13,19 +13,35 @@
     <title>Document</title>
     <link
       rel="stylesheet"
-      href="style.css"
+      href="styles/style.css"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap"
+      rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="search">
     <input
+      class="search__big search__big-img"
       type="text"
-      data-qa="keypress"
+      data-qa="keypress big"
       placeholder="Try “Los Angeles“"
+      name="big"
     />
 
     <input
+      class="search__small search__small-img"
       type="text"
-      data-qa="hover"
+      data-qa="hover small"
       placeholder="Try “Los Angeles“"
     />
   </body>

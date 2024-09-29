@@ -1,5 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html
+  lang="en"
+  class="paige"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -16,17 +19,44 @@
       href="style.css"
     />
   </head>
-  <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+  <body class="paige__body">
+    <div class="search-wrapper">
+      <form
+        class="search-bar"
+        data-qa="big"
+      >
+        <label
+          for="big-search"
+          hidden
+        >
+          Search
+        </label>
+        <input
+          type="text"
+          id="big-search"
+          placeholder="Try 'Los Angeles'"
+          class="search-bar__input big"
+          data-qa="keypress"
+        />
+      </form>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+      <form
+        class="search-bar"
+        data-qa="small"
+      >
+        <label
+          for="small-search"
+          hidden
+        >
+          Search
+        </label>
+        <input
+          type="text"
+          id="small-search"
+          placeholder="Try 'Los Angeles'"
+          class="search-bar__input small"
+        />
+      </form>
+    </div>
   </body>
 </html>

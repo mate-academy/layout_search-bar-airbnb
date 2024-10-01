@@ -1,0 +1,31 @@
+.search-form__input {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+
+  font-size: 16px;
+
+  border: none;
+}
+
+.search-form__input::placeholder {
+  color: inherit;
+}
+
+.search-form__input--small {
+  font-size: 14px;
+}
+
+.search-form__input:focus {
+  outline: none;
+  font-weight: 900;
+
+  background: linear-gradient(
+    var(--first-gradient-form-color),
+    var(--second-gradient-form-color)
+  );
+}
+
+.search-form__input--large:focus {
+  text-shadow: 0 4px 4px var(--box-shadow-dark-color);
+}

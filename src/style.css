@@ -1,9 +1,9 @@
 @font-face {
-  font-family: Avenir;
+  font-family: Avenir, sans-serif;
   src:
-    url(fonts/Avenir-Book.ttf) format(ttf),
-    url(fonts/Avenir-Heavy.ttf) format(ttf),
-    url(fonts/Avenir.ttc) format(ttc);
+    url(fonts/Avenir-Book.ttf) format('truetype'),
+    url(fonts/Avenir-Heavy.ttf) format('truetype'),
+    url(fonts/Avenir.ttc) format('opentype');
 }
 
 .search-bar {
@@ -20,21 +20,23 @@
   color: #3d4e61;
 }
 
-.search-bar__big {
-  padding: 25px 62px 26px;
+.search-bar--big {
+  padding-top: 25px;
+  padding-left: 62px;
+  padding-bottom: 26px;
   background-position: 26px 25px;
   background-size: 19px 19px;
   margin: 20px 0;
   font-size: 16px;
-  height: 70px;
 }
 
-.search-bar__small {
-  padding: 12px 33px 11px;
+.search-bar--small {
+  padding-top: 12px;
+  padding-left: 33px;
+  padding-bottom: 11px;
   background-position: 13px 15px;
   background-size: 11px 11px;
   font-size: 14px;
-  height: 42px;
 }
 
 .search-bar:hover {

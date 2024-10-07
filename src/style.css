@@ -34,6 +34,24 @@
   box-shadow: 0 1px 8px 0 #3d4e611a;
   width: 100%;
   box-sizing: border-box;
+
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 26px center;
+}
+
+.form::placeholder {
+  color: #3d4e61;
+}
+
+.form:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  text-shadow: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.form:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
 }
 
 .search_input_big {
@@ -53,25 +71,6 @@
   background: url(images/Search.svg) no-repeat 13px center/11px 11px;
   height: 42px;
   padding-left: 33px;
-}
-
-.form::placeholder {
-  color: #3d4e61;
-}
-
-.form:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  background-image: url(images/Search.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  text-shadow: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.form:hover {
-  box-shadow: 0 3px 8px 0 #3d4e6133;
-  background-image: url(images/Search.svg);
-  background-repeat: no-repeat;
-  background-position: 26px center;
 }
 
 .search_input_big:focus {

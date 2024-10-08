@@ -17,16 +17,35 @@
     />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <div class="wrap">
+      <form
+        class="form big--form"
+        action="#"
+        method="get"
+        data-qa="big"
+      >
+        <div class="icon big--icon"></div>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+        <input
+          type="text"
+          data-qa="keypress"
+          placeholder="Try “Los Angeles“"
+          class="text big__text"
+        />
+      </form>
+      <form
+        class="form small--form"
+        action="#"
+        method="get"
+        data-qa="small"
+      >
+        <div class="icon small--icon"></div>
+        <input
+          type="text"
+          placeholder="Try “Los Angeles“"
+          class="text small__text"
+        />
+      </form>
+    </div>
   </body>
 </html>

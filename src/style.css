@@ -1,19 +1,20 @@
 body {
-  margin: 0;
+  margin-right: 8px;
+  margin-left: 8px;
   font-family: Avenir, sans-serif;
   font-weight: 300;
 }
 
 @font-face {
   font-family: Avenir;
-  src: url('fonts/Avenir-Book.ttf') format('truetype');
+  src: url('./fonts/Avenir-Book.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: Avenir;
-  src: url('fonts/Avenir-Heavy.ttf') format('truetype');
+  src: url('./fonts/Avenir-Heavy.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
@@ -32,7 +33,6 @@ body {
   border-radius: 4px;
   font-weight: 300;
   color: #3d4e61;
-  text-align: left center;
 }
 
 .input__field:hover {
@@ -46,18 +46,23 @@ body {
 
 .input--large {
   margin-top: 20px;
+  height: 70px;
 }
 
 .input__field--large {
-  background-position: 26px 50%; /* Задає позицію лупи: зліва 26px, по вертикалі вирівняно по центру */
-  background-size: 19px 19px; /* Розмір лупи */
-  padding: 25px 17px 26px 55px; /* Збільш падаючий відступ зліва, щоб врахувати іконку */
+  background-size: 19px 19px;
+  background-position: 26px 50%;
+  padding: 25px 17px 26px 66px;
   font-size: 16px;
 }
 
+.input--small {
+  height: 42px;
+}
+
 .input__field--small {
-  background-position: 13px 50%; /* Лупа на 13px зліва і вирівняна по вертикалі */
+  background-position: 13px 50%;
   background-size: 11px 11px;
-  padding: 15px 9px 16px 33px; /* Збільш падаючий відступ зліва для меншого інпуту */
+  padding: 15px 9px 16px 42px;
   font-size: 14px;
 }

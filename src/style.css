@@ -1,83 +1,69 @@
-* {
+body {
+  font-family: Avenir, sans-serif;
   box-sizing: border-box;
+  font-weight: 300;
+  color: #3d4e61;
 }
 
 @font-face {
-  font-family: Avenir;
-  font-weight: var(--default-font-weight);
+  font-family: Avenir-Book;
+  font-weight: 300;
   src: url(./fonts/Avenir-Book.ttf);
 }
 
 @font-face {
-  font-family: Avenir;
+  font-family: Avenir-Heavy;
   font-weight: 800;
   src: url(./fonts/Avenir-Heavy.ttf);
 }
 
-form {
-  margin: 0;
-  font-family: Avenir, sans-serif;
-  font-weight: 300;
-}
-
-input {
-  display: block;
-  margin: 0;
-  width: 100%;
-  align-items: center;
-  font-family: Avenir-Book, sans-serif;
-  font-weight: var(--default-font-weight);
-  height: 19px;
-  color: rgba(255, 255, 255, 1);
-  border: 1px solid rgba(225, 231, 237, 1);
-  border-radius: 4px;
-  box-shadow: rgba(61, 78, 97, 0.1);
-}
-
-.searchBig {
+.search-bar {
   margin-top: 20px;
+}
+
+.big-search-bar {
   height: 70px;
-  padding-left: 62px;
 }
 
-.searchSmall {
-  height: 42px;
+.small-search-bar {
   margin-top: 20px;
+  height: 42px;
+}
+
+.search-bar-input {
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+}
+
+.search-bar-input--big {
+  background-size: 19px 19px;
+  background-position: 26px center;
+  padding-left: 62px;
+  font-size: 16px;
+}
+
+.search-bar-input--small {
+  background-size: 11px 11px;
+  background-position: 13px center;
   padding-left: 33px;
   font-size: 14px;
 }
 
-.bigImg {
-  position: absolute;
-  width: 19px;
-  height: 19px;
-  top: 25px;
-  left: 26px;
-  background-image: #687c94;
+.search-bar-input::placeholder {
+  color: #3d4e61;
 }
 
-.smallImg {
-  position: relative;
-  width: 11px;
-  height: 11px;
-  top: 15px;
-  left: 13px;
-  background-image: #687c94;
+.search-bar-input:hover {
+  box-shadow: rgba(0, 3, 8, 0.25);
 }
 
-input:focus {
+.search-bar-input:focus {
+  box-shadow: rgba(0, 4, 4, 0.25);
   font-family: Avenir-Heavy, sans-serif;
-  font-weight: 600;
-  background-color: rgba(246, 246, 247, 1);
-  background-position: left 26px top 25px;
-  border-radius: 3px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  color: rgba(61, 78, 97, 1);
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
-}
-
-input:hover {
-  border-radius: 3px;
-  border: 1px;
-  background-color: #e1e7ed;
+  outline: none;
 }

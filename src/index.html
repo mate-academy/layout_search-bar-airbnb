@@ -10,23 +10,36 @@
       http-equiv="X-UA-Compatible"
       content="ie=edge"
     />
-    <title>Document</title>
+    <title>Airbnb Style Search Bar</title>
     <link
       rel="stylesheet"
       href="style.css"
     />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <section
+      class="input input--large"
+      data-qa="big"
+    >
+      <input
+        class="input__field input__field--large"
+        type="text"
+        name="big-search"
+        data-qa="keypress"
+        placeholder="Try “Los Angeles“"
+      />
+    </section>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <section
+      class="input input--small"
+      data-qa="small"
+    >
+      <input
+        class="input__field input__field--small"
+        type="text"
+        name="small-search"
+        placeholder="Try “Los Angeles“"
+      />
+    </section>
   </body>
 </html>

@@ -11,6 +11,7 @@
 
 .search-bar {
   margin-top: 20px;
+  width: 100%;
 }
 
 .search-bar-top {
@@ -21,7 +22,7 @@
   height: 42px;
 }
 
-.search-bar-input {
+.search-bar__input {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
@@ -37,29 +38,29 @@
   color: #3d4e61;
 }
 
-.search-bar-input--big {
+.search-bar__input--primary {
   background-size: 19px 19px;
   background-position: 26px center;
   padding-left: 62px;
   font-size: 16px;
 }
 
-.search-bar-input--small {
+.search-bar__input--secondary {
   background-size: 11px 11px;
   background-position: 13px center;
   padding-left: 33px;
   font-size: 14px;
 }
 
-.search-bar-input::placeholder {
+.search-bar__input::placeholder {
   color: #3d4e61;
 }
 
-.search-bar-input:hover {
+.search-bar__input:hover {
   box-shadow: rgba(0, 0, 0, 0.25);
 }
 
-.search-bar-input:focus {
+.search-bar__input:focus {
   box-shadow: rgba(0, 0, 0, 0.25);
   outline: none;
 }

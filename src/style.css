@@ -6,13 +6,15 @@ body {
 
 @font-face {
   font-family: Avenir-Book;
-  font-weight: 300;
+  font-style: normal;
+  font-weight: normal;
   src: url(./fonts/Avenir-Book.ttf);
 }
 
 @font-face {
   font-family: Avenir-Heavy;
-  font-weight: 800;
+  font-style: bold;
+  font-weight: bold;
   src: url(./fonts/Avenir-Heavy.ttf);
 }
 
@@ -35,21 +37,25 @@ body {
 }
 
 .search-bar-input--big {
+  font-family: Avenir-Book, sans-serif;
   height: 70px;
   box-sizing: border-box;
   background-size: 19px 19px;
   background-position: 26px center;
   padding-left: 62px;
   font-size: 16px;
+  line-height: 21.86px;
 }
 
 .search-bar-input--small {
+  font-family: Avenir-Book, sans-serif;
   height: 42px;
   box-sizing: border-box;
   background-size: 11px 11px;
   background-position: 13px center;
   padding-left: 33px;
   font-size: 14px;
+  line-height: 19.12px;
 }
 
 .search-bar-input::placeholder {
@@ -57,11 +63,11 @@ body {
 }
 
 .search-bar-input:hover {
-  box-shadow: rgba(0, 3, 8, 0.25);
+  box-shadow: rgba(0, 0, 0, 0.25);
 }
 
 .search-bar-input:focus {
-  box-shadow: rgba(0, 4, 4, 0.25);
+  box-shadow: rgba(0, 0, 0, 0.25);
   font-family: Avenir-Heavy, sans-serif;
   outline: none;
 }

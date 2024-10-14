@@ -9,7 +9,7 @@
   font-weight: bold;
 }
 
-body {
+.body {
   margin: 0;
 }
 
@@ -17,6 +17,10 @@ body {
   display: flex;
   flex-direction: column;
   margin: 20px 8px 0;
+}
+
+.form-field {
+  display: none;
 }
 
 .search {
@@ -28,6 +32,10 @@ body {
   outline: none;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   font-family: Avenir, sans-serif;
+}
+
+.search:focus {
+  font-weight: bold;
 }
 
 .search::placeholder {

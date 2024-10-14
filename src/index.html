@@ -19,31 +19,35 @@
 
   <body>
     <form
-      action="#"
       class="search__form"
       data-qa="big"
     >
-      <input
-        id="big-search-input"
-        class="search__input"
-        type="text"
-        placeholder="Try “Los Angeles“"
-        data-qa="keypress"
-      />
+      <label for="big-search-input">
+        <input
+          id="big-search-input"
+          class="search__input"
+          type="text"
+          placeholder="Try “Los Angeles“"
+          data-qa="keypress"
+          name="search__form"
+        />
+      </label>
     </form>
 
     <form
-      action="#"
       class="search__form"
       data-qa="small"
     >
-      <input
-        id="small-search-input"
-        class="search__input"
-        type="text"
-        placeholder="Try “Los Angeles“"
-        data-qa="hover"
-      />
+      <label for="small-search-input">
+        <input
+          id="small-search-input"
+          class="search__input"
+          type="text"
+          placeholder="Try “Los Angeles“"
+          data-qa="hover"
+          name="search__form"
+        />
+      </label>
     </form>
   </body>
 </html>

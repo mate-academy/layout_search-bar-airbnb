@@ -20,29 +20,41 @@
     <form
       action="#"
       method="get"
-      class="searchBar searchBar--big"
+      class="search-bar search bar--big"
       data-qa="big"
     >
-      <input
-        class="searchBar__input searchBar__input--top"
-        type="text"
-        data-qa="keypress"
-        placeholder="Try “Los Angeles“"
-      />
+      <label
+        class="search-bar__label search-bar_label--big"
+        for="search-bar search-bar_label--big"
+      >
+        <input
+          class="search-bar__input search-bar__input--big"
+          type="text"
+          data-qa="keypress"
+          placeholder="Try “Los Angeles“"
+          id="search-bar__input--big"
+        />
+      </label>
     </form>
 
     <form
       action="#"
       method="get"
-      class="searchBar searchBar--small"
+      class="search-bar search-bar--small"
       data-qa="small"
     >
-      <input
-        class="searchBar__input searchBar__input--bottom"
-        type="text"
-        data-qa="hover"
-        placeholder="Try “Los Angeles“"
-      />
+      <label
+        class="search-bar__label search-bar_label--small"
+        for="search-bar__input--small"
+      >
+        <input
+          class="search-bar__input search-bar__input--small"
+          type="text"
+          data-qa="hover"
+          placeholder="Try “Los Angeles“"
+          id="search-bar__input--small"
+        />
+      </label>
     </form>
   </body>
 </html>

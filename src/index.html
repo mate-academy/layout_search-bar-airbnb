@@ -18,8 +18,9 @@
   </head>
   <body>
     <form class="search-form search-form_big" data-qa="big">
-      <label class="search-form__label search-form__label_big">
+      <label class="search-form__label search-form__label_big" for="big">
         <input
+          id="big"
           data-qa="keypress"
           type="text"
           placeholder="Try “Los Angeles”"
@@ -27,10 +28,12 @@
         />
       </label>
     </form>
+
     <form
       class="search-form search-form_small" data-qa="small">
-      <label class="search-form__label search-form__label_small">
+      <label class="search-form__label search-form__label_small" for="small">
         <input
+          id="small"
           data-qa="hover"
           type="text"
           placeholder="Try “Los Angeles”"

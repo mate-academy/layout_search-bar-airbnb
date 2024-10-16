@@ -16,11 +16,12 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
 }
 
 .search-bar__input {
   width: 100%;
-  display: block;
+  display: flex;
   border: 1px solid #e1e7ed;
   box-sizing: border-box;
   background-image: url(./images/Search.svg);
@@ -30,15 +31,17 @@ body {
   color: #3d4e61;
   box-shadow: 0 1px 8px #3d4e611a;
   font-style: normal;
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
 .search-bar__input--big {
+  display: flex;
   height: 70px;
   background-position: 26px 25px;
   background-size: 19px 19px;
   font-size: 16px;
   padding-left: 62px;
+  padding-right: 0;
   margin-top: 20px;
 }
 
@@ -75,8 +78,8 @@ body {
   background-size: 11px 11px;
   font-size: 14px;
   padding-left: 33px;
+  padding-right: 0;
   margin-top: 20px;
-  left: 40px;
 }
 
 .search-bar__input--small:default {

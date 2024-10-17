@@ -1,8 +1,3 @@
-* {
-  padding: 0;
-  box-sizing: border-box;
-}
-
 @font-face {
   font-family: Avenir;
   font-weight: 300;
@@ -15,6 +10,15 @@
   font-weight: 600;
   font-style: normal;
   src: url(fonts/Avenir-Heavy.ttf) format('truetype');
+}
+
+.page,
+.page__body,
+.search-bar,
+.search-bar__label,
+.search-bar__input {
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .page__body {
@@ -99,13 +103,13 @@
 .search-bar__input-big {
   padding-left: 62px;
   font-size: 16px;
-  line-height: 22;
+  line-height: 22px;
 }
 
 .search-bar__input-small {
   padding-left: 33px;
   font-size: 14px;
-  line-height: 19;
+  line-height: 19px;
 }
 
 .search-bar__input::placeholder {

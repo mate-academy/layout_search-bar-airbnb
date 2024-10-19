@@ -1,1 +1,208 @@
-/* add styles here */
+/* #region Reset Css */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+search-bar,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+:focus {
+  outline: 0;
+}
+
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+/* search-bars still need 'cellspacing="0"' in the markup */
+search-bar {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+}
+
+blockquote,
+q {
+  quotes: '' '';
+}
+
+/* #endregion */
+
+/* #region font face */
+
+@font-face {
+  font-family: Avenir-Book;
+  src: url(./fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: Avenir-heavy;
+  src: url(./fonts/Avenir-Heavy.ttf);
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir.ttc);
+}
+
+/* #endregion */
+
+/* #region search-bar big */
+
+.section-search-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+.section-search-bar__big {
+  margin: 20px 8px;
+  min-height: 70px;
+}
+
+.search-bar__test {
+  width: 100vw;
+  border-radius: 4px;
+  padding-left: 62px;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+}
+
+.search-bar__test--big {
+  font-weight: 300;
+  font-size: 16px;
+  font-family: Avenir-Book, sans-serif;
+}
+
+.search-bar__icon-big {
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 25px 24px;
+}
+
+/* #endregion */
+
+/* #region search-bar small */
+
+.section-search-bar__small {
+  min-height: 42px;
+  margin: 20px 8px;
+}
+
+.search-bar__icon-small {
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 12px 14px;
+  background-size: 11px 11px;
+}
+
+.search-bar__test--small {
+  padding-left: 33px;
+  font-size: 14px;
+  font-family: Avenir, sans-serif;
+  font-weight: 400;
+}
+
+/* #endregion */
+
+/* #region special */
+
+.search-bar__test:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+}
+
+.search-bar__test:focus {
+  font-family: Avenir-heavy, sans-serif;
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  background-color: #f6f6f7;
+}
+
+/* #endregion */
+
+::placeholder {
+  color: #3d4e61;
+}

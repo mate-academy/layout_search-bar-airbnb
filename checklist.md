@@ -1,4 +1,4 @@
-## HTML Formatting
+ ## HTML Formatting
 <details>
   <summary>Use <b>2 spaces</b> for indentation in your file (not a <code>tab</code> character)</summary>
 

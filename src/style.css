@@ -1,19 +1,19 @@
 @font-face {
   font-family: Averin;
   src: url(fonts/Avenir-Heavy.ttf);
-  font-weight: 300px;
+  font-weight: 300;
 }
 
-.input-box {
+.position {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 /* #region-inp-1 */
 .input-1 {
   height: 70px;
-  line-height: 21.86px;
+  line-height: 21px;
   font-size: 16px;
   border-radius: 4px;
 
@@ -24,7 +24,6 @@
   background-position: 26px;
 
   border: 1px solid #e1e7ed;
-  outline-style: double;
 }
 
 .input-1:hover {
@@ -34,13 +33,14 @@
 .input-1:focus {
   background-color: #f6f6f7;
   outline: 0;
+  border-radius: 3px;
 }
 
 /* #endregion */
 
 /* #region-inp-2 */
 .input-2 {
-  line-height: 19.12px;
+  line-height: 19px;
   font-size: 14px;
   border-radius: 4px;
   height: 42px;
@@ -58,12 +58,9 @@
 }
 
 .input-2:focus {
+  border-radius: 3px;
   background-color: #f6f6f7;
   outline: 0;
 }
 
 /* #endregion */
-
-.inputb-position {
-  margin-top: 20px;
-}

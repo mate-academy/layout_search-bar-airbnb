@@ -1,78 +1,71 @@
 @font-face {
   font-family: Avenir;
+  src: url(./fonts/Avenir-Book.ttf);
   font-weight: 300;
-  font-style: normal;
-  src: url('fonts/Avenir-Book.ttf') format('truetype');
 }
 
 @font-face {
   font-family: Avenir;
-  font-weight: 600;
-  font-style: normal;
-  src: url('fonts/Avenir-Heavy.ttf') format('truetype');
+  src: url(./fonts/Avenir-Heavy.ttf);
+  font-weight: bold;
 }
 
 body {
   font-family: Avenir, sans-serif;
-  font-size: 16px;
 }
 
-input {
-  outline: none;
-  border: none;
-}
-
-.search {
-  display: flex;
+.search-bar {
+  font-family: Avenir, sans-serif;
+  display: block;
   width: 100%;
-  height: 70px;
   margin-top: 20px;
   box-sizing: border-box;
-  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
   border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  border-radius: 5px;
+  color: #3d4e61;
+  outline: none;
 }
 
-.search:hover {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+.search-bar::placeholder {
+  color: #3d4e61;
 }
 
-.search:focus-within {
-  border-color: rgba(225, 231, 237, 1);
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  font-weight: 800;
+.search-bar__big {
+  height: 70px;
+  font-size: 16px;
+  padding-left: 62px;
+  background-image: url(/src/images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: 19px;
+  background-position: left 26px center;
+  background-color: #ffff;
 }
 
-.search__input {
-  background: inherit;
-  font-family: inherit;
-  font-size: inherit;
+.search-bar__big:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
 }
 
-.search__input::placeholder {
-  font-family: inherit;
-  color: rgba(61, 78, 97, 1);
-  font-weight: 300;
+.search-bar__big:focus {
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 4px 4px 0 #00000040;
+  font-weight: bold;
 }
 
-.search--small {
+.search-bar__small {
   height: 42px;
-}
-
-.search--small .search__icon {
-  box-sizing: border-box;
-  width: 11px;
-  height: 11px;
-  margin: 14px 8px 16px 12px;
-}
-
-.search--small .search__input {
   font-size: 14px;
+  padding-left: 33px;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+  background: url(/src/images/Search.svg) no-repeat 13px center/11px 11px;
 }
 
-.search--big .search__icon {
-  box-sizing: border-box;
-  width: 19px;
-  height: 19px;
-  margin: 24px 16px 26px 25px;
+.search-bar__small:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+  text-shadow: none;
+}
+
+.search-bar__small:focus {
+  border: 1px solid #e1e7ed;
+  font-weight: bold;
 }

@@ -10,14 +10,17 @@
       http-equiv="X-UA-Compatible"
       content="ie=edge"
     />
-    <title>Document</title>
+    <title>Search bar</title>
     <link
       rel="stylesheet"
-      href="style.css"
+      href="./style.css"
     />
   </head>
   <body>
-    <form data-qa="big">
+    <form
+      action="#"
+      data-qa="big"
+    >
       <label>
         <input
           class="input__search input__search--big"
@@ -28,12 +31,15 @@
       </label>
     </form>
 
-    <form data-qa="small">
+    <form
+      action="#"
+      data-qa="small"
+    >
       <label>
         <input
           class="input__search input__search--small"
           type="text"
-          data-qa="hover"
+          data-qa="small"
           placeholder="Try “Los Angeles“"
         />
       </label>

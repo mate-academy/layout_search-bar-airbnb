@@ -1,1 +1,115 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir.ttc) format('truetype');
+}
+
+body {
+  margin: 0;
+}
+
+.search__form {
+  display: block;
+  font-family: Avenir, serif;
+  font-weight: 300;
+  color: #3d4e61;
+}
+
+.search__big--container {
+  margin: 20px 8px;
+  height: 70px;
+}
+
+.input--big {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-image: url(./images/Search.svg);
+  background-size:
+    19px 19px,
+    cover;
+  background-repeat: no-repeat;
+  background-position:
+    25px center,
+    top;
+  border: 1px solid #e1e7ed;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 300;
+  color: #3d4e61;
+  padding-left: 62px;
+  outline: none;
+}
+
+.input--big::placeholder {
+  font-family: Avenir, serif;
+  font-weight: 300;
+  color: #3d4e61;
+}
+
+.input--big:hover {
+  box-shadow: 0 3px 8px 0 #3d4e611a;
+}
+
+.input--big:focus {
+  box-shadow: 0 3px 8px 0 #3d4e611a;
+  border-radius: 4px;
+  background-image: url(./images/Search.svg),
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  text-shadow: 0 4px 4px #00000040;
+  border: 1px solid #e1e7ed;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 900;
+  color: #3d4e61;
+}
+
+.search__small--container {
+  height: 42px;
+  margin: 0 8px;
+}
+
+.input--small {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-image: url(./images/Search.svg);
+  background-size:
+    11px 11px,
+    cover;
+  background-repeat: no-repeat;
+  background-position:
+    12px center,
+    top;
+  border: 1px solid #e1e7ed;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 14px;
+  color: #3d4e61;
+  font-weight: 300;
+  line-height: 19.12;
+  padding-left: 33px;
+  outline: none;
+}
+
+.input--small::placeholder {
+  font-family: Avenir, serif;
+  font-weight: 300;
+  color: #3d4e61;
+}
+
+.input--small:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+}
+
+.input--small:focus {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+  border-radius: 3px;
+  background-image: url(./images/Search.svg),
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border: 1px solid #e1e7ed;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 900;
+  color: #3d4e61;
+}

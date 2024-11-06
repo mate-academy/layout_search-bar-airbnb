@@ -1,10 +1,14 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0"
+      content="width=device-width,
+               user-scalable=no,
+               initial-scale=1.0,
+               maximum-scale=1.0,
+               minimum-scale=1.0"
     />
     <meta
       http-equiv="X-UA-Compatible"
@@ -17,31 +21,28 @@
     />
   </head>
   <body>
-    <div class="container">
+    <div class="search__container">
       <form
-        class="form-search-bar form-search-bar--big"
+        class="search-bar search-bar--big"
         data-qa="big"
       >
         <input
-          class="input-bar input-bar--big"
-          id="input-icon-big"
+          name="big"
           type="text"
+          class="search-bar__input search-bar__input--big"
+          placeholder="Try “Los Angeles“"
           data-qa="keypress"
-          placeholder="Try “Los Angeles”"
         />
       </form>
-    </div>
-    <div class="container">
       <form
-        class="form-search-bar form-search-bar--small"
+        class="search-bar search-bar--small"
         data-qa="small"
       >
         <input
-          class="input-bar input-bar--small"
-          id="input-icon-small"
+          name="small"
           type="text"
-          data-qa="small"
-          placeholder="Try “Los Angeles”"
+          class="search-bar__input search-bar__input--small"
+          placeholder="Try “Los Angeles“"
         />
       </form>
     </div>

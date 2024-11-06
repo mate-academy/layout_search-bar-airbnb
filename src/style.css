@@ -1,16 +1,18 @@
 /* add styles here */
 @font-face {
   font-family: Avenir-Book;
-  src: url(./fonts/Avenir-Book.ttf);
+  src: url(./fonts/Avenir-Book.ttf) format('truetype');
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: Avenir-Heavy;
-  src: url(./fonts/Avenir-Heavy.ttf);
+  src: url(./fonts/Avenir-Heavy.ttf) format('truetype');
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 html {
@@ -18,16 +20,20 @@ html {
 }
 
 body {
+  margin-top: 0;
   box-sizing: border-box;
 
   --text-color: #3d4e61;
   --main-color: #e1e7ed;
 }
 
+.container {
+  padding: 20px 0 0;
+}
+
 .form-search-bar {
   display: flex;
   flex-direction: row;
-  margin: 20px 0 0;
 }
 
 .form-search-bar--big {
@@ -67,7 +73,7 @@ body {
   padding-inline: 33px;
   font-family: Avenir-Book, Arial, Helvetica, sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 19px;
 }
 

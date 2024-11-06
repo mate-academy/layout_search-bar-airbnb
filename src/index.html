@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width, initial-scale=1.0"
     />
     <meta
       http-equiv="X-UA-Compatible"
@@ -17,29 +17,33 @@
     />
   </head>
   <body>
-    <form
-      class="form-search-bar form-search-bar--big"
-      data-qa="big"
-    >
-      <input
-        class="input-bar input-bar--big"
-        id="input-icon-big"
-        type="text"
-        data-qa="keypress"
-        placeholder="Try “Los Angeles”"
-      />
-    </form>
-    <form
-      class="form-search-bar form-search-bar--small"
-      data-qa="small"
-    >
-      <input
-        class="input-bar input-bar--small"
-        id="input-icon-small"
-        type="text"
-        data-qa="hover small"
-        placeholder="Try “Los Angeles”"
-      />
-    </form>
+    <div class="container">
+      <form
+        class="form-search-bar form-search-bar--big"
+        data-qa="big"
+      >
+        <input
+          class="input-bar input-bar--big"
+          id="input-icon-big"
+          type="text"
+          data-qa="keypress"
+          placeholder="Try “Los Angeles”"
+        />
+      </form>
+    </div>
+    <div class="container">
+      <form
+        class="form-search-bar form-search-bar--small"
+        data-qa="small"
+      >
+        <input
+          class="input-bar input-bar--small"
+          id="input-icon-small"
+          type="text"
+          data-qa="small"
+          placeholder="Try “Los Angeles”"
+        />
+      </form>
+    </div>
   </body>
 </html>

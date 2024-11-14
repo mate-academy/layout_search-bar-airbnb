@@ -20,6 +20,7 @@ ___
 - use `@font-face` for fonts
 - add attribute `data-qa="big"` for big search form, and `data-qa="small"` for small
 - add attribute `data-qa="keypress"` to input in big search form
+
 ---
 ## Checklist
 

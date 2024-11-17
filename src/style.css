@@ -1,1 +1,74 @@
 /* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/AvenirLTStd-Book.woff2) format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  font-family: Avenir, sans-serif;
+  font-weight: 400;
+}
+
+input::placeholder {
+  font-family: Avenir, sans-serif;
+  font-weight: 400;
+  color: #3D4E61;
+}
+
+
+
+.input {
+  background-image: url(images/Icon.png);
+  background-repeat: no-repeat;
+  background-position: 5px;
+  padding-left: 30px;
+  border-radius: 3px;
+  border: 1px solid #E1E7ED;
+  font-size: 16px;
+}
+
+.input_item-1 {
+  width: 900px;
+  height: 70px;
+  top: 71px;
+  left: 48px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 8px 0 #3D4E611A;
+
+}
+
+.input_item-2 {
+  width: 427px;
+  height: 42px;
+  top: 403px;
+  left: 48px;
+  font-size: 14px;
+  text-shadow: 0 4px 4px 0 #00000040;
+
+}
+
+.input_item-1:hover {
+box-shadow: 0 4px 4px 0 #00000040;
+}
+
+.input_item-1:focus {
+background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+box-shadow: 0 4px 4px 0 #00000040;
+text-shadow: 0 4px 4px 0 #00000040;
+color: #3D4E61;
+}
+
+.input_item-2:hover {
+  text-shadow: none;
+  box-shadow: 0 3px 8px 0 #3D4E6133;
+}
+
+.input_item-2:focus {
+  background: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+  font-weight: 900;
+  color: #3D4E61;
+}
+

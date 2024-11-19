@@ -1,1 +1,76 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir-Book;
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: Avenir-Heavy;
+  src: url(/src/fonts/Avenir-Heavy.ttf);
+}
+
+.body {
+  color: #3d4e61;
+  margin: 0;
+  padding: 0;
+}
+
+.block-big {
+  display: flex;
+  align-items: center;
+  height: 70px;
+}
+
+.block-small {
+  display: flex;
+  align-items: center;
+  height: 42px;
+}
+
+.block-big--top {
+  margin-top: 20px;
+}
+
+.block-small--top {
+  margin-top: 20px;
+}
+
+.block-big-picture {
+  display: block;
+  padding: 0 17px 0 26px;
+}
+
+.block-small-picture {
+  width: 11px;
+  height: 11px;
+  display: block;
+  padding: 0 5px 0 13px;
+}
+
+.block-big__form {
+  border: none;
+  font-family: Avenir-Book, sans-serif;
+  font-size: 16px;
+  width: 100%;
+}
+
+.block-small__form {
+  color: red;
+  border: 0;
+  font-family: Avenir-Book, sans-serif;
+  font-size: 14px;
+  width: 100%;
+}
+
+.block-big--hover:hover {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.block-big__form--focus:focus {
+  outline: 0;
+  font-family: Avenir-Heavy, sans-serif;
+}
+
+.block-small__form--focus:focus {
+  outline: 0;
+  font-family: Avenir-Heavy, sans-serif;
+}

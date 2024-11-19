@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+  <head class="html">
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -16,17 +16,38 @@
       href="style.css"
     />
   </head>
-  <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
-
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+  <body class="body">
+    <div class="container">
+      <div
+        class="block-big block-big--hover block-big--top block-big__form--focus"
+      >
+        <img
+          class="block-big-picture"
+          src="/src/images/Search.svg"
+          alt="DSF"
+        />
+        <input
+          class="block-big__form block-big__form--focus"
+          id="data-qa=«big"
+          type="text"
+          data-qa="keypress"
+          placeholder="Try “Los Angeles“"
+        />
+      </div>
+      <div class="block-small block-small--top">
+        <img
+          class="block-small-picture"
+          src="/src/images/Search.svg"
+          alt="picture"
+        />
+        <input
+          class="block-small__form block-small__form--focus"
+          id="data-qa=”small»"
+          type="text"
+          data-qa="hover"
+          placeholder="Try “Los Angeles“"
+        />
+      </div>
+    </div>
   </body>
 </html>

@@ -1,5 +1,5 @@
 @font-face {
-  font-family: Avenir;
+  font-family: 'Avenir Book';
   src:
     url(./fonts/Avenir-Book.ttf) format('truetype'),
     url(./fonts/Avenir.ttc) format('truetype');
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: Avenir;
+  font-family: 'Avenir Heavy';
   src: url(./fonts/Avenir-Heavy.ttf) format('truetype');
   font-weight: 900;
 }
@@ -55,12 +55,13 @@ body {
 }
 
 .search-bar::placeholder {
-  font-family: Avenir, Helvetica, sans-serif;
+  font-family: 'Avenir Book', Helvetica, sans-serif;
   font-weight: 300;
   color: rgba(61, 78, 97, 1);
 }
 
-:focus::placeholder {
+.search-bar:focus::placeholder {
+  font-family: 'Avenir Heavy', Helvetica, sans-serif;
   text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   font-weight: 900;
 }

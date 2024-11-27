@@ -13,18 +13,12 @@
   src: url(./fonts/Avenir-Heavy.ttf);
 }
 
-:root {
-  font-weight: 300;
-  color: #3d4e61;
-}
-
 body {
   display: block;
   box-sizing: border-box;
 }
 
-.search-form,
-.search-form::placeholder {
+.search-form {
   display: flex;
   align-items: center;
   margin-top: 20px;
@@ -80,6 +74,7 @@ body {
 
 .search-form__input:focus::placeholder {
   font-weight: bold;
+  background-color: transparent;
 }
 
 .search-form__input--big {

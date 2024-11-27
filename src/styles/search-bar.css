@@ -1,0 +1,111 @@
+/* #region search-bar */
+.search-bar {
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+  color: var(--font-color);
+
+  margin: 20px auto 0;
+
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 var(--shadow-color);
+  background-color: var(--background-color);
+}
+
+.search-bar:hover {
+  box-shadow: 0 4px 4px 0 var(--shadow-color-2);
+}
+
+.search-bar:has(.search-bar__content-wrapper__input:focus) {
+  background: linear-gradient(
+    180deg,
+    var(--background-color) 0%,
+    var(--background-color-2) 100%
+  );
+  font-weight: 600;
+}
+
+.search-bar--big {
+  height: 68px;
+  top: 20px;
+}
+
+.search-bar--small {
+  top: 110px;
+  height: 40px;
+}
+
+/* #endregion */
+
+/* #region content-wrapper */
+.search-bar__content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* #endregion */
+
+/* #region icon (content-wrapper::after) */
+.search-bar__content-wrapper::after {
+  position: absolute;
+  content: '';
+  display: block;
+
+  background-image: url('./images/Search.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.search-bar--big__content-wrapper::after {
+  width: 19px;
+  height: 19px;
+  top: 24px;
+  left: 25px;
+}
+
+.search-bar--small__content-wrapper::after {
+  width: 11px;
+  height: 11px;
+  top: 14px;
+  left: 12px;
+}
+
+/* #endregion */
+
+/* #region input */
+.search-bar__content-wrapper__input {
+  border: none;
+  outline: none;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: transparent;
+
+  font-family: inherit;
+  font-weight: inherit;
+  color: var(--font-color);
+}
+
+.search-bar--big__content-wrapper__input {
+  padding-left: 62px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.search-bar--small__content-wrapper__input {
+  padding-left: 33px;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.search-bar__content-wrapper__input::placeholder {
+  color: inherit;
+  font-weight: 300;
+}
+
+/* #endregion */

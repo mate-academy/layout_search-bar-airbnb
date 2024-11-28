@@ -13,20 +13,42 @@
     <title>Document</title>
     <link
       rel="stylesheet"
-      href="style.css"
+      href="styles/style.css"
     />
   </head>
-  <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+  <body>
+    <form
+      data-qa="big"
+      class="search-form"
+    >
+      <label class="search-form__label search-form__label--big">
+        <div class="search-icon search-icon--big"></div>
+
+        <input
+          type="text"
+          name="search"
+          data-qa="keypress"
+          class="search-form__input"
+          placeholder="Try “Los Angeles“"
+        />
+      </label>
+    </form>
+
+    <form
+      data-qa="small"
+      class="search-form"
+    >
+      <label class="search-form__label search-form__label--small">
+        <div class="search-icon search-icon--small"></div>
+
+        <input
+          type="text"
+          name="search"
+          class="search-form__input"
+          placeholder="Try “Los Angeles“"
+        />
+      </label>
+    </form>
   </body>
 </html>

@@ -25,9 +25,7 @@
 
 .search__input {
   background-image: url(images/Search.svg);
-  background-position: 25px, 0 0;
   background-repeat: no-repeat;
-  background-size: 18px 19px, 100% 100%;
   width: 100%;
   font-size: 16px;
   border-radius: 3px;
@@ -38,6 +36,8 @@
 }
 
 .search__input--big {
+  background-position: 25px 26px;
+  background-size: 19px 19px, 100% 100%;
   padding-top: 25px;
   padding-left: 62px;
   padding-bottom: 26px;
@@ -45,26 +45,25 @@
   height: 70px;
   opacity: 1;
   border: 1px solid #e1e7ed;
+  color: #687C94;
   background-color: #fff;
-  box-shadow: 0 1px 8px 0 #3d4e611a;
 }
 
 .search__input--small {
+  background-position: 15px 13px;
   background-size: 11px 11px;
-  background-position: 15px 14px;
-  background-repeat: no-repeat;
   padding-top: 12px;
+  font-size: 14px;
   padding-left: 34px;
+  font-weight: 300px;
   padding-bottom: 11px;
   margin-top: 20px;
   width: 100%;
   height: 42px;
-  gap: 0;
   opacity: 1;
-  font-size: 14px;
+  color:#687C94;
   background-color: #fff;
   border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px 0 #3d4e611a;
 }
 
 .search__input:hover {
@@ -75,34 +74,9 @@
   opacity: 1;
 }
 
-.search__input--big:focus {
-  background-image: url(images/Search.svg),
-  linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-  border: 1px solid #e1e7ed;
-  color: #3d4e61;
+.search__input:focus {
+  background-image: url(Search.ccd3c07b.svg)
+  linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+  border: 1px solid #E1E7ED;
   outline: none;
-  width: 100%;
-  height: 70px;
-  top: 25px;
-  left: 62px;
-  gap: 20px;
-  opacity: 1;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: left;
-}
-
-.search__input--small:focus {
-  outline: none;
-  width: 100%;
-  height: 42px;
-  top: 559px;
-  left: 48px;
-  gap: 0;
-  opacity: 1;
-  color: #3d4e61;
-  font-size: 14px;
-  line-height: 19px;
-  border: 1px solid #e1e7ed;
-  background-image: url(images/Search.svg), linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }

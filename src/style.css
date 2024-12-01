@@ -4,6 +4,12 @@
   font-weight: 300;
 }
 
+@font-face {
+  font-family: Avenir, sans-serif;
+  src: url('../src/fonts/Avenir-Book.ttf');
+  font-weight: 900;
+}
+
 html {
   width: 100%;
   margin: 0;
@@ -74,7 +80,7 @@ html {
 
 .searchbar-big input:focus {
   color: #3d4e61;
-  font-weight: 400;
+  font-weight: 900;
   text-shadow: 0 4px 4px #00000040;
   box-shadow: 0 4px 4px #00000040;
   background: linear-gradient(to bottom, #fff, #f6f6f7);
@@ -98,12 +104,13 @@ html {
 
 .searchbar-small:hover {
   box-shadow: 0 3px 8px #3d4e6133;
+  text-shadow: none;
 }
 
 .searchbar-small input:focus {
   color: #3d4e61;
-  font-weight: 300;
-  text-shadow: 0 4px 4px #00000040;
+  font-weight: 900;
+  text-shadow: none;
   box-shadow: 0 4px 4px #00000040;
   background: linear-gradient(to bottom, #fff, #f6f6f7);
   background-image: url('../src/images/Search.svg');

@@ -1,1 +1,139 @@
 /* add styles here */
+
+/* #region common */
+
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Book.ttf') format('ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Heavy.ttf') format('ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  font-family: Avenir, sans-serif;
+  margin: 0;
+  font-weight: 300;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-panel {
+  width: 100%;
+  background-color: #fff;
+}
+
+.txt-search {
+  font-family: inherit;
+  width: 100%;
+  border: none;
+  outline: none;
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+.txt-search:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+}
+
+.search {
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+  display: flex;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 10px;
+}
+
+.search:hover {
+  box-shadow: 0 3px 30px 0 #3d4e6133;
+}
+
+.search:focus {
+  box-shadow: 0 4px 4px 0 #00000040;
+}
+
+/* #endregion */
+
+/* #region big */
+
+.big-search {
+  gap: 17px;
+  margin-top: 20px;
+}
+
+.big-search__btm {
+  border: none;
+  background-color: #fff;
+}
+
+.big-search__btm img {
+  margin-top: 25px;
+  margin-bottom: 26px;
+  margin-left: 26px;
+  width: 19px;
+  height: 19px;
+}
+
+.txt-search__big {
+  margin-top: 25px;
+  margin-bottom: 26px;
+  padding: 1px;
+  font-size: 16px;
+  line-height: 21, 86px;
+}
+
+.big-search__btm img:hover {
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+}
+
+/* #endregion */
+
+/* #region small */
+
+.small-search {
+  gap: 9px;
+  margin-top: 20px;
+}
+
+.txt-search__small {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 19, 12;
+  font-weight: 400px;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  height: 11px;
+  margin-top: 11px;
+  margin-bottom: 12px;
+}
+
+.small-search__btm {
+  background-color: #fff;
+  border: none;
+}
+
+.search .small-search__btm img {
+  width: 11px;
+  height: 11px;
+  margin-top: 15px;
+  margin-bottom: 16px;
+  margin-left: 13px;
+}
+
+.small-search__btm img:hover {
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+}
+
+/* #endregion */

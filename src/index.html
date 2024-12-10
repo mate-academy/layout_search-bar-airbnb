@@ -12,21 +12,31 @@
     />
     <title>Document</title>
     <link
+      href="https://fonts.cdnfonts.com/css/avenir"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="style.css"
     />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
-
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <div class="search-container">
+      <form data-qa="big">
+        <input
+          class="icon search-bar"
+          type="search"
+          data-qa="keypress"
+          placeholder="Try “Los Angeles“"
+        />
+      </form>
+      <form data-qa="small">
+        <input
+          class="icon search-bar"
+          type="search"
+          placeholder="Try “Los Angeles“"
+        />
+      </form>
+    </div>
   </body>
 </html>

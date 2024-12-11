@@ -1,16 +1,16 @@
 @font-face {
   font-family: Avenir;
-  src: url('fonts/Avenir-Book.ttf') format('truetype');
+  src: url('fonts/Avenir.ttc') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
-@font-face {
+/* @font-face {
   font-family: Avenir;
   src: url('fonts/Avenir-Heavy.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -24,9 +24,12 @@ form {
   width: 100%;
 }
 
+.search-bar__item::placeholder {
+  color: rgba(61, 78, 97, 1);
+}
+
 .search-bar__item {
   display: block;
-  color: rgba(61, 78, 97, 1);
 
   margin-top: 20px;
   width: 100%;

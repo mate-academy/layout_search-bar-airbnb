@@ -1,0 +1,127 @@
+:root {
+  --main-color: #3d4e61;
+}
+
+/* #region font */
+@font-face {
+  font-family: Avenir;
+  src: url('/src/fonts/Avenir-Book.ttf') format('ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir, inherit;
+  src: url('/src/fonts/Avenir-Heavy.ttf') format('ttf');
+  font-weight: 700;
+  font-style: bold;
+}
+
+/* #endregion */
+
+/* #region page */
+body {
+  margin: 0;
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+}
+
+/* #endregion */
+
+/* #region form */
+.search-form {
+  margin-top: 20px;
+}
+
+/* #endregion */
+
+/* #region input */
+.search-form__input {
+  font-family: inherit;
+  width: 100%;
+  outline: none;
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: var(--main-color);
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.search-form__input--big {
+  height: 70px;
+  padding: 25px 0 26px 62px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.search-form__input--small {
+  height: 42px;
+  padding: 11px 0 12px 32px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.search-form__input:focus {
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.1),
+    0 8px 16px rgba(0, 0, 0, 0.1);
+  border-color: #fff;
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+/* #endregion */
+
+/* #region content */
+.search-form__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  filter: drop-shadow(0 1px 8px #3d4e611a);
+}
+
+.search-form__content:hover {
+  filter: drop-shadow(0 4px 4px #00000040);
+}
+
+.search-form__content--big:hover {
+  filter: drop-shadow(0 4px 4px #00000040);
+}
+
+.search-form__content--small:hover {
+  filter: drop-shadow(0 3px 8px #3d4e6133);
+  border: #e1e7ed;
+}
+
+/* #endregion */
+
+/* #region logo */
+.search-logo {
+  position: absolute;
+  background-image: url(/src/images/Search.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.search-logo--big {
+  left: 36px;
+  height: 19px;
+  width: 19px;
+}
+
+.search-logo--small {
+  left: 23px;
+  top: 15px;
+  height: 11px;
+  width: 11px;
+}
+
+/* #endregion */

@@ -10,23 +10,27 @@
       http-equiv="X-UA-Compatible"
       content="ie=edge"
     />
-    <title>Document</title>
+    <title>Two Search Bars</title>
     <link
       rel="stylesheet"
       href="style.css"
     />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <div class="search-container">
+      <input
+        type="text"
+        class="search-bar big"
+        placeholder="Search..."
+        data-qa="big"
+        data-qa-keypress="key-detected">
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+      <input
+        type="text"
+        class="search-bar"
+        placeholder="Search..."
+        data-qa="small">
+
+    </div>
   </body>
 </html>

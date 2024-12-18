@@ -1,1 +1,114 @@
-/* add styles here */
+/* Обычное начертание (Normal) */
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: 400; /* Обычный вес */
+  font-style: normal;
+}
+
+/* Жирное начертание (Bold) */
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Heavy.ttf') format('truetype');
+  font-weight: 700; /* Жирный вес */
+  font-style: normal;
+}
+
+* {
+  border: none;
+}
+
+body {
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin: 0;
+}
+
+/* #region search-bar */
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  width: 100%;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  margin-top: 20px;
+}
+
+[data-qa='big'] {
+  height: 70px;
+  padding-left: 26px;
+  gap: 17px;
+}
+
+[data-qa='small'] {
+  height: 42px;
+  padding-left: 13px;
+  gap: 9px;
+}
+
+/* #endregion */
+
+/* #region search-bar__button */
+
+.search-bar__button {
+  background: none;
+  cursor: pointer;
+}
+
+.search-bar__button_top {
+  width: 19px;
+  height: 19px;
+}
+
+.search-bar__button_bottom {
+  width: 11px;
+  height: 11px;
+}
+
+/* #endregion */
+
+/* #region  search-bar__input */
+
+.search-bar__input {
+  font-family: Avenir, sans-serif !important;
+  font-weight: 400 !important;
+  color: #3d4e61 !important;
+  flex: 1;
+  outline: none;
+}
+
+.search-bar__input_top {
+  font-size: 16px;
+}
+
+.search-bar__input_bottom {
+  font-size: 14px;
+}
+
+/* #endregion */
+
+.search-bar:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search-bar:focus {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.search-bar__input:focus-within {
+  font-weight: 700;
+  color: #3d4e61;
+}
+
+.search-bar__input::placeholder {
+  color: #3d4e61;
+  opacity: 1; /* Для Safari */
+}
+
+.search-bar__input:focus::placeholder {
+  color: transparent;
+}

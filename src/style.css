@@ -1,9 +1,18 @@
+/* fons */
+@font-face {
+  font-family: 'CustomFont';
+  src: url('src/fonts/CustomFont.woff2') format('woff2'),
+       url('src/fonts/CustomFont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
 /* add styles here */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: 'CustomFont', Arial, sans-serif;
   font-weight: 300;
 }
 
@@ -26,11 +35,10 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
-  transition: borden-color 0.3s ease;
+  transition: border-color 0.3s ease;
 }
 
 .search-bar:focus {
-  quotes: none;
   border-color: #007bff;
 }
 
@@ -40,4 +48,11 @@ body {
 
 .search-bar:hover {
   border-color: #999;
+}
+
+.search-bar {
+  background-image: url('src/images/search-icon.png');
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  padding-left: 35px;
 }

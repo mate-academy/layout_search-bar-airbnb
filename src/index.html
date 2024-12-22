@@ -12,21 +12,44 @@
     />
     <title>Document</title>
     <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="style.css"
     />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
-
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      data-qa="big"
+      class="big"
+    >
+      <input
+        type="text"
+        class="search-box search-box-big"
+        data-qa="keypress"
+        placeholder="Try “Los Angeles”"
+      />
+    </form>
+    <form
+      data-qa="small"
+      class="small"
+    >
+      <input
+        type="text"
+        class="search-box search-box-small"
+        data-qa="keypress"
+        placeholder="Try “Los Angeles”"
+      />
+    </form>
   </body>
 </html>

@@ -17,41 +17,53 @@ body {
 }
 
 .title {
+  display: block;
+  font-size: 16px;
   box-sizing: border-box;
   width: 100%;
-  display: flex;
   background-image: url(../src/images/Search.svg);
-  background-position: left center;
+  background-position: left 26px center;
   border: 1px solid #e1e7ed;
   border-radius: 5px;
   background-repeat: no-repeat;
+  color: #3d4e61;
+  background-size: 19px;
 }
 
 .title:focus {
-  background: linear-gradient(180deg, #ffffff 0%, #f6f6f7 100%);
+  color: #3d4e61;
+  background:
+    url(../src/images/Search.svg) no-repeat left 26px center,
+    linear-gradient(#fff 0%, #f6f6f7 100%);
   box-shadow: 0 4px 4px 0 #00000040;
   font-family: Avenir, sans-serif;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  outline: none;
 }
 
 .title:hover {
   box-shadow: 0 4px 4px 0 #00000040;
 }
 
-.title_smale {
-  height: 42px;
+.title_small {
+  display: block;
   box-sizing: border-box;
+  font-size: 14px;
+  height: 42px;
+  padding-left: 33px;
+  background-position: left 13px center;
+  background-size: 11px;
 }
 
-.titel_big {
+.title_small:focus {
+  background-position: left 13px center;
+  background-size: 11px;
+}
+
+.title_big {
   margin-top: 20px;
   margin-bottom: 20px;
+  padding-left: 62px;
   height: 70px;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

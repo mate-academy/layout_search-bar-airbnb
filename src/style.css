@@ -1,1 +1,135 @@
 /* add styles here */
+/* stylelint-disable-next-line block-no-empty */
+
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Book.ttf) format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Heavy.ttf) format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  margin: 0;
+
+  --main-font: Avenir, Helvetica, Arial, sans-serif;
+  --main-font-weight: 300;
+  --main-font-style: normal;
+  --main-color: rgba(61, 78, 97, 1);
+}
+
+/* search tabs */
+.search__style {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  margin: 20px;
+
+  box-sizing: border-box;
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+}
+
+.search__style:hover {
+  box-shadow: 0 2px 2px 1px rgba(61, 78, 97, 0.2);
+  text-shadow: none;
+}
+
+.search__style:focus-within {
+  background: linear-gradient(180deg, #ffff 0%, #f6f6f7 100%);
+}
+
+.search__input-style {
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+
+  font-family: var(--main-font);
+  font-weight: var(--font-weight);
+  line-height: 20px;
+
+  width: 100%;
+  height: auto;
+
+  color: var(--main-color);
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+
+  background: none;
+}
+
+.search__input-style:hover {
+  text-shadow: none;
+}
+
+.search__input-style:focus-within {
+  color: var(--main-color);
+  font-weight: 700;
+  caret-color: rgba(44, 56, 70, 0.2);
+}
+
+.search__input-style::placeholder {
+  color: var(--main-color);
+  text-shadow: none;
+  background: none;
+}
+
+/* search long tab */
+
+.search__long-tab {
+  height: 1.7em;
+}
+
+.search__input--long-tab {
+  font-size: 16px;
+}
+
+.search__input--long-tab:focus-within {
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* short tab */
+
+.search__short-tab {
+  height: 1.5em;
+  gap: 9px;
+}
+
+.search__input--short-tab {
+  font-size: 14px;
+}
+
+.search__input--short-tab:focus {
+  text-shadow: none;
+}
+
+.search__input--short-tab:hover::placeholder {
+  text-shadow: none;
+}
+
+/* icons style */
+
+.search-icon {
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+}
+
+.search-icon__size--long-tab {
+  width: 19px;
+  height: 19px;
+
+  margin-left: 26px;
+}
+
+.search-icon__size--short-tab {
+  width: 11px;
+  height: 11px;
+
+  margin-left: 13px;
+}

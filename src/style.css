@@ -26,22 +26,26 @@ body {
   width: 100%;
   color: #3d4e61;
   border-style: none;
-  padding: 10px 40px 10px 10px;
+  box-shadow: 0 1px 8px 0 #3d4e61;
   outline: none;
 
-  background-image: url("./images/Search.svg");
-  background-size: 19px 19px;
+  background-image: url('./images/Search.svg');
   background-repeat: no-repeat;
-  background-position: right 10px center;
 }
 
-.search:hover {
+.search-input:hover {
   box-shadow: 0 3px 8px 0 #3d4e61;
 }
 
-.search:focus {
+.search-input:focus {
   font-weight: 900;
   background: var(--background-gradient);
+  box-shadow: 0 3px 8px 0 #3d4e61;
+
+  background-image: url('./images/Search.svg');
+  background-size: 19px 19px;
+  background-position: left 25px center;
+  background-repeat: no-repeat;
 }
 
 .field-large {
@@ -49,10 +53,25 @@ body {
   font-size: 16px;
   line-height: 22px;
   margin-top: 0;
+  padding: 10px 10px 10px 65px;
+
+  background-size: 19px 19px;
+  background-position: left 25px center;
 }
 
 .field-small {
   height: 42px;
   font-size: 14px;
   line-height: 20px;
+  margin-top: 20px;
+  padding-left: 33px;
+
+  background-size: 11px 11px;
+  background-repeat: no-repeat;
+  background-position: left 13px center;
+}
+
+.field-small:focus {
+  background-size: 11px 11px;
+  background-position: left 13px center;
 }

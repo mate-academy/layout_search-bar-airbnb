@@ -13,12 +13,13 @@
 html {
   font-family: Avenir, Arial, sans-serif;
   color: #3d4e61;
+  font-weight: 400;
 }
 
 body {
   margin: 0;
   box-sizing: border-box;
-  padding: 0 5px;
+  padding: 70px 50px 0;
 }
 
 .search-wrapper {
@@ -29,6 +30,10 @@ body {
   margin-top: 20px;
   transition: box-shadow 0.3s ease;
   cursor: pointer;
+}
+
+.search-wrapper:nth-child(1) {
+  margin-top: 0;
 }
 
 .search-wrapper:hover {
@@ -52,8 +57,6 @@ body {
   border-style: none;
   padding-left: 17px;
   outline: none;
-
-  font-weight: 400;
 }
 
 .search:focus {

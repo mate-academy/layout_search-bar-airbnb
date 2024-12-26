@@ -1,1 +1,98 @@
 /* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: bold;
+}
+
+body {
+  font-family: Avenir, sans-serif;
+}
+
+.searchbar__input {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 4px;
+}
+
+.searchbar__input-big {
+  height: 70px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  box-sizing: border-box;
+  padding-left: 62px;
+  background-image: url(/src/images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 25px center;
+  font-size: 16px;
+  color: rgba(61, 78, 97, 1);
+  font-weight: bold;
+}
+
+.searchbar__input-big::placeholder {
+  color: rgba(61, 78, 97, 1);
+  font-weight: normal;
+}
+
+.searchbar__input-big:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.searchbar__input-big:focus {
+  outline: none;
+  background-image: url(/src/images/Search.svg),
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background-repeat: no-repeat;
+  background-position:
+    25px center,
+    0 0;
+  background-size:
+    19px 19px,
+    100% 100%;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.searchbar__input-small {
+  height: 42px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  box-sizing: border-box;
+  padding-left: 33px;
+  background-image: url(/src/images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 12px center;
+  background-size: 11px 11px;
+  color: rgba(61, 78, 97, 1);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.searchbar__input-small::placeholder {
+  color: rgba(61, 78, 97, 1);
+  font-weight: normal;
+}
+
+.searchbar__input-small:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.searchbar__input-small:focus {
+  outline: none;
+  background-image: url(/src/images/Search.svg),
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background-repeat: no-repeat;
+  background-position:
+    12px center,
+    0 0;
+  background-size:
+    11px 11px,
+    100% 100%;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}

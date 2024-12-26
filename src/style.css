@@ -1,1 +1,74 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src:
+    url('./fonts/Avenir.ttc') format('ttc'),
+    url('./fonts/Avenir-Book.ttf') format('ttf'),
+    url('./fonts/Avenir-Heavy.ttf') format('ttf');
+}
+
+:root {
+  --background-gradient: linear-gradient(to bottom, #fff, #f6f6f6);
+}
+
+html {
+  font-family: Avenir, Arial, sans-serif;
+  color: #3d4e61;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0 5px;
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 #3d4e61;
+  margin-top: 20px;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.search-wrapper:hover {
+  box-shadow: 0 3px 8px 0 #3d4e61;
+}
+
+.search-wrapper:focus-within {
+  box-shadow: 0 3px 8px 0 #3d4e61;
+  background: var(--background-gradient);
+}
+
+.search-icon {
+  width: 19px;
+  height: 19px;
+  margin-left: 25px;
+}
+
+.search {
+  width: 100%;
+  color: #3d4e61;
+  border-style: none;
+  padding-left: 17px;
+  outline: none;
+
+  font-weight: 400;
+}
+
+.search:focus {
+  font-weight: 900;
+  background: var(--background-gradient);
+}
+
+.field-large {
+  height: 70px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.field-small {
+  height: 42px;
+  font-size: 14px;
+  line-height: 20px;
+}

@@ -14,6 +14,7 @@
 
 body {
   font-family: Avenir, sans-serif;
+  box-sizing: border-box;
 }
 
 .bar--style {
@@ -55,14 +56,29 @@ body {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.big__bar:active {
+/* .big__bar:active {
   border: 1px solid #e1e7ed;
   box-shadow: none;
   font-weight: 600;
+} */
+
+/* .little__bar:active {
+  border: 1px solid #e1e7ed;
+  box-shadow: none;
+  font-weight: 600;
+  color: ##3D4E61;
+} */
+
+.big__bar:focus {
+  border: 1px solid #e1e7ed;
+  box-shadow: none;
+  font-weight: 600;
+  color: #3d4e61;
 }
 
-.little__bar:active {
+.little__bar:focus {
   border: 1px solid #e1e7ed;
   box-shadow: none;
   font-weight: 600;
+  color: #3d4e61;
 }

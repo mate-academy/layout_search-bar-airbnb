@@ -19,26 +19,32 @@
   </head>
   <!-- #endregion -->
   <body>
-    <form
-      action="#"
-      data-qa="big"
-    >
-      <input
-        class="big__bar bar--style"
-        type="text"
-        placeholder="Try &#34;Los Angeles&#34;"
-      />
-    </form>
+    <div class="search-bar__container">
+      <form
+        class="search-bar__form"
+        action="#"
+        data-qa="big"
+      >
+        <input
+          class="big__bar search-bar--style"
+          type="text"
+          data-qa="keypress"
+          placeholder="Try &#34;Los Angeles&#34;"
+        />
+      </form>
 
-    <form
-      action="#"
-      data-qa="small"
-    >
-      <input
-        class="little__bar bar--style"
-        type="text"
-        placeholder="Try &#34;Los Angeles&#34;"
-      />
-    </form>
+      <form
+        class="search-bar__form"
+        action="#"
+        data-qa="small"
+      >
+        <input
+          class="little__bar search-bar--style"
+          type="text"
+          data-qa="keypress"
+          placeholder="Try &#34;Los Angeles&#34;"
+        />
+      </form>
+    </div>
   </body>
 </html>

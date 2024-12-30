@@ -1,4 +1,3 @@
 module.exports = {
-  extends: "@mate-academy/eslint-config",
-  plugins: ["html"],
+  extends: '@mate-academy/eslint-config',
 };

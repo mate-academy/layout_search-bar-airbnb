@@ -55,6 +55,7 @@ body {
   background-size: 11px 11px;
   background-position: 12px calc(50% - 1px);
   font-size: 14px;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
 }
 
 .big-input::placeholder {
@@ -73,5 +74,13 @@ body {
 
 .big-input:focus {
   outline: none;
-  background-image: url(./images/Search.svg), linear-gradient(#fff, #f6f6f7);
+  background-image: url(images/Search.svg), linear-gradient(#fff, #f6f6f7);
+}
+
+.small-input:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.small-input:focus {
+  box-shadow: none;
 }

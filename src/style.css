@@ -49,12 +49,11 @@ input:active {
 body {
   font-family: Avenir-Book, sans-serif;
   font-weight: 300;
-  margin-top: 20px;
 }
 
 .search-bar {
   display: block;
-  margin: 0 8px;
+  margin: 20px 8px 0;
   color: #3d4e61;
   position: relative;
   background-color: #fff;
@@ -65,7 +64,7 @@ body {
 .search-bar--big:focus::before {
   content: '';
   top: 50%;
-  transform: translateY(-100%);
+  transform: translateY(-50%);
   left: 26px;
   height: 19px;
   width: 19px;
@@ -82,7 +81,7 @@ body {
 .search-bar--small:focus::before {
   content: '';
   top: 50%;
-  transform: translateY(-150%);
+  transform: translateY(-50%);
   left: 13px;
   height: 11px;
   width: 11px;
@@ -108,8 +107,6 @@ body {
   height: 70px;
   font-size: 16px;
   line-height: 21.86px;
-
-  margin-bottom: 20px;
 }
 
 .search-bar-input--big:hover {
@@ -128,8 +125,6 @@ body {
   height: 42px;
   font-size: 14px;
   line-height: 19.12px;
-
-  margin-bottom: 20px;
 }
 
 .search-bar-input--small:hover {

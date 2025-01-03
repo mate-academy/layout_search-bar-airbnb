@@ -10,23 +10,45 @@
       http-equiv="X-UA-Compatible"
       content="ie=edge"
     />
-    <title>Document</title>
+    <title>Search_form</title>
     <link
       rel="stylesheet"
       href="style.css"
     />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      data-qa="big"
+      class="big__form__conteiner"
+    >
+      <img
+        class="form__big__icon"
+        src="../src/images/Search.svg"
+        alt="Search"
+      />
+      <input
+        class="big__form__input"
+        type="text"
+        data-qa="keypress"
+        placeholder="Try “Los Angeles“"
+      />
+    </form>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      data-qa="small"
+      class="small__form__conteiner"
+    >
+      <img
+        class="small__form__icon"
+        src="../src/images/Search.svg"
+        alt="Search"
+      />
+      <input
+        class="small__form__input"
+        type="text"
+        data-qa="hover"
+        placeholder="Try “Los Angeles“"
+      />
+    </form>
   </body>
 </html>

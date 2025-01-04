@@ -1,1 +1,57 @@
-/* add styles here */
+/* #region font */
+@font-face {
+  font-family: Arial, Helvetica, sans-serif;
+  src: url('fonts/Avenir-Book.ttf');
+}
+
+/* #endregion */
+
+/* #region container */
+.container {
+  padding-top: 10px;
+}
+
+/* #endregion */
+
+/* #region search */
+.search {
+  display: flex;
+  border-radius: 4px;
+  border-color: rgba(255, 255, 255, 0.67);
+  width: 100%;
+  font-weight: 300;
+}
+
+input[type='text']::placeholder {
+  color: #3d4e61;
+}
+
+.search__big {
+  background-image: url('images/Search.svg');
+  background-repeat: no-repeat;
+  padding: 25px;
+  padding-left: 60px;
+  background-position: 20px;
+  font-size: 16px;
+}
+
+.search__big:hover {
+  box-shadow: 0 3px 8px #3d4e6133;
+}
+
+.search__small {
+  background-image: url('images/Search.svg');
+  background-repeat: no-repeat;
+  padding: 10px;
+  padding-left: 40px;
+  background-position: 20px;
+  background-size: 11px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.search__small:hover {
+  box-shadow: 0 3px 8px #3d4e6133;
+}
+
+/* #endregion */

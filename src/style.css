@@ -1,7 +1,7 @@
 /* #region font */
 @font-face {
-  font-family: Arial, Helvetica, sans-serif;
-  src: url('fonts/Avenir-Book.ttf');
+  font-family: Avenir;
+  src: url(fonts/Avenir.ttc);
 }
 
 /* #endregion */
@@ -13,6 +13,17 @@
 
 /* #endregion */
 
+/* #region input */
+input {
+  font-family: Avenir, sans-serif;
+}
+
+input[type='text']::placeholder {
+  color: #3d4e61;
+}
+
+/* #endregion */
+
 /* #region search */
 .search {
   display: flex;
@@ -20,10 +31,6 @@
   border-color: rgba(255, 255, 255, 0.67);
   width: 100%;
   font-weight: 300;
-}
-
-input[type='text']::placeholder {
-  color: #3d4e61;
 }
 
 .search__big {

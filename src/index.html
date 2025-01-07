@@ -16,17 +16,33 @@
       href="style.css"
     />
   </head>
-  <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+  <body class="page">
+    <form
+      class="form"
+      action="index.html"
+      method="post"
+      data-qa="big"
+    >
+      <input
+        class="form__searc"
+        type="text"
+        data-qa="keypress"
+        placeholder="Try “Los Angeles“"
+      />
+    </form>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      class="form"
+      action="index.html"
+      method="post"
+      data-qa="small"
+    >
+      <input
+        class="form__searc form__searc--small"
+        type="text"
+        data-qa="hover"
+        placeholder="Try “Los Angeles“"
+      />
+    </form>
   </body>
 </html>

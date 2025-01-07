@@ -8,7 +8,10 @@
 
 /* #region container */
 .container {
+  display: flex;
+  flex-direction: column;
   padding-top: 10px;
+  gap: 20px;
 }
 
 /* #endregion */
@@ -28,7 +31,7 @@ input[type='text']::placeholder {
 .search {
   display: flex;
   border-radius: 4px;
-  border-color: rgba(255, 255, 255, 0.67);
+  border-color: black;
   width: 100%;
   font-weight: 300;
 }
@@ -54,7 +57,6 @@ input[type='text']::placeholder {
   background-position: 20px;
   background-size: 11px;
   font-size: 14px;
-  margin-top: 20px;
 }
 
 .search__small:hover {

@@ -1,18 +1,16 @@
-/* add styles here */
-
 /* #region common */
 
 @font-face {
-  font-family: Avenir;
-  src: url('./fonts/Avenir-Book.ttf') format('ttf');
+  font-family: Avenir, sans-serif;
+  src: url('./fonts/Avenir-Book.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: Avenir;
-  src: url('./fonts/Avenir-Heavy.ttf') format('ttf');
-  font-weight: 300;
+  font-family: Avenir, sans-serif;
+  src: url('./fonts/Avenir-Heavy.ttf') format('truetype');
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -20,10 +18,8 @@ body {
   font-family: Avenir, sans-serif;
   margin: 0;
   font-weight: 300;
-  background-color: #f5f5f5;
+  background-color: #fff;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .search-panel {
@@ -32,35 +28,27 @@ body {
 }
 
 .txt-search {
-  font-family: inherit;
-  width: 100%;
-  border: none;
   outline: none;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #E1E7ED;
+  box-shadow: 0 1px 8px 0 #3D4E611A;
   transition:
     border-color 0.3s,
     box-shadow 0.3s;
 }
 
-.txt-search:focus {
-  border-color: #0056b3;
-  box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
-}
-
-.search {
+.txt-search:hover {
+  outline: none;
   border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px 0 #3d4e611a;
-  display: flex;
   border-radius: 4px;
-  box-sizing: border-box;
-  margin: 10px;
+  box-shadow: 0 3px 8px 0 #03142833;
 }
 
-.search:hover {
-  box-shadow: 0 3px 30px 0 #3d4e6133;
-}
-
-.search:focus {
-  box-shadow: 0 4px 4px 0 #00000040;
+.txt-search:focus {
+  outline: none;
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
 }
 
 /* #endregion */
@@ -68,13 +56,14 @@ body {
 /* #region big */
 
 .big-search {
-  gap: 17px;
   margin-top: 20px;
 }
 
 .big-search__btm {
+  position: absolute;
+  background: none;
   border: none;
-  background-color: #fff;
+  cursor: pointer;
 }
 
 .big-search__btm img {
@@ -86,11 +75,9 @@ body {
 }
 
 .txt-search__big {
-  margin-top: 25px;
-  margin-bottom: 26px;
-  padding: 1px;
   font-size: 16px;
-  line-height: 21, 86px;
+  width: 100%;
+  padding: 25px 62px 26px;
 }
 
 .big-search__btm img:hover {
@@ -102,26 +89,15 @@ body {
 /* #region small */
 
 .small-search {
-  gap: 9px;
+  position: relative;
   margin-top: 20px;
 }
 
-.txt-search__small {
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-  line-height: 19, 12;
-  font-weight: 400px;
-  padding-top: 3px;
-  padding-bottom: 5px;
-  height: 11px;
-  margin-top: 11px;
-  margin-bottom: 12px;
-}
-
 .small-search__btm {
-  background-color: #fff;
+  position: absolute;
+  background: none;
   border: none;
+  cursor: pointer;
 }
 
 .search .small-search__btm img {
@@ -130,6 +106,14 @@ body {
   margin-top: 15px;
   margin-bottom: 16px;
   margin-left: 13px;
+}
+
+.txt-search__small {
+  display: flex;
+  font-size: 14px;
+  line-height: 19.12px;
+  font-weight: 400;
+  padding: 12px 33px 11px;
 }
 
 .small-search__btm img:hover {

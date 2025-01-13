@@ -16,8 +16,8 @@
 
 body {
   font-family: Avenir, sans-serif;
-  margin: 0;
   font-weight: 300;
+  margin: 0 auto;
   background-color: #fff;
   display: flex;
 }
@@ -28,11 +28,14 @@ body {
 }
 
 .txt-search {
+  display: flex;
+  flex: 1;
   outline: none;
   width: 100%;
+  color: #3d4e61;
   border-radius: 4px;
-  border: 1px solid #E1E7ED;
-  box-shadow: 0 1px 8px 0 #3D4E611A;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
   transition:
     border-color 0.3s,
     box-shadow 0.3s;
@@ -60,14 +63,14 @@ body {
   margin-top: 20px;
 }
 
-.big-search__btm {
+.big-search__btn {
   position: absolute;
   background: none;
   border: none;
   cursor: pointer;
 }
 
-.big-search__btm img {
+.big-search__btn img {
   margin-top: 25px;
   margin-bottom: 26px;
   margin-left: 26px;
@@ -77,11 +80,15 @@ body {
 
 .txt-search__big {
   font-size: 16px;
+  line-height: 21.86px;
   width: 100%;
-  padding: 25px 62px 26px;
+  height: 70px;
+  padding-left: 62px;
+
+  /* padding: 25px 62px 26px; */
 }
 
-.big-search__btm img:hover {
+.big-search__btn img:hover {
   box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
 }
 
@@ -94,14 +101,14 @@ body {
   margin-top: 20px;
 }
 
-.small-search__btm {
+.small-search__btn {
   position: absolute;
   background: none;
   border: none;
   cursor: pointer;
 }
 
-.search .small-search__btm img {
+.search .small-search__btn img {
   width: 11px;
   height: 11px;
   margin-top: 15px;
@@ -110,14 +117,16 @@ body {
 }
 
 .txt-search__small {
-  display: flex;
   font-size: 14px;
   line-height: 19.12px;
   font-weight: 400;
-  padding: 12px 33px 11px;
+  height: 42px;
+  padding-left: 33px;
+
+  /* padding: 12px 33px 11px; */
 }
 
-.small-search__btm img:hover {
+.small-search__btn img:hover {
   box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
 }
 

@@ -18,10 +18,13 @@
   </head>
   <body>
     <div class="search-panel">
-      <form class="search big-search">
+      <form
+        class="search big-search"
+        data-qa="big"
+      >
         <button
           type="submit"
-          class="big-search__btm"
+          class="big-search__btn"
         >
           <img
             src="./images/Search.svg"
@@ -35,10 +38,13 @@
           placeholder="Try “Los Angeles“"
         />
       </form>
-      <form class="search small-search">
+      <form
+        class="search small-search"
+        data-qa="small"
+      >
         <button
           type="submit"
-          class="small-search__btm"
+          class="small-search__btn"
         >
           <img
             src="./images/Search.svg"
@@ -48,7 +54,6 @@
         <input
           class="txt-search txt-search__small"
           type="text"
-          data-qa="small"
           placeholder="Try “Los Angeles“"
         />
       </form>

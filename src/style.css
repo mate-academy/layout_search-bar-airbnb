@@ -13,16 +13,11 @@
   font-weight: 600;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-
-form {
+.mainForm {
   margin: 20px 0;
 }
 
-input {
+.searchBargit {
   font-family: 'Avenir-Book', sans-serif;
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
@@ -33,25 +28,26 @@ input {
   width: 100%;
   line-height: 22px;
   font-weight: 300;
+  box-sizing: border-box;
 }
 
-input,
-input::placeholder {
+.searchBar,
+.searchBar::placeholder {
   color: rgba(61, 78, 97, 1);
 }
 
-input::placeholder {
+.searchBar::placeholder {
   font-weight: 300;
 }
 
-input:focus {
+.searchBar:focus {
   font-family: 'Avenir-Bold', sans-serif;
   font-weight: 600;
   outline: none;
 }
 
 .bigSearch {
-  height: 70px;
+  min-height: 70px;
   text-indent: 62px;
   font-size: 16px;
   background-position:  25px center;
@@ -68,7 +64,7 @@ input:focus {
 }
 
 .lilSearch {
-  height: 42px;
+  min-height: 42px;
   text-indent: 33px;
   font-size: 14px;
   background-position:  13px center;

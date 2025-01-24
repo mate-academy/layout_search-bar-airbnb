@@ -23,10 +23,10 @@ ___
 ---
 ## Checklist
 
-❗️ Replace `<your_account>` with your Github username and copy the links to `Pull Request` description:
+❗️ Replace `roddyqq` with your Github username and copy the links to `Pull Request` description:
 
-- [DEMO LINK](https://<your_account>.github.io/layout_search-bar-airbnb/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_search-bar-airbnb/report/html_report/)
+- [DEMO LINK](https://roddyqq.github.io/layout_search-bar-airbnb/)
+- [TEST REPORT LINK](https://roddyqq.github.io/layout_search-bar-airbnb/report/html_report/)
 
 ❗️ Copy this `Checklist` to the `Pull Request` description after links, and put `- [x]` before each point after you checked it.
 

@@ -17,34 +17,27 @@
     />
   </head>
   <body>
-    <div class="search__inputs">
-      <div class="search__input--big-wrapper">
-        <img
-          src="./images/Search.svg"
-          alt="search icon"
-          class="search__icon"
-        />
-        <input
-          class="search__input--big"
-          type="text"
-          data-qa="big"
-          placeholder="Try “Los Angeles“"
-        />
-      </div>
-
-      <div class="search__input--small-wrapper">
-        <img
-          src="./images/Search.svg"
-          alt="search icon"
-          class="search__icon"
-        />
-        <input
-          class="search__input--small"
-          type="text"
-          data-qa="small"
-          placeholder="Try “Los Angeles“"
-        />
-      </div>
-    </div>
+    <form
+      action="/"
+      class="container search__input--big-container"
+    >
+      <input
+        class="search__input--big search__input"
+        type="text"
+        data-qa="big"
+        placeholder="Try “Los Angeles“"
+      />
+    </form>
+    <form
+      action="/"
+      class="container search__input--small-container"
+    >
+      <input
+        class="search__input--small search__input"
+        type="text"
+        data-qa="small"
+        placeholder="Try “Los Angeles“"
+      />
+    </form>
   </body>
 </html>

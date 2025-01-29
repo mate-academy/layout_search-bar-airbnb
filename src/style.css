@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: Avenir, sans-serif;
+  box-sizing: border-box;
   font-weight: 300;
 }
 
@@ -26,26 +26,33 @@ body {
   border: 1px solid #e1e7ed;
   border-radius: 4px;
   font-size: 16px;
+  color: #3d4e61;
 }
 
 .search-input--big {
+  box-sizing: border-box;
   background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
   background-position: 26px center;
   background-size: 19px 19px;
-  padding-block: 26px;
+  padding-top: 24px;
+  padding-bottom: 25px;
   padding-inline: 62px 0;
   margin-top: 20px;
-  font-family: Avenir-Heavy, sans-serif;
+  font-family: Avenir, sans-serif;
 }
 
 .search-input--small {
+  box-sizing: border-box;
   background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
   background-position: 13px center;
   background-size: 11px 11px;
-  padding-block: 12px;
+  padding-top: 11px;
+  padding-bottom: 9px;
   padding-inline: 33px 0;
+  font-family: Avenir, sans-serif;
+  font-size: 14px;
 }
 
 .search-input:hover {

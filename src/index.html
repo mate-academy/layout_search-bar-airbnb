@@ -13,39 +13,43 @@
     />
     <title>Document</title>
     <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
       rel="stylesheet"
       href="./styles/style.css"
     />
   </head>
   <!-- #endregion -->
   <body>
-    <form action="#">
+    <form
+      action="#"
+      data-qa="big"
+    >
       <div class="container__big">
-        <div class="icon__big"></div>
+        <img
+          src="./images/Search.svg"
+          alt="Search"
+          class="icon__big"
+        />
         <input
           type="text"
-          class="search_big"
+          class="search__big"
           placeholder="Try 'Los Angeles'"
+          data-qa="keypress"
         />
       </div>
+    </form>
+    <form
+      action="#"
+      data-qa="small"
+    >
       <div class="container__small">
-        <div class="icon__small"></div>
+        <img
+          src="./images/Search.svg"
+          class="icon__small"
+          alt="Search"
+        />
         <input
           type="text"
-          class="search_small"
+          class="search__small"
           placeholder="Try 'Los Angeles'"
         />
       </div>

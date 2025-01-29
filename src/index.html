@@ -19,11 +19,13 @@
   <body>
     <div class="search">
       <form
+        method="get"
         class="search__form search__form--big"
         data-qa="big"
       >
         <input
           class="search__input search__input--big"
+          name="search-bar-big"
           type="text"
           data-qa="keypress"
           placeholder="Try “Los Angeles“"
@@ -31,11 +33,13 @@
       </form>
 
       <form
+        method="get"
         class="search__form search__form--small"
         data-qa="small"
       >
         <input
           class="search__input search__input--small"
+          name="search-bar-small"
           type="text"
           data-qa="hover"
           placeholder="Try “Los Angeles“"

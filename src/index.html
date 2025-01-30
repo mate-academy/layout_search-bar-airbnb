@@ -10,23 +10,29 @@
       http-equiv="X-UA-Compatible"
       content="ie=edge"
     />
-    <title>Search bar </title>
+    <title>Search bar</title>
     <link
       rel="stylesheet"
       href="style.css"
     />
   </head>
-  <body class="body">
-    <input
-      type="text"
-      data-qa="keypress big"
-      placeholder="Try “Los Angeles“"
-    />
+  <body>
+    <div class="div__big-bar">
+      <input
+        class="div__search big-bar_items"
+        type="text"
+        data-qa="keypress big"
+        placeholder="Try “Los Angeles“"
+      />
+    </div>
 
-    <input
-      type="text"
-      data-qa="small"
-      placeholder="Try “Los Angeles“"
-    />
+    <div class="div__small-bar">
+      <input
+        class="div__search small-bar_items"
+        type="text"
+        data-qa="small"
+        placeholder="Try “Los Angeles“"
+      />
+    </div>
   </body>
 </html>

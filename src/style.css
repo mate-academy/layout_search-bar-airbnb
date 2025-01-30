@@ -1,1 +1,100 @@
-/* add styles here */
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('../src/fonts/Avenir-Book.ttf');
+}
+
+body {
+  font-family: Avenir, sans-serif;
+}
+
+/* Block Search-form */
+.search-form {
+  margin: 20px auto 0;
+  width: 100%;
+}
+
+.search-form__input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-weight: 300;
+  color: #3d4e61;
+  border-radius: 4px;
+  font-family: inherit;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+}
+
+.search-form__input--big {
+  height: 70px;
+  font-size: 16px;
+  padding-left: 62px;
+  line-height: 1;
+}
+
+.search-form__input--small {
+  height: 42px;
+  font-size: 14px;
+  padding-left: 33px;
+  line-height: 1;
+}
+
+.search-form__label {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.search-form__label--big::before {
+  content: '';
+  position: absolute;
+  left: 26px;
+  top: 25px;
+  width: 19px; /* Set image size */
+  height: 19px;
+  background-image: url('../src/images/Search.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.search-form__label--small::before {
+  content: '';
+  position: absolute;
+  left: 13px;
+  top: 15px;
+  width: 11px; /* Set image size */
+  height: 11px;
+  background-image: url('../src/images/Search.svg'); /* Use background image */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.search-form__input:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.search-form__input::placeholder {
+  color: inherit;
+  font-weight: 300;
+}
+
+.search-form__input_big::placeholder {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.search-form__input_small::placeholder {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.search-form__input:focus {
+  font-weight: 600;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}

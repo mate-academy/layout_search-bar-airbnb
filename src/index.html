@@ -17,25 +17,23 @@
     />
   </head>
   <body class="page">
-    <form class="search">
-      <div
-        class="search__bar search__bar--big"
-        data-qa="big"
-      >
+    <form
+      class="search"
+      action="/search"
+      method="get"
+    >
+      <div class="search__bar search__bar--big">
         <input
           type="text"
-          data-qa="keypress"
+          data-qa="big"
           placeholder="Try “Los Angeles“"
           class="search__input"
         />
       </div>
-      <div
-        class="search__bar search__bar--small"
-        data-qa="small"
-      >
+      <div class="search__bar search__bar--small">
         <input
           type="text"
-          data-qa="hover"
+          data-qa="small"
           placeholder="Try “Los Angeles“"
           class="search__input"
         />

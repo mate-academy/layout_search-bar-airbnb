@@ -10,7 +10,7 @@
       http-equiv="X-UA-Compatible"
       content="ie=edge"
     />
-    <title>Document</title>
+    <title>Search Page</title>
     <link
       rel="stylesheet"
       href="style.css"
@@ -18,28 +18,28 @@
   </head>
 
   <body class="container">
-    <form
-      data-qa="big"
-      class="form big"
-    >
-      <input
-        class="search-bar big"
-        type="text"
-        data-qa="keypress"
-        placeholder="Try “Los Angeles“"
-      />
-    </form>
+    <section class="search-section">
+      <form
+        data-qa="big"
+        class="search-form"
+      >
+        <input
+          class="search-input large"
+          type="text"
+          placeholder="Try “Los Angeles“"
+        />
+      </form>
 
-    <form
-      data-qa="small"
-      class="form small"
-    >
-      <input
-        class="search-bar small"
-        type="text"
+      <form
         data-qa="small"
-        placeholder="Try “Los Angeles“"
-      />
-    </form>
+        class="search-form"
+      >
+        <input
+          class="search-input small"
+          type="text"
+          placeholder="Try “Los Angeles“"
+        />
+      </form>
+    </section>
   </body>
 </html>

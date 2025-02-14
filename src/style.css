@@ -1,1 +1,114 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir-Book;
+  src: url('fonts/Avenir-Book.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Avenir-Heavy;
+  src: url('fonts/Avenir-Heavy.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('fonts/Avenir.ttc') format('truetype');
+}
+
+body {
+  margin: 0 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.search-form__input {
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 4px;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+  width: 100%;
+  font-family: Avenir, Avenir-Book, Arial, Helvetica, sans-serif;
+  color: #3d4e61;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.search-form__input:hover {
+  border-color: rgba(200, 200, 200, 1);
+}
+
+.search-form__input:focus {
+  border-color: #007bff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  font-family: Avenir-Heavy, Avenir, Arial, Helvetica, sans-serif;
+}
+
+.search-form--big {
+  margin-top: 20px;
+}
+
+.search-form--big .search-form__input {
+  height: 68px;
+  padding: 0 2px 0 62px;
+  font-size: 16px;
+  background: url('images/Search.svg');
+  background-repeat: no-repeat;
+  background-position: 26px 25px;
+  background-size: 18px 18px;
+  line-height: 22px;
+}
+
+.search-form--small {
+  margin-top: 20px;
+}
+
+.search-form--small .search-form__input {
+  font-size: 14px;
+  background: url('images/Search.svg');
+  background-repeat: no-repeat;
+  height: 40px;
+  padding: 0 2px 0 33px;
+  background-position: 13px 15px;
+  background-size: 10px 10px;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 720px) {
+  .search-form--big .search-form__input {
+    height: 68px;
+    padding: 0 2px 0 62px;
+    background-position: 25px 24px;
+    background-size: 19px 19px;
+  }
+
+  .search-form--small .search-form__input {
+    height: 40px;
+    padding: 0 2px 0 33px;
+    background-position: 12px 14px;
+    background-size: 11px 11px;
+  }
+
+  .search-form--small .search-form__input::placeholder {
+    font-weight: 400;
+    color: #3d4e61;
+    font-stretch: 50%;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Avenir, Avenir-Book, Arial, Helvetica, sans-serif;
+  }
+}

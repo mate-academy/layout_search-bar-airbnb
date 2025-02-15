@@ -16,28 +16,30 @@
       href="style.css"
     />
   </head>
-  <body class="page">
+  <body>
     <form
-      class="search"
-      action="/search"
-      method="get"
+      action="#"
+      class="search-form search-form--big"
+      data-qa="big"
     >
-      <div class="search__bar search__bar--big">
-        <input
-          type="text"
-          data-qa="big"
-          placeholder="Try “Los Angeles“"
-          class="search__input"
-        />
-      </div>
-      <div class="search__bar search__bar--small">
-        <input
-          type="text"
-          data-qa="small"
-          placeholder="Try “Los Angeles“"
-          class="search__input"
-        />
-      </div>
+      <input
+        type="text"
+        class="search-form__input search-form__input--big"
+        data-qa="keypress"
+        placeholder="Try “Los Angeles“"
+      />
+    </form>
+
+    <form
+      action="#"
+      class="search-form search-form--small"
+      data-qa="small"
+    >
+      <input
+        type="text"
+        class="search-form__input search-form__input--small"
+        placeholder="Try “Los Angeles“"
+      />
     </form>
   </body>
 </html>

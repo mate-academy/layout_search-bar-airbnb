@@ -21,6 +21,9 @@ A responsive "Search Bar" component designed for Airbnb with clean UI and smooth
 ## 🌐 Demo
 🔗 [Live Demo](https://AndriiZakharenko.github.io/search-bar-airbnb/)
 
+## 🎨 Figma
+🔗 [View on Figma](https://www.figma.com/file/kf3AWulK9elrNk34wtpjPw/Airbnb-Search-bar?node-id=0%3A1)
+
 ## 📸 Reference Image
 <img src="./references/search-bar-example.png" alt="Search bar example" width="600px" />
 

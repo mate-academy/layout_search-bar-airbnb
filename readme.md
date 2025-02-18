@@ -34,6 +34,3 @@ ___
 - [x] Inputs are written inside of 'form' tag with correctly passed attributes
 - [x] All `Typical Mistakes` from `BEM` lesson theory are checked.
 - [x] Code follows all the [Code Style Rules ❗️](./checklist.md)
-
-
-<!-- питання зы шрифтами залишилось, все інше наче ок-->

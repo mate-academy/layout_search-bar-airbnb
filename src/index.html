@@ -13,7 +13,7 @@
     <title>Document</title>
     <link
       rel="stylesheet"
-      href="./base.css"
+      href="./style.css"
     />
   </head>
   <body>
@@ -22,14 +22,12 @@
       data-qa="big"
     >
       <div class="search__icon"></div>
-      <div class="search__label">
-        <input
-          class="search__input"
-          type="text"
-          data-qa="keypress"
-          placeholder="Try “Los Angeles“"
-        />
-      </div>
+      <input
+        class="search__input big"
+        type="text"
+        data-qa="keypress"
+        placeholder="Try “Los Angeles“"
+      />
     </form>
 
     <form
@@ -37,14 +35,13 @@
       data-qa="small"
     >
       <div class="search__icon"></div>
-      <div class="search__label">
-        <input
-          data-qa="keypress"
-          class="search__input"
-          type="text"
-          placeholder="Try “Los Angeles“"
-        />
-      </div>
+
+      <input
+        data-qa="keypress"
+        class="search__input small"
+        type="text"
+        placeholder="Try “Los Angeles“"
+      />
     </form>
   </body>
 </html>

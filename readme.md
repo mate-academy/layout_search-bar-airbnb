@@ -1,36 +1,31 @@
 # Search bar for Airbnb
-> Here are the [Layout Tasks Instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
-___
 
-## The task
-> Create HTML page with two search bars as designed in [the mockup](https://www.figma.com/file/kf3AWulK9elrNk34wtpjPw/Airbnb-Search-bar?node-id=0%3A1). This search bar will be part of big project.
+## 🎮 About the Project
+A responsive "Search Bar" component designed for Airbnb with clean UI and smooth interactivity.
 
-![screenshot](./references/search-bar-example.png)
+## 🚀 Tech Stack
+- **HTML** (BEM methodology for structured markup)
+- **CSS** (Responsive & clean styles)
+- **JavaScript** (Basic interactivity)
 
-### Requirements:
-- use images from [src/images](src/images)
-- there must be two search bars
-- search bar must stretch the full width
-- distance between two search bars must be 20px
-- the big search bar must have top indent 20px
-- follow styles from the mock
-- default `font-weight` must be 300
-- a search bar has 3 state default, `hover` and `focus`
-- don't use JavaScript
-- use `@font-face` for fonts
-- add attribute `data-qa="big"` for big search form, and `data-qa="small"` for small
-- add attribute `data-qa="keypress"` to input in big search form
----
-## Checklist
+## 🛠️ Tools & Dependencies
+- **ESLint** – Ensuring code quality
+- **Prettier** – Code formatting for readability
+- **Jest** – Unit testing framework
+- **Parcel** – Bundler for fast development
 
-❗️ Replace `<your_account>` with your Github username and copy the links to `Pull Request` description:
+## 📌 Features
+✅ Responsive design  
+✅ Clean and user-friendly interface  
 
-- [DEMO LINK](https://<your_account>.github.io/layout_search-bar-airbnb/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_search-bar-airbnb/report/html_report/)
+## 🌐 Demo
+🔗 [Live Demo](https://AndriiZakharenko.github.io/search-bar-airbnb/)
 
-❗️ Copy this `Checklist` to the `Pull Request` description after links, and put `- [x]` before each point after you checked it.
+## 🎨 Figma
+🔗 [View on Figma](https://www.figma.com/file/kf3AWulK9elrNk34wtpjPw/Airbnb-Search-bar?node-id=0%3A1)
 
-- [ ] Icon implemented using background-image CSS property
-- [ ] Inputs are written inside of 'form' tag with correctly passed attributes
-- [ ] All `Typical Mistakes` from `BEM` lesson theory are checked.
-- [ ] Code follows all the [Code Style Rules ❗️](./checklist.md)
+## 📸 Reference Image
+<img src="./references/search-bar-example.png" alt="Search bar example" width="600px" />
+
+## 📜 License
+This project is forked from 💻 [Mate Academy](https://github.com/mate-academy/layout_search-bar-airbnb)

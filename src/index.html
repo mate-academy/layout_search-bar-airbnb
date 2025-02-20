@@ -17,42 +17,37 @@
     />
   </head>
   <body>
-    <form
-      action="/"
-      method="POST"
-      class="searchform"
-      data-qa="big"
-    >
-      <input
-        class="searchbar searchbar-big"
-        type="text"
-        data-qa="keypress"
-        placeholder="Try “Los Angeles“"
-      />
-      <img
-        class="search-image search-image-big"
-        src="/src/images/Search.svg"
-        alt="#"
-      />
-    </form>
-
-    <form
-      action="/"
-      method="POST"
-      class="searchform"
-      data-qa="small"
-    >
-      <input
-        class="searchbar searchbar-small"
-        type="text"
-        data-qa="keypress"
-        placeholder="Try “Los Angeles“"
-      />
-      <img
-        class="search-image search-image-small"
-        src="/src/images/Search.svg"
-        alt="#"
-      />
-    </form>
+    <div class="container">
+      <form
+        action="/"
+        method="POST"
+        class="searchform"
+        data-qa="big"
+      >
+        <input
+          class="searchbar searchbar-big"
+          type="text"
+          data-qa="keypress"
+          placeholder="Try “Los Angeles“"
+        />
+        <div class="search-image search-image-big"></div>
+      </form>
+    </div>
+    <div class="container">
+      <form
+        action="/"
+        method="POST"
+        class="searchform"
+        data-qa="small"
+      >
+        <input
+          class="searchbar searchbar-small"
+          type="text"
+          data-qa="keypress"
+          placeholder="Try “Los Angeles“"
+        />
+        <div class="search-image search-image-big"></div>
+      </form>
+    </div>
   </body>
 </html>

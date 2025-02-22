@@ -1,1 +1,50 @@
-/* add styles here */
+.all {
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
+  gap: 20px;
+}
+
+.row1,
+.row2 {
+  display: flex;
+}
+
+input {
+  font-family: Avenir, sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+}
+
+input:hover {
+  border-color: #752e2e;
+}
+
+input:focus {
+  border-color: #695454;
+  background-color: #cd9999;
+}
+
+.row1 input {
+  font-size: 16px;
+  padding-left: 62px;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: 19px;
+  height: 70px;
+  background-position-x: 25px;
+  background-position-y: 24px;
+}
+
+.row2 input {
+  font-size: 14px;
+  padding-left: 33px;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position-x: 12px;
+  background-position-y: 14px;
+  height: 42px;
+  background-size: 11px;
+}

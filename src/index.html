@@ -17,16 +17,32 @@
     />
   </head>
   <body>
-    <input
-      type="text"
+    <form
+      class="serch-bar serch-bar--big"
       data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    >
+      <div class="serch-bar__content">
+        <input
+          class="serch-bar__input"
+          type="text"
+          data-qa="big"
+          placeholder="Try “Los Angeles“"
+        />
+      </div>
+    </form>
 
-    <input
-      type="text"
+    <form
+      class="serch-bar serch-bar--small"
       data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    >
+      <div class="serch-bar__content">
+        <input
+          class="serch-bar__input"
+          type="text"
+          data-qa="small"
+          placeholder="Try “Los Angeles“"
+        />
+      </div>
+    </form>
   </body>
 </html>

@@ -1,1 +1,60 @@
 /* add styles here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 300;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  padding: 20px;
+}
+
+/* Estilo base das barras de pesquisa */
+.search-bar {
+  width: 100vw;
+  height: 70px;
+  padding: 25px 19px 25px 62px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.bar__icon {
+  background-image: url(./images/Search.svg);
+  background-size: 19px 19px;
+  background-position: 26px 25px;
+  background-repeat: no-repeat;
+}
+
+.bar__2 {
+  margin-top: 20px;
+  height: 20px;
+  background-position: 26px 15px;
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font-family: ' Avenir ';
+  font-size: 16px;
+  line-height: 21.86px;
+  letter-spacing: 0%;
+}
+
+/* Estados da barra de pesquisa */
+.search-bar:hover {
+  border-color: #999;
+}
+
+.search-bar:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Barra de pesquisa grande com recuo superior */
+.search-bar-container.large {
+  margin-top: 20px;
+}

@@ -1,26 +1,25 @@
 /* add styles here */
-* {
+html,
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-weight: 300;
 }
 
 .search-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
-  padding: 20px;
 }
 
 /* Estilo base das barras de pesquisa */
 .search-bar {
-  width: 100vw;
-  height: 70px;
+  display: flex;
+  width: 900px;
+  margin-bottom: 20px;
   padding: 25px 19px 25px 62px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 4px;
   font-size: 16px;
   outline: none;
   transition: all 0.3s ease;
@@ -34,9 +33,6 @@
 }
 
 .bar__2 {
-  margin-top: 20px;
-  height: 20px;
-  background-position: 26px 15px;
   /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: ' Avenir ';
   font-size: 16px;

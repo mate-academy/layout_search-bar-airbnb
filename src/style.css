@@ -1,1 +1,94 @@
-/* add styles here */
+/* #region page */
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir.ttc);
+}
+
+.page {
+  padding: 0;
+  margin: 0;
+}
+
+.page__body {
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+.page__big-search {
+  margin-top: 20px;
+}
+
+.page__small-search {
+  margin-top: 20px;
+}
+
+
+/* #endregion */
+
+
+/* #region searc */
+
+.search {
+  box-sizing: border-box;
+  display: block;
+  width: 80%;
+  padding: 25px 25px 25px 62px ;
+  font-family: Avenir, sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 137%;
+  text-shadow: 0 4px 4px 0 #00000040;
+
+
+  border: 1px solid #E1E7ED;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 #3D4E611A;
+
+  margin-inline: auto;
+  background-image: url('images/Search.svg');
+  background-repeat: no-repeat;
+  background-position: 26px;
+
+  outline: none;
+}
+
+.search:hover {
+  border: 1px solid #E1E7ED;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 #00000040;
+}
+
+.search:focus {
+  border: 1px solid #E1E7ED;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 #00000040;
+  background: url('images/Search.svg') no-repeat 26px center, linear-gradient(#fff, #F6F6F7);
+}
+
+.search:focus-visible {
+  border: 1px solid #E1E7ED;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 #00000040;
+  background: url('images/Search.svg') no-repeat 26px center, linear-gradient(#fff, #F6F6F7);
+}
+
+
+.search:active {
+  border: 1px solid #E1E7ED;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 #00000040;
+  background: url('images/Search.svg') no-repeat 26px center, linear-gradient(#fff, #F6F6F7);
+}
+
+
+.search::placeholder {
+  font-weight: 300;
+}
+
+.search__big-search {
+  height: 70px;
+}
+
+/* #endregion */

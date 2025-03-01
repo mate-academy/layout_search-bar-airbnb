@@ -1,1 +1,75 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir.ttc);
+}
+
+/* #region search */
+
+.search-form__search-input {
+  box-sizing: border-box;
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  width: 100%;
+  padding-left: 62px;
+  font-family: Avenir, sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 137%;
+  text-shadow: 0 4px 4px 0 #00000040;
+
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+  background: url('images/Search.svg') no-repeat 26px center / 19px 19px;
+  margin-top: 20px;
+  outline: none;
+}
+
+.search-form__search-input:hover {
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 #00000040;
+}
+
+.search-form__search-input:focus {
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 #00000040;
+  background:
+    url('images/Search.svg') no-repeat 26px center / 19px 19px,
+    linear-gradient(#fff, #f6f6f7);
+}
+
+.search-form__search-input::placeholder {
+  text-shadow: none;
+  font-weight: 300;
+}
+
+.search-form--small .search-form__search-input {
+  height: 42px;
+  text-shadow: none;
+  padding-left: 33px;
+  font-size: 14px;
+  background: url('images/Search.svg') no-repeat 12px 14px / 11px 11px;
+  outline: none;
+}
+
+.search-form--small .search-form__search-input:focus {
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 #00000040;
+  background:
+    url('images/Search.svg') no-repeat 12px 14px / 11px 11px,
+    linear-gradient(#fff, #f6f6f7);
+}
+
+.search-form--small .search-form__search-input::placeholder {
+  font-weight: 400;
+}
+
+.search-form--small .search-form__search-input:hover::placeholder {
+  text-shadow: none;
+}
+
+/* #endregion */

@@ -5,6 +5,10 @@ html {
   padding: 0;
 }
 
+.searchform {
+  width: 100%;
+}
+
 .searchform:first-of-type {
   margin-top: 20px;
 }
@@ -30,8 +34,38 @@ html {
   padding-left: 33px;
 }
 
-.container {
+.lable {
+  display: flex;
+  width: 100%;
   position: relative;
+}
+
+
+.lable::after {
+  content: '';
+  background-image: url(/src/images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  display: block;
+
+
+}
+
+.lable-big::after {
+  width: 19px;
+  height: 19px;
+
+  top: 45px;
+  left: 30px;
+}
+
+.lable-small::after {
+  width: 11px;
+  height: 11px;
+
+  top: 36px;
+  left: 14px;
 }
 
 .search-image {

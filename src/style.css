@@ -1,12 +1,14 @@
-/* add styles here */
+/* Fonts */
 @font-face {
   font-family: Avenir;
   src:
-    url('./fonts/Avenir-Book.ttf') format('woff2'),
-    url('./fonts/Avenir-Heavy.ttf') format('woff');
+    url('./fonts/Avenir-Heavy.ttf') format('truetype'),
+    url('./fonts/Avenir-Book.ttf') format('truetype');
   font-weight: 300;
+  font-style: italic;
 }
 
+/* Global styles */
 body {
   margin: 0;
   padding: 0;
@@ -15,47 +17,64 @@ body {
   align-items: center;
 }
 
-/* div */
-
+/* Search input container */
 .search-container {
   padding: 0 10px;
   width: 100%;
   box-sizing: border-box;
 }
 
-/* input */
-
+/* General input styles */
 .search-input {
-  font-weight: 400;
-  color: rgba(61, 78, 97, 1);
-  border: 1px solid rgba(225, 231, 237, 1);
+  font-family: Avenir, sans-serif;
+  color: #3d4e61 !important;
+  border: 1px solid #e1e7ed;
   border-radius: 4px;
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.2);
+  box-shadow: 0 1px 8px 0 #3d4e611a;
   padding: 10px 10px 10px 40px;
   outline: none;
   background-repeat: no-repeat;
-  background-position: 10px center;
+  background-position: left center;
   width: 100%;
-  margin-top: 20px;
   box-sizing: border-box;
 }
 
+/* Placeholder styles */
+.search-input::placeholder {
+  color: #6e7a8a;
+}
+
+/* Large input field */
 .search-input.big {
   height: 70px;
+  margin-top: 20px;
+  padding-left: 56px;
   background-image: url('./images/Search.svg');
   background-size: 19px 19px;
+  background-position: 26px center;
 }
 
+/* Small input field */
 .search-input.small {
   height: 42px;
+  margin-top: 20px;
+  padding-left: 30px;
   background-image: url('./images/Search.svg');
-  background-size: 14px 14px;
+  background-size: 11px 11px;
+  background-position: 13px center;
 }
 
+/* Focus state for small input */
+.search-input.small:focus {
+  box-shadow: none;
+}
+
+/* Hover state for all inputs */
 .search-input:hover {
   box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
 }
 
+/* Focus state for all inputs */
 .search-input:focus {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }

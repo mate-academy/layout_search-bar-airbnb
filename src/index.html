@@ -17,16 +17,80 @@
     />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      class="form__1"
+      action="http://locahost:3000/api"
+      method="post"
+      data-qa="big"
+    >
+      <div class="form__1--field">
+        Default
+        <br />
+        <input
+          class="form__1--input form__1--input--1"
+          type="text"
+          data-qa="keypress"
+          placeholder="Try “Los Angeles“"
+          name="default"
+        />
+      </div>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+      <div class="form__1--field">
+        Hover
+        <br />
+        <input
+          class="form__1--input form__1--input--2"
+          type="text"
+          data-qa="keypress"
+          placeholder="Try “Los Angeles“"
+          name="hover"
+        />
+      </div>
+
+      <div class="form__1--field">
+        Focus
+        <br />
+        <input
+          class="form__1--input form__1--input--3"
+          type="text"
+          data-qa="keypress"
+          value="Los Angeles"
+          name="focus"
+        />
+      </div>
+    </form>
+    <form
+      class="form__2"
+      action="http://locahost:3000/api"
+      method="post"
+      data-qa="small"
+    >
+      <div class="form__2--field">
+        <input
+          class="form__2--input form__2--input--1"
+          type="text"
+          data-qa="hover"
+          placeholder="Try “Los Angeles“"
+        />
+      </div>
+
+      <div class="form__2--field">
+        <input
+          class="form__2--input form__2--input--2"
+          type="text"
+          data-qa="hover"
+          placeholder="Try “Los Angeles“"
+        />
+      </div>
+
+      <div class="form__2--field">
+        <input
+          class="form__2--input form__2--input--3"
+          type="text"
+          data-qa="hover"
+          value="Los Angeles"
+        />
+      </div>
+    </form>
   </body>
 </html>

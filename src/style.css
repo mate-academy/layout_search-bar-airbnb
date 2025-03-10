@@ -1,6 +1,6 @@
 /* Fonts */
 @font-face {
-  font-family: Avenir;
+  font-family: Avenir, sans-serif;
   src:
     url('./fonts/Avenir-Heavy.ttf') format('truetype'),
     url('./fonts/Avenir-Book.ttf') format('truetype');
@@ -26,6 +26,7 @@ body {
 
 /* General input styles */
 .search-input {
+  font-family: Avenir, sans-serif;
   color: #3d4e61;
   border: 1px solid #e1e7ed;
   border-radius: 4px;
@@ -45,28 +46,28 @@ body {
 
 /* Large input field */
 .search-input.big {
-  font-size: 16px;
-  line-height: 21.86px;
-  letter-spacing: 0%;
   height: 70px;
   margin-top: 20px;
   padding-left: 62px;
   background-image: url('./images/Search.svg');
   background-size: 19px 19px;
   background-position: 26px center;
+  font-size: 16px;
+  line-height: 21.86px;
+  letter-spacing: 0%;
 }
 
 /* Small input field */
 .search-input.small {
-  font-size: 14px;
-  line-height: 19.12px;
-  letter-spacing: 0%;
-  height: 42px;
   margin-top: 20px;
   padding-left: 33px;
   background-image: url('./images/Search.svg');
   background-size: 11px 11px;
   background-position: 13px center;
+  font-size: 14px;
+  line-height: 19.12px;
+  letter-spacing: 0%;
+  height: 42px;
 }
 
 /* Focus state for small input */

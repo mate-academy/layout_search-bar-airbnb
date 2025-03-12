@@ -1,1 +1,107 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir.ttc);
+}
+
+@font-face {
+  font-family: Avenir-Book;
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: Avenir-Heavy;
+  src: url(fonts/Avenir-Heavy.ttf);
+}
+
+html {
+  --color-text: #3d4e61;
+  --font-family: Avenir, sans-serif;
+  --shadow-text: 0 4px 4px #00000040;
+  --shadow-seach-bar-big: 0 4px 4px #00000040;
+
+  font-family: var(--font-family);
+  font-weight: 300;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+input::placeholder {
+  color: var(--color-text);
+  font-family: var(--font-family);
+}
+
+.seach-bar {
+  margin: 20px 8px 0;
+  padding: 0;
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  outline: none;
+  background-color: #fff;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  box-shadow: 0 1 8 #3d4e611a;
+}
+
+.seach-bar:focus {
+  font-family: Avenir-Heavy, Avenir, sans-serif;
+  background: linear-gradient(#fff, #f6f6f7);
+  border-radius: 3px;
+}
+
+.seach-bar--big {
+  height: 68px;
+  background-size: 19px 19px;
+  background-position: 25px 26px;
+  padding-left: 62px;
+}
+
+.seach-bar--big[type='text']::placeholder {
+  font-size: 16px;
+  line-height: 21.86px;
+  opacity: 1;
+}
+
+.seach-bar--big:hover {
+  box-shadow: var(--shadow-seach-bar-big);
+}
+
+.seach-bar--big:focus {
+  box-shadow: var(--shadow-seach-bar-big);
+  color: var(--color-text);
+  font-weight: 400;
+  line-height: 100%;
+  text-shadow: var(--shadow-text);
+}
+
+.seach-bar--small {
+  background-size: 11px 11px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 4px;
+  background-position: 12px 14px;
+  padding-left: 33px;
+}
+
+.seach-bar--small[type='text']::placeholder {
+  font-size: 14px;
+  line-height: 19.12px;
+  font-weight: 400;
+  opacity: 1;
+
+  text-shadow: var(--shadow-text);
+}
+
+.seach-bar--small:hover {
+  box-shadow: 0 3px 8px #3d4e6133;
+}
+
+.seach-bar--small:focus {
+  color: var(--color-text);
+  line-height: 100%;
+  font-weight: 900;
+}

@@ -9,12 +9,7 @@
 }
 
 html {
-  font-family: Avenir-Book, Avenir-Heavy, sans-serif;
-}
-
-body {
-  margin: 0;
-  padding: 0;
+  font-family: Avenir-Book, Avenir-Heavy, serif;
 }
 
 .form__1 {
@@ -27,14 +22,21 @@ body {
 
 .input {
   box-sizing: border-box;
-  font-weight: 400;
-  line-height: 100%;
+
   color: #3d4e61;
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
   border: 1px solid #e1e7ed;
   border-radius: 4px;
   box-shadow: 0 1px 8px 0 #3d4e611a;
+}
+
+.input::placeholder {
+  font-family: Avenir-Book, serif;
+  color: #3d4e61;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
 
 .input:hover {
@@ -52,9 +54,9 @@ body {
   height: 70px;
   width: 100%;
   font-size: 16px;
-  background-size: 19px 19px;
-  background-position: 25px;
-  padding: 0 65px;
+  background-size: 18px 18px;
+  background-position: 26px 25px;
+  padding: 0 62px;
 }
 
 .form__2--input {
@@ -62,6 +64,6 @@ body {
   width: 100%;
   font-size: 14px;
   background-size: 11px 11px;
-  background-position: 14px;
-  padding: 0 35px;
+  background-position: 13px 15px;
+  padding: 0 33px;
 }

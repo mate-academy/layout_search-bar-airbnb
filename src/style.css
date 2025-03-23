@@ -1,7 +1,8 @@
 /* add styles here */
-* {
-  padding: 0;
-  box-sizing: border-box;
+
+
+html {
+  max-width: 100%;
 }
 
 @font-face {
@@ -21,28 +22,32 @@
 body {
   font-family: Avenir, sans-serif;
   font-size: 16px;
+  max-width: 100%;
 }
 
 .sform {
   display: flex;
   justify-content: center;
-  margin: 20px auto 0;
 }
 
 .sform_big {
   width: 100%;
   height: 70px;
+  margin: 20px auto 0;
 }
 
 .sform_small {
   width: 100%;
   height: 42px;
+  padding: 0;
+  margin: 20px auto 0;
 }
 
 .sform__label {
   position: relative;
   display: block;
   width: 100%;
+  padding: 0;
 }
 
 .sform__label::after {
@@ -81,6 +86,8 @@ body {
   font-family: inherit;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   outline: none;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .sform__input:hover {

@@ -34,3 +34,6 @@ ___
 - [x] Inputs are written inside of 'form' tag with correctly passed attributes
 - [x] All `Typical Mistakes` from `BEM` lesson theory are checked.
 - [x] Code follows all the [Code Style Rules ❗️](./checklist.md)
+
+![Tests](https://img.shields.io/github/actions/workflow/status/Ralfendeck25/layout_search-bar-airbnb/tests.yml?label=tests)
+![Coverage](https://Ralfendeck25.github.io/layout_search-bar-airbnb/badges/coverage.svg)

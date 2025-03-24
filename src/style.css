@@ -1,1 +1,83 @@
 /* add styles here */
+/* style.css */
+@font-face {
+  font-family: 'Airbnb Cereal App';
+  src: url('src/fonts/AirbnbCerealBook.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Reset styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Airbnb Cereal App', sans-serif;
+  padding: 20px;
+}
+
+/* Big search form */
+form[data-qa="big"] {
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+
+form[data-qa="big"] input {
+  width: 100%;
+  height: 56px;
+  padding: 16px 56px;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 300;
+  background-image: url('src/images/search.svg');
+  background-repeat: no-repeat;
+  background-position: 24px center;
+  background-size: 18px;
+  transition: all 0.3s ease;
+}
+
+/* Small search form */
+form[data-qa="small"] {
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+
+form[data-qa="small"] input {
+  width: 100%;
+  height: 48px;
+  padding: 12px 48px;
+  border: 1px solid #ebebeb;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 300;
+  background-image: url('src/images/search.svg');
+  background-repeat: no-repeat;
+  background-position: 16px center;
+  background-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* Hover state */
+input:hover {
+  border-color: #cccccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Focus state */
+input:focus {
+  outline: none;
+  border-color: #008489;
+  box-shadow: 0 2px 4px rgba(0, 132, 137, 0.2);
+}
+
+/* Placeholder styling */
+::placeholder {
+  color: #717171;
+  opacity: 1;
+}

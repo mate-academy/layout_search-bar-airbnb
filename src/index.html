@@ -1,27 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Airbnb Search Bars</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-  <!-- Big Search Form -->
-  <form class="search-form" data-qa="big">
-    <input 
-      type="text" 
-      data-qa="keypress" 
-      placeholder="Try “Los Angeles”"
+  <!-- Big Search Bar -->
+  <form class="search-bar search-bar--big" data-qa="big">
+    <div class="search-bar__icon search-bar__icon--magnifier"></div>
+    <input
+      type="text"
+      class="search-bar__input"
+      placeholder="Start your search"
+      data-qa="keypress"
     >
+    <button class="search-bar__button">Search</button>
   </form>
 
-  <!-- Small Search Form -->
-  <form class="search-form" data-qa="small">
-    <input 
-      type="text" 
-      placeholder="Try “Los Angeles”"
-    >
+  <!-- Small Search Bar -->
+  <form class="search-bar search-bar--small" data-qa="small">
+    <div class="search-bar__group">
+      <div class="search-bar__icon search-bar__icon--location"></div>
+      <input
+        type="text"
+        class="search-bar__input"
+        placeholder="Add location"
+      >
+    </div>
+    <div class="search-bar__divider"></div>
+    <div class="search-bar__group">
+      <div class="search-bar__icon search-bar__icon--user"></div>
+      <input
+        type="text"
+        class="search-bar__input"
+        placeholder="Add guests"
+      >
+    </div>
+    <button class="search-bar__button">Search</button>
   </form>
 </body>
 </html>

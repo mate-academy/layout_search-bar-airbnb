@@ -1,82 +1,94 @@
-/* add styles here */
+/* Fonts */
 @font-face {
-  font-family: 'Airbnb Cereal App';
-  src: url('src/fonts/AirbnbCerealBook.woff2') format('woff2');
+  font-family: 'Circular Std';
+  src: url('../fonts/CircularStd-Book.woff2') format('woff2'),
+       url('../fonts/CircularStd-Book.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
 
-/* Reset styles */
-html {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
+/* Base Styles */
 body {
-  font-family: 'Airbnb Cereal App', sans-serif;
+  font-family: 'Circular Std', sans-serif;
+  font-weight: 300;
+  margin: 0;
   padding: 20px;
 }
 
-/* Big search form */
-form[data-qa="big"] {
+/* Search Bar Container */
+.search-bar {
+  display: flex;
+  align-items: center;
   width: 100%;
-  margin-top: 20px;
-  position: relative;
+  border: 1px solid #ebebeb;
+  border-radius: 32px;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
 }
 
-form[data-qa="big"] input {
-  width: 100%;
-  height: 56px;
-  padding: 16px 56px;
-  border: 1px solid #ebebeb;
-  border-radius: 8px;
+/* Hover and Focus States */
+.search-bar:hover,
+.search-bar:focus-within {
+  border-color: #000000;
+}
+
+/* Icons */
+.search-bar__icon {
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+.search-bar__icon--magnifier {
+  background-image: url('../images/magnifying-glass.svg');
+}
+
+.search-bar__icon--location {
+  background-image: url('../images/location.svg');
+}
+
+.search-bar__icon--user {
+  background-image: url('../images/user.svg');
+}
+
+/* Input Field */
+.search-bar__input {
+  flex-grow: 1;
+  border: none;
+  margin: 0 16px;
   font-size: 14px;
   font-weight: 300;
-  background-image: url('src/images/search.svg');
-  background-repeat: no-repeat;
-  background-position: 24px center;
-  background-size: 18px;
-  transition: all 0.3s ease;
-}
-
-/* Small search form */
-form[data-qa="small"] {
-  width: 100%;
-  margin-top: 20px;
-  position: relative;
-}
-
-form[data-qa="small"] input {
-  width: 100%;
-  height: 48px;
-  padding: 12px 48px;
-  border: 1px solid #ebebeb;
-  border-radius: 6px;
-  font-size: 14px;
-  font-weight: 300;
-  background-image: url('src/images/search.svg');
-  background-repeat: no-repeat;
-  background-position: 16px center;
-  background-size: 16px;
-  transition: all 0.3s ease;
-}
-
-/* Hover state */
-input:hover {
-  border-color: #cccccc;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Focus state */
-input:focus {
   outline: none;
-  border-color: #008489;
-  box-shadow: 0 2px 4px rgba(0, 132, 137, 0.2);
 }
 
-/* Placeholder styling */
-::placeholder {
-  color: #717171;
-  opacity: 1;
+/* Button */
+.search-bar__button {
+  background-color: #ff385c;
+  color: white;
+  border: none;
+  border-radius: 24px;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Small Search Bar Modifier */
+.search-bar--small {
+  margin-top: 20px;
+}
+
+.search-bar--small .search-bar__group {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.search-bar__divider {
+  width: 1px;
+  height: 24px;
+  background-color: #ebebeb;
+  margin: 0 16px;
 }

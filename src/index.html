@@ -15,18 +15,46 @@
       rel="stylesheet"
       href="style.css"
     />
+    <link
+      rel="stylesheet"
+      href="big-search.css"
+    />
+    <link
+      rel="stylesheet"
+      href="small-search.css"
+    />
+    <link
+      rel="stylesheet"
+      href="big-search__bar.css"
+    />
+    <link
+      rel="stylesheet"
+      href="small-search__bar.css"
+    />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      class="big-search"
+      data-qa="big"
+    >
+      <input
+        class="big-search__bar"
+        type="text"
+        data-qa="keypress"
+        placeholder="Try “Los Angeles“"
+      />
+    </form>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      class="small-search"
+      data-qa="small"
+    >
+      <input
+        class="small-search__bar"
+        type="text"
+        data-qa="hover"
+        placeholder="Try “Los Angeles“"
+      />
+    </form>
   </body>
 </html>

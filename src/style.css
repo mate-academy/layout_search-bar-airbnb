@@ -1,1 +1,100 @@
-/* add styles here */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Arial, Helvetica, sans-serif;
+  src: url('./fonts/Avenir-Book.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.big-search {
+  display: block;
+  height: 70px;
+  padding: 0 62px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  width: 100%;
+  max-width: 900px;
+}
+
+.big-search-container {
+  display: block;
+  position: relative;
+  margin: 20px 48px;
+  padding: 0;
+  height: 70px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.big-search-container img {
+  position: absolute;
+  left: 26px;
+  top: 25px;
+  pointer-events: none;
+  width: 19px;
+  height: 19px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.search-button {
+  border: none;
+  background-color: #fff;
+}
+
+.small-search {
+  display: flex;
+  height: 42px;
+  padding-left: 33px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 900px;
+}
+
+.small-search-container {
+  display: block;
+  position: relative;
+  margin-left: 48px;
+  margin-top: 0;
+  width: 100%;
+  max-width: 900px;
+}
+
+.small-search-container img {
+  position: absolute;
+  left: 13px;
+  top: 15px;
+  pointer-events: none;
+  width: 11px;
+  height: 11px;
+}
+
+.big-search:hover,
+.small-search:hover {
+  border: 2px solid #a95bec;
+}
+
+.big-search:focus,
+.small-search:focus {
+  border: 2px solid blue;
+  outline: none;
+}
+
+.big-search:hover,
+.big-search:focus,
+.small-search:hover,
+.small-search:focus {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+}

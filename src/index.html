@@ -16,17 +16,34 @@
       href="style.css"
     />
   </head>
-  <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+  <body>
+    <form
+      action="#"
+      method="post"
+      data-qa="big"
+    >
+      <div class="big-input-cont">
+        <input
+          class="big-input-cont__big-input"
+          type="text"
+          data-qa="keypress"
+          placeholder="Try &#34;Los Angeles&#34;"
+        />
+      </div>
+    </form>
+    <form
+      action="#"
+      method="post"
+      data-qa="small"
+    >
+      <div class="small-input-cont">
+        <input
+          class="small-input-cont__small-input"
+          type="text"
+          placeholder="Try &#34;Los Angeles&#34;"
+        />
+      </div>
+    </form>
   </body>
 </html>

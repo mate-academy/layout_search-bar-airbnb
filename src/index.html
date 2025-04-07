@@ -13,20 +13,61 @@
     <title>Document</title>
     <link
       rel="stylesheet"
-      href="style.css"
+      href="/src/style.css"
     />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      action="#"
+      data-qa="big"
+    >
+      <label>
+        <input
+          class="search-bar search-bar__big"
+          type="text"
+          data-qa="keypress"
+          placeholder="Try “Los Angeles“"
+        />
+      </label>
+    </form>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      action="#"
+      data-qa="small"
+    >
+      <label>
+        <input
+          class="search-bar search-bar__small"
+          type="text"
+          data-qa="hover"
+          placeholder="Try “Los Angeles“"
+        />
+      </label>
+    </form>
+
+    <!-- <p>
+        Недоделал первую поисковую строку. Форму нужно обжать в position: relative,
+      а иконку в position: aboslute т.к. поисковая строка должна расширяться на всю форму
+      и так же будет лучше стилизация для hover и focus. Более подрбней у GPT.
+    </p> -->
+
+    <!-- <p>
+        Закончил основу первой поисковой строки. Нужно
+      -1. Посмотреть идею о label (обгорнути input i div). (Так себе идея)
+      +2. Подключить шрифт (уже встроен).
+      +3. Сделать меньше копию.
+      4. Записать разницу между свойствами (подробней на https://developer.mozilla.org/)
+        box-shadow: 0 1px 8px 0 rgb(255, 99, 71);
+        filter: drop-shadow(30px 10px 4px #4444dd);
+        и узнать про background: linear-gradient(#e66465, #9198e5);
+      +5. Пересмотреть код (может что-то будет лишнее).
+    </p> -->
+
+    <!-- <p>
+        Тести не проходят, так же (есть разница между наличием и отсутсвием width: 100% в .search-form--size)
+      не работает margin-right. Впринцепи он не нужен width: 100% т.к. сам растягиваеться.
+      Есть готовый вариант в Ма, но на всякий случай спросить что тут не так.
+      Перед отправкой (когда буду спрашивать) не забудь проверить условия виполнения в GPT.
+    </p> -->
   </body>
 </html>

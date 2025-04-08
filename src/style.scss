@@ -35,7 +35,7 @@ html {
   border-radius: 4px;
 
   &:hover {
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
   }
 
   &:first-child {
@@ -50,25 +50,30 @@ html {
     width: 100%;
     border: none;
     padding: 0;
+    outline: none;
+  }
 
-    &:focus {
-      outline: none;
-    }
+  &:focus {
+    background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+    border-radius: 3px;
+    font-weight: 600;
   }
 
   &-big {
     height: 70px;
 
     &__img {
-      width: 19px;
-      height: 19px;
-      margin-left: 25px;
-      margin-right: 18px;
+      background-image: url(./images/Search.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 20.5px;
+      height: 20.5px;
+      margin: 0 18px 0 25.5px;
     }
 
     &__input {
-      padding: auto;
       font-size: 16px;
+      line-height: 22px;
       font-family: inherit;
     }
   }
@@ -77,16 +82,17 @@ html {
     height: 42px;
 
     &__img {
-      margin: auto;
-      width: 11px;
-      height: 11px;
-      margin-left: 12px;
-      margin-right: 10px;
+      background-image: url(./images/Search.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 11.5px;
+      height: 11.5px;
+      margin: 0 10px 0 12px;
     }
 
     &__input {
-      padding: auto;
       font-size: 14px;
+      line-height: 19px;
       font-family: inherit;
     }
   }

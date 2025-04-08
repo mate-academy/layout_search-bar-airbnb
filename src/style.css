@@ -1,8 +1,3 @@
-* {
-  padding: 0;
-  box-sizing: border-box;
-}
-
 @font-face {
   font-family: Avenir;
   src: url('./fonts/Avenir-Book.ttf') format('truetype');
@@ -23,22 +18,22 @@ body {
   font-weight: 300;
 }
 
-form[data-qa='big'] {
+.form1 {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
   width: 100%;
   height: 70px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-form[data-qa='small'] {
-  width: 100%;
-  height: 42px;
-}
-
-.form {
+.form2 {
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  width: 100%;
+  height: 42px;
 }
 
 .search-input {

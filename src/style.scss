@@ -11,89 +11,98 @@
   src:
     local('Avenir'),
     url('fonts/Avenir-Heavy.ttf') format('truetype');
-  font-weight: 700;
+  font-weight: 600;
 }
 
 * {
+  padding: 0;
   box-sizing: border-box;
 }
 
-html {
+body {
   font-family: Avenir, sans-serif;
   font-size: 16px;
-  font-weight: 300;
 }
 
-.search {
+.search-form {
   display: flex;
-  align-items: center;
-  width: 100%;
-  color: #3d4e61;
-  background-color: #fff;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
-  border-radius: 4px;
+  justify-content: center;
+  margin: 20px auto 0;
 
-  &:hover {
-    box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  &_big {
+    width: 100%;
+    height: 70px;
   }
 
-  &:first-child {
-    margin-block: 20px;
+  &_small {
+    width: 100%;
+    height: 42px;
   }
 
-  &__img {
+  &__label {
+    position: relative;
     display: block;
+    width: 100%;
+
+    &::after {
+      position: absolute;
+      content: '';
+      display: block;
+      background-image: url(./images/Search.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &_big::after {
+      width: 19px;
+      height: 19px;
+      top: 25px;
+      left: 26px;
+    }
+
+    &_small::after {
+      width: 11px;
+      height: 11px;
+      top: 15px;
+      left: 13px;
+    }
   }
 
   &__input {
     width: 100%;
-    border: none;
-    padding: 0;
+    height: 100%;
+    border: 1px solid #e1e7ed;
+    border-radius: 4px;
+    color: #3d4e61;
+    font-weight: 300;
+    font-family: inherit;
+    box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
     outline: none;
-  }
 
-  &:focus {
-    background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
-    border-radius: 3px;
-    font-weight: 600;
-  }
-
-  &-big {
-    height: 70px;
-
-    &__img {
-      background-image: url(./images/Search.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 20.5px;
-      height: 20.5px;
-      margin: 0 18px 0 25.5px;
+    &::placeholder {
+      color: #3d4e61;
     }
 
-    &__input {
+    &:hover {
+      box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+    }
+
+    &:focus {
+      background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+      border-radius: 3px;
+      font-weight: 600;
+    }
+
+    &_big {
+      padding-left: 62px;
       font-size: 16px;
       line-height: 22px;
-      font-family: inherit;
-    }
-  }
-
-  &-small {
-    height: 42px;
-
-    &__img {
-      background-image: url(./images/Search.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 11.5px;
-      height: 11.5px;
-      margin: 0 10px 0 12px;
     }
 
-    &__input {
+    &_small {
+      padding-left: 33px;
       font-size: 14px;
       line-height: 19px;
-      font-family: inherit;
     }
   }
 }

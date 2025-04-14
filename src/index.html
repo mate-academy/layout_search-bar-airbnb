@@ -10,23 +10,49 @@
       http-equiv="X-UA-Compatible"
       content="ie=edge"
     />
-    <title>Document</title>
+    <title>Mate academy | airbnb search bar</title>
     <link
       rel="stylesheet"
       href="style.css"
     />
+    <link
+      rel="stylesheet"
+      href="search-form/search-form.css"
+    />
   </head>
-  <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+  <body class="page">
+    <form
+      class="form page__form form_big"
+      action="GET"
+      data-qa="big"
+    >
+      <label
+        class="form__item1"
+        data-qa="big-bar"
+      >
+        <input
+          class="form__item2 form__item2_big"
+          name="big-bar"
+          type="text"
+          data-qa="keypress"
+          placeholder="Try “Los Angeles“"
+        />
+      </label>
+    </form>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      class="form page__form form_small"
+      action="GET"
+      data-qa="small"
+    >
+      <label class="form__item1 form__item1_small">
+        <input
+          class="form__item2 form__item2_small"
+          name="small-bar"
+          type="text"
+          placeholder="Try “Los Angeles“"
+        />
+      </label>
+    </form>
   </body>
 </html>

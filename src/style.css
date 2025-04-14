@@ -1,1 +1,99 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  font-weight: 300;
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 900;
+  src: url(fonts/Avenir-Heavy.ttf);
+}
+
+:root {
+  --form-bg-color: #fff;
+  --form-border-color: #e1e7ed;
+  --form-shadow-color: #3d4e611a;
+  --form-txt-placeholder-color: #3d4e61;
+  --form-txt-shadow-color: #00000040;
+}
+
+.page {
+  font-weight: 300;
+  box-sizing: border-box;
+  margin-top: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.form__input {
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 21.86px;
+  color: var(--form-txt-color);
+  text-shadow: 0 4px 4px 0 var(--form-txt-shadow-color);
+  height: 70px;
+  width: 100%;
+
+  box-sizing: border-box;
+  border: 1px solid var(--form-border-color);
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 var(--form-shadow-color);
+  padding-left: 62px;
+  background: var(--form-bg-color) no-repeat left url('./images/Search.svg');
+  background-size: 19px;
+  background-position: top 25px left 25px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.form__input::placeholder {
+  font-weight: 400;
+  color: var(--form-txt-placeholder-color);
+}
+
+.form__input_small {
+  font-size: 14px;
+  height: 42px;
+
+  padding-left: 33px;
+
+  background-size: 11px;
+  background-position: top 15px left 13px;
+}
+
+.form__input:hover {
+  box-shadow: 0 4px 4px 0 var(--form-txt-shadow-color);
+}
+
+.form__input:focus {
+  outline: none;
+  text-shadow: 0 4px 4px 0 var(--form-txt-shadow-color);
+  background:
+    url('./images/Search.svg') no-repeat 25px 26px / 19px,
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.form__input_small:focus {
+  text-shadow: none;
+  background:
+    url('./images/Search.svg') no-repeat 13px 15px / 11px,
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.form__input:focus::placeholder {
+  color: transparent;
+  text-shadow: none;
+}

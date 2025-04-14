@@ -1,1 +1,105 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 8px;
+  display: block;
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+}
+
+/* #region input */
+
+.input {
+  width: 100%;
+  border: 1px solid #e1e7ed;
+}
+
+.input__big {
+  height: 70px;
+  border-radius: 4px;
+  position: relative;
+  padding-left: 62px;
+  font-family: Avenir, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.input__small {
+  position: relative;
+  height: 42px;
+  border-radius: 3px;
+  padding-left: 33px;
+  font-family: Avenir, sans-serif;
+  font-weight: 400px;
+  font-size: 14px;
+}
+
+.input:hover {
+  background: linear-gradient(180deg, #dfaaaa 0%, #a5a5f1 100%);
+  border-radius: 3px;
+}
+
+.input:focus {
+  box-shadow: 0 3px 10px red;
+}
+
+/* #endregion */
+
+/* #region container */
+
+.search-form__big {
+  position: relative;
+  height: 70px;
+  display: block;
+  margin-top: 20px;
+}
+
+.search-form__small {
+  position: relative;
+  height: 42px;
+  display: block;
+  margin-top: 20px;
+}
+
+.search-form__big::after {
+  content: '';
+  background-image: url(./images/Search.svg);
+  background-size: contain;
+  width: 19px;
+  height: 19px;
+  display: flex;
+  position: absolute;
+  left: 26px;
+  top: 25px;
+  align-items: center;
+}
+
+.search-form__small::after {
+  content: '';
+  background-image: url(./images/Search.svg);
+  background-size: contain;
+  width: 11px;
+  height: 11px;
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 13px;
+}
+
+/* #endregion */

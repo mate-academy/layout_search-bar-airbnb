@@ -1,0 +1,96 @@
+@font-face {
+  font-family: Avenir;
+  src: url(../fonts/Avenir-Book.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(../fonts/Avenir-Heavy.ttf);
+  font-weight: 900;
+}
+
+html {
+  --search-icon-big: url(/src/images/Search.svg) 26px 50% no-repeat;
+  --search-icon-size-big: 19px;
+  --search-icon-small: url(/src/images/Search.svg) 13px 50% no-repeat;
+  --search-icon-size-small: 11px;
+  --font-color: #3d4e61;
+  --font-size-big: 16px;
+  --font-size-small: 14px;
+}
+
+body {
+  margin: 0;
+
+  font-family: Avenir, sans-serif;
+}
+
+.search-bar {
+  margin: 20px 8px 0;
+}
+
+.search-bar__input {
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 1px 8px #3d4e611a;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-weight: 300;
+  color: var(--font-color);
+  font-size: var(--font-size-big);
+}
+
+.search-bar__input:hover {
+  box-shadow: 0 3px 8px #3d4e6133;
+}
+
+.search-bar__input:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  text-shadow: 0 4px 4px #00000040;
+  font-weight: 900;
+  outline: none;
+}
+
+.search-bar__input--big {
+  height: 70px;
+  padding-left: 62px;
+
+  background: var(--search-icon-big);
+  background-size: var(--search-icon-size-big);
+}
+
+.search-bar__input--big:focus {
+  background: var(--search-icon-big);
+  background-size: var(--search-icon-size-big);
+}
+
+.search-bar__input--small {
+  height: 42px;
+  font-size: var(--font-size-small);
+  padding-left: 33px;
+
+  background: var(--search-icon-small);
+  background-size: var(--search-icon-size-small);
+}
+
+.search-bar__input--small:focus {
+  background: var(--search-icon-small);
+  background-size: var(--search-icon-size-small);
+}
+
+.search-bar__input::placeholder {
+  font-family: inherit;
+  color: var(--font-color);
+  font-weight: 300;
+  font-size: var(--font-size-big);
+}
+
+.search-bar__input--small::placeholder {
+  font-size: var(--font-size-small);
+  font-family: inherit;
+  color: var(--font-color);
+  font-weight: 300;
+}

@@ -1,1 +1,140 @@
-/* add styles here */
+@font-face {
+  font-family: 'Avenir ';
+  src: url(./fonts/Avenir-Book.ttf), url(./fonts/Avenir-Heavy.ttf),
+    url(./fonts/Avenir.ttc);
+}
+
+:root {
+  --shadow-input: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* #region form-search */
+.form-search {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* #endregion */
+
+/* #region form-search---big */
+.form-search--big {
+  height: 70px;
+}
+
+/* #endregion */
+
+/* #region form-search--small */
+.form-search--small {
+  height: 42px;
+}
+
+/* #endregion */
+
+/* #region lable */
+.form-search__lable {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.form-search__lable::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* #endregion */
+
+/* #region lable--big */
+.form-search__lable--big::after {
+  width: 19px;
+  height: 19px;
+  top: 25px;
+  left: 26px;
+}
+
+/* #endregion */
+
+/* #region lable--small */
+.form-search__lable--small::after {
+  width: 11px;
+  height: 11px;
+  top: 15px;
+  left: 13px;
+}
+
+/* #endregion */
+
+/* #region input */
+.form-search__input {
+  box-sizing: border-box;
+  font-family: 'Avenir ', sans-serif;
+  font-weight: 300;
+  color: rgba(61, 78, 97, 1);
+
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  outline: none;
+
+  width: 100%;
+  height: 100%;
+}
+
+.form-search__input:focus {
+  border: 0;
+  font-weight: 900;
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, #f6f6f7 100%);
+}
+
+/* #endregion */
+
+/* #region input--big */
+.form-search__input--big {
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 62px;
+}
+
+.form-search__input--big::placeholder {
+  text-shadow: none;
+}
+
+.form-search__input--big:hover {
+  box-shadow: var(--shadow-input);
+}
+
+.form-search__input--big:focus {
+  text-shadow: var(--shadow-input);
+}
+
+/* #endregion */
+
+/* #region input--small */
+.form-search__input--small {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  padding-left: 33px;
+}
+
+.form-search__input--small::placeholder {
+  text-shadow: var(--shadow-input);
+}
+
+.form-search__input--small:hover {
+  text-shadow: none;
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.form-search__input--small:focus {
+  line-height: 19;
+}
+
+/* #endregion */

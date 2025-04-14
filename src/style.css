@@ -1,1 +1,92 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  font-weight: 300;
+  src: url(./fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 800;
+  src: url(./fonts/Avenir-Heavy.ttf);
+}
+
+:root {
+  --search-icon-big: url(/src/images/Search.svg) no-repeat 26px;
+  --search-icon-small: url(/src/images/Search.svg) no-repeat 13px;
+  --font-color: #3d4e61;
+}
+
+html {
+  font-family: Avenir, sans-serif;
+}
+
+.search-bar {
+  margin-top: 20px;
+}
+
+.search-bar__input {
+  width: 100%;
+  font-family: inherit;
+  color: var(--font-color);
+
+  box-sizing: border-box;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+}
+
+.search-bar__input--big {
+  height: 70px;
+  padding-left: 62px;
+  font-size: 16px;
+
+  background: var(--search-icon-big);
+  background-size: 19px;
+}
+
+.search-bar__input--small {
+  height: 42px;
+  padding-left: 33px;
+  font-size: 14px;
+
+  background: var(--search-icon-small);
+  background-size: 11px;
+}
+
+.search-bar__input:hover,
+.search-bar__input--small:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+}
+
+.search-bar__input:focus {
+  font-weight: 800;
+  border-radius: 3px;
+  outline: none;
+}
+
+.search-bar__input--big:focus {
+  background: var(--search-icon-big),
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0, 25);
+}
+
+.search-bar__input--small:focus {
+  background: var(--search-icon-small),
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background-size: 11px;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0, 25);
+}
+
+.search-bar__input::placeholder {
+  font-family: inherit;
+  color: var(--font-color);
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.search-bar__input--small::placeholder {
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--font-color);
+  font-weight: 300;
+}

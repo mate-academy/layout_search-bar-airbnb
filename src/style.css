@@ -1,1 +1,125 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url('fonts/Avenir.ttc') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('fonts/Avenir-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* FONTS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-white: #fff;
+}
+
+body {
+  font-weight: 300;
+
+  padding: 20px 8px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.search-input {
+  display: flex;
+  gap: 17px;
+  padding: 26px;
+  height: 70px;
+
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  background: var(--color-white);
+
+  transition: 0.3s box-shadow;
+}
+
+.search-input::before {
+  content: '';
+  width: 19px;
+  height: 19px;
+  flex-shrink: 0;
+  background: url('images/Search.svg') center center/contain no-repeat;
+}
+
+.search-input:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search-input:has(:focus) {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search-input--small {
+  gap: 9px;
+  height: 42px;
+
+  border-radius: 3px;
+  padding: 13px;
+}
+
+.search-input--small::before {
+  width: 11px;
+  height: 11px;
+}
+
+.search-input--small:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.search-input--small:has(:focus) {
+  box-shadow: none;
+}
+
+.search-input__item {
+  flex-grow: 1;
+
+  font-family: Avenir, cursive;
+  font-size: 16px;
+  color: #3d4e61;
+  font-weight: 300;
+
+  outline: none;
+  border: none;
+  background: transparent;
+
+  transition: 0.3s font-weight;
+}
+
+.search-input__item::placeholder {
+  opacity: 1;
+  color: #3d4e61;
+}
+
+.search-input__item:focus {
+  font-weight: 900;
+}
+
+.search-input__item--small {
+  font-size: 14px;
+}

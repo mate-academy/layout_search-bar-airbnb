@@ -1,1 +1,91 @@
 /* add styles here */
+
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Book.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Heavy.ttf);
+  font-weight: bold;
+}
+
+.input--big input {
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+  height: 70px;
+  margin: 0;
+  margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  line-height: 22px;
+  padding: 0;
+  padding-left: 62px;
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+  color: #3d4e61;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 26px 25px;
+  background-size: 19px 19px;
+}
+
+.input--big:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+}
+
+.input--small input {
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 12px 14px;
+  background-size: 11px 11px;
+  width: 100%;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+  box-sizing: border-box;
+  display: block;
+  line-height: 20px;
+  height: 42px;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  padding-left: 33px;
+  font-family: Avenir, sans-serif;
+  font-size: 14px;
+  color: #3d4e61;
+}
+
+.input--small:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+}
+
+.input--big input:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+  box-shadow: 0 4px 4px 0 #00000040;
+  outline: inherit;
+  font-weight: bold;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 26px 25px;
+  background-size: 19px 19px;
+}
+
+.input--small input:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+  box-shadow: 0 4px 4px 0 #00000040;
+  outline: inherit;
+  font-weight: bold;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 13px 15px;
+  background-size: 11px 11px;
+}

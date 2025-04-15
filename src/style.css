@@ -1,1 +1,126 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+}
+
+body {
+  margin: 0;
+}
+
+.search--big {
+  margin: 20px auto;
+}
+
+.search__bar--big {
+  max-height: 70px;
+  position: relative;
+}
+
+.search__input {
+  width: 100%;
+
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  background-color: #fff;
+}
+
+.search__bar--big::before {
+  position: absolute;
+  left: 26px;
+  top: 25px;
+  content: '';
+  display: block;
+  height: 19px;
+  width: 19px;
+  background-image: url('./images/Search.svg');
+}
+
+.search__input::placeholder {
+  color: #3d4e61;
+  font-weight: 400;
+}
+
+.search__input--big {
+  height: 70px;
+  padding-left: 62px;
+}
+
+.search__input--big::placeholder {
+  font-size: 16px;
+}
+
+.search__bar--big:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search__input--big:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.search__bar--big:focus {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search__input--big:focus {
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.search__input:focus::placeholder {
+  font-weight: 900;
+}
+
+.search__bar--small {
+  height: 42px;
+  position: relative;
+}
+
+.search__bar--small::before {
+  position: absolute;
+  left: 13px;
+  top: 16px;
+  content: '';
+  display: block;
+  height: 11px;
+  width: 11px;
+  background-size: 11px;
+  background-image: url('./images/Search.svg');
+}
+
+.search__input--small::placeholder {
+  font-size: 14px;
+}
+
+.search__input--small {
+  height: 42px;
+  padding-left: 33px;
+}
+
+.search__input--small:hover {
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.search__input--small:focus {
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}

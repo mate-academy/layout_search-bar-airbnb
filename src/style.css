@@ -13,13 +13,13 @@
 }
 
 body {
-  margin: 0;
-}
-
-.search-form {
   display: flex;
   flex-direction: column;
-  padding: 20px 8px 8px;
+  margin: 20px 8px 0;
+}
+
+.search-form:first-child {
+  margin-bottom: 20px;
 }
 
 .search-form__input {
@@ -36,6 +36,7 @@ body {
   border-radius: 4px;
   box-shadow: 0 1 8 0 #3d4e611a;
   color: #3d4e61;
+  width: 100%;
 }
 
 .search-form__input::placeholder {
@@ -47,7 +48,6 @@ body {
   background-size: 19px;
   height: 70px;
   padding-left: 62px;
-  margin-bottom: 20px;
   font-size: 16px;
 }
 

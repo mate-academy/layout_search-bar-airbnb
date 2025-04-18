@@ -1,1 +1,66 @@
-/* add styles here */
+@font-face {
+  font-family: 'Avenir Book';
+  src: url('../src/fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  padding: 0;
+  background-color: #f7f7f7;
+  font-family: 'Avenir Book', sans-serif;
+  font-weight: 300;
+}
+
+.input-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 1);
+  width: 100%;
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 4px;
+}
+
+.input-box img {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: 26px;
+  top: 26px;
+  color: rgba(104, 124, 148, 1);
+  border: 1px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 26px 25px 15px 51px;
+  border: none;
+  letter-spacing: 0%;
+  line-height: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'Avenir Book', sans-serif;
+  color: rgba(61, 78, 97, 1);
+}
+
+.input-box:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+  height: 70px;
+}
+
+.input-box input:focus {
+  font-weight: bold;
+}
+
+.input-box[data-qa='big'] {
+  height: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.input-box[data-qa='small'] {
+  height: 50px;
+}

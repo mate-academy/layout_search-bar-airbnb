@@ -13,20 +13,42 @@
     <title>Document</title>
     <link
       rel="stylesheet"
-      href="style.css"
+      href="./style.css"
     />
   </head>
-  <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+  <body>
+    <div
+      class="input-box"
+      data-qa="big"
+    >
+      <img
+        src="/src/images/Search.svg"
+        alt="Icon"
+      />
+
+      <input
+        type="text"
+        placeholder="Try “Los Angeles”"
+        data-qa="keypress"
+        required
+      />
+    </div>
+
+    <div
+      class="input-box"
+      data-qa="small"
+    >
+      <img
+        src="/src/images/Search.svg"
+        alt="Icon"
+      />
+
+      <input
+        type="text"
+        placeholder="Try “Los Angeles”"
+        required
+      />
+    </div>
   </body>
 </html>

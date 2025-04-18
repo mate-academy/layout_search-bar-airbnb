@@ -5,45 +5,51 @@
   font-style: normal;
 }
 
-body {
-  margin: 0;
-  padding: 20px;
-  padding: 0;
-  background-color: #f7f7f7;
+html {
   font-family: 'Avenir Book', sans-serif;
   font-weight: 300;
 }
 
-.input-box {
-  position: relative;
-  display: flex;
-  align-items: center;
-  color: rgba(255, 255, 255, 1);
-  width: 100%;
-  border: 1px solid rgba(225, 231, 237, 1);
-  border-radius: 4px;
+body {
+  margin: 8px;
+  padding: 0;
 }
 
 .input-box img {
   position: absolute;
-  width: 19px;
-  height: 19px;
-  left: 26px;
-  top: 26px;
   color: rgba(104, 124, 148, 1);
   border: 1px;
 }
 
+.input-box-big img {
+  width: 19px;
+  height: 19px;
+  left: 26px;
+  top: 26px;
+}
+
+.input-box-small img {
+  width: 11px;
+  height: 11px;
+  left: 13px;
+  top: 15px;
+}
+
 .input-box input {
   width: 100%;
-  padding: 26px 25px 15px 51px;
   border: none;
-  letter-spacing: 0%;
-  line-height: 100%;
   font-weight: 400;
   font-size: 16px;
   font-family: 'Avenir Book', sans-serif;
   color: rgba(61, 78, 97, 1);
+}
+
+.input-box-big input {
+  padding: 26px 25px 15px 51px;
+}
+
+.input-box-small input {
+  padding: 13px 15px 15px 51px;
 }
 
 .input-box:hover {
@@ -52,7 +58,7 @@ body {
 }
 
 .input-box input:focus {
-  font-weight: bold;
+  outline: none;
 }
 
 .input-box[data-qa='big'] {

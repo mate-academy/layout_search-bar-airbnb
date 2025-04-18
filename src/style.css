@@ -5,6 +5,10 @@
   font-style: normal;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: 'Avenir Book', sans-serif;
   font-weight: 300;
@@ -18,21 +22,26 @@ body {
 .input-box img {
   position: absolute;
   color: rgba(104, 124, 148, 1);
-  border: 1px;
 }
 
 .input-box-big img {
+  position: absolute;
   width: 19px;
   height: 19px;
-  left: 26px;
+  left: 25px;
   top: 26px;
 }
 
 .input-box-small img {
+  position: absolute;
   width: 11px;
   height: 11px;
   left: 13px;
   top: 15px;
+}
+
+.input-box {
+  position: relative;
 }
 
 .input-box input {
@@ -49,12 +58,13 @@ body {
 }
 
 .input-box-small input {
-  padding: 13px 15px 15px 51px;
+  padding: 13px 15px 16px 51px;
 }
 
 .input-box:hover {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
-  height: 70px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  border: 1px;
 }
 
 .input-box input:focus {
@@ -68,5 +78,28 @@ body {
 }
 
 .input-box[data-qa='small'] {
-  height: 50px;
+  height: 70px;
+}
+
+.search-form__input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px #3d4e611a;
+  outline: none;
+  color: #3d4e61;
+  font-family: 'Avenir Book', sans-serif;
+  font-weight: 300;
+}
+
+input::placeholder {
+  width: 129px;
+  height: 22px;
+  top: 25px;
+  left: 62px;
+  color: rgba(61, 78, 97, 1);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Avenir Book', sans-serif;
 }

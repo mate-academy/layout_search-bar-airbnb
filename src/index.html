@@ -15,44 +15,30 @@
       rel="stylesheet"
       href="style.css"
     />
-
-    <link
-      href="https://fonts.cdnfonts.com/css/avenir"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <div
-      class="big-form search-form"
-      data-qa="keypress"
+    <form
+      class="search-bar__form search-bar__form--big"
+      data-qa="big"
     >
-      <img
-        src="src/images/Search.svg"
-        alt="Search Icon"
-        class="img__big"
-      />
-
       <input
-        class="search-bar__big search-bar"
+        class="search-bar__input search-bar__input--big"
         type="text"
-        data-qa="big"
+        data-qa="keypress"
         placeholder="Try “Los Angeles“"
       />
-    </div>
+    </form>
 
-    <div class="small-form search-form">
-      <img
-        src="src/images/Search.svg"
-        alt="Search Icon"
-        class="img__small"
-      />
-
+    <form
+      class="search-bar__form search-bar__form--small"
+      data-qa="small"
+    >
       <input
-        class="search-bar__small search-bar"
+        class="search-bar__input search-bar__input--small"
         type="text"
-        data-qa="small"
+        data-qa="keypress"
         placeholder="Try “Los Angeles“"
       />
-    </div>
+    </form>
   </body>
 </html>

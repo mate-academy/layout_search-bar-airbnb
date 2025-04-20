@@ -1,89 +1,86 @@
-/* stylelint-disable length-zero-no-unit */
+@font-face {
+  font-family: Aveil;
+  src: url('./fonts//Avenir-Book.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
 .page {
   box-sizing: border-box;
-  margin: 1px 81px 50px 48px;
+  margin: 0 81px 0 48px;
   display: flex;
   flex-direction: column;
   color: #3d4e61;
+  font-family: Aveil, sans-serif;
+  font-weight: 300;
 }
 
-
-
-.page__content_input{
+.page__content-input {
   display: flex;
   margin-top: 20px;
+  align-items: center;
 }
 
-
-
-.page__searchImg__large,
-.page__searchImg__small {
+.page__searchImg--big,
+.page__searchImg--small {
   width: 19px;
   height: 19px;
   position: absolute;
-  top: 50px;
   padding-left: 26px;
 }
 
-.page__input__large,
-.page__input__small {
+.page__input--big {
+  font-size: 16px;
+}
+
+.page__input--big,
+.page__input--small {
   height: 70px;
   width: 100%;
   padding-left: 62px;
   border: 1px solid #e1e7ed;
   border-radius: 4px;
-  /* stylelint-disable-next-line CssSyntaxError */
-  box-shadow: 0px 1px 8px 0px #3d4e611a;
-
-  /* font-family: Avenir; */
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+  font-family: Aveil, Nunito, sans-serif;
   font-weight: 400;
   line-height: 100%;
   letter-spacing: 0%;
 }
 
-
-.page__input__large::placeholder,
-.page__input__small::placeholder {
+.page__input--big::placeholder,
+.page__input--small::placeholder {
   color: #3d4e61;
-
 }
 
-.page__input__large:hover,
-.page__input__small:hover {
-  /* stylelint-disable-next-line CssSyntaxError */
-  box-shadow: 0px 3px 8px 0px #3d4e6133;
+.page__input--big:hover,
+.page__input--small:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
 }
 
-.page__input__large:focus,
-.page__input__small:focus {
+.page__input--big:focus,
+.page__input--small:focus {
   border: 1px solid #e1e7ed;
   outline: none;
   font-weight: 400;
-  font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
   background: linear-gradient(180deg, #ffff 0%, #f6f6f7 100%);
-
+  font-family: Aveil, Nunito, sans-serif;
 }
 
-.page__searchImg__small {
+.page__searchImg--small {
   width: 11px;
   height: 11px;
-  top: 135px;
-
 }
 
-.page__input__small {
+.page__input--small {
   height: 42px;
   padding-left: 62px;
   border-radius: 4px;
   font-size: 14px;
-
 }
 
-.page__input__small:focus {
+.page__input--small:focus {
   font-weight: 900;
   font-size: 14px;
 }
-
-

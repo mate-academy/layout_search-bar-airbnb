@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width, user-scalable=no,
+      initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta
       http-equiv="X-UA-Compatible"
@@ -15,33 +16,53 @@
       rel="stylesheet"
       href="style.css"
     />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:
+      ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="page">
-    <div class="page__content_input">
+    <form class="page__content-input" data-qa="big">
       <img
-        class="page__searchImg__large"
+        class="page__searchImg--big"
         src="./images/Search.svg"
         alt="searcimg"
       />
+
       <input
-        class="page__input__large"
+        class="page__input--big"
+        type="text"
+        data-qa="keypress"
+        placeholder="Try “Los Angeles"
+      />
+    </form>
+
+    <form class="page__content-input" data-qa="small">
+      <img
+        class="page__searchImg--small"
+        src="./images/Search.svg"
+        alt="searcimg"
+      />
+
+      <input
+        class="page__input--small"
         type="text"
         data-qa="keypress"
         placeholder="Try “Los Angeles“"
       />
-    </div>
-    <div class="page__content_input">
-      <img
-        class="page__searchImg__small"
-        src="./images/Search.svg"
-        alt="searcimg"
-      />
-      <input
-        class="page__input__small"
-        type="text"
-        data-qa="keypress"
-        placeholder="Try “Los Angeles“"
-      />
-    </div>
+    </form>
   </body>
 </html>

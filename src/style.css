@@ -19,10 +19,11 @@
 .search_biggest,
 .search_smaller {
   width: 100%;
-  display: inline;
+  display: flex;
   position: relative;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
 }
 
 .search_input {
@@ -31,7 +32,6 @@
   border-radius: 4px;
   font-family: Avenir, sans-serif;
   font-weight: 300;
-  margin-top: 20px;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -50,7 +50,7 @@
   box-shadow: 0 1px 8px 0 #3d4e611a;
 }
 
-.isearch_input::placeholder {
+.search_input::placeholder {
   font-weight: 300;
 }
 

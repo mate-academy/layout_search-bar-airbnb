@@ -7,12 +7,13 @@
 
 .page {
   box-sizing: border-box;
-  margin: 0 0 0 48px;
   display: flex;
   flex-direction: column;
   color: #3d4e61;
   font-family: Aveil, sans-serif;
   font-weight: 300;
+  margin: 0;
+  padding-left: 8px;
 }
 
 .page__content-input {
@@ -35,16 +36,23 @@
 
 .page__input--big,
 .page__input--small {
-  height: 70px;
+  height: 68px;
   width: 100%;
-  padding-left: 62px;
+  padding: 0 0 0 62px;
   border: 1px solid #e1e7ed;
-  border-radius: 4px;
   box-shadow: 0 1px 8px 0 #3d4e611a;
+  border-radius: 4px;
   font-family: Aveil, Nunito, sans-serif;
   font-weight: 400;
   line-height: 100%;
   letter-spacing: 0%;
+}
+
+.page__input--small {
+  height: 41px;
+  padding: 0 0 0 33px;
+  border-radius: 4px;
+  font-size: 14px;
 }
 
 .page__input--big::placeholder,
@@ -54,6 +62,7 @@
 
 .page__input--big:hover,
 .page__input--small:hover {
+  border: 1px solid #e1e7ed;
   box-shadow: 0 3px 8px 0 #3d4e6133;
 }
 
@@ -69,15 +78,9 @@
 }
 
 .page__searchImg--small {
+  padding-left: 13px;
   width: 11px;
   height: 11px;
-}
-
-.page__input--small {
-  height: 42px;
-  padding-left: 62px;
-  border-radius: 4px;
-  font-size: 14px;
 }
 
 .page__input--small:focus {

@@ -1,1 +1,96 @@
 /* add styles here */
+html {
+  margin: 0;
+}
+
+@font-face {
+  font-family: Avenir-Book;
+  src: url(./fonts/Avenir-Book.ttf) format('truetype');
+  font-family: 300;
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: Avenir-Heavy;
+  src: url(./fonts/Avenir-Heavy.ttf) format('truetype');
+  font-family: 300;
+  font-size: 16px;
+}
+
+.bars {
+  display: flex;
+  flex-direction: column;
+}
+
+.Big_search_bar {
+  font-family: Avenir, sans-serif;
+  width: 100vw;
+  height: 70px;
+  margin-bottom: 20px;
+  margin-top: 12px;
+  padding-left: 62px;
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 26px, 25px;
+  background-size: 19px 19px;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 1px solid #dcdcdc;
+
+  /* box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1); */
+}
+
+.Big_search_bar:hover {
+  font-family: Avenir, sans-serif;
+  cursor: text;
+  box-shadow: 0 2px 2px 0 #00000040;
+}
+
+.Big_search_bar:focus {
+  font-family: Avenir, sans-serif;
+  text-shadow: 2px 1px #3d4e61;
+  color: #687c94;
+  font-weight: 300;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+input::placeholder {
+  font-family: Avenir-Book, sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+
+  /* color: var(--placeholder-color); */
+}
+
+.Small_search_bar {
+  width: 100vw;
+  padding: 10px;
+  height: 42px;
+  padding-left: 33px;
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 11px, 12px;
+  background-size: 11px 11px;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+  border: 1px solid #dcdcdc;
+
+  /* box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1); */
+}
+
+.Small_search_bar:hover {
+  font-family: Avenir, sans-serif;
+  cursor: text;
+  box-shadow: 0 4px 4px 0 #00000040;
+}
+
+.Small_search_bar:focus {
+  font-family: Avenir, sans-serif;
+  text-shadow: 1px 1px 2px #3d4e61;
+  color: #687c94;
+  font-weight: 300;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}

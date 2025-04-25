@@ -19,27 +19,20 @@
   </head>
   <!-- #endregion -->
   <body>
-    <form
-      class="search"
-      action="/search"
-      method="get"
-    >
-      <div class="search__bar search__bar--big">
-        <input
-          type="text"
-          data-qa="big"
-          placeholder="Try “Los Angeles“"
-          class="search__input"
-        />
-      </div>
-      <div class="search__bar search__bar--small">
-        <input
-          type="text"
-          data-qa="small"
-          placeholder="Try “Los Angeles“"
-          class="search__input"
-        />
-      </div>
-    </form>
+    <div class="search-container">
+      <input
+        type="text"
+        data-qa="big"
+        class="search-bar big"
+        placeholder="Try “Los Angeles“"
+      />
+
+      <input
+        type="text"
+        data-qa="small"
+        class="search-bar small"
+        placeholder="Try “Los Angeles“"
+      />
+    </div>
   </body>
 </html>

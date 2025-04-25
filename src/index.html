@@ -19,21 +19,31 @@
   </head>
   <!-- #endregion -->
   <body>
-    <div class="search-container">
-      <input
-        type="text"
-        data-qa="big"
-        data-name="keypress"
-        class="search-bar big"
-        placeholder="Try “Los Angeles“"
-      />
-
-      <input
-        type="text"
-        data-qa="small"
-        class="search-bar small"
-        placeholder="Try “Los Angeles“"
-      />
-    </div>
+    <form
+      class="search-form search-form_big"
+      data-qa="big"
+    >
+      <label class="search-form__label search-form__label_big">
+        <input
+          data-qa="keypress"
+          class="search-form__input search-form__input_big"
+          type="text"
+          placeholder="Try “Los Angeles“"
+        />
+      </label>
+    </form>
+    <form
+      class="search-form search-form_small"
+      data-qa="small"
+    >
+      <label class="search-form__label search-form__label_small">
+        <input
+          data-qa="hover"
+          class="search-form__input search-form__input_small"
+          type="text"
+          placeholder="Try “Los Angeles“"
+        />
+      </label>
+    </form>
   </body>
 </html>

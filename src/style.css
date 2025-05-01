@@ -1,1 +1,62 @@
-/* add styles here */
+@font-face {
+  font-family: CustomFont;
+  src: url('YourFontFile.woff2') format('woff2'); /* substitua pelo caminho correto */
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  font-family: CustomFont, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  background: #fff;
+}
+
+.container {
+  padding: 20px;
+}
+
+.search-form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e1e5ea;
+  border-radius: 8px;
+  padding: 12px 16px;
+  background-color: #fff;
+  transition: border-color 0.2s;
+}
+
+.search-form:hover {
+  border-color: #a0aec0;
+}
+
+.search-form:focus-within {
+  border-color: #3182ce;
+}
+
+.search-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 300;
+  color: #1a202c;
+}
+
+.icon {
+  margin-right: 12px;
+  width: 20px;
+  height: 20px;
+  background-image: url(images/Search.svg);
+  background-size: contain;
+}
+
+.spacer {
+  height: 20px;
+}
+
+.big {
+  margin-top: 20px;
+}

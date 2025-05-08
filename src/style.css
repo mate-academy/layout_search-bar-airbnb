@@ -1,1 +1,126 @@
-/* add styles here */
+html {
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 8px;
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 300;
+  font-style: normal;
+  src: url('./fonts/Avenir-Book.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 600;
+  font-style: normal;
+  src: url('./fonts/Avenir-Heavy.ttf') format('truetype');
+}
+
+.search__icon--big {
+  width: 21px;
+  height: 18px;
+  margin-top: 25px;
+  margin-bottom: 26px;
+  margin-left: 25px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.search__icon--small {
+  width: 11px;
+  height: 11px;
+  margin-top: 15px;
+  margin-bottom: 16px;
+  margin-left: 13px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.search__input {
+  height: 18px;
+  width: 100%;
+  justify-content: center;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  color: #3d4e61;
+  font-family: inherit;
+  font-weight: 300;
+  outline: none;
+}
+
+.search__input--big {
+  font-size: 16px;
+  font-weight: 300;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 62px;
+}
+
+.search__input--small {
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 33px;
+}
+
+.search__input::placeholder {
+  color: inherit;
+  font-weight: 300;
+}
+
+.search__input--small::placeholder {
+  font-size: 14px;
+}
+
+.search__input--big:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-color: rgb(225, 231, 237);
+}
+
+.search__input--small:focus {
+  font-weight: 900;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+}
+
+.search--big {
+  height: 70px;
+}
+
+.search--big:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.search--big:focus {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+
+.search--small {
+  height: 42px;
+}
+
+.search--small:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.search--small:focus {
+  box-shadow: none;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+}

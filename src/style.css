@@ -1,1 +1,82 @@
 /* add styles here */
+
+body {
+  margin: 0;
+  padding: 20px 9px;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+}
+
+.search:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+}
+
+.search:focus-within {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  font-family: Avenir-Book, sans-serif;
+  line-height: 100%;
+  letter-spacing: 0%;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 4px 0 #00000040;
+}
+
+input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+input:focus {
+  font-weight: 600;
+}
+
+form img {
+  margin: 0 15px;
+}
+
+.big {
+  margin-top: 20px;
+  height: 70px;
+  font-size: 16px;
+}
+
+.search--big-glass {
+  width: 19px;
+  height: 19px;
+}
+
+.search--big {
+  height: 22px;
+  width: 129px;
+}
+
+.small {
+  height: 42px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.search--small-glass {
+  width: 11px;
+  height: 11px;
+}
+
+.search--small {
+  height: 19px;
+  width: 158px;
+}

@@ -6,27 +6,28 @@
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="ie=edge"
-    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="style.css"
-    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <form class="search search--big" data-qa="big">
+      <!-- prettier-ignore -->
+      <input
+        type="text"
+        class="search__input search__input--big"
+        data-qa="keypress"
+        placeholder="Try &quot;Los Angeles&quot;"
+      />
+    </form>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <form class="search search--small" data-qa="small">
+      <!-- prettier-ignore -->
+      <input
+        type="text"
+        class="search__input search__input--small"
+        placeholder="Try &quot;Los Angeles&quot;"
+      />
+    </form>
   </body>
 </html>

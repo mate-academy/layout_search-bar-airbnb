@@ -1,1 +1,97 @@
-/* add styles here */
+@font-face {
+  font-family: 'Avenir Book';
+  src: url('../src/fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Avenir Book', sans-serif;
+  font-weight: 300;
+}
+
+body {
+  margin: 8px;
+  padding: 0;
+  background-color: #fff;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e1e7ed; /* додана рамка */
+  border-radius: 4px;
+  background-color: white;
+  transition:
+    box-shadow 0.3s,
+    border-color 0.3s;
+}
+
+.input-box:hover {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  border-color: #b0bfcf; /* можна трошки затемнити рамку при ховері */
+}
+
+.input-box img {
+  flex-shrink: 0;
+  color: rgba(104, 124, 148, 1);
+}
+
+.input-box[data-qa='big'] img {
+  width: 19px;
+  height: 19px;
+  margin-left: 25px;
+  margin-right: 18px;
+}
+
+.input-box[data-qa='small'] img {
+  width: 11px;
+  height: 11px;
+  margin-left: 13px;
+  margin-right: 10px;
+}
+
+.input-box input {
+  width: 100%;
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'Avenir Book', sans-serif;
+  color: rgba(61, 78, 97, 1);
+  background-color: transparent;
+  outline: none;
+}
+
+.input-box[data-qa='big'] {
+  height: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.input-box[data-qa='small'] {
+  height: 42px;
+}
+
+.input-box[data-qa='big'] input {
+  padding-left: 0; /* padding вже не потрібен, бо ми додали відступи через margin для img */
+  font-size: 16px;
+}
+
+.input-box[data-qa='small'] input {
+  padding-left: 0;
+  font-size: 14px;
+}
+
+input::placeholder {
+  color: rgba(61, 78, 97, 1);
+  font-weight: 400;
+  font-family: 'Avenir Book', sans-serif;
+}
+
+.input-box-small input::placeholder {
+  font-size: 14px;
+}

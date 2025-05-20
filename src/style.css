@@ -17,23 +17,30 @@ html {
 body {
   margin: 8px;
   padding: 0;
-  background-color: #fff;
 }
 
 .input-box {
   display: flex;
   align-items: center;
-  border: 1px solid #e1e7ed; /* додана рамка */
+  border: 1px solid #e1e7ed;
   border-radius: 4px;
-  background-color: white;
-  transition:
-    box-shadow 0.3s,
-    border-color 0.3s;
+  box-shadow: 0 1px 8px #3d4e611a;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
 }
 
 .input-box:hover {
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
-  border-color: #b0bfcf; /* можна трошки затемнити рамку при ховері */
+}
+
+.input-box[data-qa='big'] {
+  height: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.input-box[data-qa='small'] {
+  height: 42px;
 }
 
 .input-box img {
@@ -51,47 +58,40 @@ body {
 .input-box[data-qa='small'] img {
   width: 11px;
   height: 11px;
-  margin-left: 13px;
-  margin-right: 10px;
+  margin: 15px 9px 16px 13px; /* top right bottom left */
 }
 
 .input-box input {
-  width: 100%;
   border: none;
   font-weight: 400;
   font-size: 16px;
   font-family: 'Avenir Book', sans-serif;
   color: rgba(61, 78, 97, 1);
-  background-color: transparent;
+  width: 100%;
   outline: none;
-}
-
-.input-box[data-qa='big'] {
-  height: 70px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.input-box[data-qa='small'] {
-  height: 42px;
+  background: transparent;
+  padding-left: 0;
 }
 
 .input-box[data-qa='big'] input {
-  padding-left: 0; /* padding вже не потрібен, бо ми додали відступи через margin для img */
   font-size: 16px;
+  height: 100%;
 }
 
 .input-box[data-qa='small'] input {
-  padding-left: 0;
   font-size: 14px;
+  height: 100%;
 }
 
-input::placeholder {
+.input-box[data-qa='big'] input::placeholder,
+.input-box[data-qa='small'] input::placeholder {
   color: rgba(61, 78, 97, 1);
-  font-weight: 400;
   font-family: 'Avenir Book', sans-serif;
+  font-weight: 400;
 }
 
-.input-box-small input::placeholder {
+.input-box[data-qa='small'] input::placeholder {
   font-size: 14px;
 }
+
+

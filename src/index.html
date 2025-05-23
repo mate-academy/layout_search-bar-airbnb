@@ -13,20 +13,88 @@
     <title>Document</title>
     <link
       rel="stylesheet"
-      href="style.css"
+      href="/src/style.css"
     />
   </head>
-  <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+  <body>
+    <form
+      action="/"
+      method="get"
+      data-qa="big"
+      class="search-form search-form--big"
+    >
+      <div
+        class="input-box input-box-big"
+        data-qa="big"
+      >
+        <img
+          src="/src/images/Search.svg"
+          alt="Icon"
+        />
+        <input
+          type="text"
+          placeholder="Try “Los Angeles”"
+          data-qa="keypress"
+          class="search-form__input"
+          required
+        />
+      </div>
+      <div
+        class="input-box input-box-small"
+        data-qa="small"
+      >
+        <img
+          src="/src/images/Search.svg"
+          alt="Icon"
+        />
+        <input
+          type="text"
+          placeholder="Try “Los Angeles”"
+          class="search-form__input"
+          required
+        />
+      </div>
+    </form>
   </body>
 </html>
+
+<!--     <form
+      action="/"
+      method="get"
+      data-qa="big"
+      class="search-form search-form--big"
+    >
+    <div
+      class="input-box input-box-big"
+      data-qa="big"
+    >
+      <img
+        src="/src/images/Search.svg"
+        alt="Icon"
+      />
+      <input
+        type="text"
+        placeholder="Try “Los Angeles”"
+        data-qa="keypress"
+        class="search-form__input"
+        required
+      />
+    </div>
+    <div
+      class="input-box input-box-small"
+      data-qa="small"
+    >
+      <img
+        src="/src/images/Search.svg"
+        alt="Icon"
+      />
+      <input
+        type="text"
+        placeholder="Try “Los Angeles”"
+        class="search-form__input"
+        required
+      />
+    </div>
+    </form>
+ -->

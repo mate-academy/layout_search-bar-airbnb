@@ -14,20 +14,24 @@
   font-style: normal;
 }
 
-html {
-  font-family: Avenir, sans-serif;
-  font-weight: 300;
+.html {
   margin: 0;
   padding: 0;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .search_bar {
   width: 100vw;
   display: block;
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+  box-sizing: border-box;
+}
+
+.search_bar::placeholder {
+  color: #3d4e61;
 }
 
 .search_wrap_for_images_large {
@@ -96,13 +100,6 @@ html {
   font-size: 14px;
 }
 
-input {
-  font-family: Avenir, sans-serif;
-  border: 1px solid #e1e7ed;
-  border-radius: 4px;
-  box-shadow: 0 1px 8px 0 #3d4e611a;
-}
-
 .search_bar:hover {
   box-shadow: 0 4px 4px 0 #00000040;
 }
@@ -112,4 +109,3 @@ input {
   outline: none;
   font-weight: 700;
 }
-

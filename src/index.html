@@ -19,22 +19,25 @@
   </head>
   <!-- #endregion -->
   <body>
-    <div class="search-bar">
+    <div class="search-bars">
 
-      <search class="search-bar search-bar__big ">
-        <input
-            data-qa="big keypress"
-            type="text"
+      <form class="search-bar search-bar--big" data-qa="big">
+        <div class="search-bar__img"></div>
+        <div class="search-bar__text-field">
+          <input data-qa="keypress" type="text"
             placeholder="Try “Los Angeles“"/>
-      </search>
+        </div>
+      </form>
 
-      <search class="search-bar search-bar__small">
-        <input
-          data-qa="small"
-          type="text"
-          placeholder="Try “Los Angeles“"/>
-      </search>
+      <form class="search-bar search-bar--small" data-qa="small">
+        <div class="search-bar__img"></div>
+        <div class="search-bar__text-field">
+          <input type="text"
+            placeholder="Try “Los Angeles“"/>
+        </div>
+      </form>
 
     </div>
   </body>
 </html>
+

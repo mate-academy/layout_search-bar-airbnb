@@ -1,12 +1,17 @@
 @font-face {
   font-family: Avenir;
-  src: url('fonts/Avenir-Book.ttf') format('truetype');
-  font-weight: 400;
-  font-display: swap;
+  src: url('./fonts/Avenir-Book.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Heavy.ttf') format('truetype');
+  font-weight: 900;
 }
 
 * {
   box-sizing: border-box;
+  font-family: Avenir, sans-serif;
 }
 
 body {
@@ -49,6 +54,7 @@ form {
 }
 
 .search__input {
+  font-family: Avenir, sans-serif;
   font-size: inherit;
   line-height: 100%;
   color: #3d4e61;

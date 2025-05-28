@@ -1,1 +1,50 @@
-/* add styles here */
+/* @font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir.ttc);
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf);
+} */
+
+html {
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+  color: #3D4E61;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.search__input {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #E1E7ED;
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 26px center;
+  padding-left: 62px;
+}
+
+.search--small {
+  font-family: inherit;
+  height: 42px;
+  max-width: 427px;
+}
+
+.search--large {
+  margin: 20px 0;
+  height: 70px;
+  max-width: 900px;
+}

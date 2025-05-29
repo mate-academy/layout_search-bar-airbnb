@@ -1,6 +1,9 @@
 <!-- #region head -->
 <!doctype html>
-<html lang="en">
+<html
+  lang="en"
+  class="page"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -14,17 +17,17 @@
     <title>Document</title>
     <link
       rel="stylesheet"
-      href="style.css"
+      href="../src/blocks/style.css"
     />
   </head>
   <!-- #endregion -->
-  <body>
+  <body class="body">
     <div class="search-bars">
       <form
         class="search-bar search-bar--big"
         data-qa="big"
       >
-        <div class="search-bar__img"></div>
+        <div class="search-bar__img--big"></div>
         <div class="search-bar__text-field">
           <input
             class="search-bar__input"
@@ -39,9 +42,10 @@
         class="search-bar search-bar--small"
         data-qa="small"
       >
-        <div class="search-bar__img"></div>
+        <div class="search-bar__img--small"></div>
         <div class="search-bar__text-field">
-          <input class="search-bar__input"
+          <input
+            class="search-bar__input"
             type="text"
             placeholder="Try “Los Angeles“"
           />

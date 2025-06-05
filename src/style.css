@@ -1,5 +1,4 @@
 /* add styles here */
-
 @font-face {
   font-family: Avenir;
   src: url(./fonts/Avenir-Heavy.ttf);
@@ -8,24 +7,26 @@
 input {
   border: 1px solid #e1e7ed;
   width: 100%;
-  background-image: url(./images/Search.svg);
   font-family: Avenir, sans-serif;
+  display: flex;
+  text-align: left;
+  font-weight: 300;
   margin-top: 20px;
   margin-bottom: 20px;
   left: 48px;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .big {
-  font-weight: 300;
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
+  background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
-  background-size: 19, 19;
-  display: flex;
-  text-align: left;
+  background-size: 19px 19px;
   padding-left: 62px;
-  background-position: 26, 25;
+  background-position: 26px 25px;
   height: 70px;
 }
 
@@ -38,15 +39,11 @@ input {
 }
 
 .small {
-  font-family: Avenir, sans-serif;
-  font-weight: 300;
   background-image: url(./images/Search.svg);
-  background-size: 11, 11;
   background-repeat: no-repeat;
-  display: flex;
-  text-align: left;
+  background-size: 11px 11px;
   padding-left: 62px;
-  background-position: 13, 15;
+  background-position: 13px 15px;
   height: 42px;
 }
 

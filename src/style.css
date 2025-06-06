@@ -16,6 +16,7 @@ input {
   left: 48px;
   box-sizing: border-box;
   border-radius: 4px;
+  outline: none;
 }
 
 .big {
@@ -28,6 +29,7 @@ input {
   padding-left: 62px;
   background-position: 26px 25px;
   height: 70px;
+  box-shadow: 0 1px 8px #3d4e611a;
 }
 
 .big:focus {
@@ -38,13 +40,21 @@ input {
   box-shadow: 0 4px 4px 0 #00000040;
 }
 
+.big::placeholder,
+.small::placeholder {
+  color: #3d4e61;
+}
+
 .small {
   background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
   background-size: 11px 11px;
-  padding-left: 62px;
+  padding-left: 33px;
   background-position: 13px 15px;
   height: 42px;
+  box-shadow: 0 1px 8px #3d4e611a;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .small:focus {

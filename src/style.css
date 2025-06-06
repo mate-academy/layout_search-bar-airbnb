@@ -1,7 +1,12 @@
 /* add styles here */
 @font-face {
   font-family: Avenir;
-  src: url(fonts/Avenir.ttc);
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: Avenir-Heavy;
+  src: url(fonts/Avenir-Heavy.ttf);
 }
 
 * {
@@ -29,10 +34,19 @@
   color: #3d4e61;
   background: #fff;
   box-shadow: 0 1px 8px 0 #3d4e611a;
+  position: relative;
 }
 
 .search-bar__input ::placeholder {
   color: #3d4e61;
+}
+
+.search-bar__input--big {
+  border: none;
+  font-size: 16px;
+  height: 68px;
+  width: 100%;
+  margin-left: 60px;
 }
 
 .search-bar__input:hover {
@@ -46,12 +60,10 @@
   outline: none;
 }
 
-.search-bar__input--big {
-  border: none;
-  font-size: 16px;
-  height: 68px;
-  width: 100%;
-  margin-left: 60px;
+.search-bar__input--big:focus,
+.search-bar__input--small:focus {
+  outline: none;
+  font-weight: 900;
 }
 
 .search-bar__input--small {

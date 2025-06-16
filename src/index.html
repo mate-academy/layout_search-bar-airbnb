@@ -16,17 +16,28 @@
       href="style.css"
     />
   </head>
-  <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
-
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+  <body class="body">
+    <div class="body__wrapper">
+      <div class="search-bar search-bar--size-l">
+        <input
+          class="search-bar__input search-bar--size-l__input"
+          type="text"
+          data-qa="keypress"
+          placeholder="Try “Los Angeles“"
+          autocomplete="yes"
+          name="search-bar"
+        />
+      </div>
+      <div class="search-bar search-bar--size-s">
+        <input
+          class="search-bar__input search-bar--size-s__input"
+          type="text"
+          data-qa="hover"
+          placeholder="Try “Los Angeles“"
+          autocomplete="yes"
+          name="search-bar"
+        />
+      </div>
+    </div>
   </body>
 </html>

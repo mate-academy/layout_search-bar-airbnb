@@ -19,10 +19,13 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
+html {
   font-weight: 300;
   font-family: Avenir, sans-serif;
+}
+
+body {
+  margin: 0, 8px;
 }
 
 /* block search */
@@ -46,6 +49,8 @@ body {
 .search__input {
   width: 100%;
   font-size: 16px;
+  font-family: inherit;
+  font-weight: inherit;
   color: rgba(61, 78, 97, 1);
   border: 1px solid rgba(225, 231, 237, 1);
   border-radius: 4px;
@@ -62,14 +67,14 @@ body {
 }
 
 .search__input--big {
-  padding: 25px 0 26px 62px;
+  padding-left: 62px;
   height: 70px;
 }
 
 .search__input--small {
   font-size: 14px;
   height: 42px;
-  padding: 12px 0 11px 33px;
+  padding-left: 33px;
 
   background-size: 11px 11px;
   background-position: 13px center;

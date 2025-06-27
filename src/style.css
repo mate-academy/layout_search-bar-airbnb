@@ -1,1 +1,76 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url('fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.busca-form {
+  background-image: url('./images/Search.svg');
+  background-repeat: no-repeat;
+  background-position: 16px center;
+  font-size: 19px;
+  font-family: Avenir, Arial, sans-serif;
+  font-weight: 300;
+  color: black;
+  width: 100%;
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 4px;
+}
+
+/* #region busca-1 */
+.busca-form--big {
+  margin-top: 20px;
+  height: 70px;
+  line-height: 70px;
+  padding-left: 40px;
+  background-size: 19px;
+
+  transition:
+    box-shadow 0.2s,
+    border 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.busca-form--big:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.busca-form--big:focus-within {
+  outline: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* #endregion */
+
+/* #region busca-2 */
+.busca-form--small {
+  height: 42px;
+  line-height: 42px;
+  padding-left: 40px;
+  background-size: 11px;
+
+  transition:
+    box-shadow 0.2s,
+    border 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.busca-form--small:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.busca-form--small:focus-within {
+  outline: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* #endregion */

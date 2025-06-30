@@ -17,16 +17,28 @@
     />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <!-- prettier-ignore -->
+    <form class="search-bar search-bar--big"
+      data-qa="big">
+      <span class="search-bar__icon"></span>
+      <input
+        class="search-bar__input"
+        type="text"
+        data-qa="keypress"
+        placeholder="Try “Los Angeles“"
+      />
+    </form>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <!-- prettier-ignore -->
+    <form class="search-bar search-bar--small"
+      data-qa="small">
+      <span class="search-bar__icon"></span>
+      <input
+        class="search-bar__input"
+        type="text"
+        data-qa="hover"
+        placeholder="Try “Los Angeles“"
+      />
+    </form>
   </body>
 </html>

@@ -1,0 +1,59 @@
+@use '../utilites/variables' as *;
+
+input {
+  all: unset;
+  width: 100%;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: $search-bar__gap;
+  padding: $search-bar__padding;
+
+  font-family: $search-bar__font-family;
+  font-weight: $search-bar__font-weight;
+
+  &__big {
+    height: 70px;
+    padding-left: $search-bar__big--padding-left;
+    font-size: $search-bar__big--font-size;
+    background-position: $search-bar__background-position-big;
+    background-size: 19px 19px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    background-image: url($search-bar__background-image);
+    background-repeat: no-repeat;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 4px 4px 0 #00000040;
+    }
+
+    &:focus {
+      font-weight: 700;
+    }
+  }
+
+  &__small {
+    height: 42px;
+    padding-left: $search-bar__small--padding-left;
+    font-size: $search-bar__small--font-size;
+    background-position: $search-bar__background-position-small;
+    background-size: 11px 11px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    background-image: url($search-bar__background-image);
+    background-repeat: no-repeat;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 4px 4px 0 #00000040;
+    }
+
+    &:focus {
+      font-weight: 700;
+    }
+  }
+}

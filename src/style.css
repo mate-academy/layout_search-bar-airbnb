@@ -1,1 +1,68 @@
-/* add styles here */
+@font-face {
+  font-family: MyFont;
+  src: url('./fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-weight: 300;
+  font-family: MyFont, sans-serif;
+}
+
+/* === Blok === */
+.nav-bar {
+  width: 100%;
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* === Modyfikatory bloku === */
+.nav-bar--main {
+  height: 70px;
+}
+
+.nav-bar--side {
+  height: 42px;
+}
+
+/* === Elementy === */
+.nav-bar__input {
+  border: none;
+}
+
+/* === Modyfikatory elementów === */
+.nav-bar__input--main {
+  font-size: 16px;
+}
+
+.nav-bar:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.nav-bar:focus {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.nav-bar__input:focus {
+  border: none;
+  outline: none;
+}
+
+.nav-bar__img--main {
+  height: 19px;
+  width: 19px;
+  margin-right: 17px;
+  margin-left: 26px;
+}
+
+.nav-bar__img--side {
+  height: 11px;
+  width: 11px;
+  margin-right: 9px;
+  margin-left: 26px;
+}

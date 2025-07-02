@@ -1,1 +1,77 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/avenir.woff2') format('woff2'),
+       url('./fonts/avenir.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: Avenir, sans-serif;
+  margin: 0;
+  font-weight: 300;
+  padding-left: 48px;
+}
+
+.input__wrapper {
+  position: relative;
+}
+
+.input__icon {
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 19px 19px;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.big-icon {
+  width: 26px;
+  height: 25px;
+}
+
+.small-icon {
+  width: 13px;
+  height: 15px;
+  background-size: 11px 11px;
+}
+
+.input__search-bar {
+  border: 1px solid #E1E7ED;
+  padding-left: 62px;
+}
+
+.input__search-bar:hover {
+  box-shadow: 0px 3px 8px 0px #3D4E6133;
+
+}
+
+.input__search-bar:focus {
+  outline: none;
+  border: none;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F6F6F7 100%);
+
+}
+
+.input__big {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 70px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.input__small {
+  height: 42px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+}

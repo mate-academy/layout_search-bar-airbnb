@@ -52,6 +52,16 @@
   padding-left: 32px; /* Adjust as needed based on image size */
 }
 
+.search__input--small:focus {
+  background: url(images/search.svg) no-repeat 13px center, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background-size: 11px 11px, cover;
+}
+
+.search__input--big:focus {
+  background: url(images/search.svg) no-repeat 26px center, linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background-size: 19px 19px, cover;
+}
+
 .search__input:hover {
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.2);
 }
@@ -61,5 +71,4 @@
   box-shadow: 0 1px 8px rgba(61, 78, 97, 1);
   font-family: 'Avenir Heavy', Arial, sans-serif;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }

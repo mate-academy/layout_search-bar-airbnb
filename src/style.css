@@ -22,18 +22,6 @@
   padding: 0;
 }
 
-.search__input--big {
-  height: var(--search-big-height);
-  width: 100%;
-  line-height: var(--search-big-height);
-}
-
-.search__input--small {
-  height: var(--search-small-height);
-  width: 50%;
-  line-height: var(--search-small-height);
-}
-
 .search__input {
   box-sizing: border-box;
   font-family: 'Avenir Book', Arial, sans-serif;
@@ -41,10 +29,27 @@
   border: none;
   background-image: url(images/search.svg);
   background-repeat: no-repeat;
+  color: rgba(61, 78, 97, 1);
+}
+
+.search__input--big {
+  height: var(--search-big-height);
+  width: 100%;
+  line-height: var(--search-big-height);
+  background-size: 19px 19px;
+  font-size: 16px;
   background-position: 10px center;
   padding-left: 40px; /* Adjust as needed based on image size */
-  background-size: 19px 19px;
-  color: rgba(61, 78, 97, 1);
+}
+
+.search__input--small {
+  height: var(--search-small-height);
+  width: 50%;
+  line-height: var(--search-small-height);
+  background-size: 11px 11px;
+  font-size: 14px;
+  background-position: 10px center;
+  padding-left: 30px; /* Adjust as needed based on image size */
 }
 
 .search__input:hover {
@@ -56,5 +61,5 @@
   box-shadow: 0 1px 8px rgba(61, 78, 97, 1);
   font-family: 'Avenir Heavy', Arial, sans-serif;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: linear-gradient(180deg, #FFF 0%, #F6F6F7 100%);
+  background-color: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }

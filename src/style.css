@@ -1,24 +1,25 @@
 @font-face {
   font-family: Avenir;
-  src: url(fonts/Avenir-Book.ttf);
-  font-weight: 300;
+  src: url(./fonts/Avenir-Book.ttf);
 }
 
 @font-face {
   font-family: Avenir;
-  src: url(fonts/Avenir-Heavy.ttf);
+  src: url(./fonts/Avenir-Heavy.ttf);
 }
 
-html {
-  font-family: Avenir, sans-serif;
-}
-
-body {
+.form {
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .form__field {
-  width: 100%;
+  margin-top: 12px;
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+  line-height: 100%;
+  letter-spacing: 0%;
   color: #3d4e61;
   border-radius: 4px;
   border: 1px solid #e1e7ed;
@@ -26,7 +27,6 @@ body {
 
 .form__field--big {
   line-height: 66px;
-  margin-top: 20px;
   font-size: 16px;
   box-shadow: 0 1px 8px #3d4e611a;
   background-image: url(./images/Search.svg);
@@ -49,7 +49,7 @@ body {
 }
 
 .form__field--small {
-  line-height: 42px;
+  line-height: 38px;
   margin-top: 20px;
   font-size: 14px;
   box-shadow: 0 1px 8px #3d4e611a;

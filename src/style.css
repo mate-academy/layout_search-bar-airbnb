@@ -1,1 +1,107 @@
-/* add styles here */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Avenir;
+  src:
+    url('./fonts/Avenir.ttc') format('truetype-collection'),
+    url('./fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+input[data-qa='keypress'] {
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  width: 100%;
+  font-family:
+    Avenir,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+  height: 70px;
+  font-size: 16px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+
+  background-image: url('./images/Search.svg');
+  background-repeat: no-repeat;
+  background-position: 26px center;
+  background-size: 19px 19px;
+  padding-left: 62px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+input[data-qa='keypress']:hover {
+  box-shadow: 0 4px 8px 0 rgba(61, 78, 97, 0.25);
+}
+
+input[data-qa='keypress']:focus {
+  outline: none;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  font-weight: 900;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  background: url('./images/Search.svg'),
+    linear-gradient(to bottom, #fff, #f6f6f7);
+  background-repeat: no-repeat, no-repeat;
+  background-position:
+    26px center,
+    0 0;
+  background-size:
+    19px 19px,
+    100% 100%;
+}
+
+input[data-qa='small'] {
+  height: 42px;
+  font-size: 14px;
+  width: 100%;
+  font-family:
+    Avenir,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  background-image: url('./images/Vector_small.svg');
+  background-repeat: no-repeat;
+  background-position: 13px center;
+  background-size: 11px 11px;
+  padding-left: 33px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+input[data-qa='small']:hover {
+  box-shadow: 0 2px 4px 0 rgba(61, 78, 97, 0.15);
+  text-shadow: none;
+}
+
+input[data-qa='small']:focus {
+  outline: none;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+  background: url('./images/Vector_small.svg'),
+    linear-gradient(to bottom, #fff, #f8f9fa);
+  background-repeat: no-repeat, no-repeat;
+  background-position:
+    13px center,
+    0 0;
+  background-size:
+    11px 11px,
+    100% 100%;
+  font-weight: 900;
+}

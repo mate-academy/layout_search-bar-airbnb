@@ -1,1 +1,89 @@
-/* add styles here */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Airbnb, sans-serif;
+  font-weight: 300;
+  padding: 20px;
+  background-color: #fff;
+}
+
+
+.form-spacing {
+  height: 20px;
+}
+
+
+
+input {
+  background-image: url("images/Search.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: 16px center;
+
+  padding-left: 40px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+}
+
+.search-input {
+  position: relative;
+  width: 300px;
+}
+
+.search-input img {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+}
+
+.search-input input {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+
+
+
+
+.search-form {
+  width: 100%;
+}
+
+.search-form input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 300;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.search-form input:hover {
+  border-color: #000;
+}
+
+.search-form input:focus {
+  outline: none;
+  border-color: #000;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);;
+}
+
+.search-form--big {
+  margin-top: 20px;
+}
+
+
+

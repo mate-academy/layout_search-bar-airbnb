@@ -6,6 +6,7 @@
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
+
     <meta
       http-equiv="X-UA-Compatible"
       content="ie=edge"
@@ -17,16 +18,40 @@
     />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <div class="search-bar">
+      <form
+        action="#"
+        class="search-bar__form search-bar__form--big"
+        data-qa="big"
+      >
+        <input
+          class="search-bar__input"
+          type="text"
+          data-qa="keypress"
+          placeholder="Try “Los Angeles“"
+        />
+        <img
+          src="./images/Search.svg"
+          alt="search"
+          class="search-bar__icon"
+        />
+      </form>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+      <form
+        class="search-bar__form search-bar__form--small"
+        data-qa="small"
+      >
+        <input
+          class="search-bar__input"
+          type="text"
+          placeholder="Try “Los Angeles“"
+        />
+        <img
+          src="./images/Search.svg"
+          alt="search"
+          class="search-bar__icon"
+        />
+      </form>
+    </div>
   </body>
 </html>

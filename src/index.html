@@ -4,37 +4,35 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width, initial-scale=1.0"
     />
     <meta
       http-equiv="X-UA-Compatible"
       content="ie=edge"
     />
-    <title>Document</title>
+    <title>Search UI</title>
     <link
       rel="stylesheet"
       href="style.css"
     />
   </head>
   <body>
-    <div class="search-form search-form__big">
-      <span class="form-icon form-icon__big"></span>
+    <form class="search search--large">
+      <span class="search__icon search__icon--large"></span>
       <input
         type="text"
-        data-qa="keypress"
+        class="search__input search__input--large"
         placeholder="Try “Los Angeles“"
-        class="search-input search-input__big"
       />
-    </div>
+    </form>
 
-    <div class="search-form search-form__small">
-      <span class="form-icon form-icon__small"></span>
+    <form class="search search--small">
+      <span class="search__icon search__icon--small"></span>
       <input
         type="text"
-        data-qa="hover"
+        class="search__input search__input--small"
         placeholder="Try “Los Angeles“"
-        class="search-input search-input__small"
       />
-    </div>
+    </form>
   </body>
 </html>

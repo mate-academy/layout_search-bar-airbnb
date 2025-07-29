@@ -7,6 +7,7 @@ ___
 
 ![screenshot](./references/search-bar-example.png)
 
+
 ### Requirements:
 - use images from [src/images](src/images)
 - there must be two search bars

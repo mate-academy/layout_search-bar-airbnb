@@ -1,1 +1,101 @@
 /* add styles here */
+@font-face {
+  font-family: Avenir-book;
+  src: url(./fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: Avenir-heavy;
+  src: url(./fonts/Avenir-Heavy.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-family: Avenir-book, sans-serif;
+  font-weight: 300;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.form__input--big {
+  font-family: Avenir-book, sans-serif;
+  height: 70px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-left: 62px;
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: #e1e7ed;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: 19px;
+  background-position-y: 24px;
+  background-position-x: 25px;
+}
+
+.form__input--big::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #3d4e61;
+}
+
+.form__input--big:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.form__input--big:focus {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  border-color: rgba(225, 231, 237, 1);
+  outline: none;
+  font-family: Avenir-heavy, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #3d4e61;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.form__input--small {
+  font-family: Avenir-book, sans-serif;
+  height: 42px;
+  width: 100%;
+  padding-left: 33px;
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: #e1e7ed;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: 11px;
+  background-position-y: 15px;
+  background-position-x: 13px;
+}
+
+.form__input--small::placeholder {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 400px;
+  color: #3d4e61;
+}
+
+.form__input--small:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.form__input--small:focus {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  border-color: rgba(225, 231, 237, 1);
+  outline: none;
+  font-family: Avenir-heavy, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #3d4e61;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}

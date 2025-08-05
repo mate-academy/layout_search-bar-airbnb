@@ -21,12 +21,27 @@ ___
 - add attribute `data-qa="big"` for big search form, and `data-qa="small"` for small
 - add attribute `data-qa="keypress"` to input in big search form
 ---
+
+Вимоги:
+використовуйте зображення з src/images
+повинно бути два рядки пошуку
+рядок пошуку має розтягуватися на всю ширину
+відстань між двома рядками пошуку має бути 20 пікселів
+великий рядок пошуку повинен мати верхній відступ 20 пікселів
+дотримуйтесь стилів з макету
+ширина шрифту за замовчуванням має бути 300
+рядок пошуку має 3 стани за замовчуванням: наведення курсора та фокус
+не використовуйте JavaScript
+використовуйте @font-face для шрифтів
+додайте атрибут data-qa="big" для великої форми пошуку та data-qa="small" для малої
+додайте атрибут data-qa="keypress" для введення у велику форму пошуку
+
 ## Checklist
 
 ❗️ Replace `<your_account>` with your Github username and copy the links to `Pull Request` description:
 
-- [DEMO LINK](https://<your_account>.github.io/layout_search-bar-airbnb/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_search-bar-airbnb/report/html_report/)
+- [DEMO LINK](https://diman2807.github.io/layout_search-bar-airbnb/)
+- [TEST REPORT LINK](https://diman2807.github.io/layout_search-bar-airbnb/report/html_report/)
 
 ❗️ Copy this `Checklist` to the `Pull Request` description after links, and put `- [x]` before each point after you checked it.
 

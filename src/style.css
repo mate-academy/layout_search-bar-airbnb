@@ -15,11 +15,8 @@
 input {
   color: #3d4e61;
   font-family: AvenirHeavy, sans-serif;
-
   box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   width: 100%;
 
   border: 1px solid #e1e7ed;
@@ -37,26 +34,27 @@ input::placeholder {
   font-family: AvenirBook, sans-serif;
 }
 
-.input__big::placeholder {
+.input-big::placeholder {
   font-size: 16px;
 }
 
-.input__small::placeholder {
+.input-small::placeholder {
   font-size: 14px;
 }
 
-.input__big {
+form {
+  margin-top: 20px;
+}
+
+.input-big {
   font-size: 16px;
-
   height: 70px;
-  margin-block: 20px;
   padding-left: 62px;
-
   background-position: 26px;
   background-size: 19px 19px;
 }
 
-.input__big:focus {
+.input-big:focus {
   background:
     url('./images/Search.svg') no-repeat 26px center,
     linear-gradient(
@@ -69,17 +67,16 @@ input::placeholder {
     cover;
 }
 
-.input__small {
+.input-small {
   font-size: 14px;
 
   height: 42px;
   padding-left: 33px;
-
   background-position: 13px;
   background-size: 11px 11px;
 }
 
-.input__small:focus {
+.input-small:focus {
   background:
     url('./images/Search.svg') no-repeat 13px center,
     linear-gradient(

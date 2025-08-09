@@ -2,7 +2,6 @@
 @font-face {
   font-family: Avenir;
   src: url(./fonts/Avenir-Book.ttf);
-  font-weight: 300;
 }
 
 @font-face {
@@ -17,6 +16,7 @@
 
 body {
   font-family: Avenir, sans-serif;
+  font-weight: 300;
 }
 
 /* #endregion */
@@ -71,7 +71,6 @@ body {
 /* #region search-tab--small */
 
 .search-tab__input--small {
-  width: 100%;
   height: 42px;
 
   padding-left: 33px;
@@ -86,13 +85,9 @@ body {
 }
 
 .search-tab__input--small:focus {
-  outline: none;
-
   background-position:
     center left 13px,
     0 0;
-  background-image: url(./images/Search.svg),
-    linear-gradient(to bottom, #fff, #f6f6f7);
 }
 
 /* #endregion */

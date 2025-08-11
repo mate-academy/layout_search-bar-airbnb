@@ -17,7 +17,32 @@
     />
   </head>
   <body>
-    <div class="search">
+    <main>
+      <div class="container">
+        <form
+          data-qa="big"
+          class="search__form"
+        >
+          <input
+            class="search__input search__input--big"
+            type="text"
+            data-qa="keypress"
+            placeholder="Try “Los Angeles“"
+          />
+        </form>
+        <form
+          data-qa="small"
+          class="search__form"
+        >
+          <input
+            class="search__input search__input--small"
+            type="text"
+            placeholder="Try “Los Angeles“"
+          />
+        </form>
+      </div>
+    </main>
+    <!-- <div class="search">
       <form
         data-qa="big"
         class="search__form"
@@ -43,6 +68,6 @@
           placeholder="Try “Los Angeles“"
         />
       </form>
-    </div>
+    </div> -->
   </body>
 </html>

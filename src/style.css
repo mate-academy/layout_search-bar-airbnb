@@ -1,1 +1,108 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src:
+    local('Avenir'),
+    url('./fonts/Avenir-Book.woff2') format('woff2'),
+    url('./fonts/Avenir-Book.woff') format('woff'),
+    url('./fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+::-webkit-input-placeholder {
+  text-shadow: none;
+}
+
+/* For Firefox */
+::-moz-placeholder {
+  text-shadow: none;
+}
+
+/* For Internet Explorer */
+:-ms-input-placeholder {
+  text-shadow: none;
+}
+
+/* Standard pseudo-element for modern browsers */
+::placeholder {
+  text-shadow: none;
+}
+
+html {
+  --font-family: Avenir, sans-serif;
+  --transition-duration: 0.3s;
+  --transition-timing-function: ease;
+  --font-color: #3d4e61;
+
+  font-family: var(--font-family);
+  color: var(--font-color);
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.search {
+  width: 100%;
+  font-family: var(--font-family);
+}
+
+.search__content {
+  position: relative;
+}
+
+.search__icon {
+  width: 24px;
+  height: 24px;
+  background-image: url('./images/Search.svg');
+  background-size: cover;
+  display: block;
+  position: absolute;
+  top: 25px;
+  left: 26px;
+  pointer-events: none;
+}
+
+.search__icon--small {
+  width: 11px;
+  height: 11px;
+  top: 17px;
+  left: 13px;
+}
+
+.search__input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 25px 25px 23px 62px;
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: var(--font-color);
+
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+  transition:
+    box-shadow var(--transition-duration) var(--transition-timing-function),
+    text-shadow var(--transition-duration) var(--transition-timing-function);
+}
+
+.search__input:focus {
+  box-shadow: 0 4px 4px 0 #00000040;
+  outline: none;
+  text-shadow: rgba(0, 0, 64, 0.25) 0 4px 4px;
+}
+
+.search__input:hover {
+  box-shadow: 0 4px 4px 0 #00000040;
+}
+
+.search__input--small {
+  padding: 12px 10px 10px 33px;
+  font-size: 14px;
+}

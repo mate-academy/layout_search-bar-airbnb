@@ -25,20 +25,19 @@ html {
 
   font-family: var(--font-family);
   font-size: var(--font-size-default);
+  font-weight: 300;
   color: var(--font-color);
 }
 
 body {
   box-sizing: border-box;
   margin: 0;
-  padding: 0 5px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  padding: 0 7px;
 }
 
 .search {
   width: 100%;
+  margin-top: 20px;
 }
 
 .search__content {
@@ -46,13 +45,15 @@ body {
 }
 
 .search__icon {
-  width: 24px;
-  height: 24px;
+  width: 19px;
+  height: 19px;
   background-image: url('./images/Search.svg');
+  background-repeat: no-repeat;
   background-size: cover;
   display: block;
   position: absolute;
-  top: 25px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 26px;
   pointer-events: none;
 }
@@ -60,17 +61,17 @@ body {
 .search__icon--small {
   width: 11px;
   height: 11px;
-  top: 17px;
   left: 13px;
 }
 
 .search__input {
   box-sizing: border-box;
   width: 100%;
-  padding: 25px 25px 26px 62px;
+  height: 70px;
+  padding-inline: 62px 25px;
   font-family: var(--font-family);
   font-size: 1rem;
-  line-height: 100%;
+  line-height: 70px;
   letter-spacing: 0;
   color: var(--font-color);
   background-color: var(--form-color-default);
@@ -99,11 +100,9 @@ body {
   box-shadow: 0 4px 4px 0 var(--box-shadow-focus-color);
 }
 
-.search--big {
-  margin-top: 20px;
-}
-
 .search__input--small {
-  padding: 12px 10px 10px 33px;
+  height: 42px;
+  padding-inline: 33px 10px;
   font-size: 0.88rem;
+  line-height: 42px;
 }

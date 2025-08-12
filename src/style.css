@@ -18,6 +18,7 @@ html {
   --form-color-default: #fff;
   --form-color-focus: #f6f6f7;
   --border-color: #e1e7ed;
+  --border-radius: 4px;
   --box-shadow-color: rgba(61, 78, 97, 0.1);
   --box-shadow-focus-color: rgba(0, 0, 0, 0.25);
   --text-shadow-color: rgba(0, 0, 64, 0.25);
@@ -30,7 +31,7 @@ html {
 body {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 0 5px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -66,14 +67,15 @@ body {
 .search__input {
   box-sizing: border-box;
   width: 100%;
-  padding: 25px 25px 23px 62px;
+  padding: 25px 25px 26px 62px;
   font-family: var(--font-family);
   font-size: 1rem;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   color: var(--font-color);
   background-color: var(--form-color-default);
   border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
   box-shadow: 0 1px 8px 0 var(--box-shadow-color);
   transition:
     box-shadow var(--transition-duration) var(--transition-timing-function),

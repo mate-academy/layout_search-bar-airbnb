@@ -17,16 +17,25 @@
     />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <div class="search-bars">
+      <input
+        type="text"
+        data-qa="big"
+        data-qa-keypress="true"
+        placeholder="Try “Los Angeles“"
+        class="search-bars__input search-bars__input--big"
+      />
+      <a
+        href="images/Search.svg"
+        class="search-bars__image"
+      ></a>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+      <input
+        type="text"
+        data-qa="small"
+        placeholder="Try “Los Angeles“"
+        class="search-bars__input search-bars__input--small"
+      />
+    </div>
   </body>
 </html>

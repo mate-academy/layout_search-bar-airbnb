@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-
   padding: 0;
 }
 
@@ -19,53 +18,103 @@
 }
 
 body {
+  color: #3d4e61;
   font-family: Avenir, sans-serif;
   font-size: 16px;
-  font-weight: 300px;
-  margin-block: 0;
+  font-weight: 300;
 }
 
-.search-input {
+.search-form {
+  color: #3d4e61;
+  margin: 20px auto 0;
+  position: relative;
+  display: flex;
+  align-self: center;
+  justify-content: start;
+}
+
+.search-form--big {
+  width: 100%;
+  height: 70px;
+}
+
+.search-form--small {
+  width: 100%;
+  height: 42px;
+}
+
+.input-form {
+  color: #3d4e61;
   width: 100%;
   height: 100%;
   border: 1px solid #e1e7ed;
   border-radius: 4px;
-  color: #3d4e61;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   font-weight: 300;
   font-family: inherit;
-  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
-  background-image: url(./images/Search.svg);
-  background-repeat: no-repeat;
-  margin: 20px auto 0;
+  outline: none;
 }
 
-.search-input:hover {
+.input-form:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.search-input--big {
-  height: 70px;
-  padding-left: 62px;
-  font-size: 16px;
-  line-height: 22px;
-  background-position: 26px center;
-  background-size: 19px 19px;
-}
-
-.search-input--big::placeholder {
-  font-size: 16px;
-  line-height: 22px;
-}
-
-.search-input--big:focus {
+.input-form:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
   font-weight: 600;
 }
 
-.search-input--small {
-  height: 42px;
+.input-form--big {
+  color: #3d4e61;
+  padding-left: 62px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.input-form--small {
+  color: #3d4e61;
   padding-left: 33px;
   font-size: 14px;
-  line-height: 20px;
-  background-position: 13px center;
-  background-size: 11px 11px;
+  line-height: 19px;
+}
+
+.ico-form {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  background-image: url(./images/Search.svg);
+  background-size: contain;
+}
+
+.ico-form--big {
+  height: 19px;
+  width: 19px;
+  margin-top: 25px;
+  margin-bottom: 26px;
+  margin-left: 26px;
+}
+
+.ico-form--small {
+  height: 11px;
+  width: 11px;
+  margin-top: 15px;
+  margin-bottom: 16px;
+  margin-left: 13px;
+}
+
+.input-form::placeholder {
+  font-weight: 300;
+}
+
+.input-form--big::placeholder {
+  color: #3d4e61;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.input-form--small::placeholder {
+  color: #3d4e61;
+  font-size: 14px;
+  line-height: 22px;
 }

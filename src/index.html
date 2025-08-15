@@ -18,24 +18,21 @@
   </head>
   <body>
     <div class="search-bars">
-      <input
-        type="text"
-        data-qa="big"
-        data-qa-keypress="true"
-        placeholder="Try “Los Angeles“"
-        class="search-bars__input search-bars__input--big"
-      />
-      <a
-        href="images/Search.svg"
-        class="search-bars__image"
-      ></a>
-
-      <input
-        type="text"
-        data-qa="small"
-        placeholder="Try “Los Angeles“"
-        class="search-bars__input search-bars__input--small"
-      />
+      <form data-qa="big">
+        <input
+          type="text"
+          data-qa="keypress"
+          placeholder="Try “Los Angeles“"
+          class="search-bars__input search-bars__input--big"
+        />
+      </form>
+      <form data-qa="small">
+        <input
+          type="text"
+          placeholder="Try “Los Angeles“"
+          class="search-bars__input search-bars__input--small"
+        />
+      </form>
     </div>
   </body>
 </html>

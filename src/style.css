@@ -1,1 +1,214 @@
-/* add styles here */
+/* #region @font-face */
+@font-face {
+  font-family: Avenir--regular;
+  src: url(/src/fonts/Avenir-Book.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Avenir--bold;
+  src: url(/src/fonts/Avenir-Book.ttf);
+  font-weight: 800;
+}
+
+/* #endregion */
+
+/* #region Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* #endregion */
+
+/* #region Main */
+.main {
+  padding: 0 8px;
+}
+
+/* #endregion */
+
+/* #region Search */
+.search {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.search--big {
+  margin: 20px 0;
+}
+
+.search__input {
+  display: block;
+  box-shadow: 0 1 8 0 #3d4e611a;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 70px;
+  padding: 0 62px;
+  background-image: url('/src/images/Search.svg');
+  background-repeat: no-repeat;
+  background-position: 25px 24px;
+  background-size: 19px;
+  font-size: 16px;
+  font-family: Avenir--regular, sans-serif;
+  font-weight: 300;
+}
+
+.search__input--small {
+  height: 42px;
+  padding: 15px 15px 16px 33px;
+  background-position: 12px 11px;
+  background-size: 12px;
+  font-size: 14px;
+}
+
+::placeholder {
+  color: #3d4e61;
+}
+
+.search__input:hover {
+  box-shadow: 0 3 8 0 #3d4e611a;
+}
+
+.search__input:focus {
+  box-shadow: 0 3 8 0 #3d4e611a;
+  background-image: url('/src/images/Search.svg');
+  outline: none;
+  font-family: Avenir--bold, sans-serif;
+  font-weight: 800;
+}
+
+/* #endregion */

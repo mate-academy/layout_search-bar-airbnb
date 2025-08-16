@@ -1,1 +1,113 @@
-/* add styles here */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 0;
+}
+
+@font-face {
+  font-family: 'Avenir Book';
+  src: url(fonts/Avenir-Book.ttf) format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Heavy';
+  src: url(fonts/Avenir-Heavy.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Italic';
+  src: url(fonts/Avenir.ttc) format('truetype');
+  font-style: italic;
+}
+
+.search-bars {
+  padding-top: 20px;
+}
+
+.search-bars__wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.search-bars__bar {
+  display: block;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  line-height: normal;
+  color: #3d4e61;
+  font-family: Avenir-Book, sans-serif;
+}
+
+.search-bars__bar--big {
+  font-size: 16px;
+  padding-left: 62px;
+  height: 70px;
+}
+
+.search-bars__bar--small {
+  font-size: 14px;
+  padding-left: 33px;
+  height: 42px;
+  font-family: Avenir, sans-serif;
+}
+
+.search-bars__bar:hover {
+  border: 1px solid #e1e7ed;
+  background: #fff;
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.search-bars__bar:focus {
+  font-family: Avenir-Heavy, sans-serif;
+  outline: transparent;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border: 1px solid #e1e7ed;
+  font-weight: 900;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.search-bars__bar--big:focus {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.search-bars__bar--small:focus {
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.search-bars__bar::placeholder {
+  color: #3d4e61;
+}
+
+.search-bars__wrapper--big::before {
+  background-image: url(images/Search.svg);
+  content: '';
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  top: 50%;
+  left: 26px;
+  transform: translateY(-50%);
+}
+
+.search-bars__wrapper--small::before {
+  background-image: url(images/search-small.svg);
+  content: '';
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  top: 50%;
+  left: 13px;
+  transform: translateY(-50%);
+}

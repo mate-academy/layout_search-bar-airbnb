@@ -18,25 +18,30 @@
   </head>
   <body>
     <div class="search-bars">
-      <div class="search-bars__wrapper search-bars__wrapper--big">
+      <form
+        class="search-bars__wrapper search-bars__wrapper--big"
+        data-qa="big"
+      >
         <input
           class="search-bars__bar search-bars__bar--big"
           type="text"
           name="locationBig"
-          data-qa="big"
+          data-qa="keypress"
           placeholder="Try “Los Angeles“"
         />
-      </div>
+      </form>
 
-      <div class="search-bars__wrapper search-bars__wrapper--small">
+      <form
+        class="search-bars__wrapper search-bars__wrapper--small"
+        data-qa="small"
+      >
         <input
           class="search-bars__bar search-bars__bar--small"
           type="text"
           name="locationSmall"
-          data-qa="small"
           placeholder="Try “Los Angeles“"
         />
-      </div>
+      </form>
     </div>
   </body>
 </html>

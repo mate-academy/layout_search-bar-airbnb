@@ -1,1 +1,116 @@
-/* add styles here */
+/* Fonts */
+@font-face {
+  font-family: 'Avenir Book';
+  src: url('./fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Heavy';
+  src: url('./fonts/Avenir-Heavy.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Reset & Box-sizing */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 8px;
+  font-family: 'Avenir Book', sans-serif;
+  background-color: #fff;
+}
+
+/* Forms layout */
+.search-bar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  width: 100%;
+}
+
+.form--big {
+  margin-top: 20px; /* top indent */
+}
+
+.form--small {
+  margin-top: 20px; /* distance between bars */
+}
+
+/* Inputs */
+.input {
+  width: 100%;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  font-family: 'Avenir Book', sans-serif;
+  font-weight: 300;
+  color: #3d4e61;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+}
+
+/* Big search input */
+.input--big {
+  min-height: 70px;
+  padding-left: 62px;
+  font-size: 16px;
+  line-height: 22px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  background-image: url('./images/Search.svg');
+  background-position: 26px center;
+  background-size: 19px 19px;
+}
+
+.input--big:hover,
+.input--big:focus {
+  box-shadow: 0 4px 4px 0 #3d4e6133;
+}
+
+.input--big:focus {
+  outline: none;
+  font-weight: 700;
+}
+
+/* Small search input */
+.input--small {
+  min-height: 42px;
+  padding-left: 33px;
+  font-size: 14px;
+  line-height: 19px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  background-image: url('./images/Search.svg');
+  background-position: 13px center;
+  background-size: 11px 11px;
+}
+
+.input--small:hover,
+.input--small:focus {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+}
+
+.input--small:focus {
+  outline: none;
+  font-weight: 700;
+}
+
+/* Placeholder styling */
+.input::placeholder {
+  font-family: 'Avenir Book', sans-serif;
+  color: inherit;
+  font-weight: inherit;
+  text-shadow: none;
+}

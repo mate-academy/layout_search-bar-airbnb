@@ -1,17 +1,15 @@
 /* add styles here */
-* {
-  padding: 0;
-  box-sizing: border-box;
-}
-
 @font-face {
   font-family: Avenir;
   src: url('fonts/Avenir-Book.ttf');
 }
 
 body {
+  font-weight: 300;
   font-size: 16px;
   font-family: Avenir, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .search-form {
@@ -39,27 +37,24 @@ body {
 .search-form__label::after {
   content: '';
   display: block;
-  position: relative;
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(images/Search.svg);
 }
 
 .search-form__label_big::after {
-  top: 25px;
-  left: 26px;
-  width: 19px;
-  height: 19px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url(images/Search.svg);
+  top: 25.5px;
+  left: 21.5px;
 }
 
 .search-form__label_small::after {
-  top: 25px;
-  left: 26px;
-  width: 19px;
-  height: 19px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url(images/Search.svg);
+  top: 11.5px;
+  left: 7px;
+  width: 15px;
+  height: 15px;
 }
 
 .search-form__input {

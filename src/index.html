@@ -10,38 +10,38 @@
       http-equiv="X-UA-Compatible"
       content="ie=edge"
     />
-    <title>Air B&B Search Bar</title>
+    <title>Document</title>
     <link
       rel="stylesheet"
       href="style.css"
     />
   </head>
   <body>
-    <div class="input__wrapper big-search-container">
-      <form
-        class="form-big"
-        data-qa="big"
-      >
+    <form
+      class="search-form search-form_big"
+      data-qa="big"
+    >
+      <label class="search-form__label search-form__label_big">
         <input
-          class="input__search-bar input__big"
-          type="text"
           data-qa="keypress"
-          placeholder="Try “Los Angeles“"
-        />
-      </form>
-    </div>
-    <div class="input__wrapper small-search-container">
-      <form
-        class="form-small"
-        data-qa="small"
-      >
-        <input
-          class="input__search-bar input__small"
+          class="search-form__input search-form__input_big"
           type="text"
-          data-qa="hover"
           placeholder="Try “Los Angeles“"
         />
-      </form>
-    </div>
+      </label>
+    </form>
+    <form
+      class="search-form search-form_small"
+      data-qa="small"
+    >
+      <label class="search-form__label search-form__label_small">
+        <input
+          data-qa="hover"
+          class="search-form__input search-form__input_small"
+          type="text"
+          placeholder="Try “Los Angeles“"
+        />
+      </label>
+    </form>
   </body>
 </html>

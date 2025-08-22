@@ -1,4 +1,7 @@
 /* add styles here */
+html {
+  font-weight: 300;
+}
 
 @font-face {
   font-family: avenir;
@@ -10,56 +13,47 @@ body {
   padding: 0;
 }
 
-.search-for-form {
+.search-form-big {
   margin-top: 20px;
+  width: 100%;
 }
 
-.big {
-  display: block;
+.search-form-small {
+  margin-top: 20px;
+  width: 100%;
 }
 
-/* .item {
-  background-image: url(images/Search.svg);
-  background-repeat: no-repeat;
-  width: 19px;
-  height: 19px;
+/* .search-form-small__input {
+
 } */
 
-.search-for-form--label--big__item {
+.search-form-big__item {
   display: flex;
   box-sizing: border-box;
   width: 100%;
   border: 1px solid #ccc;
   border-radius: 4px;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   padding-left: 62px;
-  box-shadow: 0 3px 8px rgba(61, 78, 27, 0.20);
-}
+  box-shadow: 0 3px 8px rgba(61, 78, 27, 0.2);
 
-.search-for-form--big__item {
-  font-weight: 300;
-  line-height: 100%;
   font-size: 16px;
-  color: #3d4e61;
-  border: 0;
-  padding: 0;
-  width: 100%;
 }
 
-.search-for-form__image {
+.search-form-big--image {
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
   background-position: 19px;
 }
 
-.search-for-form--image__small {
+.search-form-small--image {
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
   background-position: 11px;
 }
 
-.search-for-form--small__item {
+.search-form-small__item {
   display: flex;
   box-sizing: border-box;
   width: 100%;
@@ -69,12 +63,16 @@ body {
   padding-bottom: 21px;
   padding-left: 33px;
 
-  font-weight: 300;
   line-height: 100%;
   font-size: 16px;
   color: #3d4e61;
+  box-shadow: 0 3px 8px rgba(61, 78, 27, 0.2);
 }
 
-.search-for-form--big__item:hover {
+.search-form-small__item:hover {
+  box-shadow: 0 4px 8px rgba(61, 78, 97, 0.1);
+}
+
+.search-form-big__item:hover {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }

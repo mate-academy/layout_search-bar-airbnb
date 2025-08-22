@@ -20,26 +20,27 @@
     />
   </head>
   <body>
-    <form class="search-for-form">
-      <label
-        class="search-for-form--label--big__item search-for-form__image"
-        data-qa="big keypress"
-      >
+    <form
+      class="search-form-big"
+      data-qa="big"
+    >
+      <label class="search-form-big__input">
         <input
-          class="search-for-form--big__item"
+          class="search-form-big__item search-form-big--image"
+          data-qa="keypress"
           type="text"
           placeholder="Try “Los Angeles“"
         />
       </label>
     </form>
 
-    <form class="search-for-form">
-      <label
-        class="search-for-form__label"
-        data-qa="small"
-      >
+    <form
+      class="search-form-small"
+      data-qa="small"
+    >
+      <label class="search-form-small__input">
         <input
-          class="search-for-form--small__item search-for-form--image__small"
+          class="search-form-small__item search-form-small--image"
           type="text"
           data-qa="hover"
           placeholder="Try “Los Angeles“"

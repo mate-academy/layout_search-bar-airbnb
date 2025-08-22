@@ -1,1 +1,80 @@
 /* add styles here */
+
+@font-face {
+  font-family: avenir;
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.search-for-form {
+  margin-top: 20px;
+}
+
+.big {
+  display: block;
+}
+
+/* .item {
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 19px;
+} */
+
+.search-for-form--label--big__item {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 62px;
+  box-shadow: 0 3px 8px rgba(61, 78, 27, 0.20);
+}
+
+.search-for-form--big__item {
+  font-weight: 300;
+  line-height: 100%;
+  font-size: 16px;
+  color: #3d4e61;
+  border: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.search-for-form__image {
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 19px;
+}
+
+.search-for-form--image__small {
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 11px;
+}
+
+.search-for-form--small__item {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-left: 33px;
+
+  font-weight: 300;
+  line-height: 100%;
+  font-size: 16px;
+  color: #3d4e61;
+}
+
+.search-for-form--big__item:hover {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}

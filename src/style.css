@@ -1,11 +1,8 @@
 /* add styles here */
 html {
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: avenir;
-  src: url(fonts/Avenir-Book.ttf);
+  font-weight: 400;
+  font-family: Avenir, Arial, sans-serif;
+  line-height: 100%;
 }
 
 body {
@@ -13,21 +10,100 @@ body {
   padding: 0;
 }
 
-.search-form-big {
-  margin-top: 20px;
-  width: 100%;
+@font-face {
+  font-family: Avenir, Arial, sans-serif;
+  src: url(fonts/Avenir-Book.ttf);
 }
 
-.search-form-small {
+.search-form {
   margin-top: 20px;
-  width: 100%;
 }
 
-/* .search-form-small__input {
+/* tamanho da barra de pesquisa grande */
+.search-form__input-field.search-form__input-field--large {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 
-} */
+/* tamanho da barra de pesquisa pequno */
+.search-form__input-field.search-form__input-field--small {
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
 
-.search-form-big__item {
+/* editar os 2 formularios */
+.search-form__input-field {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* editar a aparencia do largo e o texto */
+.search-form__input-field--large {
+  padding-left: 62px;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border: 1px solid rgba(225, 231, 237, 1);
+
+  font-size: 16px;
+  letter-spacing: 0;
+  color: rgba(61, 78, 97, 1);
+}
+
+/* aplicando foco no grande */
+.search-form__input-field--large:focus {
+  outline: none;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  text-shadow: rgba(61, 78, 97, 1);
+}
+
+/* aplicando hover no grande */
+.search-form__input-field--large:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+/* imagem lupa geral */
+.search-form__icon {
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+}
+
+/* imagem lupa do largo */
+.search-form__icon.search-form__input-field--large {
+  background-size: 19px;
+  background-position: 19px;
+}
+
+/* editar aparencia do pequeno e o texto */
+.search-form__input-field--small {
+  padding-left: 33px;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  border: 1px solid rgba(225, 231, 237, 1);
+
+  font-size: 14px;
+  letter-spacing: 0;
+  color: rgba(61, 78, 97, 1);
+}
+
+/* imagem lupa do pequeno */
+.search-form__icon.search-form__input-field--small {
+  background-size: 11px;
+  background-position: 11px;
+}
+
+/* aplicando foco no pequeno */
+.search-form__input-field--small:focus {
+  outline: none;
+  background: linear-gradient(rgba(255, 255, 255, 1));
+}
+
+/* aplicando hover no pequeno */
+.search-form__input-field--small:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+/* .search-form__input {
   display: flex;
   box-sizing: border-box;
   width: 100%;
@@ -41,19 +117,19 @@ body {
   font-size: 16px;
 }
 
-.search-form-big--image {
+.search-form__icon {
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
   background-position: 19px;
 }
 
-.search-form-small--image {
+.search-form__item.search-form__icon {
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
   background-position: 11px;
 }
 
-.search-form-small__item {
+.search-form__item {
   display: flex;
   box-sizing: border-box;
   width: 100%;
@@ -69,10 +145,14 @@ body {
   box-shadow: 0 3px 8px rgba(61, 78, 27, 0.2);
 }
 
-.search-form-small__item:hover {
-  box-shadow: 0 4px 8px rgba(61, 78, 97, 0.1);
-}
-
-.search-form-big__item:hover {
+.search-form__input:hover {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+.search-form__input.search-form--item:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.search-form__input:focus {
+  outline: 2px solid rgba(225, 231, 237, 1);
+} */

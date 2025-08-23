@@ -17,7 +17,7 @@
     />
   </head>
   <body>
-    <div class="search-bars">
+    <section class="search">
       <form
         class="search-bar"
         data-qa="big"
@@ -26,11 +26,12 @@
         <input
           class="search-bar__input search-bar__input--big"
           type="text"
+          name="search"
+          required
           data-qa="keypress"
           placeholder="Try “Los Angeles“"
         />
       </form>
-
       <form
         class="search-bar"
         data-qa="small"
@@ -39,9 +40,11 @@
         <input
           class="search-bar__input search-bar__input--small"
           type="text"
+          name="search"
+          required
           placeholder="Try “Los Angeles“"
         />
       </form>
-    </div>
+    </section>
   </body>
 </html>

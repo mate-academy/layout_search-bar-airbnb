@@ -1,11 +1,6 @@
 @font-face {
-  font-family: AvenirBook;
+  font-family: Avenir;
   src: url(fonts/Avenir-Book.ttf);
-}
-
-@font-face {
-  font-family: AvenirHeavy;
-  src: url(fonts/Avenir-Heavy.ttf);
 }
 
 * {
@@ -14,7 +9,7 @@
 }
 
 body {
-  font-family: AvenirBook, Arial, sans-serif;
+  font-family: Avenir, Arial, sans-serif;
   font-size: 16px;
 }
 
@@ -76,6 +71,10 @@ body {
   font-family: inherit;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   outline: none;
+}
+
+.search-form__input::placeholder {
+  font-weight: 300;
 }
 
 .search-form__input_big {

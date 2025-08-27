@@ -1,32 +1,51 @@
 /* #region fonts */
 @font-face {
   font-family: Avenir;
-  src: url(fonts/Avenir-Book.ttf);
-  font-weight: 400;
+  src: url(../src/fonts/Avenir-Book.ttf);
+  font-weight: 300;
   font-size: medium;
 }
 
 @font-face {
   font-family: Avenir;
-  src: url(fonts/Avenir-Heavy.ttf);
+  src: url(../src/fonts/Avenir-Book.ttf);
+  font-weight: 400;
+  font-size: medium;
+}
+
+
+
+@font-face {
+  font-family: Avenir;
+  src: url(../src/fonts/Avenir-Heavy.ttf);
   font-weight: 900;
   font-size: medium;
 }
 
 /* #endregion */
 
-/* #region page */
+/*  DEFAULT SEARCH-BAR IS SEARCH-BAR-BIG */
 
+/* #region page */
 .page {
   margin: 0;
+  padding: 0;
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  color: #3D4E61;
 }
+
+
 
 /* #endregion */
 
 /* #region layout */
 
-/* .layout {
-
-} */
+.layout {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding-top: 20px;
+}
 
 /* #endregion */

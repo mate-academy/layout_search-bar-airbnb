@@ -1,1 +1,121 @@
 /* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url('fonts/Avenir-Book.ttf');
+}
+
+body {
+  font-weight: 300;
+  font-size: 16px;
+  font-family: Avenir, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.big_search_form {
+  width: 100%;
+  margin-top: 20px;
+  height: 70px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(225, 231, 237, 1);
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  display: flex;
+  align-items: center;
+  line-height: 100%;
+}
+
+.big_image {
+  height: 19px;
+  width: 19px;
+  opacity: 1;
+  margin: 25px 17px 25px 25px;
+}
+
+.big_input {
+  height: 19px;
+  width: 158px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-decoration-color: rgba(61, 78, 97, 1);
+}
+
+.input {
+  outline: none;
+  border: none;
+}
+
+.big_input::placeholder {
+  color: inherit;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-decoration-color: rgba(61, 78, 97, 1);
+}
+
+.big_search_form:hover {
+  border: 1px solid rgba(225, 231, 237, 1);
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.big_search_form:focus {
+  border-radius: 3px;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border: 1px solid rgba(225, 231, 237, 1);
+  text-decoration-color: rgba(61, 78, 97, 1);
+}
+
+.small_search_form {
+  width: 100%;
+  margin-top: 20px;
+  height: 42px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  line-height: 100%;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(225, 231, 237, 1);
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+}
+
+.small_image {
+  height: 11px;
+  width: 11px;
+  opacity: 1;
+  margin: 15px 9px 15px 13px;
+}
+
+.small_input {
+  height: 19px;
+  width: 158px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-decoration-color: rgba(61, 78, 97, 1);
+}
+
+.small_input::placeholder {
+  color: inherit;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-decoration-color: rgba(61, 78, 97, 1);
+}
+
+.small_search_form:hover {
+  border: 1px solid rgba(225, 231, 237, 1);
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.small_search_form:focus {
+  border-radius: 3px;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border: 1px solid rgba(225, 231, 237, 1);
+}

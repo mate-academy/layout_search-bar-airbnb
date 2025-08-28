@@ -1,16 +1,21 @@
 /* #region form */
 .search-form {
-  display: flex;
-  align-items: center;
   box-sizing: border-box;
   margin-top: 20px;
-  border: 1px solid #E1E7ED;
-  box-shadow: 0 1px 18px rgba(61, 78, 97, 0.15);
+  box-shadow:
+    0 0 0 1px #e1e7ed,
+    0 1px 8px rgba(61, 78, 97, 0.15);
   border-radius: 4px;
 }
 
 .search-form:hover {
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  box-shadow:
+    0 0 0 1px #e1e7ed,
+    0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.search-form:focus-within {
+  background: linear-gradient(#ffff, #f6f6f7);
 }
 
 /* #endregion */
@@ -18,77 +23,80 @@
 /* #region label */
 .search-form__label {
   box-sizing: border-box;
-  width: 100%;
+  display: flex;
+  align-items: center;
   position: relative;
 }
 
 .search-form__label::before {
+  box-sizing: border-box;
   background-image: url(../../images/Search.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
   width: 19px;
   height: 19px;
   display: block;
-  content: "";
+  content: '';
   position: absolute;
   pointer-events: none;
-
 }
 
-.search-form__label--big {
+.search-form--big .search-form__label {
   height: 70px;
 }
 
-.search-form__label--big.search-form__label::before {
+.search-form--big .search-form__label::before {
   top: 50%;
   transform: translateY(-50%);
   left: 26px;
 }
 
-
-.search-form__label--small {
+.search-form--small .search-form__label {
   height: 42px;
 }
 
-.search-form__label--small.search-form__label::before {
-  top: 50%;
+.search-form--small .search-form__label::before {
+  top: calc(50% - 0px);
   transform: translateY(-50%);
   left: 13px;
   width: 11px;
   height: 11px;
+  background-size: 11px 11px;
 }
 
 /* #endregion  */
 
 /* #region input */
 .search-form__input {
-  box-sizing: content-box;
+  box-sizing: border-box;
   height: 100%;
   width: 100%;
   font-family: inherit;
+  font-weight: inherit;
   color: #3d4e61;
   font-size: 16px;
-  line-height: 100%;
   padding: 0;
   border: none;
   outline: none;
   background: transparent;
+  font-variant-ligatures: normal;
 }
 
+.search-form__input::placeholder {
+  font-weight: 300;
+}
 
-
-.search-form__input--big {
+.search-form--big .search-form__input {
   padding-left: 62px;
-
+  line-height: 70px;
+  font-weight: 900;
 }
 
-.search-form__input--small {
+.search-form--small .search-form__input {
+  font-weight: 900;
   padding-left: 33px;
   font-size: 14px;
+  line-height: 42px;
 }
 
-
-
 /* #endregion */
-

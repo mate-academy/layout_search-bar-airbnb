@@ -1,1 +1,114 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url('fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('fonts/Avenir-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* #region first__input */
+.first__input {
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  display: flex;
+  background-size: 19px 19px;
+  padding-left: 62px;
+  margin: 71px 81px 36px 48px;
+  width: 900px;
+  height: 70px;
+  background-position: center;
+  background-position-x: 26px;
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  color: #3d4e61;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+}
+
+.first__input[data-qa='big keypress'] {
+  font-family: Avenir, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #3d4e61;
+}
+
+.first__input[data-qa='big keypress']:hover {
+  font-family: Avenir, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+  background-color: #fff;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  color: #3d4e61;
+}
+
+.first__input[data-qa='big keypress']:focus {
+  font-family: Avenir, sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  box-shadow: 0 4px 4px 0 #00000040;
+  outline: none;
+  background-color: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+  text-shadow: 0 4px 4px 0 #00000040;
+}
+
+/* #endregion */
+
+/* #region second__input */
+
+.second__input {
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  display: flex;
+  background-size: 11px 11px;
+  padding-left: 33px;
+  margin: 0 81px 36px 48px;
+  width: 900px;
+  height: 42px;
+  background-position: center;
+  background-position-x: 13px;
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  color: #3d4e61;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+  text-shadow: 0 4px 4px 0 #00000040;
+}
+
+.second__input[data-qa='small keypress'] {
+  font-family: Avenir, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #3d4e61;
+}
+
+.second__input[data-qa='small keypress']:hover {
+  font-family: Avenir, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+  background-color: #fff;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  color: #3d4e61;
+}
+
+.second__input[data-qa='small keypress']:focus {
+  font-family: Avenir, sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  box-shadow: 0 4px 4px 0 #00000040;
+  outline: none;
+  background-color: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+}
+
+/* #endregion */

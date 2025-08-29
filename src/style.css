@@ -24,11 +24,11 @@ body {
 }
 
 .form--big {
-  margin: 20px 0 36px 48px; /* додав 20px зверху */
+  margin: 20px 0;
 }
 
 .form--small {
-  margin: 20px 0 36px 48px;
+  margin: 20px 0;
 }
 
 /* #region first__input */
@@ -38,7 +38,7 @@ body {
   display: flex;
   background-size: 19px 19px;
   padding-left: 62px;
-  width: 900px;
+  width: 100%-40px;
   height: 70px;
   background-position: center;
   background-position-x: 26px;
@@ -64,13 +64,13 @@ body {
 /* #endregion */
 
 /* #region second__input */
-.form__input--small[data-qa='keypress'] {
+.form__input--small {
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
   display: flex;
   background-size: 11px 11px;
   padding-left: 33px;
-  width: 900px;
+  width: 100%-40px;
   height: 42px;
   background-position: center;
   background-position-x: 13px;
@@ -80,12 +80,12 @@ body {
   box-shadow: 0 1px 8px 0 #3d4e611a;
 }
 
-.form__input--small[data-qa='keypress']:hover {
+.form__input--small:hover {
   font-weight: 400;
   box-shadow: 0 3px 8px 0 #3d4e6133;
 }
 
-.form__input--small[data-qa='keypress']:focus {
+.form__input--small:focus {
   font-weight: 900;
   box-shadow: 0 4px 4px 0 #00000040;
   outline: none;

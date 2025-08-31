@@ -1,1 +1,64 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf) format('truetype');
+  font-weight: 300;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Avenir, sans-serif;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.bar {
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  margin: 0;
+  margin-top: 8px;
+  outline: none;
+  box-shadow: 0 1px 3px rgba(61, 78, 97, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  color: rgba(61, 78, 97, 1);
+}
+
+.big__bar {
+  width: 100%;
+  max-width: 900px;
+  height: 70px;
+  display: block;
+  background-size: 19px 19px;
+  background-position: 19px center;
+  padding-left: 56px;
+}
+
+.small__bar {
+  width: 100%;
+  max-width: 900px;
+  height: 42px;
+  display: block;
+  background-position: 16px center;
+  background-size: 11px 11px;
+  padding-left: 40px;
+}
+
+.bar:focus {
+  font-weight: bold;
+  border-color: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.big__bar:hover {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 3px rgba(61, 78, 97, 0.2);
+}

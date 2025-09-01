@@ -1,5 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html
+  lang="en"
+  class="html"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -18,31 +21,35 @@
   </head>
 
   <body class="body">
-    <form
-      class="search search--big"
-      data-qa="big"
-    >
-      <label class="search__label search__label--big">
-        <input
-          class="search__input search__input--big"
-          type="text"
-          data-qa="keypress"
-          placeholder="Try “Los Angeles“"
-        />
-      </label>
-    </form>
+    <main>
+      <form
+        class="search search--big"
+        data-qa="big"
+      >
+        <label class="search__label search__label--big">
+          <input
+            class="search__input search__input--big"
+            type="text"
+            data-qa="keypress"
+            name="query"
+            placeholder="Try “Los Angeles“"
+          />
+        </label>
+      </form>
 
-    <form
-      class="search search--small"
-      data-qa="small"
-    >
-      <label class="search__label search__label--small">
-        <input
-          class="search__input search__input--small"
-          type="text"
-          placeholder="Try “Los Angeles“"
-        />
-      </label>
-    </form>
+      <form
+        class="search search--small"
+        data-qa="small"
+      >
+        <label class="search__label search__label--small">
+          <input
+            class="search__input search__input--small"
+            type="text"
+            name="querySmall"
+            placeholder="Try “Los Angeles“"
+          />
+        </label>
+      </form>
+    </main>
   </body>
 </html>

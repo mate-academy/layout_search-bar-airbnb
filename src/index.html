@@ -1,10 +1,13 @@
 <!doctype html>
-<html lang="en">
+<html
+  lang="en"
+  class="page"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width, initial-scale=1.0"
     />
     <meta
       http-equiv="X-UA-Compatible"
@@ -16,17 +19,29 @@
       href="style.css"
     />
   </head>
-  <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+  <body>
+    <form
+      class="search-form search-form--big"
+      data-qa="big"
+    >
+      <input
+        class="search-form__input search-form__input--big"
+        type="search"
+        placeholder="Try “Los Angeles“"
+        data-qa="keypress"
+      />
+    </form>
+
+    <form
+      class="search-form search-form--small"
+      data-qa="small"
+    >
+      <input
+        class="search-form__input search-form__input--small"
+        type="text"
+        placeholder="Try “Los Angeles“"
+      />
+    </form>
   </body>
 </html>

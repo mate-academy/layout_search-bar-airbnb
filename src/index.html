@@ -17,31 +17,37 @@
     />
   </head>
   <body>
-    <form
-      class="search-form search-form_big"
-      data-qa="big"
-    >
-      <label class="search-form__label search-form__label_big">
-        <input
-          data-qa="keypress"
-          class="search-form__input search-form__input_big"
-          type="text"
-          placeholder="Try “Los Angeles“"
-        />
-      </label>
-    </form>
-    <form
-      class="search-form search-form_small"
-      data-qa="small"
-    >
-      <label class="search-form__label search-form__label_small">
-        <input
-          data-qa="hover"
-          class="search-form__input search-form__input_small"
-          type="text"
-          placeholder="Try “Los Angeles“"
-        />
-      </label>
-    </form>
+    <main>
+      <form
+        class="search-form search-form_big"
+        data-qa="big"
+      >
+        <label
+          for="big-search"
+          class="search-form__label search-form__label_big"
+        >
+          <input
+            data-qa="keypress"
+            class="search-form__input search-form__input_big"
+            type="text"
+            placeholder="Try “Los Angeles“"
+          />
+        </label>
+      </form>
+      <form
+        class="search-form search-form_small"
+        data-qa="small"
+      >
+        <label class="search-form__label search-form__label_small">
+          <input
+            id="small-search"
+            data-qa="hover"
+            class="search-form__input search-form__input_small"
+            type="text"
+            placeholder="Try “Los Angeles“"
+          />
+        </label>
+      </form>
+    </main>
   </body>
 </html>

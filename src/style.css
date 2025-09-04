@@ -1,6 +1,78 @@
-/* add styles here */
+@font-face {
+  /* stylelint-disable-next-line font-family-name-quotes */
+  font-family: 'AirbnbFont';
+  src: url('./fonts/AirbnbFont.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  /* stylelint-disable-next-line font-family-name-quotes */
+  font-family: 'AirbnbFont', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  padding: 20px;
+}
+
+.search-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.search-form--big {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.search-form--small {
+  margin-top: 0;
+}
+
+.search-form__content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.search-form__input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-weight: 300;
+}
+
+.search-form__input:hover {
+  border-color: #aaa;
+}
+
+.search-form__input:focus {
+  outline: 2px solid #007aff;
+}
+
+.search-form__button {
+  padding: 10px 20px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.search-form__button:hover {
+  background-color: #f0f0f0;
+}
+
+.search-form__button:focus {
+  outline: 2px solid #007aff;
+}
+
 .search-form__icon {
-  background-image: url('../images/icon-search.svg');
+  width: 24px;
+  height: 24px;
+  background-image: url('./images/icon-search.svg');
   background-repeat: no-repeat;
   background-size: contain;
 }

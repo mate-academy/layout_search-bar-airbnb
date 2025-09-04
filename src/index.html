@@ -11,15 +11,42 @@
       http-equiv="X-UA-Compatible"
       content="ie=edge"
     />
-    <title>Document</title>
+    <title>Los Angelas</title>
     <link
       rel="stylesheet"
       href="style.css"
     />
   </head>
   <body>
-    <form class="search-form">
+    <form
+      class="search-form search-form-big"
+      data-qa="big"
+    >
       <div class="search-form__content">
+        <div class="search-form__icon"></div>
+
+        <input
+          class="search-form__input"
+          type="text"
+          data-qa="keypress"
+          placeholder="Try “Los Angeles“"
+        />
+        <button
+          type="submit"
+          class="search-form__button"
+        >
+          Search
+        </button>
+      </div>
+    </form>
+
+    <form
+      class="search-form search-form--small"
+      data-qa="small"
+    >
+      <div class="search-form__content">
+        <div class="search-form__icon"></div>
+
         <input
           class="search-form__input"
           type="text"
@@ -33,17 +60,6 @@
         </button>
       </div>
     </form>
-
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
-
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
   </body>
 </html>
+

@@ -21,12 +21,16 @@
       <form
         class="search-form search-form_big"
         data-qa="big"
+        action="#"
+        method="get"
       >
         <label
           for="big-search"
           class="search-form__label search-form__label_big"
         >
+          <span class="visually-hidden">Search city</span>
           <input
+            id="big-search"
             data-qa="keypress"
             class="search-form__input search-form__input_big"
             type="text"
@@ -37,11 +41,16 @@
       <form
         class="search-form search-form_small"
         data-qa="small"
+        action="#"
+        method="get"
       >
-        <label class="search-form__label search-form__label_small">
+        <label
+          for="small-search"
+          class="search-form__label search-form__label_small"
+        >
+          <span class="visually-hidden">Search city</span>
           <input
             id="small-search"
-            data-qa="hover"
             class="search-form__input search-form__input_small"
             type="text"
             placeholder="Try “Los Angeles“"

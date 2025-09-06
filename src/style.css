@@ -1,1 +1,96 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url('fonts/Avenir-Heavy.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+html {
+  font-weight: 300;
+}
+
+body {
+  font-family: Avenir, Arial, sans-serif;
+  font-weight: 500;
+}
+
+.pesquisa {
+  background-image: url('images/Search.svg');
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center left 26px;
+  margin-top: 20px;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+}
+
+.pesquisa input {
+  width: 900px;
+  height: 70px;
+  font-size: 16px;
+  border: none;
+}
+
+.pesquisa__input {
+  font-family: Avenir, Arial, sans-serif;
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  color: #111;
+  box-sizing: border-box;
+  margin-left: 62px;
+  outline: none;
+}
+
+.pesquisa:hover {
+  border-color: #e1e7ed;
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+  border-radius: 4px;
+}
+
+.pesquisa:focus-within {
+  border-color: #e1e7ed;
+  box-shadow: 0 3px 8px 0 #613d3d33;
+  border-radius: 4px;
+}
+
+.pesquisa__input:focus {
+  text-shadow: 0 4px 4px #00000040;
+}
+
+.pesquisa[data-qa='big'] {
+  margin-top: 20px;
+  background-image: url('images/Search.svg');
+  height: 70px;
+  background-size: 19px 19px;
+}
+
+.pesquisa[data-qa='small'] {
+  background-image: url('images/Search.svg');
+  height: 42px;
+  align-items: center;
+  background-size: 11px 11px;
+  background-position: center left 13px;
+}
+
+.pesquisa[data-qa='small'] .pesquisa__input {
+  margin-left: 33px;
+}
+
+.pesquisa__input::placeholder {
+  color: #3d4e61;
+}
+
+.pesquisa[data-qa='small'] .pesquisa__input::placeholder {
+  font-size: 14px;
+}

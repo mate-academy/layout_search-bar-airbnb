@@ -1,1 +1,113 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Book.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Avenir-Heavy;
+  src: url(./fonts/Avenir-Heavy.ttf);
+  font-weight: 900;
+}
+
+html {
+  font-family: Avenir, sans-serif;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form {
+  width: auto;
+  margin-top: 20px;
+  margin-left: 8px;
+  margin-right: 8px;
+  position: relative;
+}
+
+.big__searchbar {
+  width: 100%;
+  color: #3d4e61;
+  font-family: inherit;
+  height: 70px;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+}
+
+.big__img {
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  padding-left: 62px;
+  background-position: 25px calc(50% - 1px);
+  background-size: 19px;
+}
+
+.big__searchbar:hover {
+  box-shadow: 0 4px 4px 0 #00000040;
+}
+
+.big__searchbar:focus {
+  box-shadow: 0 4px 4px 0 #00000040;
+  font-family: Avenir-Heavy, sans-serif;
+  border-radius: 3px;
+  font-weight: 800;
+  background:
+    url('./images/Search.svg') no-repeat 25px calc(50% - 1px) / 19px,
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.big__searchbar::placeholder {
+  color: inherit;
+  font-weight: 300;
+}
+
+.small__searchbar::placeholder {
+  color: inherit;
+  font-weight: 300;
+}
+
+.small__searchbar {
+  width: 100%;
+  color: #3d4e61;
+  font-family: inherit;
+  height: 42px;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0%;
+  line-height: 100%;
+  padding: 14px 0 14px 33px;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+}
+
+.small__img {
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 12px calc(50% - 1px);
+  background-size: 11px;
+}
+
+.small__searchbar:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+}
+
+.small__searchbar:focus {
+  font-family: Avenir-Heavy, sans-serif;
+  border-radius: 3px;
+  font-weight: 800;
+  box-shadow: none;
+  background:
+    url('./images/Search.svg') no-repeat 12px calc(50% - 1px) / 11px,
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}

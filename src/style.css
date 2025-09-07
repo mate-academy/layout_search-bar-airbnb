@@ -11,8 +11,8 @@
 }
 
 html {
-  font-family: Avenir, sans-serif;
-  font-weight: 400;
+  font-family: Avenir, Arial, sans-serif;
+  font-weight: 300;
 }
 
 body {
@@ -21,91 +21,88 @@ body {
   box-sizing: border-box;
 }
 
-.form {
+/* Блок форми */
+.search-form {
   width: auto;
-  margin-top: 20px;
   margin-left: 8px;
   margin-right: 8px;
   position: relative;
 }
 
-.big__searchbar {
+.search-form--big {
+  margin-top: 20px;
+}
+
+.search-form--small {
+  margin-top: 20px;
+}
+
+/* Елемент input (базовий стиль) */
+.search-form__input {
   width: 100%;
   color: #3d4e61;
   font-family: inherit;
-  height: 70px;
-  font-size: 16px;
-  line-height: 100%;
-  letter-spacing: 0%;
   border: 1px solid #e1e7ed;
   border-radius: 4px;
   outline: none;
   box-shadow: 0 1px 8px 0 #3d4e611a;
+  background-repeat: no-repeat;
 }
 
-.big__img {
-  background-image: url(./images/Search.svg);
-  background-repeat: no-repeat;
+/* Великий інпут */
+.search-form--big .search-form__input {
+  height: 70px;
+  font-size: 16px;
   padding-left: 62px;
+  background-image: url(./images/Search.svg);
   background-position: 25px calc(50% - 1px);
   background-size: 19px;
 }
 
-.big__searchbar:hover {
+.search-form--big .search-form__input::placeholder {
+  color: inherit;
+  font-weight: 300;
+}
+
+/* Малий інпут */
+.search-form--small .search-form__input {
+  height: 42px;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 14px 0 14px 33px;
+  background-image: url(./images/Search.svg);
+  background-position: 12px calc(50% - 1px);
+  background-size: 11px;
+}
+
+.search-form--small .search-form__input::placeholder {
+  color: inherit;
+  font-weight: 300;
+}
+
+/* Стани BIG */
+.search-form--big .search-form__input:hover {
   box-shadow: 0 4px 4px 0 #00000040;
 }
 
-.big__searchbar:focus {
-  box-shadow: 0 4px 4px 0 #00000040;
-  font-family: Avenir-Heavy, sans-serif;
-  border-radius: 3px;
+.search-form--big .search-form__input:focus {
+  font-family: Avenir-Heavy, Arial, sans-serif;
   font-weight: 800;
+  border-radius: 3px;
   background:
     url('./images/Search.svg') no-repeat 25px calc(50% - 1px) / 19px,
     linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
-.big__searchbar::placeholder {
-  color: inherit;
-  font-weight: 300;
-}
-
-.small__searchbar::placeholder {
-  color: inherit;
-  font-weight: 300;
-}
-
-.small__searchbar {
-  width: 100%;
-  color: #3d4e61;
-  font-family: inherit;
-  height: 42px;
-  font-weight: 300;
-  font-size: 14px;
-  letter-spacing: 0%;
-  line-height: 100%;
-  padding: 14px 0 14px 33px;
-  border: 1px solid #e1e7ed;
-  border-radius: 4px;
-  outline: none;
-  box-shadow: 0 1px 8px 0 #3d4e611a;
-}
-
-.small__img {
-  background-image: url(./images/Search.svg);
-  background-repeat: no-repeat;
-  background-position: 12px calc(50% - 1px);
-  background-size: 11px;
-}
-
-.small__searchbar:hover {
+/* Стани SMALL */
+.search-form--small .search-form__input:hover {
   box-shadow: 0 3px 8px 0 #3d4e6133;
 }
 
-.small__searchbar:focus {
-  font-family: Avenir-Heavy, sans-serif;
-  border-radius: 3px;
+.search-form--small .search-form__input:focus {
+  font-family: Avenir-Heavy, Arial, sans-serif;
   font-weight: 800;
+  border-radius: 3px;
   box-shadow: none;
   background:
     url('./images/Search.svg') no-repeat 12px calc(50% - 1px) / 11px,

@@ -17,27 +17,45 @@
     />
   </head>
   <body>
-    <form
-      class="pesquisa"
-      data-qa="big"
-    >
-      <input
-        class="pesquisa__input"
-        type="text"
-        data-qa="keypress"
-        placeholder="Try &#34;Los Angeles&#34;"
-      />
-    </form>
-    <form
-      class="pesquisa"
-      data-qa="small"
-    >
-      <input
-        class="pesquisa__input"
-        type="text"
-        data-qa="hover"
-        placeholder="Try &#34;Los Angeles&#34;"
-      />
-    </form>
+    <section>
+      <form
+        class="pesquisa"
+        data-qa="big"
+      >
+        <label
+          for="search-big"
+          class="visually-hidden"
+        >
+          Search
+        </label>
+        <input
+          id="big"
+          class="pesquisa__input"
+          type="search"
+          data-qa="keypress"
+          name="q"
+          placeholder="Try &#34;Los Angeles&#34;"
+        />
+      </form>
+
+      <form
+        class="pesquisa"
+        data-qa="small"
+      >
+        <label
+          for="search-small"
+          class="visually-hidden"
+        >
+          Search
+        </label>
+        <input
+          id="small"
+          class="pesquisa__input"
+          type="search"
+          name="q"
+          placeholder="Try &#34;Los Angeles&#34;"
+        />
+      </form>
+    </section>
   </body>
 </html>

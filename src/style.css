@@ -8,12 +8,24 @@
 @font-face {
   font-family: Avenir;
   src: url('fonts/Avenir-Book.ttf') format('truetype');
-  font-weight: 500;
+  font-weight: 300;
   font-style: normal;
 }
 
 body {
   font-family: Avenir, Arial, sans-serif;
+  font-weight: 300;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 .pesquisa {
@@ -22,19 +34,12 @@ body {
   height: 70px;
   align-items: center;
   background-repeat: no-repeat;
-  background-position: center left 26px;
+  background-position: left 26px center;
   margin-top: 20px;
   border: 1px solid #e1e7ed;
   border-radius: 4px;
   box-sizing: border-box;
   box-shadow: 0 1px 8px 0 #3d4e611a;
-}
-
-.pesquisa input {
-  flex: 1;
-  height: 70px;
-  font-size: 16px;
-  border: none;
 }
 
 .pesquisa__input {
@@ -69,7 +74,6 @@ body {
 
 .pesquisa[data-qa='big'] {
   line-height: 70px;
-  margin-top: 20px;
   background-image: url('images/Search.svg');
   height: 70px;
   background-size: 19px 19px;

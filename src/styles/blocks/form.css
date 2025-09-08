@@ -1,0 +1,76 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 8px;
+}
+
+.form__input {
+  box-sizing: border-box;
+  background-image: url(../../images/Search.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 0;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px #3d4e611a;
+  font-family:
+    'Avenir Heavy' Arial,
+    Helvetica,
+    sans-serif;
+}
+
+.form__input--big {
+  margin: 20px 0;
+  padding-left: 62px;
+  background-size: 19px 19px;
+  background-position: 26px center;
+  height: 70px;
+}
+
+.form__input--small {
+  padding-bottom: 1px;
+  padding-left: 33px;
+  background-size: 11px 11px;
+  background-position: 13px center;
+  height: 42px;
+}
+
+.form__input:hover {
+  box-shadow: 0 3px 8px #3d4e6133;
+}
+
+.form__input:focus {
+  outline: none;
+  background: linear-gradient(#fff, #f6f6f7) url(../../images/Search.svg);
+  background-repeat: no-repeat;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+}
+
+.form__input--big:focus {
+  background-position: 26px center;
+  background-size: 19px 19px;
+}
+
+.form__input--small:focus {
+  background-size: 11px 11px;
+  background-position: 13px center;
+}
+
+.form__input::placeholder {
+  color: #3d4e61;
+  font-family: 'Avenir Book', Arial, Helvetica, sans-serif;
+  line-height: 100%;
+}
+
+.form__input:focus::placeholder {
+  color: transparent;
+}
+
+.form__input--big::placeholder {
+  font-size: 16px;
+}
+
+.form__input--small::placeholder {
+  font-size: 14px;
+}

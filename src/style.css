@@ -12,18 +12,15 @@
   font-style: normal;
 }
 
-html {
-  font-weight: 300;
-}
-
 body {
   font-family: Avenir, Arial, sans-serif;
-  font-weight: 500;
 }
 
 .pesquisa {
   background-image: url('images/Search.svg');
   display: flex;
+  height: 70px;
+  align-items: center;
   background-repeat: no-repeat;
   background-position: center left 26px;
   margin-top: 20px;
@@ -34,13 +31,14 @@ body {
 }
 
 .pesquisa input {
-  width: 900px;
+  flex: 1;
   height: 70px;
   font-size: 16px;
   border: none;
 }
 
 .pesquisa__input {
+  line-height: 1;
   font-family: Avenir, Arial, sans-serif;
   flex: 1;
   border: none;
@@ -50,6 +48,7 @@ body {
   box-sizing: border-box;
   margin-left: 62px;
   outline: none;
+  padding: 0;
 }
 
 .pesquisa:hover {
@@ -69,6 +68,7 @@ body {
 }
 
 .pesquisa[data-qa='big'] {
+  line-height: 70px;
   margin-top: 20px;
   background-image: url('images/Search.svg');
   height: 70px;
@@ -80,11 +80,13 @@ body {
   height: 42px;
   align-items: center;
   background-size: 11px 11px;
-  background-position: center left 13px;
+  background-position: 12px center;
 }
 
 .pesquisa[data-qa='small'] .pesquisa__input {
   margin-left: 33px;
+  font-size: 14px;
+  line-height: 42px;
 }
 
 .pesquisa__input::placeholder {

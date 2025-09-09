@@ -1,13 +1,21 @@
 @font-face {
   font-family: Avenir;
-  src: url(./fonts/Avenir-Book.ttf);
+  src:
+    url('./fonts/Avenir-Book.woff2') format('woff2'),
+    url('./fonts/Avenir-Book.woff') format('woff'),
+    url('./fonts/Avenir-Book.ttf') format('truetype');
   font-weight: 300;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: Avenir-Heavy;
-  src: url(./fonts/Avenir-Heavy.ttf);
+  font-family: Avenir;
+  src:
+    url('./fonts/Avenir-Heavy.woff2') format('woff2'),
+    url('./fonts/Avenir-Heavy.woff') format('woff'),
+    url('./fonts/Avenir-Heavy.ttf') format('truetype');
   font-weight: 900;
+  font-display: swap;
 }
 
 html {
@@ -86,8 +94,8 @@ body {
 }
 
 .search-form--big .search-form__input:focus {
-  font-family: Avenir-Heavy, Arial, sans-serif;
-  font-weight: 800;
+  font-family: Avenir, Arial, sans-serif;
+  font-weight: 900;
   border-radius: 3px;
   background:
     url('./images/Search.svg') no-repeat 25px calc(50% - 1px) / 19px,

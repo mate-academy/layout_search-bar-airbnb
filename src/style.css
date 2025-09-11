@@ -1,1 +1,93 @@
-/* add styles here */
+:root {
+  --color-text: rgba(61, 78, 97, 1);
+  --color-border: rgba(225, 231, 237, 1);
+  --color-default: rgba(255, 255, 255, 1);
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir.ttc) format('truetype');
+  font-style: normal;
+  font-weight: 300;
+}
+
+html {
+  font-family: Avenir, sans-serif;
+}
+
+body {
+  box-sizing: content-box;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.search-form {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  color: var(--color-default);
+  margin-top: 20px;
+}
+
+.search-form--big {
+  margin-top: 12px;
+}
+
+.search-form__icon {
+  display: block;
+  position: absolute;
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.search-form__icon--big {
+  width: 19px;
+  height: 19px;
+  padding-right: 17px;
+  margin-left: 26px;
+}
+
+.search-form__icon--small {
+  width: 11px;
+  height: 11px;
+  padding-right: 17px;
+  margin-left: 13px;
+}
+
+.search-form__input {
+  display: block;
+  box-sizing: border-box;
+  font-family: inherit;
+  width: 100%;
+  line-height: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  color: var(--color-default);
+}
+
+.search-form__input--big {
+  font-size: 16px;
+  font-weight: 400;
+  height: 70px;
+  padding: 0 0 0 62px;
+}
+
+.search-form__input--small {
+  font-size: 14px;
+  font-weight: 300;
+  height: 42px;
+  padding: 0 0 0 33px;
+}
+
+.search-form__input:hover {
+  border-color: var(--color-border);
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.search-form__input:focus {
+  border-color: var(--color-border);
+}

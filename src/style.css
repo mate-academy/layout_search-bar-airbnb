@@ -47,14 +47,14 @@ body {
   width: 19px;
   height: 19px;
   padding-right: 17px;
-  margin-left: 26px;
+  margin: 0 0 1px 26px;
 }
 
 .search-form__icon--small {
   width: 11px;
   height: 11px;
   padding-right: 17px;
-  margin-left: 13px;
+  margin: 0 0 2px 13px;
 }
 
 .search-form__input {
@@ -90,4 +90,8 @@ body {
 
 .search-form__input:focus {
   border-color: var(--color-border);
+}
+
+.search-form__input--small::placeholder {
+  color: var(--color-text);
 }

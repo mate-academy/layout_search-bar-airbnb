@@ -1,32 +1,58 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset = "UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="
+        width = device-width,
+        user-scalable = no,
+        initial-scale = 1.0,
+        maximum-scale = 1.0,
+        minimum-scale = 1.0
+      "
     />
     <meta
-      http-equiv="X-UA-Compatible"
-      content="ie=edge"
+      http-equiv = "X-UA-Compatible"
+      content = "ie = edge"
     />
-    <title>Document</title>
+    <title>Search bar airbnb</title>
     <link
-      rel="stylesheet"
-      href="style.css"
+      rel = "stylesheet"
+      href = "./style.css"
     />
   </head>
-  <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+  <body>
+    <form
+      action = "/"
+      method = "get"
+      class = "search-form search-form--big"
+      data-qa = "big"
+    >
+      <div class = "search-form__icon search-form__icon--big"></div>
+      <input
+        type = "text"
+        class = "search-form__input search-form__input--big"
+        data-qa = "keypress"
+        placeholder = "Try “Los Angeles“"
+        required
+      />
+    </form>
+
+    <form
+      action = "/"
+      method = "get"
+      class = "search-form search-form--small"
+      data-qa = "small"
+    >
+      <div class = "search-form__icon search-form__icon--small"></div>
+      <input
+        type = "text"
+        class = "search-form__input search-form__input--small"
+        placeholder = "Try “Los Angeles“"
+        required
+      />
+    </form>
   </body>
 </html>

@@ -2,8 +2,17 @@
   font-family: Avenir;
   font-weight: 300;
   font-style: normal;
-  src: url('fonts/Avenir-Book.ttf'), url('fonts/Avenir-Heavy.ttf');
+  src: url('fonts/Avenir-Book.ttf');
 }
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 900;
+  font-style: normal;
+  src: url('fonts/Avenir-Heavy.ttf');
+}
+
+
 
 body {
   font-weight: 300;
@@ -98,14 +107,14 @@ body {
 .search-form__input:focus {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
-  font-weight: 600;
+  font-weight: 900;
 }
 
 /* Placeholder */
 
 .search-form__input::placeholder {
   color: inherit;
-  font-weight: Ŕ;
+  font-weight: inherit
 }
 
 .search-form__input--big::placeholder {

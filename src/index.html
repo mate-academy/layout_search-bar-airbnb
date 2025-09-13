@@ -18,21 +18,26 @@
   </head>
   <body>
     <form data-qa="big">
-      <div class="first-search-bar">
+      <div class="search-bar search-bar--big">
         <input
-          class="first__input__search-bar"
+          name="search"
+          autocomplete="off"
+          aria-label="rearch"
+          class="search-bar__input"
           type="text"
           data-qa="keypress"
           placeholder="Try “Los Angeles“"
         />
       </div>
     </form>
-    <form>
-      <div class="second-search-bar">
+    <form data-qa="small">
+      <div class="search-bar search-bar--small">
         <input
-          class="second__input__search-bar"
+          name="search"
+          autocomplete="off"
+          aria-label="rearch"
+          class="search-bar__input"
           type="text"
-          data-qa="small"
           placeholder="Try “Los Angeles“"
         />
       </div>

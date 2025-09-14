@@ -1,1 +1,47 @@
-/* add styles here */
+/* Базові скидання */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px;
+  font-family: sans-serif;
+}
+
+/* Контейнер для поля вводу з іконкою */
+.input-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 20px;
+}
+
+/* Іконка лупи */
+.search-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
+}
+
+/* Інпут */
+.input {
+  width: 100%;
+  padding: 10px 16px 10px 44px; /* зліва місце для іконки */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Варіант великий */
+.input--big {
+  height: 70px;
+}
+
+/* Варіант малий */
+.input--small {
+  height: 42px;
+}

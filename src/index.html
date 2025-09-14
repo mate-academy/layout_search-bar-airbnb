@@ -17,38 +17,37 @@
     />
   </head>
   <body>
-
     <form
       action="/submit"
-      class="big-search"
+      class="search big-search"
       data-qa="big"
+      method="post"
     >
-
-      <div class="big-search__icon"></div>
+      <div class="search__big-search--icon"></div>
 
       <input
-        class="big-search__input"
+        class="search__input big-search__input"
         type="text"
         data-qa="keypress"
+        name="searchBig"
         placeholder="Try “Los Angeles“"
       />
     </form>
 
     <form
       action="/submit"
-      class="small-search"
+      class="search small-search"
       data-qa="small"
+      method="post"
     >
-
-      <div class="small-search__icon"></div>
+      <div class="search__small-search--icon"></div>
 
       <input
-        class="small-search__input"
+        class="search__input small-search__input"
         type="text"
-        data-qa="keypress"
+        name="searchSmall"
         placeholder="Try “Los Angeles“"
       />
     </form>
-    
   </body>
 </html>

@@ -1,14 +1,14 @@
 .big-search {
   display: flex;
   position: relative;
-  margin-top: 20px;
 }
 
-.big-search__icon {
+.search__big-search--icon {
   position: absolute;
   height: 19px;
   width: 19px;
-  margin: 25px 26px;
+  top: 25px;
+  left: 26px;
   background-image: url(./images/Search.svg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -25,4 +25,10 @@
 .big-search__input:focus {
   background-image: linear-gradient(#fff, #f6f6f7);
   font-weight: 900;
+  outline: none;
+  color: #000;
+}
+
+.big-search__input:hover {
+  box-shadow: 0 4px 6px rgba(61, 78, 97, 0.2);
 }

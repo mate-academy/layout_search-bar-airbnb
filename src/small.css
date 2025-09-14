@@ -3,11 +3,12 @@
   position: relative;
 }
 
-.small-search__icon {
+.search__small-search--icon {
   position: absolute;
   height: 11px;
   width: 11px;
-  margin: 15px 13px;
+  top: 15px;
+  left: 13px;
   background-image: url(./images/Search.svg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -24,4 +25,10 @@
 .small-search__input:focus {
   background-image: linear-gradient(#fff, #f6f6f7);
   font-weight: 900;
+  outline: none;
+  color: #000;
+}
+
+.small-search__input:hover {
+  box-shadow: 0 4px 6px rgba(61, 78, 97, 0.2);
 }

@@ -17,40 +17,41 @@
     />
   </head>
   <body class="body">
-    <section class="search-bar">
-      <div
-        class="large"
+    <section class="search">
+      <form
+        class="search__big"
         data-qa="big"
       >
-        <img
-          class="large__icon"
-          src="./images/Search.svg"
-          alt="Search Icon"
-        />
+        <span
+          class="search__icon--big"
+          aria-hidden="true"
+        ></span>
+
         <input
-          class="large__text"
+          name="search"
+          class="search__input--big"
           type="text"
           data-qa="keypress"
           placeholder="Try “Los Angeles“"
         />
-      </div>
+      </form>
 
-      <div
-        class="small"
+      <form
+        class="search__small"
         data-qa="small"
       >
-        <img
-          class="small__icon"
-          src="./images/Search.svg"
-          alt="Search Icon"
-        />
+        <span
+          class="search__icon--small"
+          aria-hidden="true"
+        ></span>
         <input
-          class="small__text"
+          name="search"
+          class="search__input--small"
           type="text"
           data-qa="hover"
           placeholder="Try “Los Angeles“"
         />
-      </div>
+      </form>
     </section>
   </body>
 </html>

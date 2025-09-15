@@ -1,1 +1,128 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  font-weight: 300;
+  font-style: normal;
+  src: url('./fonts/Avenir-Book.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 600;
+  font-style: normal;
+  src: url('./fonts/Avenir-Heavy.ttf') format('truetype');
+}
+
+body {
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+}
+
+.search-form {
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.search-form--big {
+  flex-direction: row;
+  height: 70px;
+}
+
+.search-form--small {
+  flex-direction: row;
+  height: 42px;
+}
+
+.search-form__label {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.search-form__label::after {
+  position: absolute;
+  content: '';
+  display: block;
+}
+
+.search-form__label--big::after {
+  background-image: url('./images/Search.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 19px;
+  height: 19px;
+  top: 25px;
+  left: 26px;
+}
+
+.search-form__label--small::after {
+  background-image: url('./images/Search.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 11px;
+  height: 11px;
+  top: 15px;
+  left: 13px;
+}
+
+.search-form__input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgb(225, 231, 237);
+  border-radius: 4px;
+  color: rgb(61, 78, 97);
+  font-weight: 300;
+  font-family: inherit;
+  box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  outline: none;
+}
+
+.search-form__input:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.search-form__input--big {
+  padding-left: 62px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.search-form__input--small {
+  padding-left: 33px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.search-form__input::placeholder {
+  color: inherit;
+  font-weight: 300;
+}
+
+.search-form__input--big::placeholder {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.search-form__input--small::placeholder {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.search-form__input:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

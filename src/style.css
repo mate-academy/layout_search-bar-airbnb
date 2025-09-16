@@ -1,1 +1,106 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Heavy.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Avenir, sans-serif;
+}
+
+input {
+  flex: 1;
+  font-family: Avenir, sans-serif;
+
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+  border-radius: 4px;
+
+  color: #3d4e61;
+  font-weight: 300;
+}
+
+input::placeholder {
+  color: #3d4e61;
+}
+
+.search__bar {
+  display: flex;
+  width: 100%;
+}
+
+.search__bar--large {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.search__bar--large input {
+  background-image: url('./images/Search.svg');
+  background-size: 19px 19px;
+  background-repeat: no-repeat;
+  background-position: left 26px center;
+
+  height: 70px;
+  padding-left: 62px;
+
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.search__bar--small {
+  font-size: 14px;
+  line-height: 100%;
+}
+
+.search__bar--small input {
+  background-image: url('./images/Search.svg');
+  background-size: 11px 11px;
+  background-repeat: no-repeat;
+  background-position: left 14px center;
+
+  height: 42px;
+  padding-left: 33px;
+
+  text-shadow: 0 4px 4px 0 #00000040;
+  font-size: 14px;
+  line-height: 100%;
+}
+
+.search__bar--large:hover {
+  box-shadow: 0 4px 4px 0 #00000040;
+}
+
+.search__bar--large input:focus {
+  box-shadow: 0 4px 4px 0 #00000040;
+  background:
+    url('./images/Search.svg') no-repeat left 26px center,
+    linear-gradient(180deg, #ffff 0%, #f6f6f7 100%);
+  text-shadow: 0 4px 4px 0 #00000040;
+  outline: none;
+}
+
+.search__bar--small input:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+  text-shadow: none;
+}
+
+.search__bar--small input:focus {
+  background:
+    url('./images/Search.svg') no-repeat left 14px center,
+    linear-gradient(180deg, #ffff 0%, #f6f6f7 100%);
+  outline: none;
+  font-weight: 700;
+}

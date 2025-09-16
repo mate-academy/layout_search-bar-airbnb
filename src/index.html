@@ -22,11 +22,20 @@
         class="search"
         data-qa="big"
       >
+        <label
+          for="search-big"
+          class="visually-hidden"
+        >
+          Search city
+        </label>
         <input
+          id="search-big"
+          name="search-big"
           type="text"
           data-qa="keypress"
           placeholder="Try “Los Angeles“"
-          class="search_input search_input-big"
+          aria-label="Search city"
+          class="search__input search__input--big"
         />
       </form>
 
@@ -34,11 +43,20 @@
         class="search"
         data-qa="small"
       >
+        <label
+          for="search-small"
+          class="visually-hidden"
+        >
+          Search city small
+        </label>
         <input
+          id="search-small"
+          name="search-small"
           type="text"
           data-qa="hover"
           placeholder="Try “Los Angeles“"
-          class="search_input search_input-small"
+          aria-label="Search city small"
+          class="search__input search__input--small"
         />
       </form>
     </main>

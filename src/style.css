@@ -12,16 +12,17 @@
   font-style: normal;
 }
 
-* {
+html {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
   font-family: Avenir, sans-serif;
+  font-weight: 300;
 }
 
-input {
+.search__input {
   flex: 1;
   font-family: Avenir, sans-serif;
 
@@ -33,7 +34,7 @@ input {
   font-weight: 300;
 }
 
-input::placeholder {
+.search__input::placeholder {
   color: #3d4e61;
 }
 
@@ -44,7 +45,6 @@ input::placeholder {
 
 .search__bar--large {
   margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .search__bar--large input {
@@ -61,6 +61,7 @@ input::placeholder {
 }
 
 .search__bar--small {
+  margin-top: 20px;
   font-size: 14px;
   line-height: 100%;
 }

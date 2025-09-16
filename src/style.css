@@ -7,19 +7,19 @@
 
 @font-face {
   font-family: Avenir-Book;
-  src: url(./fonts/Avenir-Book.ttf);
+  src: url(./fonts/Avenir-Book.ttf) format('truetype');
   font-weight: 300;
 }
 
 @font-face {
   font-family: Avenir-Heavy;
-  src: url(./fonts/Avenir-Heavy.ttf);
+  src: url(./fonts/Avenir-Heavy.ttf) format('truetype');
   font-weight: 900;
 }
 
 html {
   font-family: Avenir, sans-serif;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .container {
@@ -27,17 +27,17 @@ html {
   box-sizing: border-box;
 }
 
-input::placeholder {
+.search__input::placeholder {
   text-shadow: none;
   color: #3d4e61;
 }
 
-input:hover {
+.search__input:hover {
   box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
   font-weight: 400;
 }
 
-input:focus {
+.search__input:focus {
   outline: none;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   font-weight: 400;
@@ -45,7 +45,7 @@ input:focus {
   background-color: rgba(246, 246, 247, 1);
 }
 
-form[data-qa='big'] input {
+form[data-qa='big'] .search__input {
   font-family: inherit;
   background-image: url('images/Search.svg');
   background-repeat: no-repeat;
@@ -64,10 +64,9 @@ form[data-qa='big'] input {
 
 form[data-qa='big'] {
   margin-top: 20px;
-  margin-bottom: 20px;
 }
 
-form[data-qa='small'] input {
+form[data-qa='small'] .search__input {
   font-family: inherit;
   background-image: url('images/Search.svg');
   background-repeat: no-repeat;
@@ -82,4 +81,8 @@ form[data-qa='small'] input {
   border-radius: 4px;
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
   font-size: 14px;
+}
+
+form[data-qa='small'] {
+  margin-top: 20px;
 }

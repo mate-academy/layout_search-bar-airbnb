@@ -1,36 +1,64 @@
-@font-face {
-  /* stylelint-disable-next-line font-family-name-quotes */
-  font-family: 'AirbnbFont';
-  src: url('./fonts/AirbnbFont.woff2') format('woff2');
-  font-weight: 300;
-  font-style: normal;
-}
-
 body {
-  /* stylelint-disable-next-line font-family-name-quotes */
-  font-family: 'AirbnbFont', sans-serif;
-  font-weight: 300;
   margin: 0;
   padding: 0;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  background-color: #fff;
 }
 
 .page {
   padding: 20px;
+  box-sizing: border-box;
 }
 
 .search-form {
   width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 .search-form--big {
   margin-top: 20px;
-  margin-bottom: 20px;
 }
 
-.search-form--small {
-  margin-top: 0;
+.search-form__spacer {
+  height: 20px;
+}
+
+.search-form__input {
+  width: 100%;
+  padding: 14px 48px 14px 16px;
+  font-size: 14px;
+  font-weight: 300;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #fff;
+  background-image: url('./images/icon-search.svg');
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 20px 20px;
+  box-sizing: border-box;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Hover */
+.search-form__input:hover {
+  border-color: #999;
+  cursor: text;
+}
+
+/* Focus */
+.search-form__input:focus {
+  border-color: #000;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+/* Placeholder estilo */
+.search-form__input::placeholder {
+  color: #000;
+  font-style: italic;
+  opacity: 1;
 }
 
 .search-form__content {
@@ -40,19 +68,12 @@ body {
   gap: 10px;
 }
 
-.search-form__input {
-  flex-grow: 1;
-  padding: 10px;
-  border: 1px solid #ccc;
-  font-weight: 300;
-}
-
-.search-form__input:hover {
-  border-color: #aaa;
-}
-
-.search-form__input:focus {
-  outline: 2px solid #007aff;
+.search-form__icon {
+  width: 24px;
+  height: 24px;
+  background-image: url('./images/Search.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .search-form__button {
@@ -69,10 +90,18 @@ body {
   outline: 2px solid #007aff;
 }
 
-.search-form__icon {
-  width: 24px;
-  height: 24px;
-  background-image: url('./images/icon-search.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
+.search-form--small .search-form__input {
+  padding: 10px 40px 10px 12px;
+  font-size: 12px;
+}
+
+.search-form--small .search-form__button {
+  padding: 8px 16px;
+  font-size: 12px;
+}
+
+.search-form--small .search-form__icon {
+  width: 20px;
+  height: 20px;
+  background-size: 16px 16px;
 }

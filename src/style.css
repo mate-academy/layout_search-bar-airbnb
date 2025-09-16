@@ -17,6 +17,7 @@
 }
 
 .search__input {
+  box-sizing: border-box;
   font-family: 'Avenir-Book ', sans-serif;
   font-weight: 300;
   background-image: url(./images/Search.svg);
@@ -31,12 +32,13 @@
 /* #region big search */
 
 .search__input--big {
-  padding: 25px 0 25px 62px;
-  background-position: 20px center;
+  padding: 23.5px 0 23px 62px;
+  background-position: 26px center;
   margin-bottom: 20px;
   font-size: 16px;
   color: #3d4e61;
   outline: none;
+  box-shadow: 0 1px 8px #3d4e611a;
 }
 
 .search__input--big:hover {
@@ -54,11 +56,13 @@
 /* region small search */
 
 .search__input--small {
-  padding: 12px 0 10px 33px;
-  background-size: 11px 11px;
-  background-position: 13px center;
+  padding: 11px 0 10px 33px;
+  background-size: 10.5px 10.5px;
+  background-position: 12px center;
   font-size: 14px;
   outline: none;
+  color: #3d4e61;
+  box-shadow: 0 1px 8px #3d4e611a;
 }
 
 .search__input--small:hover {

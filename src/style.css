@@ -1,3 +1,8 @@
+/* Reset e fonte */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,11 +11,12 @@ body {
   background-color: #fff;
 }
 
+/* Container principal */
 .page {
   padding: 20px;
-  box-sizing: border-box;
 }
 
+/* Formulários */
 .search-form {
   width: 100%;
 }
@@ -23,19 +29,20 @@ body {
   height: 20px;
 }
 
+/* Campo de entrada */
 .search-form__input {
   width: 100%;
-  padding: 14px 48px 14px 16px;
+  height: 48px;
+  padding: 0 16px 0 44px;
   font-size: 14px;
   font-weight: 300;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   border-radius: 12px;
   background-color: #fff;
-  background-image: url('./images/icon-search.svg');
+  background-image: url('./images/Search.svg');
   background-repeat: no-repeat;
-  background-position: right 16px center;
+  background-position: left 16px center;
   background-size: 20px 20px;
-  box-sizing: border-box;
   transition:
     border-color 0.3s ease,
     box-shadow 0.3s ease;
@@ -54,54 +61,17 @@ body {
   outline: none;
 }
 
-/* Placeholder estilo */
+/* Placeholder */
 .search-form__input::placeholder {
-  color: #000;
-  font-style: italic;
+  color: #717171;
+  font-style: normal;
   opacity: 1;
 }
 
-.search-form__content {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  gap: 10px;
-}
-
-.search-form__icon {
-  width: 24px;
-  height: 24px;
-  background-image: url('./images/Search.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.search-form__button {
-  padding: 10px 20px;
-  font-weight: 300;
-  cursor: pointer;
-}
-
-.search-form__button:hover {
-  background-color: #f0f0f0;
-}
-
-.search-form__button:focus {
-  outline: 2px solid #007aff;
-}
-
+/* Estilo específico para barra pequena */
 .search-form--small .search-form__input {
-  padding: 10px 40px 10px 12px;
+  height: 40px;
   font-size: 12px;
-}
-
-.search-form--small .search-form__button {
-  padding: 8px 16px;
-  font-size: 12px;
-}
-
-.search-form--small .search-form__icon {
-  width: 20px;
-  height: 20px;
+  padding-left: 40px;
   background-size: 16px 16px;
 }

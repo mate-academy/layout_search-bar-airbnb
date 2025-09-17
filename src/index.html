@@ -6,50 +6,37 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Los Angeles</title>
+    <title>Airbnb - Barra de Pesquisa</title>
     <link
       rel="stylesheet"
       href="style.css"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <main class="page">
-      <!-- Barra de pesquisa grande -->
       <form
         class="search-form search-form--big"
         data-qa="big"
       >
-        <div class="search-form__content">
-          <div class="search-form__icon"></div>
-          <input
-            class="search-form__input"
-            type="text"
-            data-qa="keypress"
-            placeholder="Try “Los Angeles”"
-          />
-        </div>
+        <input
+          class="search-form__input"
+          type="text"
+          placeholder="Try 'Los Angeles'"
+          data-qa="keypress"
+        />
       </form>
 
       <div class="search-form__spacer"></div>
 
-      <!-- Barra de pesquisa pequena -->
       <form
         class="search-form search-form--small"
         data-qa="small"
       >
-        <div class="search-form__content">
-          <div class="search-form__icon"></div>
-          <input
-            class="search-form__input"
-            type="text"
-            data-qa="keypress"
-            placeholder="Try “Los Angeles”"
-          />
-        </div>
+        <input
+          class="search-form__input"
+          type="text"
+          placeholder="Try 'Los Angeles'"
+        />
       </form>
     </main>
   </body>

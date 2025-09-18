@@ -17,16 +17,29 @@
     />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <!--Великий пошук-->
+    <form
+      class="search search--large"
+      data-qa="big"
+    >
+      <input
+        type="text"
+        class="search__input"
+        data-qa="keypress"
+        placeholder="Try “Los Angeles“"
+      />
+    </form>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <!--Маленький пошук-->
+    <form
+      class="search search--small"
+      data-qa="small"
+    >
+      <input
+        type="text"
+        class="search__input"
+        placeholder="Try “Los Angeles“"
+      />
+    </form>
   </body>
 </html>

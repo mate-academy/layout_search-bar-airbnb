@@ -17,29 +17,33 @@
     />
   </head>
   <body>
-    <form class="bars">
-      <div
-        class="bars__item"
+    <div class="bars">
+      <form
+        class="bars__wrapper"
         data-qa="big"
       >
-        <input
-          class="bars__searchBar bars__searchBar--bigger"
-          type="text"
-          data-qa="keypress"
-          placeholder="Try &#34;Los Angeles&#34;"
-        />
-      </div>
+        <div class="bars__item">
+          <input
+            class="bars__searchBar bars__searchBar--bigger"
+            type="text"
+            data-qa="keypress"
+            placeholder="Try &#34;Los Angeles&#34;"
+          />
+        </div>
+      </form>
 
-      <div
-        class="bars__item"
+      <form
+        class="bars__wrapper"
         data-qa="small"
       >
-        <input
-          class="bars__searchBar bars__searchBar--smaller"
-          type="text"
-          placeholder="Try &#34;Los Angeles&#34;"
-        />
-      </div>
-    </form>
+        <div class="bars__item">
+          <input
+            class="bars__searchBar bars__searchBar--smaller"
+            type="text"
+            placeholder="Try &#34;Los Angeles&#34;"
+          />
+        </div>
+      </form>
+    </div>
   </body>
 </html>

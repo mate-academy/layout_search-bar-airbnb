@@ -12,21 +12,20 @@
 
 body {
   color: #3d4e61;
-  margin-top: 0;
-  padding-top: 0;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
 }
 
 .bars {
   display: flex;
   flex-direction: column;
-
   font-weight: 300;
 }
 
 .bars__searchBar {
   color: #3d4e61;
   font-family: Avenir, sans-serif;
-  font-weight: 400;
 
   background: #fff;
   background-image: url(images/Search.svg);
@@ -61,8 +60,13 @@ body {
   box-shadow: 0 4px 4px 0 #00000040;
 }
 
-.bars__item {
+.bars__wrapper {
+  margin: 0;
+  padding: 0;
   margin-top: 20px;
+}
+
+.bars__item {
   box-sizing: border-box;
   border-radius: 5px;
 }

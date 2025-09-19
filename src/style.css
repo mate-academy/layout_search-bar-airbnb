@@ -1,66 +1,90 @@
+/* ========================
+   Fonte personalizada
+======================== */
+@font-face {
+  font-family: AirbnbFont;
+  src: url('src/fonts/AirbnbFont-Regular.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* ========================
+   Reset
+======================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f5f7fa;
+  font-family: AirbnbFont, sans-serif;
+  background-color: #fff;
+  padding: 20px;
 }
 
-.search-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    max-width: 600px;
-    padding: 0 20px;
+.container {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
+/* ========================
+   Barra de pesquisa
+======================== */
 .search-bar {
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    border: 1px solid #dcdcdc;
-    border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    padding: 12px 18px;
-    transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  width: 100%;
 }
 
-/* Estado de Hover (quando o mouse está sobre a barra) */
-.search-bar:hover {
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    border-color: #c4c4c4;
+.search-bar + .search-bar {
+  margin-top: 20px; /* Espaço entre as duas barras */
 }
 
-.search-icon {
-    font-size: 24px;
-    color: #a0a0a0;
-    margin-right: 12px;
+/* Campo de input com ícone */
+.search-bar__input {
+  width: 100%;
+  height: 48px;
+  padding-left: 40px; /* Espaço para o ícone */
+  font-size: 16px;
+  font-weight: 300;
+  color: #222;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: url('src/images/Search.svg') no-repeat 12px center;
+  background-size: 18px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.search-bar input {
-    flex-grow: 1;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    color: #333;
+.search-bar__input::placeholder {
+  color: #717171;
 }
 
-.search-bar input::placeholder {
-    color: #a0a0a0;
-    font-style: italic;
+/* Hover e focus iguais ao Airbnb */
+.search-bar__input:hover {
+  border-color: #b0b0b0;
 }
 
-/* Estado de Foco (quando o usuário clica no campo de texto) */
-.search-bar input:focus {
-    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5); /* Anel azul ao redor */
-    border-color: #4299e1;
+.search-bar__input:focus {
+  outline: none;
+  border-color: #ff385c; /* Rosa Airbnb */
+  box-shadow: 0 0 3px rgba(255, 56, 92, 0.4);
 }
 
-/* Ajusta o contêiner pai para remover a sombra e a borda quando a barra interna está em foco */
-.search-bar:has(input:focus) {
-    box-shadow: none;
-    border-color: #4299e1;
+/* ========================
+   Barra grande
+======================== */
+.search-bar--big {
+  margin-top: 20px; /* Recuo superior */
+}
+
+.search-bar--big .search-bar__input {
+  height: 56px;
+  font-size: 18px;
+}
+
+/* ========================
+   Barra pequena
+======================== */
+.search-bar--small .search-bar__input {
+  height: 44px;
+  font-size: 16px;
 }

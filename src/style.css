@@ -1,77 +1,66 @@
-/* Reset e fonte */
-* {
-  box-sizing: border-box;
-}
-
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Roboto, sans-serif;
-  font-weight: 300;
-  background-color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f7fa;
 }
 
-/* Container principal */
-.page {
-  padding: 20px;
+.search-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
 }
 
-/* Formulários */
-.search-form {
-  width: 100%;
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 12px 18px;
+    transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 
-.search-form--big {
-  margin-top: 20px;
+/* Estado de Hover (quando o mouse está sobre a barra) */
+.search-bar:hover {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    border-color: #c4c4c4;
 }
 
-.search-form__spacer {
-  height: 20px;
+.search-icon {
+    font-size: 24px;
+    color: #a0a0a0;
+    margin-right: 12px;
 }
 
-/* Campo de entrada */
-.search-form__input {
-  width: 100%;
-  height: 48px;
-  padding: 0 16px 0 44px;
-  font-size: 14px;
-  font-weight: 300;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  background-color: #fff;
-  background-image: url('./images/Search.svg');
-  background-repeat: no-repeat;
-  background-position: left 16px center;
-  background-size: 20px 20px;
-  transition:
-    border-color 0.3s ease,
-    box-shadow 0.3s ease;
+.search-bar input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
 }
 
-/* Hover */
-.search-form__input:hover {
-  border-color: #999;
-  cursor: text;
+.search-bar input::placeholder {
+    color: #a0a0a0;
+    font-style: italic;
 }
 
-/* Focus */
-.search-form__input:focus {
-  border-color: #000;
-  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
-  outline: none;
+/* Estado de Foco (quando o usuário clica no campo de texto) */
+.search-bar input:focus {
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5); /* Anel azul ao redor */
+    border-color: #4299e1;
 }
 
-/* Placeholder */
-.search-form__input::placeholder {
-  color: #717171;
-  font-style: normal;
-  opacity: 1;
-}
-
-/* Estilo específico para barra pequena */
-.search-form--small .search-form__input {
-  height: 40px;
-  font-size: 12px;
-  padding-left: 40px;
-  background-size: 16px 16px;
+/* Ajusta o contêiner pai para remover a sombra e a borda quando a barra interna está em foco */
+.search-bar:has(input:focus) {
+    box-shadow: none;
+    border-color: #4299e1;
 }

@@ -1,43 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Airbnb - Barra de Pesquisa</title>
-    <link
-      rel="stylesheet"
-      href="style.css"
-    />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barras de Pesquisa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
   <body>
-    <main class="page">
-      <form
-        class="search-form search-form--big"
-        data-qa="big"
-      >
-        <input
-          class="search-form__input"
-          type="text"
-          placeholder="Try 'Los Angeles'"
-          data-qa="keypress"
-        />
-      </form>
-
-      <div class="search-form__spacer"></div>
-
-      <form
-        class="search-form search-form--small"
-        data-qa="small"
-      >
-        <input
-          class="search-form__input"
-          type="text"
-          placeholder="Try 'Los Angeles'"
-        />
-      </form>
-    </main>
+    <div class="search-container">
+      <div class="search-bar search-bar--large">
+        <span class="material-symbols-outlined search-icon">
+          search
+        </span>
+        <input type="text" placeholder="Los Angeles">
+      </div>
+      <div class="search-bar search-bar--small">
+        <span class="material-symbols-outlined search-icon">
+          search
+        </span>
+        <input type="text" placeholder="Los Angeles">
+      </div>
+    </div>
   </body>
 </html>

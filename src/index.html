@@ -1,4 +1,5 @@
 <!doctype html>
+>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,6 +7,7 @@
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
+
     <meta
       http-equiv="X-UA-Compatible"
       content="ie=edge"
@@ -17,16 +19,30 @@
     />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      action="#"
+      class="search search--big"
+      data-qa="big"
+    >
+      <input
+        class="search__input search__input--big"
+        type="text"
+        data-qa="keypress"
+        placeholder="Try “Los Angeles“"
+      />
+    </form>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      action="#"
+      class="search search--small"
+      data-qa="small"
+    >
+      <input
+        class="search__input search__input--small"
+        type="text"
+        data-qa="hover"
+        placeholder="Try “Los Angeles“"
+      />
+    </form>
   </body>
 </html>

@@ -15,6 +15,7 @@
 
 body {
   margin: 0;
+  margin-left: 8px;
 }
 
 .container {
@@ -30,6 +31,7 @@ body {
   border: 1px solid #e1e7ed;
   border-radius: 3px;
   gap: 20px;
+  color: #3d4e61;
 }
 
 .bar--big__form {
@@ -38,6 +40,7 @@ body {
   font-size: 16px;
   padding-left: 62px;
   box-sizing: border-box;
+  font-weight: 400;
 }
 
 .bar--mini__form {
@@ -45,11 +48,16 @@ body {
   font-size: 14px;
   padding-left: 33px;
   box-sizing: border-box;
+  font-weight: 900;
 }
 
 .bar:hover {
   border: 1px solid #3d4e6133;
   border-top: 1px solid #e1e7ed;
+}
+
+input::placeholder {
+  font-weight: 400;
 }
 
 .bar:focus {

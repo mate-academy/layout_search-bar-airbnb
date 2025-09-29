@@ -21,6 +21,7 @@
 }
 
 .page {
+  box-sizing: border-box;
   margin: 0;
   font-family: 'Avenir', Arial, sans-serif;
   font-weight: 300;
@@ -34,9 +35,7 @@
 
 /* #region search-bar */
 
-* {
-  box-sizing: border-box;
-}
+
 
 .search--bar--block {
   margin: 20px 0;
@@ -47,7 +46,7 @@
   position: relative;
 }
 
-.input--search--bar {
+.search--bar--input {
   box-sizing: border-box;
   filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.1));
   display: flex;
@@ -65,35 +64,39 @@
   background-position: 25px;
   background-size: 19px;
 
-  &::placeholder {
-    font-family: 'Avenir', Arial, sans-serif;
-    color: #3d4e61;
-  }
-
-  &:hover {
-    filter: drop-shadow(0 1px 8px rgba(0, 0, 0, 0.2));
-  }
-
-  &:focus {
-    font-weight: 400;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    background: linear-gradient(to bottom, #fff, #f6f6f7);
-    filter: drop-shadow(0 1px 8px rgba(0, 0, 0, 0.2));
-  }
 }
 
-.input--big--search--bar {
+.search--bar--input::placeholder {
+  font-family: 'Avenir', Arial, sans-serif;
+  color: #3d4e61;
+}
+
+.search--bar--input:hover {
+  filter: drop-shadow(0 1px 8px rgba(0, 0, 0, 0.2));
+}
+
+.search--bar--input:focus {
+  box-sizing: border-box;
+  font-weight: 400;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(to bottom, #fff, #f6f6f7);
+  filter: drop-shadow(0 1px 8px rgba(0, 0, 0, 0.2));
+}
+
+.search--bar--input--big {
+  box-sizing: border-box;
   padding-block: 23px 25px;
 }
 
-.input--big--search--bar:focus {
+.search--bar--input--big:focus {
   background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
   background-position: 25px;
   background-size: 19px;
 }
 
-.input--small--search--bar {
+.search--bar--input--small {
+  box-sizing: border-box;
   height: 42px;
   font-size: 14px;
   justify-content: center;
@@ -101,13 +104,14 @@
   background-size: 11px;
   background-position: 12px;
 
-  &:focus {
-    background-image: url(./images/Search.svg);
-    background-repeat: no-repeat;
-    background-position: 13px;
-    background-size: 11px;
-    font-weight: 700;
-  }
+}
+
+.search--bar--input--small:focus {
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 13px;
+  background-size: 11px;
+  font-weight: 700;
 }
 
 /* #endregion */

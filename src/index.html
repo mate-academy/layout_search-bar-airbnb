@@ -1,5 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html
+  lang="en"
+  class="page"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -15,18 +18,26 @@
       rel="stylesheet"
       href="style.css"
     />
+    <link
+      href="./fonts/Avenir-Book.ttf"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <div class="search--bar--block">
+      <input
+        data-qa="big"
+        class="input--search--bar input--big--search--bar"
+        type="text"
+        placeholder="Try &#34;Los Angeles&#34;"
+      />
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+      <input
+        class="input--search--bar input--small--search--bar"
+        type="text"
+        placeholder="Try &#34;Los Angeles&#34;"
+        data-qa="small"
+      />
+    </div>
   </body>
 </html>

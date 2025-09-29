@@ -22,26 +22,30 @@
   <body class="body">
     <div class="search__bar">
       <form
-        class="input__wrapper"
+        class="search-bar__form search-bar__form--big"
         data-qa="big"
       >
         <input
-          class="search__bar__big"
+          class="search-bar__input search-bar__input--big"
           type="text"
           data-qa="keypress"
           placeholder="Try “Los Angeles“"
+          id="big-destination"
+          name="destinationBig"
         />
       </form>
 
       <form
-        class="input__wrapper"
+        class="search-bar__form search-bar__form--small"
         data-qa="small"
       >
         <input
-          class="search__bar__small"
+          class="search-bar__input search-bar__input--small"
           type="text"
           data-qa="hover"
           placeholder="Try “Los Angeles“"
+          id="small-destination"
+          name="destinationSmall"
         />
       </form>
     </div>

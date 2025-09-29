@@ -1,7 +1,7 @@
 /* add styles here */
 
 @font-face {
-  font-family: 'Avenir';
+  font-family: Avenir;
   src: url('/src/fonts/Avenir-Book.ttf') format('truetype');
   font-weight: 300; /* light/book */
   font-style: normal;
@@ -10,27 +10,24 @@
 
 .page {
   margin: 0;
-  font-family: 'Avenir', Arial, sans-serif;
+  font-family: Avenir, Arial, sans-serif;
   font-weight: 300;
-
 }
 
 .body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
 }
-
 
 .search__bar {
   display: flex;
   flex-direction: column;
   gap: 20px;
-
 }
 
 .search__bar__big {
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
   margin-top: 20px;
   padding: 26px 62px;
   font-size: 16px;
@@ -38,10 +35,11 @@
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
   background-position: 26px 50%;
-  border: 1px solid rgba(225, 231, 237, 1)
+  border: 1px solid rgba(225, 231, 237, 1);
 }
 
 .search__bar__small {
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
   padding: 15px 35px;
   font-size: 14px;
   width: 100%;
@@ -49,7 +47,7 @@
   background-repeat: no-repeat;
   background-position: 15px 50%;
   background-size: 11px 11px;
-  border: 1px solid rgba(225, 231, 237, 1)
+  border: 1px solid rgba(225, 231, 237, 1);
 }
 
 .input__wrapper {
@@ -57,36 +55,30 @@
 }
 
 .search__bar__big:hover {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .search__bar__big:focus {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-
-
 .search__bar__small:hover {
-  box-shadow: 0px 3px 8px 0px rgba(61, 78, 97, 0.2);
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
 }
 
 .search__bar__small:focus {
-  box-shadow: 0px 3px 8px 0px rgba(61, 78, 97, 0.2);
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
 }
 
 input {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 input:focus {
   outline: 0;
-
 }
 
 input::placeholder {
-  font-family: 'Avenir', Arial, sans-serif;
+  font-family: Avenir, Arial, sans-serif;
+  font-weight: 300;
 }
-
-

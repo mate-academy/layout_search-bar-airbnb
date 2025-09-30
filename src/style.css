@@ -34,7 +34,7 @@ body {
   font-family: Avenir, Arial, sans-serif;
 }
 
-.search-bar--big {
+.search-bar__input--big {
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
   background-size: 19px 19px;
@@ -44,9 +44,10 @@ body {
   border-radius: 4px 4px 0 0;
   padding: 19px 10px 19px 62px;
   height: 70px;
+  box-sizing: border-box;
 }
 
-.search-bar--small {
+.search-bar__input--small {
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
   background-size: 11px 11px;
@@ -57,36 +58,37 @@ body {
   font-size: 14px;
   padding: 11px 10px 11px 33px;
   height: 42px;
+  box-sizing: border-box;
 }
 
-.search-bar--big:hover,
-.search-bar--small:hover {
+.search-bar__input--big:hover,
+.search-bar__input--small:hover {
   outline: none;
   box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.2);
   font-family: Avenir, Arial, sans-serif;
   font-weight: 900;
 }
 
-.search-bar--big:focus,
-.search-bar--small:focus {
+.search-bar__input--big:focus,
+.search-bar__input--small:focus {
   outline: none;
   background-color: rgb(249, 248, 250);
   font-family: Avenir, Arial, sans-serif;
   font-weight: 900;
 }
 
-.search-bar--small::placeholder {
+.search-bar__input--small::placeholder {
   font-size: 14px;
   color: #3d4e61;
   font-weight: 300;
 }
 
-.search-bar--big::placeholder {
+.search-bar__input--big::placeholder {
   color: #3d4e61;
   font-weight: 300;
 }
 
-.search-bar--big:placeholder-shown:focus,
-.search-bar--small:placeholder-shown:focus {
+.search-bar__input--big:placeholder-shown:focus,
+.search-bar__input--small:placeholder-shown:focus {
   font-weight: 300;
 }

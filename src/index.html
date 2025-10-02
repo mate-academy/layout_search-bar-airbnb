@@ -1,4 +1,3 @@
-<!-- #region head -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -17,35 +16,31 @@
       href="style.css"
     />
   </head>
-  <!-- #endregion head -->
   <body>
-    <div class="container">
-      <form
-        class="search"
-        action="search"
-        method="GET"
-        data-qa="big"
-      >
-        <input
-          type="text"
-          data-qa="keypress"
-          placeholder="Try “Los Angeles“"
-          class="search__input search__input--big"
-        />
-      </form>
-      <form
-        class="search"
-        action="search"
-        method="GET"
-        data-qa="small"
-      >
-        <input
-          type="text"
-          data-qa="small"
-          placeholder="Try “Los Angeles“"
-          class="search__input search__input--small"
-        />
-      </form>
-    </div>
+    <form
+      class="search"
+      action="/search"
+      method="get"
+      data-qa="big"
+    >
+      <input
+        type="text"
+        data-qa="keypress"
+        placeholder="Try “Los Angeles“"
+        class="search__input search__input--big"
+      />
+    </form>
+    <form
+      class="search"
+      action="/search"
+      method="get"
+      data-qa="small"
+    >
+      <input
+        type="text"
+        placeholder="Try “Los Angeles“"
+        class="search__input search__input--small"
+      />
+    </form>
   </body>
 </html>

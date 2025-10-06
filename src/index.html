@@ -17,7 +17,9 @@
     />
   </head>
   <body>
-    <div
+    <form
+      action="#"
+      method="post"
       class="search-bar search-bar--top"
       data-qa="big"
     >
@@ -26,11 +28,14 @@
         data-qa="keypress"
         placeholder="Try “Los Angeles“"
         class="search-bar__input search-bar__input--large"
+        name="search-big"
       />
       <div class="search-bar__icon search-bar__icon--large"></div>
-    </div>
+    </form>
 
-    <div
+    <form
+      action="#"
+      method="post"
       class="search-bar search-bar--top"
       data-qa="small"
     >
@@ -39,8 +44,9 @@
         data-qa="hover"
         placeholder="Try “Los Angeles“"
         class="search-bar__input search-bar__input--small"
+        name="search-small"
       />
       <div class="search-bar__icon search-bar__icon--small"></div>
-    </div>
+    </form>
   </body>
 </html>

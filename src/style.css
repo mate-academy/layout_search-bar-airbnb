@@ -2,10 +2,9 @@
 
 @import './fonts/fonts.css';
 
-/* :root{
-  --color-text-input: #222;
-  --color-placeholder-input: #717171;
-} */
+:root{
+  --color-text-input: #3d4e61;
+}
 
 body {
   font-weight: 300;
@@ -17,7 +16,6 @@ body {
 .form-big {
   width: 100%;
   margin-top: 20px;
-  margin-bottom: 20px;
   position: relative;
 }
 
@@ -43,17 +41,15 @@ body {
   border-radius: 4px;
   box-shadow: 0 1px 8px 0 #3d4e611a;
   box-sizing: border-box;
-  color: #3d4e61;
+  color: var(--color-text-input);
   font-family: Avenir, sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
 }
 
-.form-big__inp::placeholder {
-  color: var(--color-placeholder-input);
-}
+
 
 .form-big__inp:hover {
   border: 1px solid #e1e7ed;
@@ -86,8 +82,10 @@ body {
 /* -------------------------------  form-small ------------------------------------- */
 
 .form-small {
-  min-width: 427px;
+  width: 100%;
+  max-width: 427px;
   position: relative;
+  margin-top: 20px;
 }
 
 .form-small__inp {
@@ -104,7 +102,7 @@ body {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0%;
-  color: #3d4e61;
+  color: var(--color-text-input);
   text-shadow: 0 1px 8px 0 #3d4e611a;
 }
 
@@ -121,9 +119,6 @@ body {
   background-position: center;
 }
 
-.form-small__inp::placeholder {
-  color: var(--color-placeholder-input);
-}
 
 .form-small__inp:hover {
   border: 1px solid #e1e7ed;

@@ -1,1 +1,109 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir-Book, sans-serif;
+  font-weight: 300;
+  src: url(./fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: Avenir-Heavy, sans-serif;
+  src: url(./fonts/Avenir-Heavy.ttf);
+  font-weight: 400;
+}
+
+body {
+  margin: 0 8px;
+  padding: 0;
+  font-family: Avenir-Book, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.search-form {
+  box-sizing: border-box;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 100%;
+  background-color: #fff;
+}
+
+.search-form--big {
+  height: 70px;
+  margin: 20px 0;
+}
+
+.search-form--small {
+  height: 42px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.search-form__input {
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-family: Avenir-Book, sans-serif;
+  font-weight: 300;
+  color: #3d4e61;
+}
+
+.search-form__input::placeholder {
+  color: #3d4e61;
+  opacity: 1;
+}
+
+.search-form__input--big {
+  padding-left: calc(26px + 19px + 17px);
+  height: 100%;
+  font-size: 16px;
+}
+
+.search-form__input--small {
+  padding-left: calc(13px + 11px + 9px);
+  height: 100%;
+  font-size: 14px;
+}
+
+.search-form__icon {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-image: url(./images/Search.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+}
+
+.search-form__icon--big {
+  background-size: 19px 19px;
+  background-position: 26px center;
+  height: 70px;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+}
+
+.search-form__icon--small {
+  background-size: 11px 11px;
+  background-position: 13px center;
+  height: 42px;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+}
+
+.search-form:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+}
+
+.search-form:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border: 1px solid #e1e7ed;
+  font-weight: 400;
+}

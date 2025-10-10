@@ -1,12 +1,20 @@
 /* add styles here */
 body {
   margin: 0;
+  font-weight: 300;
 }
 
 @font-face {
   font-family: Avenir;
   src: url('./fonts/Avenir-Book.ttf');
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir.ttc');
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -22,7 +30,6 @@ body {
   flex-direction: column;
   gap: 20px;
   padding: 0 8px;
-  padding-top: 20px;
 }
 
 .search-bar {
@@ -30,7 +37,6 @@ body {
   width: 100%;
   padding-left: 62px;
   font-family: Avenir, sans-serif;
-  font-weight: 300;
   font-size: 16px;
   line-height: 100%;
   border-radius: 4px;
@@ -52,6 +58,7 @@ body {
 
 .search-bar.search-bar--large {
   height: 70px;
+  margin-top: 20px;
 }
 
 .search-bar:hover {

@@ -19,12 +19,15 @@
   </head>
   <!-- #endregion -->
   <body>
-    <div class="search-bar__cover">
+    <main class="search-bar__cover">
       <form
         class="search-form search-form--large"
         data-qa="big"
       >
         <input
+          name="search"
+          autocomplete="off"
+          required
           class="search-bar search-bar--large"
           type="text"
           placeholder="Try “Los Angeles“"
@@ -37,11 +40,14 @@
         data-qa="small"
       >
         <input
+          name="search"
+          autocomplete="off"
+          required
           class="search-bar search-bar--small"
           type="text"
           placeholder="Try “Los Angeles“"
         />
       </form>
-    </div>
+    </main>
   </body>
 </html>

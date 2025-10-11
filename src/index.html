@@ -1,53 +1,61 @@
-<!-- #region head -->
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width, initial-scale=1.0"
     />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="ie=edge"
-    />
-    <title>Document</title>
+    <title>Search bar for Airbnb</title>
     <link
       rel="stylesheet"
       href="style.css"
     />
   </head>
-  <!-- #endregion -->
   <body>
-    <main class="search-bar__cover">
+    <div class="search">
       <form
-        class="search-form search-form--large"
+        class="search__form search__form--big"
+        action="#"
+        method="get"
         data-qa="big"
       >
+        <label
+          class="visually-hidden"
+          for="search-big"
+        >
+          Search destinations
+        </label>
         <input
-          name="search"
-          autocomplete="off"
-          required
-          class="search-bar search-bar--large"
-          type="text"
-          placeholder="Try “Los Angeles“"
+          class="search__input search__input--big"
+          type="search"
+          id="search-big"
           data-qa="keypress"
+          placeholder="Try “Los Angeles“"
         />
       </form>
+    </div>
 
+    <div class="search">
       <form
-        class="search-form search-form--small"
+        class="search__form search__form--small"
+        action="#"
+        method="get"
         data-qa="small"
       >
+        <label
+          class="visually-hidden"
+          for="search-small"
+        >
+          Search destinations
+        </label>
         <input
-          name="search"
-          autocomplete="off"
-          required
-          class="search-bar search-bar--small"
-          type="text"
+          class="search__input search__input--small"
+          type="search"
+          id="search-small"
           placeholder="Try “Los Angeles“"
         />
       </form>
-    </main>
+    </div>
   </body>
 </html>

@@ -1,6 +1,12 @@
 /* add styles here */
-* {
+html {
   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 @font-face {
@@ -72,7 +78,7 @@
   padding: 0 24px 0 62px;
   font-size: 16px;
   font-family: Avenir, sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   color: #000;
   background: transparent url('./images/Search.svg') no-repeat 19px center;
   background-size: 19px;
@@ -85,7 +91,7 @@
 
 .search--big .search__input::placeholder {
   color: #3d4e61;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .search--small {

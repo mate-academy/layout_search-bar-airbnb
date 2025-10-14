@@ -1,90 +1,39 @@
-/* ========================
-   Fonte personalizada
-======================== */
 @font-face {
   font-family: AirbnbFont;
-  src: url('src/fonts/AirbnbFont-Regular.woff2') format('woff2');
+  src: url('src/fonts/airbnb-font.woff2') format('woff2');
   font-weight: 300;
-  font-style: normal;
-}
-
-/* ========================
-   Reset
-======================== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 body {
   font-family: AirbnbFont, sans-serif;
-  background-color: #fff;
-  padding: 20px;
 }
 
-.container {
-  max-width: 900px;
-  margin: 0 auto;
+
+.search {
+  margin-bottom: 20px;
 }
 
-/* ========================
-   Barra de pesquisa
-======================== */
-.search-bar {
+.search--big {
   width: 100%;
+  margin-top: 20px;
 }
 
-.search-bar + .search-bar {
-  margin-top: 20px; /* Espaço entre as duas barras */
-}
-
-/* Campo de input com ícone */
-.search-bar__input {
+.search input {
   width: 100%;
-  height: 48px;
-  padding-left: 40px; /* Espaço para o ícone */
-  font-size: 16px;
+  padding: 10px;
   font-weight: 300;
-  color: #222;
   border: 1px solid #ccc;
   border-radius: 8px;
-  background: url('src/images/Search.svg') no-repeat 12px center;
-  background-size: 18px;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  transition: border-color 0.3s;
 }
 
-.search-bar__input::placeholder {
-  color: #717171;
+.search input:hover {
+  border-color: #999;
 }
 
-/* Hover e focus iguais ao Airbnb */
-.search-bar__input:hover {
-  border-color: #b0b0b0;
-}
-
-.search-bar__input:focus {
+.search input:focus {
+  border-color: #333;
   outline: none;
-  border-color: #ff385c; /* Rosa Airbnb */
-  box-shadow: 0 0 3px rgba(255, 56, 92, 0.4);
 }
 
-/* ========================
-   Barra grande
-======================== */
-.search-bar--big {
-  margin-top: 20px; /* Recuo superior */
-}
 
-.search-bar--big .search-bar__input {
-  height: 56px;
-  font-size: 18px;
-}
-
-/* ========================
-   Barra pequena
-======================== */
-.search-bar--small .search-bar__input {
-  height: 44px;
-  font-size: 16px;
-}

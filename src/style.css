@@ -1,1 +1,39 @@
-/* add styles here */
+@font-face {
+  font-family: AirbnbFont;
+  src: url('src/fonts/airbnb-font.woff2') format('woff2');
+  font-weight: 300;
+}
+
+body {
+  font-family: AirbnbFont, sans-serif;
+}
+
+
+.search {
+  margin-bottom: 20px;
+}
+
+.search--big {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.search input {
+  width: 100%;
+  padding: 10px;
+  font-weight: 300;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+.search input:hover {
+  border-color: #999;
+}
+
+.search input:focus {
+  border-color: #333;
+  outline: none;
+}
+
+

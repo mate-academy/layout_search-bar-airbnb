@@ -1,0 +1,22 @@
+.search-field {
+  position: relative;
+}
+
+.search-field::before {
+  content: '';
+  position: absolute;
+  background: url(../../images/Search.svg) no-repeat center / contain;
+  width: 19px;
+  height: 19px;
+  left: 26px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search-field--big {
+  max-width: 900px;
+}
+
+.search-field--small {
+  max-width: 427px;
+}

@@ -17,24 +17,31 @@
     />
   </head>
   <body>
-    <div class="search-container">
-      <form class="search-field search-field--big">
+    <main class="search-container">
+      <form
+        class="search-field search-field--big"
+        data-qa="big"
+      >
         <input
           class="search search__big"
           type="text"
+          name="big-search"
           data-qa="keypress"
           placeholder="Try “Los Angeles“"
         />
       </form>
 
-      <form class="search-field search-field--small">
+      <form
+        class="search-field search-field--small"
+        data-qa="small"
+      >
         <input
           class="search search__small"
           type="text"
-          data-qa="hover"
+          name="small-search"
           placeholder="Los Angeles"
         />
       </form>
-    </div>
+    </main>
   </body>
 </html>

@@ -1,6 +1,13 @@
-* {
-  padding: 0;
+html {
   box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 @font-face {
@@ -18,6 +25,7 @@
 }
 
 body {
+  font-weight: 300;
   font-family: Avenir, sans-serif;
   font-size: 16px;
 }

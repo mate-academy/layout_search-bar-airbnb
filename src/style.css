@@ -23,7 +23,7 @@ body {
 }
 
 /* #region global */
-.form {
+.search__form {
   padding: 0;
   border: 1px solid #e1e7ed;
   border-radius: 4px;
@@ -34,9 +34,7 @@ body {
   align-items: center;
 }
 
-.input {
-  display: flex;
-
+.search__input {
   border: none;
   outline: none;
   width: 100%;
@@ -46,7 +44,7 @@ body {
   letter-spacing: 0%;
 }
 
-.input-img {
+.search__icon {
   background-image: url(./images/Search.svg);
   background-size: cover;
 }
@@ -54,21 +52,21 @@ body {
 /* #endregion */
 
 /* #region big */
-.big-form {
+.search__form.search--big {
   line-height: 70px;
   margin: 20px 8px 0;
   box-shadow: 0 1px 8px 0 #3d4e611a;
 }
 
-.big-form:hover {
+.search__form.search--big:hover {
   box-shadow: 0 4px 4px 0 #00000040;
 }
 
-.big-form:focus-within {
+.search__form.search--big:focus-within {
   box-shadow: 0 4px 4px 0 #00000040;
 }
 
-.big-img {
+.search__icon.search--big {
   width: 19px;
   height: 19px;
 
@@ -76,7 +74,7 @@ body {
   margin-left: 25px;
 }
 
-.big-input {
+.search__input.search--big {
   line-height: 68px;
   margin-left: 19.75px;
 
@@ -84,7 +82,7 @@ body {
   font-size: 16px;
 }
 
-.big-input:focus {
+.search__input.search--big:focus {
   /* text-shadow: 0 4px 4px 0 #00000040; */
 
   font-family: Avenir-Bold, Arial, Helvetica, sans-serif;
@@ -93,20 +91,20 @@ body {
 /* #endregion */
 
 /* #region small */
-.small-form {
+.search__form.search--small {
   margin: 20px 8px 0;
   box-shadow: 0 1px 8px 0 #3d4e611a;
 }
 
-.small-form:hover {
+.search__form.search--small:hover {
   box-shadow: 0 3px 8px 0 #3d4e6133;
 }
 
-.small-form:focus-within {
+.search__form.search--small:focus-within {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
-.small-img {
+.search__icon.search--small {
   margin-left: 12px;
   margin-bottom: 1px;
 
@@ -114,7 +112,7 @@ body {
   width: 11px;
 }
 
-.small-input {
+.search__input.search--small {
   line-height: 40px;
   font-size: 14px;
 
@@ -122,7 +120,7 @@ body {
   margin-left: 10.5px;
 }
 
-.small-input:focus {
+.search__input.search--small:focus {
   font-weight: 400;
   font-family: Avenir-Bold, Arial, Helvetica, sans-serif;
 }

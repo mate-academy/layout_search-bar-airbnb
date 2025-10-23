@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width, user-scalable=no, initial-scale=1.0"
     />
     <meta
       http-equiv="X-UA-Compatible"
@@ -17,16 +17,50 @@
     />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      class="form"
+      action="#"
+      method="get"
+      name="form-big"
+      data-qa="big"
+    >
+      <button
+        class="form__button form__button_big"
+        type="submit"
+        name="button-big-search"
+        value="form-button-search-big"
+      ></button>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+      <input
+        class="form__input"
+        type="text"
+        name="input-big"
+        data-qa="keypress"
+        placeholder="Try “Los Angeles“"
+      />
+    </form>
+
+    <form
+      class="form"
+      action="#"
+      method="get"
+      name="form-small"
+      data-qa="small"
+    >
+      <button
+        class="form__button form__button_small"
+        type="submit"
+        name="button-small-search"
+        value="form-button-search-small"
+      ></button>
+
+      <input
+        class="form__input form__input_font_s"
+        type="text"
+        name="input-small"
+        data-qa="hover"
+        placeholder="Try “Los Angeles“"
+      />
+    </form>
   </body>
 </html>

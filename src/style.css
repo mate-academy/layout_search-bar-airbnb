@@ -1,1 +1,81 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src:
+    url('./fonts/Avenir-Book.ttf') format('truetype'),
+    url('./fonts/Avenir-Heavy.ttf') format('truetype');
+  font-weight: 300 900;
+  font-style: normal;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+.seach__bar {
+  font-family: avenir, sans-serif;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.seach__bar-big {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.seach__bar__icon {
+  background-image: url(/src/images/Search.svg);
+  background-size: cover;
+  z-index: 2;
+}
+
+.icon-big {
+  height: 19px;
+  width: 19px;
+  margin: 25px 26px 26px;
+}
+
+.icon-small {
+  height: 11px;
+  width: 11px;
+  margin: 15px 13px 16px;
+}
+
+.seach__bar__input {
+  background-color: #fff;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px #3d4e611a;
+  position: absolute;
+  outline: none;
+  z-index: 1;
+  color: #3d4e61;
+  font-family: Avenir, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.seach__bar__input:hover {
+  box-shadow: 0 8px 8px #3d4e6133;
+}
+
+.seach__bar__input:focus {
+  box-shadow: 0 4px 4px #00000040;
+  text-shadow: 0 4px 4px #00000040;
+  font-family: Avenir, sans-serif;
+  font-weight: bold;
+  color: #3d4e61;
+}
+
+.input-small {
+  padding-left: 33px;
+  height: 42px;
+  font-size: 14px;
+}
+
+.input-big {
+  padding-left: 62px;
+  height: 70px;
+  font-size: 16px;
+}

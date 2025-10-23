@@ -1,0 +1,31 @@
+@import './blocks/search.css';
+
+/* Replace the @font-face declarations so the weights match usage and paths are explicit */
+@font-face {
+  font-family: AvenirBook;
+  src: url('../fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: AvenirHeavy;
+  src: url('../fonts/Avenir-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+.page {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-family: AvenirBook, sans-serif;
+  font-weight: 300;
+}
+
+.page__main {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}

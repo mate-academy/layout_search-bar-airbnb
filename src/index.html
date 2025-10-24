@@ -17,17 +17,24 @@
     />
   </head>
   <body class="page">
-    <form class="page__search-bar">
+    <form
+      class="page__search-bar"
+      data-qa="big"
+    >
       <input
         type="text"
-        data-qa="big keypress"
+        data-qa="keypress"
         placeholder="Try “Los Angeles“"
         class="input input--big"
       />
+    </form>
 
+    <form
+      class="page__search-bar"
+      data-qa="small"
+    >
       <input
         type="text"
-        data-qa="small"
         placeholder="Try “Los Angeles“"
         class="input input--small"
       />

@@ -1,1 +1,92 @@
 /* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Heavy.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+  background-color: #fff;
+}
+
+.search,
+.search__input {
+  box-sizing: border-box;
+}
+
+.search {
+  display: block;
+  width: 100%;
+}
+
+.search--big {
+  margin-top: 20px;
+}
+
+.search--small {
+  margin-top: 20px;
+}
+
+.search__input {
+  width: 100%;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+  outline: none;
+  font-family: Avenir, sans-serif;
+}
+
+.search__input--big {
+  height: 70px;
+  padding-left: 62px;
+  background-image: url('./images/Search.svg');
+  background-size: 19px 19px;
+  background-position: 25px center;
+  background-repeat: no-repeat;
+}
+
+.search__input--big:hover {
+  box-shadow: 0 3px 8px #3d4e6133;
+}
+
+.search__input:focus {
+  background-image: url('./images/Search.svg'),
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 4px #00000040;
+  outline: none;
+}
+
+.search__input--small {
+  height: 42px;
+  padding-left: 33px;
+  background-image: url('./images/Search.svg');
+  background-size: 11px 11px;
+  background-position: 15px center;
+  background-repeat: no-repeat;
+  box-shadow: none;
+}
+
+.search__input--small:hover {
+  box-shadow: 0 3px 8px #3d4e6133;
+}
+
+.search__input--small:focus {
+  background-position:
+    0 0,
+    15px center;
+  background-size:
+    100% 100%,
+    11px 11px;
+  box-shadow: 0 4px 4px #00000040;
+}

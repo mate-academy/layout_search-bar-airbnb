@@ -1,4 +1,3 @@
-<!-- #region head -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -16,7 +15,6 @@
       rel="stylesheet"
       href="style.css"
     />
-    <!-- #endregion -->
   </head>
   <body>
     <form
@@ -26,24 +24,27 @@
     >
       <label class="search-container">
         <input
-          class="search__bar big_bar"
+          class="search-bar__input search-bar__input--big"
           type="text"
-          data-qa="big keypress"
+          data-qa="keypress"
           placeholder="Try “Los Angeles“"
+          name="location"
         />
       </label>
     </form>
+
     <form
       class="search-bar search-bar--small"
       data-qa="small"
       action="#"
+      name="small_search_form"
     >
       <label class="search-wrap">
         <input
-          class="search__bar small_bar"
+          class="search-bar__input search-bar__input--small"
           type="text"
-          data-qa="small hover"
           placeholder="Try “Los Angeles“"
+          name="location"
         />
       </label>
     </form>

@@ -15,41 +15,48 @@
 body {
   margin-left: 8px;
   margin-right: 8px;
+  font-weight: 300;
 }
 
-.search__bar {
+.search-bar__input {
   font-weight: 300;
   border: 1px solid #ddd;
   border-radius: 8px;
   font-size: 14px;
-  background: url('images/Search.svg') no-repeat 10px center;
+
+  background-image: url('images/Search.svg');
+  background-repeat: no-repeat;
+  background-position: 20px center;
   background-size: 19px;
-  padding-left: 40px;
+
+  padding-left: 50px;
   outline: none;
   font-family: 'Avenir Book', sans-serif;
+  line-height: 1.5;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  box-sizing: border-box;
 }
 
-.search__bar:hover {
+.search-bar__input:hover {
   box-shadow: 0 4px 4px 0 #00000040;
 }
 
-.search__bar:focus {
+.search-bar__input:focus {
   font-family: 'Avenir Heavy', sans-serif;
   box-shadow: 0 4px 4px 0 #00000040;
 }
 
-.big_bar {
+.search-bar__input--big {
   margin-top: 20px;
   width: 100%;
   box-sizing: border-box;
-  border: 1px solid #ddd;
-  height: 70px;
+  min-height: 70px;
 }
 
-.small_bar {
-  margin: 20px 0;
+.search-bar__input--small {
+  margin-top: 20px;
   width: 100%;
   box-sizing: border-box;
-  border: 1px solid #ddd;
-  height: 42px;
+  min-height: 42px;
 }

@@ -11,15 +11,13 @@
   font-weight: 700;
 }
 
-body {
+body,
+input {
   margin: 0 8px;
+  box-sizing: border-box;
   font-family: Avenir, sans-serif;
   font-weight: 300;
   background-color: #fff;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .search {
@@ -72,6 +70,10 @@ body {
   background-position: 15px center;
   background-repeat: no-repeat;
   box-shadow: none;
+}
+
+.search__input--small:hover {
+  box-shadow: 0 3px 8px #3d4e6133;
 }
 
 .search__input--small:focus {

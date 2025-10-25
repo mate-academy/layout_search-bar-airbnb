@@ -34,14 +34,15 @@ body {
 }
 
 .search-bar__input {
-  background-image: url(/src/images/Search.svg);
+  background-image: url('./images/Search.svg');
   background-repeat: no-repeat;
   background-position-y: center;
+  background-position: 16px center;
+  padding-left: 46px;
 
   display: block;
   box-sizing: border-box;
   width: 100%;
-  padding: 0 18px;
   border: 1px solid #e1e7ed;
   box-shadow: 0 1px 8px 0 #3d4e611a;
 }
@@ -54,6 +55,7 @@ body {
 
 .search-bar__input--small {
   height: 42px;
+  background-size: 11px 11px;
 }
 
 .search-bar__input:hover {

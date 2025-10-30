@@ -13,20 +13,34 @@
     <title>Document</title>
     <link
       rel="stylesheet"
-      href="style.css"
+      href="styles/style.css"
     />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <main>
+      <form
+        data-qa="big"
+        class="search-bar search-bar--big"
+      >
+        <input
+          type="search"
+          data-qa="keypress"
+          class="search-bar__input"
+          placeholder="Try “Los Angeles“"
+        />
+      </form>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+      <form
+        data-qa="small"
+        class="search-bar search-bar--small"
+      >
+        <input
+          type="search"
+          data-qa="keypress"
+          class="search-bar__input"
+          placeholder="Try “Los Angeles“"
+        />
+      </form>
+    </main>
   </body>
 </html>

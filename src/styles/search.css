@@ -1,11 +1,10 @@
 .search-bar {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 .search-bar__input {
-  font-family: Avenir, sans-serif;
-  font-weight: 300;
+  font: inherit;
+  box-sizing: border-box;
   width: 100%;
   border: 1px solid #e1e7ed;
   border-radius: 4px;
@@ -36,8 +35,7 @@
 }
 
 .search-bar__input:focus {
-  border: 1px solid transparent;
-  border-image: linear-gradient(90deg, #fff, #f6f6f7);
-  border-image-slice: 1;
-  outline: none;
+  outline: 2px solid #f6f6f7;
+  outline-offset: 0;
+  box-shadow: none;
 }

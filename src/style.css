@@ -1,1 +1,128 @@
-/* add styles here */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Avenir, sans-serif;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url("./fonts/Avenir-Book.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 20px 8px;
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+.search--big {
+  height: 70px;
+}
+
+.search--small {
+  height: 42px;
+}
+
+.search__icon {
+  background-image: url("./images/Search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.search--big .search__icon {
+  background-size: 19px 19px;
+  width: 19px;
+  height: 19px;
+  margin: 25px 0 26px 25px;
+  flex: 0 0 auto;
+}
+
+.search--small .search__icon {
+  background-size: 11px 11px;
+  width: 11px;
+  height: 11px;
+  margin: 14px 0 15px 12px;
+  flex: 0 0 auto;
+}
+
+.search__input {
+  border: none;
+  outline: none;
+  text-decoration: none;
+  background: transparent;
+  font-family: inherit;
+}
+
+.search--big .search__input {
+  font-size: 16px;
+  line-height: 22px;
+  margin-left: 16px;
+}
+
+.search--small .search__input {
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 8px;
+}
+
+.search__input::placeholder {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 300;
+  text-shadow: none;
+}
+
+.search--big .search__input:hover,
+.search--big .search__input:focus,
+.search--small .search__input:hover,
+.search--small .search__input:focus {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.search--big .search__input[data-qa="keypress"]:hover {
+  color: var(--color-blue);
+}
+
+@media (max-width: 720px) {
+  .search {
+    margin: 20px 8px;
+    padding-left: 8px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+  }
+
+  .search--big .search__input {
+    font-size: 16px;
+    line-height: 22px;
+    margin-left: 16.1px;
+  }
+
+  .search--big .search__input::placeholder {
+    color: rgba(0, 0, 0, 0.81);
+  }
+  .search--small .search__input {
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 8px;
+    padding-left: 2px;
+  }
+
+  .search--small .search__input::placeholder {
+    color: rgba(0, 0, 0, 0.81);
+  }
+
+  .search.search--big .search__icon {
+    background-size: 18px 19px;
+    margin: 25px 0 26px 17px;
+  }
+
+  .search.search--small .search__icon {
+    background-size: 11px 11px;
+    margin: 14px 0 15px 4px;
+  }
+}

@@ -1,6 +1,7 @@
 .form__search {
   box-sizing: border-box;
   width: 100%;
+  margin-top: 20px;
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   background-color: rgba(255, 255, 255, 1);
   border: 1px solid rgba(225, 231, 237, 1);
@@ -10,8 +11,6 @@
 .form__search--big {
   display: flex;
   box-sizing: border-box;
-  margin-top: 20px;
-  margin-bottom: 20px;
   height: 70px;
   font-size: 16px;
 }
@@ -23,25 +22,26 @@
   font-size: 14px;
 }
 
-.form-field {
+.form__field {
   display: flex;
   box-sizing: border-box;
   width: 100%;
   align-items: center;
 }
 
-.form-field:hover {
+.form__field:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.form-field__text {
+.form__field--text {
   display: flex;
   width: 100%;
   border: 0;
   color: rgba(61, 78, 97, 1);
 }
 
-.form-field__text:focus {
+.form__field:focus-within {
   outline: none;
+  border: 0;
   box-shadow: 0 3px 8px rgba(13, 43, 78, 1);
 }

@@ -1,30 +1,24 @@
 @font-face {
-  font-family: ' Avenir-Book ';
-  src: url(fonts/Avenir-Book.ttf);
-}
-
-@font-face {
-  font-family: ' Avenir-Heavy ';
-  src: url(fonts/Avenir-Heavy.ttf);
-}
-
-@font-face {
   font-family: ' Avenir ';
   src: url(fonts/Avenir.ttc);
-}
-
-.page {
   font-weight: 300;
 }
 
+.page {
+  margin: 0;
+  padding: 0;
+}
+
 .page__body {
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .search__form {
   box-sizing: border-box;
   width: 100%;
-  margin-top: 20px;
+  margin: 20px 0 0;
+  padding: 0;
   display: flex;
   background-color: #fff;
   border: 1px solid #e1e7ed;
@@ -44,6 +38,7 @@
 .search__form-input {
   height: 19px;
   padding: 0;
+  margin: 0;
   border: none;
   outline: none;
   background: transparent;
@@ -63,11 +58,15 @@
 .search__form-icon {
   background-image: url(images/Search.svg);
   background-size: cover;
+  margin: 0;
+  padding: 0;
 }
 
 .search {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 .search__form--big {

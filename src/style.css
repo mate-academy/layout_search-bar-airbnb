@@ -1,1 +1,55 @@
-/* add styles here */
+/* Fonte personalizada */
+@font-face {
+  font-family: MinhaFonte;
+  src: url('src/fonts/minhaFonte.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  font-family: MinhaFonte, sans-serif;
+}
+
+/* Estilo geral das barras */
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: 300;
+}
+
+.search-bar img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* Estados padrão */
+.search-bar input:hover {
+  background-color: #f5f5f5;
+}
+
+.search-bar input:focus {
+  border-bottom: 2px solid #007bff;
+}
+
+/* Barra grande */
+.search-bar.big {
+  margin-top: 20px;
+}
+
+/* Espaçamento entre as barras */
+.search-bar.small {
+  margin-top: 20px;
+}

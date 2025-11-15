@@ -1,32 +1,43 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="ie=edge"
-    />
-    <title>Document</title>
+    <title>Página com Barras de Pesquisa</title>
     <link
       rel="stylesheet"
       href="style.css"
     />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <!-- Barra de pesquisa grande -->
+    <form
+      class="search-bar big"
+      data-qa="big"
+    >
+      <img
+        src="Search.svg"
+        alt="Ícone de busca"
+      />
+      <input
+        type="text"
+        placeholder="Pesquisar..."
+        data-qa="keypress"
+      />
+    </form>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <!-- Barra de pesquisa pequena -->
+    <form
+      class="search-bar small"
+      data-qa="small"
+    >
+      <img
+        src="Search.svg"
+        alt="Ícone de busca"
+      />
+      <input
+        type="text"
+        placeholder="Pesquisar..."
+      />
+    </form>
   </body>
 </html>

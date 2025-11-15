@@ -1,43 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <title>Página com Barras de Pesquisa</title>
-    <link
-      rel="stylesheet"
-      href="style.css"
-    />
+    <link rel="stylesheet" href="src/style.css">
   </head>
   <body>
     <!-- Barra de pesquisa grande -->
-    <form
-      class="search-bar big"
-      data-qa="big"
-    >
-      <img
-        src="Search.svg"
-        alt="Ícone de busca"
-      />
+    <form class="search-bar big" data-qa="big">
+      <span class="icon"></span>
       <input
         type="text"
-        placeholder="Pesquisar..."
+        name="searchBig"
+        placeholder="Pesquisar destino"
         data-qa="keypress"
-      />
+      >
     </form>
 
     <!-- Barra de pesquisa pequena -->
-    <form
-      class="search-bar small"
-      data-qa="small"
-    >
-      <img
-        src="Search.svg"
-        alt="Ícone de busca"
-      />
+    <form class="search-bar small" data-qa="small">
+      <span class="icon"></span>
       <input
         type="text"
-        placeholder="Pesquisar..."
-      />
+        name="searchSmall"
+        placeholder="Pesquisar"
+      >
     </form>
   </body>
 </html>

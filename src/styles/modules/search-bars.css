@@ -1,12 +1,14 @@
 .search-bars {
   display: flex;
   flex-direction: column;
+  margin: 0 8px;
 }
 
 .search-bars__bar {
   display: flex;
   align-items: center;
   width: 100%;
+  box-sizing: border-box;
   border: 1px solid #e1e7ed;
   border-radius: 4px;
   box-shadow: 0 1px 8px 0 #3d4e611a;
@@ -22,12 +24,12 @@
 
 .search-bars__bar--big {
   height: 70px;
-  margin: 20px 8px;
+  margin-top: 20px;
 }
 
 .search-bars__bar--small {
-  margin: 0 8px;
   height: 42px;
+  margin-top: 20px;
 }
 
 .search-bars__search {
@@ -38,15 +40,15 @@
 }
 
 .search-bars__search--big {
-  width: 20px;
-  height: 20px;
-  margin: 25px 17px 26px 26px;
+  width: 21px;
+  height: 21px;
+  margin: 0 17px 0 26px;
 }
 
 .search-bars__search--small {
-  width: 11px;
-  height: 11px;
-  margin: 15px 9px 16px 13px;
+  width: 12px;
+  height: 12px;
+  margin: 0 9px 0 13px;
 }
 
 .search-bars__input {

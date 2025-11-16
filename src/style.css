@@ -1,7 +1,7 @@
 /* Fonte personalizada */
 @font-face {
   font-family: MinhaFonte;
-  src: url('src/fonts/minhaFonte.woff2') format('woff2');
+  src: url('fonts/minhaFonte.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
 }
@@ -9,7 +9,7 @@
 body {
   font-family: MinhaFonte, sans-serif;
   font-weight: 300; /* requisito */
-  margin: 0;        /* reset para largura total */
+  margin: 0; /* reset para largura total */
   padding: 0;
 }
 
@@ -22,7 +22,9 @@ body {
   border-radius: 5px;
   padding: 10px;
   box-sizing: border-box;
-  transition: border-color 0.3s, box-shadow 0.3s;
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
 }
 
 /* Ícone como background-image */
@@ -46,25 +48,25 @@ body {
 
 /* Estados */
 .search-bar:hover {
-  border-color: #007BFF;
+  border-color: #007bff;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 .search-bar:focus-within {
-  border-color: #007BFF;
+  border-color: #007bff;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 .search-bar input:focus {
-  border-bottom: 2px solid #007BFF;
+  border-bottom: 2px solid #007bff;
 }
 
-/* Barra grande com recuo superior */
+/* recuo superior apenas na barra grande */
 .search-bar.big {
   margin-top: 20px;
 }
 
-/* Espaçamento entre as barras */
-.search-bar.small {
+/* distância entre a barra grande e a pequena */
+.search-bar.big + .search-bar.small {
   margin-top: 20px;
 }

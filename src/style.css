@@ -27,7 +27,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin: 20px 8px;
+  margin: 20px 8px 0;
 }
 
 .search-bar__form {
@@ -35,16 +35,13 @@ body {
   align-items: center;
 }
 
-.search-bar__input {
+.search-bar__input::placeholder {
+  color: rgba(61, 78, 97, 0.85);
+}
+
+.search-bar__input-large {
   font-family: Avenir, sans-serif;
   font-weight: 300;
-}
-
-.search-bar__input::placeholder {
-  color: rgba(61, 78, 97, 1);
-}
-
-.search-bar__form--large .search-bar__input {
   height: 66px;
   width: 100%;
   font-size: 16px;
@@ -59,10 +56,13 @@ body {
   box-shadow: 0 0 1px 1px rgba(61, 78, 97, 0.1);
 }
 
-.search-bar__form--small .search-bar__input {
+.search-bar__input-small {
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
   height: 38px;
   width: 100%;
   font-size: 14px;
+  line-height: 100%;
   background-image: url(./images/Search.svg);
   background-repeat: no-repeat;
   background-position-y: 14px;
@@ -81,9 +81,16 @@ body {
 }
 
 .search-bar__input:focus {
-  font-weight: 700;
   border: 1px solid rgb(255, 255, 255, 1);
   box-shadow: 1px 1px 1px 4px rgba(61, 78, 97, 0.2);
   border-radius: 4px;
   outline: none;
+}
+
+.search-bar__form-large:focus {
+  font-weight: 400;
+}
+
+.search-bar__form-small:focus {
+  font-weight: 900;
 }

@@ -18,6 +18,13 @@ body {
   font-family: Avenir, sans-serif;
   font-weight: 300;
   background-color: #fff;
+
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 1029px;
 }
 
 .search,
@@ -83,10 +90,10 @@ body {
 
 .search__input--small:focus {
   background-position:
-    0 0,
-    15px center;
+    15px center,
+    0 0;
   background-size:
-    100% 100%,
-    11px 11px;
+    11px 11px,
+    100% 100%;
   box-shadow: 0 4px 4px #00000040;
 }

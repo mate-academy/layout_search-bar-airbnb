@@ -1,1 +1,155 @@
-/* add styles here */
+.page {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff;
+
+  scroll-behavior: smooth;
+}
+
+.page__body {
+  margin: 0;
+}
+
+.page__menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.page__menu:target {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.header {
+  box-sizing: border-box;
+  height: 100vh;
+  background-size: cover;
+  background-position: right center;
+  background-image: url(images/bike-background.png);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar__icons {
+  display: flex;
+  gap: 24px;
+}
+
+.icon {
+  display: block;
+  height: 24px;
+  width: 24px;
+}
+
+.icon--phone {
+  background-image: url(images/icon-phone-call.png);
+}
+
+.icon--menu {
+  background-image: url(images/icon-burger-menu.png);
+}
+
+.top-bar__logo img {
+  display: block;
+  height: 38px;
+  object-fit: contain;
+}
+
+.top-bar__logo {
+  display: flex;
+}
+
+.header__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: -1.5px;
+  text-align: center;
+}
+
+.header__bottom {
+  padding: 0 20px 88px;
+}
+
+.top-bar {
+  padding: 24px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  box-sizing: border-box;
+  padding: 24px 20px 88px;
+  height: 100vh;
+  background-color: #c2c2c2;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.menu__top {
+  padding-bottom: 24px;
+}
+
+.menu__nav {
+  margin-bottom: 40px;
+}
+
+.menu__content {
+  padding-inline: 20px;
+}
+
+.menu__phone-number {
+  margin-bottom: 16px;
+  display: block;
+  color: #1d1d1d;
+  text-decoration: none;
+}
+
+.menu__book-a-test-ride {
+  display: block;
+  color: #1d1d1d;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #1d1d1d;
+  width: fit-content;
+
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+}
+
+.icon--close {
+  background-image: url(images/button.png);
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.nav__link {
+  color: #1d1d1d;
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 2px;
+}

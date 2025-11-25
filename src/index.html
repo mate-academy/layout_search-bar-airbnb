@@ -24,17 +24,26 @@
     />
   </head>
   <body>
-    <input
-      type="text"
+    <form
+      class="form"
       data-qa="big"
-      placeholder="Try “Los Angeles“"
-      class="search-bar search-bar--big"
-    />
-    <input
-      type="text"
+    >
+      <input
+        type="text"
+        placeholder="Try “Los Angeles“"
+        class="form__search-bar form__search-bar--big"
+      />
+    </form>
+    <form
+      class="form"
       data-qa="small"
-      placeholder="Try “Los Angeles“"
-      class="search-bar"
-    />
+    >
+      <input
+        type="text"
+        data-qa="small"
+        placeholder="Try “Los Angeles“"
+        class="form__search-bar"
+      />
+    </form>
   </body>
 </html>

@@ -32,19 +32,21 @@ html {
   display: inline-block;
   width: 100%;
   border: 1px solid rgba(225, 231, 237, 1);
+  color: rgba(61, 78, 97, 1);
 }
 
-.form__wrapper.form--1 {
+.form__wrapper.form__wrapper--big {
   position: relative;
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
 }
 
-.form__wrapper.form--2 {
+.form__wrapper.form__wrapper--small {
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
 }
 
 .form__input.input--1 {
   height: 70px;
+  font-family: Avenir, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
@@ -53,6 +55,7 @@ html {
 }
 
 .form__input.input--2 {
+  font-family: Avenir, sans-serif;
   height: 42px;
   font-weight: 400;
   font-size: 14px;
@@ -67,15 +70,15 @@ html {
   background-color: rgba(255, 255, 255, 1);
 }
 
-.form__input:focus,
-textarea:focus {
+.form__input:focus {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   border: 1px solid rgba(225, 231, 237, 1);
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   outline: none;
+  font-weight: 900;
 }
 
-.form__wrapper.form--1::before {
+.form__wrapper.form__wrapper--big::before {
   display: inline-block;
   position: absolute;
   content: '';
@@ -85,7 +88,7 @@ textarea:focus {
   left: 26px;
 }
 
-.form__wrapper.form--2::before {
+.form__wrapper::before {
   display: inline-block;
   position: absolute;
   content: '';

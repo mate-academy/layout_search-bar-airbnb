@@ -1,1 +1,55 @@
-/* add styles here */
+.search-bar {
+  display: flex;
+  width: 100%;
+  margin-top:48px;
+
+}
+
+.search-bar.big {
+ 
+  width: 900px;       
+  height: 70px;      
+  margin-bottom:20px;  
+  margin-left: 48px;  
+
+}
+.search-bar.small {
+
+  width: 900px;      
+  height: 42px;      
+  margin-top: 20px;
+  margin-left: 48px;  
+}
+
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-weight: 300;
+  font-family: 'YourFont', Arial, sans-serif;
+}
+
+.search-bar input:hover {
+  border-color: #999;
+}
+
+.search-bar input:focus {
+  border-color: #333;
+  outline: none;
+}
+
+.search-bar button {
+  width: 40px;
+  height: 100%;                     
+  background-image: url('src/images/Search.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;               
+  border: none;
+  cursor: pointer;
+  background-color: transparent;      
+}
+
+
+

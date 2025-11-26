@@ -1,1 +1,106 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Book.ttf) format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Heavy.ttf) format('truetype');
+  font-weight: 600;
+}
+
+html {
+  font-weight: 300;
+}
+
+.body {
+  margin: 0 10px;
+  font-family: Avenir, sans-serif;
+  max-width: 1024px;
+}
+
+.form__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.form__input {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid rgba(225, 231, 237, 1);
+  color: rgba(61, 78, 97, 1);
+}
+
+.form__wrapper.form__wrapper--big {
+  position: relative;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+}
+
+.form__wrapper.form__wrapper--small {
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+}
+
+.form__input.form__input--big {
+  height: 70px;
+  font-family: Avenir, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding-left: 62px;
+}
+
+.form__input.form__input--small {
+  font-family: Avenir, sans-serif;
+  height: 42px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding-left: 33px;
+}
+
+.form__input:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+  border: 1px solid rgba(225, 231, 237, 1);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.form__input:focus {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(225, 231, 237, 1);
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  outline: none;
+  font-weight: 900;
+}
+
+.form__wrapper.form__wrapper--big::before {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 19px;
+  height: 19px;
+  background-image: url(images/Search.svg);
+  left: 26px;
+}
+
+.form__wrapper.form__wrapper--small::before {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 11px;
+  height: 11px;
+  background-image: url(images/Search.svg);
+  left: 13px;
+  background-size: cover;
+}
+
+@media (max-width: 720px) {
+  .body {
+    max-width: 720px;
+  }
+}

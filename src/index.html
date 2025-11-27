@@ -5,12 +5,7 @@
 
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="IE=edge"
+      content="width=device-width, initial-scale=1.0"
     />
 
     <title>Airbnb Search Bars</title>
@@ -22,7 +17,7 @@
   </head>
 
   <body>
-    <div class="search__container">
+    <div class="container">
       <!-- BIG SEARCH BAR (повинен бути першим) -->
       <form
         action="#"
@@ -30,9 +25,9 @@
       >
         <input
           type="text"
-          data-qa-state="keypress"
+          data-qa="keypress"
           placeholder="Try “Los Angeles“"
-          class="search__bar search__bar-big"
+          class="search__input search__input--big"
         />
       </form>
 
@@ -43,9 +38,9 @@
       >
         <input
           type="text"
-          data-qa-state="hover"
+          data-qa="hover"
           placeholder="Try “Los Angeles“"
-          class="search__bar search__bar-small"
+          class="search__input search__input--small"
         />
       </form>
     </div>

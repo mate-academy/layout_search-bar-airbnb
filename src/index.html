@@ -2,52 +2,52 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
+
     <meta
       http-equiv="X-UA-Compatible"
-      content="ie=edge"
+      content="IE=edge"
     />
+
     <title>Airbnb Search Bars</title>
+
     <link
       rel="stylesheet"
       href="style.css"
     />
   </head>
-  <body>
-    <form
-      class="search search--small"
-      data-qa="small"
-    >
-      <img
-        src="./images/Search.svg"
-        alt="search icon"
-        class="search__icon"
-      />
-      <input
-        type="text"
-        placeholder="Try &quot;Los Angeles&quot;"
-        class="search__input"
-      />
-    </form>
 
-    <form
-      class="search search--big"
-      data-qa="big"
-    >
-      <img
-        src="./images/Search.svg"
-        alt="search icon"
-        class="search__icon"
-      />
-      <input
-        type="text"
-        data-qa="keypress"
-        placeholder="Try &quot;Los Angeles&quot;"
-        class="search__input"
-      />
-    </form>
+  <body>
+    <div class="search__container">
+      <!-- BIG SEARCH BAR (повинен бути першим) -->
+      <form
+        action="#"
+        data-qa="big"
+      >
+        <input
+          type="text"
+          data-qa-state="keypress"
+          placeholder="Try “Los Angeles“"
+          class="search__bar search__bar-big"
+        />
+      </form>
+
+      <!-- SMALL SEARCH BAR -->
+      <form
+        action="#"
+        data-qa="small"
+      >
+        <input
+          type="text"
+          data-qa-state="hover"
+          placeholder="Try “Los Angeles“"
+          class="search__bar search__bar-small"
+        />
+      </form>
+    </div>
   </body>
 </html>

@@ -17,6 +17,15 @@
   position: relative;
 }
 
+.search__form:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+.search__form:focus-within {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .search__form::before {
   content: '';
   width: 19px;
@@ -47,12 +56,13 @@
 .search__form--big {
   width: 100%;
   height: 70px;
-  margin: 20px 0;
+  margin-top: 20px;
 }
 
 .search__form--small {
   width: 100%;
   height: 42px;
+  margin-top: 20px;
 }
 
 .search__input {
@@ -73,14 +83,6 @@
 .search__input::placeholder {
   font-weight: 400;
   color: #3d4e61;
-}
-
-.search__input:hover {
-  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
-}
-
-.search__input:focus {
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
 .search__input:focus::placeholder {

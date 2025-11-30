@@ -28,7 +28,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.search-bar__big {
+.search-bar--big {
   margin-top: 20px;
   padding: 25px 62px;
   height: 70px;
@@ -36,7 +36,7 @@ body {
   background-size: 19px;
 }
 
-.search-bar__small {
+.search-bar--small {
   margin-top: 20px;
   padding: 12px 33px;
   height: 42px;
@@ -44,25 +44,26 @@ body {
   background-size: 11px;
 }
 
-.search-bar__input {
+.search-bar--input {
   padding: 0;
   line-height: 100%;
   font-family: Avenir, sans-serif;
   font-weight: 300;
   font-size: 16px;
+  flex-grow: 1;
   border: none;
   outline: none;
 }
 
-.search-bar__input-small {
+.search-bar--input-small {
   font-size: 14px;
 }
 
-.search-bar__input::placeholder {
+.search-bar--input::placeholder {
   color: #3d4e61;
 }
 
-.search-bar__input:focus {
+.search-bar--input:focus {
   font-weight: 700;
 }
 

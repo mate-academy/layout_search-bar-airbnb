@@ -18,18 +18,27 @@
   </head>
   <body>
     <div class="container">
-      <input
+      <form
         class="search-bar search-bar--big"
-        type="text"
         data-qa="big"
-        placeholder="Try “Los Angeles“"
-      />
-      <input
+      >
+        <input
+          class="search-bar__input"
+          type="text"
+          data-qa="keypress"
+          placeholder="Try “Los Angeles“"
+        />
+      </form>
+      <form
         class="search-bar search-bar--small"
-        type="text"
         data-qa="small"
-        placeholder="Try “Los Angeles“"
-      />
+      >
+        <input
+          class="search-bar__input"
+          type="text"
+          placeholder="Try “Los Angeles“"
+        />
+      </form>
     </div>
   </body>
 </html>

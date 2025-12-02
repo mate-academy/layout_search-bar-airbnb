@@ -28,25 +28,25 @@ body {
 .search-wrap {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  padding: 0 48px;
   gap: 20px;
 }
 
 .search--big {
-  width: 100%;
   margin-top: 20px;
-  padding: 0 48px;
 }
 
 .search__input {
   box-sizing: border-box;
-  width: 100%;
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
   background-position: 16px center;
   background-size: 19px;
-  border: 1px solid;
+  width: 100%;
+  border: 1px solid #e6e6e6;
   border-radius: 6px;
-  padding: 24px 24px 24px 56px;
+  padding: 24px 24px 24px 48px;
   font-size: 16px;
   line-height: 20px;
 }
@@ -61,6 +61,6 @@ body {
   box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.06);
 }
 
-.search--small .search__input {
+.search__input.search__input--small {
   padding: 9px 23px 9px 55px;
 }

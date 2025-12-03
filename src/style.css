@@ -28,7 +28,7 @@ body {
   box-sizing: border-box;
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
-  margin: 20px 8px 0;
+  margin: 20px 8px 0; /* tests fail without horizontal margin */
   border: 1px solid #e1e7ed;
   border-radius: 4px;
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
@@ -48,12 +48,11 @@ body {
 }
 
 .form:hover {
-  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+  box-shadow:
+  0 3px 8px 0 rgba(61, 78, 97, 0.2),
+  0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.form--big:hover {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
 
 .form__input {
   font-family: Avenir, sans-serif;

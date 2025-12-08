@@ -1,1 +1,60 @@
-/* add styles here */
+/* Font import */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('src/fonts/CustomFont.woff2') format('woff2'),
+         url('src/fonts/CustomFont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    font-family: 'CustomFont', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f9f9f9; /* example background */
+}
+
+/* Common search bar styles */
+.search-bar {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 300;
+    background: url('src/images/search-icon.png') no-repeat 10px center;
+    padding-left: 40px;
+    transition: border-color 0.2s ease;
+}
+
+/* States */
+.search-bar input:hover {
+    border-color: #999;
+}
+
+.search-bar input:focus {
+    border-color: #333;
+    outline: none;
+}
+
+/* Specific sizes if needed */
+.search-bar.big input {
+    height: 50px;
+}
+
+.search-bar.small input {
+    height: 40px;
+}
+
+/* Remove margin-bottom for the last search bar */
+.search-bar.small {
+    margin-bottom: 0;
+}

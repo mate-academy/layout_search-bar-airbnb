@@ -13,20 +13,50 @@
     <title>Document</title>
     <link
       rel="stylesheet"
-      href="style.css"
+      href="./styles/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/input.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/form.css"
     />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
-
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <main>
+      <form
+        class="form"
+        method="get"
+        action="#"
+        data-qa="big"
+      >
+        <label class="form__label">
+          <input
+            class="input input--large"
+            type="text"
+            name="text1"
+            data-qa="keypress"
+            placeholder="Try “Los Angeles“"
+          />
+        </label>
+      </form>
+      <form
+        class="form"
+        method="get"
+        action="#"
+        data-qa="small"
+      >
+        <label class="form__label">
+          <input
+            class="input input--small"
+            type="text"
+            name="text2"
+            placeholder="Try “Los Angeles“"
+          />
+        </label>
+      </form>
+    </main>
   </body>
 </html>

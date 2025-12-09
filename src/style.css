@@ -2,16 +2,25 @@
 @font-face {
   font-family: Avenir;
   src: url('./fonts/Avenir-Book.ttf') format('truetype');
-  font-weight: 300; /* Poids normal */
+  font-weight: 400; /* Poids normal */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Heavy.ttf') format('truetype');
+  font-weight: 700; /* Poids gras */
   font-style: normal;
   font-display: swap;
 }
 
 * {
   font-family: Avenir, sans-serif;
-  font-weight: 300; /* Utilise le poids normal */
+  font-weight: 400;
   font-size: 16px;
   box-sizing: border-box;
+  padding: 0;
 }
 
 .search-form {
@@ -20,12 +29,12 @@
   display: flex;
 }
 
-.search-form__big {
+.search-form_big {
   width: 100%;
   height: 70px;
 }
 
-.search-form__small {
+.search-form_small {
   width: 100%;
   height: 42px;
 }
@@ -42,7 +51,7 @@
   outline: none;
   width: 100%;
   height: 100%;
-  font-family: Avenir, sans-serif;
+  font-family: inherit;
   box-shadow: 0 1px 8px #3d4e611a;
 }
 

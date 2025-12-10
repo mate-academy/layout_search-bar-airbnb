@@ -1,1 +1,80 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url('../fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  font-family: Avenir, sans-serif;
+}
+
+.field {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.field__big {
+  box-sizing: border-box;
+  height: 70px;
+  border: 1px solid #7e7e7e34;
+  padding: 10px;
+  transition: border-color 0.2s;
+  width: 100%;
+  border-radius: 5px;
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+
+  background-image: url('images/Search.svg');
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-color: transparent;
+
+  background-position-x: 26px;
+  background-size: 19px 19px;
+  padding-left: 62px;
+    margin-top: 20px;
+}
+
+.field__small {
+  box-sizing: border-box;
+  height: 42px;
+  border: 1px solid #7e7e7e34;
+  padding: 10px;
+  transition: border-color 0.2s;
+  width: 100%;
+  border-radius: 5px;
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+
+   background-image: url('images/Search.svg');
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-color: transparent;
+
+  background-position-x: 13px;
+  background-size: 11px 11px;
+  padding-left: 33px;
+
+  margin-top: 20px;
+}
+
+.field__big:hover {
+  border-color: #800080;
+}
+
+.field__small:hover {
+  border-color: #800080;
+}
+
+.field__big:focus,
+.field__small:focus {
+  border-color: #00bfff;
+  outline: none;
+  box-shadow: 0 5px 2px rgba(126, 126, 126, 0.2);
+}
+
+
+

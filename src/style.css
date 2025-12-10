@@ -14,7 +14,6 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 .field__big {
@@ -24,10 +23,19 @@ body {
   padding: 10px;
   transition: border-color 0.2s;
   width: 100%;
-  padding-left: 62px;
   border-radius: 5px;
   font-family: Avenir, sans-serif;
   font-weight: 300;
+
+  background-image: url('images/Search.svg');
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-color: transparent;
+
+  background-position-x: 26px;
+  background-size: 19px 19px;
+  padding-left: 62px;
+    margin-top: 20px;
 }
 
 .field__small {
@@ -37,10 +45,20 @@ body {
   padding: 10px;
   transition: border-color 0.2s;
   width: 100%;
-  padding-left: 33px;
   border-radius: 5px;
   font-family: Avenir, sans-serif;
   font-weight: 300;
+
+   background-image: url('images/Search.svg');
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-color: transparent;
+
+  background-position-x: 13px;
+  background-size: 11px 11px;
+  padding-left: 33px;
+
+  margin-top: 20px;
 }
 
 .field__big:hover {
@@ -58,27 +76,5 @@ body {
   box-shadow: 0 5px 2px rgba(126, 126, 126, 0.2);
 }
 
-.search-icon {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 2;
-  color: #888;
-}
 
-.search-wrapper {
-  position: relative;
-  width: 100%;
-}
 
-.field__big-wrapper .search-icon {
-  width: 19px;
-  height: 19px;
-  left: 26px;
-}
-
-.field__small-wrapper .search-icon {
-  width: 11px;
-  height: 11px;
-  left: 13px;
-}

@@ -17,16 +17,35 @@
     />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
-
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      class="form"
+      action="#"
+      data-qa="big"
+    >
+      <label for="search"></label>
+      <input
+        class="form__input form__input--big"
+        type="text"
+        id="search"
+        data-qa="keypress"
+        placeholder="Try “Los Angeles“"
+        name="search"
+      />
+    </form>
+    <form
+      class="form"
+      action="#"
+      data-qa="small"
+    >
+      <label for="cheese-small"></label>
+      <input
+        class="form__input form__input--small"
+        type="text"
+        id="cheese-small"
+        data-qa="hover"
+        placeholder="Try “Los Angeles“"
+        name="search-small"
+      />
+    </form>
   </body>
 </html>

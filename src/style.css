@@ -1,7 +1,7 @@
 html {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 @font-face {
@@ -21,6 +21,12 @@ html {
 body {
   font-family: Avenir, sans-serif;
   font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 .search-form {

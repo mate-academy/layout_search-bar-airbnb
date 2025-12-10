@@ -1,240 +1,177 @@
-/* add styles here */
-      @font-face {
-        font-family: 'CustomFont';
-        src: url('src/fonts/CustomFont-Light.woff2') format('woff2');
-        font-weight: 300;
-        font-style: normal;
-        font-display: swap;
-      }
-      
-      @font-face {
-        font-family: 'CustomFont';
-        src: url('src/fonts/CustomFont-Regular.woff2') format('woff2');
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-      }
-      
-      @font-face {
-        font-family: 'CustomFont';
-        src: url('src/fonts/CustomFont-Medium.woff2') format('woff2');
-        font-weight: 500;
-        font-style: normal;
-        font-display: swap;
-      }
-      
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      
-      body {
-        font-family: 'CustomFont', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-        font-weight: 300;
-        background-color: #f8f9fa;
-        color: #333;
-        padding: 40px 20px;
-        min-height: 100vh;
-      }
-      
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-      
-      .header {
-        text-align: center;
-        margin-bottom: 40px;
-      }
-      
-      .header h1 {
-        font-weight: 300;
-        font-size: 2.5rem;
-        color: #1a1a1a;
-        margin-bottom: 10px;
-      }
-      
-      .header p {
-        font-weight: 300;
-        color: #666;
-        font-size: 1.1rem;
-      }
-      
-      .search-form {
-        width: 100%;
-        position: relative;
-      }
-      
-      /* Big search bar */
-      .big-search-form {
-        margin-top: 20px; /* Top indent */
-        margin-bottom: 40px; /* Space between search bars */
-        padding: 20px 25px 20px 60px;
-        font-size: 1.2rem;
-        background-position: 25px center;
-        background-size: 24px;
-        border-radius: 12px;
-      }
-      
-      /* Small search bar */
-      .small-search-form {
-        margin-top: 20px; /* Distance between two search bars */
-      }
-      
-      .search-input {
-        width: 100%;
-        font-family: inherit;
-        font-weight: 300;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        padding: 16px 20px 16px 50px;
-        font-size: 1rem;
-        background-color: white;
-        background-image: url('src/images/search-icon.svg');
-        background-repeat: no-repeat;
-        background-position: 20px center;
-        background-size: 20px;
-        transition: all 0.2s ease;
-        outline: none;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
-      }
-      
-      /* Default */
-      .search-input::placeholder {
-        color: #aaa;
-        font-weight: 300;
-      }
-      
-      /* Hover */
-      .search-input:hover {
-        border-color: #bbb;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-      }
-      
-      /* Focus */
-      .search-input:focus {
-        border-color: #4a90e2;
-        box-shadow: 0 4px 12px rgba(74, 144, 226, 0.2);
-      }
-      
-      .search-button {
-        position: absolute;
-        right: 730px;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: #ffffff;
-        color: white;
-        border: none;
-        border-radius: 6px;
-        padding: 10px 20px;
-        font-family: inherit;
-        font-weight: 400;
-        font-size: 0.95rem;
-        cursor: pointer;
-        transition: background-color 0.2s ease;
-      }
-      
-      .big-search-form .search-button {
-        padding: 12px 24px;
-        font-size: 1.05rem;
-        border-radius: 8px;
-        right: 670px;
-      }
-      
-      .search-button:hover {
-        background-color: #3abec8;
-      }
-      
-      .search-button:active {
-        background-color: #2cacb0;
-      }
-      
-      .info-panel {
-        background-color: white;
-        border-radius: 12px;
-        padding: 25px;
-        margin-top: 50px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-        border: 1px solid #eee;
-      }
-      
-      .info-panel h2 {
-        font-weight: 300;
-        margin-bottom: 15px;
-        color: #1a1a1a;
-        font-size: 1.5rem;
-      }
-      
-      .info-panel p {
-        font-weight: 300;
-        line-height: 1.6;
-        color: #555;
-        margin-bottom: 15px;
-      }
-      
-      .info-panel ul {
-        padding-left: 20px;
-        margin-bottom: 20px;
-      }
-      
-      .info-panel li {
-        margin-bottom: 8px;
-        font-weight: 300;
-        color: #555;
-      }
-      
-      .highlight {
-        background-color: #f0f7ff;
-        padding: 3px 6px;
-        border-radius: 4px;
-        font-weight: 400;
-        color: #2c6cb0;
-      }
-      
-      @media (max-width: 600px) {
-        body {
-          padding: 20px 15px;
-        }
-        
-        .header h1 {
-          font-size: 2rem;
-        }
-        
-        .big-search-form .search-input {
-          padding: 18px 20px 18px 55px;
-          font-size: 1.1rem;
-        }
-        
-        .search-button {
-          padding: 8px 16px;
-          font-size: 0.9rem;
-        }
-        
-        .big-search-form .search-button {
-          padding: 10px 18px;
-        }
-        
-        .info-panel {
-          padding: 20px;
-        }
-      }
-      
-      .search-input:before {
-        content: "";
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        background-color: #ccc;
-        position: absolute;
-        left: 20px;
-        top: 50%;
-        transform: translateY(-50%);
-        border-radius: 50%;
-      }
-      
-      .big-search-form .search-input:before {
-        width: 24px;
-        height: 24px;
-        left: 25px;
-      }
+/* ========================= */
+/* Fontes                    */
+/* ========================= */
+@font-face {
+  font-family: 'CustomFont';
+  src: url('src/fonts/CustomFont-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CustomFont';
+  src: url('src/fonts/CustomFont-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CustomFont';
+  src: url('src/fonts/CustomFont-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'CustomFont', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 300;
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-weight: 300;
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-weight: 300;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+
+.search-form {
+  width: 100%;
+  position: relative;
+}
+
+
+.big-search-form {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.small-search-form .search-input {
+  padding: 10px 16px 10px 45px;
+  font-size: 0.9rem;           
+  background-size: 16px;        
+  background-position: 15px center;
+  border-radius: 6px;
+}
+
+.small-search-form .search-button {
+  padding: 8px 14px;
+  font-size: 0.10rem;
+  border-radius: 6px;
+  left: 2px;
+
+}
+
+.search-input {
+  width: 100%;
+  font-family: inherit;
+  font-weight: 300;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px 20px 16px 50px;
+  font-size: 1rem;
+
+  background-color: #fff;
+  background-image: url('src/images/search-icon.svg'); /* obrigatório */
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  background-size: 20px;
+
+  transition: all 0.2s ease;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+/* Placeholder */
+.search-input::placeholder {
+  color: #aaa;
+  font-weight: 300;
+}
+
+/* Hover */
+.search-input:hover {
+  border-color: #bbb;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Focus */
+.search-input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.2);
+}
+
+.search-button {
+  position: absolute;
+  right: 760px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+
+  transition: background-color 0.2s ease;
+}
+
+.search-button:hover {
+  background-color: #e8f5ff;
+}
+
+.search-button:active {
+  background-color: #d8efff;
+}
+
+.big-search-form .search-button {
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px 15px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .big-search-form .search-input {
+    padding: 18px 20px 18px 55px;
+    font-size: 1.1rem;
+  }
+}

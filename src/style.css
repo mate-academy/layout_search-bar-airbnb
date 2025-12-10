@@ -1,1 +1,72 @@
-/* add styles here */
+/* Fonte personalizada */
+@font-face {
+  font-family: MinhaFonte;
+  src: url('fonts/minhaFonte.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  font-family: MinhaFonte, sans-serif;
+  font-weight: 300; /* requisito */
+  margin: 0; /* reset para largura total */
+  padding: 0;
+}
+
+/* Estilo geral das barras */
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+/* Ícone como background-image */
+.search-bar .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url('src/images/Search.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* Estados */
+.search-bar:hover {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.search-bar:focus-within {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.search-bar input:focus {
+  border-bottom: 2px solid #007bff;
+}
+
+/* recuo superior apenas na barra grande */
+.search-bar.big {
+  margin-top: 20px;
+}
+
+/* distância entre a barra grande e a pequena */
+.search-bar.big + .search-bar.small {
+  margin-top: 20px;
+}

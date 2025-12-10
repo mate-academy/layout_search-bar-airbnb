@@ -1,1 +1,133 @@
 /* add styles here */
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 300;
+  src: url('./fonts/Avenir-Book.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 600;
+  src: url('./fonts/Avenir-Heavy.ttf') format('truetype');
+}
+
+:root {
+  --font-family: Avenir, Arial, sans-serif;
+  --font-size-base: 16px;
+  --font-size-small: 14px;
+  --color-text: #3d4e61;
+  --color-border: #e1e7ed;
+  --box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
+  --box-shadow-hover: 0 3px 8px rgba(61, 78, 97, 0.2);
+  --gradient-focus: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+html {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+}
+
+.search-form {
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 20px auto 0;
+}
+
+.search-form--big {
+  height: 70px;
+}
+
+.search-form--small {
+  height: 42px;
+}
+
+.search-form__label {
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.search-form__label::after {
+  content: '';
+  position: absolute;
+  background: url('./images/Search.svg') no-repeat;
+  background-size: contain;
+}
+
+.search-form__label--big::after {
+  height: 19px;
+  width: 19px;
+  top: 25px;
+  left: 26px;
+}
+
+.search-form__label--small::after {
+  height: 11px;
+  width: 11px;
+  top: 15px;
+  left: 13px;
+}
+
+.search-form__input {
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  color: var(--color-text);
+  font-weight: 300;
+  font-family: inherit;
+  box-shadow: var(--box-shadow);
+  outline: none;
+}
+
+.search-form__input:hover {
+  box-shadow: var(--box-shadow-hover);
+}
+
+.search-form__input--big {
+  padding-left: 62px;
+  font-size: var(--font-size-base);
+  line-height: 22px;
+}
+
+.search-form__input--small {
+  padding-left: 33px;
+  font-size: var(--font-size-small);
+  line-height: 19px;
+}
+
+.search-form__input::placeholder {
+  color: inherit;
+  font-weight: 300;
+}
+
+.search-form__input--big::placeholder {
+  font-size: var(--font-size-base);
+  line-height: 22px;
+}
+
+.search-form__input--small::placeholder {
+  font-size: var(--font-size-small);
+  line-height: 22px;
+}
+
+.search-form__input:focus {
+  background: var(--gradient-focus);
+  border-radius: 3px;
+  font-weight: 600;
+}

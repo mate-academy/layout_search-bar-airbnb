@@ -1,1 +1,113 @@
-/* add styles here */
+@font-face {
+  font-family: 'Avenir Book';
+  src: url('../src/fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Avenir Book', sans-serif;
+  font-weight: 300;
+}
+
+body {
+  margin: 8px;
+  padding: 0;
+}
+
+.input-box img {
+  color: rgba(104, 124, 148, 1);
+}
+
+.input-box-big img {
+  width: 19px;
+  height: 19px;
+  left: 25px;
+  top: 26px;
+}
+
+.input-box-small img {
+  width: 11px;
+  height: 11px;
+  left: 13px;
+  top: 15px;
+}
+
+.input-box input {
+  display: block;
+  width: 100%;
+  border: none;
+  font-weight: 400;
+  font-family: 'Avenir Book', sans-serif;
+  color: #e1e7ed;
+}
+
+.input-box-big input {
+  padding-left: 62px;
+  background-image: url('../src/images/Search.svg');
+  background-repeat: no-repeat;
+  background-size: 19px 19px;
+  background-position: 26px center;
+  height: 100%;
+  line-height: 100%;
+  font-size: 16px;
+}
+
+.input-box-small input {
+  padding-left: 33px;
+  background-image: url('../src/images/Search.svg');
+  background-repeat: no-repeat;
+  background-size: 11px 11px;
+  background-position: 13px center;
+  height: 100%;
+  line-height: 100%;
+  font-size: 14px;
+}
+
+.input-box:hover {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+}
+
+.input-box input:focus {
+  outline: none;
+}
+
+.input-box[data-qa='big'] {
+  width: 100%;
+  height: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.input-box[data-qa='small'] {
+  height: 42px;
+}
+
+.search-form__input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px #3d4e611a;
+  outline: none;
+  color: #3d4e611a;
+  font-family: 'Avenir Book', sans-serif;
+  font-weight: 300;
+}
+
+input::placeholder {
+  width: 129px;
+  height: 22px;
+  top: 25px;
+  left: 62px;
+  color: rgba(61, 78, 97, 1);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Avenir Book', sans-serif;
+}

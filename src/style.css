@@ -1,1 +1,97 @@
-/* add styles here */
+@font-face {
+  font-family: 'Avenir Book';
+  src: url('../src/fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Avenir Book', sans-serif;
+  font-weight: 300;
+}
+
+body {
+  margin: 8px;
+  padding: 0;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px #3d4e611a;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+.input-box:hover {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.input-box[data-qa='big'] {
+  height: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.input-box[data-qa='small'] {
+  height: 42px;
+}
+
+.input-box img {
+  flex-shrink: 0;
+  color: rgba(104, 124, 148, 1);
+}
+
+.input-box[data-qa='big'] img {
+  width: 19px;
+  height: 19px;
+  margin-left: 25px;
+  margin-right: 18px;
+}
+
+.input-box[data-qa='small'] img {
+  width: 11px;
+  height: 11px;
+  margin: 15px 9px 16px 13px; /* top right bottom left */
+}
+
+.input-box input {
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'Avenir Book', sans-serif;
+  color: rgba(61, 78, 97, 1);
+  width: 100%;
+  outline: none;
+  background: transparent;
+  padding-left: 0;
+}
+
+.input-box[data-qa='big'] input {
+  font-size: 16px;
+  height: 100%;
+}
+
+.input-box[data-qa='small'] input {
+  font-size: 14px;
+  height: 100%;
+}
+
+.input-box[data-qa='big'] input::placeholder,
+.input-box[data-qa='small'] input::placeholder {
+  color: rgba(61, 78, 97, 1);
+  font-family: 'Avenir Book', sans-serif;
+  font-weight: 400;
+}
+
+.input-box[data-qa='small'] input::placeholder {
+  font-size: 14px;
+}
+
+

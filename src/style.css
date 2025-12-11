@@ -1,8 +1,9 @@
 /* ========================= */
 /* Fontes                    */
 /* ========================= */
+
 @font-face {
-  font-family: 'CustomFont';
+  font-family: CustomFont;
   src: url('src/fonts/CustomFont-Light.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
@@ -10,7 +11,7 @@
 }
 
 @font-face {
-  font-family: 'CustomFont';
+  font-family: CustomFont;
   src: url('src/fonts/CustomFont-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
@@ -18,7 +19,7 @@
 }
 
 @font-face {
-  font-family: 'CustomFont';
+  font-family: CustomFont;
   src: url('src/fonts/CustomFont-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
@@ -31,9 +32,8 @@
   box-sizing: border-box;
 }
 
-
 body {
-  font-family: 'CustomFont', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: CustomFont, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   font-weight: 300;
   background-color: #f8f9fa;
   color: #333;
@@ -64,33 +64,19 @@ body {
   font-size: 1.1rem;
 }
 
-
 .search-form {
   width: 100%;
   position: relative;
 }
-
 
 .big-search-form {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.small-search-form .search-input {
-  padding: 10px 16px 10px 45px;
-  font-size: 0.9rem;           
-  background-size: 16px;        
-  background-position: 15px center;
-  border-radius: 6px;
-}
-
-.small-search-form .search-button {
-  padding: 8px 14px;
-  font-size: 0.10rem;
-  border-radius: 6px;
-  left: 2px;
-
-}
+/* -------------------------------------- */
+/* Regras menos específicas vêm primeiro  */
+/* -------------------------------------- */
 
 .search-input {
   width: 100%;
@@ -102,7 +88,7 @@ body {
   font-size: 1rem;
 
   background-color: #fff;
-  background-image: url('src/images/search-icon.svg'); /* obrigatório */
+  background-image: url('src/images/search-icon.svg');
   background-repeat: no-repeat;
   background-position: 20px center;
   background-size: 20px;
@@ -130,6 +116,22 @@ body {
   box-shadow: 0 4px 12px rgba(74, 144, 226, 0.2);
 }
 
+/* -------------------------------------- */
+/* Agora as regras mais específicas        */
+/* -------------------------------------- */
+
+.small-search-form .search-input {
+  padding: 10px 16px 10px 45px;
+  font-size: 0.9rem;
+  background-size: 16px;
+  background-position: 15px center;
+  border-radius: 6px;
+}
+
+/* -------------------------------------- */
+/* Button menos específico primeiro        */
+/* -------------------------------------- */
+
 .search-button {
   position: absolute;
   right: 760px;
@@ -155,6 +157,14 @@ body {
 
 .search-button:active {
   background-color: #d8efff;
+}
+
+/* Agora o mais específico */
+.small-search-form .search-button {
+  padding: 8px 14px;
+  font-size: 0.10rem;
+  border-radius: 6px;
+  left: 2px;
 }
 
 .big-search-form .search-button {

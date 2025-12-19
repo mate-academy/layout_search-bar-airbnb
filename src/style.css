@@ -1,13 +1,22 @@
 /* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: 900;
+}
+
 body {
-  font-family: Montserrat, sans-serif;
+  font-family: Avenir, sans-serif;
   font-weight: 300;
-  margin: 0 38px;
 }
 
 .big-input {
   margin-top: 20px;
-  font-weight: 300;
 }
 
 .big-input__field {
@@ -28,11 +37,6 @@ body {
 
 .big-input__field:hover {
   box-shadow: 0 3px 8px 0 #3d4e611a;
-  background-image: url(images/Search.svg);
-  background-size: 19px 19px;
-  background-repeat: no-repeat;
-  background-position: 26px center;
-  padding-left: 62px;
 }
 
 .big-input__field:focus {
@@ -51,7 +55,6 @@ body {
 
 .small-input {
   margin-top: 20px;
-  font-weight: 300;
 }
 
 .small-input__field {
@@ -72,11 +75,6 @@ body {
 
 .small-input__field:hover {
   box-shadow: 0 3px 8px 0 #3d4e611a;
-  background-image: url(images/Search.svg);
-  background-size: 11px 11px;
-  background-repeat: no-repeat;
-  background-position: 13px center;
-  padding-left: 33px;
 }
 
 .small-input__field:focus {

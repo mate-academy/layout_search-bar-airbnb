@@ -15,18 +15,38 @@
       rel="stylesheet"
       href="style.css"
     />
+    <link
+      rel="stylesheet"
+      href="fonts/Avenir-Book.ttf"
+    />
+    <link
+      rel="stylesheet"
+      href="fonts/Avenir-Heavy.ttf"
+    />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      data-qa="big"
+      class="container"
+    >
+      <input
+        type="text"
+        data-qa="keypress"
+        placeholder="Try “Los Angeles“"
+        class="big-input input"
+      />
+    </form>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      data-qa="small"
+      class="container"
+    >
+      <input
+        type="text"
+        data-qa="hover"
+        placeholder="Try “Los Angeles“"
+        class="small-input input"
+      />
+    </form>
   </body>
 </html>

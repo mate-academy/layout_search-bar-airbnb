@@ -1,1 +1,96 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: 900;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Avenir, Arial, sans-serif;
+  font-weight: 300;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 8px;
+}
+
+.search-bar__input {
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 1px solid rgba(225, 231, 237, 1);
+  width: 100%;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+  font-family: Avenir, Arial, sans-serif;
+}
+
+.search-bar__input--big {
+  background-image: url(/src/images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: 19px 19px;
+  background-position: 26px center;
+  border: 1px solid rgba(225, 231, 237, 1);
+  opacity: 1;
+  border-radius: 4px 4px 0 0;
+  padding: 20px 10px 20px 62px;
+  min-height: 70px;
+  line-height: 1.2;
+  box-sizing: border-box;
+}
+
+.search-bar__input--small {
+  background-image: url(/src/images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: 11px 11px;
+  background-position: 13px center;
+  opacity: 1;
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 0 0 4px 4px;
+  font-size: 14px;
+  padding: 11px 10px 11px 33px;
+  min-height: 42px;
+  line-height: 1.2;
+  box-sizing: border-box;
+}
+
+.search-bar__input--big:hover,
+.search-bar__input--small:hover {
+  outline: none;
+  box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.2);
+  font-family: Avenir, Arial, sans-serif;
+  font-weight: 900;
+}
+
+.search-bar__input--big:focus,
+.search-bar__input--small:focus {
+  outline: none;
+  background-color: rgb(249, 248, 250);
+  font-family: Avenir, Arial, sans-serif;
+  font-weight: 900;
+}
+
+.search-bar__input--small::placeholder {
+  font-size: 14px;
+  color: #3d4e61;
+  font-weight: 300;
+}
+
+.search-bar__input--big::placeholder {
+  color: #3d4e61;
+  font-weight: 300;
+}
+
+.search-bar__input--big:placeholder-shown:focus,
+.search-bar__input--small:placeholder-shown:focus {
+  font-weight: 300;
+}

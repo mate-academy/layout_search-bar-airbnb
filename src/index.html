@@ -1,3 +1,4 @@
+<!-- #region -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -16,17 +17,69 @@
       href="style.css"
     />
   </head>
-  <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+  <!-- #endregion -->
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+  <body>
+    <div class="search__container">
+      <div
+        class="big__search__form"
+        data-qa="big"
+      >
+        <div class="search__bar default">
+          <label for="default">default</label>
+          <input
+            name="default"
+            type="text"
+            data-qa="keypress"
+            placeholder="Try “Los Angeles“"
+          />
+        </div>
+        <div class="search__bar hover">
+          <label for="hover">hover</label>
+          <input
+            name="hover"
+            type="text"
+            data-qa="keypress"
+            placeholder="Try “Los Angeles“"
+          />
+        </div>
+        <div class="search__bar focus">
+          <label for="focus">Focus</label>
+          <input
+            name="focus"
+            type="text"
+            data-qa="keypress"
+            placeholder="Try “Los Angeles“"
+          />
+        </div>
+      </div>
+
+      <div
+        class="small__search__form"
+        data-qa="small"
+      >
+        <div class="search__bar small__default">
+          <input
+            name="small default"
+            type="text"
+            placeholder="Try “Los Angeles“"
+          />
+        </div>
+        <div class="search__bar small__hover">
+          <input
+            name="small hover"
+            type="text"
+            placeholder="Try “Los Angeles“"
+          />
+        </div>
+        <div class="search__bar small__focus">
+          <input
+            name="small focus"
+            type="text"
+            placeholder="Try “Los Angeles“"
+          />
+        </div>
+      </div>
+    </div>
   </body>
 </html>

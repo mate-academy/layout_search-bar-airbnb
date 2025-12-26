@@ -1,1 +1,42 @@
 /* add styles here */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.search__container {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.search__bar input {
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 19px 19px;
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 10%;
+}
+
+
+
+.search__bar label {
+  padding-left: 10%;
+}
+
+.small__search__form {
+  gap: 20px;
+}
+
+.small__search__form .search__bar:not(:first-child) input {
+  width: 50vh;
+  margin-top: 20px;
+}

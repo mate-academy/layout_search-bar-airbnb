@@ -1,5 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html
+  lang="en"
+  class="page"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -13,20 +16,37 @@
     <title>Document</title>
     <link
       rel="stylesheet"
-      href="style.css"
+      href="./styles/style.css"
     />
   </head>
-  <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+  <body class="page__body">
+    <form
+      action="/search"
+      method="get"
+      class="search page__form"
+      data-qa="big"
+    >
+      <input
+        class="search__input search__input--big"
+        type="text"
+        data-qa="keypress"
+        name="q"
+        placeholder="Try “Los Angeles“"
+      />
+    </form>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      action="/search"
+      method="get"
+      class="search page__form"
+      data-qa="small"
+    >
+      <input
+        class="search__input search__input--small"
+        type="text"
+        name="q"
+        placeholder="Try “Los Angeles“"
+      />
+    </form>
   </body>
 </html>

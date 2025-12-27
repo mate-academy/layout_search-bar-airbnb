@@ -1,4 +1,3 @@
-<!-- #region -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -11,75 +10,35 @@
       http-equiv="X-UA-Compatible"
       content="ie=edge"
     />
-    <title>Document</title>
+    <title>Search Bars</title>
     <link
       rel="stylesheet"
       href="style.css"
     />
   </head>
-  <!-- #endregion -->
 
   <body>
-    <div class="search__container">
-      <div
-        class="big__search__form"
-        data-qa="big"
-      >
-        <div class="search__bar default">
-          <label for="default">default</label>
-          <input
-            name="default"
-            type="text"
-            data-qa="keypress"
-            placeholder="Try “Los Angeles“"
-          />
-        </div>
-        <div class="search__bar hover">
-          <label for="hover">hover</label>
-          <input
-            name="hover"
-            type="text"
-            data-qa="keypress"
-            placeholder="Try “Los Angeles“"
-          />
-        </div>
-        <div class="search__bar focus">
-          <label for="focus">Focus</label>
-          <input
-            name="focus"
-            type="text"
-            data-qa="keypress"
-            placeholder="Try “Los Angeles“"
-          />
-        </div>
-      </div>
+    <form
+      class="search-bar search-bar--big"
+      data-qa="big"
+    >
+      <input
+        class="search-bar__input"
+        type="text"
+        data-qa="keypress"
+        placeholder="Try “Los Angeles”"
+      />
+    </form>
 
-      <div
-        class="small__search__form"
-        data-qa="small"
-      >
-        <div class="search__bar small__default">
-          <input
-            name="small default"
-            type="text"
-            placeholder="Try “Los Angeles“"
-          />
-        </div>
-        <div class="search__bar small__hover">
-          <input
-            name="small hover"
-            type="text"
-            placeholder="Try “Los Angeles“"
-          />
-        </div>
-        <div class="search__bar small__focus">
-          <input
-            name="small focus"
-            type="text"
-            placeholder="Try “Los Angeles“"
-          />
-        </div>
-      </div>
-    </div>
+    <form
+      class="search-bar search-bar--small"
+      data-qa="small"
+    >
+      <input
+        class="search-bar__input"
+        type="text"
+        placeholder="Try “Los Angeles”"
+      />
+    </form>
   </body>
 </html>

@@ -1,42 +1,103 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Book.ttf) format(truetype);
+  font-weight: 400;
+}
 
-body {
-  margin: 0;
-  padding: 0;
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Heavy.ttf) format(truetype);
+  font-weight: 900;
+}
+
+html {
   box-sizing: border-box;
 }
 
-.search__container {
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 50px;
+body,
+.search-bar,
+.search-bar__input {
+  box-sizing: inherit;
 }
 
-.search__bar input {
-  background-image: url(images/Search.svg);
-  background-repeat: no-repeat;
-  background-position: 10px center;
-  background-size: 19px 19px;
-  width: 100vh;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding-left: 10%;
+body {
+  font-family: Avenir, Arial, sans-serif;
+  font-weight: 300;
 }
 
+/* ========== SEARCH BAR BASE ========== */
 
-
-.search__bar label {
-  padding-left: 10%;
+.search-bar {
+  width: 100%;
 }
 
-.small__search__form {
-  gap: 20px;
-}
-
-.small__search__form .search__bar:not(:first-child) input {
-  width: 50vh;
+.search-bar + .search-bar {
   margin-top: 20px;
+}
+
+.search-bar--big {
+  margin-top: 20px;
+}
+
+/* ========== INPUT BASE ========== */
+
+.search-bar__input {
+  width: 100%;
+  height: 70px;
+  font-size: 16px;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  background-color: #fff;
+  font-family: Avenir, sans-serif;
+  font-weight: 400;
+  color: rgb(61, 78, 97);
+
+  outline: none;
+  background-repeat: no-repeat;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+}
+
+.search-bar__input::placeholder {
+  color: rgb(61, 78, 97);
+}
+
+/* ========== BIG DEFAULT ========== */
+
+.search-bar--big .search-bar__input {
+  padding-left: 62px;
+  background-image: url(./images/Search.svg);
+  background-size: 19px 19px;
+  background-position: 25px 24px;
+}
+
+/* ========== SMALL DEFAULT ========== */
+
+.search-bar--small .search-bar__input {
+  height: 42px;
+  padding-left: 33px;
+  font-size: 14px;
+  background-image: url(./images/Search.svg);
+  background-size: 11px 11px;
+  background-position: 12px 14px;
+  font-weight: 400;
+}
+
+/* ========== HOVER ========== */
+
+.search-bar--big .search-bar__input:hover,
+.search-bar--small .search-bar__input:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+}
+
+/* ========== FOCUS ========== */
+
+.search-bar--big .search-bar__input:focus {
+  border-radius: 3px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.search-bar--small .search-bar__input:focus {
+  border-radius: 3px;
+  font-weight: 900;
+  color: rgb(61, 78, 97);
 }

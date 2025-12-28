@@ -1,13 +1,16 @@
 @font-face {
-  font-family: 'Avenir' sans-serif;
-  src: url('/src/fonts/Avenir.ttc') format('truetype-collection');
+  font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf) format(truetype);
+  src: url(fonts/Avenir-Heavy.ttf) format(truetype);
   font-weight: 300;
 }
 
 body {
+  font-family: Avenir, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-weight: 300;
 }
 
 .container {
@@ -16,6 +19,7 @@ body {
 }
 
 .search {
+  font-weight: 300;
   display: flex;
   width: 100%;
   border-radius: 4px;

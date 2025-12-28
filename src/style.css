@@ -1,1 +1,44 @@
-/* add styles here */
+@font-face {
+  font-family: AvenirBook;
+  src: url(fonts/Avenir-Book.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  font-family: AvenirBook, sans-serif;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+
+}
+
+.big {
+  width: 100%;
+  height: 70px;
+  background-image: url(images/Search.svg);
+  background-size: 19px 19px;
+  background-repeat: no-repeat;
+  background-position: left 26px center;
+  padding-left: 62px;
+}
+
+.small {
+  width: 100%;
+  height: 42px;
+  background-image: url(images/Search.svg);
+  background-size: 11px 11px;
+  background-repeat: no-repeat;
+  background-position: left 13px center;
+  padding-left: 33px;
+}
+
+input:hover {
+  border-color: blue;
+}
+
+input:focus {
+  border-color: brown;
+}

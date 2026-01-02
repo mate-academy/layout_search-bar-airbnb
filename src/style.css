@@ -1,7 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 @font-face {
@@ -24,13 +28,13 @@ body {
 }
 
 .form--big {
-  margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .search {
   display: block;
   width: 100%;
+  max-width: 900px;
   font-family: inherit;
   font-weight: 300;
   font-size: 16px;
@@ -45,7 +49,7 @@ body {
   outline: none;
 }
 
-.form--big .search {
+.search--big {
   height: 70px;
   padding-left: 62px;
   font-size: 16px;
@@ -55,7 +59,8 @@ body {
   background-position: 26px center;
 }
 
-.form--small .search {
+.search--small {
+  max-width: 427px;
   height: 42px;
   padding-left: 33px;
   font-size: 14px;

@@ -1,1 +1,85 @@
-/* add styles here */
+/* Підключаємо основний шрифт (Book) */
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Heavy.ttf) format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+  line-height: 1;
+  color: #3d4e61;
+}
+
+.search {
+  margin-top: 20px;
+}
+
+.search--big {
+  max-width: 900px;
+  width: 100%;
+}
+
+.search--small {
+  max-width: 427px;
+  width: 100%;
+}
+
+.search__input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+
+  border: solid 1px #e1e7ed;
+
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+  font-family: Avenir, sans-serif;
+
+  /* font-weight: 400; */
+  line-height: 100%;
+}
+
+.search__input--big {
+  background-position: 25px center;
+  padding: 15px 15px 15px 62px;
+  font-size: 16px;
+  height: 70px;
+}
+
+.search__input--small {
+  background-position: 13px center;
+  padding: 15px 15px 15px 33px;
+  height: 42px;
+  font-size: 14px;
+  background-size: 11px 11px;
+}
+
+.search__input::placeholder {
+  color: #3d4e61;
+  opacity: 1;
+}
+
+.search__input:hover {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search__input:focus {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  outline: none;
+  font-weight: 800;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}

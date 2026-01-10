@@ -1,13 +1,13 @@
 /* add styles here */
 @font-face {
-  font-family: Avenir, sans-serif;
+  font-family: Avenir;
   src: url(./fonts/Avenir-Book.ttf);
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: Avenir, sans-serif;
+  font-family: Avenir;
   src: url(./fonts/Avenir-Heavy.ttf);
   font-weight: 900;
   font-style: normal;
@@ -26,8 +26,7 @@ body {
 }
 
 .search--big {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-block: 20px;
   font-size: 16px;
 }
 
@@ -85,4 +84,16 @@ body {
 .search--small .search__input::placeholder {
   color: #3d4e61;
   font-weight: 400;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
 }

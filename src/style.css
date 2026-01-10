@@ -1,1 +1,111 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf) format(truetype);
+  font-weight: 400;
+  font-style: normal;
+  font-synthesis: none;
+  font-display: block;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Heavy.ttf) format(truetype);
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+}
+
+.page {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.page__body {
+  font-family: Avenir, sans-serif;
+  font-weight: 400;
+  font-synthesis: none;
+}
+
+.search__form {
+  margin-top: 20px;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 1px;
+
+  border: #e1e7ed solid 1px;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search__form:hover {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.search__form:focus-within {
+  background-color: #f6f6f7;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.search__form--big {
+  height: 70px;
+  box-sizing: border-box;
+}
+
+.search__form--small {
+  box-sizing: border-box;
+  height: 42px;
+}
+
+.search__input::placeholder {
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-synthesis: none;
+  text-shadow: none;
+  color: #3d4e61;
+}
+
+.search__bar--big {
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 25px center;
+  background-size: 19px;
+
+  font-size: 16px;
+}
+
+.search__bar--small {
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 12px center;
+  background-size: 11px;
+
+  font-size: 14px;
+}
+
+.search__input {
+  border: none;
+  outline: none;
+  background: transparent;
+
+  color: #3d4e61;
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.search__input--small {
+  padding-left: 33px;
+  font-size: 14px;
+  padding-bottom: 0;
+}
+
+.search__input--big {
+  padding-left: 62px;
+  font-size: 16px;
+}
+
+.search__input:focus {
+  font-weight: 700;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}

@@ -1,1 +1,99 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Book.ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Heavy.ttf');
+  font-weight: 900;
+}
+
+body {
+  font-family: Avenir, serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+.search-bar-big {
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: 19px 19px;
+  background-position: 26px center;
+
+  width: 100%;
+  height: 70px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+  padding-left: 62px;
+
+  font-family: Avenir, serif;
+  font-size: 16px;
+
+  box-sizing: border-box;
+  line-height: 1;
+
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+}
+
+.search-bar-big::placeholder {
+  color: rgba(61, 78, 97, 1);
+}
+
+.search-bar-big:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.search-bar-big:focus {
+  outline: none;
+  background:
+    url(./images/Search.svg) 26px center / 19px 19px no-repeat,
+    linear-gradient(rgba(255, 255, 255, 1), rgba(246, 246, 247, 1));
+  border-radius: 3px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+  font-weight: 400;
+  color: rgba(61, 78, 97, 1);
+}
+
+.search-bar-small {
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: 11px 11px;
+  background-position: 13px center;
+
+  width: 100%;
+  height: 42px;
+  box-sizing: border-box;
+
+  padding-left: 33px;
+
+  font-family: Avenir, serif;
+  color: rgba(61, 78, 97, 1);
+
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+}
+
+.search-bar-small::placeholder {
+  color: rgba(61, 78, 97, 1);
+}
+
+.search-bar-small:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.search-bar-small:focus {
+  outline: none;
+  border-radius: 3px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+  font-weight: 400;
+  color: rgba(61, 78, 97, 1);
+}

@@ -11,22 +11,41 @@
       content="ie=edge"
     />
     <title>Document</title>
+
     <link
       rel="stylesheet"
       href="style.css"
     />
   </head>
-  <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+  <body>
+    <main>
+      <form
+        action="#"
+        data-qa="big"
+        class="search-big-wrapper"
+      >
+        <!-- prettier-ignore -->
+        <input
+          class="search-big-input"
+          type="text"
+          data-qa="keypress"
+          placeholder="Try &quot;Los Angeles&quot;"
+        />
+      </form>
+
+      <form
+        action="#"
+        data-qa="small"
+        class="search-small-wrapper"
+      >
+        <!-- prettier-ignore -->
+        <input
+          class="search-small-input"
+          type="text"
+          placeholder="Try &quot;Los Angeles&quot;"
+        />
+      </form>
+    </main>
   </body>
 </html>

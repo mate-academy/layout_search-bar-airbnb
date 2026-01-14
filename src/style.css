@@ -1,1 +1,54 @@
-/* add styles here */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Airbnb, sans-serif;
+  font-weight: 300;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.form-spacing {
+  height: 20px;
+}
+
+.search-form {
+  width: 100%;
+}
+
+.search-form input {
+  width: 100%;
+  padding: 12px 44px;
+  border: 1px solid #ccc;
+  font-weight: 300;
+  font-size: 16px;
+  border-radius: 8px;
+  background-image: url('images/Search.svg');
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: 16px center;
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+.search-form--big input {
+  border-radius: 24px;
+}
+
+.search-form input:hover {
+  border-color: #000;
+}
+
+.search-form input:focus {
+  outline: none;
+  border-color: #000;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.search-form--big {
+  margin-top: 20px;
+}

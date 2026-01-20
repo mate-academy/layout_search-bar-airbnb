@@ -1,1 +1,58 @@
+/* fons */
+@font-face {
+  font-family: 'CustomFont';
+  src: url('src/fonts/CustomFont.woff2') format('woff2'),
+       url('src/fonts/CustomFont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
 /* add styles here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'CustomFont', Arial, sans-serif;
+  font-weight: 300;
+}
+
+body {
+  padding: 20px;
+}
+
+/* container */
+.search-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* bar style */
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.search-bar:focus {
+  border-color: #007bff;
+}
+
+.search-bar.big {
+  margin-top: 20px;
+}
+
+.search-bar:hover {
+  border-color: #999;
+}
+
+.search-bar {
+  background-image: url('src/images/search-icon.png');
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  padding-left: 35px;
+}

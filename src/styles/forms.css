@@ -1,0 +1,87 @@
+.form {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.lable {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.lable::after {
+  content: '';
+  background-image: url(../images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  display: block;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  color: #3d4e61;
+  font-weight: 300;
+}
+
+.input::placeholder {
+  color: #3d4e61;
+  font-weight: 300;
+  font-family: Avenir, sans-serif;
+}
+
+/* #region large */
+
+.input--large {
+  height: 70px;
+  padding-left: 62px;
+  font-size: 16px;
+
+  box-shadow: 0 1px 8px #3d4e611a;
+}
+
+.lable--large::after {
+  width: 19px;
+  height: 19px;
+  top: 25px;
+  left: 26px;
+}
+
+.input--large:hover {
+  box-shadow: 0 4px 4px #00000040;
+}
+
+/* #endregion */
+
+/* #region small */
+.input--small {
+  height: 42px;
+  padding-left: 33px;
+  font-size: 14px;
+
+  box-shadow: 0 1px 8px #3d4e611a;
+}
+
+.lable--small::after {
+  width: 11px;
+  height: 11px;
+  top: 15px;
+  left: 13px;
+}
+
+.input--small:hover {
+  box-shadow: 0 3px 8px #3d4e6133;
+}
+
+/* #endregion */
+
+.input:focus {
+  box-shadow: 0 3px 8px #3d4e6133;
+  background-image: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border: 1px solid #e1e7ed;
+  font-weight: 600;
+  outline: none;
+  border-radius: 3px;
+}

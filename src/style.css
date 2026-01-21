@@ -1,1 +1,99 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url(/src/fonts/Avenir-Book.ttf) format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir-Heavy;
+  src: url(/src/fonts/Avenir-Heavy.ttf) format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(/src/fonts/Avenir.ttc) format ('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+  margin: 0 8px;
+}
+
+.search-bar__input {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  padding: 0;
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+}
+
+.search-bar__input--big {
+  display: flex;
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  height: 70px;
+  padding-left: 62px;
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 25px center;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 300;
+}
+
+.search-bar__input--big::placeholder {
+  color: rgba(61, 78, 97, 1);
+}
+
+.search-bar__input--big:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search-bar__input--big:focus {
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 3px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+  background-image: linear-gradient
+    (180deg, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 247, 1) 100%);
+}
+
+.search-bar__input--small {
+  display: flex;
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  height: 42px;
+  padding-left: 33px;
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 13px center;
+  background-size: 11px 11px;
+  font-size: 14px;
+  color: #3d4e61;
+  font-weight: 400;
+}
+
+.search-bar__input--small::placeholder {
+  color: rgba(61, 78, 97, 1);
+  font-weight: 400;
+}
+
+.search-bar__input--small:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.search-bar__input--small:focus {
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 3px;
+  font-weight: bold;
+  background-image: linear-gradient
+    (180deg, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 247, 1) 100%);
+  color: rgba(61, 78, 97, 1);
+}

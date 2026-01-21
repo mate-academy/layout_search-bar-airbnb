@@ -1,0 +1,47 @@
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Heavy.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search__input {
+  width: 100%;
+  max-width: 752px; /* або 427px для маленького */
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+
+.search__input--big {
+  height: 70px;
+  padding: 0;
+  margin: 0;
+}
+
+.search__input--small {
+  height: 42px;
+  padding: 0;
+  margin: 0;
+}

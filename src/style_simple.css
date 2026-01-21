@@ -1,0 +1,80 @@
+/* add styles here */
+
+@font-face {
+  font-weight: 300;
+  font-family: Avenir-Book;
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: Avenir-Heavy;
+  src: url(fonts/Avenir-Heavy.ttf);
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+}
+
+body > form {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+[data-qa='big'] > input,
+[data-qa='small'] > input {
+  width: 100%;
+
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+
+  filter: drop-shadow(0 1px 8px #3d4e611a);
+
+  color: #3d4e61;
+
+  font-family: Avenir-Book, sans-serif;
+}
+
+[data-qa='big'] > input {
+  height: 70px;
+  padding: 0 0 0 62px;
+
+  background-size: 19px 19px;
+  background-position: left 26px center;
+
+  font-size: 16px;
+  line-height: 22px;
+}
+
+[data-qa='small'] > input {
+  height: 42px;
+  padding: 0 0 0 33px;
+
+  background-size: 11px 11px;
+  background-position: left 13px center;
+
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+}
+
+/*
+[data-qa='big'] > input:hover {
+  background-color: aqua;
+}
+*/
+
+[data-qa='big'] > input:focus {
+  font-family: Avenir-Heavy, sans-serif;
+}

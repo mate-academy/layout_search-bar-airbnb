@@ -1,0 +1,8 @@
+package.json =>
+    "build-css": "sass src/styles/style.scss src/styles/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+npm install
+npm install nodemon --save-dev
+nodemon -e scss -x "npm run build-css" //watch css
+

@@ -1,1 +1,103 @@
-/* add styles here */
+@font-face {
+  font-family: 'Avenir Book', serif;
+  src: url('fonts/Avenir-Book.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Avenir Heavy', sans-serif;
+  src: url('fonts/Avenir-Heavy.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+
+
+body,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Avenir Book', Times, Georgia, serif;
+  font-weight: 300;
+  color: #3d4e61;
+}
+
+.search-form{
+  margin: 20px;
+}
+
+.searchbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 20px 0;
+}
+
+.searchbar:hover {
+  box-shadow: 0 4px 4px rgba(225, 231, 237, 100%);
+}
+
+.searchbar:focus-within {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.search-field {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-weight: 300;
+  border-color: transparent;
+  font-size: 16px;
+}
+
+.search-field::placeholder {
+  color: #3d4e61;
+}
+
+.searchbar:focus-within .search-field {
+  font-weight: 700;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  outline: none;
+}
+
+.searchbar-btn {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+  background-image: url(./images/Search.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+.btn-large {
+  width: 19px;
+  height: 19px;
+}
+
+.btn-small {
+  width: 11px;
+  height: 11px;
+}
+
+.searchbar-large {
+  gap: 17px;
+  height: 70px;
+  padding: 0 26px;
+}
+
+.searchbar-small {
+  padding: 0 13px;
+  gap: 9px;
+  height: 42px;
+}
+
+.search-field-small {
+  font-size: 13px;
+  font-weight: 300;
+}

@@ -1,1 +1,112 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: #3d4e61;
+  --light-shadow: rgba(61, 78, 97, 0.1);
+  --hover-shadow: rgba(61, 78, 97, 0.2);
+}
+
+html {
+  font-family: Avenir, sans-serif;
+  color: var(--text-color);
+}
+
+body {
+  margin: 0;
+}
+
+.form {
+  margin: 0;
+  padding: 0 8px;
+}
+
+.input {
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  background-color: #fff;
+  line-height: 100%;
+  box-shadow: -1px 1px 4px #3d4e611a;
+  width: 100%;
+}
+
+.input__big {
+  margin-top: 20px;
+  height: 70px;
+  padding: 0 0 0 62px;
+  line-height: 70px;
+  background-color: #fff;
+  background-image: url(./images/Search.svg);
+  background-size: 19px;
+  background-repeat: no-repeat;
+  background-position: 26px center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.input__big:hover {
+  background-color: #fff;
+  box-shadow: -4px 4px 4px var(--hover-shadow);
+  border: 1px solid #e1e7ed;
+}
+
+.input__big:focus {
+  background-color: #f6f6f7;
+  box-shadow: -4px 4px 4px var(--hover-shadow);
+  border: 1px solid #e1e7ed;
+  outline: none;
+  text-shadow: -1px 1px 2px var(--hover-shadow);
+  font-weight: 900;
+}
+
+.input__small {
+  height: 42px;
+  line-height: 42px;
+  margin-top: 20px;
+  padding: 0 33px;
+  background-image: url(./images/Search.svg);
+  background-size: 11px;
+  background-repeat: no-repeat;
+  background-position: 13px center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.input__small:hover {
+  background-color: #fff;
+  box-shadow: -2px 2px 6px var(--light-shadow);
+  border: 1px solid #e1e7ed;
+}
+
+.input__small:focus {
+  background-color: #f6f6f7;
+  box-shadow: none;
+  border: 1px solid #e1e7ed;
+  outline: none;
+}
+
+.input::placeholder {
+  color: #3d4e61;
+  opacity: 1;
+}

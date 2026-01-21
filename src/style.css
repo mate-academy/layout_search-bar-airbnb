@@ -1,1 +1,113 @@
-/* add styles here */
+* {
+  margin: 0;
+  font-family: Avenir, sans-serif;
+  color: #3d4e61;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir.ttc') format('truetype-collection');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Heavy.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 8px;
+}
+
+.search__large {
+  height: 70px;
+  margin-top: 10px;
+  width: 100%;
+  border: 1px solid #e1e7ed;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+}
+
+.search__large:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+}
+
+.search__large:active {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.search__small {
+  height: 42px;
+  margin-top: 20px;
+  width: 100%;
+  border: 1px solid #e1e7ed;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+}
+
+.search__small:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+}
+
+.search__small:active {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.search__input {
+  height: 19px;
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+  border: none;
+  box-sizing: border-box;
+}
+
+.search__input--large {
+  margin-left: 62px;
+  margin-top: 24px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.search__input--small {
+  margin-left: 33px;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.search__img {
+  position: absolute;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.search__img--large {
+  margin-left: 25px;
+  margin-top: 24px;
+  width: 19px;
+  height: 19px;
+}
+
+.search__img--small {
+  margin-left: 12px;
+  margin-top: 14px;
+  width: 11px;
+  height: 11px;
+}

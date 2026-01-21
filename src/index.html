@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width, 
+                 user-scalable=no, 
+                 initial-scale=1.0, 
+                 maximum-scale=1.0, 
+                 minimum-scale=1.0"
     />
     <meta
       http-equiv="X-UA-Compatible"
@@ -17,16 +21,37 @@
     />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      action="/submit"
+      class="search"
+      data-qa="big"
+      method="post"
+    >
+      <div class="search__big-icon"></div>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+      <input
+        class="search__input big-input"
+        type="text"
+        data-qa="keypress"
+        name="searchBig"
+        placeholder="Try &#34;Los Angeles&#34;"
+      />
+    </form>
+
+    <form
+      action="/submit"
+      class="search"
+      data-qa="small"
+      method="post"
+    >
+      <div class="search__small-icon"></div>
+
+      <input
+        class="search__input small-input"
+        type="text"
+        name="searchSmall"
+        placeholder="Try &#34;Los Angeles&#34;"
+      />
+    </form>
   </body>
 </html>

@@ -1,1 +1,102 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir.ttc);
+  font-weight: 300;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-weight: 300;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-weight: 300;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  margin: 0 8px;
+}
+
+.search__form {
+  width: 100%;
+}
+
+.search__form--big {
+  margin-top: 20px;
+}
+
+.search__input {
+  width: 100%;
+  background-image: url(/src/images/Search.svg);
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  color: #3d4e61;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+  font-weight: 300;
+  font-family: inherit;
+}
+
+.search__input--big {
+  width: 100%;
+  height: 70px;
+  padding-left: 62px; /* 26px відступ для іконки + 17px текст після іконки + 19px ширина іконки */
+  background-size: 19px 19px;
+  background-position: 26px center;
+  font-size: 16px;
+  font-family: Avenir, sans-serif;
+}
+
+.search__input--big:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+}
+
+.search__input--big:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  box-shadow: 0 4px 4px 0 #00000040;
+  font-weight: 900;
+}
+
+.search__input--small {
+  width: 100%;
+  height: 42px;
+  padding-left: 33px; /* це 13px відступ для іконки + 9px текст після іконки + 11px ширина іконки */
+  background-size: 11px 11px;
+  background-position: 13px center;
+  font-size: 14px;
+  font-family: Avenir, sans-serif;
+}
+
+.search__input--small:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+}
+
+.search__input--small:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  font-weight: 900;
+}

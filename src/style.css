@@ -1,1 +1,109 @@
-/* add styles here */
+:root {
+  --border: #e1e7ed;
+  --placeholder: #3d4e61;
+}
+
+html {
+  font-family: inherit;
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 400;
+  font-style: normal;
+  src: url("./fonts/Avenir-Book.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 900;
+  font-style: normal;
+  src: url("./fonts/Avenir-Heavy.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Avenir, sans-serif;
+  color: var(--placeholder);
+  display: block;
+  border: var(--border);
+}
+
+.search {
+  display: block;
+}
+
+.search__input {
+  width: 100%;
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto 0;
+}
+
+.search__input--big {
+  color: var(--placeholder);
+  margin-bottom: 20px;
+  height: 70px;
+  background-size: 19px 19px;
+  background-position: 26px center;
+  padding-left: 62px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: Avenir, sans-serif;
+}
+
+.search__input--small {
+  color: var(--placeholder);
+  height: 42px;
+  background-size: 11px 11px;
+  background-position: 13px center;
+  padding-left: 33px;
+  font-size: 14px;
+  display: flex;
+  cursor: pointer;
+  font-family: Avenir, sans-serif;
+}
+
+.search__input--big::placeholder {
+  color: var(--placeholder);
+  font-family: Avenir, sans-serif;
+  font-weight: 400;
+}
+
+.search__input--small::placeholder {
+  color: var(--placeholder);
+  font-family: Avenir, sans-serif;
+  font-weight: 400;
+}
+
+
+
+.search__input--big:focus {
+  color: var(--placeholder);
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+  outline: none;
+  font-weight: 900;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search__input--small:focus {
+  font-weight: 900;
+  color: var(--placeholder);
+  text-shadow: none;
+  outline: none;
+}
+
+.search__input--small:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.search__input--big:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}

@@ -1,1 +1,132 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url(/src/fonts/Avenir.ttc);
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Avenir, Arial, sans-serif;
+}
+
+.search-form {
+  justify-content: center;
+  margin: 20px auto 0;
+  display: flex;
+}
+
+.search-form_big {
+  width: 100%;
+  height: 70px;
+}
+
+.search-form_small {
+  width: 100%;
+  height: 42px;
+}
+
+.search-form__label {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.search-form__label::after {
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+.search-form__label_big::after {
+  background-image: url(/src/images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 19px;
+  height: 19px;
+  top: 25px;
+  left: 26px;
+}
+
+.search-form__label_small::after {
+  background-image: url(/src/images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 11px;
+  height: 11px;
+  top: 15px;
+  left: 13px;
+}
+
+.search-form__input {
+  color: #3d4e61;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  font-family: inherit;
+  font-weight: 300;
+  box-shadow: 0 1px 8px #3d4e611a;
+}
+
+.search-form__input:hover {
+  box-shadow: 0 3px 8px #3d4e6133;
+}
+
+.search-form__input_big {
+  padding-left: 62px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.search-form__input_small {
+  padding-left: 33px;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.search-form__input::placeholder {
+  color: inherit;
+  font-weight: 300;
+}
+
+.search-form__input_big::placeholder {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.search-form__input_small::placeholder {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.search-form__input:focus {
+  background: linear-gradient(#fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+/* .search-form__input_big {
+  box-sizing: border-box;
+  width: 100%;
+  height: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 62px;
+  font-size: 16px;
+  background-image: url(/src/images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: 19px 19px;
+  background-position: left 19px center;
+}
+
+.search-form__input_big:hover {
+  box-shadow: 0 4px 4 0 #00000040;
+}
+
+.search-form__input_big:focus {
+  box-shadow: 0 4px 4 0 #00000040;
+}
+*/

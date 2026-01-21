@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="en">
+ <!doctype html>
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -16,17 +16,25 @@
       href="style.css"
     />
   </head>
-  <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+  <body class="page_body">
+    <div class="search-bar">
+      <div class="search-bar__big search-bar__field"
+           data-qa="big">
+        <input
+        type="text"
+        data-qa="keypress"
+        placeholder="Try &#8220;Los Angeles&#8221;"
+      />
+      </div>
+      <div class="search-bar__small search-bar__field"
+          data-qa="small">
+        <input
+        type="text"
+        data-qa="hover"
+        placeholder="Los Angeles"
+      />
+      </div>
+    </div>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
   </body>
 </html>

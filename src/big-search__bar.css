@@ -1,0 +1,55 @@
+@font-face {
+  font-family: avenir;
+  src: url(./fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: avenir-heavy;
+  src: url(./fonts/Avenir-Heavy.ttf);
+}
+
+.big-search__bar {
+  height: 70px;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+  font-family: avenir, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 25px 24px;
+  padding-left: 62px;
+}
+
+.big-search__bar::placeholder {
+  font-family: avenir, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.big-search__bar:hover {
+  box-shadow: 0 4px 4px 0 #00000040;
+}
+
+.big-search__bar:focus {
+  background: url(./images/Search.svg),
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background-repeat: no-repeat;
+  background-position:
+    25px 24px,
+    0 0;
+  outline: none;
+  font-family: avenir-heavy, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}

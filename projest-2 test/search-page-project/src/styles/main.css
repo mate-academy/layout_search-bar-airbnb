@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/CustomFont.woff2') format('woff2'),
+         url('../fonts/CustomFont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'CustomFont', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    width: 100%;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.search-bar.large {
+    margin-top: 20px;
+}
+
+.search-bar.small {
+    margin-top: 0;
+}
+
+.search-bar:hover {
+    border-color: #888;
+}
+
+.search-bar:focus {
+    border-color: #555;
+    outline: none;
+}
+
+.big {
+    margin-bottom: 20px;
+}

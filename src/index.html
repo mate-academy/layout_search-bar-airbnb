@@ -1,3 +1,4 @@
+<!-- #region top -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -16,17 +17,24 @@
       href="style.css"
     />
   </head>
+  <!-- #endregion -->
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <div data-qa="big">
+      <input
+        class="bar big-bar"
+        type="text"
+        data-qa="keypress"
+        placeholder="Try “Los Angeles“"
+      />
+    </div>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <div data-qa="small">
+      <input
+        class="bar small-bar"
+        type="text"
+        data-qa="hover"
+        placeholder="Try “Los Angeles“"
+      />
+    </div>
   </body>
 </html>

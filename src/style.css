@@ -1,1 +1,73 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Heavy.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Reset e estilo base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Avenir, sans-serif;
+  display: flex;
+  flex-direction: column; /* Faz as barras ficarem uma em cima da outra */
+  margin-left: 9px;
+}
+
+.search-input {
+  font-size: 16px;
+  font-weight: 300;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-image: url('./images/Search.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 19px 19px;
+}
+
+/* Distância entre as barras de pesquisa (20px) */
+.search-input + .search-input {
+  margin-top: 20px;
+}
+
+/* barra de pesquisa (20px) */
+[data-qa='big'] {
+  font-size: 16px;
+  margin-top: 20px;
+  height: 70px;
+  padding-left: 60px;
+  background-position: 25px center;
+}
+
+[data-qa='small'] {
+  font-size: 14px;
+  background-size: 11px 11px;
+  background-position: 10px center;
+  padding-left: 30px;
+  height: 42px;
+}
+
+/* Estado de foco (focus) */
+.search-input:focus {
+  border-color: #06c;
+  outline: none;
+  box-shadow: 0 4px 4px 0 #e1e7ed;
+}
+
+/* Estado de hover */
+.search-input:hover {
+  border-bottom: 1px #e1e7ed;
+  box-shadow: 0 4px 4px 0 #e1e7ed;
+}

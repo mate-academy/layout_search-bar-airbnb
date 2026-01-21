@@ -1,1 +1,86 @@
-/* add styles here */
+/* Шрифти */
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir.ttc') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Загальне */
+
+body {
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background: #fff;
+}
+
+.search {
+  width: 100%;
+}
+
+.search--large {
+  margin-top: 20px;
+}
+
+.search--small {
+  margin-top: 20px;
+}
+
+.search__input {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-weight: 300;
+  color: #000;
+  box-sizing: border-box;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: 16px center;
+  background-image: url('./images/Search.svg');
+}
+
+.search__input::placeholder {
+  font-family: Avenir, sans-serif;
+  color: rgba(61, 78, 97, 1);
+}
+
+.search--large .search__input {
+  height: 70px;
+  padding: 18px 20px 18px 50px;
+  font-size: 16px;
+  background-size: 20px 20px;
+}
+
+.search--small .search__input {
+  height: 42px;
+  padding: 10px 12px 10px 40px;
+  font-size: 14px;
+  background-size: 16px 16px;
+}
+
+.search__input:hover {
+  border-color: #aaa;
+}
+
+.search__input:focus {
+  outline: none;
+  box-shadow: 0 4px 4px 0 #00000040;
+}

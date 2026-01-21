@@ -1,1 +1,68 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src:
+    url('fonts/Avenir.ttc') format('truetype'),
+    url('fonts/Avenir-Book.ttf') format('truetype'),
+    url('fonts/Avenir-Heavy.ttf') format('truetype');
+}
+
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  color: #3d4e61;
+}
+
+.form {
+  padding: 20px 8px;
+}
+
+.form__input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: inherit;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  border: 1px solid #e1e7ed;
+  border-radius: 5px;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+}
+
+.form__input:hover {
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+}
+
+.form__input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.form__input:active {
+  box-shadow: none;
+}
+
+.form__input_big {
+  height: 70px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  background-position: 25px;
+  background-size: 19px 19px;
+  padding-left: 62px;
+}
+
+.form__input_small {
+  height: 42px;
+  font-size: 14px;
+  background-position: 13px;
+  background-size: 11px 11px;
+  padding-left: 33px;
+}
+
+.form__input::placeholder {
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}

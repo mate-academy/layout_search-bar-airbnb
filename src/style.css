@@ -1,1 +1,73 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url(/src/fonts/Avenir-Book.ttf) format('opentype') tech(color-COLRv1);
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-weight: 300;
+}
+
+.lab-first img {
+  width: 19px;
+  height: 19px;
+  margin-left: 26px;
+  margin-right: 17px;
+}
+
+.lab-second img {
+  width: 11px;
+  height: 11px;
+  margin-left: 13px;
+  margin-right: 9px;
+}
+
+.lab-first {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #4242426e;
+  height: 70px;
+}
+
+.lab-first:hover {
+  box-shadow: 12px 2px 10px #a1244a;
+}
+
+.lab-first input {
+  border: none;
+  width: 100%;
+  height: 98%;
+}
+
+.lab-second {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #4242426e;
+  height: 42px;
+  margin: 20px auto 0;
+}
+
+.lab-second input {
+  border: none;
+  width: 100%;
+  height: 90%;
+}
+
+.lab-second:hover {
+  box-shadow: 12px 2px 10px #138392;
+}
+
+.lab-second input:focus {
+  box-shadow: 12px 2px 10px #138392;
+  outline: none;
+}
+
+.lab-first input:focus {
+  box-shadow: 12px 2px 10px #a1244a;
+  outline: none;
+}

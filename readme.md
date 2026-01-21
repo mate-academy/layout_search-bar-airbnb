@@ -1,5 +1,5 @@
 # Search bar for Airbnb
-> Here are the [Layout Tasks Instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
+> Here are the [Layout Tasks Instructions](https://maximtsyrulnyk.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
 ___
 
 ## The task
@@ -25,8 +25,8 @@ ___
 
 ❗️ Replace `<your_account>` with your Github username and copy the links to `Pull Request` description:
 
-- [DEMO LINK](https://<your_account>.github.io/layout_search-bar-airbnb/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_search-bar-airbnb/report/html_report/)
+- [DEMO LINK](https://maximtsyrulnyk.github.io/layout_search-bar-airbnb/)
+- [TEST REPORT LINK](https://maximtsyrulnyk.github.io/layout_search-bar-airbnb/report/html_report/)
 
 ❗️ Copy this `Checklist` to the `Pull Request` description after links, and put `- [x]` before each point after you checked it.
 

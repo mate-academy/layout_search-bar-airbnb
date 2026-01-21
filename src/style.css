@@ -1,1 +1,102 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url('/src/fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('/src/fonts/Avenir-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+  background-color: #fff;
+}
+
+.search-form {
+  display: flex;
+  justify-content: left;
+  margin: 20px 8px;
+}
+
+.search-form + .search-form {
+  margin-top: 20px;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px 40px;
+  border: 1px solid #e1e7ed;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.search-bar::placeholder {
+  color: rgba(61, 78, 97, 1);
+}
+
+.search-bar.big {
+  height: 48px;
+  padding-left: 62px;
+  background-image: url(/src/images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 26px center;
+  background-size: 19px 19px;
+  font-size: 16px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+}
+
+.search-bar.big:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.search-bar.big:focus {
+  font-weight: 900;
+  outline: none;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  padding-left: 62px;
+  background-image: url(/src/images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: 19px 19px;
+  background-position: 26px center;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  font-size: 14px;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search-bar.small {
+  height: 20px;
+  padding-left: 33px;
+  background-image: url(/src/images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 13px center;
+  background-size: 11px 11px;
+  font-size: 14px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+}
+
+.search-bar.small:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+  text-shadow: none;
+}
+
+.search-bar.small:focus {
+  font-weight: 900;
+  outline: none;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  padding-left: 33px;
+  background-image: url(/src/images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: 11px 11px;
+  background-position: 13px center;
+  font-size: 14px;
+  text-shadow: none;
+}

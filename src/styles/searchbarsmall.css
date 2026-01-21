@@ -1,0 +1,62 @@
+.searchsmall {
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  justify-content: space-between;
+  height: 42px;
+  width: 100%;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px #3d4e611a;
+  margin-top: 20px;
+}
+
+.searchsmall::before {
+  content: '';
+  position: absolute;
+  left: 13px;
+  top: 15px;
+  height: 11px;
+  width: 11px;
+  background-image: url('/src/images/search.svg');
+  background-size: 11px 11px;
+  background-repeat: no-repeat;
+}
+
+.searchsmall__input {
+  display: inline-block;
+  box-sizing: border-box;
+  margin-left: 33px;
+  line-height: 42px;
+  border: 0;
+  width: 100%;
+}
+
+.searchsmall__input::placeholder {
+  font-family: Avenir, serif;
+  color: #3d4e61;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.searchsmall:hover {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.searchsmall:focus-within {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.searchsmall__input:hover {
+  outline: none;
+  border: none;
+}
+
+.searchsmall__input:focus {
+  outline: none;
+  border: none;
+  font-family: 'Avenir Heavy', serif;
+  font-size: 14px;
+  color: #3d4e61;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}

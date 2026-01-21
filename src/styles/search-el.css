@@ -1,0 +1,26 @@
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search::before {
+  content: '';
+  position: absolute;
+  background-image: url('../images/Search.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.search--big::before {
+  left: 26px;
+  width: 19px;
+  height: 19px;
+}
+
+.search--small::before {
+  left: 13px;
+  width: 11px;
+  height: 11px;
+}

@@ -17,16 +17,27 @@
     />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <div class="search-container">
+      <form class="search-form search-form--big" data-qa="big">
+        <img src="images/Search.svg" alt="Search"
+         class="search-form__icon" />
+        <input
+          class="search-form__input"
+          type="search"
+          placeholder="Search..."
+          data-qa="keypress"
+        />
+      </form>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+      <form class="search-form" data-qa="small">
+        <img src="images/Search.svg" alt="Search"
+         class="search-form__icon" />
+        <input
+          class="search-form__input"
+          type="search"
+          placeholder="Search..."
+        />
+      </form>
+    </div>
   </body>
 </html>

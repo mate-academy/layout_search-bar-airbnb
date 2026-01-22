@@ -1,1 +1,98 @@
 /* add styles here */
+
+@font-face {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 300; /* Легкое начертание */
+  src: url('fonts/Avenir-Book.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/Avenir-Heavy.ttf') format('truetype');
+}
+
+body {
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.search__input {
+  font-family: inherit;
+  width: 100%;
+  font-weight: 700;
+  /* stylelint-disable-next-line length-zero-no-unit */
+  box-shadow: 0px 1px 8px 0px #3d4e611a;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  outline: 0;
+}
+
+.search__input--big {
+  height: 70px;
+  padding-left: 62px;
+  background-size: 19px 19px;
+  background-position: 25px center;
+  font-size: 16px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.search__input--small {
+  height: 42px;
+  padding-left: 33px;
+  background-size: 11px 11px;
+  background-position: 13px center;
+  font-size: 14px;
+}
+
+.search__input:hover {
+  /* stylelint-disable-next-line length-zero-no-unit */
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.search__input:focus {
+  /* stylelint-disable-next-line length-zero-no-unit */
+  box-shadow: 0px 4px 4px 0px #00000040;
+  background-image: url(images/Search.svg),
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.search__input--big:focus {
+  /* stylelint-disable-next-line length-zero-no-unit */
+  box-shadow: 0px 4px 4px 0px #00000040;
+  background-image: url(../src/images/Search.svg),
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background-size:
+    19px 19px,
+    cover;
+  background-position:
+    25px center,
+    0 0;
+  background-repeat: no-repeat;
+}
+
+.search__input--small:focus {
+  /* stylelint-disable-next-line length-zero-no-unit */
+  box-shadow: 0px 4px 4px 0px #00000040;
+  background-image: url(images/Search.svg),
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background-size:
+    11px 11px,
+    cover;
+  background-position:
+    13px center,
+    0 0;
+  background-repeat: no-repeat;
+}
+
+.search__input::placeholder {
+  font-weight: 300;
+  color: #3d4e61;
+}

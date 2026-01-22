@@ -17,16 +17,32 @@
     />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <div
+      class="top__bar"
+      data-qa="big"
+    >
+      <div class="top__bar__loop"></div>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+      <input
+        class="search__panel"
+        type="text"
+        data-qa="keypress"
+        placeholder="Try “Los Angeles“"
+      />
+    </div>
+
+    <div
+      class="bottom__bar"
+      data-qa="small"
+    >
+      <div class="bottom__bar__loop"></div>
+
+      <input
+        class="bottom__bar__search__pannel"
+        type="text"
+        data-qa="hover"
+        placeholder="Try “Los Angeles“"
+      />
+    </div>
   </body>
 </html>

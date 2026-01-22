@@ -1,1 +1,95 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir-Book;
+  src: url('./fonts/Avenir-Book.ttf');
+}
+
+@font-face {
+  font-family: Avenir-Heavy;
+  src: url('./fonts/Avenir-Heavy.ttf');
+}
+
+body {
+  font-weight: 300;
+}
+
+.big-search-form {
+  margin: 20px 0;
+}
+
+.big-search-form__input {
+  height: 70px;
+  width: 100%;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 26px 25px;
+  background-size: 19px 19px;
+  padding-left: 62px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: Avenir-Book, sans-serif;
+}
+
+.big-search-form__input::placeholder {
+  color: #3d4e61;
+}
+
+.big-search-form__input:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+}
+
+.big-search-form__input:focus {
+  font-weight: 600;
+  text-shadow: 0 4px 4px 0 #00000040;
+  outline: none;
+  box-shadow: 0 4px 4px 0 #00000040;
+  background:
+    url(./images/Search.svg) no-repeat 26px 25px,
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background-size:
+    19px 19px,
+    100% 100%;
+}
+
+.small-search-form__input {
+  height: 42px;
+  width: 100%;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 13px 15px;
+  background-size: 11px 11px;
+  padding: 0;
+  margin: 0;
+  border-radius: 4px;
+  padding-left: 33px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: Avenir-Book, sans-serif;
+  font-weight: 400;
+}
+
+.small-search-form__input::placeholder {
+  color: #3d4e61;
+}
+
+.small-search-form__input:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+}
+
+.small-search-form__input:focus {
+  border-radius: 3px;
+  font-weight: 600;
+  text-shadow: 0 4px 4px 0 #00000040;
+  outline: none;
+  box-shadow: 0 4px 4px 0 #00000040;
+  background:
+    url(./images/Search.svg) no-repeat 13px 15px,
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background-size:
+    11px 11px,
+    100% 100%;
+}

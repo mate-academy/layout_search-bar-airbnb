@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width, initial-scale=1.0"
     />
     <meta
       http-equiv="X-UA-Compatible"
-      content="ie=edge"
+      content="IE=edge"
     />
     <title>Document</title>
     <link
@@ -17,16 +17,48 @@
     />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <div class="search search--big">
+      <form
+        class="search__form"
+        data-qa="big"
+      >
+        <div class="search__container search__container--big">
+          <span class="search__icon search__icon--big">
+            <img
+              src="images/Search.svg"
+              alt="Search icon"
+            />
+          </span>
+          <input
+            type="text"
+            class="search__input"
+            placeholder="Try “Los Angeles”"
+            data-qa="keypress"
+          />
+        </div>
+      </form>
+    </div>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <div class="search search--small">
+      <form
+        class="search__form"
+        data-qa="small"
+      >
+        <div class="search__container search__container--small">
+          <span class="search__icon search__icon--small">
+            <img
+              src="images/Search.svg"
+              alt="Search icon"
+            />
+          </span>
+          <input
+            type="text"
+            class="search__input"
+            placeholder="Try “Los Angeles”"
+            data-qa="hover"
+          />
+        </div>
+      </form>
+    </div>
   </body>
 </html>

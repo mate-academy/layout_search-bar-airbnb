@@ -1,1 +1,107 @@
-/* add styles here */
+@font-face {
+  src: url(./fonts/Avenir-Book.ttf) format('truetype');
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 300;
+}
+
+html {
+  font-family: Avenir, serif;
+  font-weight: 300;
+  color: #3d4e61;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.search {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 8px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.search__bar {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  border-radius: 4px;
+}
+
+.search__bar::placeholder {
+  font-family: Avenir, serif;
+  font-weight: 300;
+  color: rgba(61, 78, 97, 1);
+  line-height: inherit;
+}
+
+.search__bar--big {
+  height: 70px;
+  font-size: 16px;
+  line-height: 70px;
+  padding-left: 62px;
+  padding-bottom: 2px;
+
+  background:
+    url(./images/Search.svg) no-repeat 25px center / 19px 19px,
+    rgba(255, 255, 255, 1);
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+}
+
+.search__bar--small {
+  height: 42px;
+  font-size: 14px;
+  padding-left: 33px;
+
+  background:
+    url(./images/Search.svg) no-repeat 13px center / 11px 11px,
+    rgba(255, 255, 255, 1);
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+
+  /* text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); */
+}
+
+.search__bar--big:hover {
+  background:
+    url(./images/Search.svg) no-repeat 25px center / 19px 19px,
+    rgba(255, 255, 255, 1);
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+  border: 1px solid rgba(225, 231, 237, 1);
+}
+
+.search__bar--small:hover {
+  background:
+    url(./images/Search.svg) no-repeat 13px center / 11px 11px,
+    rgba(255, 255, 255, 1);
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+  border: 1px solid rgba(225, 231, 237, 1);
+}
+
+.search__bar--big:focus {
+  background:
+    url(./images/Search.svg) no-repeat 25px center / 19px 19px,
+    linear-gradient(180deg, white 0%, #f6f6f7 100%);
+  border: 1px solid rgba(225, 231, 237, 1);
+  outline: none;
+
+  font-weight: 300;
+  color: rgba(61, 78, 97, 1);
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search__bar--small:focus {
+  background:
+    url(./images/Search.svg) no-repeat 13px center / 11px 11px,
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border: 1px solid rgba(225, 231, 237, 1);
+  outline: none;
+
+  font-weight: 900;
+  color: rgba(61, 78, 97, 1);
+}

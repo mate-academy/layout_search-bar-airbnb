@@ -40,7 +40,7 @@ body {
   font-family: Avenir, sans-serif;
 }
 
-input::placeholder {
+.search input::placeholder {
   color: #3d4e61;
 }
 
@@ -79,8 +79,7 @@ input::placeholder {
 }
 
 .search--big:focus {
-  background: linear-gradient(#fff, #f6f6f7);
-  background-image: url(images/Search.svg);
+  background-image: linear-gradient(#fff, #f6f6f7), url(images/Search.svg);
   background-position: left 26px top 25px;
   background-repeat: no-repeat;
   background-size: 19px 19px;
@@ -90,8 +89,7 @@ input::placeholder {
 }
 
 .search--small:focus {
-  background: linear-gradient(#fff, #f6f6f7);
-  background-image: url(images/Search.svg);
+  background-image: linear-gradient(#fff, #f6f6f7), url(images/Search.svg);
   background-position: left 13px top 15px;
   background-repeat: no-repeat;
   background-size: 11px 11px;

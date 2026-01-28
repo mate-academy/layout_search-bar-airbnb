@@ -1,7 +1,7 @@
 @font-face {
   font-family: Avenir;
   src: url(fonts/Avenir-Book.ttf);
-  font-weight: 400;
+  font-weight: 300;
 }
 
 @font-face {
@@ -14,89 +14,56 @@
   width: 100%;
 }
 
-.form__control {
-  position: relative;
+.form--big {
+  height: 70px;
 }
 
-.form__control--big {
-  margin-top: 20px;
-}
-
-.form__control--small {
-  margin-top: 20px;
+.form--small {
+  height: 42px;
 }
 
 .form__search {
+  box-sizing: border-box;
   display: block;
-  padding: 0;
   width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  background-color: #fff;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
   border-radius: 4px;
   color: #3d4e61;
   font-family: Avenir, sans-serif;
   font-weight: 300;
 }
 
-.form__control::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  z-index: 5;
-  transform: translateY(-50%);
-  background-image: url(images/Search.svg);
-  background-size: cover;
-  pointer-events: none;
-}
-
-.form__control--big::before {
-  left: 26px;
-  width: 19px;
-  height: 19px;
-}
-
-.form__control--small::before {
-  left: 13px;
-  transform: translateY(-50%);
-  width: 11px;
-  height: 11px;
-}
-
 .form__search--big {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 100%;
-  letter-spacing: 0;
-
-  box-sizing: border-box;
-  height: 70px;
   padding-left: 62px;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px 0 #3d4e611a;
+  background-size: 19px 19px;
+  background-position: 26px center;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .form__search--small {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 100%;
-  letter-spacing: 0%;
-
-  box-sizing: border-box;
-  height: 42px;
   padding-left: 33px;
-  border: 1px solid #e1e7ed;
-  box-shadow: 0 1px 8px 0 #3d4e611a;
+  background-size: 11px 11px;
+  background-position: 13px center;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.form--small::placeholder {
+  color: #3d4e61;
 }
 
 .form__search:hover {
-  border-color: #e1e7ed;
   box-shadow: 0 3px 8px 0 #3d4e6133;
 }
 
 .form__search:focus {
-  border: 1px solid rgba(225, 231, 237, 1);
-  border-radius: 3px;
-  background: linear-gradient(
-    180deg,
-    rgb(255, 255, 255) 0%,
-    rgb(246, 246, 247) 100%
-  );
+  outline: none;
+  font-weight: 900;
 }

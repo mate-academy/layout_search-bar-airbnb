@@ -1,1 +1,104 @@
-/* add styles here */
+/* #region HEAD */
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: 900;
+}
+
+.page {
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+}
+
+.page__body {
+  margin-top: 20px;
+}
+
+/* #endregion */
+
+.search__wrap {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+}
+
+.search__input {
+  flex: 1;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  border: none;
+
+  font-family: Avenir, sans-serif;
+}
+
+.search__wrap:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+}
+
+.search__wrap:focus-within {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  box-shadow: 0 4px 4px 0 #00000040;
+}
+
+.search__input:focus {
+  outline: none;
+  background: transparent;
+  font-weight: 900;
+  text-shadow: 0 4px 4px 0 #00000040;
+}
+
+.search__label {
+  background-image: url(images/Search.svg);
+  background-size: cover;
+  cursor: pointer;
+}
+
+/* #region L */
+.search--large .search__wrap {
+  height: 70px;
+  margin-bottom: 20px;
+  padding-left: 26px;
+  padding-right: 26px;
+}
+
+.search--large .search__input {
+  margin-left: 17px;
+  font-size: 16px;
+}
+
+.search--large .search__label {
+  width: 19px;
+  height: 19px;
+}
+
+/* #endregion */
+
+/* #region S */
+
+.search--small .search__wrap {
+  height: 42px;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
+.search--small .search__input {
+  margin-left: 9px;
+  font-size: 14px;
+}
+
+.search--small .search__label {
+  width: 11px;
+  height: 11px;
+}
+
+/* #endregion S */

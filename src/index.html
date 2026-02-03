@@ -13,20 +13,51 @@
     <title>Document</title>
     <link
       rel="stylesheet"
-      href="style.css"
+      href="styles/style.css"
     />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      class="form form--1"
+      action="#"
+      method="get"
+      data-qa="big"
+    >
+      <div class="form-search form-search--1">
+        <button
+          type="submit"
+          class="icon icon--1"
+        ></button>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+        <input
+          class="form-search__input form-search__input--1"
+          type="text"
+          name="city"
+          data-qa="keypress"
+          placeholder="Try &#34;Los Angeles&#34;"
+        />
+      </div>
+    </form>
+
+    <form
+      class="form form--2"
+      action="#"
+      method="get"
+      data-qa="small"
+    >
+      <div class="form-search form-search--2">
+        <button
+          type="submit"
+          class="icon icon--2"
+        ></button>
+
+        <input
+          class="form-search__input form-search__input--2"
+          type="text"
+          name="city"
+          placeholder="Try &#34;Los Angeles&#34;"
+        />
+      </div>
+    </form>
   </body>
 </html>

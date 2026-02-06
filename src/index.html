@@ -1,32 +1,78 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="ie=edge"
-    />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="style.css"
-    />
-  </head>
-  <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Bars</title>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="styles/forms.css" />
+  </head>
+
+  <body>
+    <form class="forms">
+      <!-- BIG SEARCH -->
+      <h2 class="title">Default</h2>
+      <div class="form__input" data-qa="big">
+        <img src="images/Search.svg" alt="search" />
+        <input
+          type="text"
+          class="search search--big is-default"
+          placeholder="Try “Los Angeles”"
+          data-qa="keypress"
+        />
+      </div>
+
+      <h2 class="title">Hover</h2>
+      <div class="form__input" data-qa="big">
+        <img src="images/Search.svg" alt="search" />
+        <input
+          type="text"
+          class="search search--big is-hover"
+          placeholder="Try “Los Angeles”"
+        />
+      </div>
+
+      <h2 class="title">Focus</h2>
+      <div class="form__input" data-qa="big">
+        <img src="images/Search.svg" alt="search" />
+        <input
+          type="text"
+          class="search search--big is-focus"
+          value="Los An"
+        />
+      </div>
+
+      <!-- SMALL SEARCH -->
+      <div class="spacer"></div>
+
+      <div class="form__input" data-qa="small">
+        <img src="images/Search.svg" alt="search" />
+        <input
+          type="text"
+          class="search search--small is-default"
+          value="Los Angeles"
+        />
+      </div>
+
+      <div class="form__input" data-qa="small">
+        <img src="images/Search.svg" alt="search" />
+        <input
+          type="text"
+          class="search search--small is-hover"
+          value="Los Angeles"
+        />
+      </div>
+
+      <div class="form__input" data-qa="small">
+        <img src="images/Search.svg" alt="search" />
+        <input
+          type="text"
+          class="search search--small is-focus"
+          value="Los Angl"
+        />
+      </div>
+    </form>
   </body>
 </html>

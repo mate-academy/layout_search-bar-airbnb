@@ -1,56 +1,61 @@
-/* CONTAINER */
+/* ===============================
+   CONTAINER
+================================ */
+
 .forms {
-  width: 100%;
   padding: 50px;
   font-family: Avenir, sans-serif;
 }
 
-/* TITLES */
+/* títulos (Default / Hover / Focus) */
 .title {
-  margin: 20px 0 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   font-size: 14px;
   font-weight: 400;
+  color: #111827;
 }
 
-/* SPACING BETWEEN BIG AND SMALL */
-.spacer {
+/* espaço entre big e small */
+.gap {
   height: 40px;
 }
 
-/* INPUT WRAPPER */
-.form__input {
-  position: relative;
+/* ===============================
+   BASE INPUT
+================================ */
+
+.search {
+  display: block;
   width: 100%;
   margin-bottom: 20px;
-}
 
-/* ICON */
-.form__input img {
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 18px;
-  height: 18px;
-  pointer-events: none;
-}
-
-/* BASE SEARCH */
-.search {
-  width: 100%;
   border: none;
   outline: none;
-  box-sizing: border-box;
   border-radius: 8px;
+  box-sizing: border-box;
 
   font-family: Avenir, sans-serif;
   font-weight: 300;
   font-size: 16px;
+  color: #6b7280;
+
+  background-color: #fff;
+  background-image: url("../images/Search.svg");
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  background-size: 18px;
 
   padding-left: 56px;
-  background-color: #fff;
-  color: #6b7280;
+
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.08),
+    0 2px 6px rgba(0, 0, 0, 0.06);
 }
+
+/* ===============================
+   TAMANHOS
+================================ */
 
 /* BIG */
 .search--big {
@@ -62,21 +67,30 @@
   height: 40px;
   padding-left: 36px;
   font-size: 14px;
+
+  background-position: 12px center;
+  background-size: 14px;
 }
 
-/* STATES */
+/* ===============================
+   ESTADOS FIXOS (como no layout)
+================================ */
+
+/* DEFAULT */
 .is-default {
   box-shadow:
     0 1px 2px rgba(0, 0, 0, 0.08),
     0 2px 6px rgba(0, 0, 0, 0.06);
 }
 
+/* HOVER */
 .is-hover {
   box-shadow:
     0 4px 8px rgba(0, 0, 0, 0.12),
     0 8px 16px rgba(0, 0, 0, 0.14);
 }
 
+/* FOCUS */
 .is-focus {
   color: #111827;
   font-weight: 700;

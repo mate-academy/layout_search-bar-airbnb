@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search Bar Airbnb</title>
+    <title>Search Bars</title>
 
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/fonts.css" />
@@ -11,55 +11,24 @@
   </head>
 
   <body>
-    <div class="forms">
-      <!-- BIG SEARCH -->
-      <h2 class="title">Default</h2>
+    <!-- BIG SEARCH -->
+    <form class="forms" data-qa="big">
+      <h2 class="title">Search</h2>
       <input
         type="text"
-        class="search search--big is-default"
+        class="search search--big"
         placeholder="Try “Los Angeles”"
-        data-qa="keypress big"
+        data-qa="keypress"
       />
+    </form>
 
-      <h2 class="title">Hover</h2>
+    <!-- SMALL SEARCH -->
+    <form class="forms" data-qa="small">
       <input
         type="text"
-        class="search search--big is-hover"
+        class="search search--small"
         placeholder="Try “Los Angeles”"
-        data-qa="big"
       />
-
-      <h2 class="title">Focus</h2>
-      <input
-        type="text"
-        class="search search--big is-focus"
-        value="Los An"
-        data-qa="big"
-      />
-
-      <div class="gap"></div>
-
-      <!-- SMALL SEARCH -->
-      <input
-        type="text"
-        class="search search--small is-default"
-        value="Los Angeles"
-        data-qa="small"
-      />
-
-      <input
-        type="text"
-        class="search search--small is-hover"
-        value="Los Angeles"
-        data-qa="small"
-      />
-
-      <input
-        type="text"
-        class="search search--small is-focus"
-        value="Los Angl"
-        data-qa="small"
-      />
-    </div>
+    </form>
   </body>
 </html>

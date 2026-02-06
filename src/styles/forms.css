@@ -1,44 +1,36 @@
-/* ===============================
-   CONTAINER
-================================ */
-
 .forms {
   padding: 50px;
   font-family: Avenir, sans-serif;
 }
 
-/* títulos (Default / Hover / Focus) */
-.title {
+/* distância entre as duas search bars */
+.forms + .forms {
   margin-top: 20px;
-  margin-bottom: 10px;
+}
+
+/* título */
+.title {
+  margin-bottom: 10px; /* apenas UMA direção */
   font-size: 14px;
   font-weight: 400;
-  color: #111827;
 }
 
-/* espaço entre big e small */
-.gap {
-  height: 40px;
-}
-
-/* ===============================
-   BASE INPUT
-================================ */
-
+/* base input */
 .search {
-  display: block;
   width: 100%;
-  margin-bottom: 20px;
+  height: 70px;
 
-  border: none;
-  outline: none;
-  border-radius: 8px;
-  box-sizing: border-box;
+  padding-left: 56px;
 
   font-family: Avenir, sans-serif;
   font-weight: 300;
   font-size: 16px;
   color: #6b7280;
+
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  box-sizing: border-box;
 
   background-color: #fff;
   background-image: url("../images/Search.svg");
@@ -46,23 +38,28 @@
   background-position: 20px center;
   background-size: 18px;
 
-  padding-left: 56px;
-
   box-shadow:
     0 1px 2px rgba(0, 0, 0, 0.08),
     0 2px 6px rgba(0, 0, 0, 0.06);
 }
 
-/* ===============================
-   TAMANHOS
-================================ */
-
-/* BIG */
-.search--big {
-  height: 70px;
+/* hover REAL */
+.search:hover {
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.12),
+    0 8px 16px rgba(0, 0, 0, 0.14);
 }
 
-/* SMALL */
+/* focus REAL */
+.search:focus {
+  color: #111827;
+
+  box-shadow:
+    0 0 0 2px #3b82f6,
+    0 6px 14px rgba(0, 0, 0, 0.14);
+}
+
+/* small */
 .search--small {
   height: 40px;
   padding-left: 36px;
@@ -70,32 +67,4 @@
 
   background-position: 12px center;
   background-size: 14px;
-}
-
-/* ===============================
-   ESTADOS FIXOS (como no layout)
-================================ */
-
-/* DEFAULT */
-.is-default {
-  box-shadow:
-    0 1px 2px rgba(0, 0, 0, 0.08),
-    0 2px 6px rgba(0, 0, 0, 0.06);
-}
-
-/* HOVER */
-.is-hover {
-  box-shadow:
-    0 4px 8px rgba(0, 0, 0, 0.12),
-    0 8px 16px rgba(0, 0, 0, 0.14);
-}
-
-/* FOCUS */
-.is-focus {
-  color: #111827;
-  font-weight: 700;
-
-  box-shadow:
-    0 0 0 2px #3b82f6,
-    0 6px 14px rgba(0, 0, 0, 0.14);
 }

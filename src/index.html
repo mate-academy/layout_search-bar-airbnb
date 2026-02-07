@@ -1,32 +1,52 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width, initial-scale=1.0"
     />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="ie=edge"
-    />
-    <title>Document</title>
+    <title>Search Bars</title>
+
     <link
       rel="stylesheet"
-      href="style.css"
+      href="styles/reset.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/fonts.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/forms.css"
     />
   </head>
-  <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+  <body>
+    <!-- BIG SEARCH -->
+    <form
+      class="forms"
+      data-qa="big"
+    >
+      <h2 class="title">Search</h2>
+      <input
+        type="text"
+        class="search search--big"
+        placeholder="Try “Los Angeles”"
+        data-qa="keypress"
+      />
+    </form>
+
+    <!-- SMALL SEARCH -->
+    <form
+      class="forms"
+      data-qa="small"
+    >
+      <input
+        type="text"
+        class="search search--small"
+        placeholder="Try “Los Angeles”"
+      />
+    </form>
   </body>
 </html>

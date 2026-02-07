@@ -1,49 +1,51 @@
 'use strict';
-// https://github.com/garris/BackstopJS#advanced-scenarios
 
 const backstop = require('@mate-academy/backstop-config');
 const { basicScenario } = backstop;
 
-const basic = {
-  ...basicScenario,
-  label: 'Elementary test',
-  referenceUrl: basicScenario.referenceUrl + '/search-bar-airbnb/',
-};
+const PAGE_URL =
+  'https://johannpdaniel.github.io/layout_search-bar-airbnb/src/';
 
-const config = {
+module.exports = {
   ...backstop,
-  fileNameTemplate: '{scenarioLabel}_{viewportLabel}',
-  onBeforeScript: 'puppet/onBefore.js',
-  onReadyScript: 'puppet/onReady.js',
+
   viewports: [
     {
       name: '1024px',
       width: 1024,
-      height: 40,
+      height: 200,
     },
     {
       name: '720px',
       width: 720,
-      height: 40,
+      height: 200,
     },
   ],
+
   scenarios: [
     {
-      ...basic,
+      ...basicScenario,
       label: 'Entire document',
+      url: PAGE_URL,
+      referenceUrl: PAGE_URL,
+      testUrl: PAGE_URL,
       selectors: ['document'],
     },
     {
-      ...basic,
+      ...basicScenario,
       label: 'Big search bar data-qa_big',
+      url: PAGE_URL,
+      referenceUrl: PAGE_URL,
+      testUrl: PAGE_URL,
       selectors: ['[data-qa="big"]'],
     },
     {
-      ...basic,
+      ...basicScenario,
       label: 'Small search bar data-qa_small',
+      url: PAGE_URL,
+      referenceUrl: PAGE_URL,
+      testUrl: PAGE_URL,
       selectors: ['[data-qa="small"]'],
     },
   ],
 };
-
-module.exports = config;

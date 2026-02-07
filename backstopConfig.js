@@ -7,7 +7,7 @@ const { basicScenario } = backstop;
 const basic = {
   ...basicScenario,
   label: 'Elementary test',
-  referenceUrl: basicScenario.referenceUrl + '/search-bar-airbnb/',
+  referenceUrl: 'https://johannpdaniel.github.io/layout_search-bar-airbnb/src/',
 };
 
 const config = {

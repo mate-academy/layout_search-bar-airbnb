@@ -15,16 +15,25 @@
   font-display: swap;
 }
 
-* {
+html {
   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
+}
+
+body {
   font-family: Avenir, sans-serif;
   font-weight: 300;
 }
 
 .main {
-  padding: 0 8px;
+  margin: 0 8px;
 }
 
 :root {

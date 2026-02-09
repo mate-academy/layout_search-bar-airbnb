@@ -1,31 +1,72 @@
 /* add styles here */
 
 @font-face {
-    font-family: "Avenir";
-    src: url(/src/fonts/Avenir-Book.ttf);
-    font-weight: 400;
+  font-family: Avenir;
+  src: url('/src/fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-.body{
-    font-family: "Avenir";
-    margin: 0;
+@font-face {
+  font-family: Avenir;
+  src: url('/src/fonts/Avenir-Heavy.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
 }
 
-.input{
-    width: 100%;
-    position: relative;
+.body {
+  margin: 0;
+  font-weight: 300;
 }
 
-.input__icon{
-    position: absolute;
-    margin: 25px auto 26px 26px;
+.input {
+  position: relative;
+
+  margin: 20px 8px;
+
+  box-sizing: border-box;
 }
 
-.input__field{
-    width: 100%;
-    height: 70px;
+.input__icon {
+  position: absolute;
 }
 
-.input--1{
-    margin-top: 20px;
+.input__field::placeholder {
+  font-family: Avenir, sans-serif;
+  font-weight: 400;
+  color: #3d4e61;
+  font-size: 16px;
+}
+
+.input__field {
+  width: 100%;
+  box-sizing: border-box;
+
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+}
+
+.input--0 .input__field {
+  height: 70px;
+  padding-left: 62px;
+}
+
+.input--0 .input__icon {
+  top: 25px;
+  left: 26px;
+}
+
+.input--1 .input__field {
+  height: 42px;
+  padding-left: 33px;
+}
+
+.input--1 .input__icon {
+  top: 15px;
+  left: 13px;
+
+  width: 11px;
+  height: 11px;
 }

@@ -1,1 +1,111 @@
 /* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Heavy.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+}
+
+.main {
+  padding: 0 8px;
+}
+
+:root {
+  --color-border: #e1e7ed;
+  --color-input-focus: #f6f6f7;
+  --color-text-inside-search-bar: #3d4e61;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+}
+
+.search-bar--small {
+  height: 42px;
+}
+
+.search-bar:hover {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.search-bar:focus-within {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--color-input-focus);
+}
+
+.search-bar__icon {
+  width: 19px;
+  height: 19px;
+  margin: 0 17px 1px 26px;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.search-bar__input {
+  flex-grow: 1;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--color-text-inside-search-bar);
+  font-weight: 300;
+  font-family: inherit;
+}
+
+.search-bar__input::placeholder {
+  color: var(--color-text-inside-search-bar);
+  opacity: 1;
+}
+
+.search-bar--small .search-bar__input::placeholder {
+  color: var(--color-text-inside-search-bar);
+  opacity: 1;
+}
+
+.search-bar--small .search-bar__input {
+  font-size: 14px;
+}
+
+.search-bar--small .search-bar__icon {
+  width: 11px;
+  height: 11px;
+  margin: 0 9px 0 13px;
+  background-size: cover;
+}
+
+.search-bar__input:focus {
+  font-weight: 700;
+  background-color: var(--color-input-focus);
+  color: var(--color-text-inside-search-bar);
+}
+
+.search-bar--margin-top {
+  margin-top: 20px;
+}
+
+.search-bar:not(:last-child) {
+  margin-bottom: 20px;
+}

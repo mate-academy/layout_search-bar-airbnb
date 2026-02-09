@@ -1,1 +1,48 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir-normal;
+  src: url(fonts/Avenir-Book.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Avenir-bold;
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: 400;
+}
+
+.search_bar {
+  margin: 0 48px;
+  margin-top: 20px;
+  width: 100%;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px #3d4e611a;
+  font-family: Avenir-normal, sans-serif;
+  font-size: 16px;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: 19px;
+  padding: 26px 62px;
+  background-position: 26px center;
+  transition: 0.1s;
+  color: #3d4e61;
+}
+
+.search_bar:hover,
+.search_bar:focus {
+  box-shadow: 0 4px 4px #00000040;
+  outline: none;
+}
+
+.search_bar:focus {
+  font-family: Avenir-bold, sans-serif;
+  text-shadow: 0 4px 4px #00000040;
+}
+
+.small {
+  width: 427px;
+  background-size: 11px;
+  padding: 12px 33px;
+  background-position: 13px center;
+  font-size: 14px;
+}

@@ -1,1 +1,78 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Book.ttf) format(truetype);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Heavy.ttf) format(truetype);
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0 20px;
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  outline: none;
+  background: #fff;
+  border: 1px solid #ebebeb;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.search--big {
+  max-width: 900px;
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+.search--small {
+  max-width: 427px;
+  height: 42px;
+}
+
+.search__input {
+  flex: 1;
+  height: 100%;
+  font-family: inherit;
+  font-weight: 300;
+  padding: 0 16px;
+  border: none;
+  outline: none;
+  background: transparent;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.search__icon {
+  width: 16px;
+  height: 16px;
+  margin-left: 16px;
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.search:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.search:focus {
+  outline: none;
+}
+
+.search:focus-within {
+  outline: none;
+  box-shadow: inset 0 -4px 8px rgba(255, 244, 214, 0.9),
+  0 4px 12px rgba(0, 0, 0, 0.2);
+}

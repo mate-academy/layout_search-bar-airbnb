@@ -2,10 +2,14 @@
 > Here are the [Layout Tasks Instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
 ___
 
+
+
 ## The task
 > Create HTML page with two search bars as designed in [the mockup](https://www.figma.com/file/kf3AWulK9elrNk34wtpjPw/Airbnb-Search-bar?node-id=0%3A1). This search bar will be part of big project.
 
 ![screenshot](./references/search-bar-example.png)
+
+
 
 ### Requirements:
 - use images from [src/images](src/images)
@@ -25,8 +29,8 @@ ___
 
 ❗️ Replace `<your_account>` with your Github username and copy the links to `Pull Request` description:
 
-- [DEMO LINK](https://<your_account>.github.io/layout_search-bar-airbnb/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_search-bar-airbnb/report/html_report/)
+- [DEMO LINK](https://bogdank0.github.io/layout_search-bar-airbnb/)
+- [TEST REPORT LINK](https://bogdank0.github.io/layout_search-bar-airbnb/report/html_report/)
 
 ❗️ Copy this `Checklist` to the `Pull Request` description after links, and put `- [x]` before each point after you checked it.
 

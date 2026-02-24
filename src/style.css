@@ -1,9 +1,4 @@
 /* #region body */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
 @font-face {
   font-family: Avenir;
@@ -42,6 +37,8 @@ body {
   width: 100%;
   margin: 0;
   padding: 0 8px;
+
+  box-sizing: border-box;
 }
 
 /* #endregion */
@@ -58,6 +55,8 @@ body {
 
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
   overflow: hidden;
+
+  box-sizing: border-box;
 }
 
 .search-bar--big {
@@ -89,9 +88,11 @@ body {
 
   margin: 0;
   padding: 0;
+
+  box-sizing: border-box;
 }
 
-.search-bar--big .search-bar__input {
+.search-bar__input--big {
   font-size: 16px;
 
   background-size: 19px;
@@ -100,9 +101,11 @@ body {
   text-align: left;
   padding-left: 62px;
   padding-right: 20px;
+
+  box-sizing: border-box;
 }
 
-.search-bar--small .search-bar__input {
+.search-bar__input--small {
   font-size: 14px;
 
   background-size: 11px;
@@ -110,6 +113,8 @@ body {
 
   text-align: left;
   padding-left: 33px;
+
+  box-sizing: border-box;
 }
 
 .search-bar:hover {

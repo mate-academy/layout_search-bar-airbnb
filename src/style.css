@@ -14,9 +14,14 @@ html {
   box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: Avenir, Arial, sans-serif;
-  font-weight: 300;
 }
 
 /* ========== SEARCH BAR BASE ========== */
@@ -89,7 +94,7 @@ body {
 .search-bar--small .search-bar__input:focus {
   border-radius: 3px;
   font-weight: 900;
-  color: rgb(61, 78, 97);
+  color: rgba(61, 78, 97, 1);
   background-image: url(./images/Search.svg);
 }
 
@@ -97,9 +102,9 @@ body {
 
 [data-qa='small'] {
   padding: 0;
-  margin-top: 20px;
 }
 
 [data-qa='big'] {
+  margin-bottom: 20px;
   margin-top: 20px;
 }

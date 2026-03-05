@@ -4,29 +4,54 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width, initial-scale=1.0"
     />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="ie=edge"
-    />
-    <title>Document</title>
+    <title>Airbnb Search Bar</title>
     <link
       rel="stylesheet"
       href="style.css"
     />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      class="search-bar search-bar--big"
+      data-qa="big"
+      action="#"
+    >
+      <div class="search-bar__wrapper">
+        <input
+          type="text"
+          name="q"
+          class="search-bar__input"
+          placeholder="Try “Los Angeles”"
+          data-qa="keypress"
+        />
+        <button
+          type="submit"
+          class="search-bar__button"
+          aria-label="Search"
+        ></button>
+      </div>
+    </form>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      class="search-bar search-bar--small"
+      data-qa="small"
+      action="#"
+    >
+      <div class="search-bar__wrapper">
+        <input
+          type="text"
+          name="q"
+          class="search-bar__input"
+          placeholder="Try “Los Angeles”"
+        />
+        <button
+          type="submit"
+          class="search-bar__button"
+          aria-label="Search"
+        ></button>
+      </div>
+    </form>
   </body>
 </html>

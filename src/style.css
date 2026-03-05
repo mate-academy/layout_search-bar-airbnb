@@ -1,1 +1,107 @@
-/* add styles here */
+@font-face {
+  font-family: 'Airbnb Circular';
+  src: url('./fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Airbnb Circular';
+  src: url('./fonts/Avenir-Heavy.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body,
+.search-bar,
+.search-bar__wrapper,
+.search-bar__input,
+.search-bar__button {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 24px;
+  font-family: 'Airbnb Circular', sans-serif;
+  font-weight: 300;
+  color: #484848;
+}
+
+.search-bar {
+  display: flex;
+  width: 100%;
+}
+
+.search-bar--big {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.search-bar--small {
+  margin-bottom: 20px;
+}
+
+.search-bar__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.search-bar__input {
+  width: 100%;
+  padding: 0 16px 0 52px;
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+  background-color: #fff;
+  font-family: inherit;
+  font-weight: 300;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.search-bar--big .search-bar__input {
+  height: 70px;
+  font-size: 18px;
+}
+
+.search-bar--small .search-bar__input {
+  height: 42px;
+  font-size: 14px;
+}
+
+.search-bar__button {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  background-image: url('./images/Search.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.search-bar__input:hover {
+  border-color: #a632f7;
+}
+
+.search-bar__input:focus {
+  border-color: #ebebeb;
+  background-color: #f7f7f7;
+  box-shadow:
+    0 4px 4px 0 rgba(0, 0, 0, 0.25),
+    inset 0 2px 4px rgba(0, 0, 0, 0.05);
+  color: #222;
+  font-weight: 700;
+}
+
+.search-bar__button:focus {
+  outline: none;
+}

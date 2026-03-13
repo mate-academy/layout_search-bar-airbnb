@@ -1,7 +1,10 @@
+body {
+  font-weight: 300;
+}
+
 @font-face {
   font-family: Avenir-normal;
   src: url(fonts/Avenir-Book.ttf);
-  font-weight: 300;
 }
 
 @font-face {
@@ -12,7 +15,6 @@
 
 .search_bar {
   margin: 0 48px;
-  margin-top: 20px;
   width: 100%;
   border: 1px solid #e1e7ed;
   border-radius: 4px;
@@ -39,10 +41,14 @@
   text-shadow: 0 4px 4px #00000040;
 }
 
-.small {
-  width: 427px;
+.search_bar--small {
   background-size: 11px;
   padding: 12px 33px;
   background-position: 13px center;
   font-size: 14px;
+}
+
+.search_bar--big,
+.search_bar--small {
+  margin-top: 20px;
 }

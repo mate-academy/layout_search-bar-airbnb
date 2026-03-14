@@ -4,29 +4,76 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width, initial-scale=1.0"
     />
     <meta
       http-equiv="X-UA-Compatible"
-      content="ie=edge"
+      content="IE=edge"
     />
-    <title>Document</title>
+    <title>Search bar Airbnb</title>
     <link
       rel="stylesheet"
-      href="style.css"
+      href="./style.css"
     />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      class="search-form"
+      action="/"
+      method="get"
+      data-qa="big"
+    >
+      <div class="search-wrapper">
+        <label
+          class="visually-hidden"
+          for="searchInputBig"
+        >
+          Search location
+        </label>
+        <input
+          type="text"
+          id="searchInputBig"
+          name="searchInputBig"
+          class="search-input"
+          placeholder="Try “Los Angeles“"
+          data-qa="keypress"
+          required
+        />
+        <button
+          type="submit"
+          class="search-icon"
+          aria-label="Submit search"
+        ></button>
+      </div>
+    </form>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      class="search-form search-form--small"
+      action="/"
+      method="get"
+      data-qa="small"
+    >
+      <div class="search-wrapper">
+        <label
+          class="visually-hidden"
+          for="searchInputSmall"
+        >
+          Search location
+        </label>
+        <input
+          type="text"
+          id="searchInputSmall"
+          name="searchInputSmall"
+          class="search-input search-input--small"
+          placeholder="Try “Los Angeles“"
+          required
+        />
+        <button
+          type="submit"
+          class="search-icon search-icon--small"
+          aria-label="Submit search"
+        ></button>
+      </div>
+    </form>
   </body>
 </html>

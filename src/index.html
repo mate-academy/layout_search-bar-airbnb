@@ -17,16 +17,32 @@
     />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
-
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <section class="search">
+      <form
+        class="search__form"
+        data-qa="big"
+      >
+        <label class="search__item search__item--large">
+          <input
+            type="text"
+            data-qa="keypress"
+            placeholder="Try “Los Angeles“"
+            class="search__input"
+          />
+        </label>
+      </form>
+      <form
+        class="search__form"
+        data-qa="small"
+      >
+        <label class="search__item">
+          <input
+            type="text"
+            placeholder="Try “Los Angeles“"
+            class="search__input"
+          />
+        </label>
+      </form>
+    </section>
   </body>
 </html>

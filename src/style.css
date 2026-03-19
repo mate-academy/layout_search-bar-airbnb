@@ -46,16 +46,21 @@ body {
   background-repeat: no-repeat;
   background-position: 13px center;
   background-size: 11px 11px;
-  padding-left: 40px;
+  padding-left: 33px;
   border-radius: 4px;
   border: 1px solid #e1e7ed;
 }
 
 .searchbar:hover {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 3px 8px #3d4e6133;
 }
 
 .searchbar:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(72, 133, 237, 0.15);
+  box-shadow: 0 3px 8px #3d4e6133;
+}
+
+::placeholder {
+  font-weight: 300;
+  color: #3d4e61;
 }

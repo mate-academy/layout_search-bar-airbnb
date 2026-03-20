@@ -10,23 +10,68 @@
       http-equiv="X-UA-Compatible"
       content="ie=edge"
     />
-    <title>Document</title>
+    <title>Search</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./images/Search.svg"
+    />
     <link
       rel="stylesheet"
-      href="style.css"
+      href="./style.css"
     />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <main class="container">
+      <search class="search">
+        <form
+          action="/"
+          method="get"
+          data-qa="big"
+          class="search__form"
+        >
+          <label
+            for="search-input"
+            class="visually-hidden"
+          >
+            Search
+          </label>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+          <input
+            type="search"
+            id="search-input"
+            class="search__input"
+            name="query"
+            data-qa="keypress"
+            placeholder="Try &#34;Los Angeles&#34;"
+          />
+        </form>
+      </search>
+
+      <search class="search">
+        <form
+          action="/"
+          method="get"
+          data-qa="small"
+          class="search__form search__form--compact"
+        >
+          <label
+            for="search-input-compact"
+            class="visually-hidden"
+          >
+            Search
+          </label>
+
+          <input
+            type="search"
+            id="search-input-compact"
+            class="search__input search__input--compact"
+            name="query"
+            data-qa="hover"
+            placeholder="Try &#34;Los Angeles&#34;"
+          />
+        </form>
+      </search>
+    </main>
   </body>
 </html>

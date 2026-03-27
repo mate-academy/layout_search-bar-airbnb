@@ -1,32 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="ie=edge"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="style.css"
-    />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <form data-qa="big" class="search search--big">
+      <input
+        name="location"
+        class="search__input"
+        type="text"
+        data-qa="keypress"
+        placeholder="Try &ldquo;Los Angeles&rdquo;"
+      />
+    </form>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <form data-qa="small" class="search search--small">
+      <input
+        name="query"
+        class="search__input"
+        type="text"
+        placeholder="Try &ldquo;Los Angeles&rdquo;"
+      />
+    </form>
   </body>
 </html>

@@ -1,1 +1,115 @@
 /* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url('fonts/Avenir-Book.ttf');
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/Avenir-Heavy.ttf);
+  font-weight: bold;
+}
+
+:root {
+  --font-weight-standard: 300;
+  --font-family-standard: Avenir, sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.search__container {
+  display: flex;
+  align-items: center;
+}
+
+.search {
+  width: 100%;
+  margin-top: 20px;
+  align-content: center;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+}
+
+.search--small {
+  height: 40px;
+}
+
+.search--big {
+  height: 68px;
+}
+
+.search--big:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.search--small:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search:focus-within {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 247, 1) 100%
+  );
+  border: 1px solid rgba(225, 231, 237, 1);
+}
+
+.search__camp {
+  width: 80%;
+  border: none;
+  font-family: var(--font-family-standard);
+  font-weight: var(--font-weight-standard);
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding: 0;
+  color: rgba(61, 78, 97, 1);
+}
+
+.search__camp--big {
+  height: 22px;
+  margin-left: 17px;
+  font-size: 16px;
+}
+
+.search__camp--small {
+  height: 19px;
+  margin-left: 9px;
+  font-size: 14px;
+}
+
+.search__camp::placeholder {
+  color: rgba(61, 78, 97, 1);
+}
+
+.search__camp:focus-visible {
+  outline: none;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+}
+
+.search__img {
+  background-image: url('./images/Search.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  color: rgba(104, 124, 148, 1);
+  background-position: center;
+}
+
+.search__img--big {
+  width: 19px;
+  height: 19px;
+  margin-left: 26px;
+}
+
+.search__img--small {
+  width: 11px;
+  height: 11px;
+  margin-left: 13px;
+}

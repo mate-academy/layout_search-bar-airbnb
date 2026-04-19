@@ -1,3 +1,4 @@
+<!-- #region head -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -16,17 +17,44 @@
       href="style.css"
     />
   </head>
+  <!-- #endregi -->
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      data-qa="big"
+      class="big_form_city"
+    >
+      <div class="icon_big">
+        <img
+          src="/src/images/Search.svg"
+          alt="search.img"
+        />
+      </div>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+      <input
+        class="big_input_city"
+        type="text"
+        data-qa="keypress"
+        placeholder="Try “Los Angeles“"
+      />
+    </form>
+
+    <form
+      data-qa="small"
+      class="small_form_city"
+    >
+      <div class="icon_small">
+        <img
+          src="/src/images/Search.svg"
+          alt="search.img"
+        />
+      </div>
+
+      <input
+        class="small_input_city"
+        type="text"
+        data-qa="hover"
+        placeholder="Try “Los Angeles“"
+      />
+    </form>
   </body>
 </html>

@@ -1,1 +1,122 @@
 /* add styles here */
+@font-face {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 300;
+  src: url(./fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/Avenir-Heavy.ttf');
+}
+
+/* .page {
+  padding: 0;
+  margin: 0;
+} */
+
+.search-bar{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.search-bar__item {
+  width: 100%;
+  display: flex;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 #3d4e6110;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.search-bar__item--large {
+  height: 70px;
+  gap: 17px;
+  padding-left: 26px;
+  margin-top: 20px;
+}
+
+.search-bar__item--small {
+  height: 42px;
+  gap: 9px;
+  padding-left: 13px;
+}
+
+.search-bar__icon {
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+}
+
+.search-bar__icon--large {
+  background-size: 19px 19px;
+  height: 19px;
+  width: 19px;
+}
+
+.search-bar__icon--small {
+  background-size: 11px 11px;
+  height: 11px;
+  width: 11px;
+}
+
+.search-bar__field {
+  display: block;
+  padding: 0;
+  border: 0;
+  font-family: Avenir, sans-serif;
+}
+
+.search-bar__field::placeholder {
+  color: #3d4e61;
+}
+
+.search-bar__field--large {
+  height: 22px;
+  font-size: 16px;
+}
+
+.search-bar__field--small {
+  height: 20px;
+  font-size: 14px;
+}
+
+.search-bar__item:active {
+  border: 0;
+}
+
+.search-bar__field:focus {
+  outline: none;
+  text-shadow: 0 4px 4px 0 #00000025;
+  background-color: transparent;
+  font-family: Avenir, sans-serif;
+  font-weight: 700;
+}
+
+.search-bar__field--small:focus {
+  text-shadow: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+.search-bar__item:focus-within {
+  background: linear-gradient(to bottom, #fff, #f6f6f7);
+  box-shadow: 0 4px 4px #00000025;
+}
+
+.search-bar__item--small:focus-within {
+  box-shadow: none;
+}
+
+.search-bar__item:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6120;
+}

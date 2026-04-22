@@ -1,1 +1,104 @@
-/* add styles here */
+/* 1. Reset e Definições Globais */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url("./fonts/Avenir-Book.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url("./fonts/Avenir-Heavy.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+  background-color: #fff;
+}
+
+/* 2. Container e Estrutura do Formulário (MARGIN MANTEM O PIXEL PERFECT, POR FAVOR NUNCA MEXER!!!!!!!) */
+.container {
+  margin: 0 8px;
+}
+
+.search-bar {
+  display: block;
+  width: 100%;
+  padding: 0;
+}
+
+.search-bar--big {
+  margin: 20px 0 0;
+}
+
+.search-bar--small {
+  margin: 20px 0 0;
+}
+
+/* 3. Elemento de Input Base */
+.search-bar__input {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #e1e7ed;
+  background-color: #fff;
+  font-family: Avenir, sans-serif;
+  font-weight: 300;
+  color: #3d4e61;
+  background-image: url("./images/Search.svg");
+  background-repeat: no-repeat;
+  line-height: normal;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+  transition: box-shadow 0.2s ease;
+}
+
+.search-bar--big .search-bar__input {
+  height: 70px;
+  padding: 0 20px 0 62px;
+  font-size: 16px;
+  background-size: 19px;
+  background-position: 25px center;
+}
+
+.search-bar--small .search-bar__input {
+  height: 42px;
+  padding: 0 15px 0 33px;
+  font-size: 14px;
+  background-size: 11px;
+  background-position: 12px center;
+}
+
+/* 6. Estados de Interação */
+.search-bar__input:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+}
+
+.search-bar__input::placeholder {
+  font-weight: 300;
+  color: #3d4e61;
+  opacity: 1;
+}
+
+.search-bar__input:focus {
+  font-weight: 700;
+}
+
+.search-bar__input:focus::placeholder {
+  opacity: 1;
+}

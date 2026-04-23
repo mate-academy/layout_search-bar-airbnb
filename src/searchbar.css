@@ -1,0 +1,115 @@
+.searchbar {
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+  border-radius: 4px;
+  box-sizing: border-box;
+  max-width: 1008px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.searchbar:nth-of-type(1) {
+  margin: 20px auto;
+}
+
+@media (max-width: 720px) {
+  .searchbar {
+    max-width: 704px;
+  }
+}
+
+.searchbar__div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.searchbar--large {
+  height: 70px;
+}
+
+.searchbar--small {
+  height: 42px;
+}
+
+.searchbar__glass {
+  background: url('./images/Search.svg') no-repeat;
+  background-size: contain;
+  color: #687c94;
+}
+
+.searchGlass__container--large {
+  width: 20px;
+  height: 20px;
+  margin-right: 17px;
+  margin-left: 25px;
+}
+
+.searchGlass__container--small {
+  width: 12px;
+  height: 12px;
+  margin: 0 9px 0 12px;
+}
+
+.searchbar__glass.large {
+  width: 19px;
+  height: 19px;
+}
+
+.searchbar__glass.small {
+  width: 11px;
+  height: 11px;
+}
+
+.searchbar:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+}
+
+.searchbar:focus-within {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.searchInput {
+  border: 0;
+  color: #3d4e61;
+  background: transparent;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0%;
+  flex: 1;
+  height: 19px;
+  padding: 0;
+}
+
+.searchInput:focus {
+  outline: none;
+  font-weight: 900;
+}
+
+.searchInput::placeholder {
+  color: #687c94;
+  font-family:
+    Avenir,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  opacity: 1;
+}
+
+.searchInput--large {
+  font-size: 16px;
+}
+
+.searchInput--small {
+  font-size: 14px;
+}

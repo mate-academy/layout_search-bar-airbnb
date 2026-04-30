@@ -18,19 +18,29 @@
   </head>
   <body>
     <div class="search-bar">
-      <input
-        type="text"
+      <form
+        class="search-bar-big"
         data-qa="big"
-        placeholder="Try “Los Angeles“"
-        class="search-bar__item search-bar__item--big"
-      />
+      >
+        <input
+          type="text"
+          data-qa="keypress"
+          placeholder="Try “Los Angeles“"
+          class="search-bar__item search-bar__item--big"
+        />
+      </form>
 
-      <input
-        type="text"
+      <form
+        class="search-bar-small"
         data-qa="small"
-        placeholder="Try “Los Angeles“"
-        class="search-bar__item search-bar__item--small"
-      />
+      >
+        <input
+          type="text"
+          data-qa="hover"
+          placeholder="Try “Los Angeles“"
+          class="search-bar__item search-bar__item--small"
+        />
+      </form>
     </div>
   </body>
 </html>

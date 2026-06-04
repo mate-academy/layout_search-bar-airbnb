@@ -10,10 +10,14 @@
   font-weight: 600;
 }
 
+html {
+  box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 body {
@@ -24,16 +28,17 @@ body {
 .search {
   display: flex;
   justify-content: center;
-  margin: 20px auto 0;
   width: 100%;
 }
 
 .search--big {
   height: 70px;
+  margin: 20px auto;
 }
 
 .search--small {
   height: 42px;
+  margin: 0 auto;
 }
 
 .search__label {

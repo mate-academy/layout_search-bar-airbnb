@@ -12,7 +12,15 @@
   font-style: normal;
 }
 
-* {
+html {
+  box-sizing: border-box;
+}
+
+body,
+.search,
+.search__label,
+.search__label::before,
+.search__input {
   box-sizing: border-box;
 }
 
@@ -30,7 +38,10 @@ body {
 
 .search--big {
   margin-top: 20px;
-  margin-bottom: 20px;
+}
+
+.search--small {
+  margin-top: 20px;
 }
 
 .search__label {

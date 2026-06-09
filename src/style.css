@@ -1,1 +1,79 @@
-/* add styles here */
+@font-face {
+  font-family: 'Avenir';
+  src: url('./fonts/Avenir-Book.ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('./fonts/Avenir-Heavy.ttf');
+  font-weight: 800;
+}
+
+body {
+  font-family: 'Avenir', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-weight: 300;
+}
+
+main {
+  padding-top: 20px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #dce0e0;
+  border-radius: 4px;
+  padding: 14px 16px;
+}
+
+form[data-qa="big"] {
+  margin-bottom: 20px;
+  padding: 20px 24px;
+  font-size: 18px;
+}
+
+form[data-qa="small"] {
+  padding: 14px 16px;
+  font-size: 14px;
+}
+
+form:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+}
+
+form:focus-within {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  background-color: #f7f7f7;
+}
+
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+input::placeholder {
+  color: #828f9b;
+}
+
+input:focus {
+  font-weight: 800;
+}
+
+label {
+  width: 18px;
+  height: 18px;
+  background-image: url('./images/Search.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+  margin-right: 10px;
+}

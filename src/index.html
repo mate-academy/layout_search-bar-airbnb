@@ -7,7 +7,10 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width,
+      user-scalable=no, initial-scale=1.0,
+      maximum-scale=1.0,
+      minimum-scale=1.0"
     />
     <meta
       http-equiv="X-UA-Compatible"
@@ -19,7 +22,7 @@
       href="/src/styles/style.css"
     />
   </head>
-  <body class="page">
+  <body class="content">
     <form
       class="search search--large"
       action="#"
@@ -27,6 +30,8 @@
     >
       <div class="search__logo"></div>
       <input
+        aria-label="#"
+        name="large_Input"
         class="search__input"
         type="text"
         data-qa="keypress"
@@ -41,6 +46,8 @@
     >
       <div class="search__logo"></div>
       <input
+        aria-label="#"
+        name="small_Input"
         class="search__input"
         type="text"
         placeholder="Try “Los Angeles“"

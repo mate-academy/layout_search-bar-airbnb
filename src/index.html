@@ -1,10 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html
+  lang="en"
+  class="page"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width,
+      user-scalable=no, initial-scale=1.0,
+      maximum-scale=1.0,
+      minimum-scale=1.0"
     />
     <meta
       http-equiv="X-UA-Compatible"
@@ -13,20 +19,39 @@
     <title>Document</title>
     <link
       rel="stylesheet"
-      href="style.css"
+      href="/src/styles/style.css"
     />
   </head>
-  <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+  <body class="content">
+    <form
+      class="search search--large"
+      action="#"
+      data-qa="big"
+    >
+      <div class="search__logo"></div>
+      <input
+        aria-label="#"
+        name="large_Input"
+        class="search__input"
+        type="text"
+        data-qa="keypress"
+        placeholder="Try “Los Angeles“"
+      />
+    </form>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      class="search search--tiny"
+      action="#"
+      data-qa="small"
+    >
+      <div class="search__logo"></div>
+      <input
+        aria-label="#"
+        name="small_Input"
+        class="search__input"
+        type="text"
+        placeholder="Try “Los Angeles“"
+      />
+    </form>
   </body>
 </html>

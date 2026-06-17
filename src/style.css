@@ -1,1 +1,97 @@
 /* add styles here */
+@font-face {
+  font-family: Avenir-Book;
+  src: url('fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir-Heavy;
+  src: url('fonts/Avenir-Heavy.ttf') format('truetype');
+  font-weight: 900;
+}
+
+body {
+  font-family: Avenir-Book, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  color: #3d4e61;
+}
+
+.search--bars {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.search--bar_1 {
+  height: 70px;
+  padding: 0 20px 0 62px;
+  font-size: 16px;
+  background-position: 26px center;
+  background-size: 19px 19px;
+}
+
+.search--bar_1,
+.search--bar_2 {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 4px;
+  line-height: 100%;
+  color: inherit;
+  background-image: url('images/Search.svg');
+  background-repeat: no-repeat;
+  outline: none;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+}
+
+.search--bar_1:hover,
+.search--bar_2:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.search--bar_1:focus,
+.search--bar_2:focus {
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 3px;
+  font-family: Avenir-Heavy, Arial, Helvetica, sans-serif;
+  color: #3d4e61;
+}
+
+.search--bar_1::placeholder,
+.search--bar_2::placeholder {
+  font-family: Avenir-Book, sans-serif;
+  color: #3d4e61;
+}
+
+.search--bar_1::placeholder {
+  font-size: 16px;
+}
+
+.search--bar_1:focus {
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+  background:
+    url('images/Search.svg') 26px center / 19px 19px no-repeat,
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.search--bar_2 {
+  height: 42px;
+  padding: 0 20px 0 33px;
+  background-position: 13px center;
+  background-size: 11px 11px;
+}
+
+.search--bar_2::placeholder {
+  font-size: 14px;
+}
+
+.search--bar_2:focus {
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+  background:
+    url('images/Search.svg') 13px center / 11px 11px no-repeat,
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}

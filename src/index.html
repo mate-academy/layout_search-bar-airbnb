@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width, initial-scale=1.0"
     />
     <meta
       http-equiv="X-UA-Compatible"
@@ -13,52 +13,29 @@
     <title>Search bar</title>
     <link
       rel="stylesheet"
-      href="style.css"
+      href="./style.css"
     />
   </head>
   <body>
     <form
-      class="search search--small"
-      data-qa="small"
-    >
-      <button
-        type="submit"
-        class="search__button"
-      >
-        <img
-          src="images/search.svg"
-          alt="search"
-          class="search__icon"
-        />
-      </button>
-      <input
-        type="text"
-        class="search__input"
-        placeholder="Try &quot;Los Angeles&quot;"
-      />
-    </form>
-
-    <br />
-
-    <form
       class="search search--big"
       data-qa="big"
     >
-      <button
-        type="submit"
-        class="search__button"
-      >
-        <img
-          src="images/search.svg"
-          alt="search"
-          class="search__icon"
-        />
-      </button>
       <input
         type="text"
-        class="search__input"
+        class="search__input search__input--big"
         data-qa="keypress"
-        placeholder="Try &quot;Los Angeles&quot;"
+        placeholder='Try "Los Angeles"'
+      />
+    </form>
+    <form
+      class="search search--small"
+      data-qa="small"
+    >
+      <input
+        type="text"
+        class="search__input search__input--small"
+        placeholder='Try "Los Angeles"'
       />
     </form>
   </body>

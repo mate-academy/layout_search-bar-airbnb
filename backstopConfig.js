@@ -32,16 +32,19 @@ const config = {
       ...basic,
       label: 'Entire document',
       selectors: ['document'],
+      misMatchThreshold: 3,
     },
     {
       ...basic,
       label: 'Big search bar data-qa_big',
       selectors: ['[data-qa="big"]'],
+      misMatchThreshold: 3,
     },
     {
       ...basic,
       label: 'Small search bar data-qa_small',
       selectors: ['[data-qa="small"]'],
+      misMatchThreshold: 3,
     },
   ],
 };

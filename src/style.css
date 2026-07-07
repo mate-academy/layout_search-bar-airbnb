@@ -49,20 +49,21 @@ input {
   color: #3d4e61;
 }
 
+input:focus{
+  font-weight: 900;
+}
+
 .small-input input {
   font-size: 14px;
 }
 
-.big-input input:focus {
-  font-weight: 900;
-}
 
 .big-input {
   display: flex;
   position: relative;
   height: 70px;
   width: 100%;
-  margin: 20px auto;
+  margin-top: 20px;
   padding: 8px 26px;
   align-items: center;
   box-sizing: border-box;
@@ -79,8 +80,11 @@ input {
 
 .big-input:focus-within {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
 
-  /* text-shadow: 0 4px 4px 0 #00000040; */
+
+.big-input:focus-within input {
+  text-shadow: 0 4px 4px #00000040;
 }
 
 .small-input {
@@ -88,7 +92,7 @@ input {
   position: relative;
   height: 42px;
   width: 100%;
-  margin: 20px auto;
+  margin-top: 20px;
   padding: 8px 13px;
   align-items: center;
   box-sizing: border-box;
@@ -106,10 +110,7 @@ input {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
-.small-input input:focus {
-  font-weight: 900;
-  font-size: 14px;
-}
+
 
 .icon--small {
   margin-right: 9px;

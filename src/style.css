@@ -1,6 +1,17 @@
-* {
+
+.page {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #fff;
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+}
+
+.page *,
+.page *::before,
+.page *::after {
+  box-sizing: inherit;
 }
 
 @font-face {
@@ -17,16 +28,6 @@
   src: url('./fonts/Avenir-Heavy.ttf');
 }
 
-body {
-  font-family: Avenir, sans-serif;
-  font-size: 16px;
-}
-
-.page {
-  margin: 0;
-  background-color: #fff;
-}
-
 .page__container {
   display: flex;
   flex-direction: column;
@@ -34,8 +35,11 @@ body {
   padding: 0 8px;
 }
 
+.page__search-section {
+  width: 100%;
+}
+
 .page__search-big {
-  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -128,4 +132,17 @@ body {
   background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
   border-radius: 3px;
   font-weight: 600;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

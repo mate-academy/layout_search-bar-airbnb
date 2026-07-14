@@ -18,34 +18,38 @@
   </head>
   <body class="page">
     <main class="page__container">
-      <form
-        class="search search--big page__search-big"
-        action="#"
-        method="GET"
-        data-qa="big"
-      >
-        <input
-          class="search__input search__input--big"
-          type="text"
-          data-qa="keypress"
-          placeholder="Try “Los Angeles”"
-          required
-        />
-      </form>
+      <section class="page__search-section">
+        <h1 class="visually-hidden">Airbnb Search options</h1>
 
-      <form
-        class="search search--small"
-        action="#"
-        method="GET"
-        data-qa="small"
-      >
-        <input
-          class="search__input search__input--small"
-          type="text"
-          placeholder="Try “Los Angeles“"
-          required
-        />
-      </form>
+        <form
+          class="search search--big page__search-big"
+          action="#"
+          method="GET"
+          data-qa="big"
+        >
+          <input
+            class="search__input search__input--big"
+            type="text"
+            data-qa="keypress"
+            placeholder="Try “Los Angeles”"
+            required
+          />
+        </form>
+
+        <form
+          class="search search--small"
+          action="#"
+          method="GET"
+          data-qa="small"
+        >
+          <input
+            class="search__input search__input--small"
+            type="text"
+            placeholder="Try “Los Angeles”"
+            required
+          />
+        </form>
+      </section>
     </main>
   </body>
 </html>

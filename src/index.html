@@ -16,40 +16,33 @@
       href="style.css"
     />
   </head>
-  <body class="page">
-    <main class="page__container">
-      <section class="page__search-section">
-        <h1 class="visually-hidden">Airbnb Search options</h1>
+  <body>
+    <form
+      class="search-form search-form_big"
+      data-qa="big"
+    >
+      <label class="search-form__label search-form__label_big">
+        <input
+          data-qa="keypress"
+          class="search-form__input search-form__input_big"
+          type="text"
+          placeholder="Try “Los Angeles”"
+        />
+      </label>
+    </form>
 
-        <form
-          class="search search--big page__search-big"
-          action="#"
-          method="GET"
-          data-qa="big"
-        >
-          <input
-            class="search__input search__input--big"
-            type="text"
-            data-qa="keypress"
-            placeholder="Try “Los Angeles”"
-            required
-          />
-        </form>
-
-        <form
-          class="search search--small"
-          action="#"
-          method="GET"
-          data-qa="small"
-        >
-          <input
-            class="search__input search__input--small"
-            type="text"
-            placeholder="Try “Los Angeles”"
-            required
-          />
-        </form>
-      </section>
-    </main>
+    <form
+      class="search-form search-form_small"
+      data-qa="small"
+    >
+      <label class="search-form__label search-form__label_small">
+        <input
+          data-qa="hover"
+          class="search-form__input search-form__input_small"
+          type="text"
+          placeholder="Try “Los Angeles”"
+        />
+      </label>
+    </form>
   </body>
 </html>

@@ -15,6 +15,7 @@ const config = {
   fileNameTemplate: '{scenarioLabel}_{viewportLabel}',
   onBeforeScript: 'puppet/onBefore.js',
   onReadyScript: 'puppet/onReady.js',
+
   viewports: [
     {
       name: '1024px',

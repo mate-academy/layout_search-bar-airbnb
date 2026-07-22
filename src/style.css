@@ -1,1 +1,98 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  font-weight: 300;
+  font-style: normal;
+  src: url(./fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 900;
+  font-style: normal;
+  src: url(./fonts/Avenir-Heavy.ttf);
+}
+
+body {
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.search-form {
+  display: flex;
+  width: 100%;
+}
+
+.search-form--big {
+  height: 70px;
+  margin-top: 20px;
+}
+
+.search-form--small {
+  height: 42px;
+  margin-top: 20px;
+}
+
+.search-form__input {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  background-color: #fff;
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 3px;
+}
+
+.search-form__input--big {
+  height: 70px;
+  line-height: 100%;
+  font-size: 16px;
+  padding-left: 62px;
+  border-radius: 4px;
+  background-image: url('./images/Search.svg');
+  background-repeat: no-repeat;
+  background-position: left 26px center;
+  background-size: 19px;
+}
+
+.search-form__input--small {
+  height: 42px;
+  line-height: 100%;
+  font-size: 14px;
+  padding-left: 33px;
+  background-image: url('./images/Search.svg');
+  background-repeat: no-repeat;
+  background-position: left 13px center;
+  background-size: 11px;
+}
+
+.search-form__input--big:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search-form__input--small:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.search-form__input:focus {
+  font-weight: 900;
+  border-radius: 3px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.search-form__input--big:focus {
+  background:
+    url('./images/Search.svg') no-repeat left 26px center / 19px,
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}
+
+.search-form__input--small:focus {
+  background:
+    url('./images/Search.svg') no-repeat left 13px center / 11px,
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+}

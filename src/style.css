@@ -1,1 +1,142 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Heavy.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  display: block;
+}
+
+img {
+  flex-shrink: 0;
+}
+
+.search-img1 {
+  width: 19px;
+  height: 19px;
+}
+
+.bigSearch {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-around;
+  gap: 17px;
+  margin: 20px 8px;
+  padding: 0 26px;
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.bigSearch:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 0;
+  text-decoration: none;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.search-input1 {
+  width: 100%;
+  height: 69px;
+}
+
+.custom-placeholder1 {
+  position: absolute;
+  left: 62px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.custom-placeholder1::before {
+  content: 'Try “Los Angeles“';
+  font-family: Avenir, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-box-trim: none;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #3d4e61;
+}
+
+.search-input1:focus + .custom-placeholder1::before {
+  content: 'Los An';
+  color: #3d4e61;
+  font-size: 16px;
+  line-height: 22px;
+  text-shadow: 0 4px 4px #3d4e61;
+}
+
+.smallSearch {
+  position: relative;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  border: 1px solid #e1e7ed;
+  color: #3d4e61;
+}
+
+.search-img2 {
+  width: 11px;
+  height: 11px;
+  margin-left: 13px;
+}
+
+.search-input2 {
+  height: 42px;
+}
+
+.custom-placeholder2 {
+  position: absolute;
+  left: 33px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.custom-placeholder2::before {
+  content: 'Try “Los Angeles“';
+  font-family: Avenir, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-box-trim: none;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #3d4e61;
+}
+
+.smallSearch:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.search-input2:focus + .custom-placeholder2::before {
+  content: 'Los Ang';
+  color: #3d4e61;
+  font-size: 14px;
+  font-weight: 900px;
+  line-height: 20px;
+  text-shadow: 0 4px 4px #3d4e61;
+  justify-content: space-around;
+  margin: 0 8px;
+}

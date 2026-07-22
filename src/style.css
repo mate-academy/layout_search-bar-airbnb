@@ -2,57 +2,58 @@
   font-family: Avenir;
   font-weight: 300;
   font-style: normal;
-  src: url(./fonts/Avenir-Book.ttf);
+  src: url('./fonts/Avenir-Book.ttf') format('truetype');
 }
 
 @font-face {
   font-family: Avenir;
-  font-weight: 900;
+  font-weight: 600;
   font-style: normal;
-  src: url(./fonts/Avenir-Heavy.ttf);
+  src: url('./fonts/Avenir-Heavy.ttf') format('truetype');
 }
 
 body {
   font-family: Avenir, sans-serif;
   font-size: 16px;
-  font-weight: 300;
 }
 
 .search-form {
   display: flex;
-  width: 100%;
+  justify-content: center;
+  margin: 20px auto 0;
 }
 
 .search-form--big {
+  width: 100%;
   height: 70px;
-  margin-top: 20px;
 }
 
 .search-form--small {
+  width: 100%;
   height: 42px;
-  margin-top: 20px;
 }
 
 .search-form__input {
   font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  padding: 0;
+  font-weight: 300;
+  color: #3d4e61;
   width: 100%;
+  height: 100%;
   box-sizing: border-box;
   outline: none;
   box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
-  background-color: #fff;
   border: 1px solid rgba(225, 231, 237, 1);
-  border-radius: 3px;
+  border-radius: 4px;
+}
+
+.search-form__input:hover {
+  box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
 .search-form__input--big {
-  height: 70px;
-  line-height: 100%;
+  line-height: 22px;
   font-size: 16px;
   padding-left: 62px;
-  border-radius: 4px;
   background-image: url('./images/Search.svg');
   background-repeat: no-repeat;
   background-position: left 26px center;
@@ -60,29 +61,19 @@ body {
 }
 
 .search-form__input--small {
-  height: 42px;
-  line-height: 100%;
+  line-height: 22px;
   font-size: 14px;
   padding-left: 33px;
   background-image: url('./images/Search.svg');
   background-repeat: no-repeat;
-  background-position: left 13px center;
+  background-position: left 12px top 14px;
   background-size: 11px;
 }
 
-.search-form__input--big:hover {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
-
-.search-form__input--small:hover {
-  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
-}
-
 .search-form__input:focus {
-  font-weight: 900;
+  font-weight: 600;
   border-radius: 3px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }
 
 .search-form__input--big:focus {
@@ -93,6 +84,6 @@ body {
 
 .search-form__input--small:focus {
   background:
-    url('./images/Search.svg') no-repeat left 13px center / 11px,
+    url('./images/Search.svg') no-repeat left 12px top 14px / 11px,
     linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 }

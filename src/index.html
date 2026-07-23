@@ -10,7 +10,7 @@
       http-equiv="X-UA-Compatible"
       content="ie=edge"
     />
-    <title>Document</title>
+    <title>Airbnb search bars</title>
     <link
       rel="stylesheet"
       href="reset.css"
@@ -19,41 +19,62 @@
       rel="stylesheet"
       href="style.css"
     />
+    <link
+      rel="preload"
+      href="./fonts/Avenir-Book.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="true"
+    />
+    <link
+      rel="preload"
+      href="./fonts/Avenir-Heavy.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="true"
+    />
   </head>
   <body>
-    <div
-      class="bigSearch"
+    <form
+      class="search-form search-form--large"
+      action="#"
+      method="get"
       data-qa="big"
     >
-      <img
-        src="./images/Search.svg"
-        alt="Search_logo"
-        class="search-img1"
-      />
       <input
-        type="text"
+        id="large-search"
+        class="search-form__input search-form__input--large"
+        type="search"
+        name="large-search"
         data-qa="keypress"
         placeholder=" "
-        class="search-input1"
+        aria-label="Search for a place"
       />
-      <span class="custom-placeholder1"></span>
-    </div>
-    <div
-      class="smallSearch"
+      <label
+        class="search-form__placeholder search-form__placeholder--large"
+        for="large-search"
+      ></label>
+    </form>
+
+    <form
+      class="search-form search-form--small"
+      action="#"
+      method="get"
       data-qa="small"
     >
-      <img
-        src="./images/Search.svg"
-        alt="Search_logo"
-        class="search-img2"
-      />
       <input
-        type="text"
+        id="small-search"
+        class="search-form__input search-form__input--small"
+        type="search"
+        name="small-search"
         data-qa="hover"
         placeholder=" "
-        class="search-input2"
+        aria-label="Search for a place"
       />
-      <span class="custom-placeholder2"></span>
-    </div>
+      <label
+        class="search-form__placeholder search-form__placeholder--small"
+        for="small-search"
+      ></label>
+    </form>
   </body>
 </html>

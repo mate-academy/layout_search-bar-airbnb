@@ -3,6 +3,7 @@
   src: url('./fonts/Avenir-Book.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -10,74 +11,79 @@
   src: url('./fonts/Avenir-Heavy.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 body {
   display: block;
+  margin: 0;
+  font-family: Avenir, 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 300;
 }
 
-img {
-  flex-shrink: 0;
-}
-
-.search-img1 {
-  width: 19px;
-  height: 19px;
-}
-
-.bigSearch {
+.search-form {
   position: relative;
   display: flex;
   box-sizing: border-box;
+  border: 1px solid #e1e7ed;
+}
+
+.search-form__input {
+  flex: 1;
+  padding: 0;
+  border: none;
+  outline: none;
+  line-height: 100%;
+  letter-spacing: 0;
+  min-width: 0;
+  background: transparent;
+}
+
+.search-form--large {
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 17px;
   margin: 20px 8px;
   padding: 0 26px;
   border-radius: 4px;
-  border: 1px solid #e1e7ed;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-image: url('./images/Search.svg');
+  background-position: 26px center;
+  background-repeat: no-repeat;
+  background-size: 19px 19px;
 }
 
-.bigSearch:hover {
+.search-form--large:hover {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-input {
-  border: none;
-  outline: none;
-  flex: 1;
-  padding: 0;
-  text-decoration: none;
-  line-height: 100%;
-  letter-spacing: 0%;
-}
-
-.search-input1 {
-  width: 100%;
+.search-form__input--large {
   height: 69px;
+  padding-left: 62px;
 }
 
-.custom-placeholder1 {
+.search-form__placeholder {
   position: absolute;
-  left: 62px;
   top: 50%;
   transform: translateY(-50%);
   pointer-events: none;
 }
 
-.custom-placeholder1::before {
-  content: 'Try “Los Angeles“';
+.search-form__placeholder--large {
+  left: 62px;
+}
+
+.search-form__placeholder--large::before {
+  content: 'Try "Los Angeles"';
   font-family: Avenir, sans-serif;
-  font-weight: 400;
   font-size: 16px;
-  text-box-trim: none;
+  font-weight: 400;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   color: #3d4e61;
 }
 
-.search-input1:focus + .custom-placeholder1::before {
+.search-form__input--large:focus + .search-form__placeholder--large::before {
   content: 'Los An';
   color: #3d4e61;
   font-size: 16px;
@@ -85,58 +91,48 @@ input {
   text-shadow: 0 4px 4px #3d4e61;
 }
 
-.smallSearch {
-  position: relative;
-  display: flex;
+.search-form--small {
   align-items: center;
-  box-sizing: border-box;
   margin: 0 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
+  background-image: url('./images/Search.svg');
+  background-position: 13px center;
+  background-repeat: no-repeat;
+  background-size: 11px 11px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
   border: 1px solid #e1e7ed;
   color: #3d4e61;
+  background-color: #fff;
+  padding-left: 34px;
 }
 
-.search-img2 {
-  width: 11px;
-  height: 11px;
-  margin-left: 13px;
-}
-
-.search-input2 {
+.search-form__input--small {
   height: 42px;
 }
 
-.custom-placeholder2 {
-  position: absolute;
+.search-form__placeholder--small {
   left: 33px;
-  top: 50%;
-  transform: translateY(-50%);
-  pointer-events: none;
 }
 
-.custom-placeholder2::before {
-  content: 'Try “Los Angeles“';
+.search-form__placeholder--small::before {
+  content: 'Try "Los Angeles"';
   font-family: Avenir, sans-serif;
-  font-weight: 400;
   font-size: 14px;
-  text-box-trim: none;
+  font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   color: #3d4e61;
 }
 
-.smallSearch:hover {
+.search-form--small:hover {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
-.search-input2:focus + .custom-placeholder2::before {
+.search-form__input--small:focus + .search-form__placeholder--small::before {
   content: 'Los Ang';
   color: #3d4e61;
   font-size: 14px;
-  font-weight: 900px;
+  font-weight: 900;
   line-height: 20px;
   text-shadow: 0 4px 4px #3d4e61;
-  justify-content: space-around;
-  margin: 0 8px;
 }

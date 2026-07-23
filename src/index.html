@@ -20,12 +20,14 @@
       href="style.css"
     />
     <link
+      rel="preload"
       href="./fonts/Avenir-Book.ttf"
       as="font"
       type="font/ttf"
       crossorigin="anonymous"
     />
     <link
+      rel="preload"
       href="./fonts/Avenir-Heavy.ttf"
       as="font"
       type="font/ttf"
@@ -39,18 +41,15 @@
       method="get"
       data-qa="big"
     >
+      <!-- prettier-ignore -->
       <input
         id="large-search"
         class="search-form__input search-form__input--large"
         type="search"
         name="large-search"
-        placeholder="Try “Los Angeles”"
+        placeholder="Try &quot;Los Angeles&quot;"
         aria-label="Search for a place"
       />
-      <label
-        class="search-form__placeholder search-form__placeholder--large"
-        for="large-search"
-      ></label>
     </form>
 
     <form
@@ -59,19 +58,15 @@
       method="get"
       data-qa="small"
     >
+      <!-- prettier-ignore -->
       <input
         id="small-search"
         class="search-form__input search-form__input--small"
         type="search"
         name="small-search"
-        data-qa="hover"
-        placeholder=" "
+        placeholder="Try &quot;Los Angeles&quot;"
         aria-label="Search for a place"
       />
-      <label
-        class="search-form__placeholder search-form__placeholder--small"
-        for="small-search"
-      ></label>
     </form>
   </body>
 </html>

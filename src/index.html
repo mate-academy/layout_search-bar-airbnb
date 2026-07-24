@@ -10,23 +10,54 @@
       http-equiv="X-UA-Compatible"
       content="ie=edge"
     />
-    <title>Document</title>
+    <title>Airbnb search bars</title>
     <link
       rel="stylesheet"
       href="style.css"
     />
+    <link
+      rel="preload"
+      href="./fonts/Avenir-Book.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./fonts/Avenir-Heavy.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <header class="search-header">
+      <form
+        action="#"
+        class="form-search form-search--big"
+        data-qa="big"
+      >
+        <div class="form-search__icon form-search__icon--big"></div>
+        <input
+          type="text"
+          class="form-search__input form-search__input--big"
+          data-qa="keypress"
+          placeholder="Try &#34;Los Angeles&#34;"
+        />
+      </form>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+      <form
+        action="#"
+        class="form-search form-search--small"
+        data-qa="small"
+      >
+        <div class="form-search__icon form-search__icon--small"></div>
+        <input
+          type="text"
+          class="form-search__input form-search__input--small"
+          placeholder="Try &#34;Los Angeles&#34;"
+        />
+      </form>
+    </header>
   </body>
 </html>

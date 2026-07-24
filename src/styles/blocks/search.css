@@ -1,4 +1,5 @@
 .search {
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 17px;
@@ -6,9 +7,15 @@
 
 .search__input {
   width: 100%;
-  background-image: url("/src/images/Search.svg");
+  height: 40px;
+  block-size: border-box;
+  background-image: url('/src/images/Search.svg');
   background-repeat: no-repeat;
   background-position: 16px center;
+  padding-left: 48px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
 }
 
 .search__input:hover {

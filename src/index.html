@@ -13,10 +13,6 @@
     <title>Airbnb search bars</title>
     <link
       rel="stylesheet"
-      href="reset.css"
-    />
-    <link
-      rel="stylesheet"
       href="style.css"
     />
     <link
@@ -35,39 +31,33 @@
     />
   </head>
   <body>
-    <form
-      class="search-form search-form--large"
-      action="#"
-      method="get"
-      data-qa="big"
-    >
-      <!-- prettier-ignore -->
-      <input
-        id="large-search"
-        class="search-form__input search-form__input--large"
-        type="text"
-        name="large-search"
-        placeholder="Try &quot;Los Angeles&quot;"
-        aria-label="Search for a place"
-        data-qa="keypress"
-      />
-    </form>
+    <header class="search-header">
+      <form
+        action="#"
+        class="form-search form-search--big"
+        data-qa="big"
+      >
+        <div class="form-search__icon form-search__icon--big"></div>
+        <input
+          type="text"
+          class="form-search__input form-search__input--big"
+          data-qa="keypress"
+          placeholder="Try &#34;Los Angeles&#34;"
+        />
+      </form>
 
-    <form
-      class="search-form search-form--small"
-      action="#"
-      method="get"
-      data-qa="small"
-    >
-      <!-- prettier-ignore -->
-      <input
-        id="small-search"
-        class="search-form__input search-form__input--small"
-        type="text"
-        name="small-search"
-        placeholder="Try &quot;Los Angeles&quot;"
-        aria-label="Search for a place"
-      />
-    </form>
+      <form
+        action="#"
+        class="form-search form-search--small"
+        data-qa="small"
+      >
+        <div class="form-search__icon form-search__icon--small"></div>
+        <input
+          type="text"
+          class="form-search__input form-search__input--small"
+          placeholder="Try &#34;Los Angeles&#34;"
+        />
+      </form>
+    </header>
   </body>
 </html>

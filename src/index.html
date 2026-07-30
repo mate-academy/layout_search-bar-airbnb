@@ -1,5 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html
+  lang="en"
+  class="page"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -16,17 +19,42 @@
       href="style.css"
     />
   </head>
-  <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+  <body class="page__body">
+    <!-- #region input1 -->
+    <form
+      data-qa="big"
+      class="container container--first"
+    >
+      <input
+        type="text"
+        data-qa="keypress"
+        placeholder="Try “Los Angeles“"
+        class="search-field"
+      />
+      <div
+        alt="search-icon"
+        class="search-icon"
+      ></div>
+    </form>
+    <!-- #endregion -->
+
+    <!-- #region input2 -->
+    <form
+      data-qa="small"
+      class="container container--second"
+    >
+      <input
+        type="text"
+        data-qa="hover"
+        placeholder="Try “Los Angeles“"
+        class="search-field search-field--small"
+      />
+      <div
+        alt="search-icon"
+        class="search-icon search-icon--small"
+      ></div>
+    </form>
+    <!-- #endregion -->
   </body>
 </html>

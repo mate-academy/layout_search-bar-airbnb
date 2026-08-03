@@ -2,27 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
   <title>Airbnb Search Bar</title>
-  <link rel="stylesheet" href="./style.css">
+
+  <link
+    rel="stylesheet"
+    href="./style.css"
+  >
 </head>
 <body>
-<form class="search-bar search-bar--big" data-qa="big">
-  <button class="search-bar__button" type="submit" aria-label="Search"></button>
-  <input
-    class="search-bar__input"
-    type="text"
-    placeholder='Try "Los Angeles"'
-    data-qa="keypress"
+  <form
+    class="search-bar search-bar--big"
+    data-qa="big"
   >
-</form>
-<form class="search-bar search-bar--small" data-qa="small">
-  <button class="search-bar__button" type="submit" aria-label="Search"></button>
-  <input
-    class="search-bar__input"
-    type="text"
-    placeholder='Try "Los Angeles"'
+    <button
+      class="search-bar__button"
+      type="submit"
+      aria-label="Search"
+    ></button>
+
+    <input
+      class="search-bar__input"
+      type="text"
+      placeholder="Try &quot;Los Angeles&quot;"
+      data-qa="keypress"
+    >
+  </form>
+
+  <form
+    class="search-bar search-bar--small"
+    data-qa="small"
   >
-</form>
+    <button
+      class="search-bar__button"
+      type="submit"
+      aria-label="Search"
+    ></button>
+
+    <input
+      class="search-bar__input"
+      type="text"
+      placeholder="Try &quot;Los Angeles&quot;"
+    >
+  </form>
 </body>
 </html>

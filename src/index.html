@@ -15,18 +15,46 @@
       rel="stylesheet"
       href="style.css"
     />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <div
+      class="searchbar"
+      data-qa="big"
+    >
+      <input
+        class="searchbar-input"
+        type="text"
+        data-qa="keypress"
+        placeholder="Try “Los Angeles“"
+      />
+      <div class="searchbar-icon"></div>
+    </div>
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <div
+      class="searchbar"
+      data-qa="small"
+    >
+      <input
+        class="searchbar-input searchbar-input--small"
+        type="text"
+        data-qa="hover"
+        placeholder="Try “Los Angeles“"
+      />
+      <div class="searchbar-icon searchbar-icon--small"></div>
+    </div>
   </body>
 </html>

@@ -10,10 +10,6 @@
   font-weight: 900;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0 8px;
   font-family: Avenir, sans-serif;
@@ -26,10 +22,10 @@ body {
 
 .search--big {
   margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .search__input {
+  box-sizing: border-box;
   width: 100%;
   border: 1px solid #e1e7ed;
   background-image: url('./images/Search.svg');
@@ -74,6 +70,7 @@ body {
   border-radius: 4px;
 }
 
-form {
-  margin: 0;
+.search--small {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

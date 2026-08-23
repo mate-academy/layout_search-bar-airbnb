@@ -1,1 +1,124 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  src: url('fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('fonts/Avenir-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+body,
+form,
+input {
+  margin-block: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 300;
+  font-family: Avenir, sans-serif;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.search__bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  padding-inline: 62px;
+  margin-top: 20px;
+
+  background-image: url('images/Search.svg');
+  background-repeat: no-repeat;
+  background-position: 26px center;
+
+  background-color: #fff;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px 0 #3d4e611a;
+}
+
+.search__bar--small {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 42px;
+  padding-inline: 33px;
+  margin: 0;
+
+  background-image: url('images/Search.svg');
+  background-repeat: no-repeat;
+  background-position: 13px center;
+  background-size: 11px 11px;
+}
+
+.search__bar:hover {
+  box-shadow: 0 3px 8px 0 #3d4e6133;
+}
+
+.search__bar:focus-within {
+  background-image: url('images/Search.svg'),
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+
+  background-position:
+    26px center,
+    0 0;
+  background-repeat: no-repeat, no-repeat;
+  background-size:
+    auto,
+    100% 100%;
+}
+
+.search__bar--small:focus-within {
+  background-image: url('images/Search.svg'),
+    linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+
+  background-position:
+    13px center,
+    0 0;
+  background-repeat: no-repeat, no-repeat;
+  background-size:
+    11px 11px,
+    100% 100%;
+}
+
+.search__input {
+  width: 100%;
+  padding: 0;
+  border: none;
+  color: #3d4e61;
+  background: transparent;
+
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.search__input::placeholder {
+  color: #3d4e61;
+  opacity: 1;
+}
+
+.search__input--small {
+  font-size: 14px;
+}
+
+.search__input:focus {
+  font-weight: 900;
+  outline: none;
+}
+
+.search__input:focus::placeholder {
+  font-weight: 900;
+}

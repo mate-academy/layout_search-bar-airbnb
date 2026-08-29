@@ -17,28 +17,31 @@
     />
   </head>
   <body>
-    <form
-      data-qa="big"
-      class="search-form"
-      action="#"
-    >
-      <input
-        class="search-form__input"
-        type="text"
-        data-qa="keypress"
-        placeholder="Try “Los Angeles”"
-      />
-    </form>
+    <div class="container">
+      <form
+        data-qa="big"
+        class="search-form search-form__big"
+        action="#"
+      >
+        <input
+          class="search-form__input search-form__input--big"
+          type="text"
+          data-qa="keypress"
+          placeholder="Try “Los Angeles”"
+        />
+      </form>
 
-    <form
-      data-qa="small"
-      action="#"
-    >
-      <input
-        class="search-form__input--small"
-        type="text"
-        placeholder="Try “Los Angeles”"
-      />
-    </form>
+      <form
+        data-qa="small"
+        action="#"
+        class="search-form search-form--small"
+      >
+        <input
+          class="search-form__input search-form__input--small"
+          type="text"
+          placeholder="Try “Los Angeles”"
+        />
+      </form>
+    </div>
   </body>
 </html>

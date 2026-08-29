@@ -17,7 +17,7 @@ input {
 
 /* #region Big input */
 
-.mainContainer__inputContainer {
+.bigSearch {
   background-image: url(./images/Search.svg);
   background-position-y: center;
   background-position-x: 26px;
@@ -34,17 +34,15 @@ input {
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.1);
 }
 
-.mainContainer__inputContainer:hover {
+.bigSearch:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.mainContainer__inputContainer:has(
-    .mainContainer__inputContainer-bigInput:focus
-  ) {
+.bigSearch:has(.bigSearch__input:focus) {
   background: linear-gradient(to bottom, #fff, #e1e7ed);
 }
 
-.mainContainer__inputContainer-bigInput {
+.bigSearch__input {
   line-height: 100%;
   font-weight: 400;
   font-size: 16px;
@@ -58,7 +56,7 @@ input {
   padding: 0;
 }
 
-.mainContainer__inputContainer-bigInput:focus {
+.bigSearch__input:focus {
   background: transparent;
   font-family: Avenir-heavy, sans-serif;
   font-weight: 400;
@@ -66,15 +64,15 @@ input {
   outline: none;
 }
 
-.mainContainer__inputContainer-loupeImg {
-  margin-left: 26px;
+.bigSearch__input::placeholder {
+  color: #3d4e61;
 }
 
 /* #endregion */
 
 /* #region Small input */
 
-.mainContainer__smallInputContainer {
+.smallSearch {
   background-image: url(./images/Search.svg);
   background-size: 11px 11px;
   background-position-y: center;
@@ -90,11 +88,11 @@ input {
   box-shadow: 0 1px 8px rgba(61, 78, 97, 0.2);
 }
 
-.mainContainer__smallInputContainer:hover {
+.smallSearch:hover {
   box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
 }
 
-.mainContainer__smallInputContainer-smallInput {
+.smallSearch__input {
   line-height: 100%;
   font-weight: 400;
   font-family: Avenir-book, sans-serif;
@@ -107,26 +105,16 @@ input {
   outline: none;
 }
 
-.mainContainer__smallInputContainer-smallInput:focus {
+.smallSearch__input:focus {
   font-family: Avenir-heavy, sans-serif;
 }
 
-.mainContainer__smallInputContainer:has(
-    .mainContainer__smallInputContainer-smallInput:focus
-  ) {
+.smallSearch:has(.smallSearch__input:focus) {
   background: linear-gradient(to bottom, #fff, #f6f6f7);
 }
 
-.smallInputContainer-loupeImg {
-  margin-left: 13px;
+.smallSearch__input::placeholder {
+  color: #3d4e61;
 }
 
 /* #endregion */
-
-.mainContainer__inputContainer-bigInput::placeholder {
-  color: #3d4e61;
-}
-
-.mainContainer__smallInputContainer-smallInput::placeholder {
-  color: #3d4e61;
-}

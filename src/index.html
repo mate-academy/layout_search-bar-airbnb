@@ -10,26 +10,36 @@
       http-equiv="X-UA-Compatible"
       content="ie=edge"
     />
-    <title>Document</title>
+    <title>Airbnb Search Bar</title>
     <link
       rel="stylesheet"
       href="style.css"
     />
   </head>
   <body>
-    <form data-qa="big">
-      <input
-        type="text"
-        data-qa="keypress"
-        placeholder="Try “Los Angeles“"
-      />
-    </form>
+    <main class="page">
+      <form
+        class="search-form search-form--big"
+        data-qa="big"
+      >
+        <input
+          class="search-input search-input--big"
+          type="text"
+          data-qa="keypress"
+          placeholder="Try “Los Angeles”"
+        />
+      </form>
 
-    <form data-qa="small">
-      <input
-        type="text"
-        placeholder="Try “Los Angeles“"
-      />
-    </form>
+      <form
+        class="search-form search-form--small"
+        data-qa="small"
+      >
+        <input
+          class="search-input search-input--small"
+          type="text"
+          placeholder="Try “Los Angeles”"
+        />
+      </form>
+    </main>
   </body>
 </html>

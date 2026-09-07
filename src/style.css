@@ -1,4 +1,17 @@
-@import 'https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap';
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url('./fonts/Avenir-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
 
 body {
   font-family: Montserrat, sans-serif;
@@ -24,6 +37,8 @@ body {
   width: 900px;
   height: 70px;
   padding-left: 62px;
+  color: #3d4e61;
+  font-size: 16px;
 
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
@@ -39,6 +54,8 @@ body {
   width: 427px;
   height: 42px;
   padding-left: 33px;
+  color: #3d4e61;
+  font-size: 16px;
 
   background-image: url(images/Search.svg);
   background-repeat: no-repeat;
@@ -52,10 +69,7 @@ body {
 
 /* #hover region */
 
-.input--1:hover {
-  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
-}
-
+.input--1:hover,
 .input--2:hover {
   box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
 }
@@ -73,7 +87,17 @@ body {
 
   font-weight: 900;
   color: #3d4e61;
-  font-size: 16px;
+  font-size: 14px;
+}
+
+.input--1::placeholder,
+.input--2::placeholder {
+  color: #3d4e61;
+
+}
+
+.inputs:focus::placeholder {
+    color: #3d4e61;
 }
 
 /* #endregion */

@@ -1,1 +1,79 @@
-/* add styles here */
+@import 'https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap';
+
+body {
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-weight: 300;
+  color: #3d4e61;
+}
+
+.container {
+  margin-top: 20px;
+  margin-left: 48px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  height: 100vh;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input--1 {
+  width: 900px;
+  height: 70px;
+  padding-left: 62px;
+
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: 19px 19px;
+  background-position: 26px center;
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  background-color: #fff;
+}
+
+.input--2{
+  width: 427px;
+  height: 42px;
+  padding-left: 33px;
+
+  background-image: url(images/Search.svg);
+  background-repeat: no-repeat;
+  background-size: 11px 11px;
+  background-position: 13px center;
+  border-radius: 4px;
+  border: 1px solid #e1e7ed;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  background-color: #fff;
+}
+
+/* #hover region */
+
+.input--1:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+.input--2:hover {
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+}
+
+/* #endregion */
+
+/* #focus region */
+
+.input--1:focus,
+.input--2:focus {
+  background-image: url(images/Search.svg), linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+  box-shadow: 4px 4px 8px 0 rgba(61, 78, 97, 0.2);
+  outline: 1px solid #e1e7ed;
+
+  font-weight: 900;
+  color: #3d4e61;
+  font-size: 16px;
+}
+
+/* #endregion */

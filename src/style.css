@@ -1,5 +1,5 @@
 @font-face {
-  font-family: Avenir, sans-serif;
+  font-family: Avenir;
   src: url('./fonts/Avenir-Book.ttf') format('truetype');
   font-weight: 400;
 }
@@ -33,6 +33,7 @@
 
 .search-bar__input {
   font-family: inherit;
+  font-weight: 400;
 
   width: 100%;
 
@@ -40,7 +41,7 @@
   border-radius: 4px;
   box-shadow: 0 1px 8px 0 #3d4e611a;
 
-  background-image: url(/src/images/Search.svg);
+  background-image: url('./images/Search.svg');
   background-repeat: no-repeat;
 }
 
@@ -50,14 +51,13 @@
 }
 
 .search-bar__input:focus {
-  background-image: url(/src/images/Search.svg),
+  background-image: url('./images/Search.svg'),
     linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
 
   font-weight: 600;
 }
 
 .search-bar__input::placeholder {
-  font-weight: 400;
   color: #3d4e61;
 }
 

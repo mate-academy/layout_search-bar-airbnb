@@ -93,14 +93,18 @@ body {
 
 .search--small .search__icon {
   left: 12px;
-  top: 50%;
+  top: calc(50% - 1px);
   width: 11px;
   height: 11px;
 }
 
 .search--small .search__input {
   font-size: 14px;
-  padding-left: 35px;
+  padding-left: 33px;
+}
+
+.search--small .search__input::placeholder {
+  font-weight: 300;
 }
 
 .search:hover {
